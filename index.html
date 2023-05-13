@@ -1,0 +1,2602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+&lt;?xml version=&quot;1.0&quot;?&gt;<br/>
+&lt;rdf:RDF xmlns=&quot;http://www.ontology/ns/foo#&quot;<br/>
+     xml:base=&quot;http://www.ontology/ns/foo&quot;<br/>
+     xmlns:ns=&quot;http://www.w3.org/2003/06/sw&ndash;vocab&ndash;status/ns#&quot;<br/>
+     xmlns:wo=&quot;http://purl.org/ontology/wo/&quot;<br/>
+     xmlns:foo=&quot;http://www.ontology/ns/foo#&quot;<br/>
+     xmlns:owl=&quot;http://www.w3.org/2002/07/owl#&quot;<br/>
+     xmlns:rdf=&quot;http://www.w3.org/1999/02/22&ndash;rdf&ndash;syntax&ndash;ns#&quot;<br/>
+     xmlns:xml=&quot;http://www.w3.org/XML/1998/namespace&quot;<br/>
+     xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema#&quot;<br/>
+     xmlns:foo1=&quot;http://www.ontology/ns/foo/1.1#&quot;<br/>
+     xmlns:hasC=&quot;http://www.ontology/ns/foo#hasC:&quot;<br/>
+     xmlns:rdfs=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#&quot;<br/>
+     xmlns:skos=&quot;http://www.w3.org/2004/02/skos/core#&quot;<br/>
+     xmlns:sosa=&quot;http://www.w3.org/ns/sosa/&quot;<br/>
+     xmlns:terms=&quot;http://purl.org/dc/terms/&quot;<br/>
+     xmlns:schema=&quot;http://schema.org/&quot;<br/>
+     xmlns:iot&ndash;lite=&quot;http://purl.oclc.org/NET/UNIS/fiware/iot&ndash;lite#&quot;<br/>
+     xmlns:metadata=&quot;http://data.bioontology.org/metadata/&quot;&gt;<br/>
+<br/>
+    &lt;owl:Ontology rdf:about=&quot;http://www.ontology/ns/foo#&quot;&gt;<br/>
+        &lt;owl:versionIRI rdf:resource=&quot;http://www.ontology/ns/foo/1.1#&quot;/&gt;<br/>
+        &lt;dct:license&gt;<br/>
+      &lt;cc:License rdf:about=&quot;https://creativecommons.org/licenses/by&ndash;sa/4.0/&quot;/&gt;<br/>
+    &lt;/owl:Ontology&gt;<br/>
+    <br/>
+<br/>
+    &lt;!&ndash;&ndash; <br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+    //<br/>
+    // Annotation properties<br/>
+    //<br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+     &ndash;&ndash;&gt;<br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://data.bioontology.org/metadata/prefixIRI &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://data.bioontology.org/metadata/prefixIRI&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.oclc.org/NET/UNIS/fiware/iot&ndash;lite#hasSensingDevice &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.oclc.org/NET/UNIS/fiware/iot&ndash;lite#hasSensingDevice&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.oclc.org/NET/UNIS/fiware/iot&ndash;lite#relativeLocation &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.oclc.org/NET/UNIS/fiware/iot&ndash;lite#relativeLocation&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/description &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.org/dc/terms/description&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/license &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.org/dc/terms/license&quot;&gt;<br/>
+        &lt;terms:license rdf:resource=&quot;http://www.opengeospatial.org/ogc/Software&quot;/&gt;<br/>
+        &lt;terms:license rdf:resource=&quot;http://www.w3.org/Consortium/Legal/2015/copyright&ndash;software&ndash;and&ndash;document&quot;/&gt;<br/>
+    &lt;/owl:AnnotationProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/relation &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.org/dc/terms/relation&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/rights &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.org/dc/terms/rights&quot;&gt;<br/>
+        &lt;terms:license rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Copyright 2017 W3C/OGC.&lt;/terms:license&gt;<br/>
+    &lt;/owl:AnnotationProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/title &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://purl.org/dc/terms/title&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://schema.org/domainIncludes &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://schema.org/domainIncludes&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://schema.org/rangeIncludes &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://schema.org/rangeIncludes&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/06/sw&ndash;vocab&ndash;status/ns#term_status &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://www.w3.org/2003/06/sw&ndash;vocab&ndash;status/ns#term_status&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2004/02/skos/core#definition &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://www.w3.org/2004/02/skos/core#definition&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2004/02/skos/core#example &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:AnnotationProperty rdf:about=&quot;http://www.w3.org/2004/02/skos/core#example&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; <br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+    //<br/>
+    // Object Properties<br/>
+    //<br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+     &ndash;&ndash;&gt;<br/>
+<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/class &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/class&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Class&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a class&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;class&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/family &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/family&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Family&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a family&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;family&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/genus &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/genus&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Genus&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a genus&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;genus&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/habitat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/habitat&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Habitat&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a habitat in which it may typically be found&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;habitat&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/kingdom &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/kingdom&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Kingdom&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a kingdom&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;kingdom&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/livesIn &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/livesIn&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Habitat&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a habitat in which it lives. Sub&ndash;property of wo:habitat to be used for members of the animal kingdom&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;lives in&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/order &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/order&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Kingdom&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with an order&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;order&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/phylum &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/phylum&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Phylum&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a phylum&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;phylum&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/species &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://purl.org/ontology/wo/species&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://purl.org/ontology/wo/Species&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;associates a taxon rank with a species&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;species&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#alt &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#alt&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;/&gt;<br/>
+        &lt;rdfs:range&gt;<br/>
+            &lt;owl:Restriction&gt;<br/>
+                &lt;owl:onProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#hasValue&quot;/&gt;<br/>
+                &lt;owl:someValuesFrom rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+            &lt;/owl:Restriction&gt;<br/>
+        &lt;/rdfs:range&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#lat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#lat&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;/&gt;<br/>
+        &lt;rdfs:range&gt;<br/>
+            &lt;owl:Restriction&gt;<br/>
+                &lt;owl:onProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#hasValue&quot;/&gt;<br/>
+                &lt;owl:someValuesFrom rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+            &lt;/owl:Restriction&gt;<br/>
+        &lt;/rdfs:range&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#location &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#location&quot;&gt;<br/>
+        &lt;rdfs:subPropertyOf rdf:resource=&quot;http://xmlns.com/foaf/0.1/based_near&quot;/&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The relation between something and the point, <br/>
+ or other geometrical thing in space, where it is.  For example, the realtionship between<br/>
+ a radio tower and a Point with a given lat and long.<br/>
+ Or a relationship between a park and its outline as a closed arc of points, or a road and<br/>
+ its location as a arc (a sequence of points).<br/>
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect<br/>
+ an accuracy appropriate for the size of the object and uses such as mapping .<br/>
+ &lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;location&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#long &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#long&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;/&gt;<br/>
+        &lt;rdfs:range&gt;<br/>
+            &lt;owl:Restriction&gt;<br/>
+                &lt;owl:onProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#hasValue&quot;/&gt;<br/>
+                &lt;owl:someValuesFrom rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+            &lt;/owl:Restriction&gt;<br/>
+        &lt;/rdfs:range&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/hasFeatureOfInterest &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/hasFeatureOfInterest&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/hasSample &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/hasSample&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/hosts &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/hosts&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Platform&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;owl:propertyDisjointWith rdf:resource=&quot;http://www.w3.org/ns/sosa/observes&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/isFeatureOfInterestOf &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/isFeatureOfInterestOf&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;skos:definition xml:lang=&quot;en&quot;&gt;A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.&lt;/skos:definition&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/isObservedBy &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/isObservedBy&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/madeBySensor &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/madeBySensor&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/madeObservation &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/madeObservation&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/observedProperty &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/observedProperty&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/observes &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://www.w3.org/ns/sosa/observes&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://xmlns.com/foaf/0.1/based_near &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:ObjectProperty rdf:about=&quot;http://xmlns.com/foaf/0.1/based_near&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A location that something is based near, for some broadly human notion of near.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://xmlns.com/foaf/0.1/&quot;/&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;based near&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:ObjectProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; <br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+    //<br/>
+    // Data properties<br/>
+    //<br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+     &ndash;&ndash;&gt;<br/>
+<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#PDOP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#PDOP&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#Source_of_dates &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#Source_of_dates&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasClay &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasClay&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasCount &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasCount&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasCov &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasCov&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasDirection &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasDirection&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasDistance &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasDistance&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasDisturbance &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasDisturbance&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasElevation_masi &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasElevation_masi&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasFirst_planning_nearest_OP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasFirst_planning_nearest_OP&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasHDOP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasHDOP&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasHorizon &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasHorizon&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasInorganic_P &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasInorganic_P&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasLand_Use &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasLand_Use&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasLiana_dbh_cm &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasLiana_dbh_cm&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasLocalDate &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasLocalDate&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasMake &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasMake&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasModel &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasModel&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasMoisture &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasMoisture&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasName &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasName&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasPath &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasPath&quot;&gt;<br/>
+        &lt;rdfs:subPropertyOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#topDataProperty&quot;/&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#anyURI&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasPlot_Name &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasPlot_Name&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasReplanting_nearest_OP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasReplanting_nearest_OP&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSand &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSand&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSilt &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSilt&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSite_name &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSite_name&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSite_plot_code &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSite_plot_code&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSoil_pH &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSoil_pH&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSpeed &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSpeed&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSubplot &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSubplot&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasSubplot_radius_m &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasSubplot_radius_m&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTemp &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTemp&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#double&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTemperature &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTemperature&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#double&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTotal_C &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTotal_C&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTotal_N &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTotal_N&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTotal_P &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTotal_P&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTree_ID &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTree_ID&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTree_dbh_cm &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTree_dbh_cm&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTree_height_m &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTree_height_m&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTree_individual_no &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTree_individual_no&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasTree_notes &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasTree_notes&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasYears_since_frag &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasYears_since_frag&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#C:P &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#C:P&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#hasC:N &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo#hasC:N&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#float&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#hasValue &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.ontology/ns/foo/1.1#hasValue&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/hasResult &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.w3.org/ns/sosa/hasResult&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/hasSimpleResult &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.w3.org/ns/sosa/hasSimpleResult&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2000/01/rdf&ndash;schema#Literal&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/resultTime &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:DatatypeProperty rdf:about=&quot;http://www.w3.org/ns/sosa/resultTime&quot;&gt;<br/>
+        &lt;rdfs:domain rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;rdfs:range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;/&gt;<br/>
+    &lt;/owl:DatatypeProperty&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; <br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+    //<br/>
+    // Classes<br/>
+    //<br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+     &ndash;&ndash;&gt;<br/>
+<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/Frequency &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/dc/terms/Frequency&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;terms:Frequency&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;A rate at which something recurs.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/dc/terms/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Frequency&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/LicenseDocument &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/dc/terms/LicenseDocument&quot;&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;terms:LicenseDocument&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;A legal document giving official permission to do something with a resource.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/dc/terms/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;License Document&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/PhysicalResource &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/dc/terms/PhysicalResource&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;terms:PhysicalResource&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;A material thing.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/dc/terms/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Physical Resource&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/Policy &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/dc/terms/Policy&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;owl:disjointWith rdf:resource=&quot;http://purl.org/dc/terms/ProvenanceStatement&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;terms:Policy&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/dc/terms/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Policy&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/dc/terms/ProvenanceStatement &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/dc/terms/ProvenanceStatement&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;terms:ProvenanceStatement&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/dc/terms/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Provenance Statement&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Class &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Class&quot;&gt;<br/>
+        &lt;owl:equivalentClass rdf:resource=&quot;http://purl.org/ontology/wo/Family&quot;/&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Class&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;A class is a scientific way to group related organisms together, some examples of classes being jellyfish, reptiles and sea urchins. Classes are big groups and contain within them smaller groupings called orders, families, genera and species.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Class&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Class_%28biology%29&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/class&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Family &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Family&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Family&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae).&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Family&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Family_%28biology%29&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/family&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/FreshwaterHabitat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/FreshwaterHabitat&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Habitat&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:FreshwaterHabitat&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Freshwater habitats include bogs, ponds, lakes, rivers and streams. About 3% of Earth&amp;apos;s water is freshwater, but this includes the water locked up in the ice caps and trapped in rocks and soil as groundwater. Only a tiny fraction (0.014%) is surface water in the form of rivers, lakes and swamps.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Freshwater Habitat&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Genus &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Genus&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Genus&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species&amp;apos; scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Genus&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Genus&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/genus&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Habitat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Habitat&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Habitat&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;A habitat, or biome, is the type of environment in which plant and animals live. Habitat is dictated by what kinds of plants grow there, the climate and the geography. Rainforest, coral reefs and the tundra are all habitats where particular kinds of plants and animals might be found.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Habitat&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Habitat&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/habitats&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Kingdom &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Kingdom&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Kingdom&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;Kingdoms are the major categories into which scientists divide up all living things. The main kingdoms are animals, plants, fungi and bacteria, although there are others. Each kingdom has its own suite of defining characteristics &ndash; for instance plants have rigid cell walls, whilst animals do not.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Kingdom&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Kingdom_%28biology%29&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/kingdom&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/MarineHabitat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/MarineHabitat&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Habitat&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:MarineHabitat&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Approximately 71% of the Earth&amp;apos;s surface is covered by the oceans, an area of some 223698816km/sq. Although marine life evolved around three billion years before life on land, marine habitats are relatively poorly studied and much of the ocean&amp;apos;s depths remains unexplored.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Marine Habitat&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Order &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Order&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Order&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;An order is a scientific way to categorise related organisms. An order is a smaller grouping than a class, but bigger than a family or genus. Examples of orders are willows, cockroaches and primates.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Order&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Order_%28biology%29&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/order&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Phylum &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Phylum&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Phylum&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;A phylum &ndash; also known as a division when referring to plants &ndash; is a scientfic way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Phylum&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Phylum&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/phylum&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Species &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Species&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:Species&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;Generic class defining a biological species&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;species&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Species&quot;/&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://www.bbc.co.uk/nature/species&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/TaxonName &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/TaxonName&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;owl:disjointWith rdf:resource=&quot;http://purl.org/ontology/wo/TaxonRank&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:TaxonName&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;A taxonomic name, describing the structure and provenance of a taxonomic name.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Taxon Name&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/TaxonRank &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/TaxonRank&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:TaxonRank&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&ndash;gb&quot;&gt;Generic concept for a taxonomic rank such as a Genus or Species.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Taxonomic Rank&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:seeAlso rdf:resource=&quot;http://en.wikipedia.org/wiki/Taxonomic_rank&quot;/&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/TerrestrialHabitat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/TerrestrialHabitat&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Habitat&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wo:TerrestrialHabitat&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Terrestrial habitats include forests, grasslands, deserts and rainforests. They are typically defined by factors such as plant structure (trees and grasses), leaf types (eg broadleaf and needleleaf), plant spacing (forest, woodland, savanna) and climate.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/ontology/wo/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&ndash;gb&quot;&gt;Terrestrial Habitat&lt;/rdfs:label&gt;<br/>
+        &lt;ns:term_status rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;testing&lt;/ns:term_status&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Class/Mammalia &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Class/Mammalia&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Class&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.<br/>
+https://www.merriam&ndash;webster.com/dictionary/Elephantidae&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Class/Reptilia &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Class/Reptilia&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Class&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft&ndash;shelled eggs on land.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Family/Elephantidae &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Family/Elephantidae&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Family&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.<br/>
+Source: https://www.merriam&ndash;webster.com/dictionary/Elephantidae&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Family/Viverridae &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Family/Viverridae&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Family&quot;/&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Viverridae is a family of small to medium&ndash;sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line&lt;/rdfs:isDefinedBy&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;https://en.wikipedia.org/wiki/Viverridae&lt;/rdfs:isDefinedBy&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Kingdom/Animalia &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Kingdom/Animalia&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Kingdom&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.<br/>
+<br/>
+All members of the kingdom Animalia share three key traits. They are multicellular organisms, and they are all eukaryotic, meaning their cells have membrane&ndash;enclosed organelles and a nucleus. All animals are heterotrophic and must feed on other organisms to survive.<br/>
+source:https://study.com/learn/lesson/animalia&ndash;kingdom&ndash;examples&ndash;characteristics&ndash;facts.html&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Order/Carnivora &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Order/Carnivora&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Order&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;https://en.wikipedia.org/wiki/Carnivora&lt;/rdfs:isDefinedBy&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Order/Proboscidea &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Order/Proboscidea&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Order&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.<br/>
+https://www.merriam&ndash;webster.com/dictionary/proboscidean&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Order/Squamata &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Order/Squamata&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Order&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/Phylum/Chordata &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/Phylum/Chordata&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/Phylum&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.<br/>
+Source: google.com&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/TaxonName/Civettictis &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/TaxonName/Civettictis&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonName&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://purl.org/ontology/wo/TaxonName/Loxodonta &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://purl.org/ontology/wo/TaxonName/Loxodonta&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/ontology/wo/TaxonName&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://web.resource.org/cc/License &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://web.resource.org/cc/License&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://purl.org/dc/terms/LicenseDocument&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://web.resource.org/cc/Prohibition &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://web.resource.org/cc/Prohibition&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://web.resource.org/cc/Requirement &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://web.resource.org/cc/Requirement&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://web.resource.org/cc/Work &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://web.resource.org/cc/Work&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2001/XMLSchema&ndash;datatypes#date &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/2001/XMLSchema&ndash;datatypes#date&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2002/07/owl#Thing &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;rdf:Description rdf:about=&quot;http://www.w3.org/2002/07/owl#Thing&quot;&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;owl:Thing&lt;/metadata:prefixIRI&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#Point &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wgs84_pos:SpatialThing&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Anything with spatial extent, i.e. size, shape, or position.<br/>
+ e.g. people, places, bowling balls, as well as abstract areas like cubes.<br/>
+&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Spatial Thing&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;SpatialThing&lt;/rdfs:label&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/FeatureOfInterest &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;sosa:FeatureOfInterest&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://www.w3.org/ns/sosa/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Feature Of Interest&lt;/rdfs:label&gt;<br/>
+        &lt;skos:definition xml:lang=&quot;en&quot;&gt;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&lt;/skos:definition&gt;<br/>
+        &lt;skos:example xml:lang=&quot;en&quot;&gt;When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.&lt;/skos:example&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/ObservableProperty &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;sosa:ObservableProperty&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;An observable quality (property, characteristic) of a FeatureOfInterest.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://www.w3.org/ns/sosa/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Observable Property&lt;/rdfs:label&gt;<br/>
+        &lt;skos:definition xml:lang=&quot;en&quot;&gt;An observable quality (property, characteristic) of a FeatureOfInterest.&lt;/skos:definition&gt;<br/>
+        &lt;skos:example xml:lang=&quot;en&quot;&gt;The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.&lt;/skos:example&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/Observation &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/ns/sosa/Observation&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;sosa:Observation&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://www.w3.org/ns/sosa/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Observation&lt;/rdfs:label&gt;<br/>
+        &lt;skos:definition xml:lang=&quot;en&quot;&gt;Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.&lt;/skos:definition&gt;<br/>
+        &lt;skos:example xml:lang=&quot;en&quot;&gt;The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.&lt;/skos:example&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/Platform &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/ns/sosa/Platform&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;sosa:Platform&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.&amp;quot;@en ;&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;sosa&lt;/rdfs:isDefinedBy&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot;A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.&amp;quot;@en ;&lt;/skos:definition&gt;<br/>
+        &lt;skos:example rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot;A post, buoy, vehicle, ship, aircraft, satellite, cell&ndash;phone, human or animal may act as platforms for (technical or biological) sensors or actuators.&amp;quot;@en ;&lt;/skos:example&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/ns/sosa/Sensor &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://www.w3.org/ns/sosa/Sensor&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;sosa:Sensor&lt;/metadata:prefixIRI&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://www.w3.org/ns/sosa/&quot;/&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Sensor&lt;/rdfs:label&gt;<br/>
+        &lt;skos:definition xml:lang=&quot;en&quot;&gt;Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.&lt;/skos:definition&gt;<br/>
+        &lt;skos:example xml:lang=&quot;en&quot;&gt;Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.&lt;/skos:example&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://xmlns.com/foaf/0.1/Image &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://xmlns.com/foaf/0.1/Image&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://xmlns.com/foaf/0.1/Person &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:Class rdf:about=&quot;http://xmlns.com/foaf/0.1/Person&quot;&gt;<br/>
+        &lt;rdfs:subClassOf rdf:resource=&quot;http://www.w3.org/2002/07/owl#Thing&quot;/&gt;<br/>
+    &lt;/owl:Class&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; <br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+    //<br/>
+    // Individuals<br/>
+    //<br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+     &ndash;&ndash;&gt;<br/>
+<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.DGFC/ontology/2021/1.0#C:P &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.DGFC/ontology/2021/1.0#C:P&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;0.12&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;carbon to inorganic phosphorus ratio of the soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#Clay &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo#Clay&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasClay rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;2.3&lt;/hasClay&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#ID &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo#ID&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;sosa:hasResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot;foo_&amp;quot;&lt;/sosa:hasResult&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#LocalDate &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo#LocalDate&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2005&ndash;11&ndash;12T12:05:05&lt;/sosa:resultTime&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#LocalTime &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo#LocalTime&quot;&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2005&ndash;11&ndash;12T12:05:05&lt;/sosa:resultTime&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo#Silt &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo#Silt&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Bulk_Density &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Bulk_Density&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;foo1:hasValue rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;0.6&lt;/foo1:hasValue&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Measured Bulk Density of soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#CameraTrap &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#CameraTrap&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:hasFeatureOfInterest rdf:resource=&quot;http://www.ontology/ns/foo/1.1#image&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Name&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Path&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#localDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#localTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#make&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#model&quot;/&gt;<br/>
+        &lt;hasMake rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot;make&amp;quot;&lt;/hasMake&gt;<br/>
+        &lt;hasModel rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;model&lt;/hasModel&gt;<br/>
+        &lt;hasPath rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#anyURI&quot;&gt;dfgcimage.org&lt;/hasPath&gt;<br/>
+        &lt;sosa:hasResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Image&lt;/sosa:hasResult&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Wildlife cameras with embeded sensors to capture moving objects.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Count &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Count&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasCount rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;1&lt;/hasCount&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;GPS collar dataset&amp;apos;s observation count per dataset&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Cov &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasCov rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;1&lt;/hasCov&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;GPS collar dataset: satellite coverage, the higher number the stronger coverage.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#DGFC_ID &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#DGFC_ID&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;ID&lt;/sosa:hasResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;An identifier that is unique for GPS collar sensor observation&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#DateTime &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#DateTime&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2013&ndash;07&ndash;06T21:03:17&lt;/sosa:resultTime&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The date and time of the GPS collar observation&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Direction &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasDirection rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;0.4&lt;/hasDirection&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Direction that the elephant is travelling at the current data collection instant.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Distance &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasDistance rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;1.2&lt;/hasDistance&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Distance (m) travelled from the previous data collection instant to the present.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Disturbance &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Disturbance&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasDisturbance rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;logged&lt;/hasDisturbance&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;degree of logging at the site, on of &amp;quot;Old&ndash;growth&amp;quot;, &amp;quot;Twic logged&amp;quot;, Logged&amp;quot; (when number of logging operations unknown)&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#ElephasMaximus &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#ElephasMaximus&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Elevation_masl &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Elevation_masl&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasElevation_masi rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;5.2&lt;/hasElevation_masi&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Elevation at the plot centre, in metres above sea level&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#ExtTemp &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasTemp rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;27.0&lt;/hasTemp&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;External Temperature of the elephant at data collection instant&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#First_planting_nearest_OP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#First_planting_nearest_OP&quot;&gt;<br/>
+        &lt;hasFirst_planning_nearest_OP rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;2005&lt;/hasFirst_planning_nearest_OP&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Year palm adjacent to the forest site&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Forest_type &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Forest_type&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;HCV High Conservation Value&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;type of forest site, one of &amp;quot;Continous primary&amp;quot;, &amp;quot;Continous logged&amp;quot;, &amp;quot;HCV&amp;quot; (i.e., High Conservation Value; fragmented sites in oil palm plantations)&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#GMTDate &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2014&ndash;04&ndash;12T13:20:00&lt;/sosa:resultTime&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The GMT date in Sabah, Malaysia when the GPS collar collected  its readings.&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#GMTTime &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2014&ndash;04&ndash;12T13:20:00&lt;/sosa:resultTime&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The current local date in Sabah, Malaysia when the image collects its readings.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#HDOP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;1&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Horizontal Dilution of Precision (HDOP) measures GPS accuracy in Latitude and Longitude. The lower value the better precision.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Horizon &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Horizon&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Sample_Name&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Soil horizon sampled&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Horizon_Depth &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Horizon_Depth&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;2.5&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Depth of the organic soil horizon sampled&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Identifier &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Identifier&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Observation&quot;/&gt;<br/>
+        &lt;sosa:hasFeatureOfInterest rdf:resource=&quot;http://www.ontology/ns/foo/1.1#image&quot;/&gt;<br/>
+        &lt;sosa:hasResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;DGFC_&lt;/sosa:hasResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Unique Soil Sample Identifier&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Land_Use &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Land_Use&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasLand_Use rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;plants&lt;/hasLand_Use&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Unlogged&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Lat &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Lat&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The geographical latitude of the observation location&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Long &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Long&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The geographical longitude of a sensor observation location&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Loxodonta &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Loxodonta&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;African elephant&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Mustelidae &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Mustelidae&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;wo:family rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Mustelidae&quot;/&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Name &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Name&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasName rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Imahe_name&lt;/hasName&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The named assigned to an image at collection time&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#PDOP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#PDOP&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;PDOP rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;3&lt;/PDOP&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Positional Dilution of Precision (DDOP) describes the error caused by the relative position of the GPS satellites. The more signals a GPS reciever can &amp;quot;see&amp;quot; (speard vs near each other), the more precise it can be.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Path &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Path&quot;&gt;<br/>
+        &lt;hasPath rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#anyURI&quot;&gt;example.com&lt;/hasPath&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The URI to point at the location of the image in secure cloud&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Plot_Name &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Plot_Name&quot;&gt;<br/>
+        &lt;hasPlot_Name rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;NAME&lt;/hasPlot_Name&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Name of the 1 Ha plot sampled&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Replanting_nearest_OP &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Replanting_nearest_OP&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasReplanting_nearest_OP rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;2008&lt;/hasReplanting_nearest_OP&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Year of any replanting of oil palm adjacent to the forest site (fragmented sites where adjacent oil palm had undergone a second round of planting)&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Site &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Site&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot;Valley&amp;quot;&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Geographical area/site which samples were taken from&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Site_code &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Site_code&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;18&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;code for the study site, in the format Fa (where a can be 1&ndash;18)&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Site_name &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Site_name&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasSite_name rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Sabahmas&lt;/hasSite_name&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;name of the study site&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Site_plot_code &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Site_plot_code&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasSite_plot_code rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;3&lt;/hasSite_plot_code&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;code for the study site and plot at the site, in the format FaPb (where a refers to site code, and can be 1&ndash;18; and b refers to plot code, and can be 1&ndash;3)&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Soil &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Soil&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Soil or dirt, is a mixture of organic matters, minerals, ases, liquids, and organisms that collectively support life.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Soil_Moisture &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Soil_Moisture&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasMoisture rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;225&lt;/hasMoisture&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Gravimetric soil moisture&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Soil_Sensor &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Soil_Sensor&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:hasFeatureOfInterest rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Soil&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.DGFC/ontology/2021/1.0#C:P&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Bulk_Density&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Horizon&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Horizon_Depth&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Land_Use&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Plot_Name&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Site&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Soil_Moisture&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Soil_pH&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Subplot&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#inorganic_P&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#total_C&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#total_N&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#C:N&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Soil sensor data consist of soil properties tropical forests in Sabah, Malaysia. <br/>
+The data is a contribution from the BALI collaboration, which is financed by the UK&amp;apos;s Natural Environment Research Council (NERC).&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Soil_identifier &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Soil_identifier&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot; &amp;quot;&lt;/sosa:hasResult&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Unique observation identifier, collected over a set time interval.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Soil_pH &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Soil_pH&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasSoil_pH rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;4.87&lt;/hasSoil_pH&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Measured pH of the soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Source_of_dates &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Source_of_dates&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;Source_of_dates rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;string&lt;/Source_of_dates&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;source of &amp;quot;First_planting_nearest_OP&amp;quot;&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Speed &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasSpeed rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;35.5&lt;/hasSpeed&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Speed of the elephant at current data collection instant.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Subplot &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Subplot&quot;&gt;<br/>
+        &lt;hasSubplot rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;subplot&lt;/hasSubplot&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Number of the subplot sampled within each 1 Ha plot Numeric&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Survey_date &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Survey_date&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasLocalDate rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&lt;/hasLocalDate&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;date of field data collection at the plot, in the plot, in the format dd/mm/yyyy. Note that in some cases measurements were taken on more than one date for a single plot; see the dates provided in the seperate vegetation datasets for the precise date of particular vegetation data collection.&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Temperature &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasTemperature rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;21.0&lt;/hasTemperature&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Estimate temperature of the elephant in Celsius at data collection instant.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Vegetation &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Vegetation&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#Years_since_frag &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#Years_since_frag&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasYears_since_frag rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;2017&lt;/hasYears_since_frag&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Years since fragmentation at time of data collection. i.e., 2017 &amp;quot;First_planting_nearest_OP&amp;quot; (fragmented sites only)&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#image &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#image&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://xmlns.com/foaf/0.1/Image&quot;/&gt;<br/>
+        &lt;sosa:isFeatureOfInterestOf rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Identifier&quot;/&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#inorganic_P &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#inorganic_P&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:hasSimpleResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;36.65&lt;/sosa:hasSimpleResult&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;inorganic/soluble phosphorus concentration of the soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#localDate &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#localDate&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2014&ndash;04&ndash;12T13:20:00&ndash;05:00&lt;/sosa:resultTime&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The current local date in Sabah, Malaysia when the image collects its readings.&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#localTime &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#localTime&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2014&ndash;04&ndash;12T13:20:00&lt;/sosa:resultTime&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The current local time in Sabah, Malaysia when the image collects its readings.&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#make &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#make&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasMake rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Reckno&lt;/hasMake&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The make of the trail camera used to capture the image&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#model &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#model&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasModel rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&amp;quot;model&amp;quot;&lt;/hasModel&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The model of the trail camera used to capture the image&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#timestamp &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#timestamp&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;sosa:resultTime rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#dateTime&quot;&gt;2014&ndash;04&ndash;12T13:20:00&lt;/sosa:resultTime&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;The time of the sensor observation.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#total_C &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#total_C&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasTotal_C rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;22.23&lt;/hasTotal_C&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;total carbon content of the soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#total_N &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#total_N&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasTotal_N rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;23.65&lt;/hasTotal_N&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;total nitrogen content of the soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.ontology/ns/foo/1.1#C:N &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.ontology/ns/foo/1.1#C:N&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/ObservableProperty&quot;/&gt;<br/>
+        &lt;hasC:N rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#float&quot;&gt;11.9&lt;/hasC:N&gt;<br/>
+        &lt;skos:definition rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;carbon to nitrogen ratio of the soil sample&lt;/skos:definition&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/DGFC/Civets &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/DGFC/Civets&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Family/Viverridae&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Order/Carnivora&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Phylum/Chordata&quot;/&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/DGFC/python#Juling &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/DGFC/python#Juling&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;owl:sameAs rdf:resource=&quot;http://www.schema.org/dgfc/python&quot;/&gt;<br/>
+        &lt;sosa:hasFeatureOfInterest rdf:resource=&quot;http://www.schema.org/dgfc/python&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#DateTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A python (snake) called Juling&ndash; with tracking device called Juling&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/Otter &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/Otter&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Order/Carnivora&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Phylum/Chordata&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Otter is a carnivorous mammal.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/python &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/python&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Class/Reptilia&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Order/Squamata&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://purl.org/ontology/wo/Phylum/Chordata&quot;/&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/FeatureOfInterest&quot;/&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#ABAW &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#ABAW&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;sosa:hasResult rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&lt;/sosa:hasResult&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called  Abaw, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Aqeela &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Aqeela&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo#LocalDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo#LocalTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#PDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called  Aqeela, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Bikang1 &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Bikang1&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Bikang1, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Bikang2 &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Bikang2&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Bikang2, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Dara &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Dara&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Dara, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Guli &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Guli&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Guli, here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Ita &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Ita&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Ita, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Jasmin &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Jasmin&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Jasmin, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Jasper &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Jasper&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Jasper here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Kasih &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Kasih&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Kasih, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Kuma &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Kuma&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Kuma, here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Liun &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Liun&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#DateTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#PDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Liun, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Maliau &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Maliau&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Maliau, here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Merotai &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Merotai&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Merotai, here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Puteri &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Puteri&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Puteri here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Putut &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Putut&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Putut, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Sandi &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Sandi&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Sandi, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Sejati &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Sejati&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Sejati, here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Seri &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Seri&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Seri, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Tulid &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Tulid&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Tulid, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Tunglap &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Tunglap&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A female asian elephant called Tunglap, here, the GPS collar (sensor) is named after her.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.schema.org/dgfc/elephant#Umas2 &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.schema.org/dgfc/elephant#Umas2&quot;&gt;<br/>
+        &lt;rdf:type rdf:resource=&quot;http://www.w3.org/ns/sosa/Sensor&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Count&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Cov&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Direction&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Distance&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#ExtTemp&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTDate&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#GMTTime&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#HDOP&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Speed&quot;/&gt;<br/>
+        &lt;sosa:observedProperty rdf:resource=&quot;http://www.ontology/ns/foo/1.1#Temperature&quot;/&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A male asian elephant called Umas2, here, the GPS collar (sensor) is named after him.&lt;/rdfs:comment&gt;<br/>
+    &lt;/owl:NamedIndividual&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/1999/xhtml/vocab#license &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.w3.org/1999/xhtml/vocab#license&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; http://www.w3.org/2003/01/geo/wgs84_pos#Point &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;owl:NamedIndividual rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;/&gt;<br/>
+    <br/>
+<br/>
+<br/>
+    &lt;!&ndash;&ndash; <br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+    //<br/>
+    // Annotations<br/>
+    //<br/>
+    ///////////////////////////////////////////////////////////////////////////////////////<br/>
+     &ndash;&ndash;&gt;<br/>
+<br/>
+    &lt;rdf:Description rdf:about=&quot;http://purl.org/dc/terms/isPartOf&quot;&gt;<br/>
+        &lt;rdfs:label xml:lang=&quot;en&quot;&gt;Is Part Of&lt;/rdfs:label&gt;<br/>
+        &lt;terms:description xml:lang=&quot;en&quot;&gt;This property is intended to be used with non&ndash;literal values. This property is an inverse property of Has Part.&lt;/terms:description&gt;<br/>
+        &lt;rdfs:isDefinedBy rdf:resource=&quot;http://purl.org/dc/terms/&quot;/&gt;<br/>
+        &lt;rdfs:comment xml:lang=&quot;en&quot;&gt;A related resource in which the described resource is physically or logically included.&lt;/rdfs:comment&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+    &lt;rdf:Description rdf:about=&quot;http://purl.org/vocab/vann/preferredNamespacePrefix&quot;&gt;<br/>
+        &lt;rdfs:comment rdf:resource=&quot;http://www.FOO/DGFC&quot;/&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+    &lt;rdf:Description rdf:about=&quot;http://purl.org/vocab/vann/preferredNamespaceUri&quot;&gt;<br/>
+        &lt;terms:title rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;http://www.FOO.org/DGFC/&lt;/terms:title&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+    &lt;rdf:Description rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#&quot;&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;geo&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;<br/>
+Recent changes to this namespace:<br/>
+$Log: wgs84_pos.rdf,v $<br/>
+Revision 1.22  2009/04/20 15:00:30  timbl<br/>
+Remove the time bits which have been deal with elsewhere eg in iCal.<br/>
+<br/>
+Revision 1.21  2009/04/20 12:52:47  timbl<br/>
+try again<br/>
+<br/>
+Revision 1.20  2009/04/20 12:42:11  timbl<br/>
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009&ndash;04&ndash;20#T12&ndash;36&ndash;09)<br/>
+<br/>
+Revision 1.19  2009/04/20 12:36:31  timbl<br/>
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009&ndash;04&ndash;20#T12&ndash;36&ndash;09)<br/>
+<br/>
+Revision 1.18  2006/02/01 22:01:04  danbri<br/>
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid<br/>
+<br/>
+Revision 1.17  2004/02/06 17:38:12  danbri<br/>
+Fixed a bad commit screwup<br/>
+<br/>
+Revision 1.15  2003/04/19 11:24:08  danbri<br/>
+Fixed the typo even more.<br/>
+<br/>
+Revision 1.14  2003/04/19 11:16:56  danbri<br/>
+fixed a typo<br/>
+<br/>
+Revision 1.13  2003/02/19 22:27:27  connolly<br/>
+relaxed domain constraints on lat/long/alt from Point to SpatialThing<br/>
+<br/>
+Revision 1.12  2003/01/12 01:41:41  danbri<br/>
+Trying local copy of XSLT doc.<br/>
+<br/>
+Revision 1.11  2003/01/12 01:20:18  danbri<br/>
+added a link to morten&amp;apos;s xslt rdfs viewer.<br/>
+<br/>
+Revision 1.10  2003/01/11 18:56:49  danbri<br/>
+Removed datatype range from lat and long properties, since they would<br/>
+have required each occurance of the property to mention the datatype.<br/>
+<br/>
+Revision 1.9  2003/01/11 11:41:31  danbri<br/>
+Another typo; repaired rdfs:Property to rdf:Property x4<br/>
+<br/>
+Revision 1.8  2003/01/11 11:05:02  danbri<br/>
+Added an rdfs:range for each lat/long/alt property,<br/>
+http://www.w3.org/2001/XMLSchema#float<br/>
+<br/>
+Revision 1.7  2003/01/10 20:25:16  danbri<br/>
+Longer rdfs:comment for Point, trying to be Earth&ndash;centric and neutral about<br/>
+coordinate system(s) at the same time. Feedback welcomed.<br/>
+<br/>
+Revision 1.6  2003/01/10 20:18:30  danbri<br/>
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the<br/>
+vocabulary. Note that this is not common practice (but seems both harmless<br/>
+and potentially useful).<br/>
+<br/>
+<br/>
+revision 1.5<br/>
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 &ndash;5<br/>
+Updated schema:<br/>
+Added a dc:date, added url for more info. Changed the rdfs:label of the<br/>
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of<br/>
+each property. Added XML comment on the lat_long property suggesting that<br/>
+we might not need it (based on #rdfig commentary from implementors).<br/>
+<br/>
+revision 1.4<br/>
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 &ndash;5<br/>
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in<br/>
+#rdfig for catching this error.<br/>
+<br/>
+revision 1.3<br/>
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 &ndash;3<br/>
+fixed buglet in vocab, added more wgs links<br/>
+<br/>
+revision 1.2<br/>
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 &ndash;4<br/>
+Removed alt from the as&ndash;a&ndash;flat&ndash;string property, and switched from<br/>
+space separated to comma separated.<br/>
+<br/>
+revision 1.1<br/>
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;<br/>
+basic geo vocab<br/>
+<br/>
+&lt;/rdfs:comment&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+    &lt;rdf:Description rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#Point&quot;&gt;<br/>
+        &lt;iot&ndash;lite:relativeLocation rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;&lt;/iot&ndash;lite:relativeLocation&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;point&lt;/rdfs:label&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt; <br/>
+Uniquely identified by lat/long/alt. i.e.<br/>
+<br/>
+spaciallyIntersects(P1, P2) :&ndash; lat(P1, LAT), long(P1, LONG), alt(P1, ALT),<br/>
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).<br/>
+<br/>
+sameThing(P1, P2) :&ndash; type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).<br/>
+  &lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A point, typically described using a coordinate system relative to Earth, such as WGS84.<br/>
+  &lt;/rdfs:comment&gt;<br/>
+        &lt;metadata:prefixIRI rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;wgs84_pos:Point&lt;/metadata:prefixIRI&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+    &lt;rdf:Description rdf:about=&quot;http://www.w3.org/2003/01/geo/wgs84_pos#lat_long&quot;&gt;<br/>
+        &lt;rdfs:comment rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;A comma&ndash;separated representation of a latitude, longitude coordinate.&lt;/rdfs:comment&gt;<br/>
+        &lt;rdfs:label rdf:datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;lat/long&lt;/rdfs:label&gt;<br/>
+    &lt;/rdf:Description&gt;<br/>
+&lt;/rdf:RDF&gt;<br/>
+<br/>
+<br/>
+<br/>
+&lt;!&ndash;&ndash; Generated by the OWL API (version 4.5.9.2019&ndash;02&ndash;01T07:24:44Z) https://github.com/owlcs/owlapi &ndash;&ndash;&gt;<br/>
+</body></html>
