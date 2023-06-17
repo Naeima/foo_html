@@ -8,13 +8,11 @@
         <pre>@prefix : &lt;http://www.ontology/ns/foo#&gt; .
 @prefix ns: &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt; .
 @prefix wo: &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/&gt; .
-@prefix foo: &lt;http://www.ontology/ns/foo#&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-@prefix foo1: &lt;http://www.ontology/ns/foo/1.1#&gt; .
-@prefix hasC: &lt;http://www.ontology/ns/foo#hasC:&gt; .
+@prefix foo: &lt;http://www.ontology/ns/foo/1.1#&gt; ..
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 @prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .
@@ -25,7 +23,7 @@
 @base &lt;http://www.ontology/ns/foo#&gt; .
 
 &lt;http://www.ontology/ns/foo#&gt; rdf:type owl:Ontology ;
-                               owl:versionIRI foo1: ;
+                               owl:versionIRI foo: ;
                                terms:license &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; 
                                terms:title &lt;Forest Observatory Ontology (FOO)&gt;
 
@@ -974,8 +972,8 @@ sosa:Sensor rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://www.DGFC/ontology/2021/1.0#C:P
-&lt;http://www.DGFC/ontology/2021/1.0#C:P&gt; rdf:type owl:NamedIndividual ,
+###  http://www.ontology/ns/foo/1.1#C:P
+&lt;http://www.ontology/ns/foo/1.1#C:P&gt; rdf:type owl:NamedIndividual ,
                                                  sosa:ObservableProperty ;
                                         sosa:hasSimpleResult "0.12"^^xsd:float ;
                                         skos:definition "carbon to inorganic phosphorus ratio of the soil sample" .
@@ -1046,8 +1044,8 @@ foo1:Cov rdf:type owl:NamedIndividual ,
          rdfs:comment "GPS collar dataset: satellite coverage, the higher number the stronger coverage." .
 
 
-###  http://www.ontology/ns/foo/1.1#DGFC_ID
-foo1:DGFC_ID rdf:type owl:NamedIndividual ,
+###  http://www.ontology/ns/foo/1.1#dgfc_ID
+foo1:dgfc_ID rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              sosa:hasResult "ID" ;
              skos:definition "An identifier that is unique for GPS collar sensor observation" .
@@ -1153,7 +1151,7 @@ foo1:Identifier rdf:type owl:NamedIndividual ,
                          sosa:ObservableProperty ,
                          sosa:Observation ;
                 sosa:hasFeatureOfInterest foo1:image ;
-                sosa:hasResult "DGFC_" ;
+                sosa:hasResult "dgfc_" ;
                 skos:definition "Unique Soil Sample Identifier" .
 
 
@@ -1267,7 +1265,7 @@ foo1:Soil_Moisture rdf:type owl:NamedIndividual ,
 foo1:Soil_Sensor rdf:type owl:NamedIndividual ,
                           sosa:Sensor ;
                  sosa:hasFeatureOfInterest foo1:Soil ;
-                 sosa:observedProperty &lt;http://www.DGFC/ontology/2021/1.0#C:P&gt; ,
+                 sosa:observedProperty &lt;http://www.ontology/ns/foo/1.1#C_:P&gt; ,
                                        foo1:Bulk_Density ,
                                        foo1:Horizon ,
                                        foo1:Horizon_Depth ,
@@ -1415,15 +1413,15 @@ foo1:C:N rdf:type owl:NamedIndividual ,
          skos:definition "carbon to nitrogen ratio of the soil sample" .
 
 
-###  http://www.schema.org/DGFC/Civets
-&lt;http://www.schema.org/DGFC/Civets&gt; rdf:type owl:NamedIndividual ,
+###  http://www.schema.org/dgfc/Civets
+&lt;http://www.schema.org/dgfc/Civets&gt; rdf:type owl:NamedIndividual ,
                                              &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Viverridae&gt; ,
                                              &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora&gt; ,
                                              &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata&gt; .
 
 
-###  http://www.schema.org/DGFC/python#Juling
-&lt;http://www.schema.org/DGFC/python#Juling&gt; rdf:type owl:NamedIndividual ,
+###  http://www.schema.org/dgfc/python#Juling
+&lt;http://www.schema.org/dgfc/python#Juling&gt; rdf:type owl:NamedIndividual ,
                                                     sosa:Sensor ;
                                            owl:sameAs &lt;http://www.schema.org/dgfc/python&gt; ;
                                            sosa:hasFeatureOfInterest &lt;http://www.schema.org/dgfc/python&gt; ;
@@ -1803,12 +1801,6 @@ terms:isPartOf terms:description "This property is intended to be used with non-
                rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
                rdfs:isDefinedBy terms: ;
                rdfs:label "Is Part Of"@en .
-
-
-&lt;http://purl.org/vocab/vann/preferredNamespacePrefix&gt; rdfs:comment &lt;http://www.FOO/DGFC&gt; .
-
-
-&lt;http://purl.org/vocab/vann/preferredNamespaceUri&gt; terms:title "http://www.FOO.org/DGFC/" .
 
 
 &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; rdfs:comment """
