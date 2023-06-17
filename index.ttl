@@ -967,12 +967,6 @@ sosa:Sensor rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://www.DGFC/ontology/2021/1.0#C:P
-<http://www.DGFC/ontology/2021/1.0#C:P> rdf:type owl:NamedIndividual ,
-                                                 sosa:ObservableProperty ;
-                                        sosa:hasSimpleResult "0.12"^^xsd:float ;
-                                        skos:definition "carbon to inorganic phosphorus ratio of the soil sample" .
-
 
 ###  http://www.ontology/ns/foo#Clay
 foo:Clay rdf:type owl:NamedIndividual ,
@@ -1260,7 +1254,7 @@ foo1:Soil_Moisture rdf:type owl:NamedIndividual ,
 foo1:Soil_Sensor rdf:type owl:NamedIndividual ,
                           sosa:Sensor ;
                  sosa:hasFeatureOfInterest foo1:Soil ;
-                 sosa:observedProperty <http://www.DGFC/ontology/2021/1.0#C:P> ,
+                 sosa:observedProperty <http://www.ontology/ns/foo/1.1#C:P> ,
                                        foo1:Bulk_Density ,
                                        foo1:Horizon ,
                                        foo1:Horizon_Depth ,
@@ -1408,15 +1402,15 @@ foo1:C:N rdf:type owl:NamedIndividual ,
          skos:definition "carbon to nitrogen ratio of the soil sample" .
 
 
-###  http://www.schema.org/DGFC/Civets
-<http://www.schema.org/DGFC/Civets> rdf:type owl:NamedIndividual ,
+###   http://www.schema.org/dgfc/#Civets
+<http://www.schema.org/dgfc/Civets> rdf:type owl:NamedIndividual ,
                                              <https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Viverridae> ,
                                              <https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora> ,
                                              <https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata> .
 
 
-###  http://www.schema.org/DGFC/python#Juling
-<http://www.schema.org/DGFC/python#Juling> rdf:type owl:NamedIndividual ,
+###   http://www.schema.org/dgfc/python#Juling
+<http://www.schema.org/dgfc/python#Juling> rdf:type owl:NamedIndividual ,
                                                     sosa:Sensor ;
                                            owl:sameAs <http://www.schema.org/dgfc/python> ;
                                            sosa:hasFeatureOfInterest <http://www.schema.org/dgfc/python> ;
@@ -1428,7 +1422,7 @@ foo1:C:N rdf:type owl:NamedIndividual ,
 
 ###  http://www.schema.org/dgfc/python
 
-###  http://www.schema.org/dgfc/Otter
+###   http://www.schema.org/dgfc/Otter
 <http://www.schema.org/dgfc/Otter> rdf:type owl:NamedIndividual ,
                                             <https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora> ,
                                             <https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata> ;
@@ -1796,12 +1790,6 @@ terms:isPartOf terms:description "This property is intended to be used with non-
                rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
                rdfs:isDefinedBy terms: ;
                rdfs:label "Is Part Of"@en .
-
-
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdfs:comment <http://www.FOO/DGFC> .
-
-
-<http://purl.org/vocab/vann/preferredNamespaceUri> terms:title "http://www.FOO.org/DGFC/" .
 
 
 <http://www.w3.org/2003/01/geo/wgs84_pos#> rdfs:comment """
