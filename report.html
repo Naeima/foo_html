@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>foo_html</title>
+    <title>Vocabulary report</title>
     <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
     <script src="vocab/js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
@@ -47,8 +47,8 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Vocabularies</a></li>
-        <li><a href="report.html">Vocabulary report</a></li>
+        <li ><a href="./index.html">Vocabularies</a></li>
+        <li class="active"><a href="#">Vocabulary report</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -57,32 +57,25 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>foo_html landing page</h1>
-        <p class="lead">Here you can find the list of vocabularies that have been found on foo_html.</p>
-      </div>
-      <hr>
-<div class="row"> 
-</div>
-<br>
-<table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+        <h1>Vocabulary report</h1>
+        <p class="lead">Below you can see the status report for the vocabularies included in this repo.</a></p>
+      </div><table class="table table-hover table-responsive">
 <thead>
 <tr>
-<th class="col-md-2">Ontology</th>
-<th class="col-md-1">Serialization</th>
-<th class="col-md-2">License</th>
-<th class="col-md-1">Language</th>
-<th class="col-md-6">Description</th>
+<th class="col-md-4">Ontology</th>
+<th class="col-md-2">Status</th>
+<th class="col-md-6">Problem</th>
 </tr>
 </thead>
 <tbody>
-<tr id="tr1">
-<td><a href = "/home/ahmad/repos/prevclone-0ZIs/index.ttl" target="_blank">Undefined</a> </td><td>
-</td>
-<td><a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"> <span class="label label-success">http://creativecommons.org/li...</span> </a></td>
-<td></td>
+  <tr>
+<td><a href = "/home/ahmad/repos/prevclone-0ZIs/index.ttl" target="_blank">index.ttl</a></td>
 <td>
+<span class="label label-warning">Warning</span>
 </td>
-</tr></tbody></table>
+<td>Warning: title or description missing from vocabulary; </td>
+</tr>
+</tbody></table>
 <hr>
       <footer class="footer">
            <footer class="footer">
@@ -100,3 +93,5 @@
       </footer>      </div>
       </footer>
     </div> <!-- /container -->
+  </body>
+</html>
