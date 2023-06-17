@@ -7,7 +7,7 @@
     <body>
         <pre>@prefix : &lt;http://www.ontology/ns/foo#&gt; .
 @prefix ns: &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt; .
-@prefix wo: &lt;http://purl.org/ontology/wo/&gt; .
+@prefix wo: &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/&gt; .
 @prefix foo: &lt;http://www.ontology/ns/foo#&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
@@ -99,7 +99,7 @@ skos:example rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://purl.org/ontology/wo/class
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/class
 wo:class rdf:type owl:ObjectProperty ;
          rdfs:domain wo:TaxonRank ;
          rdfs:range wo:Class ;
@@ -109,7 +109,7 @@ wo:class rdf:type owl:ObjectProperty ;
          ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/family
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/family
 wo:family rdf:type owl:ObjectProperty ;
           rdfs:domain wo:TaxonRank ;
           rdfs:range wo:Family ;
@@ -119,7 +119,7 @@ wo:family rdf:type owl:ObjectProperty ;
           ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/genus
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/genus
 wo:genus rdf:type owl:ObjectProperty ;
          rdfs:domain wo:TaxonRank ;
          rdfs:range wo:Genus ;
@@ -129,7 +129,7 @@ wo:genus rdf:type owl:ObjectProperty ;
          ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/habitat
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/habitat
 wo:habitat rdf:type owl:ObjectProperty ;
            rdfs:domain wo:TaxonRank ;
            rdfs:range wo:Habitat ;
@@ -139,7 +139,7 @@ wo:habitat rdf:type owl:ObjectProperty ;
            ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/kingdom
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/kingdom
 wo:kingdom rdf:type owl:ObjectProperty ;
            rdfs:domain wo:TaxonRank ;
            rdfs:range wo:Kingdom ;
@@ -149,7 +149,7 @@ wo:kingdom rdf:type owl:ObjectProperty ;
            ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/livesIn
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/livesIn
 wo:livesIn rdf:type owl:ObjectProperty ;
            rdfs:domain wo:TaxonRank ;
            rdfs:range wo:Habitat ;
@@ -159,7 +159,7 @@ wo:livesIn rdf:type owl:ObjectProperty ;
            ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/order
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/order
 wo:order rdf:type owl:ObjectProperty ;
          rdfs:domain wo:TaxonRank ;
          rdfs:range wo:Kingdom ;
@@ -169,7 +169,7 @@ wo:order rdf:type owl:ObjectProperty ;
          ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/phylum
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/phylum
 wo:phylum rdf:type owl:ObjectProperty ;
           rdfs:domain wo:TaxonRank ;
           rdfs:range wo:Phylum ;
@@ -179,7 +179,7 @@ wo:phylum rdf:type owl:ObjectProperty ;
           ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/species
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/species
 wo:species rdf:type owl:ObjectProperty ;
            rdfs:domain wo:TaxonRank ;
            rdfs:range wo:Species ;
@@ -640,7 +640,7 @@ terms:ProvenanceStatement rdf:type owl:Class ;
                           rdfs:label "Provenance Statement"@en .
 
 
-###  http://purl.org/ontology/wo/Class
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Class
 wo:Class rdf:type owl:Class ;
          owl:equivalentClass wo:Family ;
          rdfs:subClassOf wo:TaxonRank ;
@@ -653,7 +653,7 @@ wo:Class rdf:type owl:Class ;
          ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Family
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Family
 wo:Family rdf:type owl:Class ;
           rdfs:subClassOf wo:TaxonRank ;
           metadata:prefixIRI "wo:Family" ;
@@ -665,7 +665,7 @@ wo:Family rdf:type owl:Class ;
           ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/FreshwaterHabitat
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/FreshwaterHabitat
 wo:FreshwaterHabitat rdf:type owl:Class ;
                      rdfs:subClassOf wo:Habitat ;
                      metadata:prefixIRI "wo:FreshwaterHabitat" ;
@@ -675,7 +675,7 @@ wo:FreshwaterHabitat rdf:type owl:Class ;
                      ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Genus
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Genus
 wo:Genus rdf:type owl:Class ;
          rdfs:subClassOf wo:TaxonRank ;
          metadata:prefixIRI "wo:Genus" ;
@@ -687,7 +687,7 @@ wo:Genus rdf:type owl:Class ;
          ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Habitat
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Habitat
 wo:Habitat rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing ;
            metadata:prefixIRI "wo:Habitat" ;
@@ -699,7 +699,7 @@ wo:Habitat rdf:type owl:Class ;
            ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Kingdom
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Kingdom
 wo:Kingdom rdf:type owl:Class ;
            rdfs:subClassOf wo:TaxonRank ;
            metadata:prefixIRI "wo:Kingdom" ;
@@ -711,7 +711,7 @@ wo:Kingdom rdf:type owl:Class ;
            ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/MarineHabitat
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/MarineHabitat
 wo:MarineHabitat rdf:type owl:Class ;
                  rdfs:subClassOf wo:Habitat ;
                  metadata:prefixIRI "wo:MarineHabitat" ;
@@ -721,7 +721,7 @@ wo:MarineHabitat rdf:type owl:Class ;
                  ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Order
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Order
 wo:Order rdf:type owl:Class ;
          rdfs:subClassOf wo:TaxonRank ;
          metadata:prefixIRI "wo:Order" ;
@@ -733,7 +733,7 @@ wo:Order rdf:type owl:Class ;
          ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Phylum
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum
 wo:Phylum rdf:type owl:Class ;
           rdfs:subClassOf wo:TaxonRank ;
           metadata:prefixIRI "wo:Phylum" ;
@@ -745,7 +745,7 @@ wo:Phylum rdf:type owl:Class ;
           ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Species
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Species
 wo:Species rdf:type owl:Class ;
            rdfs:subClassOf wo:TaxonRank ;
            metadata:prefixIRI "wo:Species" ;
@@ -757,7 +757,7 @@ wo:Species rdf:type owl:Class ;
            ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/TaxonName
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/TaxonName
 wo:TaxonName rdf:type owl:Class ;
              rdfs:subClassOf owl:Thing ;
              owl:disjointWith wo:TaxonRank ;
@@ -768,7 +768,7 @@ wo:TaxonName rdf:type owl:Class ;
              ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/TaxonRank
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/TaxonRank
 wo:TaxonRank rdf:type owl:Class ;
              rdfs:subClassOf owl:Thing ;
              metadata:prefixIRI "wo:TaxonRank" ;
@@ -779,7 +779,7 @@ wo:TaxonRank rdf:type owl:Class ;
              ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/TerrestrialHabitat
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/TerrestrialHabitat
 wo:TerrestrialHabitat rdf:type owl:Class ;
                       rdfs:subClassOf wo:Habitat ;
                       metadata:prefixIRI "wo:TerrestrialHabitat" ;
@@ -789,35 +789,35 @@ wo:TerrestrialHabitat rdf:type owl:Class ;
                       ns:term_status "testing" .
 
 
-###  http://purl.org/ontology/wo/Class/Mammalia
-&lt;http://purl.org/ontology/wo/Class/Mammalia&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Class/Mammalia
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Class/Mammalia&gt; rdf:type owl:Class ;
                                              rdfs:subClassOf wo:Class ;
                                              rdfs:comment """The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.
 https://www.merriam-webster.com/dictionary/Elephantidae""" .
 
 
-###  http://purl.org/ontology/wo/Class/Reptilia
-&lt;http://purl.org/ontology/wo/Class/Reptilia&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Class/Reptilia
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Class/Reptilia&gt; rdf:type owl:Class ;
                                              rdfs:subClassOf wo:Class ;
                                              rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land." .
 
 
-###  http://purl.org/ontology/wo/Family/Elephantidae
-&lt;http://purl.org/ontology/wo/Family/Elephantidae&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Elephantidae
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Elephantidae&gt; rdf:type owl:Class ;
                                                   rdfs:subClassOf wo:Family ;
                                                   rdfs:comment """ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.
 Source: https://www.merriam-webster.com/dictionary/Elephantidae""" .
 
 
-###  http://purl.org/ontology/wo/Family/Viverridae
-&lt;http://purl.org/ontology/wo/Family/Viverridae&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Viverridae
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Viverridae&gt; rdf:type owl:Class ;
                                                 rdfs:subClassOf wo:Family ;
                                                 rdfs:isDefinedBy "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line" ,
                                                                  "https://en.wikipedia.org/wiki/Viverridae" .
 
 
-###  http://purl.org/ontology/wo/Kingdom/Animalia
-&lt;http://purl.org/ontology/wo/Kingdom/Animalia&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Kingdom/Animalia
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Kingdom/Animalia&gt; rdf:type owl:Class ;
                                                rdfs:subClassOf wo:Kingdom ;
                                                rdfs:comment """Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.
 
@@ -825,39 +825,39 @@ All members of the kingdom Animalia share three key traits. They are multicellul
 source:https://study.com/learn/lesson/animalia-kingdom-examples-characteristics-facts.html""" .
 
 
-###  http://purl.org/ontology/wo/Order/Carnivora
-&lt;http://purl.org/ontology/wo/Order/Carnivora&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora&gt; rdf:type owl:Class ;
                                               rdfs:subClassOf wo:Order ;
                                               rdfs:comment "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh." ;
                                               rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Carnivora" .
 
 
-###  http://purl.org/ontology/wo/Order/Proboscidea
-&lt;http://purl.org/ontology/wo/Order/Proboscidea&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Proboscidea
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Proboscidea&gt; rdf:type owl:Class ;
                                                 rdfs:subClassOf wo:Order ;
                                                 rdfs:comment """Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.
 https://www.merriam-webster.com/dictionary/proboscidean""" .
 
 
-###  http://purl.org/ontology/wo/Order/Squamata
-&lt;http://purl.org/ontology/wo/Order/Squamata&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Squamata
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Squamata&gt; rdf:type owl:Class ;
                                              rdfs:subClassOf wo:Order .
 
 
-###  http://purl.org/ontology/wo/Phylum/Chordata
-&lt;http://purl.org/ontology/wo/Phylum/Chordata&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata&gt; rdf:type owl:Class ;
                                               rdfs:subClassOf wo:Phylum ;
                                               rdfs:comment """A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.
 Source: google.com""" .
 
 
-###  http://purl.org/ontology/wo/TaxonName/Civettictis
-&lt;http://purl.org/ontology/wo/TaxonName/Civettictis&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/TaxonName/Civettictis
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/TaxonName/Civettictis&gt; rdf:type owl:Class ;
                                                     rdfs:subClassOf wo:TaxonName .
 
 
-###  http://purl.org/ontology/wo/TaxonName/Loxodonta
-&lt;http://purl.org/ontology/wo/TaxonName/Loxodonta&gt; rdf:type owl:Class ;
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology/TaxonName/Loxodonta
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/TaxonName/Loxodonta&gt; rdf:type owl:Class ;
                                                   rdfs:subClassOf wo:TaxonName .
 
 
@@ -1417,9 +1417,9 @@ foo1:C:N rdf:type owl:NamedIndividual ,
 
 ###  http://www.schema.org/DGFC/Civets
 &lt;http://www.schema.org/DGFC/Civets&gt; rdf:type owl:NamedIndividual ,
-                                             &lt;http://purl.org/ontology/wo/Family/Viverridae&gt; ,
-                                             &lt;http://purl.org/ontology/wo/Order/Carnivora&gt; ,
-                                             &lt;http://purl.org/ontology/wo/Phylum/Chordata&gt; .
+                                             &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Family/Viverridae&gt; ,
+                                             &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora&gt; ,
+                                             &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata&gt; .
 
 
 ###  http://www.schema.org/DGFC/python#Juling
@@ -1437,16 +1437,16 @@ foo1:C:N rdf:type owl:NamedIndividual ,
 
 ###  http://www.schema.org/dgfc/Otter
 &lt;http://www.schema.org/dgfc/Otter&gt; rdf:type owl:NamedIndividual ,
-                                            &lt;http://purl.org/ontology/wo/Order/Carnivora&gt; ,
-                                            &lt;http://purl.org/ontology/wo/Phylum/Chordata&gt; ;
+                                            &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Carnivora&gt; ,
+                                            &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata&gt; ;
                                    rdfs:comment "Otter is a carnivorous mammal." .
 
 
 ###  http://www.schema.org/dgfc/python
 &lt;http://www.schema.org/dgfc/python&gt; rdf:type owl:NamedIndividual ,
-                                             &lt;http://purl.org/ontology/wo/Class/Reptilia&gt; ,
-                                             &lt;http://purl.org/ontology/wo/Order/Squamata&gt; ,
-                                             &lt;http://purl.org/ontology/wo/Phylum/Chordata&gt; ,
+                                             &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Class/Reptilia&gt; ,
+                                             &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Order/Squamata&gt; ,
+                                             &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology/Phylum/Chordata&gt; ,
                                              sosa:FeatureOfInterest .
 
 
