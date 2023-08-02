@@ -1,12 +1,11 @@
-@prefix : <http://www.ontology/ns/foo#> .
+@prefix foo: <https://w3id.org/def/foo/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix wo: <https://www.bbc.co.uk/ontologies/wildlife-ontology/> .
-@prefix foo: <http://www.ontology/ns/foo#> .
+@prefix foo: <https://w3id.org/def/foo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix foo1: <http://www.ontology/ns/foo/1.1#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -14,10 +13,10 @@
 @prefix schema: <http://schema.org/> .
 @prefix iot-lite: <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#> .
 @prefix metadata: <http://data.bioontology.org/metadata/> .
-@base <http://www.ontology/ns/foo#> .
+@base <https://w3id.org/def/foo/> .
 
-<http://www.ontology/ns/foo#> rdf:type owl:Ontology ;
-                               owl:versionIRI foo1: ;
+<https://w3id.org/def/foo/> rdf:type owl:Ontology ;
+                               owl:versionIRI foo: ;
                                terms:license <http://creativecommons.org/licenses/by-sa/4.0/> 
                                terms:title <Forest Observatory Ontology (FOO)>
 
@@ -62,7 +61,7 @@ terms:title rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 &Tt;http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty ;
-                                                   &It;http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.ontology/ns/foo#"^^xsd:anyURI .
+                                                   &It;http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/foo/"^^xsd:anyURI .
 
 
 ###  http://schema.org/domainIncludes
@@ -294,272 +293,272 @@ sosa:observes rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.ontology/ns/foo#PDOP
+###  https://w3id.org/def/foo/PDOP
 foo:PDOP rdf:type owl:DatatypeProperty ;
          rdfs:domain sosa:ObservableProperty ;
          rdfs:range xsd:integer .
 
 
-###  http://www.ontology/ns/foo#Source_of_dates
+###  https://w3id.org/def/foo/Source_of_dates
 foo:Source_of_dates rdf:type owl:DatatypeProperty ;
                     rdfs:domain sosa:ObservableProperty ;
                     rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasClay
+###  https://w3id.org/def/foo/hasClay
 foo:hasClay rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasCount
+###  https://w3id.org/def/foo/hasCount
 foo:hasCount rdf:type owl:DatatypeProperty ;
              rdfs:domain sosa:ObservableProperty ;
              rdfs:range xsd:integer .
 
 
-###  http://www.ontology/ns/foo#hasCov
+###  https://w3id.org/def/foo/hasCov
 foo:hasCov rdf:type owl:DatatypeProperty ;
            rdfs:domain sosa:ObservableProperty ;
            rdfs:range xsd:integer .
 
 
-###  http://www.ontology/ns/foo#hasDirection
+###  https://w3id.org/def/foo/hasDirection
 foo:hasDirection rdf:type owl:DatatypeProperty ;
                  rdfs:domain sosa:ObservableProperty ;
                  rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasDistance
+###  https://w3id.org/def/foo/hasDistance
 foo:hasDistance rdf:type owl:DatatypeProperty ;
                 rdfs:domain sosa:ObservableProperty ;
                 rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasDisturbance
+###  https://w3id.org/def/foo/hasDisturbance
 foo:hasDisturbance rdf:type owl:DatatypeProperty ;
                    rdfs:domain sosa:ObservableProperty ;
                    rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasElevation_masi
+###  https://w3id.org/def/foo/hasElevation_masi
 foo:hasElevation_masi rdf:type owl:DatatypeProperty ;
                       rdfs:domain sosa:ObservableProperty ;
                       rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasFirst_planning_nearest_OP
+###  https://w3id.org/def/foo/hasFirst_planning_nearest_OP
 foo:hasFirst_planning_nearest_OP rdf:type owl:DatatypeProperty ;
                                  rdfs:domain sosa:ObservableProperty ;
                                  rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasHDOP
+###  https://w3id.org/def/foo/hasHDOP
 foo:hasHDOP rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:integer .
 
 
-###  http://www.ontology/ns/foo#hasHorizon
+###  https://w3id.org/def/foo/hasHorizon
 foo:hasHorizon rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasInorganic_P
+###  https://w3id.org/def/foo/hasInorganic_P
 foo:hasInorganic_P rdf:type owl:DatatypeProperty ;
                    rdfs:domain sosa:ObservableProperty ;
                    rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasLand_Use
+###  https://w3id.org/def/foo/hasLand_Use
 foo:hasLand_Use rdf:type owl:DatatypeProperty ;
                 rdfs:domain sosa:ObservableProperty ;
                 rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasLiana_dbh_cm
+###  https://w3id.org/def/foo/hasLiana_dbh_cm
 foo:hasLiana_dbh_cm rdf:type owl:DatatypeProperty ;
                     rdfs:domain sosa:ObservableProperty ;
                     rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasLocalDate
+###  https://w3id.org/def/foo/hasLocalDate
 foo:hasLocalDate rdf:type owl:DatatypeProperty ;
                  rdfs:domain sosa:ObservableProperty ;
                  rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasMake
+###  https://w3id.org/def/foo/hasMake
 foo:hasMake rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasModel
+###  https://w3id.org/def/foo/hasModel
 foo:hasModel rdf:type owl:DatatypeProperty ;
              rdfs:domain sosa:ObservableProperty ;
              rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasMoisture
+###  https://w3id.org/def/foo/hasMoisture
 foo:hasMoisture rdf:type owl:DatatypeProperty ;
                 rdfs:domain sosa:ObservableProperty ;
                 rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasName
+###  https://w3id.org/def/foo/hasName
 foo:hasName rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasPath
+###  https://w3id.org/def/foo/hasPath
 foo:hasPath rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:anyURI .
 
 
-###  http://www.ontology/ns/foo#hasPlot_Name
+###  https://w3id.org/def/foo/hasPlot_Name
 foo:hasPlot_Name rdf:type owl:DatatypeProperty ;
                  rdfs:domain sosa:ObservableProperty ;
                  rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasReplanting_nearest_OP
+###  https://w3id.org/def/foo/hasReplanting_nearest_OP
 foo:hasReplanting_nearest_OP rdf:type owl:DatatypeProperty ;
                              rdfs:domain sosa:ObservableProperty ;
                              rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasSand
+###  https://w3id.org/def/foo/hasSand
 foo:hasSand rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasSilt
+###  https://w3id.org/def/foo/hasSilt
 foo:hasSilt rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasSite_name
+###  https://w3id.org/def/foo/hasSite_name
 foo:hasSite_name rdf:type owl:DatatypeProperty ;
                  rdfs:domain sosa:ObservableProperty ;
                  rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasSite_plot_code
+###  https://w3id.org/def/foo/hasSite_plot_code
 foo:hasSite_plot_code rdf:type owl:DatatypeProperty ;
                       rdfs:domain sosa:ObservableProperty ;
                       rdfs:range rdfs:Literal .
 
 
-###  http://www.ontology/ns/foo#hasSoil_pH
+###  https://w3id.org/def/foo/hasSoil_pH
 foo:hasSoil_pH rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasSpeed
+###  https://w3id.org/def/foo/hasSpeed
 foo:hasSpeed rdf:type owl:DatatypeProperty ;
              rdfs:domain sosa:ObservableProperty ;
              rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasSubplot
+###  https://w3id.org/def/foo/hasSubplot
 foo:hasSubplot rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range rdfs:Literal .
 
 
-###  http://www.ontology/ns/foo#hasSubplot_radius_m
+###  https://w3id.org/def/foo/hasSubplot_radius_m
 foo:hasSubplot_radius_m rdf:type owl:DatatypeProperty ;
                         rdfs:domain sosa:ObservableProperty ;
                         rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasTemp
+###  https://w3id.org/def/foo/hasTemp
 foo:hasTemp rdf:type owl:DatatypeProperty ;
             rdfs:domain sosa:ObservableProperty ;
             rdfs:range xsd:double .
 
 
-###  http://www.ontology/ns/foo#hasTemperature
+###  https://w3id.org/def/foo/hasTemperature
 foo:hasTemperature rdf:type owl:DatatypeProperty ;
                    rdfs:domain sosa:ObservableProperty ;
                    rdfs:range xsd:double .
 
 
-###  http://www.ontology/ns/foo#hasTotal_C
+###  https://w3id.org/def/foo/hasTotal_C
 foo:hasTotal_C rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasTotal_N
+###  https://w3id.org/def/foo/hasTotal_N
 foo:hasTotal_N rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasTotal_P
+###  https://w3id.org/def/foo/hasTotal_P
 foo:hasTotal_P rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasTree_ID
+###  https://w3id.org/def/foo/hasTree_ID
 foo:hasTree_ID rdf:type owl:DatatypeProperty ;
                rdfs:domain sosa:ObservableProperty ;
                rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasTree_dbh_cm
+###  https://w3id.org/def/foo/hasTree_dbh_cm
 foo:hasTree_dbh_cm rdf:type owl:DatatypeProperty ;
                    rdfs:domain sosa:ObservableProperty ;
                    rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasTree_height_m
+###  https://w3id.org/def/foo/hasTree_height_m
 foo:hasTree_height_m rdf:type owl:DatatypeProperty ;
                      rdfs:domain sosa:ObservableProperty ;
                      rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasTree_individual_no
+###  https://w3id.org/def/foo/hasTree_individual_no
 foo:hasTree_individual_no rdf:type owl:DatatypeProperty ;
                           rdfs:domain sosa:ObservableProperty ;
                           rdfs:range xsd:integer .
 
 
-###  http://www.ontology/ns/foo#hasTree_notes
+###  https://w3id.org/def/foo/hasTree_notes
 foo:hasTree_notes rdf:type owl:DatatypeProperty ;
                   rdfs:domain sosa:ObservableProperty ;
                   rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#hasYears_since_frag
+###  https://w3id.org/def/foo/hasYears_since_frag
 foo:hasYears_since_frag rdf:type owl:DatatypeProperty ;
                         rdfs:domain sosa:ObservableProperty ;
                         rdfs:range xsd:string .
 
 
-###  http://www.ontology/ns/foo#C:P
+###  https://w3id.org/def/foo/C:P
 foo:C:P rdf:type owl:DatatypeProperty ;
         rdfs:domain sosa:ObservableProperty ;
         rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo#hasC:N
+###  https://w3id.org/def/foo/hasC:N
 hasC:N rdf:type owl:DatatypeProperty ;
        rdfs:domain sosa:ObservableProperty ;
        rdfs:range xsd:float .
 
 
-###  http://www.ontology/ns/foo/1.1#hasValue
+###  https://w3id.org/def/foo/hasValue
 foo1:hasValue rdf:type owl:DatatypeProperty ;
               rdfs:domain sosa:ObservableProperty ;
               rdfs:range rdfs:Literal .
@@ -967,41 +966,41 @@ sosa:Sensor rdf:type owl:Class ;
 #################################################################
 
 
-###  http://www.ontology/ns/foo#Clay
+###  https://w3id.org/def/foo/Clay
 foo:Clay rdf:type owl:NamedIndividual ,
                   sosa:ObservableProperty ;
          foo:hasClay "2.3"^^xsd:float .
 
 
-###  http://www.ontology/ns/foo#ID
+###  https://w3id.org/def/foo/ID
 foo:ID rdf:type owl:NamedIndividual ,
                 sosa:Observation ;
        sosa:hasResult "\"foo_\"" .
 
 
-###  http://www.ontology/ns/foo#LocalDate
+###  https://w3id.org/def/foo/LocalDate
 foo:LocalDate rdf:type owl:NamedIndividual ,
                        sosa:ObservableProperty ;
               sosa:resultTime "2005-11-12T12:05:05"^^xsd:dateTime .
 
 
-###  http://www.ontology/ns/foo#LocalTime
+###  https://w3id.org/def/foo/LocalTime
 foo:LocalTime rdf:type owl:NamedIndividual ;
               sosa:resultTime "2005-11-12T12:05:05"^^xsd:dateTime .
 
 
-###  http://www.ontology/ns/foo#Silt
+###  https://w3id.org/def/foo/Silt
 foo:Silt rdf:type owl:NamedIndividual .
 
 
-###  http://www.ontology/ns/foo/1.1#Bulk_Density
+###  https://w3id.org/def/foo/Bulk_Density
 foo1:Bulk_Density rdf:type owl:NamedIndividual ,
                            sosa:ObservableProperty ;
                   foo1:hasValue "0.6"^^xsd:float ;
                   skos:definition "Measured Bulk Density of soil sample" .
 
 
-###  http://www.ontology/ns/foo/1.1#CameraTrap
+###  https://w3id.org/def/foo/CameraTrap
 foo1:CameraTrap rdf:type owl:NamedIndividual ,
                          sosa:Sensor ;
                 sosa:hasFeatureOfInterest foo1:image ;
@@ -1018,123 +1017,123 @@ foo1:CameraTrap rdf:type owl:NamedIndividual ,
                 rdfs:comment "Wildlife cameras with embeded sensors to capture moving objects." .
 
 
-###  http://www.ontology/ns/foo/1.1#Count
+###  https://w3id.org/def/foo/Count
 foo1:Count rdf:type owl:NamedIndividual ,
                     sosa:ObservableProperty ;
            foo:hasCount 1 ;
            rdfs:comment "GPS collar dataset's observation count per dataset" .
 
 
-###  http://www.ontology/ns/foo/1.1#Cov
+###  https://w3id.org/def/foo/Cov
 foo1:Cov rdf:type owl:NamedIndividual ,
                   sosa:ObservableProperty ;
          foo:hasCov 1 ;
          rdfs:comment "GPS collar dataset: satellite coverage, the higher number the stronger coverage." .
 
 
-###  http://www.ontology/ns/foo/1.1#DGFC_ID
+###  https://w3id.org/def/foo/DGFC_ID
 foo1:DGFC_ID rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              sosa:hasResult "ID" ;
              skos:definition "An identifier that is unique for GPS collar sensor observation" .
 
 
-###  http://www.ontology/ns/foo/1.1#DateTime
+###  https://w3id.org/def/foo/DateTime
 foo1:DateTime rdf:type owl:NamedIndividual ,
                        sosa:ObservableProperty ;
               sosa:resultTime "2013-07-06T21:03:17"^^xsd:dateTime ;
               rdfs:comment "The date and time of the GPS collar observation" .
 
 
-###  http://www.ontology/ns/foo/1.1#Direction
+###  https://w3id.org/def/foo/Direction
 foo1:Direction rdf:type owl:NamedIndividual ,
                         sosa:ObservableProperty ;
                foo:hasDirection "0.4"^^xsd:float ;
                rdfs:comment "Direction that the elephant is travelling at the current data collection instant." .
 
 
-###  http://www.ontology/ns/foo/1.1#Distance
+###  https://w3id.org/def/foo/Distance
 foo1:Distance rdf:type owl:NamedIndividual ,
                        sosa:ObservableProperty ;
               foo:hasDistance "1.2"^^xsd:float ;
               rdfs:comment "Distance (m) travelled from the previous data collection instant to the present." .
 
 
-###  http://www.ontology/ns/foo/1.1#Disturbance
+###  https://w3id.org/def/foo/Disturbance
 foo1:Disturbance rdf:type owl:NamedIndividual ,
                           sosa:ObservableProperty ;
                  foo:hasDisturbance "logged" ;
                  skos:definition "degree of logging at the site, on of \"Old-growth\", \"Twic logged\", Logged\" (when number of logging operations unknown)" .
 
 
-###  http://www.ontology/ns/foo/1.1#ElephasMaximus
+###  https://w3id.org/def/foo/ElephasMaximus
 foo1:ElephasMaximus rdf:type owl:NamedIndividual ,
                              sosa:FeatureOfInterest .
 
 
-###  http://www.ontology/ns/foo/1.1#Elevation_masl
+###  https://w3id.org/def/foo/Elevation_masl
 foo1:Elevation_masl rdf:type owl:NamedIndividual ,
                              sosa:ObservableProperty ;
                     foo:hasElevation_masi "5.2"^^xsd:float ;
                     rdfs:comment "Elevation at the plot centre, in metres above sea level" .
 
 
-###  http://www.ontology/ns/foo/1.1#ExtTemp
+###  https://w3id.org/def/foo/ExtTemp
 foo1:ExtTemp rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              foo:hasTemp "27.0"^^xsd:double ;
              rdfs:comment "External Temperature of the elephant at data collection instant" .
 
 
-###  http://www.ontology/ns/foo/1.1#First_planting_nearest_OP
+###  https://w3id.org/def/foo/First_planting_nearest_OP
 foo1:First_planting_nearest_OP rdf:type owl:NamedIndividual ;
                                foo:hasFirst_planning_nearest_OP "2005" ;
                                skos:definition "Year palm adjacent to the forest site" .
 
 
-###  http://www.ontology/ns/foo/1.1#Forest_type
+###  https://w3id.org/def/foo/Forest_type
 foo1:Forest_type rdf:type owl:NamedIndividual ,
                           sosa:ObservableProperty ;
                  sosa:hasSimpleResult "HCV High Conservation Value" ;
                  skos:definition "type of forest site, one of \"Continous primary\", \"Continous logged\", \"HCV\" (i.e., High Conservation Value; fragmented sites in oil palm plantations)" .
 
 
-###  http://www.ontology/ns/foo/1.1#GMTDate
+###  https://w3id.org/def/foo/GMTDate
 foo1:GMTDate rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              sosa:resultTime "2014-04-12T13:20:00"^^xsd:dateTime ;
              skos:definition "The GMT date in Sabah, Malaysia when the GPS collar collected  its readings." .
 
 
-###  http://www.ontology/ns/foo/1.1#GMTTime
+###  https://w3id.org/def/foo/GMTTime
 foo1:GMTTime rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              sosa:resultTime "2014-04-12T13:20:00"^^xsd:dateTime ;
              rdfs:comment "The current local date in Sabah, Malaysia when the image collects its readings." .
 
 
-###  http://www.ontology/ns/foo/1.1#HDOP
+###  https://w3id.org/def/foo/HDOP
 foo1:HDOP rdf:type owl:NamedIndividual ,
                    sosa:ObservableProperty ;
           sosa:hasSimpleResult 1 ;
           rdfs:comment "Horizontal Dilution of Precision (HDOP) measures GPS accuracy in Latitude and Longitude. The lower value the better precision." .
 
 
-###  http://www.ontology/ns/foo/1.1#Horizon
+###  https://w3id.org/def/foo/Horizon
 foo1:Horizon rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              sosa:hasSimpleResult "Sample_Name" ;
              skos:definition "Soil horizon sampled" .
 
 
-###  http://www.ontology/ns/foo/1.1#Horizon_Depth
+###  https://w3id.org/def/foo/Horizon_Depth
 foo1:Horizon_Depth rdf:type owl:NamedIndividual ,
                             sosa:ObservableProperty ;
                    sosa:hasSimpleResult "2.5"^^xsd:float ;
                    skos:definition "Depth of the organic soil horizon sampled" .
 
 
-###  http://www.ontology/ns/foo/1.1#Identifier
+###  https://w3id.org/def/foo/Identifier
 foo1:Identifier rdf:type owl:NamedIndividual ,
                          sosa:ObservableProperty ,
                          sosa:Observation ;
@@ -1143,7 +1142,7 @@ foo1:Identifier rdf:type owl:NamedIndividual ,
                 skos:definition "Unique Soil Sample Identifier" .
 
 
-###  http://www.ontology/ns/foo/1.1#Land_Use
+###  https://w3id.org/def/foo/Land_Use
 foo1:Land_Use rdf:type owl:NamedIndividual ,
                        sosa:ObservableProperty ;
               foo:hasLand_Use "plants" ;
@@ -1151,109 +1150,109 @@ foo1:Land_Use rdf:type owl:NamedIndividual ,
               skos:definition "Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation" .
 
 
-###  http://www.ontology/ns/foo/1.1#Lat
+###  https://w3id.org/def/foo/Lat
 foo1:Lat rdf:type owl:NamedIndividual ,
                   <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
          rdfs:comment "The geographical latitude of the observation location" .
 
 
-###  http://www.ontology/ns/foo/1.1#Long
+###  https://w3id.org/def/foo/Long
 foo1:Long rdf:type owl:NamedIndividual ,
                    <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
           rdfs:comment "The geographical longitude of a sensor observation location" .
 
 
-###  http://www.ontology/ns/foo/1.1#Loxodonta
+###  https://w3id.org/def/foo/Loxodonta
 foo1:Loxodonta rdf:type owl:NamedIndividual ,
                         sosa:FeatureOfInterest ;
                rdfs:comment "African elephant" .
 
 
-###  http://www.ontology/ns/foo/1.1#Mustelidae
+###  https://w3id.org/def/foo/Mustelidae
 foo1:Mustelidae rdf:type owl:NamedIndividual ,
                          sosa:FeatureOfInterest ;
                 wo:family foo1:Mustelidae .
 
 
-###  http://www.ontology/ns/foo/1.1#Name
+###  https://w3id.org/def/foo/Name
 foo1:Name rdf:type owl:NamedIndividual ,
                    sosa:ObservableProperty ;
           foo:hasName "Imahe_name" ;
           skos:definition "The named assigned to an image at collection time" .
 
 
-###  http://www.ontology/ns/foo/1.1#PDOP
+###  https://w3id.org/def/foo/PDOP
 foo1:PDOP rdf:type owl:NamedIndividual ,
                    sosa:ObservableProperty ;
           foo:PDOP 3 ;
           rdfs:comment "Positional Dilution of Precision (DDOP) describes the error caused by the relative position of the GPS satellites. The more signals a GPS reciever can \"see\" (speard vs near each other), the more precise it can be." .
 
 
-###  http://www.ontology/ns/foo/1.1#Path
+###  https://w3id.org/def/foo/Path
 foo1:Path rdf:type owl:NamedIndividual ;
           foo:hasPath "example.com"^^xsd:anyURI ;
           skos:definition "The URI to point at the location of the image in secure cloud" .
 
 
-###  http://www.ontology/ns/foo/1.1#Plot_Name
+###  https://w3id.org/def/foo/Plot_Name
 foo1:Plot_Name rdf:type owl:NamedIndividual ;
                foo:hasPlot_Name "NAME" ;
                skos:definition "Name of the 1 Ha plot sampled" .
 
 
-###  http://www.ontology/ns/foo/1.1#Replanting_nearest_OP
+###  https://w3id.org/def/foo/Replanting_nearest_OP
 foo1:Replanting_nearest_OP rdf:type owl:NamedIndividual ,
                                     sosa:ObservableProperty ;
                            foo:hasReplanting_nearest_OP "2008" ;
                            skos:definition "Year of any replanting of oil palm adjacent to the forest site (fragmented sites where adjacent oil palm had undergone a second round of planting)" .
 
 
-###  http://www.ontology/ns/foo/1.1#Site
+###  https://w3id.org/def/foo/Site
 foo1:Site rdf:type owl:NamedIndividual ,
                    sosa:FeatureOfInterest ;
           sosa:hasSimpleResult "\"Valley\"" ;
           skos:definition "Geographical area/site which samples were taken from" .
 
 
-###  http://www.ontology/ns/foo/1.1#Site_code
+###  https://w3id.org/def/foo/Site_code
 foo1:Site_code rdf:type owl:NamedIndividual ,
                         sosa:ObservableProperty ;
                sosa:hasSimpleResult 18 ;
                skos:definition "code for the study site, in the format Fa (where a can be 1-18)" .
 
 
-###  http://www.ontology/ns/foo/1.1#Site_name
+###  https://w3id.org/def/foo/Site_name
 foo1:Site_name rdf:type owl:NamedIndividual ,
                         sosa:ObservableProperty ;
                foo:hasSite_name "Sabahmas" ;
                skos:definition "name of the study site" .
 
 
-###  http://www.ontology/ns/foo/1.1#Site_plot_code
+###  https://w3id.org/def/foo/Site_plot_code
 foo1:Site_plot_code rdf:type owl:NamedIndividual ,
                              sosa:ObservableProperty ;
                     foo:hasSite_plot_code 3 ;
                     skos:definition "code for the study site and plot at the site, in the format FaPb (where a refers to site code, and can be 1-18; and b refers to plot code, and can be 1-3)" .
 
 
-###  http://www.ontology/ns/foo/1.1#Soil
+###  https://w3id.org/def/foo/Soil
 foo1:Soil rdf:type owl:NamedIndividual ,
                    sosa:FeatureOfInterest ;
           rdfs:comment "Soil or dirt, is a mixture of organic matters, minerals, ases, liquids, and organisms that collectively support life." .
 
 
-###  http://www.ontology/ns/foo/1.1#Soil_Moisture
+###  https://w3id.org/def/foo/Soil_Moisture
 foo1:Soil_Moisture rdf:type owl:NamedIndividual ,
                             sosa:ObservableProperty ;
                    foo:hasMoisture 225 ;
                    skos:definition "Gravimetric soil moisture" .
 
 
-###  http://www.ontology/ns/foo/1.1#Soil_Sensor
+###  https://w3id.org/def/foo/Soil_Sensor
 foo1:Soil_Sensor rdf:type owl:NamedIndividual ,
                           sosa:Sensor ;
                  sosa:hasFeatureOfInterest foo1:Soil ;
-                 sosa:observedProperty <http://www.ontology/ns/foo/1.1#C:P> ,
+                 sosa:observedProperty <https://w3id.org/def/foo/C:P> ,
                                        foo1:Bulk_Density ,
                                        foo1:Horizon ,
                                        foo1:Horizon_Depth ,
@@ -1271,130 +1270,130 @@ foo1:Soil_Sensor rdf:type owl:NamedIndividual ,
 The data is a contribution from the BALI collaboration, which is financed by the UK's Natural Environment Research Council (NERC).""" .
 
 
-###  http://www.ontology/ns/foo/1.1#Soil_identifier
+###  https://w3id.org/def/foo/Soil_identifier
 foo1:Soil_identifier rdf:type owl:NamedIndividual ,
                               sosa:ObservableProperty ;
                      sosa:hasResult "\" \"" ;
                      rdfs:comment "Unique observation identifier, collected over a set time interval." .
 
 
-###  http://www.ontology/ns/foo/1.1#Soil_pH
+###  https://w3id.org/def/foo/Soil_pH
 foo1:Soil_pH rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              foo:hasSoil_pH "4.87"^^xsd:float ;
              skos:definition "Measured pH of the soil sample" .
 
 
-###  http://www.ontology/ns/foo/1.1#Source_of_dates
+###  https://w3id.org/def/foo/Source_of_dates
 foo1:Source_of_dates rdf:type owl:NamedIndividual ,
                               sosa:ObservableProperty ;
                      foo:Source_of_dates "string" ;
                      skos:definition "source of \"First_planting_nearest_OP\"" .
 
 
-###  http://www.ontology/ns/foo/1.1#Speed
+###  https://w3id.org/def/foo/Speed
 foo1:Speed rdf:type owl:NamedIndividual ,
                     sosa:ObservableProperty ;
            foo:hasSpeed "35.5"^^xsd:float ;
            rdfs:comment "Speed of the elephant at current data collection instant." .
 
 
-###  http://www.ontology/ns/foo/1.1#Subplot
+###  https://w3id.org/def/foo/Subplot
 foo1:Subplot rdf:type owl:NamedIndividual ;
              foo:hasSubplot "subplot" ;
              skos:definition "Number of the subplot sampled within each 1 Ha plot Numeric" .
 
 
-###  http://www.ontology/ns/foo/1.1#Survey_date
+###  https://w3id.org/def/foo/Survey_date
 foo1:Survey_date rdf:type owl:NamedIndividual ,
                           sosa:ObservableProperty ;
                  foo:hasLocalDate "" ;
                  skos:definition "date of field data collection at the plot, in the plot, in the format dd/mm/yyyy. Note that in some cases measurements were taken on more than one date for a single plot; see the dates provided in the seperate vegetation datasets for the precise date of particular vegetation data collection." .
 
 
-###  http://www.ontology/ns/foo/1.1#Temperature
+###  https://w3id.org/def/foo/Temperature
 foo1:Temperature rdf:type owl:NamedIndividual ,
                           sosa:ObservableProperty ;
                  foo:hasTemperature "21.0"^^xsd:double ;
                  rdfs:comment "Estimate temperature of the elephant in Celsius at data collection instant." .
 
 
-###  http://www.ontology/ns/foo/1.1#Vegetation
+###  https://w3id.org/def/foo/Vegetation
 foo1:Vegetation rdf:type owl:NamedIndividual ,
                          sosa:FeatureOfInterest .
 
 
-###  http://www.ontology/ns/foo/1.1#Years_since_frag
+###  https://w3id.org/def/foo/Years_since_frag
 foo1:Years_since_frag rdf:type owl:NamedIndividual ,
                                sosa:ObservableProperty ;
                       foo:hasYears_since_frag "2017" ;
                       skos:definition "Years since fragmentation at time of data collection. i.e., 2017 \"First_planting_nearest_OP\" (fragmented sites only)" .
 
 
-###  http://www.ontology/ns/foo/1.1#image
+###  https://w3id.org/def/foo/image
 foo1:image rdf:type owl:NamedIndividual ,
                     sosa:FeatureOfInterest ,
                     <http://xmlns.com/foaf/0.1/Image> ;
            sosa:isFeatureOfInterestOf foo1:Identifier .
 
 
-###  http://www.ontology/ns/foo/1.1#inorganic_P
+###  https://w3id.org/def/foo/inorganic_P
 foo1:inorganic_P rdf:type owl:NamedIndividual ,
                           sosa:ObservableProperty ;
                  sosa:hasSimpleResult "36.65"^^xsd:float ;
                  skos:definition "inorganic/soluble phosphorus concentration of the soil sample" .
 
 
-###  http://www.ontology/ns/foo/1.1#localDate
+###  https://w3id.org/def/foo/localDate
 foo1:localDate rdf:type owl:NamedIndividual ,
                         sosa:ObservableProperty ;
                sosa:resultTime "2014-04-12T13:20:00-05:00"^^xsd:dateTime ;
                skos:definition "The current local date in Sabah, Malaysia when the image collects its readings." .
 
 
-###  http://www.ontology/ns/foo/1.1#localTime
+###  https://w3id.org/def/foo/localTime
 foo1:localTime rdf:type owl:NamedIndividual ,
                         sosa:ObservableProperty ;
                sosa:resultTime "2014-04-12T13:20:00"^^xsd:dateTime ;
                skos:definition "The current local time in Sabah, Malaysia when the image collects its readings." .
 
 
-###  http://www.ontology/ns/foo/1.1#make
+###  https://w3id.org/def/foo/make
 foo1:make rdf:type owl:NamedIndividual ,
                    sosa:ObservableProperty ;
           foo:hasMake "Reckno" ;
           skos:definition "The make of the trail camera used to capture the image" .
 
 
-###  http://www.ontology/ns/foo/1.1#model
+###  https://w3id.org/def/foo/model
 foo1:model rdf:type owl:NamedIndividual ,
                     sosa:ObservableProperty ;
            foo:hasModel "\"model\"" ;
            skos:definition "The model of the trail camera used to capture the image" .
 
 
-###  http://www.ontology/ns/foo/1.1#timestamp
+###  https://w3id.org/def/foo/timestamp
 foo1:timestamp rdf:type owl:NamedIndividual ,
                         sosa:ObservableProperty ;
                sosa:resultTime "2014-04-12T13:20:00"^^xsd:dateTime ;
                rdfs:comment "The time of the sensor observation." .
 
 
-###  http://www.ontology/ns/foo/1.1#total_C
+###  https://w3id.org/def/foo/total_C
 foo1:total_C rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              foo:hasTotal_C "22.23"^^xsd:float ;
              skos:definition "total carbon content of the soil sample" .
 
 
-###  http://www.ontology/ns/foo/1.1#total_N
+###  https://w3id.org/def/foo/total_N
 foo1:total_N rdf:type owl:NamedIndividual ,
                       sosa:ObservableProperty ;
              foo:hasTotal_N "23.65"^^xsd:float ;
              skos:definition "total nitrogen content of the soil sample" .
 
 
-###  http://www.ontology/ns/foo/1.1#C:N
+###  https://w3id.org/def/foo/C:N
 foo1:C:N rdf:type owl:NamedIndividual ,
                   sosa:ObservableProperty ;
          hasC:N "11.9"^^xsd:float ;
