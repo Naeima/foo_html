@@ -64,7 +64,7 @@ terms:title rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty ;
-                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/foo#> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/foo#>" .
 
 
 ###  http://schema.org/domainIncludes
@@ -547,7 +547,7 @@ foo:C:P rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/def/foo#hasC:N
-hasC:N rdf:type owl:DatatypeProperty ;
+foo:hasC:N rdf:type owl:DatatypeProperty ;
        rdfs:domain sosa:ObservableProperty ;
        rdfs:range xsd:float .
 
@@ -1390,7 +1390,7 @@ foo:total_N rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/def/foo#C:N
 foo:C:N rdf:type owl:NamedIndividual ,
                   sosa:ObservableProperty ;
-         hasC:N "11.9"^^xsd:float ;
+         foo:C:N "11.9"^^xsd:float ;
          skos:definition "carbon to nitrogen ratio of the soil sample" .
 
 
