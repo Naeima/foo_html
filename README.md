@@ -1,1 +1,1 @@
-# Forest Observatory ontology (FOO in html) 
+# Forest Observatory Ontology (FOO in HTML) 
