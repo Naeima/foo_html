@@ -110,19 +110,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://www.ontology/ns/foo/1.1#C:N">
+      <node id="nid_https://w3id.org/def/foo#C:N">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="340.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.ontology/ns/foo/1.1#C:N</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/foo#C:N</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_sosa:observedProperty4" source="nid_foo1:Soil_Sensor" target="nid_http://www.ontology/ns/foo/1.1#C:N">
+    <edge id="eid_sosa:observedProperty4" source="nid_foo1:Soil_Sensor" target="nid_https://w3id.org/def/foo#C:N">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
