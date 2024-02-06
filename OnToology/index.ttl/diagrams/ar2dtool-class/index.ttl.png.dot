@@ -6,7 +6,7 @@ node [shape = rectangle, color="orange"]; "sosa:FeatureOfInterest" "wo:Phylum" "
 	"foo1:Soil_Sensor" -> "foo1:Soil_Moisture" [ label = "sosa:observedProperty" ];
 	"foo1:Soil_Sensor" -> "foo1:Bulk_Density" [ label = "sosa:observedProperty" ];
 	"foo1:Soil_Sensor" -> "foo1:Land_Use" [ label = "sosa:observedProperty" ];
-	"foo1:Soil_Sensor" -> "http://www.ontology/ns/foo/1.1#C:N" [ label = "sosa:observedProperty" ];
+	"foo1:Soil_Sensor" -> "https://w3id.org/def/foo#C:N" [ label = "sosa:observedProperty" ];
 	"foo1:Soil_Sensor" -> "foo1:inorganic_P" [ label = "sosa:observedProperty" ];
 	"foo1:Soil_Sensor" -> "foo1:Horizon" [ label = "sosa:observedProperty" ];
 	"foo1:Soil_Sensor" -> "foo1:total_N" [ label = "sosa:observedProperty" ];
