@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {font-family: monospace; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <pre>@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix foo: &lt;https://w3id.org/def/foo#&gt; .
+@prefix iot-lite: &lt;http://purl.oclc.org/NET/UNIS/fiware/iot-lite#&gt; .
+@prefix metadata: &lt;http://data.bioontology.org/metadata/&gt; .
+@prefix ns: &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt; .
+@prefix ns1: &lt;https://w3id.org/def/foo#C:&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix schema1: &lt;http://schema.org/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .
+@prefix terms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix vann: &lt;http://purl.org/vocab/vann/&gt; .
+@prefix wo: &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+metadata:prefixIRI a owl:AnnotationProperty .
+
+iot-lite:relativeLocation a owl:AnnotationProperty .
+
+terms:Frequency a owl:Class ;
+    rdfs:label &quot;Frequency&quot;@en ;
+    metadata:prefixIRI &quot;terms:Frequency&quot; ;
+    rdfs:comment &quot;A rate at which something recurs.&quot;@en ;
+    rdfs:isDefinedBy terms: ;
+    rdfs:subClassOf owl:Thing .
+
+terms:PhysicalResource a owl:Class ;
+    rdfs:label &quot;Physical Resource&quot;@en ;
+    metadata:prefixIRI &quot;terms:PhysicalResource&quot; ;
+    rdfs:comment &quot;A material thing.&quot;@en ;
+    rdfs:isDefinedBy terms: ;
+    rdfs:subClassOf owl:Thing .
+
+terms:Policy a owl:Class ;
+    rdfs:label &quot;Policy&quot;@en ;
+    metadata:prefixIRI &quot;terms:Policy&quot; ;
+    rdfs:comment &quot;A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.&quot;@en ;
+    rdfs:isDefinedBy terms: ;
+    rdfs:subClassOf owl:Thing ;
+    owl:disjointWith terms:ProvenanceStatement .
+
+terms:description a owl:AnnotationProperty .
+
+terms:isPartOf rdfs:label &quot;Is Part Of&quot;@en ;
+    terms:description &quot;This property is intended to be used with non-literal values. This property is an inverse property of Has Part.&quot;@en ;
+    rdfs:comment &quot;A related resource in which the described resource is physically or logically included.&quot;@en ;
+    rdfs:isDefinedBy terms: .
+
+terms:license a owl:AnnotationProperty ;
+    terms:license &lt;https://creativecommons.org/licenses/by-sa/4.0/&gt; .
+
+terms:relation a owl:AnnotationProperty .
+
+terms:rights a owl:AnnotationProperty .
+
+terms:title a owl:AnnotationProperty ;
+    terms:title &quot;Forest Observatory Ontology (FOO)&quot; .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty ;
+    vann:preferredNamespacePrefix &quot;foo&quot; .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty ;
+    vann:preferredNamespaceUri &quot;https://w3id.org/def/foo#&gt;&quot; .
+
+schema1:domainIncludes a owl:AnnotationProperty .
+
+schema1:rangeIncludes a owl:AnnotationProperty .
+
+&lt;http://web.resource.org/cc/License&gt; a owl:Class ;
+    rdfs:subClassOf terms:LicenseDocument .
+
+&lt;http://web.resource.org/cc/Prohibition&gt; a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+&lt;http://web.resource.org/cc/Requirement&gt; a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+&lt;http://web.resource.org/cc/Work&gt; a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+&lt;http://www.w3.org/1999/xhtml/vocab#license&gt; a owl:NamedIndividual .
+
+&lt;http://www.w3.org/2001/XMLSchema-datatypes#date&gt; a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; rdfs:label &quot;geo&quot; ;
+    rdfs:comment &quot;&quot;&quot;\r
+Recent changes to this namespace:\r
+$Log: wgs84_pos.rdf,v $\r
+Revision 1.22  2009/04/20 15:00:30  timbl\r
+Remove the time bits which have been deal with elsewhere eg in iCal.\r
+\r
+Revision 1.21  2009/04/20 12:52:47  timbl\r
+try again\r
+\r
+Revision 1.20  2009/04/20 12:42:11  timbl\r
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\r
+\r
+Revision 1.19  2009/04/20 12:36:31  timbl\r
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\r
+\r
+Revision 1.18  2006/02/01 22:01:04  danbri\r
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid\r
+\r
+Revision 1.17  2004/02/06 17:38:12  danbri\r
+Fixed a bad commit screwup\r
+\r
+Revision 1.15  2003/04/19 11:24:08  danbri\r
+Fixed the typo even more.\r
+\r
+Revision 1.14  2003/04/19 11:16:56  danbri\r
+fixed a typo\r
+\r
+Revision 1.13  2003/02/19 22:27:27  connolly\r
+relaxed domain constraints on lat/long/alt from Point to SpatialThing\r
+\r
+Revision 1.12  2003/01/12 01:41:41  danbri\r
+Trying local copy of XSLT doc.\r
+\r
+Revision 1.11  2003/01/12 01:20:18  danbri\r
+added a link to morten&#x27;s xslt rdfs viewer.\r
+\r
+Revision 1.10  2003/01/11 18:56:49  danbri\r
+Removed datatype range from lat and long properties, since they would\r
+have required each occurance of the property to mention the datatype.\r
+\r
+Revision 1.9  2003/01/11 11:41:31  danbri\r
+Another typo; repaired rdfs:Property to rdf:Property x4\r
+\r
+Revision 1.8  2003/01/11 11:05:02  danbri\r
+Added an rdfs:range for each lat/long/alt property,\r
+http://www.w3.org/2001/XMLSchema#float\r
+\r
+Revision 1.7  2003/01/10 20:25:16  danbri\r
+Longer rdfs:comment for Point, trying to be Earth-centric and neutral about\r
+coordinate system(s) at the same time. Feedback welcomed.\r
+\r
+Revision 1.6  2003/01/10 20:18:30  danbri\r
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the\r
+vocabulary. Note that this is not common practice (but seems both harmless\r
+and potentially useful).\r
+\r
+\r
+revision 1.5\r
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5\r
+Updated schema:\r
+Added a dc:date, added url for more info. Changed the rdfs:label of the\r
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of\r
+each property. Added XML comment on the lat_long property suggesting that\r
+we might not need it (based on #rdfig commentary from implementors).\r
+\r
+revision 1.4\r
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5\r
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in\r
+#rdfig for catching this error.\r
+\r
+revision 1.3\r
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3\r
+fixed buglet in vocab, added more wgs links\r
+\r
+revision 1.2\r
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4\r
+Removed alt from the as-a-flat-string property, and switched from\r
+space separated to comma separated.\r
+\r
+revision 1.1\r
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;\r
+basic geo vocab\r
+\r
+&quot;&quot;&quot; .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#alt&gt; a owl:ObjectProperty ;
+    rdfs:domain &lt;http://www.w3.org/2003/01/geo/wgs84_pos#Point&gt; ;
+    rdfs:range [ a owl:Restriction ;
+            owl:onProperty foo:hasValue ;
+            owl:someValuesFrom rdfs:Literal ] .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#lat&gt; a owl:ObjectProperty ;
+    rdfs:domain &lt;http://www.w3.org/2003/01/geo/wgs84_pos#Point&gt; ;
+    rdfs:range [ a owl:Restriction ;
+            owl:onProperty foo:hasValue ;
+            owl:someValuesFrom rdfs:Literal ] .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#lat_long&gt; rdfs:label &quot;lat/long&quot; ;
+    rdfs:comment &quot;A comma-separated representation of a latitude, longitude coordinate.&quot; .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#location&gt; a owl:ObjectProperty ;
+    rdfs:label &quot;location&quot; ;
+    rdfs:comment &quot;&quot;&quot;The relation between something and the point, \r
+ or other geometrical thing in space, where it is.  For example, the realtionship between\r
+ a radio tower and a Point with a given lat and long.\r
+ Or a relationship between a park and its outline as a closed arc of points, or a road and\r
+ its location as a arc (a sequence of points).\r
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\r
+ an accuracy appropriate for the size of the object and uses such as mapping .\r
+ &quot;&quot;&quot; ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range &lt;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&gt; ;
+    rdfs:subPropertyOf foaf:based_near .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#long&gt; a owl:ObjectProperty ;
+    rdfs:domain &lt;http://www.w3.org/2003/01/geo/wgs84_pos#Point&gt; ;
+    rdfs:range [ a owl:Restriction ;
+            owl:onProperty foo:hasValue ;
+            owl:someValuesFrom rdfs:Literal ] .
+
+ns:term_status a owl:AnnotationProperty .
+
+skos:example a owl:AnnotationProperty .
+
+sosa:hasFeatureOfInterest a owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range sosa:FeatureOfInterest .
+
+sosa:hasResult a owl:DatatypeProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range rdfs:Literal .
+
+sosa:hasSample a owl:ObjectProperty ;
+    rdfs:domain sosa:FeatureOfInterest ;
+    rdfs:range sosa:Observation .
+
+sosa:hasSimpleResult a owl:DatatypeProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range rdfs:Literal .
+
+sosa:hosts a owl:ObjectProperty ;
+    rdfs:domain sosa:Platform ;
+    rdfs:range sosa:Sensor ;
+    owl:propertyDisjointWith sosa:observes .
+
+sosa:isFeatureOfInterestOf a owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range sosa:FeatureOfInterest ;
+    skos:definition &quot;A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.&quot;@en .
+
+sosa:isObservedBy a owl:ObjectProperty ;
+    rdfs:domain sosa:Sensor ;
+    rdfs:range sosa:ObservableProperty .
+
+sosa:madeBySensor a owl:ObjectProperty ;
+    rdfs:domain sosa:Sensor ;
+    rdfs:range sosa:Observation .
+
+sosa:madeObservation a owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range sosa:Sensor .
+
+sosa:observedProperty a owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range sosa:ObservableProperty .
+
+sosa:resultTime a owl:DatatypeProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range xsd:dateTime .
+
+foaf:Person a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+foo:CameraTrap a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;Wildlife cameras with embeded sensors to capture moving objects.&quot; ;
+    sosa:hasFeatureOfInterest foo:image ;
+    sosa:hasResult &quot;Image&quot; ;
+    sosa:observedProperty foo:Name,
+        foo:Path,
+        foo:localDate,
+        foo:localTime,
+        foo:make,
+        foo:model ;
+    foo:hasMake &quot;\&quot;make\&quot;&quot; ;
+    foo:hasModel &quot;model&quot; ;
+    foo:hasPath &quot;dfgcimage.org&quot;^^xsd:anyURI .
+
+foo:Civets a owl:NamedIndividual,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Family/Viverridae&gt;,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Order/Carnivora&gt;,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum/Chordata&gt; .
+
+foo:Clay a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    foo:hasClay &quot;2.3&quot;^^xsd:float .
+
+foo:DGFC_ID a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;An identifier that is unique for GPS collar sensor observation&quot; ;
+    sosa:hasResult &quot;ID&quot; .
+
+foo:Disturbance a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;degree of logging at the site, on of \&quot;Old-growth\&quot;, \&quot;Twic logged\&quot;, Logged\&quot; (when number of logging operations unknown)&quot; ;
+    foo:hasDisturbance &quot;logged&quot; .
+
+foo:ElephasMaximus a owl:NamedIndividual,
+        sosa:FeatureOfInterest .
+
+foo:Elevation_masl a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Elevation at the plot centre, in metres above sea level&quot; ;
+    foo:hasElevation_masi &quot;5.2&quot;^^xsd:float .
+
+foo:First_planting_nearest_OP a owl:NamedIndividual ;
+    skos:definition &quot;Year palm adjacent to the forest site&quot; ;
+    foo:hasFirst_planning_nearest_OP &quot;2005&quot; .
+
+foo:Forest_type a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;type of forest site, one of \&quot;Continous primary\&quot;, \&quot;Continous logged\&quot;, \&quot;HCV\&quot; (i.e., High Conservation Value; fragmented sites in oil palm plantations)&quot; ;
+    sosa:hasSimpleResult &quot;HCV High Conservation Value&quot; .
+
+foo:ID a owl:NamedIndividual,
+        sosa:Observation ;
+    sosa:hasResult &quot;\&quot;foo_\&quot;&quot; .
+
+foo:Lat a owl:NamedIndividual,
+        &lt;http://www.w3.org/2003/01/geo/wgs84_pos#Point&gt; ;
+    rdfs:comment &quot;The geographical latitude of the observation location&quot; .
+
+foo:Long a owl:NamedIndividual,
+        &lt;http://www.w3.org/2003/01/geo/wgs84_pos#Point&gt; ;
+    rdfs:comment &quot;The geographical longitude of a sensor observation location&quot; .
+
+foo:Loxodonta a owl:NamedIndividual,
+        sosa:FeatureOfInterest ;
+    rdfs:comment &quot;African elephant&quot; .
+
+foo:Otter a owl:NamedIndividual,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Order/Carnivora&gt;,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum/Chordata&gt; ;
+    rdfs:comment &quot;Otter is a carnivorous mammal.&quot; .
+
+foo:Replanting_nearest_OP a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Year of any replanting of oil palm adjacent to the forest site (fragmented sites where adjacent oil palm had undergone a second round of planting)&quot; ;
+    foo:hasReplanting_nearest_OP &quot;2008&quot; .
+
+foo:Silt a owl:NamedIndividual .
+
+foo:Site_code a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;code for the study site, in the format Fa (where a can be 1-18)&quot; ;
+    sosa:hasSimpleResult 18 .
+
+foo:Site_name a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;name of the study site&quot; ;
+    foo:hasSite_name &quot;Sabahmas&quot; .
+
+foo:Site_plot_code a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;code for the study site and plot at the site, in the format FaPb (where a refers to site code, and can be 1-18; and b refers to plot code, and can be 1-3)&quot; ;
+    foo:hasSite_plot_code 3 .
+
+foo:Soil_Sensor a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;&quot;&quot;Soil sensor data consist of soil properties tropical forests in Sabah, Malaysia. \r
+The data is a contribution from the BALI collaboration, which is financed by the UK&#x27;s Natural Environment Research Council (NERC).&quot;&quot;&quot; ;
+    sosa:hasFeatureOfInterest foo:Soil ;
+    sosa:observedProperty foo:Bulk_Density,
+        ns1:N,
+        ns1:P,
+        foo:Horizon,
+        foo:Horizon_Depth,
+        foo:Land_Use,
+        foo:Plot_Name,
+        foo:Site,
+        foo:Soil_Moisture,
+        foo:Soil_pH,
+        foo:Subplot,
+        foo:inorganic_P,
+        foo:total_C,
+        foo:total_N .
+
+foo:Soil_identifier a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Unique observation identifier, collected over a set time interval.&quot; ;
+    sosa:hasResult &quot;\&quot; \&quot;&quot; .
+
+foo:Source_of_dates a owl:DatatypeProperty,
+        owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string ;
+    skos:definition &quot;source of \&quot;First_planting_nearest_OP\&quot;&quot; ;
+    foo:Source_of_dates &quot;string&quot; .
+
+foo:Survey_date a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;date of field data collection at the plot, in the plot, in the format dd/mm/yyyy. Note that in some cases measurements were taken on more than one date for a single plot; see the dates provided in the seperate vegetation datasets for the precise date of particular vegetation data collection.&quot; ;
+    foo:hasLocalDate &quot;&quot; .
+
+foo:Vegetation a owl:NamedIndividual,
+        sosa:FeatureOfInterest .
+
+foo:Years_since_frag a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Years since fragmentation at time of data collection. i.e., 2017 \&quot;First_planting_nearest_OP\&quot; (fragmented sites only)&quot; ;
+    foo:hasYears_since_frag &quot;2017&quot; .
+
+&lt;https://w3id.org/def/foo#elephant#ABAW&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called  Abaw, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:hasResult &quot;&quot; ;
+    sosa:observedProperty foo:Cov,
+        foo:ExtTemp,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Aqeela&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;&quot;,
+        &quot;A female asian elephant called  Aqeela, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:HDOP,
+        foo:LocalDate,
+        foo:LocalTime,
+        foo:PDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Bikang1&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Bikang1, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Bikang2&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Bikang2, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Dara&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Dara, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Guli&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Guli, here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Ita&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Ita, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Jasmin&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Jasmin, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Jasper&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Jasper here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Kasih&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Kasih, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Kuma&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Kuma, here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Liun&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Liun, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:DateTime,
+        foo:Direction,
+        foo:PDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Maliau&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Maliau, here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Merotai&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Merotai, here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Puteri&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Puteri here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Putut&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Putut, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Sandi&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Sandi, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Sejati&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Sejati, here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Seri&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Seri, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Tulid&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Tulid, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Tunglap&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A female asian elephant called Tunglap, here, the GPS collar (sensor) is named after her.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#elephant#Umas2&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A male asian elephant called Umas2, here, the GPS collar (sensor) is named after him.&quot; ;
+    sosa:observedProperty foo:Count,
+        foo:Cov,
+        foo:Direction,
+        foo:Distance,
+        foo:ExtTemp,
+        foo:GMTDate,
+        foo:GMTTime,
+        foo:HDOP,
+        foo:Speed,
+        foo:Temperature .
+
+&lt;https://w3id.org/def/foo#hasC:N&gt; a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasClay a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasCount a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:integer .
+
+foo:hasCov a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:integer .
+
+foo:hasDirection a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasDistance a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasDisturbance a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasElevation_masi a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasFirst_planning_nearest_OP a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasHDOP a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:integer .
+
+foo:hasHorizon a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasInorganic_P a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasLand_Use a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasLiana_dbh_cm a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasLocalDate a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasMake a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasModel a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasMoisture a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasName a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasPath a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf owl:topDataProperty .
+
+foo:hasPlot_Name a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasReplanting_nearest_OP a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasSand a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasSilt a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasSite_name a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasSite_plot_code a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range rdfs:Literal .
+
+foo:hasSoil_pH a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasSpeed a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasSubplot a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range rdfs:Literal .
+
+foo:hasSubplot_radius_m a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasTemp a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:double .
+
+foo:hasTemperature a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:double .
+
+foo:hasTotal_C a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasTotal_N a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasTotal_P a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasTree_ID a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasTree_dbh_cm a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasTree_height_m a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:hasTree_individual_no a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:integer .
+
+foo:hasTree_notes a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+foo:hasYears_since_frag a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:string .
+
+&lt;https://w3id.org/def/foo#python#Juling&gt; a owl:NamedIndividual,
+        sosa:Sensor ;
+    rdfs:comment &quot;A python (snake) called Juling- with tracking device called Juling&quot; ;
+    owl:sameAs foo:python ;
+    sosa:hasFeatureOfInterest foo:python ;
+    sosa:observedProperty foo:DateTime,
+        foo:HDOP,
+        foo:Speed .
+
+foo:timestamp a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;The time of the sensor observation.&quot; ;
+    sosa:resultTime &quot;2014-04-12T13:20:00&quot;^^xsd:dateTime .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Class/Mammalia&gt; a owl:Class ;
+    rdfs:comment &quot;&quot;&quot;The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.\r
+https://www.merriam-webster.com/dictionary/Elephantidae&quot;&quot;&quot; ;
+    rdfs:subClassOf wo:Class .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Family/Elephantidae&gt; a owl:Class ;
+    rdfs:comment &quot;&quot;&quot;ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.\r
+Source: https://www.merriam-webster.com/dictionary/Elephantidae&quot;&quot;&quot; ;
+    rdfs:subClassOf wo:Family .
+
+wo:FreshwaterHabitat a owl:Class ;
+    rdfs:label &quot;Freshwater Habitat&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:FreshwaterHabitat&quot; ;
+    rdfs:comment &quot;Freshwater habitats include bogs, ponds, lakes, rivers and streams. About 3% of Earth&#x27;s water is freshwater, but this includes the water locked up in the ice caps and trapped in rocks and soil as groundwater. Only a tiny fraction (0.014%) is surface water in the form of rivers, lakes and swamps.&quot; ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:subClassOf wo:Habitat ;
+    ns:term_status &quot;testing&quot; .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom/Animalia&gt; a owl:Class ;
+    rdfs:comment &quot;&quot;&quot;Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.\r
+\r
+All members of the kingdom Animalia share three key traits. They are multicellular organisms, and they are all eukaryotic, meaning their cells have membrane-enclosed organelles and a nucleus. All animals are heterotrophic and must feed on other organisms to survive.\r
+source:https://study.com/learn/lesson/animalia-kingdom-examples-characteristics-facts.html&quot;&quot;&quot; ;
+    rdfs:subClassOf wo:Kingdom .
+
+wo:MarineHabitat a owl:Class ;
+    rdfs:label &quot;Marine Habitat&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:MarineHabitat&quot; ;
+    rdfs:comment &quot;Approximately 71% of the Earth&#x27;s surface is covered by the oceans, an area of some 223698816km/sq. Although marine life evolved around three billion years before life on land, marine habitats are relatively poorly studied and much of the ocean&#x27;s depths remains unexplored.&quot; ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:subClassOf wo:Habitat ;
+    ns:term_status &quot;testing&quot; .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Order/Proboscidea&gt; a owl:Class ;
+    rdfs:comment &quot;&quot;&quot;Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.\r
+https://www.merriam-webster.com/dictionary/proboscidean&quot;&quot;&quot; ;
+    rdfs:subClassOf wo:Order .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonName/Civettictis&gt; a owl:Class ;
+    rdfs:subClassOf wo:TaxonName .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonName/Loxodonta&gt; a owl:Class ;
+    rdfs:subClassOf wo:TaxonName .
+
+wo:TerrestrialHabitat a owl:Class ;
+    rdfs:label &quot;Terrestrial Habitat&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:TerrestrialHabitat&quot; ;
+    rdfs:comment &quot;Terrestrial habitats include forests, grasslands, deserts and rainforests. They are typically defined by factors such as plant structure (trees and grasses), leaf types (eg broadleaf and needleleaf), plant spacing (forest, woodland, savanna) and climate.&quot; ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:subClassOf wo:Habitat ;
+    ns:term_status &quot;testing&quot; .
+
+wo:class a owl:ObjectProperty ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:range wo:Class .
+
+wo:family a owl:ObjectProperty ;
+    rdfs:label &quot;family&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a family&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Family ;
+    ns:term_status &quot;testing&quot; .
+
+wo:genus a owl:ObjectProperty ;
+    rdfs:label &quot;genus&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a genus&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Genus ;
+    ns:term_status &quot;testing&quot; .
+
+wo:habitat a owl:ObjectProperty ;
+    rdfs:label &quot;habitat&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a habitat in which it may typically be found&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Habitat ;
+    ns:term_status &quot;testing&quot; .
+
+wo:kingdom a owl:ObjectProperty ;
+    rdfs:label &quot;kingdom&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a kingdom&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Kingdom ;
+    ns:term_status &quot;testing&quot; .
+
+wo:livesIn a owl:ObjectProperty ;
+    rdfs:label &quot;lives in&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a habitat in which it lives. Sub-property of wo:habitat to be used for members of the animal kingdom&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Habitat ;
+    ns:term_status &quot;testing&quot; .
+
+wo:order a owl:ObjectProperty ;
+    rdfs:label &quot;order&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with an order&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Kingdom ;
+    ns:term_status &quot;testing&quot; .
+
+wo:phylum a owl:ObjectProperty ;
+    rdfs:label &quot;phylum&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a phylum&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Phylum ;
+    ns:term_status &quot;testing&quot; .
+
+wo:species a owl:ObjectProperty ;
+    rdfs:label &quot;species&quot;@en-gb ;
+    rdfs:comment &quot;associates a taxon rank with a species&quot;@en-gb ;
+    rdfs:domain wo:TaxonRank ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:range wo:Species ;
+    ns:term_status &quot;testing&quot; .
+
+terms:LicenseDocument a owl:Class ;
+    rdfs:label &quot;License Document&quot;@en ;
+    metadata:prefixIRI &quot;terms:LicenseDocument&quot; ;
+    rdfs:comment &quot;A legal document giving official permission to do something with a resource.&quot;@en ;
+    rdfs:isDefinedBy terms: .
+
+terms:ProvenanceStatement a owl:Class ;
+    rdfs:label &quot;Provenance Statement&quot;@en ;
+    metadata:prefixIRI &quot;terms:ProvenanceStatement&quot; ;
+    rdfs:comment &quot;Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.&quot;@en ;
+    rdfs:isDefinedBy terms: ;
+    rdfs:subClassOf owl:Thing .
+
+sosa:Platform a owl:Class ;
+    metadata:prefixIRI &quot;sosa:Platform&quot; ;
+    rdfs:comment &quot;A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.\&quot;@en ;&quot; ;
+    rdfs:isDefinedBy &quot;sosa&quot; ;
+    rdfs:subClassOf owl:Thing ;
+    skos:definition &quot;\&quot;A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.\&quot;@en ;&quot; ;
+    skos:example &quot;\&quot;A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.\&quot;@en ;&quot; .
+
+sosa:observes a owl:ObjectProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range sosa:Observation .
+
+foaf:Image a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+foaf:based_near a owl:ObjectProperty ;
+    rdfs:label &quot;based near&quot; ;
+    rdfs:comment &quot;A location that something is based near, for some broadly human notion of near.&quot; ;
+    rdfs:domain &lt;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&gt; ;
+    rdfs:isDefinedBy foaf: ;
+    rdfs:range sosa:FeatureOfInterest ;
+    ns:term_status &quot;testing&quot; .
+
+foo: a owl:Ontology ;
+    dc:abstract &quot;The Forest Observatory Ontology (FOO) comprises a novel upper-level ontology that integrates wildlife data generated by sensors.&quot;@en ;
+    dc:description &quot;This ontology describes wildlife observations generated by sensors.&quot;@en ;
+    dc:title &quot;Forest Observatory Ontology (FOO) Ontology&quot;@en ;
+    terms:created &quot;February 1st, 2023&quot;@en ;
+    terms:creator &quot;Naeima Hamed&quot;@en ;
+    terms:license &lt;http://creativecommons.org/licenses/by-sa/4.0/&gt; ;
+    vann:preferredNamespacePrefix &quot;foo&quot;@en ;
+    vann:preferredNamespaceUri &quot;https://w3id.org/def/foo#&quot; ;
+    schema1:citation &quot;Cite this vocabulary as: Hamed, N., Forest Observatory Ontology (FOO) Ontology&quot;@en ;
+    owl:versionIRI foo: .
+
+foo:Bulk_Density a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Measured Bulk Density of soil sample&quot; ;
+    foo:hasValue &quot;0.6&quot;^^xsd:float .
+
+ns1:N a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;carbon to nitrogen ratio of the soil sample&quot; ;
+    ns1:N &quot;11.9&quot;^^xsd:float .
+
+ns1:P a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:float .
+
+foo:Horizon a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Soil horizon sampled&quot; ;
+    sosa:hasSimpleResult &quot;Sample_Name&quot; .
+
+foo:Horizon_Depth a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Depth of the organic soil horizon sampled&quot; ;
+    sosa:hasSimpleResult &quot;2.5&quot;^^xsd:float .
+
+foo:Identifier a owl:NamedIndividual,
+        sosa:ObservableProperty,
+        sosa:Observation ;
+    skos:definition &quot;Unique Soil Sample Identifier&quot; ;
+    sosa:hasFeatureOfInterest foo:image ;
+    sosa:hasResult &quot;DGFC_&quot; .
+
+foo:Land_Use a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation&quot; ;
+    sosa:hasSimpleResult &quot;Unlogged&quot; ;
+    foo:hasLand_Use &quot;plants&quot; .
+
+foo:LocalDate a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    sosa:resultTime &quot;2005-11-12T12:05:05&quot;^^xsd:dateTime .
+
+foo:LocalTime a owl:NamedIndividual ;
+    sosa:resultTime &quot;2005-11-12T12:05:05&quot;^^xsd:dateTime .
+
+foo:Mustelidae a owl:NamedIndividual,
+        sosa:FeatureOfInterest ;
+    wo:family foo:Mustelidae .
+
+foo:Name a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;The named assigned to an image at collection time&quot; ;
+    foo:hasName &quot;Imahe_name&quot; .
+
+foo:Path a owl:NamedIndividual ;
+    skos:definition &quot;The URI to point at the location of the image in secure cloud&quot; ;
+    foo:hasPath &quot;example.com&quot;^^xsd:anyURI .
+
+foo:Plot_Name a owl:NamedIndividual ;
+    skos:definition &quot;Name of the 1 Ha plot sampled&quot; ;
+    foo:hasPlot_Name &quot;NAME&quot; .
+
+foo:Site a owl:NamedIndividual,
+        sosa:FeatureOfInterest ;
+    skos:definition &quot;Geographical area/site which samples were taken from&quot; ;
+    sosa:hasSimpleResult &quot;\&quot;Valley\&quot;&quot; .
+
+foo:Soil a owl:NamedIndividual,
+        sosa:FeatureOfInterest ;
+    rdfs:comment &quot;Soil or dirt, is a mixture of organic matters, minerals, ases, liquids, and organisms that collectively support life.&quot; .
+
+foo:Soil_Moisture a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Gravimetric soil moisture&quot; ;
+    foo:hasMoisture 225 .
+
+foo:Soil_pH a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;Measured pH of the soil sample&quot; ;
+    foo:hasSoil_pH &quot;4.87&quot;^^xsd:float .
+
+foo:Subplot a owl:NamedIndividual ;
+    skos:definition &quot;Number of the subplot sampled within each 1 Ha plot Numeric&quot; ;
+    foo:hasSubplot &quot;subplot&quot; .
+
+foo:inorganic_P a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;inorganic/soluble phosphorus concentration of the soil sample&quot; ;
+    sosa:hasSimpleResult &quot;36.65&quot;^^xsd:float .
+
+foo:localDate a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;The current local date in Sabah, Malaysia when the image collects its readings.&quot; ;
+    sosa:resultTime &quot;2014-04-12T13:20:00-05:00&quot;^^xsd:dateTime .
+
+foo:localTime a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;The current local time in Sabah, Malaysia when the image collects its readings.&quot; ;
+    sosa:resultTime &quot;2014-04-12T13:20:00&quot;^^xsd:dateTime .
+
+foo:make a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;The make of the trail camera used to capture the image&quot; ;
+    foo:hasMake &quot;Reckno&quot; .
+
+foo:model a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;The model of the trail camera used to capture the image&quot; ;
+    foo:hasModel &quot;\&quot;model\&quot;&quot; .
+
+foo:total_C a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;total carbon content of the soil sample&quot; ;
+    foo:hasTotal_C &quot;22.23&quot;^^xsd:float .
+
+foo:total_N a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;total nitrogen content of the soil sample&quot; ;
+    foo:hasTotal_N &quot;23.65&quot;^^xsd:float .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Class/Reptilia&gt; a owl:Class ;
+    rdfs:comment &quot;Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.&quot; ;
+    rdfs:subClassOf wo:Class .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Family/Viverridae&gt; a owl:Class ;
+    rdfs:isDefinedBy &quot;Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line&quot;,
+        &quot;https://en.wikipedia.org/wiki/Viverridae&quot; ;
+    rdfs:subClassOf wo:Family .
+
+wo:Genus a owl:Class ;
+    rdfs:label &quot;Genus&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Genus&quot; ;
+    rdfs:comment &quot;A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species&#x27; scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Genus&gt;,
+        &lt;http://www.bbc.co.uk/nature/genus&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Order/Squamata&gt; a owl:Class ;
+    rdfs:subClassOf wo:Order .
+
+wo:Species a owl:Class ;
+    rdfs:label &quot;species&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Species&quot; ;
+    rdfs:comment &quot;Generic class defining a biological species&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Species&gt;,
+        &lt;http://www.bbc.co.uk/nature/species&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+foo:DateTime a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;The date and time of the GPS collar observation&quot; ;
+    sosa:resultTime &quot;2013-07-06T21:03:17&quot;^^xsd:dateTime .
+
+foo:PDOP a owl:DatatypeProperty,
+        owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Positional Dilution of Precision (DDOP) describes the error caused by the relative position of the GPS satellites. The more signals a GPS reciever can \&quot;see\&quot; (speard vs near each other), the more precise it can be.&quot; ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range xsd:integer ;
+    foo:PDOP 3 .
+
+foo:image a owl:NamedIndividual,
+        sosa:FeatureOfInterest,
+        foaf:Image ;
+    sosa:isFeatureOfInterestOf foo:Identifier .
+
+foo:python a owl:NamedIndividual,
+        sosa:FeatureOfInterest,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Class/Reptilia&gt;,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Order/Squamata&gt;,
+        &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum/Chordata&gt; .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Order/Carnivora&gt; a owl:Class ;
+    rdfs:comment &quot;Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh.&quot; ;
+    rdfs:isDefinedBy &quot;https://en.wikipedia.org/wiki/Carnivora&quot; ;
+    rdfs:subClassOf wo:Order .
+
+wo:Phylum a owl:Class ;
+    rdfs:label &quot;Phylum&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Phylum&quot; ;
+    rdfs:comment &quot;A phylum - also known as a division when referring to plants - is a scientfic way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Phylum&gt;,
+        &lt;http://www.bbc.co.uk/nature/phylum&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+wo:TaxonName a owl:Class ;
+    rdfs:label &quot;Taxon Name&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:TaxonName&quot; ;
+    rdfs:comment &quot;A taxonomic name, describing the structure and provenance of a taxonomic name.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:subClassOf owl:Thing ;
+    owl:disjointWith wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&gt; a owl:Class ;
+    rdfs:label &quot;Spatial Thing&quot;,
+        &quot;SpatialThing&quot; ;
+    metadata:prefixIRI &quot;wgs84_pos:SpatialThing&quot; ;
+    rdfs:comment &quot;&quot;&quot;Anything with spatial extent, i.e. size, shape, or position.\r
+ e.g. people, places, bowling balls, as well as abstract areas like cubes.\r
+&quot;&quot;&quot; ;
+    rdfs:subClassOf owl:Thing .
+
+foo:hasValue a owl:DatatypeProperty ;
+    rdfs:domain sosa:ObservableProperty ;
+    rdfs:range rdfs:Literal .
+
+wo:Class a owl:Class ;
+    rdfs:label &quot;Class&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Class&quot; ;
+    rdfs:comment &quot;A class is a scientific way to group related organisms together, some examples of classes being jellyfish, reptiles and sea urchins. Classes are big groups and contain within them smaller groupings called orders, families, genera and species.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Class_%28biology%29&gt;,
+        &lt;http://www.bbc.co.uk/nature/class&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    owl:equivalentClass wo:Family ;
+    ns:term_status &quot;testing&quot; .
+
+wo:Kingdom a owl:Class ;
+    rdfs:label &quot;Kingdom&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Kingdom&quot; ;
+    rdfs:comment &quot;Kingdoms are the major categories into which scientists divide up all living things. The main kingdoms are animals, plants, fungi and bacteria, although there are others. Each kingdom has its own suite of defining characteristics - for instance plants have rigid cell walls, whilst animals do not.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Kingdom_%28biology%29&gt;,
+        &lt;http://www.bbc.co.uk/nature/kingdom&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+wo:Order a owl:Class ;
+    rdfs:label &quot;Order&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Order&quot; ;
+    rdfs:comment &quot;An order is a scientific way to categorise related organisms. An order is a smaller grouping than a class, but bigger than a family or genus. Examples of orders are willows, cockroaches and primates.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Order_%28biology%29&gt;,
+        &lt;http://www.bbc.co.uk/nature/order&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+&lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum/Chordata&gt; a owl:Class ;
+    rdfs:comment &quot;&quot;&quot;A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.\r
+Source: google.com&quot;&quot;&quot; ;
+    rdfs:subClassOf wo:Phylum .
+
+wo:Family a owl:Class ;
+    rdfs:label &quot;Family&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Family&quot; ;
+    rdfs:comment &quot;A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae).&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Family_%28biology%29&gt;,
+        &lt;http://www.bbc.co.uk/nature/family&gt; ;
+    rdfs:subClassOf wo:TaxonRank ;
+    ns:term_status &quot;testing&quot; .
+
+&lt;http://www.w3.org/2003/01/geo/wgs84_pos#Point&gt; a owl:Class,
+        owl:NamedIndividual ;
+    rdfs:label &quot;point&quot; ;
+    metadata:prefixIRI &quot;wgs84_pos:Point&quot; ;
+    iot-lite:relativeLocation &quot;&quot; ;
+    rdfs:comment &quot;&quot;&quot; \r
+Uniquely identified by lat/long/alt. i.e.\r
+\r
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\r
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\r
+\r
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\r
+  &quot;&quot;&quot;,
+        &quot;&quot;&quot;A point, typically described using a coordinate system relative to Earth, such as WGS84.\r
+  &quot;&quot;&quot; ;
+    rdfs:subClassOf &lt;http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing&gt; .
+
+wo:Habitat a owl:Class ;
+    rdfs:label &quot;Habitat&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:Habitat&quot; ;
+    rdfs:comment &quot;A habitat, or biome, is the type of environment in which plant and animals live. Habitat is dictated by what kinds of plants grow there, the climate and the geography. Rainforest, coral reefs and the tundra are all habitats where particular kinds of plants and animals might be found.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Habitat&gt;,
+        &lt;http://www.bbc.co.uk/nature/habitats&gt; ;
+    rdfs:subClassOf owl:Thing ;
+    ns:term_status &quot;testing&quot; .
+
+sosa:FeatureOfInterest a owl:Class ;
+    rdfs:label &quot;Feature Of Interest&quot;@en ;
+    metadata:prefixIRI &quot;sosa:FeatureOfInterest&quot; ;
+    rdfs:comment &quot;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&quot;@en ;
+    rdfs:isDefinedBy sosa: ;
+    rdfs:subClassOf owl:Thing ;
+    skos:definition &quot;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&quot;@en ;
+    skos:example &quot;When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.&quot;@en .
+
+sosa:Observation a owl:Class ;
+    rdfs:label &quot;Observation&quot;@en ;
+    metadata:prefixIRI &quot;sosa:Observation&quot; ;
+    rdfs:comment &quot;Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.&quot;@en ;
+    rdfs:isDefinedBy sosa: ;
+    rdfs:subClassOf owl:Thing ;
+    skos:definition &quot;Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.&quot;@en ;
+    skos:example &quot;The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.&quot;@en .
+
+foo:ExtTemp a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;External Temperature of the elephant at data collection instant&quot; ;
+    foo:hasTemp 2.7e+01 .
+
+wo:TaxonRank a owl:Class ;
+    rdfs:label &quot;Taxonomic Rank&quot;@en-gb ;
+    metadata:prefixIRI &quot;wo:TaxonRank&quot; ;
+    rdfs:comment &quot;Generic concept for a taxonomic rank such as a Genus or Species.&quot;@en-gb ;
+    rdfs:isDefinedBy wo: ;
+    rdfs:seeAlso &lt;http://en.wikipedia.org/wiki/Taxonomic_rank&gt; ;
+    rdfs:subClassOf owl:Thing ;
+    ns:term_status &quot;testing&quot; .
+
+owl:Thing metadata:prefixIRI &quot;owl:Thing&quot; .
+
+foo:Count a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;GPS collar dataset&#x27;s observation count per dataset&quot; ;
+    foo:hasCount 1 .
+
+foo:GMTDate a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    skos:definition &quot;The GMT date in Sabah, Malaysia when the GPS collar collected  its readings.&quot; ;
+    sosa:resultTime &quot;2014-04-12T13:20:00&quot;^^xsd:dateTime .
+
+foo:GMTTime a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;The current local date in Sabah, Malaysia when the image collects its readings.&quot; ;
+    sosa:resultTime &quot;2014-04-12T13:20:00&quot;^^xsd:dateTime .
+
+foo:Distance a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Distance (m) travelled from the previous data collection instant to the present.&quot; ;
+    foo:hasDistance &quot;1.2&quot;^^xsd:float .
+
+foo:Cov a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;GPS collar dataset: satellite coverage, the higher number the stronger coverage.&quot; ;
+    foo:hasCov 1 .
+
+foo:Direction a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Direction that the elephant is travelling at the current data collection instant.&quot; ;
+    foo:hasDirection &quot;0.4&quot;^^xsd:float .
+
+foo:HDOP a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Horizontal Dilution of Precision (HDOP) measures GPS accuracy in Latitude and Longitude. The lower value the better precision.&quot; ;
+    sosa:hasSimpleResult 1 .
+
+foo:Temperature a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Estimate temperature of the elephant in Celsius at data collection instant.&quot; ;
+    foo:hasTemperature 2.1e+01 .
+
+foo:Speed a owl:NamedIndividual,
+        sosa:ObservableProperty ;
+    rdfs:comment &quot;Speed of the elephant at current data collection instant.&quot; ;
+    foo:hasSpeed &quot;35.5&quot;^^xsd:float .
+
+sosa:Sensor a owl:Class ;
+    rdfs:label &quot;Sensor&quot;@en ;
+    metadata:prefixIRI &quot;sosa:Sensor&quot; ;
+    rdfs:comment &quot;Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.&quot;@en ;
+    rdfs:isDefinedBy sosa: ;
+    rdfs:subClassOf owl:Thing ;
+    skos:definition &quot;Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.&quot;@en ;
+    skos:example &quot;Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.&quot;@en .
+
+sosa:ObservableProperty a owl:Class ;
+    rdfs:label &quot;Observable Property&quot;@en ;
+    metadata:prefixIRI &quot;sosa:ObservableProperty&quot; ;
+    rdfs:comment &quot;An observable quality (property, characteristic) of a FeatureOfInterest.&quot;@en ;
+    rdfs:isDefinedBy sosa: ;
+    rdfs:subClassOf owl:Thing ;
+    skos:definition &quot;An observable quality (property, characteristic) of a FeatureOfInterest.&quot;@en ;
+    skos:example &quot;The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.&quot;@en .
+
+</pre>
+</body>
+</html>
