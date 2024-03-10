@@ -1,0 +1,48 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "sosa:FeatureOfInterest" "http://web.resource.org/cc/Prohibition" "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom/Animalia" "wo:FreshwaterHabitat" "http://web.resource.org/cc/License" "terms:PhysicalResource" "wo:Species" "wo:Class" "terms:LicenseDocument" "wo:Kingdom" "wo:Family" "http://web.resource.org/cc/Work" "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonName/Civettictis" ":Carnivora" "wo:TaxonRank" "foaf:Person" ":Elephantidae" ":Mammalia" "wo:Order" "wo:Genus" ":Squamata" "terms:Policy" ":Chordata" "sosa:Platform" "wo:TaxonName" ":SpatialThing" "sosa:Observation" "http://www.w3.org/2001/XMLSchema-datatypes#date" ":Reptilia" "terms:ProvenanceStatement" "sosa:ObservableProperty" "http://web.resource.org/cc/Requirement" "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonName/Loxodonta" "sosa:Sensor" "wo:Habitat" ":Proboscidea" "foaf:Image" "terms:Frequency" "wo:Phylum" ":Viverridae" "wo:MarineHabitat" ":Point" "wo:TerrestrialHabitat" ; /*classes style*/
+	"wo:Genus" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	"wo:FreshwaterHabitat" -> "wo:Habitat" [ label = "rdfs:subClassOf" ];
+	"sosa:Platform" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"foaf:Image" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Mammalia" -> "wo:Class" [ label = "rdfs:subClassOf" ];
+	"wo:Species" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	":Viverridae" -> "wo:Family" [ label = "rdfs:subClassOf" ];
+	":Point" -> ":SpatialThing" [ label = "rdfs:subClassOf" ];
+	"wo:TaxonName" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"http://web.resource.org/cc/Prohibition" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"terms:Policy" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wo:TaxonRank" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"terms:Frequency" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wo:MarineHabitat" -> "wo:Habitat" [ label = "rdfs:subClassOf" ];
+	"http://web.resource.org/cc/Requirement" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Reptilia" -> "wo:Class" [ label = "rdfs:subClassOf" ];
+	":Carnivora" -> "wo:Order" [ label = "rdfs:subClassOf" ];
+	"http://web.resource.org/cc/Work" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"sosa:Sensor" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wo:TerrestrialHabitat" -> "wo:Habitat" [ label = "rdfs:subClassOf" ];
+	"wo:Phylum" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	"wo:Habitat" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":SpatialThing" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"terms:PhysicalResource" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Chordata" -> "wo:Phylum" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonName/Civettictis" -> "wo:TaxonName" [ label = "rdfs:subClassOf" ];
+	"http://web.resource.org/cc/License" -> "terms:LicenseDocument" [ label = "rdfs:subClassOf" ];
+	"terms:ProvenanceStatement" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wo:Order" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	"sosa:Observation" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonName/Loxodonta" -> "wo:TaxonName" [ label = "rdfs:subClassOf" ];
+	"wo:Class" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	"foaf:Person" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Squamata" -> "wo:Order" [ label = "rdfs:subClassOf" ];
+	"wo:Family" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	"sosa:FeatureOfInterest" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"sosa:ObservableProperty" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2001/XMLSchema-datatypes#date" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"wo:Kingdom" -> "wo:TaxonRank" [ label = "rdfs:subClassOf" ];
+	":Proboscidea" -> "wo:Order" [ label = "rdfs:subClassOf" ];
+	":Elephantidae" -> "wo:Family" [ label = "rdfs:subClassOf" ];
+	"https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom/Animalia" -> "wo:Kingdom" [ label = "rdfs:subClassOf" ];
+
+}
