@@ -12,7 +12,7 @@
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .
 @prefix pos: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; .
-@prefix wo: &lt;https://www.bbc.co.uk/ontologi es/wildlife-ontology#&gt; .
+@prefix wo: &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Family/&gt; .
 @prefix foo: &lt;https://w3id.org/def/foo#&gt; .
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 
@@ -28,41 +28,7 @@ foo: a owl:Ontology ;
     &lt;http://purl.org/vocab/vann/preferredNamespaceUri&gt; "https://w3id.org/def/foo#" ;
     &lt;http://schema.org/citation&gt; "Cite this vocabulary as: Hamed, N., Forest Observatory Ontology (FOO) Ontology"@en .
 
-### Annotated Properties ###
 
-###  http://purl.org/dc/terms/license
-terms:license rdf:type owl:AnnotationProperty ;
-              terms:license &lt;https://creativecommons.org/licenses/by-sa/4.0/&gt; .
-
-###  http://purl.org/dc/terms/relation
-terms:relation rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/rights
-terms:rights rdf:type owl:AnnotationProperty .
-
-###  http://purl.org/dc/terms/title
-terms:title rdf:type owl:AnnotationProperty ;
-            terms:title "Forest Observatory Ontology (FOO)" .
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-&lt;http://purl.org/vocab/vann/preferredNamespacePrefix&gt; rdf:type owl:AnnotationProperty ;
-                                                      &lt;http://purl.org/vocab/vann/preferredNamespacePrefix&gt; "foo" .
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-&lt;http://purl.org/vocab/vann/preferredNamespaceUri&gt; rdf:type owl:AnnotationProperty ;
-&lt;http://purl.org/vocab/vann/preferredNamespaceUri&gt; "https://w3id.org/def/foo#&gt;" .
-
-###  http://schema.org/domainIncludes
-schema:domainIncludes rdf:type owl:AnnotationProperty .
-
-###  http://schema.org/rangeIncludes
-schema:rangeIncludes rdf:type owl:AnnotationProperty .
-
-###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
-ns:term_status rdf:type owl:AnnotationProperty .
-
-###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty .
 
 ### Classes ###
 
@@ -83,8 +49,8 @@ foo:FeatureOfInterest rdf:type  sosa:FeatureOfInterest;
 rdfs:label "Feature of Interest"@en.
 
 ###  https://w3id.org/def/foo#ElephasMaximus
-foo:ElephasMaximus rdf:type  wo:Family/Elephantidae ;
-    rdfs:label "Elephas Maximus"
+foo:ElephasMaximus rdf:type  wo:Elephantidae ;
+    rdfs:label "Elephas Maximus".
 
 ### Properties ###
 
