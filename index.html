@@ -78,8 +78,7 @@ foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     skos:example "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."@en ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
-    rdfs:isDefinedBy sosa: .
-    
+    rdfs:isDefinedBy sosa: .    
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
   rdfs:label "is feature of interest of"@en ;
@@ -90,7 +89,6 @@ foo:isFeatureOfInterestOf a owl:ObjectProperty ;
   rdfs:range  foo:Observation ;
   owl:inverseOf sosa:hasFeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
-
 
 foo:observes rdf:type owl:ObjectProperty ;
     rdfs:sameAs sosa:observes ;
@@ -805,12 +803,10 @@ foo:ID rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 
-
 # Soil Sensor Instance
 foo:SoilSensor rdf:type foo:Sensor ;
            foo:hasFeatureOfInterest foo:Soil ;
            sosa:observes foo:Identifier.
-
 
 # Observation Instance
 foo:Identifier rdf:type foo:Observation ;
@@ -831,8 +827,6 @@ foo:Identifier rdf:type foo:Observation ;
                   foo:Sand "20.66"^^xsd:double ;
                   foo:Silt "16.46"^^xsd:double ;
                   foo:Clay "62.88"^^xsd:double .
-
 </pre>
 </body>
 </html>
-```
