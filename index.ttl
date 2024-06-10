@@ -607,3 +607,45 @@ foo:Binbingan rdf:type foo:Sensor ;
                         foo:HDOP;
                         foo:Distance;
                         foo:Count .
+
+
+
+
+# Soil Sensor Instance
+foo:SoilSensor rdf:type foo:Sensor ;
+           foo:hasFeatureOfInterest foo:Soil ;
+           sosa:observes foo:Identifier,
+                        foo:Site,
+                        foo:LandUse,
+                        foo:PlotName,
+                        foo:Subplot,
+                        foo:Horizon,
+                        foo:SoilPH,
+                        foo:TotalC,
+                        foo:TotalN,
+                        foo:TotalP,
+                        foo:InorganicP,
+                        foo:CNRatio,
+                        foo:Sand,
+                        foo:Silt,
+                        foo:Clay .
+
+# Observation Instance
+foo:Identifier rdf:type foo:Observation ;
+                  foo:madeBySensor foo:SoilSensor ;
+                  foo:hasFeatureOfInterest foo:Soil ;
+                  foo:Identifier "MB4" ;
+                  foo:Site "Maliau Basin Conservation Area"^^xsd:string ;
+                  foo:LandUse "Unlogged"^^xsd:string ;
+                  foo:PlotName "Belian"^^xsd:string ;
+                  foo:Subplot "4"^^xsd:string ;
+                  foo:Horizon "Organic"^^xsd:string ;
+                  foo:SoilPH "4.69"^^xsd:double ;
+                  foo:TotalC "5.45"^^xsd:double ;
+                  foo:TotalN "0.38"^^xsd:double ;
+                  foo:TotalP "263.74"^^xsd:double ;
+                  foo:InorganicP "25.03"^^xsd:double ;
+                  foo:CNRatio "14.24"^^xsd:double ;
+                  foo:Sand "20.66"^^xsd:double ;
+                  foo:Silt "16.46"^^xsd:double ;
+                  foo:Clay "62.88"^^xsd:double .
