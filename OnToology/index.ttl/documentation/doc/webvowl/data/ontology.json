@@ -64,7 +64,7 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
     "id" : "16",
@@ -103,13 +103,13 @@
     "id" : "31",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "2",
+    "id" : "3",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "5",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "34",
+    "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "41",
@@ -163,7 +163,7 @@
     "id" : "54",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "1",
+    "id" : "2",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -171,6 +171,18 @@
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
     "annotations" : {
+      "observes" : [ {
+        "identifier" : "observes",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Observation",
+        "type" : "iri"
+      } ],
+      "observedProperty" : [ {
+        "identifier" : "observedProperty",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#ObservableProperty",
+        "type" : "iri"
+      } ],
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
@@ -185,137 +197,327 @@
     "individuals" : [ {
       "iri" : "https://w3id.org/def/foo#Aqeela",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Aqeela"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Merotai",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Merotai"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Liun",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Liun"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Putut",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Putut"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Tulid",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Tulid"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Maliau",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Maliau"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Tunglap",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Tunglap"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#Sejati",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "Sejati"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#Kuma",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Kuma"
       }
     }, {
+      "iri" : "https://w3id.org/def/foo#Sejati",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Sejati"
+      }
+    }, {
       "iri" : "https://w3id.org/def/foo#Guli",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Guli"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Dara",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Dara"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Kasih",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Kasih"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Umas2",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Umas2"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Bikang2",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Bikang2"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Jasmin",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Jasmin"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Puteri",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Puteri"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Bikang1",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Bikang1"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Seri",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Seri"
       }
     }, {
+      "iri" : "https://w3id.org/def/foo#SoilSensor",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Identifier",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "SoilSensor"
+      }
+    }, {
       "iri" : "https://w3id.org/def/foo#Jasper",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Jasper"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#Abaw",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Abaw"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#Binbingan",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "Binbingan"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#Ita",
       "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "Ita"
       }
+    }, {
+      "iri" : "https://w3id.org/def/foo#Binbingan",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "observes" : [ {
+          "identifier" : "observes",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#ID",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Binbingan"
+      }
     } ],
-    "id" : "3"
+    "id" : "0"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -423,7 +625,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
+    "id" : "3",
     "label" : {
       "IRI-based" : "double"
     }
@@ -437,7 +639,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
+    "id" : "33",
     "label" : {
       "IRI-based" : "double"
     }
@@ -586,10 +788,157 @@
       "IRI-based" : "Observation",
       "en" : "Observation"
     },
-    "id" : "1"
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/foo#Identifier",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "Identifier" : [ {
+          "identifier" : "Identifier",
+          "language" : "undefined",
+          "value" : "MB4",
+          "type" : "label"
+        } ],
+        "madeBySensor" : [ {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#SoilSensor",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Identifier"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#ID",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "resultTime" : [ {
+          "identifier" : "resultTime",
+          "language" : "undefined",
+          "value" : "2011-10-26T07:40:35",
+          "type" : "label"
+        }, {
+          "identifier" : "resultTime",
+          "language" : "undefined",
+          "value" : "2015-10-26T07:40:35",
+          "type" : "label"
+        } ],
+        "madeBySensor" : [ {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Merotai",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Dara",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Jasper",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Bikang2",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Binbingan",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Seri",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Kaish",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Sejati",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Tunglap",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Maliau",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Guli",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Ita",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Jasmin",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Aqeela",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Kuma",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Putut",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Umas2",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Bikang1",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Puteri",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Liun",
+          "type" : "iri"
+        }, {
+          "identifier" : "madeBySensor",
+          "language" : "undefined",
+          "value" : "https://w3id.org/def/foo#Tulid",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ID",
+        "undefined" : "ID"
+      }
+    } ],
+    "id" : "2"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "1",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "4",
@@ -625,7 +974,7 @@
     "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "33",
+    "id" : "34",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "35",
@@ -682,14 +1031,14 @@
   "propertyAttribute" : [ {
     "iri" : "https://w3id.org/def/foo#Longitude",
     "baseIri" : "https://w3id.org/def/foo",
-    "range" : "2",
+    "range" : "3",
     "label" : {
       "IRI-based" : "Longitude",
       "undefined" : "Longitude"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
-    "id" : "0"
+    "id" : "1"
   }, {
     "iri" : "https://w3id.org/def/foo#Sand",
     "baseIri" : "https://w3id.org/def/foo",
@@ -697,7 +1046,7 @@
     "label" : {
       "IRI-based" : "Sand"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "4"
   }, {
@@ -707,7 +1056,7 @@
     "label" : {
       "IRI-based" : "Cov"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "6"
   }, {
@@ -717,7 +1066,7 @@
     "label" : {
       "IRI-based" : "SoilPH"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "8"
   }, {
@@ -727,7 +1076,7 @@
     "label" : {
       "IRI-based" : "TotalC"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "10"
   }, {
@@ -738,7 +1087,7 @@
       "IRI-based" : "Speed",
       "undefined" : "Speed"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "12"
   }, {
@@ -748,7 +1097,7 @@
     "label" : {
       "IRI-based" : "LocalDate"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "14"
   }, {
@@ -759,7 +1108,7 @@
       "IRI-based" : "Altitude",
       "undefined" : "Altitude"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "17"
   }, {
@@ -769,7 +1118,7 @@
     "label" : {
       "IRI-based" : "GMTDate"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "21"
   }, {
@@ -779,7 +1128,7 @@
     "label" : {
       "IRI-based" : "GMTTime"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "27"
   }, {
@@ -789,9 +1138,19 @@
     "label" : {
       "IRI-based" : "Silt"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/def/foo#Latitude",
+    "baseIri" : "https://w3id.org/def/foo",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "Latitude"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
   }, {
     "iri" : "https://w3id.org/def/foo#Site",
     "baseIri" : "https://w3id.org/def/foo",
@@ -799,19 +1158,9 @@
     "label" : {
       "IRI-based" : "Site"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
-    "id" : "32"
-  }, {
-    "iri" : "https://w3id.org/def/foo#Latitude",
-    "baseIri" : "https://w3id.org/def/foo",
-    "range" : "34",
-    "label" : {
-      "IRI-based" : "Latitude"
-    },
-    "domain" : "1",
-    "attributes" : [ "datatype" ],
-    "id" : "33"
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/def/foo#Clay",
     "baseIri" : "https://w3id.org/def/foo",
@@ -819,7 +1168,7 @@
     "label" : {
       "IRI-based" : "Clay"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "35"
   }, {
@@ -829,18 +1178,137 @@
     "label" : {
       "IRI-based" : "Distance"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "37"
   }, {
     "iri" : "https://w3id.org/def/foo#ID",
     "baseIri" : "https://w3id.org/def/foo",
     "range" : "40",
+    "annotations" : {
+      "resultTime" : [ {
+        "identifier" : "resultTime",
+        "language" : "undefined",
+        "value" : "2011-10-26T07:40:35",
+        "type" : "label"
+      }, {
+        "identifier" : "resultTime",
+        "language" : "undefined",
+        "value" : "2015-10-26T07:40:35",
+        "type" : "label"
+      } ],
+      "madeBySensor" : [ {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Tunglap",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Seri",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Dara",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Jasmin",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Liun",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Merotai",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Jasper",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Kuma",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Tulid",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Puteri",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Bikang2",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Sejati",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Guli",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Ita",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Aqeela",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Putut",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Umas2",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Binbingan",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Kaish",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Bikang1",
+        "type" : "iri"
+      }, {
+        "identifier" : "madeBySensor",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/foo#Maliau",
+        "type" : "iri"
+      } ]
+    },
     "label" : {
       "IRI-based" : "ID",
       "undefined" : "ID"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "39"
   }, {
@@ -850,7 +1318,7 @@
     "label" : {
       "IRI-based" : "Horizon"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "42"
   }, {
@@ -860,7 +1328,7 @@
     "label" : {
       "IRI-based" : "PlotName"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "45"
   }, {
@@ -870,7 +1338,7 @@
     "label" : {
       "IRI-based" : "LandUse"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "47"
   }, {
@@ -881,7 +1349,7 @@
       "IRI-based" : "Temperature",
       "undefined" : "Temperature"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "51"
   }, {
@@ -891,7 +1359,7 @@
     "label" : {
       "IRI-based" : "hasFeatureOfInterest"
     },
-    "domain" : "3",
+    "domain" : "0",
     "attributes" : [ "object" ],
     "id" : "53"
   }, {
@@ -901,7 +1369,7 @@
     "label" : {
       "IRI-based" : "HDOP"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "55"
   }, {
@@ -911,7 +1379,7 @@
     "label" : {
       "IRI-based" : "CNRatio"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "56"
   }, {
@@ -922,7 +1390,7 @@
       "IRI-based" : "Direction",
       "undefined" : "Direction"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "57"
   }, {
@@ -932,7 +1400,7 @@
     "label" : {
       "IRI-based" : "Subplot"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "58"
   }, {
@@ -942,7 +1410,7 @@
     "label" : {
       "IRI-based" : "TotalP"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "59"
   }, {
@@ -952,7 +1420,7 @@
     "label" : {
       "IRI-based" : "TotalN"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "60"
   }, {
@@ -962,7 +1430,7 @@
     "label" : {
       "IRI-based" : "Count"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "61"
   }, {
@@ -972,7 +1440,7 @@
     "label" : {
       "IRI-based" : "InorganicP"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "62"
   }, {
@@ -982,7 +1450,7 @@
     "label" : {
       "IRI-based" : "LocalTime"
     },
-    "domain" : "1",
+    "domain" : "2",
     "attributes" : [ "datatype" ],
     "id" : "63"
   } ]

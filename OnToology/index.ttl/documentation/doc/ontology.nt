@@ -45,8 +45,26 @@
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://schema.org/citation
 <https://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/foo#Identifier
+<https://w3id.org/def/foo#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/foo#madeBySensor
+<https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/foo#observedProperty
+<https://w3id.org/def/foo#observedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/foo#observes
+<https://w3id.org/def/foo#observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/foo#resultTime
+<https://w3id.org/def/foo#resultTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -147,7 +165,6 @@
 <https://w3id.org/def/foo#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/foo#ID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#ID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/foo#ID> <http://www.w3.org/2000/01/rdf-schema#label> "ID" .
 # 
 # https://w3id.org/def/foo#InorganicP
 <https://w3id.org/def/foo#InorganicP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -251,8 +268,6 @@
 # 
 # https://w3id.org/def/foo#FeatureOfInterest
 <https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of Interest"@en .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en .
 # 
 # https://w3id.org/def/foo#ObservableProperty
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -266,8 +281,6 @@
 # 
 # https://w3id.org/def/foo#Sensor
 <https://w3id.org/def/foo#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
-<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en .
 # 
 # 
 # 
@@ -283,113 +296,195 @@
 <https://w3id.org/def/foo#Abaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Abaw> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Abaw> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Aqeela
 <https://w3id.org/def/foo#Aqeela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Aqeela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Aqeela> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Aqeela> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Bikang1
 <https://w3id.org/def/foo#Bikang1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Bikang1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Bikang1> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Bikang1> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Bikang2
 <https://w3id.org/def/foo#Bikang2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Bikang2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Bikang2> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Bikang2> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Binbingan
 <https://w3id.org/def/foo#Binbingan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Binbingan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Binbingan> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Binbingan> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Dara
 <https://w3id.org/def/foo#Dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Dara> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Dara> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#ElephasMaximus
+# 
+# https://w3id.org/def/foo#FeatureOfInterest
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#Guli
 <https://w3id.org/def/foo#Guli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Guli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Guli> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Guli> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
+# 
+# https://w3id.org/def/foo#ID
+<https://w3id.org/def/foo#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Observation> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Altitude> "11.7" .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Altitude> "16.7" .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Count> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Cov> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Direction> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Distance> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#GMTDate> "2011-10-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#GMTTime> "22:40:35"^^<http://www.w3.org/2001/XMLSchema#time> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#GMTTime> "23:40:35"^^<http://www.w3.org/2001/XMLSchema#time> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#HDOP> "1.14"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#HDOP> "1.64"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#ID> "1SAT32" .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Latitude> "1.237206"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Latitude> "1.537206"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#LocalDate> "2011-10-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#LocalTime> "07:40:35"^^<http://www.w3.org/2001/XMLSchema#time> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Longitude> "565.222302"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Longitude> "566.222302"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Speed> "0.24"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#Temperature> "24.5"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/def/foo#Identifier
+<https://w3id.org/def/foo#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Observation> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Soil> .
+<https://w3id.org/def/foo#Soil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#CNRatio> "14.24"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Clay> "62.88"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Horizon> "Organic" .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#InorganicP> "25.03"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#LandUse> "Unlogged" .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#PlotName> "Belian" .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Sand> "20.66"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Silt> "16.46"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Site> "Maliau Basin Conservation Area" .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#SoilPH> "4.69"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Subplot> "4" .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#TotalC> "5.45"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#TotalN> "0.38"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#TotalP> "263.74"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://w3id.org/def/foo#Ita
 <https://w3id.org/def/foo#Ita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Ita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Ita> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Ita> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Jasmin
 <https://w3id.org/def/foo#Jasmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Jasmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Jasmin> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Jasmin> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Jasper
 <https://w3id.org/def/foo#Jasper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Jasper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Jasper> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Jasper> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Kasih
 <https://w3id.org/def/foo#Kasih> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Kasih> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Kasih> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Kasih> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Kuma
 <https://w3id.org/def/foo#Kuma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Kuma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Kuma> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Kuma> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Liun
 <https://w3id.org/def/foo#Liun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Liun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Liun> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Liun> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Maliau
 <https://w3id.org/def/foo#Maliau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Maliau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Maliau> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Maliau> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Merotai
 <https://w3id.org/def/foo#Merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Merotai> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Merotai> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Puteri
 <https://w3id.org/def/foo#Puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Puteri> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Puteri> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Putut
 <https://w3id.org/def/foo#Putut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Putut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Putut> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Putut> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Sejati
 <https://w3id.org/def/foo#Sejati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Sejati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Sejati> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Sejati> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
+# 
+# https://w3id.org/def/foo#Sensor
+<https://w3id.org/def/foo#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Sensor> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#FeatureOfInterest> .
 # 
 # https://w3id.org/def/foo#Seri
 <https://w3id.org/def/foo#Seri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Seri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Seri> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Seri> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
+# 
+# https://w3id.org/def/foo#Soil
+# 
+# https://w3id.org/def/foo#SoilSensor
+<https://w3id.org/def/foo#SoilSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#SoilSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
+<https://w3id.org/def/foo#SoilSensor> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Soil> .
+<https://w3id.org/def/foo#SoilSensor> <http://www.w3.org/ns/sosa/observes> <https://w3id.org/def/foo#Identifier> .
 # 
 # https://w3id.org/def/foo#Tulid
 <https://w3id.org/def/foo#Tulid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Tulid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Tulid> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Tulid> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Tunglap
 <https://w3id.org/def/foo#Tunglap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Tunglap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Tunglap> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Tunglap> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # https://w3id.org/def/foo#Umas2
 <https://w3id.org/def/foo#Umas2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#Umas2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#Umas2> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#Umas2> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#ID> .
 # 
 # 
 # 
@@ -402,5 +497,41 @@
 # 
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#label> "Elephas Maximus"@en .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2004/02/skos/core#definition> "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en .
+# 
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of Interest"@en .
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en .
+# 
+<https://w3id.org/def/foo#ID> <http://www.w3.org/2000/01/rdf-schema#label> "ID" .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Aqeela> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Bikang1> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Bikang2> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Binbingan> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Dara> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Guli> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Ita> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Jasmin> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Jasper> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Kaish> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Kuma> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Liun> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Maliau> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Merotai> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Puteri> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Putut> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Sejati> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Seri> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Tulid> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Tunglap> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#Umas2> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#resultTime> "2011-10-26T07:40:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/def/foo#ID> <https://w3id.org/def/foo#resultTime> "2015-10-26T07:40:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#Identifier> "MB4" .
+<https://w3id.org/def/foo#Identifier> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#SoilSensor> .
+# 
+<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en .
+<https://w3id.org/def/foo#Sensor> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#ObservableProperty> .
+<https://w3id.org/def/foo#Sensor> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#Observation> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
