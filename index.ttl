@@ -213,67 +213,397 @@ foo:Clay rdf:type owl:DatatypeProperty ;
 
 ### Instances ###
 foo:Kuma rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+
 
 foo:Jasmin rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+
 
 foo:Putut rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+
 
 foo:Bikang1 rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+
 
 foo:Bikang2 rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Sejati rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Umas2 rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
-foo:Ita rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
-
-foo:Abaw rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+foo:Ita  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+foo:Abaw  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Liun rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
-foo:Dara rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
-
-foo:Jasper rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+foo:Dara  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+foo:Jasper  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Guli rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
-foo:Maliau rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+foo:Maliau  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
-foo:Tunglap rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+foo:Tunglap  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Seri rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
-foo:Puteri rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
-
-foo:Tulid rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
-
+foo:Puteri  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
+foo:Tulid  rdf:type foo:Sensor ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 foo:Kasih rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Aqeela rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Merotai rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
 
 foo:Binbingan rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus .
+    foo:hasFeatureOfInterest foo:ElephasMaximus;
+           foo:observes foo:ID,
+                        foo:LocalDate;
+                        foo:LocalTime;
+                        foo:GMTDate;
+                        foo:GMTTime;
+                        foo:Latitude;
+                        foo:Longitude;
+                        foo:Temperature;
+                        foo:Speed;
+                        foo:Direction;
+                        foo:Altitude;
+                        foo:Cov;
+                        foo:HDOP;
+                        foo:Distance;
+                        foo:Count .
