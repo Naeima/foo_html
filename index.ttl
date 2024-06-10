@@ -25,189 +25,189 @@ foo: a owl:Ontology ;
 
 ### Classes ###
 foo:Sensor rdf:type owl:Class ;
-    rdfs:subClassOf sosa:Sensor ;
+     rdfs:sameAs sosa:Sensor ;
     rdfs:label "Sensor"@en ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en ;
     rdfs:definedBy <http://www.w3.org/ns/sosa/Sensor> .
 
 foo:Observation rdf:type owl:Class ;
-    rdfs:subClassOf sosa:Observation ;
+     rdfs:sameAs sosa:Observation ;
     rdfs:label "Observation"@en ;
     skos:definition "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant). Observation can be seen as a placeholder that links relevant information together. In our ontology, observation can be considered an ID for each data record."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:ObservableProperty rdf:type owl:Class ;
-    rdfs:subClassOf sosa:ObservableProperty ;
+     rdfs:sameAs sosa:ObservableProperty ;
     rdfs:label "Observable Property"@en ;
     skos:definition "An observable quality (property, characteristic) of a FeatureOfInterest. (e.g., Temperature, humidity, presence)"@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:FeatureOfInterest rdf:type owl:Class ;
-    rdfs:subClassOf sosa:FeatureOfInterest ;
+     rdfs:sameAs sosa:FeatureOfInterest ;
     rdfs:label "Feature of Interest"@en ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:ElephasMaximus rdf:type owl:Class ;
-    rdfs:subClassOf wo:Family/Elephantidae ;
+     rdfs:sameAs wo:Family/Elephantidae ;
     rdfs:label "Elephas Maximus"@en ;
     skos:definition "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en ;
     rdfs:definedBy <https://www.bbc.co.uk/ontologies/wildlife-ontology#> .
 
 ### Properties ###
 foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
-    rdfs:subPropertyOf sosa:hasFeatureOfInterest ;
+     rdfs:sameAs sosa:hasFeatureOfInterest ;
     rdfs:domain foo:Sensor ;
     rdfs:range foo:ElephasMaximus .
 
 foo:ID rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     rdfs:label "ID" .
 
 foo:LocalDate rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:date .
 
 foo:LocalTime rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:time .
 
 foo:GMTDate rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:date .
 
 foo:GMTTime rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:time .
 
 foo:Latitude rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf pos:lat ;
+     rdfs:sameAs pos:lat ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:Longitude rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf pos:long ;
+     rdfs:sameAs pos:long ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Longitude" .
 
 foo:Temperature rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Temperature" .
 
 foo:Speed rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Speed" .
 
 foo:Direction rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer ;
     rdfs:label "Direction" .
 
 foo:Altitude rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf pos:alt ;
+     rdfs:sameAs pos:alt ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Altitude" .
 
 foo:Cov rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:HDOP rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:Distance rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:Count rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer .
 
 foo:Site rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
 foo:LandUse rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
 foo:PlotName rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
 foo:Subplot rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
 foo:Horizon rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
 foo:SoilPH rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:TotalC rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:TotalN rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:TotalP rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:InorganicP rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:CNRatio rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:Sand rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:Silt rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
 foo:Clay rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf sosa:observedProperty ;
+     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double .
 
