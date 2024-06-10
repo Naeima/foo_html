@@ -12,7 +12,7 @@
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 @prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .
 @prefix pos: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; .
-@prefix wo: &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#&gt; .
+@prefix wo: &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#Family/&gt; .
 @prefix foo: &lt;https://w3id.org/def/foo#&gt; .
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 @prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
@@ -57,7 +57,7 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     rdfs:definedBy &lt;https://w3id.org/def/foo&gt; .
 
 foo:ElephasMaximus rdf:type owl:Class ;
-    rdfs:sameAs wo:Family/Elephantidae ;
+    rdfs:sameAs wo:Elephantidae ;
     rdfs:label "Elephas Maximus"@en ;
     skos:definition "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en ;
     rdfs:definedBy &lt;https://www.bbc.co.uk/ontologies/wildlife-ontology#&gt; .
