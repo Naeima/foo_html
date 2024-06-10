@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix wo: <https://www.bbc.co.uk/ontologies/wildlife-ontology#Family/> .
+@prefix wo: <https://www.bbc.co.uk/ontologies/wildlife-ontology#> .
 @prefix foo: <https://w3id.org/def/foo#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -26,9 +26,9 @@ foo: a owl:Ontology ;
 ### Classes ###
 
 foo:Sensor rdf:type owl:Class ;
-    foo:observes  foo:Observation ;
-    foo:observedProperty  foo:ObservableProperty ;
-    foo:hasFeatureOfInterest   foo:FeatureOfInterest;  
+    foo:observes  foo:Observation;
+    foo:observedProperty  foo:ObservableProperty;
+    foo:hasFeatureOfInterest  foo:FeatureOfInterest;  
     rdfs:sameAs sosa:Sensor ;
     rdfs:label "Sensor"@en ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en ;
@@ -53,16 +53,85 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:ElephasMaximus rdf:type owl:Class ;
-    rdfs:sameAs wo:Elephantidae ;
+    rdfs:sameAs wo:species;
     rdfs:label "Elephas Maximus"@en ;
-    skos:definition "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en ;
+    skos:definition "associates a taxon rank with a species."@en ;
     rdfs:definedBy <https://www.bbc.co.uk/ontologies/wildlife-ontology#> .
 
+
 ### Properties ###
+
 foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     rdfs:sameAs sosa:hasFeatureOfInterest ;
+    rdfs:domain foo:Observation ;
+    rdfs:range  foo:FeatureOfInterest ;
+    rdfs:range  foo:ElephasMaximus ;
+    skos:definition "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
+    rdfs:comment "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
+    skos:example "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."@en ;
+    owl:inverseOf sosa:isFeatureOfInterestOf ;
+    rdfs:isDefinedBy sosa: .
+    
+
+foo:isFeatureOfInterestOf a owl:ObjectProperty ;
+  rdfs:label "is feature of interest of"@en ;
+  skos:definition "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
+  rdfs:comment "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
+  rdfs:domain foo:FeatureOfInterest ;
+  rdfs:domain foo:ElephasMaximus ;
+  rdfs:range  foo:Observation ;
+  owl:inverseOf sosa:hasFeatureOfInterest ;
+  rdfs:isDefinedBy sosa: .
+
+
+foo:observes rdf:type owl:ObjectProperty ;
+    rdfs:sameAs sosa:observes ;
     rdfs:domain foo:Sensor ;
-    rdfs:range foo:ElephasMaximus .
+    rdfs:range  foo:ObservableProperty ;
+    rdfs:label "observes"@en ;
+    skos:definition "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
+    rdfs:comment "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
+    owl:inverseOf foo:isObservedBy ;
+    rdfs:isDefinedBy sosa: .
+
+foo:isObservedBy a owl:ObjectProperty ;
+    rdfs:sameAs  sosa:isObservedBy ;
+    rdfs:label "is observed by"@en ;
+    skos:definition "Relation between an ObservableProperty and the Sensor able to observe it."@en ;
+    rdfs:comment "Relation between an ObservableProperty and the Sensor able to observe it."@en ;
+    rdfs:domain foo:ObservableProperty;
+    rdfs:range  foo:Sensor;
+    owl:inverseOf foo:observes ;
+    rdfs:isDefinedBy sosa: .
+
+foo:madeObservation a owl:ObjectProperty ;
+    rdfs:sameAs  sosa:madeObservation ;
+    rdfs:label "made observation"@en ;
+    skos:definition "Relation between a Sensor and an Observation made by the Sensor."@en ;
+    rdfs:comment "Relation between a Sensor and an Observation made by the Sensor."@en ;
+    rdfs:domain foo:Sensor;
+    rdfs:range  foo:Observation;
+    owl:inverseOf sosa:madeBySensor ;
+    rdfs:isDefinedBy sosa: .
+
+foo:madeBySensor rdf:type owl:ObjectProperty ;
+    rdfs:sameAs  sosa:madeBySensor  ;
+    rdfs:label "made by sensor"@en ;
+    skos:definition "Relation between an Observation and the Sensor which made the Observation."@en ;
+    rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
+    rdfs:domain foo:Observation;
+    rdfs:range  foo:Sensor;
+    owl:inverseOf foo:madeObservation ;
+    rdfs:isDefinedBy sosa: .
+
+foo:observedProperty a owl:ObjectProperty ;
+    rdfs:label "observed property"@en ;
+    skos:definition "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en ;
+    rdfs:comment "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en ;
+    rdfs:domain foo:Observation ;
+    rdfs:range  foo:ObservableProperty ;
+    rdfs:isDefinedBy sosa: .
+
 
 foo:ID rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
