@@ -633,20 +633,20 @@ foo:ID rdf:type foo:Observation ;
 foo:ID rdf:type foo:Observation ;
                       foo:madeBySensor foo:Jasmin ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+                      foo:resultTime "2015-10-26T07:40:35"^^xsd:dateTime ;
                       foo:ID "1SAT32" ;
                       foo:LocalDate "2011-10-26"^^xsd:date ;
                       foo:LocalTime "07:40:35"^^xsd:time ;
                       foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
+                      foo:GMTTime "22:40:35"^^xsd:time ;
+                      foo:Latitude "1.537206"^^xsd:double ;
+                      foo:Longitude "565.222302"^^xsd:double ;
                       foo:Temperature "24.5"^^xsd:double ;
                       foo:Speed "0.24"^^xsd:double ;
                       foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
+                      foo:Altitude "11.7"^^xsd:string ;
                       foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
+                      foo:HDOP "1.14"^^xsd:double ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 
