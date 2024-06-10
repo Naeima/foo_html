@@ -1,0 +1,172 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "Direction" : {
+      "@id" : "https://w3id.org/def/foo#Direction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Longitude" : {
+      "@id" : "https://w3id.org/def/foo#Longitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "Sand" : {
+      "@id" : "https://w3id.org/def/foo#Sand",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "LocalTime" : {
+      "@id" : "https://w3id.org/def/foo#LocalTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "citation" : {
+      "@id" : "https://schema.org/citation"
+    },
+    "InorganicP" : {
+      "@id" : "https://w3id.org/def/foo#InorganicP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Altitude" : {
+      "@id" : "https://w3id.org/def/foo#Altitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    },
+    "Speed" : {
+      "@id" : "https://w3id.org/def/foo#Speed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "TotalN" : {
+      "@id" : "https://w3id.org/def/foo#TotalN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CNRatio" : {
+      "@id" : "https://w3id.org/def/foo#CNRatio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Count" : {
+      "@id" : "https://w3id.org/def/foo#Count",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "LandUse" : {
+      "@id" : "https://w3id.org/def/foo#LandUse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/def/foo#Temperature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "LocalDate" : {
+      "@id" : "https://w3id.org/def/foo#LocalDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "GMTDate" : {
+      "@id" : "https://w3id.org/def/foo#GMTDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "PlotName" : {
+      "@id" : "https://w3id.org/def/foo#PlotName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GMTTime" : {
+      "@id" : "https://w3id.org/def/foo#GMTTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "ID" : {
+      "@id" : "https://w3id.org/def/foo#ID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Distance" : {
+      "@id" : "https://w3id.org/def/foo#Distance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Cov" : {
+      "@id" : "https://w3id.org/def/foo#Cov",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Subplot" : {
+      "@id" : "https://w3id.org/def/foo#Subplot",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "TotalP" : {
+      "@id" : "https://w3id.org/def/foo#TotalP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Latitude" : {
+      "@id" : "https://w3id.org/def/foo#Latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "TotalC" : {
+      "@id" : "https://w3id.org/def/foo#TotalC",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "https://w3id.org/def/foo#hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "Site" : {
+      "@id" : "https://w3id.org/def/foo#Site",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Horizon" : {
+      "@id" : "https://w3id.org/def/foo#Horizon",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Silt" : {
+      "@id" : "https://w3id.org/def/foo#Silt",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "HDOP" : {
+      "@id" : "https://w3id.org/def/foo#HDOP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ElephasMaximus" : {
+      "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    },
+    "Clay" : {
+      "@id" : "https://w3id.org/def/foo#Clay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "SoilPH" : {
+      "@id" : "https://w3id.org/def/foo#SoilPH",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ObservableProperty" : {
+      "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Observation" : {
+      "@id" : "https://w3id.org/def/foo#Observation"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/def/foo#Sensor"
+    }
+  }
+}
