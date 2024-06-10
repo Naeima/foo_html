@@ -33,10 +33,13 @@ foo: a owl:Ontology ;
 
 ### Classes ###
 foo:Sensor rdf:type owl:Class ;
+    foo:observes  foo:Observation ;
+    foo:observedProperty  foo:ObservableProperty ;
+    foo:hasFeatureOfInterest   foo:FeatureOfInterest;  
     rdfs:sameAs sosa:Sensor ;
     rdfs:label "Sensor"@en ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en ;
-    rdfs:definedBy &lt;http://www.w3.org/ns/sosa/Sensor&gt; .
+    rdfs:definedBy  &lt; http://www.w3.org/ns/sosa/Sensor&gt; .
 
 foo:Observation rdf:type owl:Class ;
     rdfs:sameAs sosa:Observation ;
