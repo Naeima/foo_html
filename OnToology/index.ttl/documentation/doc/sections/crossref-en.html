@@ -2,136 +2,6 @@
 This section provides details for each class and property defined by [Forest Observatory Ontology (FOO)].
 <div xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     id="classes">
-   <h3 id="classes-headline" class="list">Classes</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#https://w3id.org/def/foo#FeatureOfInterest" title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/def/foo#ObservableProperty" title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
-      </li>
-      <li>
-         <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
-      </li>
-   </ul>
-   <div class="entity" id="https://w3id.org/def/foo#FeatureOfInterest">
-      <h3>Feature of Interest<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/foo#FeatureOfInterest</p>
-      <div class="comment">
-         <span class="markdown">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil).</span>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/def/foo#ObservableProperty">
-      <h3>Observable Property<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/foo#ObservableProperty</p>
-      <div class="comment">
-         <span class="markdown">An observable quality (property, characteristic) of a FeatureOfInterest. (e.g., Temperature, humidity, presence)</span>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/def/foo#Observation">
-      <h3>Observation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/foo#Observation</p>
-      <div class="comment">
-         <span class="markdown">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant). Observation can be seen as a placeholder that links relevant information together. In our ontology, observation can be considered an ID for each data record.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/foo#Altitude" title="https://w3id.org/def/foo#Altitude">Altitude</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Direction" title="https://w3id.org/def/foo#Direction">Direction</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Longitude" title="https://w3id.org/def/foo#Longitude">Longitude</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Speed" title="https://w3id.org/def/foo#Speed">Speed</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Temperature" title="https://w3id.org/def/foo#Temperature">Temperature</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#CNRatio" title="https://w3id.org/def/foo#CNRatio">c n ratio</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Clay" title="https://w3id.org/def/foo#Clay">clay</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Count" title="https://w3id.org/def/foo#Count">count</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Cov" title="https://w3id.org/def/foo#Cov">cov</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Distance" title="https://w3id.org/def/foo#Distance">distance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#GMTDate" title="https://w3id.org/def/foo#GMTDate">g m t date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#GMTTime" title="https://w3id.org/def/foo#GMTTime">g m t time</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#HDOP" title="https://w3id.org/def/foo#HDOP">h d o p</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Horizon" title="https://w3id.org/def/foo#Horizon">horizon</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#InorganicP" title="https://w3id.org/def/foo#InorganicP">inorganic p</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#LandUse" title="https://w3id.org/def/foo#LandUse">land use</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Latitude" title="https://w3id.org/def/foo#Latitude">latitude</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#LocalDate" title="https://w3id.org/def/foo#LocalDate">local date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#LocalTime" title="https://w3id.org/def/foo#LocalTime">local time</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#PlotName" title="https://w3id.org/def/foo#PlotName">plot name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Sand" title="https://w3id.org/def/foo#Sand">sand</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Silt" title="https://w3id.org/def/foo#Silt">silt</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Site" title="https://w3id.org/def/foo#Site">site</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#SoilPH" title="https://w3id.org/def/foo#SoilPH">soil p h</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#Subplot" title="https://w3id.org/def/foo#Subplot">subplot</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#TotalC" title="https://w3id.org/def/foo#TotalC">total c</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#TotalN" title="https://w3id.org/def/foo#TotalN">total n</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/foo#TotalP" title="https://w3id.org/def/foo#TotalP">total p</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://w3id.org/def/foo#Sensor">
-      <h3>Sensor<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/foo#Sensor</p>
-      <div class="comment">
-         <span class="markdown">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#https://w3id.org/def/foo#Abaw" title="https://w3id.org/def/foo#Abaw">abaw</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Aqeela" title="https://w3id.org/def/foo#Aqeela">aqeela</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Bikang1" title="https://w3id.org/def/foo#Bikang1">bikang1</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Bikang2" title="https://w3id.org/def/foo#Bikang2">bikang2</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Binbingan" title="https://w3id.org/def/foo#Binbingan">binbingan</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Dara" title="https://w3id.org/def/foo#Dara">dara</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Guli" title="https://w3id.org/def/foo#Guli">guli</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Ita" title="https://w3id.org/def/foo#Ita">ita</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Jasmin" title="https://w3id.org/def/foo#Jasmin">jasmin</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Jasper" title="https://w3id.org/def/foo#Jasper">jasper</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Kasih" title="https://w3id.org/def/foo#Kasih">kasih</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Kuma" title="https://w3id.org/def/foo#Kuma">kuma</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Liun" title="https://w3id.org/def/foo#Liun">liun</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Maliau" title="https://w3id.org/def/foo#Maliau">maliau</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Merotai" title="https://w3id.org/def/foo#Merotai">merotai</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Puteri" title="https://w3id.org/def/foo#Puteri">puteri</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Putut" title="https://w3id.org/def/foo#Putut">putut</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Sejati" title="https://w3id.org/def/foo#Sejati">sejati</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Seri" title="https://w3id.org/def/foo#Seri">seri</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Tulid" title="https://w3id.org/def/foo#Tulid">tulid</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Tunglap" title="https://w3id.org/def/foo#Tunglap">tunglap</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/def/foo#Umas2" title="https://w3id.org/def/foo#Umas2">umas2</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-      </dl>
-   </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
@@ -139,6 +9,24 @@ This section provides details for each class and property defined by [Forest Obs
          <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">
             <span>has feature of interest</span>
          </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#isFeatureOfInterestOf" title="https://w3id.org/def/foo#isFeatureOfInterestOf">is feature of interest of</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#isObservedBy" title="https://w3id.org/def/foo#isObservedBy">is observed by</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#madeObservation" title="https://w3id.org/def/foo#madeObservation">made observation</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#observedProperty" title="https://w3id.org/def/foo#observedProperty">observed property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/def/foo#hasFeatureOfInterest">
@@ -148,11 +36,31 @@ This section provides details for each class and property defined by [Forest Obs
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/foo#hasFeatureOfInterest</p>
+      <div class="comment">
+         <span class="markdown">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.</pre>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -161,6 +69,283 @@ This section provides details for each class and property defined by [Forest Obs
                   target="_blank"
                   title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="https://w3id.org/def/foo#FeatureOfInterest"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
+                  target="_blank"
+                  title="http://www.w3.org/ns/sosa/isFeatureOfInterestOf">is feature of interest of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#isFeatureOfInterestOf">
+      <h3>is feature of interest of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#isFeatureOfInterestOf</p>
+      <div class="comment">
+         <span class="markdown">A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#ElephasMaximus"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="https://w3id.org/def/foo#FeatureOfInterest"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+                  target="_blank"
+                  title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#isObservedBy">
+      <h3>is observed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#isObservedBy</p>
+      <div class="comment">
+         <span class="markdown">Relation between an ObservableProperty and the Sensor able to observe it.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Relation between an ObservableProperty and the Sensor able to observe it.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#ObservableProperty"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Sensor"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#madeBySensor">
+      <h3>made by sensor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#madeBySensor</p>
+      <div class="comment">
+         <span class="markdown">Relation between an Observation and the Sensor which made the Observation.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Relation between an Observation and the Sensor which made the Observation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Sensor"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/foo#madeObservation" title="https://w3id.org/def/foo#madeObservation">made observation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#madeObservation">
+      <h3>made observation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#madeObservation</p>
+      <div class="comment">
+         <span class="markdown">Relation between a Sensor and an Observation made by the Sensor.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Relation between a Sensor and an Observation made by the Sensor.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Sensor"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/sosa/madeBySensor"
+                  target="_blank"
+                  title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#observedProperty">
+      <h3>observed property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#observedProperty</p>
+      <div class="comment">
+         <span class="markdown">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#ObservableProperty"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#observes">
+      <h3>observes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#observes</p>
+      <div class="comment">
+         <span class="markdown">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#Sensor"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/def/foo#ObservableProperty"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/def/foo#isObservedBy" title="https://w3id.org/def/foo#isObservedBy">is observed by</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -222,7 +407,9 @@ This section provides details for each class and property defined by [Forest Obs
          </a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
+         <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">
+            <span>ID</span>
+         </a>
       </li>
       <li>
          <a href="#https://w3id.org/def/foo#InorganicP" title="https://w3id.org/def/foo#InorganicP">
@@ -315,7 +502,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -338,7 +527,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -361,7 +552,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -384,7 +577,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -407,7 +602,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -430,7 +627,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -453,7 +652,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -476,7 +677,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -499,7 +702,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -522,7 +727,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -545,7 +752,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -568,7 +777,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -576,6 +787,10 @@ This section provides details for each class and property defined by [Forest Obs
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#https://w3id.org/def/foo#ID">named individual</a>
             </dd>
          </dl>
       </div>
@@ -591,7 +806,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -614,7 +831,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -637,7 +856,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -660,7 +881,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -683,7 +906,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -706,7 +931,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -729,7 +956,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -752,7 +981,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -775,7 +1006,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -798,7 +1031,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -821,7 +1056,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -844,7 +1081,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -867,7 +1106,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -890,7 +1131,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -913,7 +1156,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -936,7 +1181,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -959,7 +1206,9 @@ This section provides details for each class and property defined by [Forest Obs
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/foo#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <a href="https://w3id.org/def/foo#Observation"
+                  target="_blank"
+                  title="https://w3id.org/def/foo#Observation">Observation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1009,6 +1258,16 @@ This section provides details for each class and property defined by [Forest Obs
       <li>
          <a href="#https://w3id.org/def/foo#Guli" title="https://w3id.org/def/foo#Guli">
             <span>guli</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">
+            <span>ID</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#Identifier" title="https://w3id.org/def/foo#Identifier">
+            <span>identifier</span>
          </a>
       </li>
       <li>
@@ -1067,8 +1326,18 @@ This section provides details for each class and property defined by [Forest Obs
          </a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">
+            <span>Sensor</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/foo#Seri" title="https://w3id.org/def/foo#Seri">
             <span>seri</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/foo#SoilSensor" title="https://w3id.org/def/foo#SoilSensor">
+            <span>soil sensor</span>
          </a>
       </li>
       <li>
@@ -1097,14 +1366,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1118,14 +1394,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1139,14 +1422,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1160,14 +1450,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1181,14 +1478,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1202,14 +1506,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1223,14 +1534,436 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#ID">
+      <h3>ID<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#ID</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="https://w3id.org/def/foo#Observation"
+               target="_blank"
+               title="https://w3id.org/def/foo#Observation">Observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Aqeela" title="https://w3id.org/def/foo#Aqeela">aqeela</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Bikang1" title="https://w3id.org/def/foo#Bikang1">bikang1</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Bikang2" title="https://w3id.org/def/foo#Bikang2">bikang2</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Binbingan" title="https://w3id.org/def/foo#Binbingan">binbingan</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Dara" title="https://w3id.org/def/foo#Dara">dara</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Guli" title="https://w3id.org/def/foo#Guli">guli</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Ita" title="https://w3id.org/def/foo#Ita">ita</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Jasmin" title="https://w3id.org/def/foo#Jasmin">jasmin</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Jasper" title="https://w3id.org/def/foo#Jasper">jasper</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="https://w3id.org/def/foo#Kaish"
+               target="_blank"
+               title="https://w3id.org/def/foo#Kaish">kaish</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Kuma" title="https://w3id.org/def/foo#Kuma">kuma</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Liun" title="https://w3id.org/def/foo#Liun">liun</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Maliau" title="https://w3id.org/def/foo#Maliau">maliau</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Merotai" title="https://w3id.org/def/foo#Merotai">merotai</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Puteri" title="https://w3id.org/def/foo#Puteri">puteri</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Putut" title="https://w3id.org/def/foo#Putut">putut</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Sejati" title="https://w3id.org/def/foo#Sejati">sejati</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Seri" title="https://w3id.org/def/foo#Seri">seri</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Tulid" title="https://w3id.org/def/foo#Tulid">tulid</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Tunglap" title="https://w3id.org/def/foo#Tunglap">tunglap</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#Umas2" title="https://w3id.org/def/foo#Umas2">umas2</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Altitude" title="https://w3id.org/def/foo#Altitude">Altitude</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"11.7"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Altitude" title="https://w3id.org/def/foo#Altitude">Altitude</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"16.7"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Count" title="https://w3id.org/def/foo#Count">count</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Cov" title="https://w3id.org/def/foo#Cov">cov</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"0.0"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Direction" title="https://w3id.org/def/foo#Direction">Direction</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"0"^^<a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Distance" title="https://w3id.org/def/foo#Distance">distance</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"0.0"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#GMTDate" title="https://w3id.org/def/foo#GMTDate">g m t date</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2011-10-25"^^<a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#GMTTime" title="https://w3id.org/def/foo#GMTTime">g m t time</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"22:40:35"^^<a href="http://www.w3.org/2001/XMLSchema#time"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#time">time</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#GMTTime" title="https://w3id.org/def/foo#GMTTime">g m t time</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"23:40:35"^^<a href="http://www.w3.org/2001/XMLSchema#time"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#time">time</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#HDOP" title="https://w3id.org/def/foo#HDOP">h d o p</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1.14"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#HDOP" title="https://w3id.org/def/foo#HDOP">h d o p</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1.64"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1SAT32"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Latitude" title="https://w3id.org/def/foo#Latitude">latitude</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1.237206"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Latitude" title="https://w3id.org/def/foo#Latitude">latitude</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"1.537206"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#LocalDate" title="https://w3id.org/def/foo#LocalDate">local date</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"2011-10-26"^^<a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#LocalTime" title="https://w3id.org/def/foo#LocalTime">local time</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"07:40:35"^^<a href="http://www.w3.org/2001/XMLSchema#time"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#time">time</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Longitude" title="https://w3id.org/def/foo#Longitude">Longitude</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"565.222302"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Longitude" title="https://w3id.org/def/foo#Longitude">Longitude</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"566.222302"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Speed" title="https://w3id.org/def/foo#Speed">Speed</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"0.24"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Temperature" title="https://w3id.org/def/foo#Temperature">Temperature</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"24.5"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#https://w3id.org/def/foo#ID">data property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#Identifier">
+      <h3>identifier<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Identifier</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="https://w3id.org/def/foo#Observation"
+               target="_blank"
+               title="https://w3id.org/def/foo#Observation">Observation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="https://w3id.org/def/foo#Soil"
+               target="_blank"
+               title="https://w3id.org/def/foo#Soil">soil</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#SoilSensor" title="https://w3id.org/def/foo#SoilSensor">soil sensor</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#CNRatio" title="https://w3id.org/def/foo#CNRatio">c n ratio</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"14.24"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Clay" title="https://w3id.org/def/foo#Clay">clay</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"62.88"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Horizon" title="https://w3id.org/def/foo#Horizon">horizon</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Organic"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#InorganicP" title="https://w3id.org/def/foo#InorganicP">inorganic p</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"25.03"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#LandUse" title="https://w3id.org/def/foo#LandUse">land use</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Unlogged"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#PlotName" title="https://w3id.org/def/foo#PlotName">plot name</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Belian"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Sand" title="https://w3id.org/def/foo#Sand">sand</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"20.66"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Silt" title="https://w3id.org/def/foo#Silt">silt</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"16.46"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Site" title="https://w3id.org/def/foo#Site">site</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"Maliau Basin Conservation Area"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#SoilPH" title="https://w3id.org/def/foo#SoilPH">soil p h</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"4.69"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#Subplot" title="https://w3id.org/def/foo#Subplot">subplot</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"4"</span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#TotalC" title="https://w3id.org/def/foo#TotalC">total c</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"5.45"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#TotalN" title="https://w3id.org/def/foo#TotalN">total n</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"0.38"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#TotalP" title="https://w3id.org/def/foo#TotalP">total p</a>
+            <sup class="type-dp" title="data property">dp</sup> 
+            <span class="literal">"263.74"^^<a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </span>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>annotation property, <a href="#https://w3id.org/def/foo#Identifier">annotation property</a>
          </dd>
       </dl>
    </div>
@@ -1244,14 +1977,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1265,14 +2005,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1286,14 +2033,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1307,14 +2061,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1328,14 +2089,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1349,14 +2117,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1370,14 +2145,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1391,14 +2173,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1412,14 +2201,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1433,14 +2229,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1454,15 +2257,50 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
          </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#Sensor">
+      <h3>Sensor<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Sensor</p>
+      <dl class="description">
+         <dt>has facts</dt>
+         <dd>
+            <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#d4e1083" title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observedProperty" title="https://w3id.org/def/foo#observedProperty">observed property</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#d4e1111" title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#d4e1120" title="https://w3id.org/def/foo#Observation">Observation</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>class</dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/foo#Seri">
@@ -1475,14 +2313,46 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/def/foo#SoilSensor">
+      <h3>soil sensor<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#SoilSensor</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has facts</dt>
+         <dd>
+            <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="https://w3id.org/def/foo#Soil"
+               target="_blank"
+               title="https://w3id.org/def/foo#Soil">soil</a>
          </dd>
       </dl>
    </div>
@@ -1496,14 +2366,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1517,14 +2394,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1538,14 +2422,21 @@ This section provides details for each class and property defined by [Forest Obs
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://w3id.org/def/foo#Sensor" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="https://w3id.org/def/foo#Sensor"
+               target="_blank"
+               title="https://w3id.org/def/foo#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has facts</dt>
          <dd>
             <a href="#https://w3id.org/def/foo#hasFeatureOfInterest" title="https://w3id.org/def/foo#hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup> 
-            <a href="#d4e659" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+            <a href="#d4e1074" title="https://w3id.org/def/foo#ElephasMaximus">Elephas Maximus</a>
+         </dd>
+         <dd>
+            <a href="#https://w3id.org/def/foo#observes" title="https://w3id.org/def/foo#observes">observes</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <a href="#https://w3id.org/def/foo#ID" title="https://w3id.org/def/foo#ID">ID</a>
          </dd>
       </dl>
    </div>
@@ -1557,7 +2448,6 @@ This section provides details for each class and property defined by [Forest Obs
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
-<sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals

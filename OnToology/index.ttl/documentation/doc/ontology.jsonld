@@ -32,6 +32,21 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/observes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://schema.org/citation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -82,6 +97,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Altitude",
@@ -103,6 +121,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Bikang1",
@@ -112,6 +133,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Bikang2",
@@ -121,6 +145,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Binbingan",
@@ -130,6 +157,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#CNRatio",
@@ -175,6 +205,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Direction",
@@ -206,11 +239,11 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."
+    "@value" : "associates a taxon rank with a species."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#FeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Feature of Interest"
@@ -245,6 +278,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#HDOP",
@@ -266,7 +302,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
@@ -275,6 +314,197 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "https://w3id.org/def/foo#Altitude" : [ {
+    "@value" : "11.7"
+  }, {
+    "@value" : "16.7"
+  } ],
+  "https://w3id.org/def/foo#Count" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://w3id.org/def/foo#Cov" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "https://w3id.org/def/foo#Direction" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/def/foo#Distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "https://w3id.org/def/foo#GMTDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2011-10-25"
+  } ],
+  "https://w3id.org/def/foo#GMTTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#time",
+    "@value" : "22:40:35"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#time",
+    "@value" : "23:40:35"
+  } ],
+  "https://w3id.org/def/foo#HDOP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.14"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.64"
+  } ],
+  "https://w3id.org/def/foo#ID" : [ {
+    "@value" : "1SAT32"
+  } ],
+  "https://w3id.org/def/foo#Latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.237206"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.537206"
+  } ],
+  "https://w3id.org/def/foo#LocalDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2011-10-26"
+  } ],
+  "https://w3id.org/def/foo#LocalTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#time",
+    "@value" : "07:40:35"
+  } ],
+  "https://w3id.org/def/foo#Longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "565.222302"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "566.222302"
+  } ],
+  "https://w3id.org/def/foo#Speed" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.24"
+  } ],
+  "https://w3id.org/def/foo#Temperature" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "24.5"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#Aqeela"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Bikang1"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Bikang2"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Binbingan"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Dara"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Guli"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Ita"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Jasmin"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Jasper"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Kaish"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Kuma"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Liun"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Maliau"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Merotai"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Puteri"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Putut"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Sejati"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Seri"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Tulid"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Tunglap"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Umas2"
+  } ],
+  "https://w3id.org/def/foo#resultTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2011-10-26T07:40:35"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-10-26T07:40:35"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "https://w3id.org/def/foo#CNRatio" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "14.24"
+  } ],
+  "https://w3id.org/def/foo#Clay" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "62.88"
+  } ],
+  "https://w3id.org/def/foo#Horizon" : [ {
+    "@value" : "Organic"
+  } ],
+  "https://w3id.org/def/foo#Identifier" : [ {
+    "@value" : "MB4"
+  } ],
+  "https://w3id.org/def/foo#InorganicP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "25.03"
+  } ],
+  "https://w3id.org/def/foo#LandUse" : [ {
+    "@value" : "Unlogged"
+  } ],
+  "https://w3id.org/def/foo#PlotName" : [ {
+    "@value" : "Belian"
+  } ],
+  "https://w3id.org/def/foo#Sand" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "20.66"
+  } ],
+  "https://w3id.org/def/foo#Silt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "16.46"
+  } ],
+  "https://w3id.org/def/foo#Site" : [ {
+    "@value" : "Maliau Basin Conservation Area"
+  } ],
+  "https://w3id.org/def/foo#SoilPH" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "4.69"
+  } ],
+  "https://w3id.org/def/foo#Subplot" : [ {
+    "@value" : "4"
+  } ],
+  "https://w3id.org/def/foo#TotalC" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "5.45"
+  } ],
+  "https://w3id.org/def/foo#TotalN" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.38"
+  } ],
+  "https://w3id.org/def/foo#TotalP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "263.74"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Soil"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#SoilSensor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#InorganicP",
@@ -293,6 +523,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Jasmin",
@@ -302,6 +535,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Jasper",
@@ -311,7 +547,13 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Kaish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Kasih",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -320,6 +562,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Kuma",
@@ -329,6 +574,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#LandUse",
@@ -356,6 +604,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#LocalDate",
@@ -395,6 +646,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Merotai",
@@ -404,10 +658,13 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ObservableProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Observable Property"
@@ -418,7 +675,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Observation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Observation"
@@ -444,6 +701,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Putut",
@@ -453,6 +713,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Sand",
@@ -471,10 +734,13 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Sensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Sensor"
@@ -482,6 +748,15 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ],
+  "https://w3id.org/def/foo#observedProperty" : [ {
+    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Seri",
@@ -491,6 +766,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Silt",
@@ -511,6 +789,9 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Soil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://w3id.org/def/foo#SoilPH",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -518,6 +799,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#SoilSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/ns/sosa/observes" : [ {
+    "@id" : "https://w3id.org/def/foo#Identifier"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Soil"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Speed",
@@ -587,6 +880,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tunglap",
@@ -596,6 +892,9 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Umas2",
@@ -605,14 +904,198 @@
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ID"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#hasFeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Sensor"
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."
   } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#isFeatureOfInterestOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is feature of interest of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#isObservedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between an ObservableProperty and the Sensor able to observe it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is observed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/foo#observes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relation between an ObservableProperty and the Sensor able to observe it."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#madeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between an Observation and the Sensor which made the Observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "made by sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/foo#madeObservation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relation between an Observation and the Sensor which made the Observation."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#madeObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Sensor and an Observation made by the Sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "made observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/madeBySensor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Sensor and an Observation made by the Sensor."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#observedProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observed property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#observes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#resultTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
