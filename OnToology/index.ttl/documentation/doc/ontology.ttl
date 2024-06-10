@@ -58,8 +58,32 @@
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/citation
 <https://schema.org/citation> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/foo#Identifier
+:Identifier rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/foo#madeBySensor
+:madeBySensor rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/foo#observedProperty
+:observedProperty rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/foo#observes
+:observes rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/foo#resultTime
+:resultTime rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -159,8 +183,7 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#ID
 :ID rdf:type owl:DatatypeProperty ;
     rdfs:domain :Observation ;
-    rdfs:range xsd:string ;
-    rdfs:label "ID" .
+    rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#InorganicP
@@ -277,9 +300,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#FeatureOfInterest
-:FeatureOfInterest rdf:type owl:Class ;
-                   rdfs:label "Feature of Interest"@en ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en .
+:FeatureOfInterest rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
@@ -295,9 +316,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Sensor
-:Sensor rdf:type owl:Class ;
-        rdfs:label "Sensor"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en .
+:Sensor rdf:type owl:Class .
 
 
 #################################################################
@@ -307,137 +326,225 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#Abaw
 :Abaw rdf:type owl:NamedIndividual ,
                :Sensor ;
-      :hasFeatureOfInterest :ElephasMaximus .
+      :hasFeatureOfInterest :ElephasMaximus ;
+      :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Aqeela
 :Aqeela rdf:type owl:NamedIndividual ,
                  :Sensor ;
-        :hasFeatureOfInterest :ElephasMaximus .
+        :hasFeatureOfInterest :ElephasMaximus ;
+        :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Bikang1
 :Bikang1 rdf:type owl:NamedIndividual ,
                   :Sensor ;
-         :hasFeatureOfInterest :ElephasMaximus .
+         :hasFeatureOfInterest :ElephasMaximus ;
+         :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Bikang2
 :Bikang2 rdf:type owl:NamedIndividual ,
                   :Sensor ;
-         :hasFeatureOfInterest :ElephasMaximus .
+         :hasFeatureOfInterest :ElephasMaximus ;
+         :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Binbingan
 :Binbingan rdf:type owl:NamedIndividual ,
                     :Sensor ;
-           :hasFeatureOfInterest :ElephasMaximus .
+           :hasFeatureOfInterest :ElephasMaximus ;
+           :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Dara
 :Dara rdf:type owl:NamedIndividual ,
                :Sensor ;
-      :hasFeatureOfInterest :ElephasMaximus .
+      :hasFeatureOfInterest :ElephasMaximus ;
+      :observes :ID .
 
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/def/foo#Guli
 :Guli rdf:type owl:NamedIndividual ,
                :Sensor ;
-      :hasFeatureOfInterest :ElephasMaximus .
+      :hasFeatureOfInterest :ElephasMaximus ;
+      :observes :ID .
+
+
+###  https://w3id.org/def/foo#ID
+:ID rdf:type owl:NamedIndividual ,
+             :Observation ;
+    :hasFeatureOfInterest :ElephasMaximus ;
+    :Altitude "11.7" ,
+              "16.7" ;
+    :Count 1 ;
+    :Cov "0.0"^^xsd:double ;
+    :Direction 0 ;
+    :Distance "0.0"^^xsd:double ;
+    :GMTDate "2011-10-25"^^xsd:date ;
+    :GMTTime "22:40:35"^^xsd:time ,
+             "23:40:35"^^xsd:time ;
+    :HDOP "1.14"^^xsd:double ,
+          "1.64"^^xsd:double ;
+    :ID "1SAT32" ;
+    :Latitude "1.237206"^^xsd:double ,
+              "1.537206"^^xsd:double ;
+    :LocalDate "2011-10-26"^^xsd:date ;
+    :LocalTime "07:40:35"^^xsd:time ;
+    :Longitude "565.222302"^^xsd:double ,
+               "566.222302"^^xsd:double ;
+    :Speed "0.24"^^xsd:double ;
+    :Temperature "24.5"^^xsd:double .
+
+
+###  https://w3id.org/def/foo#Identifier
+:Identifier rdf:type owl:NamedIndividual ,
+                     :Observation ;
+            :hasFeatureOfInterest :Soil ;
+            :CNRatio "14.24"^^xsd:double ;
+            :Clay "62.88"^^xsd:double ;
+            :Horizon "Organic" ;
+            :InorganicP "25.03"^^xsd:double ;
+            :LandUse "Unlogged" ;
+            :PlotName "Belian" ;
+            :Sand "20.66"^^xsd:double ;
+            :Silt "16.46"^^xsd:double ;
+            :Site "Maliau Basin Conservation Area" ;
+            :SoilPH "4.69"^^xsd:double ;
+            :Subplot "4" ;
+            :TotalC "5.45"^^xsd:double ;
+            :TotalN "0.38"^^xsd:double ;
+            :TotalP "263.74"^^xsd:double .
 
 
 ###  https://w3id.org/def/foo#Ita
 :Ita rdf:type owl:NamedIndividual ,
               :Sensor ;
-     :hasFeatureOfInterest :ElephasMaximus .
+     :hasFeatureOfInterest :ElephasMaximus ;
+     :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Jasmin
 :Jasmin rdf:type owl:NamedIndividual ,
                  :Sensor ;
-        :hasFeatureOfInterest :ElephasMaximus .
+        :hasFeatureOfInterest :ElephasMaximus ;
+        :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Jasper
 :Jasper rdf:type owl:NamedIndividual ,
                  :Sensor ;
-        :hasFeatureOfInterest :ElephasMaximus .
+        :hasFeatureOfInterest :ElephasMaximus ;
+        :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Kasih
 :Kasih rdf:type owl:NamedIndividual ,
                 :Sensor ;
-       :hasFeatureOfInterest :ElephasMaximus .
+       :hasFeatureOfInterest :ElephasMaximus ;
+       :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Kuma
 :Kuma rdf:type owl:NamedIndividual ,
                :Sensor ;
-      :hasFeatureOfInterest :ElephasMaximus .
+      :hasFeatureOfInterest :ElephasMaximus ;
+      :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Liun
 :Liun rdf:type owl:NamedIndividual ,
                :Sensor ;
-      :hasFeatureOfInterest :ElephasMaximus .
+      :hasFeatureOfInterest :ElephasMaximus ;
+      :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Maliau
 :Maliau rdf:type owl:NamedIndividual ,
                  :Sensor ;
-        :hasFeatureOfInterest :ElephasMaximus .
+        :hasFeatureOfInterest :ElephasMaximus ;
+        :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Merotai
 :Merotai rdf:type owl:NamedIndividual ,
                   :Sensor ;
-         :hasFeatureOfInterest :ElephasMaximus .
+         :hasFeatureOfInterest :ElephasMaximus ;
+         :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Puteri
 :Puteri rdf:type owl:NamedIndividual ,
                  :Sensor ;
-        :hasFeatureOfInterest :ElephasMaximus .
+        :hasFeatureOfInterest :ElephasMaximus ;
+        :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Putut
 :Putut rdf:type owl:NamedIndividual ,
                 :Sensor ;
-       :hasFeatureOfInterest :ElephasMaximus .
+       :hasFeatureOfInterest :ElephasMaximus ;
+       :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Sejati
 :Sejati rdf:type owl:NamedIndividual ,
                  :Sensor ;
-        :hasFeatureOfInterest :ElephasMaximus .
+        :hasFeatureOfInterest :ElephasMaximus ;
+        :observes :ID .
+
+
+###  https://w3id.org/def/foo#Sensor
+:Sensor rdf:type owl:NamedIndividual ;
+        :hasFeatureOfInterest :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#Seri
 :Seri rdf:type owl:NamedIndividual ,
                :Sensor ;
-      :hasFeatureOfInterest :ElephasMaximus .
+      :hasFeatureOfInterest :ElephasMaximus ;
+      :observes :ID .
+
+
+###  https://w3id.org/def/foo#Soil
+:Soil rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#SoilSensor
+:SoilSensor rdf:type owl:NamedIndividual ,
+                     :Sensor ;
+            :hasFeatureOfInterest :Soil ;
+            <http://www.w3.org/ns/sosa/observes> :Identifier .
 
 
 ###  https://w3id.org/def/foo#Tulid
 :Tulid rdf:type owl:NamedIndividual ,
                 :Sensor ;
-       :hasFeatureOfInterest :ElephasMaximus .
+       :hasFeatureOfInterest :ElephasMaximus ;
+       :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Tunglap
 :Tunglap rdf:type owl:NamedIndividual ,
                   :Sensor ;
-         :hasFeatureOfInterest :ElephasMaximus .
+         :hasFeatureOfInterest :ElephasMaximus ;
+         :observes :ID .
 
 
 ###  https://w3id.org/def/foo#Umas2
 :Umas2 rdf:type owl:NamedIndividual ,
                 :Sensor ;
-       :hasFeatureOfInterest :ElephasMaximus .
+       :hasFeatureOfInterest :ElephasMaximus ;
+       :observes :ID .
 
 
 #################################################################
@@ -446,6 +553,47 @@ xsd:time rdf:type rdfs:Datatype .
 
 :ElephasMaximus rdfs:label "Elephas Maximus"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en .
+
+
+:FeatureOfInterest rdfs:label "Feature of Interest"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en .
+
+
+:ID rdfs:label "ID" ;
+    :madeBySensor :Aqeela ,
+                  :Bikang1 ,
+                  :Bikang2 ,
+                  :Binbingan ,
+                  :Dara ,
+                  :Guli ,
+                  :Ita ,
+                  :Jasmin ,
+                  :Jasper ,
+                  :Kaish ,
+                  :Kuma ,
+                  :Liun ,
+                  :Maliau ,
+                  :Merotai ,
+                  :Puteri ,
+                  :Putut ,
+                  :Sejati ,
+                  :Seri ,
+                  :Tulid ,
+                  :Tunglap ,
+                  :Umas2 ;
+    :resultTime "2011-10-26T07:40:35"^^xsd:dateTime ,
+                "2015-10-26T07:40:35"^^xsd:dateTime .
+
+
+:Identifier rdf:type owl:AnnotationProperty ;
+            :Identifier "MB4" ;
+            :madeBySensor :SoilSensor .
+
+
+:Sensor rdfs:label "Sensor"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en ;
+        :observedProperty :ObservableProperty ;
+        :observes :Observation .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

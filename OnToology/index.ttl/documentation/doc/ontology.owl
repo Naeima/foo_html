@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/def/foo#">
@@ -101,10 +102,52 @@
     
 
 
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sosa/observes"/>
+    
+
+
     <!-- https://schema.org/citation -->
 
 
     <owl:AnnotationProperty rdf:about="https://schema.org/citation"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#Identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/foo#Identifier"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#madeBySensor -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/foo#madeBySensor"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#observedProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/foo#observedProperty"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#observes -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/foo#observes"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#resultTime -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/foo#resultTime"/>
     
 
 
@@ -286,7 +329,6 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#ID">
         <rdfs:domain rdf:resource="https://w3id.org/def/foo#Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>ID</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -486,10 +528,7 @@
     <!-- https://w3id.org/def/foo#FeatureOfInterest -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#FeatureOfInterest">
-        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
-        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil).</skos:definition>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
     
 
 
@@ -516,10 +555,7 @@
     <!-- https://w3id.org/def/foo#Sensor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#Sensor">
-        <rdfs:label xml:lang="en">Sensor</rdfs:label>
-        <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by.</skos:definition>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/foo#Sensor"/>
     
 
 
@@ -541,6 +577,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Abaw">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -551,6 +588,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Aqeela">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -561,6 +599,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Bikang1">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -571,6 +610,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Bikang2">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -581,6 +621,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Binbingan">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -591,6 +632,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Dara">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -602,12 +644,74 @@
     
 
 
+    <!-- https://w3id.org/def/foo#FeatureOfInterest -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Guli -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Guli">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#ID -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ID">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <Altitude>11.7</Altitude>
+        <Altitude>16.7</Altitude>
+        <Count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Count>
+        <Cov rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</Cov>
+        <Direction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</Direction>
+        <Distance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</Distance>
+        <GMTDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-25</GMTDate>
+        <GMTTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">22:40:35</GMTTime>
+        <GMTTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:40:35</GMTTime>
+        <HDOP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.14</HDOP>
+        <HDOP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.64</HDOP>
+        <ID>1SAT32</ID>
+        <Latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.237206</Latitude>
+        <Latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.537206</Latitude>
+        <LocalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-26</LocalDate>
+        <LocalTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:40:35</LocalTime>
+        <Longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">565.222302</Longitude>
+        <Longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">566.222302</Longitude>
+        <Speed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.24</Speed>
+        <Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.5</Temperature>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#Identifier -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Identifier">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
+        <CNRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.24</CNRatio>
+        <Clay rdf:datatype="http://www.w3.org/2001/XMLSchema#double">62.88</Clay>
+        <Horizon>Organic</Horizon>
+        <InorganicP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.03</InorganicP>
+        <LandUse>Unlogged</LandUse>
+        <PlotName>Belian</PlotName>
+        <Sand rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.66</Sand>
+        <Silt rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.46</Silt>
+        <Site>Maliau Basin Conservation Area</Site>
+        <SoilPH rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.69</SoilPH>
+        <Subplot>4</Subplot>
+        <TotalC rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.45</TotalC>
+        <TotalN rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38</TotalN>
+        <TotalP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">263.74</TotalP>
     </owl:NamedIndividual>
     
 
@@ -618,6 +722,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Ita">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -628,6 +733,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Jasmin">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -638,6 +744,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Jasper">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -648,6 +755,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Kasih">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -658,6 +766,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Kuma">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -668,6 +777,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Liun">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -678,6 +788,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Maliau">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -688,6 +799,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Merotai">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -698,6 +810,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Puteri">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -708,6 +821,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Putut">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -718,6 +832,16 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Sejati">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#Sensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Sensor">
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
     </owl:NamedIndividual>
     
 
@@ -728,6 +852,25 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Seri">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#Soil -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Soil"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#SoilSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
+        <sosa:observes rdf:resource="https://w3id.org/def/foo#Identifier"/>
     </owl:NamedIndividual>
     
 
@@ -738,6 +881,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tulid">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -748,6 +892,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tunglap">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -758,6 +903,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Umas2">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <observes rdf:resource="https://w3id.org/def/foo#ID"/>
     </owl:NamedIndividual>
     
 
@@ -774,6 +920,46 @@
     <rdf:Description rdf:about="https://w3id.org/def/foo#ElephasMaximus">
         <rdfs:label xml:lang="en">Elephas Maximus</rdfs:label>
         <skos:definition xml:lang="en">A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae).</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#FeatureOfInterest">
+        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
+        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil).</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#ID">
+        <rdfs:label>ID</rdfs:label>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Aqeela"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang1"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang2"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Binbingan"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Dara"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Guli"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Ita"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Jasmin"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Jasper"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Kaish"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Kuma"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Liun"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Maliau"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Merotai"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Puteri"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Putut"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Sejati"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Seri"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Tulid"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Tunglap"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Umas2"/>
+        <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-26T07:40:35</resultTime>
+        <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-26T07:40:35</resultTime>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/foo#Identifier">
+        <Identifier>MB4</Identifier>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#SoilSensor"/>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#Sensor">
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by.</skos:definition>
+        <observedProperty rdf:resource="https://w3id.org/def/foo#ObservableProperty"/>
+        <observes rdf:resource="https://w3id.org/def/foo#Observation"/>
     </rdf:Description>
 </rdf:RDF>
 

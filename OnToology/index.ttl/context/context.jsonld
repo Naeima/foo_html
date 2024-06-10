@@ -47,6 +47,9 @@
       "@id" : "https://w3id.org/def/foo#TotalN",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
+    "madeBySensor" : {
+      "@id" : "https://w3id.org/def/foo#madeBySensor"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -65,6 +68,9 @@
     "Temperature" : {
       "@id" : "https://w3id.org/def/foo#Temperature",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "resultTime" : {
+      "@id" : "https://w3id.org/def/foo#resultTime"
     },
     "LocalDate" : {
       "@id" : "https://w3id.org/def/foo#LocalDate",
@@ -107,6 +113,9 @@
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
+    "observes" : {
+      "@id" : "https://w3id.org/def/foo#observes"
+    },
     "TotalP" : {
       "@id" : "https://w3id.org/def/foo#TotalP",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
@@ -129,6 +138,9 @@
     "Site" : {
       "@id" : "https://w3id.org/def/foo#Site",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "observedProperty" : {
+      "@id" : "https://w3id.org/def/foo#observedProperty"
     },
     "Horizon" : {
       "@id" : "https://w3id.org/def/foo#Horizon",
@@ -155,6 +167,9 @@
     },
     "ObservableProperty" : {
       "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    },
+    "Identifier" : {
+      "@id" : "https://w3id.org/def/foo#Identifier"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
