@@ -1,3 +1,17 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wo: <https://www.bbc.co.uk/ontologies/wildlife-ontology#> .
+@prefix foo: <https://w3id.org/def/foo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
 
 foo: a owl:Ontology ;
     owl:versionIRI <https://w3id.org/def/foo#V2.0> ;
