@@ -31,34 +31,36 @@ foo: a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/def/foo#" ;
     schema:citation "Cite this vocabulary as: Hamed, N., Forest Observatory Ontology (FOO) Ontology"@en .
 
-### Classes ###
+    ### Classes ###
 
-foo:Sensor rdf:type owl:Class ;
-    foo:observes  foo:Observation;
-    foo:observedProperty  foo:ObservableProperty;
+foo:Sensor rdf:type           owl:Class ;
+    foo:observes              foo:Observation;
+    foo:observedProperty      foo:ObservableProperty;
     foo:hasFeatureOfInterest  foo:FeatureOfInterest;  
     rdfs:sameAs sosa:Sensor ;
-    rdfs:label "Sensor"@en ;
+    rdfs:label      "Sensor"@en ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en ;
     rdfs:definedBy <http://www.w3.org/ns/sosa/Sensor> .
 
 foo:Observation rdf:type owl:Class ;
-    rdfs:sameAs sosa:Observation ;
-    rdfs:label "Observation"@en ;
+    rdfs:sameAs     sosa:Observation ;
+    rdfs:label      "Observation"@en ;
     skos:definition "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant). Observation can be seen as a placeholder that links relevant information together. In our ontology, observation can be considered an ID for each data record."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:ObservableProperty rdf:type owl:Class ;
     rdfs:sameAs sosa:ObservableProperty ;
-    rdfs:label "Observable Property"@en ;
+    rdfs:label      "Observable Property"@en ;
     skos:definition "An observable quality (property, characteristic) of a FeatureOfInterest. (e.g., Temperature, humidity, presence)"@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
+
 
 foo:FeatureOfInterest rdf:type owl:Class ;
     rdfs:sameAs sosa:FeatureOfInterest ;
     rdfs:label "Feature of Interest"@en ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
+
 
 foo:ElephasMaximus rdf:type owl:Class ;
     rdfs:label      "Elephas Maximus"@en ;
@@ -67,13 +69,15 @@ foo:ElephasMaximus rdf:type owl:Class ;
     and their genetic uniqueness emphasised their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ; 
     rdfs:definedBy  <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
 
+
 foo:Nasalislarvatus  rdf:type    owl:Class ;
     rdfs:label     "Nasalis larvatus"@en ;
     skos:definition   "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, 
     pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations 
     and swimming abilities."@en ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-    rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X> .
+    rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X>.
+
 
 foo:ManisJavanica rdf:type  owl:Class ;
     rdfs:label        "Manis Javanica"@en ;
@@ -81,10 +85,12 @@ foo:ManisJavanica rdf:type  owl:Class ;
     skos:definition   "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en ;
     rdfs:definedBy  <https://doi.org/10.1016/j.gecco.2024.e02962> .
 
+
 foo:MalayopythonReticulatus  rdf:type    owl:Class ;
     rdfs:label     "Malayopython Reticulatus"@en ;
     skos:definition   "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
-    rdfs:definedBy  <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> .
+    rdfs:definedBy  <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf>.
+
 
 
 ### Properties ###
@@ -93,12 +99,14 @@ foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     rdfs:sameAs sosa:hasFeatureOfInterest ;
     rdfs:domain foo:Observation ;
     rdfs:range  foo:FeatureOfInterest ;
-    rdfs:range  foo:ElephasMaximus ;
+    rdfs:range     foo:ElephasMaximus ;
+    rdfs:range     foo:ManisJavanica ;
     skos:definition "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     skos:example "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."@en ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
-    rdfs:isDefinedBy sosa: .    
+    rdfs:isDefinedBy sosa: .
+    
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
   rdfs:label "is feature of interest of"@en ;
@@ -106,9 +114,11 @@ foo:isFeatureOfInterestOf a owl:ObjectProperty ;
   rdfs:comment "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
   rdfs:domain foo:FeatureOfInterest ;
   rdfs:domain foo:ElephasMaximus ;
+  rdfs:domain foo:ManisJavanica ;
   rdfs:range  foo:Observation ;
   owl:inverseOf sosa:hasFeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
+
 
 foo:observes rdf:type owl:ObjectProperty ;
     rdfs:sameAs sosa:observes ;
@@ -240,76 +250,115 @@ foo:Count rdf:type owl:DatatypeProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer .
 
+
 foo:Site rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    skos:definition "Geographical area/site which samples were taken from"@en ;
+    rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
 
+
+        
 foo:LandUse rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    skos:definition"Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation"@en ;
+    rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
+    Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
+
 
 foo:PlotName rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    skos:definition "Name of the 1 Ha plot sampled"@en ;
+   rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
+    Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
+
 
 foo:Subplot rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    skos:definition "Number of the subplot sampled within each 1 Ha plot"@en ;
+    rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
+    Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
+
 
 foo:Horizon rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    skos:definition "Soil horizon sampled"@en ;
+    rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
+    Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
+
 
 foo:SoilPH rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition "Soil_pH Measured pH of the soil sample, numeric"@en ;
+   rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
+    Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
 
-foo:TotalC rdf:type owl:DatatypeProperty ;
+
+    foo:TotalC rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition "total carbon content of the soil sample"@en ;
+    rdfs:comment "Dataset Description Soil_Properties_FRC
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
+    Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
+    dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
+
 
 foo:TotalN rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
-
-foo:TotalP rdf:type owl:DatatypeProperty ;
-    rdfs:sameAs sosa:observedProperty ;
-    rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
-
-foo:InorganicP rdf:type owl:DatatypeProperty ;
-    rdfs:sameAs sosa:observedProperty ;
-    rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
-
-foo:CNRatio rdf:type owl:DatatypeProperty ;
-    rdfs:sameAs sosa:observedProperty ;
-    rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
-
-foo:Sand rdf:type owl:DatatypeProperty ;
-    rdfs:sameAs sosa:observedProperty ;
-    rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition "silt content of the soil sample"@en ;
+    rdfs:comment  "Dataset Description (Soil_Properties_FRC)
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest, logged tropical forest and oil palm plantation in Sabah, Malaysia. These were sampled between March – April 2015 and measured at Forest Research Centre, Sabah, Malaysia. This data was collected as part of the NERC funded BALI project. The Soil_Properties.csv file has 15 columns labelled Identifier, Site, Land_Use, Plot_Name, Subplot, Horizon, Soil_pH, Total_C, Total_N, Total_P, inorganic_P, C:N, Sand, Silt, Clay. For details refer to metadata below.
+    Sampling Design. 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest, logged tropical forest or oil palm; Danum Valley Conservation Area (DVCA), Maliau Basin Conservation Area (MBCA) and SAFE project in Sabah, Malaysia (Riutta et al. 2018). A stratified sampling design was utilised. 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling. 5 samples were collected from each subplot using a gouge augur. The organic layer depth was measured and then horizons (organic and mineral soil) were separated and sealed in Ziploc bags. The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type (Unlogged and logged forest), 5 organic and 5 mineral soil samples from oil palm. pH was measured on fresh soils in a 2.5:1 water suspension (Landon, 1984). Total C and N was measured using an elementar vario max CN analyser. Total P was extracted using a sulphuric-nitric-perchloric acid digest (Allen, 1989) whilst inorganic P was extracted using a Bray No. 1 solution (Bray and Kurtz. 1945). Concentration was measured on a spectrophotometer at 880nm (Anderson & Ingram, 1993). Sand silt and clay were determined using the pipette method.";
+    dcterms:bibliographicCitation	    "Elias, D.M.O.; McNamara, N.P.; Ostle, N.J.; Majalap - Lee, N. (2018). Soil properties across primary forest, logged forest and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre.".
 
 foo:Silt rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition "silt content of the soil sample"@en ;
+    rdfs:comment  "Dataset Description (Soil_Properties_FRC)
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest, logged tropical forest and oil palm plantation in Sabah, Malaysia. These were sampled between March – April 2015 and measured at Forest Research Centre, Sabah, Malaysia. This data was collected as part of the NERC funded BALI project. The Soil_Properties.csv file has 15 columns labelled Identifier, Site, Land_Use, Plot_Name, Subplot, Horizon, Soil_pH, Total_C, Total_N, Total_P, inorganic_P, C:N, Sand, Silt, Clay. For details refer to metadata below.
+    Sampling Design. 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest, logged tropical forest or oil palm; Danum Valley Conservation Area (DVCA), Maliau Basin Conservation Area (MBCA) and SAFE project in Sabah, Malaysia (Riutta et al. 2018). A stratified sampling design was utilised. 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling. 5 samples were collected from each subplot using a gouge augur. The organic layer depth was measured and then horizons (organic and mineral soil) were separated and sealed in Ziploc bags. The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type (Unlogged and logged forest), 5 organic and 5 mineral soil samples from oil palm. pH was measured on fresh soils in a 2.5:1 water suspension (Landon, 1984). Total C and N was measured using an elementar vario max CN analyser. Total P was extracted using a sulphuric-nitric-perchloric acid digest (Allen, 1989) whilst inorganic P was extracted using a Bray No. 1 solution (Bray and Kurtz. 1945). Concentration was measured on a spectrophotometer at 880nm (Anderson & Ingram, 1993). Sand silt and clay were determined using the pipette method.";
+    dcterms:bibliographicCitation	    "Elias, D.M.O.; McNamara, N.P.; Ostle, N.J.; Majalap - Lee, N. (2018). Soil properties across primary forest, logged forest and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre. ".
+
 
 foo:Clay rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
-
+    rdfs:range xsd:double ;
+    skos:definition "clay content of the soil sample"@en ;
+    rdfs:comment  "Dataset Description (Soil_Properties_FRC)
+    A dataset describing soil properties from organic and mineral soil across unlogged tropical forest, logged tropical forest and oil palm plantation in Sabah, Malaysia. These were sampled between March – April 2015 and measured at Forest Research Centre, Sabah, Malaysia. This data was collected as part of the NERC funded BALI project. The Soil_Properties.csv file has 15 columns labelled Identifier, Site, Land_Use, Plot_Name, Subplot, Horizon, Soil_pH, Total_C, Total_N, Total_P, inorganic_P, C:N, Sand, Silt, Clay. For details refer to metadata below.
+    Sampling Design. 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest, logged tropical forest or oil palm; Danum Valley Conservation Area (DVCA), Maliau Basin Conservation Area (MBCA) and SAFE project in Sabah, Malaysia (Riutta et al. 2018). A stratified sampling design was utilised. 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling. 5 samples were collected from each subplot using a gouge augur. The organic layer depth was measured and then horizons (organic and mineral soil) were separated and sealed in Ziploc bags. The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type (Unlogged and logged forest), 5 organic and 5 mineral soil samples from oil palm. pH was measured on fresh soils in a 2.5:1 water suspension (Landon, 1984). Total C and N was measured using an elementar vario max CN analyser. Total P was extracted using a sulphuric-nitric-perchloric acid digest (Allen, 1989) whilst inorganic P was extracted using a Bray No. 1 solution (Bray and Kurtz. 1945). Concentration was measured on a spectrophotometer at 880nm (Anderson & Ingram, 1993). Sand silt and clay were determined using the pipette method.";
+    dcterms:bibliographicCitation	    "Elias, D.M.O.; McNamara, N.P.; Ostle, N.J.; Majalap - Lee, N. (2018). Soil properties across primary forest, logged forest and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre. ".
+        
 
 ### Instances ###
 foo:Kuma rdf:type foo:Sensor ;
