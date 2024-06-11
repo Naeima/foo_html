@@ -170,7 +170,6 @@ foo:observedProperty a owl:ObjectProperty ;
     rdfs:range  foo:ObservableProperty ;
     rdfs:isDefinedBy sosa: .
 
-
 foo:ID rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
@@ -180,77 +179,91 @@ foo:ID rdf:type owl:DatatypeProperty ;
 foo:LocalDate rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:date .
+    rdfs:range xsd:date;
+    skos:definition  "The local date in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:LocalTime rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:time .
+    rdfs:range xsd:time ;
+    skos:definition  "The local time in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:GMTDate rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:date .
+    rdfs:range xsd:date ;
+    skos:definition  "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:GMTTime rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:time .
+    rdfs:range xsd:time ;
+    skos:definition  "The GMT time in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:Latitude rdf:type owl:DatatypeProperty ;
     rdfs:sameAs pos:lat ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition  "Latitudinal coordinate of the elephant at the moment of data collection.".
 
 foo:Longitude rdf:type owl:DatatypeProperty ;
     rdfs:sameAs pos:long ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Longitude" .
+    rdfs:label "Longitude" ;
+    skos:definition  "Longitudinal coordinate of the elephant at the moment of data collection.".
 
 foo:Temperature rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Temperature" .
+    rdfs:label "Temperature" ;
+    skos:definition  "Altitude of the elephant in meters at the moment of data collection.".
 
 foo:Speed rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Speed" .
+    rdfs:label "Speed" ;
+    skos:definition  "Estimated temperature of the elephant in Celsius at the moment of data collection.".
 
 foo:Direction rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer ;
-    rdfs:label "Direction" .
+    rdfs:label "Direction" ;
+    skos:definition  "Direction of elephant travel at the moment of data collection.".
 
 foo:Altitude rdf:type owl:DatatypeProperty ;
     rdfs:sameAs pos:alt ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Altitude" .
+    rdfs:label "Altitude" ;
+    skos:definition  "Altitude of the elephant in meters at the moment of data collection.".
 
 foo:Cov rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition  "TBC".
 
 foo:HDOP rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition  "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy in latitude and longitude. Lower values indicate better precision.".
 
 foo:Distance rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:double .
+    rdfs:range xsd:double ;
+    skos:definition  "Distance (m) travelled from the last to the current data collection point.".
 
 foo:Count rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
-    rdfs:range xsd:integer .
+    rdfs:range xsd:integer ;
+    skos:definition  "Observation count per data set.".
 
 
 foo:Site rdf:type owl:DatatypeProperty ;
