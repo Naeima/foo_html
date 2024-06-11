@@ -264,7 +264,7 @@ foo:LandUse rdf:type owl:DatatypeProperty ;
     A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay
     Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method" ;
     dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
-
+    
 
 foo:PlotName rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
@@ -310,7 +310,7 @@ foo:SoilPH rdf:type owl:DatatypeProperty ;
     dcterms:bibliographicCitation	 "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
 
 
-    foo:TotalC rdf:type owl:DatatypeProperty ;
+foo:TotalC rdf:type owl:DatatypeProperty ;
     rdfs:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
