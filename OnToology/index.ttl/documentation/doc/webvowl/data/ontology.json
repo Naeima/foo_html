@@ -27,7 +27,7 @@
       "citation" : [ {
         "identifier" : "citation",
         "language" : "en",
-        "value" : "Cite this vocabulary as: Hamed, N., Forest Observatory Ontology (FOO) Ontology",
+        "value" : "Cite this vocabulary as: Hamed, N., Forest Observatory Ontology (FOO)",
         "type" : "label"
       } ],
       "created" : [ {
@@ -57,7 +57,7 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "Forest Observatory Ontology (FOO) Ontology",
+        "value" : "Forest Observatory Ontology (FOO)",
         "type" : "label"
       } ]
     }
