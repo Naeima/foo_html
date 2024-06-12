@@ -27,30 +27,24 @@ foo: a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/def/foo#" ;
     schema:citation "Cite this vocabulary as: Hamed, N., Forest Observatory Ontology (FOO) Ontology"@en .
 
-
 ### Classes ###
-
-foo:Sensor rdf:type           owl:Class ;
-    foo:observes              foo:Observation;
-    foo:observedProperty      foo:ObservableProperty;
-    foo:hasFeatureOfInterest  foo:FeatureOfInterest;  
+foo:Sensor rdf:type owl:Class ;
     owl:sameAs sosa:Sensor ;
-    rdfs:label      "Sensor"@en ;
+    rdfs:label "Sensor"@en ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by."@en ;
     rdfs:definedBy <http://www.w3.org/ns/sosa/Sensor> .
 
 foo:Observation rdf:type owl:Class ;
-    owl:sameAs     sosa:Observation ;
-    rdfs:label      "Observation"@en ;
+    owl:sameAs sosa:Observation ;
+    rdfs:label "Observation"@en ;
     skos:definition "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant). Observation can be seen as a placeholder that links relevant information together. In our ontology, observation can be considered an ID for each data record."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:ObservableProperty rdf:type owl:Class ;
     owl:sameAs sosa:ObservableProperty ;
-    rdfs:label      "Observable Property"@en ;
+    rdfs:label "Observable Property"@en ;
     skos:definition "An observable quality (property, characteristic) of a FeatureOfInterest. (e.g., Temperature, humidity, presence)"@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
-
 
 foo:FeatureOfInterest rdf:type owl:Class ;
     owl:sameAs sosa:FeatureOfInterest ;
@@ -58,21 +52,17 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
-
-foo:Soil  rdf:type    owl:Class ;
-    rdfs:label     "Soil"@en ;
-     skos:definition  "Dataset Description Soil_Properties_FRC A dataset describing soil properties from organic and mineral soil across unlogged tropical forest logged tropical forest and oil palm plantation in Sabah Malaysia These were sampled between March – April 2015 and measured at Forest Research Centre Sabah Malaysia This data was collected as part of the NERC funded BALI project The Soil_Propertiescsv file has 15 columns labelled Identifier Site Land_Use Plot_Name Subplot Horizon Soil_pH Total_C Total_N Total_P inorganic_P CN Sand Silt Clay Sampling Design 9 1-hectare plots were located across 3 sites representative of either unlogged tropical forest logged tropical forest or oil palm Danum Valley Conservation Area DVCA Maliau Basin Conservation Area MBCA and SAFE project in Sabah Malaysia Riutta et al 2018 A stratified sampling design was utilised 1 Ha plots were first subdivided into 25 20 x 20 m subplots with 5 of these randomly selected for sampling 5 samples were collected from each subplot using a gouge augur The organic layer depth was measured and then horizons organic and mineral soil were separated and sealed in Ziploc bags The 5 samples from each subplot were pooled prior to analysis to yield 20 organic and 20 mineral soil samples per forest type Unlogged and logged forest 5 organic and 5 mineral soil samples from oil palm pH was measured on fresh soils in a 251 water suspension Landon 1984 Total C and N was measured using an elementar vario max CN analyser Total P was extracted using a sulphuric-nitric-perchloric acid digest Allen 1989 whilst inorganic P was extracted using a Bray No 1 solution Bray and Kurtz 1945 Concentration was measured on a spectrophotometer at 880nm Anderson & Ingram 1993 Sand silt and clay were determined using the pipette method"@en;
-     dcterms:bibliographicCitation    "Elias DM O McNamara NP Ostle NJ Majalap Lee N 2018 Soil properties across primary forest logged forest and oil palm plantation in Sabah Malaysia NERC Environmental Information Data Centre ".
-
+foo:Soil rdf:type owl:Class ;
+    rdfs:label "Soil"@en ;
+    skos:definition "A dataset describing soil properties from organic and mineral soil across various land uses in Sabah, Malaysia, sampled and measured at the Forest Research Centre Sabah Malaysia."@en ;
+    dcterms:bibliographicCitation "Elias DM, McNamara NP, Ostle NJ, Majalap-Lee N, 2018. Soil properties across primary forest, logged forest, and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre."@en .
 
 foo:ElephasMaximus rdf:type owl:Class ;
     rdfs:label "Asian Elephant"@en ;
     rdfs:label "Elephas maximus"@la ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en ;
-    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants,
-    and their genetic uniqueness emphasised their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ; 
-    rdfs:definedBy  <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
-
+    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+    rdfs:definedBy <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
 
 foo:Nasalislarvatus  rdf:type    owl:Class ;
     rdfs:label "Nasalis larvatus"@la ;
@@ -83,11 +73,10 @@ foo:Nasalislarvatus  rdf:type    owl:Class ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
     rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X>.
 
-
 foo:ManisJavanica rdf:type  owl:Class ;
     rdfs:label "Manis javanica"@la ;
     rdfs:label "Sunda Pangolin"@en ;
-    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss.It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ; 
+    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ; 
     skos:definition   "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en ;
     rdfs:definedBy  <https://doi.org/10.1016/j.gecco.2024.e02962> .
 
@@ -97,7 +86,6 @@ foo:MalayopythonReticulatus  rdf:type    owl:Class ;
     rdfs:label "Reticulated Python"@en ;
     skos:definition   "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
     rdfs:definedBy  <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf>.
-
 
 
 ### Properties ###
