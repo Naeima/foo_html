@@ -117,7 +117,7 @@ foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     skos:definition "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
-    rdfs:domain:  foo:FeatureOfInterest ;
+    rdfs:domain    foo:FeatureOfInterest ;
     rdfs:range  foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest ;
     rdfs:isDefinedBy sosa: .
