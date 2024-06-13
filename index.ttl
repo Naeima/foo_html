@@ -242,7 +242,7 @@ foo:Altitude rdf:type owl:DatatypeProperty ;
     owl:sameAs pos:alt ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Altitude" ;
+    rdfs:label "Altitude"@n ;
     skos:definition  "Altitude of the elephant in meters at the moment of data collection.".
 
 foo:Cov rdf:type owl:DatatypeProperty ;
@@ -261,12 +261,14 @@ foo:Distance rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Distance"@en ; 
     skos:definition  "Distance (m) travelled from the last to the current data collection point.".
 
 foo:Count rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer ;
+    rdfs:label "Count"@en ;
     skos:definition  "Observation count per data set.".
 
 
@@ -274,6 +276,7 @@ foo:Site rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
+    rdfs:label "Site"@en ;
     skos:definition "Geographical area/site which samples were taken from"@en.
     
         
@@ -281,6 +284,7 @@ foo:LandUse rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
+    rdfs:label "Land Use"@en ;
     skos:definition"Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation"@en .
 
 foo:PlotName rdf:type owl:DatatypeProperty ;
@@ -294,12 +298,14 @@ foo:Subplot rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
+    rdfs:label "Sub plot"@en ;
     skos:definition "Number of the subplot sampled within each 1 Ha plot"@en .
 
 foo:Horizon rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
+    rdfs:label "Horizon"@en ;
     skos:definition "Soil horizon sampled"@en .
 
 foo:SoilPH rdf:type owl:DatatypeProperty ;
@@ -313,117 +319,147 @@ foo:SoilPH rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Total C"@en ;
     skos:definition "total carbon content of the soil sample"@en .
 
 foo:TotalN rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Total N"@en ;
     skos:definition "silt content of the soil sample"@en .
 
 foo:Silt rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Silt"@en ;
     skos:definition "silt content of the soil sample"@en .
+
 foo:Clay rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Clay"@en ;
     skos:definition "clay content of the soil sample"@en .
 
 ### Instances ###
 foo:Kuma rdf:type foo:Sensor ;
+    rdfs:label "Kuma"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Jasmin rdf:type foo:Sensor ;
+     rdfs:label "Jasmin"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Putut rdf:type foo:Sensor ;
+    rdfs:label "Putut"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 
 foo:Bikang1 rdf:type foo:Sensor ;
+    rdfs:label "Bikang 1"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Bikang2 rdf:type foo:Sensor ;
+    rdfs:label "Bikang 2"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Sejati rdf:type foo:Sensor ;
+    rdfs:label "Sejati"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Umas2 rdf:type foo:Sensor ;
+ rdfs:label "Umas2"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Ita  rdf:type foo:Sensor ;
+ rdfs:label "Ita"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 
 foo:Abaw  rdf:type foo:Sensor ;
+rdfs:label "Abaw"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Liun rdf:type foo:Sensor ;
+ rdfs:label "Liun"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Dara  rdf:type foo:Sensor ;
+ rdfs:label "Dara"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
+
 foo:Jasper  rdf:type foo:Sensor ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
+  rdfs:label "Jasper"@en ;
+  foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
+
 foo:Guli rdf:type foo:Sensor ;
+ rdfs:label "Guli"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Maliau  rdf:type foo:Sensor ;
+ rdfs:label "Maliau"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Tunglap  rdf:type foo:Sensor ;
+    rdfs:label "Tunglap"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Seri rdf:type foo:Sensor ;
+  rdfs:label "Seri"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Puteri  rdf:type foo:Sensor ;
+    rdfs:label "Puteri"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Tulid  rdf:type foo:Sensor ;
+    rdfs:label "Tulid"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Kasih rdf:type foo:Sensor ;
+    rdfs:label "Kasih"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Aqeela rdf:type foo:Sensor ;
+    rdfs:label "Aqeela"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Merotai rdf:type foo:Sensor ;
+    rdfs:label "Merotai"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
 foo:Binbingan rdf:type foo:Sensor ;
+    rdfs:label "Binbingan"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus;
            foo:observes foo:GPSObservation.
 
-# Observation Instance
+# Observation Instance    
 foo:GPSObservation  rdf:type foo:Observation ;
-                      foo:madeBySensor foo:Kuma ;
+                      rdfs:label "GPS Observation"@en ;
+                      foo:madeBySensor foo:Kuma ;     
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
                       foo:ID "1SAT32" ;
@@ -443,6 +479,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Count "1"^^xsd:integer .
 
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Jasmin ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2015-10-26T07:40:35"^^xsd:dateTime ;
@@ -463,6 +500,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Count "1"^^xsd:integer .
 
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Putut ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -482,6 +520,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Bikang1 ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -501,6 +540,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Bikang2 ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -520,6 +560,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Sejati ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -539,6 +580,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Umas2 ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -558,6 +600,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Ita ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -577,6 +620,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Liun ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -596,6 +640,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Dara ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -615,6 +660,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Aqeela ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -634,6 +680,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Jasper ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -653,6 +700,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Guli ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -672,6 +720,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Maliau ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -691,6 +740,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Tunglap ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -710,6 +760,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Seri ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -730,6 +781,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Count "1"^^xsd:integer .
 
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Puteri ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -749,6 +801,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Tulid ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -768,6 +821,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Kaish ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -787,6 +841,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Aqeela ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -806,6 +861,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Merotai ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -825,6 +881,7 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 foo:GPSObservation  rdf:type foo:Observation ;
+                      rdfs:label "GPS Observation"@en ;
                       foo:madeBySensor foo:Binbingan ;
                       foo:hasFeatureOfInterest foo:ElephasMaximus ;
                       foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
@@ -849,10 +906,11 @@ foo:GPSObservation  rdf:type foo:Observation ;
 foo:SoilSensor      rdf:type      foo:Sensor ;
                     rdfs:label    "Soil Sensor"@en ;
                     foo:hasFeatureOfInterest foo:Soil ;
-                   foo:observes  foo:SoilObservation.
+                    foo:observes  foo:SoilObservation.
 
 # Soil Instance
 foo:SoilObservation    rdf:type foo:Observation ;
+                  rdfs:label "Soil Observation"@en ;
                   foo:madeBySensor foo:SoilSensor ;
                   foo:hasFeatureOfInterest foo:Soil ;
                   foo:Identifier "MB4" ;
@@ -875,12 +933,14 @@ foo:SoilObservation    rdf:type foo:Observation ;
 ### Camera Trap Sensor Instance ###
 foo:CameraTrap rdf:type foo:Sensor ;
       foo:hasFeatureOfInterest foo:Image ;
+             rdfs:label "Camera Trap"@en ;
                    foo:observes  foo:ImageObservation .
 
 
 ### Camera Trap Observation Instance ###
 
 foo:ImageObservation  rdf:type foo:Observation ;
+    rdfs:label "Image Observation "@en ;
     foo:madeBySensor foo:CameraTrap ;
     foo:ImageID  "001";
     foo:date "2024-06-12"^^xsd:date ;
@@ -898,7 +958,8 @@ foo:TreeSensor rdf:type foo:Sensor ;
     foo:observes foo:TreeObservation1 .
 
 ### Tree Observation Instance ###
-foo:TreeObservation1 rdf:type foo:Observation ;
+foo:TreeObservation rdf:type foo:Observation ;
+    rdfs:label "Tree Observation"@en ;
     foo:madeBySensor foo:TreeSensor ;
     foo:hasFeatureOfInterest foo:Lianas ;
     foo:ID "TreeObs1" ;
