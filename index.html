@@ -34,7 +34,7 @@ foo: a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/def/foo#" ;
     schema:citation "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-### Classes ###
+ ### Classes ###
 foo:Sensor rdf:type owl:Class ;
     owl:sameAs sosa:Sensor ;
     rdfs:label "Sensor"@en ;
@@ -59,20 +59,24 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
-foo:Soil rdf:type owl:Class ;
+
+### Feature Of Interest Instances ##
+
+foo:Soil rdf:type foo:FeatureOfInterest ;
     rdfs:label "Soil"@en ;
     skos:definition "A dataset describing soil properties from organic and mineral soil across various land uses in Sabah, Malaysia, sampled and measured at the Forest Research Centre Sabah Malaysia."@en ;
     dcterms:bibliographicCitation "Elias DM, McNamara NP, Ostle NJ, Majalap-Lee N, 2018. Soil properties across primary forest, logged forest, and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre."@en .
 
 
-foo:ElephasMaximus rdf:type owl:Class ;
+foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
     rdfs:label "Asian Elephant"@en ;
     rdfs:label "Elephas maximus"@la ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en ;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
     rdfs:definedBy <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
 
-foo:Nasalislarvatus  rdf:type    owl:Class ;
+
+foo:Nasalislarvatus  rdf:type foo:FeatureOfInterest ;
     rdfs:label "Nasalis larvatus"@la ;
     rdfs:label "Proboscis Monkey"@en ;
     skos:definition   "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, 
@@ -81,7 +85,8 @@ foo:Nasalislarvatus  rdf:type    owl:Class ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
     rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X>.
 
-foo:ManisJavanica rdf:type  owl:Class ;
+
+foo:ManisJavanica rdf:type foo:FeatureOfInterest ;
     rdfs:label "Manis javanica"@la ;
     rdfs:label "Sunda Pangolin"@en ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ; 
@@ -89,19 +94,19 @@ foo:ManisJavanica rdf:type  owl:Class ;
     rdfs:definedBy  <https://doi.org/10.1016/j.gecco.2024.e02962> .
 
 
-foo:MalayopythonReticulatus  rdf:type    owl:Class ;
+foo:MalayopythonReticulatus  rdf:type   foo:FeatureOfInterest ;
     rdfs:label "Malayopython reticulatus"@la ;
     rdfs:label "Reticulated Python"@en ;
     skos:definition   "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
     rdfs:definedBy  <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf>.
 
 
-foo:Lianas rdf:type    owl:Class ;
+foo:Lianas rdf:type   foo:FeatureOfInterest ;
     rdfs:label "Lianas"@en ;
     skos:definition "Woody climbing plants found in tropical forests, commonly observed in forest plots."@en ;
     rdfs:definedBy  <w3id.org/def/foo#>.
 
-foo:Image rdf:type    owl:Class ;
+foo:Image rdf:type    foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en ;
     rdfs:definedBy  <w3id.org/def/foo#>.
@@ -113,13 +118,6 @@ foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     owl:sameAs sosa:hasFeatureOfInterest ;
     rdfs:domain    foo:Observation ;
     rdfs:range     foo:FeatureOfInterest ;
-    rdfs:range     foo:ElephasMaximus ;
-    rdfs:range     foo:ManisJavanica ;
-    rdfs:range     foo:Nasalislarvatus ;
-    rdfs:range     foo:MalayopythonReticulatus ;
-    rdfs:range    foo:Lianas ;
-    rdfs:range    foo:Image ;
-    rdfs:range    foo:Soil ;
     skos:definition "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     skos:example "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."@en ;
@@ -127,18 +125,12 @@ foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     rdfs:isDefinedBy sosa: .
     
 
-foo:isFeatureOfInterestOf a owl:ObjectProperty ;
+foo:isFeatureOfInterestOf  rdf:type owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     skos:definition "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
-    rdfs:domain    foo:ElephasMaximus ;
-    rdfs:domain     foo:ManisJavanica ;
-    rdfs:domain    foo:Nasalislarvatus ;
-    rdfs:domain    foo:MalayopythonReticulatus ;
-    rdfs:domain    foo:Lianas ;
-    rdfs:domain    foo:Image ;
-    rdfs:domain   foo:Soil ;
-    rdfs:range  foo:Observation ;
+    rdfs:domain    foo:FeatureOfInterest ;
+    rdfs:range     foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest ;
     rdfs:isDefinedBy sosa: .
 
@@ -325,8 +317,7 @@ foo:SoilPH rdf:type owl:DatatypeProperty ;
     rdfs:range xsd:double ;
     skos:definition "Soil_pH Measured pH of the soil sample, numeric"@en .
 
-
-    foo:TotalC rdf:type owl:DatatypeProperty ;
+foo:TotalC rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
@@ -861,7 +852,6 @@ foo:GPSObservation  rdf:type foo:Observation ;
                       foo:Distance "0"^^xsd:double ;
                       foo:Count "1"^^xsd:integer .
 
-
 # Soil Sensor Instance
 foo:SoilSensor      rdf:type      foo:Sensor ;
                     rdfs:label    "Soil Sensor"@en ;
@@ -892,7 +882,6 @@ foo:SoilObservation    rdf:type foo:Observation ;
 foo:CameraTrap rdf:type foo:Sensor ;
       foo:hasFeatureOfInterest foo:Image ;
                    foo:observes  foo:ImageObservation .
-
 
 ### Camera Trap Observation Instance ###
 
