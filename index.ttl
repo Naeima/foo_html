@@ -54,6 +54,7 @@ foo:FeatureOfInterest rdf:type owl:Class ;
 
 
 ### Feature Of Interest Instances ##
+
 foo:Soil rdf:type foo:FeatureOfInterest ;
     rdfs:label "Soil"@en ;
     skos:definition "A dataset describing soil properties from organic and mineral soil across various land uses in Sabah, Malaysia, sampled and measured at the Forest Research Centre Sabah Malaysia."@en ;
@@ -67,6 +68,7 @@ foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
     rdfs:definedBy <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
 
+
 foo:Nasalislarvatus  rdf:type foo:FeatureOfInterest ;
     rdfs:label "Nasalis larvatus"@la ;
     rdfs:label "Proboscis Monkey"@en ;
@@ -75,6 +77,7 @@ foo:Nasalislarvatus  rdf:type foo:FeatureOfInterest ;
     and swimming abilities."@en ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
     rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X>.
+
 
 foo:ManisJavanica rdf:type foo:FeatureOfInterest ;
     rdfs:label "Manis javanica"@la ;
