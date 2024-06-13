@@ -913,4 +913,3 @@ foo:TreeObservation1 rdf:type foo:Observation ;
     foo:lianaDBH_cm 10 ;
     foo:treeNotes "" ;
     foo:subplotRadius_m 30 .
-
