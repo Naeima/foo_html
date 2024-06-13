@@ -116,10 +116,10 @@
   "namespace": [],
   "settings": {
     "global": {
-      "zoom": "0.24",
+      "zoom": "0.37",
       "translation": [
-        591.98,
-        264.82
+        387.32,
+        442.24
       ],
       "paused": false
     },
@@ -184,19 +184,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "15",
-      "type": "owl:Class"
-    },
-    {
-      "id": "18",
-      "type": "owl:Class"
-    },
-    {
-      "id": "26",
-      "type": "owl:Class"
-    },
-    {
-      "id": "27",
+      "id": "17",
       "type": "owl:Class"
     },
     {
@@ -204,11 +192,11 @@
       "type": "rdfs:Datatype"
     },
     {
-      "id": "28",
+      "id": "18",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "33",
+      "id": "23",
       "type": "rdfs:Literal"
     },
     {
@@ -216,47 +204,47 @@
       "type": "owl:Thing"
     },
     {
-      "id": "34",
+      "id": "24",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "25",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "26",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "16",
       "type": "rdfs:Datatype"
     },
     {
       "id": "35",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "24",
       "type": "owl:Class"
     },
     {
-      "id": "38",
+      "id": "20",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "17",
+      "id": "41",
       "type": "rdfs:Datatype"
     },
     {
       "id": "44",
-      "type": "owl:Class"
-    },
-    {
-      "id": "30",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "50",
+      "id": "48",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "53",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "57",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "58",
+      "id": "49",
       "type": "rdfs:Datatype"
     },
     {
@@ -264,19 +252,19 @@
       "type": "rdfs:Datatype"
     },
     {
-      "id": "63",
+      "id": "54",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "64",
+      "id": "55",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "65",
+      "id": "56",
       "type": "owl:Class"
     },
     {
-      "id": "68",
+      "id": "59",
       "type": "rdfs:Datatype"
     },
     {
@@ -284,27 +272,19 @@
       "type": "rdfs:Datatype"
     },
     {
-      "id": "69",
+      "id": "60",
       "type": "owl:Class"
     },
     {
-      "id": "70",
+      "id": "61",
       "type": "owl:Class"
     },
     {
-      "id": "71",
+      "id": "62",
       "type": "owl:Class"
     },
     {
-      "id": "22",
-      "type": "owl:Class"
-    },
-    {
-      "id": "73",
-      "type": "owl:Class"
-    },
-    {
-      "id": "25",
+      "id": "64",
       "type": "owl:Class"
     },
     {
@@ -312,87 +292,71 @@
       "type": "owl:Class"
     },
     {
-      "id": "23",
+      "id": "38",
       "type": "owl:Class"
     },
     {
-      "id": "47",
+      "id": "80",
       "type": "owl:Class"
+    },
+    {
+      "id": "85",
+      "type": "owl:Class"
+    },
+    {
+      "id": "32",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "79",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "43",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "68",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "87",
+      "type": "owl:Class"
+    },
+    {
+      "id": "46",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "51",
+      "type": "rdfs:Datatype"
     },
     {
       "id": "89",
       "type": "owl:Class"
     },
     {
-      "id": "21",
+      "id": "91",
       "type": "owl:Class"
     },
     {
-      "id": "94",
-      "type": "owl:Class"
-    },
-    {
-      "id": "20",
-      "type": "owl:Class"
-    },
-    {
-      "id": "41",
+      "id": "92",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "84",
+      "id": "93",
       "type": "rdfs:Datatype"
     },
     {
-      "id": "88",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "52",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "77",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "62",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "96",
-      "type": "owl:Class"
-    },
-    {
-      "id": "55",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "60",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "98",
-      "type": "owl:Class"
-    },
-    {
-      "id": "100",
-      "type": "owl:Class"
-    },
-    {
-      "id": "101",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "102",
-      "type": "rdfs:Datatype"
-    },
-    {
-      "id": "104",
-      "type": "owl:Class"
-    },
-    {
-      "id": "19",
+      "id": "95",
       "type": "owl:Class"
     },
     {
@@ -400,7 +364,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "109",
+      "id": "100",
       "type": "owl:Class"
     }
   ],
@@ -446,8 +410,8 @@
         ]
       },
       "pos": [
-        -224.12,
-        1335.09
+        1918.27,
+        -164.86
       ]
     },
     {
@@ -461,46 +425,12 @@
         "external"
       ],
       "pos": [
-        2327.76,
-        125.16
+        -385.42,
+        -398.52
       ]
     },
     {
-      "id": "15",
-      "iri": "https://w3id.org/def/foo#Image",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "Image",
-        "en": "Camera Trap Image"
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "Image generated by motion-activated wildlife cameras.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        618.17,
-        857.03
-      ]
-    },
-    {
-      "id": "18",
-      "attributes": [
-        "union",
-        "anonymous"
-      ],
-      "pos": [
-        885.65,
-        594.77
-      ]
-    },
-    {
-      "id": "26",
+      "id": "17",
       "iri": "http://www.w3.org/ns/sosa/Observation",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -540,19 +470,8 @@
         ]
       },
       "pos": [
-        -835.93,
-        939.08
-      ]
-    },
-    {
-      "id": "27",
-      "attributes": [
-        "union",
-        "anonymous"
-      ],
-      "pos": [
-        966.13,
-        569.42
+        -692.8,
+        948.51
       ]
     },
     {
@@ -566,12 +485,12 @@
         "datatype"
       ],
       "pos": [
-        473.71,
-        96.85
+        832.38,
+        482.46
       ]
     },
     {
-      "id": "28",
+      "id": "18",
       "iri": "http://www.w3.org/2001/XMLSchema#integer",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -581,20 +500,20 @@
         "datatype"
       ],
       "pos": [
-        1150.56,
-        -223.21
+        440.36,
+        1184.3
       ]
     },
     {
-      "id": "33",
+      "id": "23",
       "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
       "label": "Literal",
       "attributes": [
         "datatype"
       ],
       "pos": [
-        627.94,
-        2016.21
+        858.06,
+        -863.24
       ]
     },
     {
@@ -605,12 +524,12 @@
         "undefined": "Thing"
       },
       "pos": [
-        410.12,
-        1849.95
+        646.97,
+        -701.13
       ]
     },
     {
-      "id": "34",
+      "id": "24",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -620,12 +539,12 @@
         "datatype"
       ],
       "pos": [
-        582.12,
-        -525.89
+        991.73,
+        915.44
       ]
     },
     {
-      "id": "35",
+      "id": "25",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -635,12 +554,12 @@
         "datatype"
       ],
       "pos": [
-        409.26,
-        -400.97
+        1015.01,
+        751.58
       ]
     },
     {
-      "id": "24",
+      "id": "26",
       "iri": "https://w3id.org/def/foo#FeatureOfInterest",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -657,13 +576,68 @@
           }
         ]
       },
+      "individuals": [
+        {
+          "iri": "https://w3id.org/def/foo#Image",
+          "labels": {
+            "IRI-based": "Image",
+            "en": "Camera Trap Image"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#Lianas",
+          "labels": {
+            "IRI-based": "Lianas",
+            "en": "Lianas"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#ElephasMaximus",
+          "labels": {
+            "IRI-based": "ElephasMaximus",
+            "la": "Elephas maximus",
+            "en": "Asian Elephant"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#ManisJavanica",
+          "labels": {
+            "IRI-based": "ManisJavanica",
+            "la": "Manis javanica",
+            "en": "Sunda Pangolin"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#Nasalislarvatus",
+          "labels": {
+            "IRI-based": "Nasalislarvatus",
+            "la": "Nasalis larvatus",
+            "en": "Proboscis Monkey"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#Soil",
+          "labels": {
+            "IRI-based": "Soil",
+            "en": "Soil"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#MalayopythonReticulatus",
+          "labels": {
+            "IRI-based": "MalayopythonReticulatus",
+            "la": "Malayopython reticulatus",
+            "en": "Reticulated Python"
+          }
+        }
+      ],
       "pos": [
-        478.12,
-        776.18
+        108.76,
+        790.38
       ]
     },
     {
-      "id": "38",
+      "id": "29",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -673,12 +647,12 @@
         "datatype"
       ],
       "pos": [
-        403.82,
-        41.41
+        823.35,
+        1160.51
       ]
     },
     {
-      "id": "17",
+      "id": "16",
       "iri": "http://www.w3.org/2001/XMLSchema#date",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -688,12 +662,12 @@
         "datatype"
       ],
       "pos": [
-        342.67,
-        -261.51
+        959.07,
+        603.6
       ]
     },
     {
-      "id": "44",
+      "id": "35",
       "iri": "http://www.w3.org/ns/sosa/Sampling",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -727,43 +701,7 @@
           {
             "identifier": "example",
             "language": "en",
-            "value": "Digging a pit through a soil sequence.",
-            "type": "label"
-          },
-          {
-            "identifier": "example",
-            "language": "en",
-            "value": "Taking a diamond-drill core from a rock outcrop.",
-            "type": "label"
-          },
-          {
-            "identifier": "example",
-            "language": "en",
-            "value": "Splitting a piece of drill-core to create two new samples.",
-            "type": "label"
-          },
-          {
-            "identifier": "example",
-            "language": "en",
-            "value": "Selecting a subset of a population.",
-            "type": "label"
-          },
-          {
-            "identifier": "example",
-            "language": "en",
-            "value": "Drawing blood from a patient.",
-            "type": "label"
-          },
-          {
-            "identifier": "example",
-            "language": "en",
             "value": "Establishing a station for environmental monitoring.",
-            "type": "label"
-          },
-          {
-            "identifier": "example",
-            "language": "en",
-            "value": "Registering an image of the landscape.",
             "type": "label"
           },
           {
@@ -775,7 +713,19 @@
           {
             "identifier": "example",
             "language": "en",
-            "value": "Dividing a field site into quadrants.",
+            "value": "Registering an image of the landscape.",
+            "type": "label"
+          },
+          {
+            "identifier": "example",
+            "language": "en",
+            "value": "Drawing blood from a patient.",
+            "type": "label"
+          },
+          {
+            "identifier": "example",
+            "language": "en",
+            "value": "Splitting a piece of drill-core to create two new samples.",
             "type": "label"
           },
           {
@@ -789,16 +739,40 @@
             "language": "en",
             "value": "Drilling an observation well.",
             "type": "label"
+          },
+          {
+            "identifier": "example",
+            "language": "en",
+            "value": "Taking a diamond-drill core from a rock outcrop.",
+            "type": "label"
+          },
+          {
+            "identifier": "example",
+            "language": "en",
+            "value": "Digging a pit through a soil sequence.",
+            "type": "label"
+          },
+          {
+            "identifier": "example",
+            "language": "en",
+            "value": "Selecting a subset of a population.",
+            "type": "label"
+          },
+          {
+            "identifier": "example",
+            "language": "en",
+            "value": "Dividing a field site into quadrants.",
+            "type": "label"
           }
         ]
       },
       "pos": [
-        2332.64,
-        534.94
+        2134.28,
+        565.34
       ]
     },
     {
-      "id": "30",
+      "id": "20",
       "iri": "http://www.w3.org/2001/XMLSchema#date",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -808,12 +782,12 @@
         "datatype"
       ],
       "pos": [
-        1192.29,
-        -142.08
+        271.67,
+        630.77
       ]
     },
     {
-      "id": "50",
+      "id": "41",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -823,12 +797,12 @@
         "datatype"
       ],
       "pos": [
-        1118.4,
-        8.18
+        658.79,
+        426.77
       ]
     },
     {
-      "id": "53",
+      "id": "44",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -838,12 +812,12 @@
         "datatype"
       ],
       "pos": [
-        348.34,
-        -106.11
+        566.94,
+        425.27
       ]
     },
     {
-      "id": "57",
+      "id": "48",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -853,12 +827,12 @@
         "datatype"
       ],
       "pos": [
-        411.82,
-        -314.21
+        475.82,
+        452.5
       ]
     },
     {
-      "id": "58",
+      "id": "49",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -868,8 +842,8 @@
         "datatype"
       ],
       "pos": [
-        943.62,
-        120.63
+        243.05,
+        728.65
       ]
     },
     {
@@ -883,12 +857,12 @@
         "datatype"
       ],
       "pos": [
-        1131.21,
-        -76.64
+        975.06,
+        1000.83
       ]
     },
     {
-      "id": "63",
+      "id": "54",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -898,12 +872,12 @@
         "datatype"
       ],
       "pos": [
-        844.05,
-        -568.64
+        901.45,
+        537.68
       ]
     },
     {
-      "id": "64",
+      "id": "55",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -913,12 +887,12 @@
         "datatype"
       ],
       "pos": [
-        400.28,
-        -39.14
+        921.82,
+        1079.96
       ]
     },
     {
-      "id": "65",
+      "id": "56",
       "iri": "http://purl.org/vocommons/voaf#Vocabulary",
       "baseIri": "http://purl.org/vocommons/voaf",
       "label": {
@@ -934,12 +908,12 @@
         }
       ],
       "pos": [
-        -509.82,
-        1364.93
+        -760.15,
+        612.38
       ]
     },
     {
-      "id": "68",
+      "id": "59",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -949,8 +923,8 @@
         "datatype"
       ],
       "pos": [
-        942.68,
-        -537.38
+        323.83,
+        552.89
       ]
     },
     {
@@ -964,12 +938,12 @@
         "datatype"
       ],
       "pos": [
-        708.7,
-        -561.38
+        294.52,
+        1063.76
       ]
     },
     {
-      "id": "69",
+      "id": "60",
       "iri": "http://www.w3.org/ns/sosa/Result",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1009,12 +983,12 @@
         ]
       },
       "pos": [
-        1721.98,
-        1679.9
+        -518.32,
+        -129.9
       ]
     },
     {
-      "id": "70",
+      "id": "61",
       "iri": "http://www.w3.org/ns/sosa/Procedure",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1062,12 +1036,12 @@
         ]
       },
       "pos": [
-        -543.84,
-        907.55
+        1988.98,
+        64.34
       ]
     },
     {
-      "id": "71",
+      "id": "62",
       "iri": "http://www.w3.org/ns/sosa/ActuatableProperty",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1107,39 +1081,12 @@
         ]
       },
       "pos": [
-        -789.55,
-        -209.64
+        -145.42,
+        -409.58
       ]
     },
     {
-      "id": "22",
-      "iri": "https://w3id.org/def/foo#Nasalislarvatus",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "Nasalislarvatus",
-        "la": "Nasalis larvatus",
-        "en": "Proboscis Monkey"
-      },
-      "comment": {
-        "en": "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, \r\n    pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations \r\n    and swimming abilities.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        750.62,
-        959.52
-      ]
-    },
-    {
-      "id": "73",
+      "id": "64",
       "iri": "http://www.w3.org/ns/sosa/Sample",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1181,44 +1128,20 @@
           {
             "identifier": "example",
             "language": "en",
-            "value": "A 'station' is essentially an identifiable locality where a sensor system or Procedure may be deployed and an observation made. In the context of the observation model, it connotes the 'world in the vicinity of the station', so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc.",
+            "value": "A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population.",
             "type": "label"
           },
           {
             "identifier": "example",
             "language": "en",
-            "value": "A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population.",
+            "value": "A 'station' is essentially an identifiable locality where a sensor system or Procedure may be deployed and an observation made. In the context of the observation model, it connotes the 'world in the vicinity of the station', so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc.",
             "type": "label"
           }
         ]
       },
       "pos": [
-        -637.39,
-        602.61
-      ]
-    },
-    {
-      "id": "25",
-      "iri": "https://w3id.org/def/foo#MalayopythonReticulatus",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "MalayopythonReticulatus",
-        "la": "Malayopython reticulatus",
-        "en": "Reticulated Python"
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        920.38,
-        1001.2
+        1693.53,
+        1641.35
       ]
     },
     {
@@ -1247,9 +1170,10 @@
           }
         },
         {
-          "iri": "https://w3id.org/def/foo#Putut",
+          "iri": "https://w3id.org/def/foo#TreeSensor",
           "labels": {
-            "IRI-based": "Putut"
+            "IRI-based": "TreeSensor",
+            "en": "Tree Sensor 1"
           }
         },
         {
@@ -1259,21 +1183,27 @@
           }
         },
         {
+          "iri": "https://w3id.org/def/foo#Putut",
+          "labels": {
+            "IRI-based": "Putut"
+          }
+        },
+        {
           "iri": "https://w3id.org/def/foo#Maliau",
           "labels": {
             "IRI-based": "Maliau"
           }
         },
         {
-          "iri": "https://w3id.org/def/foo#Sejati",
-          "labels": {
-            "IRI-based": "Sejati"
-          }
-        },
-        {
           "iri": "https://w3id.org/def/foo#Kuma",
           "labels": {
             "IRI-based": "Kuma"
+          }
+        },
+        {
+          "iri": "https://w3id.org/def/foo#Sejati",
+          "labels": {
+            "IRI-based": "Sejati"
           }
         },
         {
@@ -1304,13 +1234,6 @@
           "iri": "https://w3id.org/def/foo#Jasmin",
           "labels": {
             "IRI-based": "Jasmin"
-          }
-        },
-        {
-          "iri": "https://w3id.org/def/foo#TreeSensor1",
-          "labels": {
-            "IRI-based": "TreeSensor1",
-            "en": "Tree Sensor 1"
           }
         },
         {
@@ -1394,43 +1317,12 @@
         }
       ],
       "pos": [
-        847.05,
-        -749.89
+        968.8,
+        1283.44
       ]
     },
     {
-      "id": "23",
-      "iri": "https://w3id.org/def/foo#Soil",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "Soil",
-        "en": "Soil"
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "A dataset describing soil properties from organic and mineral soil across various land uses in Sabah, Malaysia, sampled and measured at the Forest Research Centre Sabah Malaysia.",
-            "type": "label"
-          }
-        ],
-        "bibliographicCitation": [
-          {
-            "identifier": "bibliographicCitation",
-            "language": "en",
-            "value": "Elias DM, McNamara NP, Ostle NJ, Majalap-Lee N, 2018. Soil properties across primary forest, logged forest, and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        1338.68,
-        641.1
-      ]
-    },
-    {
-      "id": "47",
+      "id": "38",
       "iri": "https://w3id.org/def/foo#ObservableProperty",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -1448,12 +1340,12 @@
         ]
       },
       "pos": [
-        482.38,
-        -662.25
+        609.05,
+        1378.83
       ]
     },
     {
-      "id": "89",
+      "id": "80",
       "iri": "http://www.w3.org/ns/sosa/Actuation",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1493,39 +1385,12 @@
         ]
       },
       "pos": [
-        1977.92,
-        1469.55
+        2055.23,
+        308.17
       ]
     },
     {
-      "id": "21",
-      "iri": "https://w3id.org/def/foo#ManisJavanica",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "ManisJavanica",
-        "la": "Manis javanica",
-        "en": "Sunda Pangolin"
-      },
-      "comment": {
-        "en": "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        1299.22,
-        781.32
-      ]
-    },
-    {
-      "id": "94",
+      "id": "85",
       "iri": "http://www.w3.org/ns/sosa/ObservableProperty",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1565,39 +1430,12 @@
         ]
       },
       "pos": [
-        2067.68,
-        1190.63
+        1796.75,
+        -381.63
       ]
     },
     {
-      "id": "20",
-      "iri": "https://w3id.org/def/foo#ElephasMaximus",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "ElephasMaximus",
-        "la": "Elephas maximus",
-        "en": "Asian Elephant"
-      },
-      "comment": {
-        "en": "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        1205.65,
-        902.96
-      ]
-    },
-    {
-      "id": "41",
+      "id": "32",
       "iri": "http://www.w3.org/2001/XMLSchema#time",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1607,12 +1445,12 @@
         "datatype"
       ],
       "pos": [
-        1174.67,
-        -301.9
+        255.5,
+        979.74
       ]
     },
     {
-      "id": "84",
+      "id": "75",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1622,12 +1460,12 @@
         "datatype"
       ],
       "pos": [
-        1048.71,
-        73.18
+        232.19,
+        880.93
       ]
     },
     {
-      "id": "88",
+      "id": "79",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1637,12 +1475,12 @@
         "datatype"
       ],
       "pos": [
-        1119.28,
-        -365.97
+        749.73,
+        444.78
       ]
     },
     {
-      "id": "52",
+      "id": "43",
       "iri": "http://www.w3.org/2001/XMLSchema#double",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1652,12 +1490,12 @@
         "datatype"
       ],
       "pos": [
-        482.72,
-        -462.74
+        684,
+        1207.01
       ]
     },
     {
-      "id": "77",
+      "id": "68",
       "iri": "http://www.w3.org/2001/XMLSchema#time",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1667,12 +1505,12 @@
         "datatype"
       ],
       "pos": [
-        1080.57,
-        -439.82
+        392.68,
+        491.74
       ]
     },
     {
-      "id": "62",
+      "id": "53",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1682,12 +1520,12 @@
         "datatype"
       ],
       "pos": [
-        550.87,
-        148.91
+        1023.17,
+        833.07
       ]
     },
     {
-      "id": "96",
+      "id": "87",
       "iri": "http://www.w3.org/ns/sosa/Sampler",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1727,12 +1565,12 @@
         ]
       },
       "pos": [
-        -355.56,
-        1620
+        1582.89,
+        -444.33
       ]
     },
     {
-      "id": "55",
+      "id": "46",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1742,12 +1580,12 @@
         "datatype"
       ],
       "pos": [
-        376.4,
-        -181.86
+        353.93,
+        1135.88
       ]
     },
     {
-      "id": "60",
+      "id": "51",
       "iri": "http://www.w3.org/2001/XMLSchema#string",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1757,12 +1595,12 @@
         "datatype"
       ],
       "pos": [
-        1018.71,
-        -494.7
+        542.19,
+        1212.88
       ]
     },
     {
-      "id": "98",
+      "id": "89",
       "iri": "http://www.w3.org/ns/sosa/Platform",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1802,12 +1640,12 @@
         ]
       },
       "pos": [
-        2256.04,
-        962.79
+        2080.07,
+        870.72
       ]
     },
     {
-      "id": "100",
+      "id": "91",
       "iri": "http://www.w3.org/ns/sosa/Sensor",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1847,12 +1685,12 @@
         ]
       },
       "pos": [
-        -695.53,
-        1223.78
+        -659.97,
+        163.38
       ]
     },
     {
-      "id": "101",
+      "id": "92",
       "iri": "http://www.w3.org/2001/XMLSchema#integer",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1862,12 +1700,12 @@
         "datatype"
       ],
       "pos": [
-        661.36,
-        170.23
+        971.26,
+        682.8
       ]
     },
     {
-      "id": "102",
+      "id": "93",
       "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
       "baseIri": "http://www.w3.org/2001/XMLSchema",
       "label": {
@@ -1877,12 +1715,12 @@
         "datatype"
       ],
       "pos": [
-        677.63,
-        1863.49
+        591.46,
+        -954.07
       ]
     },
     {
-      "id": "104",
+      "id": "95",
       "iri": "http://www.w3.org/ns/sosa/FeatureOfInterest",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -1922,31 +1760,8 @@
         ]
       },
       "pos": [
-        -794.18,
-        110.43
-      ]
-    },
-    {
-      "id": "19",
-      "iri": "https://w3id.org/def/foo#Lianas",
-      "baseIri": "https://w3id.org/def/foo",
-      "label": {
-        "IRI-based": "Lianas",
-        "en": "Lianas"
-      },
-      "annotations": {
-        "definition": [
-          {
-            "identifier": "definition",
-            "language": "en",
-            "value": "Woody climbing plants found in tropical forests, commonly observed in forest plots.",
-            "type": "label"
-          }
-        ]
-      },
-      "pos": [
-        1077.9,
-        978.1
+        1324.02,
+        -330.88
       ]
     },
     {
@@ -1975,32 +1790,31 @@
           }
         },
         {
-          "iri": "https://w3id.org/def/foo#Identifier",
+          "iri": "https://w3id.org/def/foo#GPSObservation",
           "labels": {
-            "IRI-based": "Identifier"
+            "IRI-based": "GPSObservation"
           }
         },
         {
-          "iri": "https://w3id.org/def/foo#ID",
+          "iri": "https://w3id.org/def/foo#ImageObservation",
           "labels": {
-            "IRI-based": "ID",
-            "undefined": "ID"
+            "IRI-based": "ImageObservation"
           }
         },
         {
-          "iri": "https://w3id.org/def/foo#ImageID",
+          "iri": "https://w3id.org/def/foo#SoilObservation",
           "labels": {
-            "IRI-based": "ImageID"
+            "IRI-based": "SoilObservation"
           }
         }
       ],
       "pos": [
-        765.74,
-        -171.86
+        615.29,
+        827.5
       ]
     },
     {
-      "id": "109",
+      "id": "100",
       "iri": "http://www.w3.org/2006/time#TemporalEntity",
       "baseIri": "http://www.w3.org/2006/time",
       "label": {
@@ -2010,8 +1824,8 @@
         "external"
       ],
       "pos": [
-        -881.17,
-        512.49
+        1972.7,
+        1230.85
       ]
     }
   ],
@@ -2041,15 +1855,31 @@
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "16",
+      "id": "15",
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "29",
+      "id": "19",
       "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "21",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "27",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:ObjectProperty"
     },
     {
       "id": "31",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "33",
       "type": "owl:ObjectProperty"
     },
     {
@@ -2057,87 +1887,71 @@
       "type": "owl:ObjectProperty"
     },
     {
-      "id": "39",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "40",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "42",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "45",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "46",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "48",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "51",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "54",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "56",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "59",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "61",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "66",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "32",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "72",
-      "type": "owl:ObjectProperty"
-    },
-    {
       "id": "37",
       "type": "owl:ObjectProperty"
     },
     {
+      "id": "39",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "42",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "45",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "47",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "50",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "52",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "57",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "22",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "63",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "28",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "58",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "65",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "34",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "66",
+      "type": "owl:DatatypeProperty"
+    },
+    {
       "id": "67",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "74",
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "43",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "75",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "76",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "78",
+      "id": "69",
       "type": "owl:DatatypeProperty"
     },
     {
@@ -2145,156 +1959,96 @@
       "type": "owl:ObjectProperty"
     },
     {
-      "id": "80",
+      "id": "71",
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "81",
+      "id": "72",
       "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "74",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "76",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "77",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "40",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "78",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "73",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "81",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "82",
+      "type": "owl:DatatypeProperty"
     },
     {
       "id": "83",
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "85",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "86",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "49",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "87",
+      "id": "84",
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "82",
+      "id": "86",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "88",
       "type": "owl:ObjectProperty"
     },
     {
       "id": "90",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "94",
       "type": "owl:DatatypeProperty"
     },
     {
-      "id": "91",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "92",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "93",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "95",
+      "id": "96",
       "type": "owl:DatatypeProperty"
     },
     {
       "id": "97",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "70",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "98",
       "type": "owl:ObjectProperty"
     },
     {
       "id": "99",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "101",
       "type": "owl:ObjectProperty"
     },
     {
-      "id": "103",
+      "id": "102",
       "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "105",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "106",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "79",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "107",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "108",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "110",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "111",
-      "type": "owl:DatatypeProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-15-0",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-19-1",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-20-2",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-21-3",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-22-4",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-23-5",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-24-6",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-18-25-7",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-15-0",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-19-1",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-20-2",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-21-3",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-22-4",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-23-5",
-      "type": "setOperatorProperty"
-    },
-    {
-      "id": "GENERATED-UNION-27-25-6",
-      "type": "setOperatorProperty"
     }
   ],
   "propertyAttribute": [
@@ -2357,10 +2111,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "39",
+      "inverse": "30",
       "pos": [
-        566.77,
-        1795.11
+        747.58,
+        -572.18
       ]
     },
     {
@@ -2415,8 +2169,8 @@
       "domain": "1",
       "range": "1",
       "pos": [
-        527.14,
-        1734.45
+        495.84,
+        -766.35
       ]
     },
     {
@@ -2443,8 +2197,8 @@
       "domain": "4",
       "range": "5",
       "pos": [
-        600.19,
-        -19.53
+        738.76,
+        631.26
       ]
     },
     {
@@ -2470,8 +2224,8 @@
       "domain": "4",
       "range": "9",
       "pos": [
-        967.32,
-        -119.34
+        815.37,
+        923.9
       ]
     },
     {
@@ -2510,8 +2264,8 @@
       "range": "11",
       "inverse": "12",
       "pos": [
-        805.48,
-        -454.35
+        788,
+        1050.26
       ]
     },
     {
@@ -2537,12 +2291,12 @@
       "domain": "4",
       "range": "14",
       "pos": [
-        733.04,
-        -395.2
+        434.37,
+        960.76
       ]
     },
     {
-      "id": "16",
+      "id": "15",
       "iri": "https://w3id.org/def/foo#LocalDate",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -2562,14 +2316,14 @@
         ]
       },
       "domain": "4",
-      "range": "17",
+      "range": "16",
       "pos": [
-        531.75,
-        -221.44
+        807.94,
+        702.03
       ]
     },
     {
-      "id": "29",
+      "id": "19",
       "iri": "https://w3id.org/def/foo#GMTDate",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -2589,14 +2343,14 @@
         ]
       },
       "domain": "4",
-      "range": "30",
+      "range": "20",
       "pos": [
-        1002.12,
-        -155.36
+        422.76,
+        717.28
       ]
     },
     {
-      "id": "31",
+      "id": "21",
       "iri": "http://www.w3.org/ns/sosa/isObservedBy",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -2646,14 +2400,14 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "32",
+      "inverse": "22",
       "pos": [
-        261.97,
-        1917.15
+        804.61,
+        -749.67
       ]
     },
     {
-      "id": "36",
+      "id": "27",
       "iri": "http://www.w3.org/ns/sosa/madeBySampler",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -2703,14 +2457,14 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "37",
+      "inverse": "28",
       "pos": [
-        389.06,
-        2011.17
+        811.38,
+        -683.3
       ]
     },
     {
-      "id": "39",
+      "id": "30",
       "iri": "http://www.w3.org/ns/sosa/actsOnProperty",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -2771,7 +2525,7 @@
       "inverse": "0"
     },
     {
-      "id": "40",
+      "id": "31",
       "iri": "https://w3id.org/def/foo#GMTTime",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -2791,14 +2545,14 @@
         ]
       },
       "domain": "4",
-      "range": "41",
+      "range": "32",
       "pos": [
-        991.8,
-        -243.75
+        414.89,
+        912.3
       ]
     },
     {
-      "id": "42",
+      "id": "33",
       "iri": "http://www.w3.org/ns/sosa/hasSample",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -2848,14 +2602,14 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "43",
+      "inverse": "34",
       "pos": [
-        267,
-        1771.12
+        539.64,
+        -824
       ]
     },
     {
-      "id": "45",
+      "id": "36",
       "iri": "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -2890,13 +2644,13 @@
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Observation",
+            "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
           },
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuation",
+            "value": "http://www.w3.org/ns/sosa/Observation",
             "type": "iri"
           },
           {
@@ -2910,27 +2664,27 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/FeatureOfInterest",
+            "value": "http://www.w3.org/ns/sosa/Sample",
             "type": "iri"
           },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Sample",
+            "value": "http://www.w3.org/ns/sosa/FeatureOfInterest",
             "type": "iri"
           }
         ]
       },
-      "domain": "18",
+      "domain": "26",
       "range": "4",
-      "inverse": "97",
+      "inverse": "88",
       "pos": [
-        827.08,
-        220.28
+        348.38,
+        838.2
       ]
     },
     {
-      "id": "46",
+      "id": "37",
       "iri": "https://w3id.org/def/foo#observes",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -2962,15 +2716,15 @@
         ]
       },
       "domain": "11",
-      "range": "47",
-      "inverse": "85",
+      "range": "38",
+      "inverse": "76",
       "pos": [
-        649.61,
-        -702.44
+        773.91,
+        1335.12
       ]
     },
     {
-      "id": "48",
+      "id": "39",
       "iri": "https://w3id.org/def/foo#isFeatureOfInterestOf",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3001,16 +2755,16 @@
           }
         ]
       },
-      "domain": "27",
+      "domain": "26",
       "range": "4",
-      "inverse": "49",
+      "inverse": "40",
       "pos": [
-        868.27,
-        207.41
+        352.73,
+        780.74
       ]
     },
     {
-      "id": "51",
+      "id": "42",
       "iri": "https://w3id.org/def/foo#Distance",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3030,14 +2784,14 @@
         ]
       },
       "domain": "4",
-      "range": "52",
+      "range": "43",
       "pos": [
-        605.43,
-        -336.62
+        654.79,
+        1045.65
       ]
     },
     {
-      "id": "54",
+      "id": "45",
       "iri": "https://w3id.org/def/foo#ID",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3047,31 +2801,15 @@
       "attributes": [
         "datatype"
       ],
-      "annotations": {
-        "resultTime": [
-          {
-            "identifier": "resultTime",
-            "language": "undefined",
-            "value": "2015-10-26T07:40:35",
-            "type": "label"
-          },
-          {
-            "identifier": "resultTime",
-            "language": "undefined",
-            "value": "2011-10-26T07:40:35",
-            "type": "label"
-          }
-        ]
-      },
       "domain": "4",
-      "range": "55",
+      "range": "46",
       "pos": [
-        549.4,
-        -177.42
+        466.9,
+        1002.58
       ]
     },
     {
-      "id": "56",
+      "id": "47",
       "iri": "http://www.w3.org/ns/sosa/isHostedBy",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3120,13 +2858,13 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Sensor",
+            "value": "http://www.w3.org/ns/sosa/Actuator",
             "type": "iri"
           },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuator",
+            "value": "http://www.w3.org/ns/sosa/Sensor",
             "type": "iri"
           },
           {
@@ -3139,14 +2877,14 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "86",
+      "inverse": "77",
       "pos": [
-        312.74,
-        1980.08
+        535.68,
+        -581.4
       ]
     },
     {
-      "id": "59",
+      "id": "50",
       "iri": "https://w3id.org/def/foo#Horizon",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3166,14 +2904,14 @@
         ]
       },
       "domain": "4",
-      "range": "60",
+      "range": "51",
       "pos": [
-        909.24,
-        -354.99
+        573.36,
+        1048.53
       ]
     },
     {
-      "id": "61",
+      "id": "52",
       "iri": "https://w3id.org/def/foo#PlotName",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3193,14 +2931,14 @@
         ]
       },
       "domain": "4",
-      "range": "62",
+      "range": "53",
       "pos": [
-        642.77,
-        11.72
+        840.91,
+        830.58
       ]
     },
     {
-      "id": "66",
+      "id": "57",
       "iri": "http://www.w3.org/ns/sosa/hasResult",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3235,17 +2973,23 @@
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Result",
+            "value": "http://www.w3.org/ns/sosa/Sample",
             "type": "iri"
           },
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Sample",
+            "value": "http://www.w3.org/ns/sosa/Result",
             "type": "iri"
           }
         ],
         "domainIncludes": [
+          {
+            "identifier": "domainIncludes",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/sosa/Actuation",
+            "type": "iri"
+          },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
@@ -3257,25 +3001,19 @@
             "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Sampling",
             "type": "iri"
-          },
-          {
-            "identifier": "domainIncludes",
-            "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuation",
-            "type": "iri"
           }
         ]
       },
       "domain": "1",
       "range": "1",
-      "inverse": "67",
+      "inverse": "58",
       "pos": [
-        385.62,
-        1688.82
+        495.61,
+        -636.82
       ]
     },
     {
-      "id": "32",
+      "id": "22",
       "iri": "http://www.w3.org/ns/sosa/observes",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3325,10 +3063,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "31"
+      "inverse": "21"
     },
     {
-      "id": "72",
+      "id": "63",
       "iri": "https://w3id.org/def/foo#observedProperty",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3360,14 +3098,14 @@
         ]
       },
       "domain": "4",
-      "range": "47",
+      "range": "38",
       "pos": [
-        619.59,
-        -424.79
+        612.07,
+        1112.1
       ]
     },
     {
-      "id": "37",
+      "id": "28",
       "iri": "http://www.w3.org/ns/sosa/madeSampling",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3417,10 +3155,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "36"
+      "inverse": "27"
     },
     {
-      "id": "67",
+      "id": "58",
       "iri": "http://www.w3.org/ns/sosa/isResultOf",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3455,12 +3193,6 @@
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Observation",
-            "type": "iri"
-          },
-          {
-            "identifier": "rangeIncludes",
-            "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Sampling",
             "type": "iri"
           },
@@ -3469,29 +3201,35 @@
             "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
+          },
+          {
+            "identifier": "rangeIncludes",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/sosa/Observation",
+            "type": "iri"
           }
         ],
         "domainIncludes": [
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Sample",
+            "value": "http://www.w3.org/ns/sosa/Result",
             "type": "iri"
           },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Result",
+            "value": "http://www.w3.org/ns/sosa/Sample",
             "type": "iri"
           }
         ]
       },
       "domain": "1",
       "range": "1",
-      "inverse": "66"
+      "inverse": "57"
     },
     {
-      "id": "74",
+      "id": "65",
       "iri": "https://w3id.org/def/foo#Direction",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3512,14 +3250,14 @@
         ]
       },
       "domain": "4",
-      "range": "28",
+      "range": "18",
       "pos": [
-        977.54,
-        -200.12
+        515.33,
+        1031.38
       ]
     },
     {
-      "id": "43",
+      "id": "34",
       "iri": "http://www.w3.org/ns/sosa/isSampleOf",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3569,10 +3307,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "42"
+      "inverse": "33"
     },
     {
-      "id": "75",
+      "id": "66",
       "iri": "https://w3id.org/def/foo#TotalN",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3592,14 +3330,14 @@
         ]
       },
       "domain": "4",
-      "range": "58",
+      "range": "49",
       "pos": [
-        869.28,
-        -1.62
+        410.37,
+        773.08
       ]
     },
     {
-      "id": "76",
+      "id": "67",
       "iri": "https://w3id.org/def/foo#LocalTime",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3619,14 +3357,14 @@
         ]
       },
       "domain": "4",
-      "range": "77",
+      "range": "68",
       "pos": [
-        943.12,
-        -322.84
+        488.55,
+        636.34
       ]
     },
     {
-      "id": "78",
+      "id": "69",
       "iri": "https://w3id.org/def/foo#Cov",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3646,10 +3384,10 @@
         ]
       },
       "domain": "4",
-      "range": "63",
+      "range": "54",
       "pos": [
-        810.48,
-        -398.54
+        777.28,
+        663.44
       ]
     },
     {
@@ -3689,7 +3427,7 @@
       "inverse": "10"
     },
     {
-      "id": "80",
+      "id": "71",
       "iri": "https://w3id.org/def/foo#Speed",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3710,14 +3448,14 @@
         ]
       },
       "domain": "4",
-      "range": "38",
+      "range": "29",
       "pos": [
-        564.03,
-        -53
+        734.18,
+        1017.79
       ]
     },
     {
-      "id": "81",
+      "id": "72",
       "iri": "http://www.w3.org/ns/sosa/madeActuation",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3767,14 +3505,14 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "82",
+      "inverse": "73",
       "pos": [
-        247.21,
-        1842.29
+        602.01,
+        -545.03
       ]
     },
     {
-      "id": "83",
+      "id": "74",
       "iri": "https://w3id.org/def/foo#Altitude",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3795,14 +3533,14 @@
         ]
       },
       "domain": "4",
-      "range": "84",
+      "range": "75",
       "pos": [
-        927.11,
-        -32.12
+        404.13,
+        856.95
       ]
     },
     {
-      "id": "85",
+      "id": "76",
       "iri": "https://w3id.org/def/foo#isObservedBy",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -3833,12 +3571,12 @@
           }
         ]
       },
-      "domain": "47",
+      "domain": "38",
       "range": "11",
-      "inverse": "46"
+      "inverse": "37"
     },
     {
-      "id": "86",
+      "id": "77",
       "iri": "http://www.w3.org/ns/sosa/hosts",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3879,12 +3617,6 @@
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuator",
-            "type": "iri"
-          },
-          {
-            "identifier": "rangeIncludes",
-            "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Sampler",
             "type": "iri"
           },
@@ -3892,6 +3624,12 @@
             "identifier": "rangeIncludes",
             "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Platform",
+            "type": "iri"
+          },
+          {
+            "identifier": "rangeIncludes",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/sosa/Actuator",
             "type": "iri"
           }
         ],
@@ -3906,10 +3644,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "56"
+      "inverse": "47"
     },
     {
-      "id": "49",
+      "id": "40",
       "iri": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -3944,13 +3682,13 @@
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/FeatureOfInterest",
+            "value": "http://www.w3.org/ns/sosa/Sample",
             "type": "iri"
           },
           {
             "identifier": "rangeIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Sample",
+            "value": "http://www.w3.org/ns/sosa/FeatureOfInterest",
             "type": "iri"
           }
         ],
@@ -3966,12 +3704,6 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Sampling",
-            "type": "iri"
-          },
-          {
-            "identifier": "domainIncludes",
-            "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Observation",
             "type": "iri"
           },
@@ -3980,15 +3712,21 @@
             "language": "undefined",
             "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
+          },
+          {
+            "identifier": "domainIncludes",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/sosa/Sampling",
+            "type": "iri"
           }
         ]
       },
       "domain": "4",
-      "range": "27",
-      "inverse": "48"
+      "range": "26",
+      "inverse": "39"
     },
     {
-      "id": "87",
+      "id": "78",
       "iri": "https://w3id.org/def/foo#Silt",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4008,14 +3746,14 @@
         ]
       },
       "domain": "4",
-      "range": "88",
+      "range": "79",
       "pos": [
-        963.15,
-        -280.25
+        692,
+        609.12
       ]
     },
     {
-      "id": "82",
+      "id": "73",
       "iri": "http://www.w3.org/ns/sosa/madeByActuator",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4065,10 +3803,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "81"
+      "inverse": "72"
     },
     {
-      "id": "90",
+      "id": "81",
       "iri": "https://w3id.org/def/foo#Site",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4088,14 +3826,14 @@
         ]
       },
       "domain": "4",
-      "range": "68",
+      "range": "59",
       "pos": [
-        866.58,
-        -380.17
+        450.16,
+        671.93
       ]
     },
     {
-      "id": "91",
+      "id": "82",
       "iri": "https://w3id.org/def/foo#Latitude",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4115,14 +3853,14 @@
         ]
       },
       "domain": "4",
-      "range": "57",
+      "range": "48",
       "pos": [
-        569.73,
-        -250.7
+        535.58,
+        613.19
       ]
     },
     {
-      "id": "92",
+      "id": "83",
       "iri": "https://w3id.org/def/foo#Clay",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4142,14 +3880,14 @@
         ]
       },
       "domain": "4",
-      "range": "50",
+      "range": "41",
       "pos": [
-        962.5,
-        -71.41
+        640.16,
+        598.4
       ]
     },
     {
-      "id": "93",
+      "id": "84",
       "iri": "https://w3id.org/def/foo#LandUse",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4169,14 +3907,14 @@
         ]
       },
       "domain": "4",
-      "range": "64",
+      "range": "55",
       "pos": [
-        563.36,
-        -98.37
+        788.68,
+        970.31
       ]
     },
     {
-      "id": "95",
+      "id": "86",
       "iri": "https://w3id.org/def/foo#Temperature",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4197,14 +3935,14 @@
         ]
       },
       "domain": "4",
-      "range": "34",
+      "range": "24",
       "pos": [
-        660.9,
-        -374
+        822.55,
+        875.92
       ]
     },
     {
-      "id": "97",
+      "id": "88",
       "iri": "https://w3id.org/def/foo#hasFeatureOfInterest",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4243,11 +3981,11 @@
         ]
       },
       "domain": "4",
-      "range": "18",
-      "inverse": "45"
+      "range": "26",
+      "inverse": "36"
     },
     {
-      "id": "99",
+      "id": "90",
       "iri": "http://www.w3.org/ns/sosa/phenomenonTime",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4290,7 +4028,7 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuation",
+            "value": "http://www.w3.org/ns/sosa/Observation",
             "type": "iri"
           },
           {
@@ -4302,7 +4040,7 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Observation",
+            "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
           }
         ]
@@ -4310,12 +4048,12 @@
       "domain": "1",
       "range": "1",
       "pos": [
-        463.46,
-        1695.54
+        679.66,
+        -541.97
       ]
     },
     {
-      "id": "103",
+      "id": "94",
       "iri": "https://w3id.org/def/foo#HDOP",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4335,14 +4073,14 @@
         ]
       },
       "domain": "4",
-      "range": "53",
+      "range": "44",
       "pos": [
-        537.52,
-        -135.91
+        587.67,
+        597.69
       ]
     },
     {
-      "id": "105",
+      "id": "96",
       "iri": "http://www.w3.org/ns/sosa/resultTime",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4377,13 +4115,13 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuation",
+            "value": "http://www.w3.org/ns/sosa/Observation",
             "type": "iri"
           },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Observation",
+            "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
           },
           {
@@ -4395,14 +4133,14 @@
         ]
       },
       "domain": "1",
-      "range": "102",
+      "range": "93",
       "pos": [
-        541.36,
-        1856.59
+        617.1,
+        -837.25
       ]
     },
     {
-      "id": "106",
+      "id": "97",
       "iri": "https://w3id.org/def/foo#Subplot",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4422,14 +4160,14 @@
         ]
       },
       "domain": "4",
-      "range": "35",
+      "range": "25",
       "pos": [
-        566.73,
-        -299.76
+        836.24,
+        785.53
       ]
     },
     {
-      "id": "79",
+      "id": "70",
       "iri": "http://www.w3.org/ns/sosa/madeBySensor",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4479,14 +4217,14 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "107",
+      "inverse": "98",
       "pos": [
-        468.07,
-        2002.73
+        791.75,
+        -622.23
       ]
     },
     {
-      "id": "107",
+      "id": "98",
       "iri": "http://www.w3.org/ns/sosa/madeObservation",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4536,10 +4274,10 @@
       },
       "domain": "1",
       "range": "1",
-      "inverse": "79"
+      "inverse": "70"
     },
     {
-      "id": "108",
+      "id": "99",
       "iri": "https://w3id.org/def/foo#Count",
       "baseIri": "https://w3id.org/def/foo",
       "label": {
@@ -4559,14 +4297,14 @@
         ]
       },
       "domain": "4",
-      "range": "101",
+      "range": "92",
       "pos": [
-        705.17,
-        26.64
+        812.41,
+        747.37
       ]
     },
     {
-      "id": "110",
+      "id": "101",
       "iri": "http://www.w3.org/ns/sosa/usedProcedure",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4615,13 +4353,13 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Observation",
+            "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
           },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuation",
+            "value": "http://www.w3.org/ns/sosa/Observation",
             "type": "iri"
           }
         ]
@@ -4629,12 +4367,12 @@
       "domain": "1",
       "range": "1",
       "pos": [
-        316.41,
-        1716.36
+        482.06,
+        -701.5
       ]
     },
     {
-      "id": "111",
+      "id": "102",
       "iri": "http://www.w3.org/ns/sosa/hasSimpleResult",
       "baseIri": "http://www.w3.org/ns/sosa",
       "label": {
@@ -4675,13 +4413,13 @@
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Actuation",
+            "value": "http://www.w3.org/ns/sosa/Observation",
             "type": "iri"
           },
           {
             "identifier": "domainIncludes",
             "language": "undefined",
-            "value": "http://www.w3.org/ns/sosa/Observation",
+            "value": "http://www.w3.org/ns/sosa/Actuation",
             "type": "iri"
           }
         ],
@@ -4695,145 +4433,10 @@
         ]
       },
       "domain": "1",
-      "range": "33",
-      "pos": [
-        524.4,
-        1937.18
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-15-0",
-      "domain": "18",
-      "range": "15",
-      "pos": [
-        751.91,
-        725.9
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-19-1",
-      "domain": "18",
-      "range": "19",
-      "pos": [
-        981.77,
-        786.43
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-20-2",
-      "domain": "18",
-      "range": "20",
-      "pos": [
-        1045.65,
-        748.86
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-21-3",
-      "domain": "18",
-      "range": "21",
-      "pos": [
-        1092.43,
-        688.04
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-22-4",
-      "domain": "18",
-      "range": "22",
-      "pos": [
-        818.14,
-        777.14
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-23-5",
-      "domain": "18",
       "range": "23",
       "pos": [
-        1112.17,
-        617.93
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-24-6",
-      "domain": "18",
-      "range": "24",
-      "pos": [
-        681.89,
-        685.48
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-18-25-7",
-      "domain": "18",
-      "range": "25",
-      "pos": [
-        903.02,
-        797.98
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-15-0",
-      "domain": "27",
-      "range": "15",
-      "pos": [
-        792.15,
-        713.22
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-19-1",
-      "domain": "27",
-      "range": "19",
-      "pos": [
-        1022.01,
-        773.76
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-20-2",
-      "domain": "27",
-      "range": "20",
-      "pos": [
-        1085.89,
-        736.19
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-21-3",
-      "domain": "27",
-      "range": "21",
-      "pos": [
-        1132.67,
-        675.37
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-22-4",
-      "domain": "27",
-      "range": "22",
-      "pos": [
-        858.38,
-        764.47
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-23-5",
-      "domain": "27",
-      "range": "23",
-      "pos": [
-        1152.41,
-        605.26
-      ]
-    },
-    {
-      "id": "GENERATED-UNION-27-25-6",
-      "domain": "27",
-      "range": "25",
-      "pos": [
-        943.26,
-        785.31
+        757.9,
+        -786.32
       ]
     }
   ]
