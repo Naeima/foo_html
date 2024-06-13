@@ -109,6 +109,7 @@ foo:Image rdf:type    foo:FeatureOfInterest ;
 
 foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     owl:sameAs sosa:hasFeatureOfInterest ;
+     rdfs:label "has Feature Of Interest"@en ;
     rdfs:domain    foo:Observation ;
     rdfs:range     foo:FeatureOfInterest ;
     skos:definition "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
