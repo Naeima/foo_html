@@ -1063,6 +1063,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Abaw</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1081,6 +1082,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Aqeela</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1092,6 +1094,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Bikang 1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1103,6 +1106,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Bikang 2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1114,6 +1118,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Binbingan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1125,6 +1130,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Image"/>
         <observes rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:label xml:lang="en">Camera Trap</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1157,6 +1163,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Dara</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1256,6 +1263,7 @@
         <Longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">566.222302</Longitude>
         <Speed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.24</Speed>
         <Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.5</Temperature>
+        <rdfs:label xml:lang="en">GPS Observation</rdfs:label>
         <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-26T07:40:35</resultTime>
         <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-26T07:40:35</resultTime>
     </owl:NamedIndividual>
@@ -1269,6 +1277,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Guli</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1311,6 +1320,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ImageObservation">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
         <madeBySensor rdf:resource="https://w3id.org/def/foo#CameraTrap"/>
+        <rdfs:label xml:lang="en">Image Observation </rdfs:label>
         <ImageID>001</ImageID>
         <date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-12</date>
         <make>RECONYX</make>
@@ -1327,6 +1337,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Ita</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1338,6 +1349,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Jasmin</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1349,6 +1361,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Jasper</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1367,6 +1380,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Kasih</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1378,6 +1392,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Kuma</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1414,6 +1429,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Liun</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1458,6 +1474,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Maliau</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1482,6 +1499,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Merotai</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1527,6 +1545,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Puteri</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1538,6 +1557,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Putut</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1549,6 +1569,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Sejati</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1567,6 +1588,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Seri</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1614,6 +1636,7 @@
         <Subplot>4</Subplot>
         <TotalC rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.45</TotalC>
         <TotalN rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38</TotalN>
+        <rdfs:label xml:lang="en">Soil Observation</rdfs:label>
         <CNRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.24</CNRatio>
         <Identifier>MB4</Identifier>
         <InorganicP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.03</InorganicP>
@@ -1677,14 +1700,15 @@
     
 
 
-    <!-- https://w3id.org/def/foo#TreeObservation1 -->
+    <!-- https://w3id.org/def/foo#TreeObservation -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeObservation1">
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeObservation">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Lianas"/>
         <madeBySensor rdf:resource="https://w3id.org/def/foo#TreeSensor"/>
         <ID>TreeObs1</ID>
+        <rdfs:label xml:lang="en">Tree Observation</rdfs:label>
         <date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</date>
         <lianaDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</lianaDBH_cm>
         <subplotRadius_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</subplotRadius_m>
@@ -1695,6 +1719,13 @@
         <treeNLianas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</treeNLianas>
         <treeNotes></treeNotes>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#TreeObservation1 -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeObservation1"/>
     
 
 
@@ -1720,6 +1751,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Tulid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1731,6 +1763,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Tunglap</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1742,6 +1775,7 @@
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:label xml:lang="en">Umas2</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1791,13 +1825,15 @@
 
 
     <rdf:Description rdf:about="https://w3id.org/def/foo#Altitude">
-        <rdfs:label>Altitude</rdfs:label>
+        <rdfs:label xml:lang="n">Altitude</rdfs:label>
         <skos:definition>Altitude of the elephant in meters at the moment of data collection.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Clay">
+        <rdfs:label xml:lang="en">Clay</rdfs:label>
         <skos:definition xml:lang="en">clay content of the soil sample</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Count">
+        <rdfs:label xml:lang="en">Count</rdfs:label>
         <skos:definition>Observation count per data set.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Cov">
@@ -1808,6 +1844,7 @@
         <skos:definition>Direction of elephant travel at the moment of data collection.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Distance">
+        <rdfs:label xml:lang="en">Distance</rdfs:label>
         <skos:definition>Distance (m) travelled from the last to the current data collection point.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#FeatureOfInterest">
@@ -1824,12 +1861,14 @@
         <skos:definition>Horizontal Dilution of Precision (HDOP), indicating GPS accuracy in latitude and longitude. Lower values indicate better precision.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Horizon">
+        <rdfs:label xml:lang="en">Horizon</rdfs:label>
         <skos:definition xml:lang="en">Soil horizon sampled</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#ID">
         <rdfs:label>ID</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#LandUse">
+        <rdfs:label xml:lang="en">Land Use</rdfs:label>
         <skos:definition xml:lang="en">Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Latitude">
@@ -1861,9 +1900,11 @@
         <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. (e.g., Temperature sensor, humidity sensor, motion sensor). In our model, we have created a unique ID for each sensor based on the platform it is hosted by.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Silt">
+        <rdfs:label xml:lang="en">Silt</rdfs:label>
         <skos:definition xml:lang="en">silt content of the soil sample</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Site">
+        <rdfs:label xml:lang="en">Site</rdfs:label>
         <skos:definition xml:lang="en">Geographical area/site which samples were taken from</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#SoilPH">
@@ -1874,6 +1915,7 @@
         <skos:definition>Estimated temperature of the elephant in Celsius at the moment of data collection.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Subplot">
+        <rdfs:label xml:lang="en">Sub plot</rdfs:label>
         <skos:definition xml:lang="en">Number of the subplot sampled within each 1 Ha plot</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Temperature">
@@ -1881,9 +1923,11 @@
         <skos:definition>Altitude of the elephant in meters at the moment of data collection.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#TotalC">
+        <rdfs:label xml:lang="en">Total C</rdfs:label>
         <skos:definition xml:lang="en">total carbon content of the soil sample</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#TotalN">
+        <rdfs:label xml:lang="en">Total N</rdfs:label>
         <skos:definition xml:lang="en">silt content of the soil sample</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#hasFeatureOfInterest">
