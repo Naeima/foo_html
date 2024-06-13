@@ -52,20 +52,22 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
-foo:Soil rdf:type owl:Class ;
+
+### Feature Of Interest Instances ##
+foo:Soil rdf:type foo:FeatureOfInterest ;
     rdfs:label "Soil"@en ;
     skos:definition "A dataset describing soil properties from organic and mineral soil across various land uses in Sabah, Malaysia, sampled and measured at the Forest Research Centre Sabah Malaysia."@en ;
     dcterms:bibliographicCitation "Elias DM, McNamara NP, Ostle NJ, Majalap-Lee N, 2018. Soil properties across primary forest, logged forest, and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre."@en .
 
 
-foo:ElephasMaximus rdf:type owl:Class ;
+foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
     rdfs:label "Asian Elephant"@en ;
     rdfs:label "Elephas maximus"@la ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en ;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
     rdfs:definedBy <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
 
-foo:Nasalislarvatus  rdf:type    owl:Class ;
+foo:Nasalislarvatus  rdf:type foo:FeatureOfInterest ;
     rdfs:label "Nasalis larvatus"@la ;
     rdfs:label "Proboscis Monkey"@en ;
     skos:definition   "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, 
@@ -74,7 +76,7 @@ foo:Nasalislarvatus  rdf:type    owl:Class ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
     rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X>.
 
-foo:ManisJavanica rdf:type  owl:Class ;
+foo:ManisJavanica rdf:type foo:FeatureOfInterest ;
     rdfs:label "Manis javanica"@la ;
     rdfs:label "Sunda Pangolin"@en ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ; 
@@ -82,19 +84,19 @@ foo:ManisJavanica rdf:type  owl:Class ;
     rdfs:definedBy  <https://doi.org/10.1016/j.gecco.2024.e02962> .
 
 
-foo:MalayopythonReticulatus  rdf:type    owl:Class ;
+foo:MalayopythonReticulatus  rdf:type   foo:FeatureOfInterest ;
     rdfs:label "Malayopython reticulatus"@la ;
     rdfs:label "Reticulated Python"@en ;
     skos:definition   "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
     rdfs:definedBy  <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf>.
 
 
-foo:Lianas rdf:type    owl:Class ;
+foo:Lianas rdf:type   foo:FeatureOfInterest ;
     rdfs:label "Lianas"@en ;
     skos:definition "Woody climbing plants found in tropical forests, commonly observed in forest plots."@en ;
     rdfs:definedBy  <w3id.org/def/foo#>.
 
-foo:Image rdf:type    owl:Class ;
+foo:Image rdf:type    foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en ;
     rdfs:definedBy  <w3id.org/def/foo#>.
