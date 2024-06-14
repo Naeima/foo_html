@@ -1,8 +1,11 @@
 [ {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/created",
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
@@ -11,13 +14,16 @@
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#time",
@@ -40,6 +46,21 @@
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#Longitude"
   } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#generatedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasAttributedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -143,18 +164,101 @@
     "@id" : "https://w3id.org/def/foo#observes"
   } ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://github.com/Naeima",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://xmlns.com/foaf/0.1/affiliation" : [ {
+    "@language" : "en",
+    "@value" : "Cardiff University"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@id" : "mailto:naeima.hamed@cardiff.ac.uk"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Naeima Hamed"
+  } ]
+}, {
+  "@id" : "https://link.springer.com/chapter/10.1007/978-3-031-43458-7_29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://rdcu.be/dKNG2"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Springer, Cham"
+  } ]
+}, {
+  "@id" : "https://ontology.forest-observatory.org",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Data Provider"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "The dataset from which this ontology was derived."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Source Dataset"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-15"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ]
+}, {
   "@id" : "https://schema.org/citation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/foo#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
     "@language" : "en",
     "@value" : "The Forest Observatory Ontology (FOO) comprises a novel upper-level ontology that integrates wildlife data generated by sensors. FOO borrows classes and properties from SOSA and BBC wildlife ontology."
   } ],
-  "http://purl.org/dc/elements/1.1/created" : [ {
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
-    "@value" : "June 1st, 2024"
+    "@value" : "Benoit Goossens"
+  }, {
+    "@language" : "en",
+    "@value" : "Charith Perera"
+  }, {
+    "@language" : "en",
+    "@value" : "Omer Rana"
+  }, {
+    "@language" : "en",
+    "@value" : "Pablo Orozco-terWengel"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
@@ -164,12 +268,19 @@
     "@language" : "en",
     "@value" : "This ontology describes wildlife observations generated by sensors."
   } ],
-  "http://purl.org/dc/elements/1.1/license" : [ {
-    "@id" : "http://creativecommons.org/licenses/by-sa/4.0/"
-  } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "Forest Observatory Ontology (FOO) "
+    "@value" : "Forest Observatory Ontology (FOO)"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-01"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://ontoology.linkeddata.es/"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@language" : "en",
@@ -184,6 +295,16 @@
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/def/foo#V2.0"
   } ],
+  "http://www.w3.org/ns/prov#generatedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-06-01T00:00:00Z"
+  } ],
+  "http://www.w3.org/ns/prov#wasAttributedTo" : [ {
+    "@id" : "https://github.com/Naeima"
+  } ],
+  "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
+    "@id" : "https://ontology.forest-observatory.org"
+  } ],
   "https://schema.org/citation" : [ {
     "@language" : "en",
     "@value" : "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"
@@ -193,6 +314,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abaw"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -221,6 +346,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aqeela"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -232,6 +361,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bikang 1"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -245,6 +378,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bikang 2"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -256,6 +393,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Binbingan"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -272,6 +413,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Camera Trap"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#Image"
   } ],
@@ -283,6 +428,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clay"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -297,6 +446,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Count"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
@@ -309,6 +462,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cov"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
@@ -320,6 +476,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dara"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -347,6 +507,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Distance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -392,6 +556,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GMT Date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ],
@@ -404,6 +571,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GMT Time"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#time"
   } ],
@@ -415,6 +585,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GPS Observation"
   } ],
   "https://w3id.org/def/foo#Altitude" : [ {
     "@value" : "11.7"
@@ -547,6 +721,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Guli"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -559,6 +737,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HDOP"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
@@ -570,6 +751,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Horizon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -616,6 +801,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Image Observation "
+  } ],
   "https://w3id.org/def/foo#ImageID" : [ {
     "@value" : "001"
   } ],
@@ -645,6 +834,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ita"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -657,6 +850,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jasmin"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -668,6 +865,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jasper"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -684,6 +885,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Kasih"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -695,6 +900,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Kuma"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -708,6 +917,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Land Use"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -720,6 +933,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Latitude"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -747,6 +963,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Liun"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -759,6 +979,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Local Date"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ],
@@ -770,6 +993,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Local Time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#time"
@@ -815,6 +1041,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maliau"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -847,6 +1077,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Merotai"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -903,6 +1137,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Plot Name"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -916,6 +1153,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Puteri"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -927,6 +1168,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Putut"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -942,6 +1187,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sejati"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -966,6 +1215,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Seri"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -977,6 +1230,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Silt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
@@ -990,6 +1247,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Site"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1021,6 +1282,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil Observation"
   } ],
   "https://w3id.org/def/foo#CNRatio" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
@@ -1088,6 +1353,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil PH"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
@@ -1132,6 +1400,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sub plot"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -1160,6 +1432,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total C"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
@@ -1173,6 +1449,10 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total N"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
@@ -1184,10 +1464,14 @@
   "@id" : "https://w3id.org/def/foo#TotalP",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#TreeObservation1",
+  "@id" : "https://w3id.org/def/foo#TreeObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree Observation"
   } ],
   "https://w3id.org/def/foo#ID" : [ {
     "@value" : "TreeObs1"
@@ -1204,7 +1488,7 @@
     "@value" : "10"
   } ],
   "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeSensor"
+    "@id" : "https://w3id.org/def/foo#lianas"
   } ],
   "https://w3id.org/def/foo#subplotRadius_m" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -1233,36 +1517,14 @@
     "@value" : ""
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#TreeSensor",
+  "@id" : "https://w3id.org/def/foo#Tulid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Tree Sensor 1"
-  } ],
-  "https://w3id.org/def/foo#ID" : [ {
-    "@value" : "TS1"
-  } ],
-  "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation1"
-  } ],
-  "https://w3id.org/def/foo#plotNo" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ],
-  "https://w3id.org/def/foo#siteName" : [ {
-    "@value" : "Danum W15"
-  } ],
-  "https://w3id.org/def/foo#sitePlotCode" : [ {
-    "@value" : "F1P1"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#Tulid",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Sensor"
+    "@value" : "Tulid"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -1276,6 +1538,10 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tunglap"
+  } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   } ],
@@ -1287,6 +1553,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Umas2"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
@@ -1309,6 +1579,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Feature Of Interest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
@@ -1381,6 +1655,32 @@
 }, {
   "@id" : "https://w3id.org/def/foo#lianaDBH_cm",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#lianas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lianas"
+  } ],
+  "https://w3id.org/def/foo#ID" : [ {
+    "@value" : "TS1"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#TreeObservation"
+  } ],
+  "https://w3id.org/def/foo#plotNo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://w3id.org/def/foo#siteName" : [ {
+    "@value" : "Danum W15"
+  } ],
+  "https://w3id.org/def/foo#sitePlotCode" : [ {
+    "@value" : "F1P1"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#madeBySensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
