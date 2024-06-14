@@ -986,14 +986,14 @@ foo:ImageObservation  rdf:type foo:Observation ;
     foo:make "RECONYX" ;
     foo:model "PC800 PROFESSIONAL" .
 
-### Tree Sensor Instance ###
-foo:TreeSensor rdf:type foo:Sensor ;
-    rdfs:label "Tree Sensor 1"@en ;
+### lianas Instance ###
+foo:lianas rdf:type foo:Sensor ;
+    rdfs:label "lianas"@en ;
     foo:ID "TS1" ;
     foo:siteName "Danum W15" ;
     foo:plotNo 1 ;
     foo:sitePlotCode "F1P1" ;
-    foo:observes foo:TreeObservation1 .
+    foo:observes foo:TreeObservation.
 
 ### Tree Observation Instance ###
 foo:TreeObservation rdf:type foo:Observation ;
