@@ -213,12 +213,14 @@ foo:LocalDate rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:date;
+    rdfs:label "Local Date";
     skos:definition  "The local date in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:LocalTime rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:time ;
+    rdfs:label "Local Time";
     skos:definition  "The local time in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:GMTDate rdf:type owl:DatatypeProperty ;
@@ -278,12 +280,14 @@ foo:Cov rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Cov";
     skos:definition  "TBC".
 
 foo:HDOP rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "HDOP";
     skos:definition  "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy in latitude and longitude. Lower values indicate better precision.".
 
 foo:Distance rdf:type owl:DatatypeProperty ;
@@ -320,6 +324,7 @@ foo:PlotName rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
+    rdfs:label "Plot Name";
     skos:definition "Name of the 1 Ha plot sampled"@en .
 
 
@@ -341,10 +346,11 @@ foo:SoilPH rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label "Soil PH";
     skos:definition "Soil_pH Measured pH of the soil sample, numeric"@en .
 
 
-    foo:TotalC rdf:type owl:DatatypeProperty ;
+foo:TotalC rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
