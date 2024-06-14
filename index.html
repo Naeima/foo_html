@@ -974,7 +974,6 @@ foo:SoilObservation    rdf:type foo:Observation ;
                   foo:Silt "16.46"^^xsd:double ;
                   foo:Clay "62.88"^^xsd:double .
 
-
 ### Camera Trap Sensor Instance ###
 foo:CameraTrap rdf:type foo:Sensor ;
       foo:hasFeatureOfInterest foo:Image ;
@@ -993,19 +992,19 @@ foo:ImageObservation  rdf:type foo:Observation ;
     foo:make "RECONYX" ;
     foo:model "PC800 PROFESSIONAL" .
 
-### Tree Sensor Instance ###
-foo:TreeSensor rdf:type foo:Sensor ;
-    rdfs:label "Tree Sensor 1"@en ;
+### lianas Instance ###
+foo:lianas rdf:type foo:Sensor ;
+    rdfs:label "lianas"@en ;
     foo:ID "TS1" ;
     foo:siteName "Danum W15" ;
     foo:plotNo 1 ;
     foo:sitePlotCode "F1P1" ;
-    foo:observes foo:TreeObservation1 .
+    foo:observes foo:TreeObservation.
 
-### Tree Observation Instance ###
-foo:TreeObservation rdf:type foo:Observation ;
+### lianas Instance ###
+foo:lianasObservation rdf:type foo:Observation ;
     rdfs:label "Tree Observation"@en ;
-    foo:madeBySensor foo:TreeSensor ;
+    foo:madeBySensor foo:lianas ;
     foo:hasFeatureOfInterest foo:Lianas ;
     foo:ID "TreeObs1" ;
     foo:date "2017-07-21"^^xsd:date ;
