@@ -227,18 +227,21 @@ foo:GMTDate rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:date ;
+    rdfs:label  "GMT Date" ; 
     skos:definition  "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:GMTTime rdf:type owl:DatatypeProperty ;
     owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:time ;
+    rdfs:label  "GMT Time" ; 
     skos:definition  "The GMT time in Sabah, Malaysia, when the GPS collar records its readings.".
 
 foo:Latitude rdf:type owl:DatatypeProperty ;
     owl:sameAs pos:lat ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
+    rdfs:label  "Latitude" ; 
     skos:definition  "Latitudinal coordinate of the elephant at the moment of data collection.".
 
 foo:Longitude rdf:type owl:DatatypeProperty ;
