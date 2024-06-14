@@ -52,6 +52,10 @@ foo: a owl:Ontology ;
     foaf:mbox <mailto:naeima.hamed@cardiff.ac.uk> ;
     foaf:affiliation "Cardiff University"@en .
 
+<https://link.springer.com/chapter/10.1007/978-3-031-43458-7_29> a prov:Agent, foaf:Organization ;
+    foaf:name "Springer, Cham"@en ;
+    foaf:homepage <https://rdcu.be/dKNG2> .
+
 ### Classes ###
 foo:Sensor rdf:type owl:Class ;
     owl:sameAs sosa:Sensor ;
