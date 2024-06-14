@@ -995,8 +995,8 @@ foo:lianas rdf:type foo:Sensor ;
     foo:sitePlotCode "F1P1" ;
     foo:observes foo:TreeObservation.
 
-### Tree Observation Instance ###
-foo:TreeObservation rdf:type foo:Observation ;
+### lianas Instance ###
+foo:lianasObservation rdf:type foo:Observation ;
     rdfs:label "Tree Observation"@en ;
     foo:madeBySensor foo:lianas ;
     foo:hasFeatureOfInterest foo:Lianas ;
