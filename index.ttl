@@ -263,7 +263,7 @@ foo:Altitude rdf:type owl:DatatypeProperty ;
     owl:sameAs pos:alt ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Altitude"@n ;
+    rdfs:label "Altitude"@en ;
     skos:definition  "Altitude of the elephant in meters at the moment of data collection.".
 
 foo:Cov rdf:type owl:DatatypeProperty ;
