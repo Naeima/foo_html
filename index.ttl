@@ -998,7 +998,7 @@ foo:lianas rdf:type foo:Sensor ;
 ### Tree Observation Instance ###
 foo:TreeObservation rdf:type foo:Observation ;
     rdfs:label "Tree Observation"@en ;
-    foo:madeBySensor foo:TreeSensor ;
+    foo:madeBySensor foo:lianas ;
     foo:hasFeatureOfInterest foo:Lianas ;
     foo:ID "TreeObs1" ;
     foo:date "2017-07-21"^^xsd:date ;
