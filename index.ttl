@@ -13,6 +13,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
 ### Ontology Declaration ###
