@@ -43,9 +43,13 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:madeObservation" -> "sosa:madeObservation" [ label = "owl:sameAs" ];
 	"sosa:madeActuation" -> "sosa:Actuation" [ label = ":rangeIncludes" ];
 	"sosa:madeActuation" -> "sosa:Actuator" [ label = ":domainIncludes" ];
+	"foo@en:" -> "https://ontoology.linkeddata.es/" [ label = "dcterms:publisher" ];
 	"foo@en:" -> "sosa:" [ label = "owl:imports" ];
 	"foo@en:" -> "foo@en:V2.0" [ label = "owl:versionIRI" ];
-	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "dc:license" ];
+	"foo@en:" -> "https://github.com/Naeima" [ label = "prov:wasAttributedTo" ];
+	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "cc:license" ];
+	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "dcterms:license" ];
+	"foo@en:" -> "https://ontology.forest-observatory.org" [ label = "prov:wasDerivedFrom" ];
 	"sosa:phenomenonTime" -> "time:TemporalEntity" [ label = ":rangeIncludes" ];
 	"sosa:phenomenonTime" -> "sosa:Sampling" [ label = ":domainIncludes" ];
 	"sosa:phenomenonTime" -> "sosa:Observation" [ label = ":domainIncludes" ];
@@ -53,8 +57,6 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:Observation" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:Observation" -> "sosa:Observation" [ label = "owl:sameAs" ];
 	"foo@en:Clay" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
-	"foo@en:TreeObservation1" -> "foo@en:TreeSensor" [ label = "foo@en:madeBySensor" ];
-	"foo@en:TreeObservation1" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Subplot" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"sosa:hasResult" -> "sosa:Sampling" [ label = ":domainIncludes" ];
 	"sosa:hasResult" -> "sosa:Actuation" [ label = ":domainIncludes" ];
@@ -140,10 +142,12 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"sosa:isHostedBy" -> "sosa:Actuator" [ label = ":domainIncludes" ];
 	"foo@en:PlotName" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:isObservedBy" -> "sosa:isObservedBy" [ label = "owl:sameAs" ];
+	"https://github.com/Naeima" -> "mailto:naeima.hamed@cardiff.ac.uk" [ label = "foaf:mbox" ];
 	"foo@en:Longitude" -> "pos:long" [ label = "owl:sameAs" ];
 	"foo@en:Maliau" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:Maliau" -> "foo@en:ElephasMaximus" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:TotalC" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
+	"https://link.springer.com/chapter/10.1007/978-3-031-43458-7_29" -> "https://rdcu.be/dKNG2" [ label = "foaf:homepage" ];
 	"sosa:hasSample" -> "sosa:Sample" [ label = ":rangeIncludes" ];
 	"sosa:hasSample" -> "sosa:FeatureOfInterest" [ label = ":domainIncludes" ];
 	"sosa:observes" -> "sosa:ObservableProperty" [ label = ":rangeIncludes" ];
@@ -172,7 +176,7 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:Nasalislarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"foo@en:Nasalislarvatus" -> "https://doi/10.1126/sciadv.aaq0250" [ label = "rdfs:definedBy" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "ef12a73b5fdb8a4fbdd7f18779065737" [ label = "dcterms:creator" ];
+	"sosa:" -> "1e68c5e5cc4fb08adaef4d1b151eab27" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "rdfs:definedBy" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "owl:sameAs" ];
@@ -195,6 +199,8 @@ node [shape = rectangle, color="orange"]; "foo@en:FeatureOfInterest" "foo@en:Obs
 	"foo@en:MalayopythonReticulatus" -> "https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf" [ label = "rdfs:definedBy" ];
 	"sosa:madeBySampler" -> "sosa:Sampler" [ label = ":rangeIncludes" ];
 	"sosa:madeBySampler" -> "sosa:Sampling" [ label = ":domainIncludes" ];
+	"foo@en:TreeObservation" -> "foo@en:Lianas" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:TreeObservation" -> "foo@en:TreeSensor" [ label = "foo@en:madeBySensor" ];
 	"foo@en:Distance" -> "sosa:observedProperty" [ label = "owl:sameAs" ];
 	"foo@en:Lianas" -> "file:///home/ahmad/OnToology/w3id.org/def/foo#" [ label = "rdfs:definedBy" ];
 	"foo@en:Tulid" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
