@@ -198,11 +198,11 @@ foo:Reptilia rdf:type owl:Class ;
 
 wo:Reptilia rdf:type owl:Class ;
     rdfs:subClassOf wo:Class ;
-    rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."
+    rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."^^xsd:string .
 
 foo:Elephantidae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
-    rdfs:label "Elephantidae"@en-gb;
+    rdfs:label "Elephantidae"@en-gb ;
     owl:sameAs wo:Elephantidae .
 
 wo:Elephantidae rdf:type owl:Class ;
@@ -215,7 +215,7 @@ foo:Viverridae rdf:type owl:Class ;
 
 wo:Viverridae rdf:type owl:Class ;
     rdfs:subClassOf wo:Family ;
-    rdfs:comment "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line";
+    rdfs:comment "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line." ;
     rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Viverridae> .
 
 foo:Animalia rdf:type owl:Class ;
