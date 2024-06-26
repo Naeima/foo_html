@@ -207,7 +207,6 @@ foo:Elephantidae rdf:type owl:Class ;
 
 wo:Elephantidae rdf:type owl:Class ;
     rdfs:subClassOf wo:Family ;
-    rdfs:comment "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.Source: https://www.merriam-webster.com/dictionary/Elephantidae.
 
 foo:Viverridae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
