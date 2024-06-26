@@ -87,6 +87,206 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
+foo:Class rdf:type owl:Class ;
+owl:sameAa  wo:Class. 
+
+wo:Class rdf:type owl:Class ;
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Class"^^xsd:string ;
+    rdfs:comment "A class is a scientific way to group related organisms together, some examples of classes being jellyfish, reptiles and sea urchins. Classes are big groups and contain within them smaller groupings called orders, families, genera and species."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Class"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Class_%28biology%29> ,
+                 <http://www.bbc.co.uk/nature/class> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:Family rdf:type owl:Class ;
+owl:sameAa  wo:Family. 
+
+wo:Family rdf:type owl:Class ;
+     rdfs:subClassOf <http://purl.org/ontology/wo/TaxonRank> ;
+     <http://data.bioontology.org/metadata/prefixIRI> "wo:Family"^^xsd:string ;
+     rdfs:comment "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en-gb ;
+     rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+     rdfs:label "Family"@en-gb ;
+     rdfs:seeAlso <http://en.wikipedia.org/wiki/Family_%28biology%29> ,
+                  <http://www.bbc.co.uk/nature/family> ;
+     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:Genus rdf:type owl:Class ;
+owl:sameAa  wo:Genus. 
+
+wo:Genus rdf:type owl:Class ;
+                                    rdfs:subClassOf wo:TaxonRank ;
+                                    <http://data.bioontology.org/metadata/prefixIRI> "wo:Genus"^^xsd:string ;
+                                    rdfs:comment "A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species' scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name"@en-gb ;
+                                    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                    rdfs:label "Genus"@en-gb ;
+                                    rdfs:seeAlso <http://en.wikipedia.org/wiki/Genus> ,
+                                                 <http://www.bbc.co.uk/nature/genus> ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+foo:Kingdom rdf:type owl:Class ;
+owl:sameAa  wo:Kingdom.
+
+
+
+wo:Kingdom rdf:type owl:Class ;
+                                      rdfs:subClassOf wo:TaxonRank  ;
+                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Kingdom"^^xsd:string ;
+                                      rdfs:comment "Kingdoms are the major categories into which scientists divide up all living things. The main kingdoms are animals, plants, fungi and bacteria, although there are others. Each kingdom has its own suite of defining characteristics - for instance plants have rigid cell walls, whilst animals do not."@en-gb ;
+                                      rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                      rdfs:label "Kingdom"@en-gb ;
+                                      rdfs:seeAlso <http://en.wikipedia.org/wiki/Kingdom_%28biology%29> ,
+                                                   <http://www.bbc.co.uk/nature/kingdom> ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+
+foo:Order rdf:type owl:Class ;
+owl:sameAa  wo:Order.
+
+
+wo:Order rdf:type owl:Class ;
+                                    rdfs:subClassOf wo:TaxonRank  ;
+                                    <http://data.bioontology.org/metadata/prefixIRI> "wo:Order"^^xsd:string ;
+                                    rdfs:comment "An order is a scientific way to categorise related organisms. An order is a smaller grouping than a class, but bigger than a family or genus. Examples of orders are willows, cockroaches and primates."@en-gb ;
+                                    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                    rdfs:label "Order"@en-gb ;
+                                    rdfs:seeAlso <http://en.wikipedia.org/wiki/Order_%28biology%29> ,
+                                                 <http://www.bbc.co.uk/nature/order> ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+foo:Phylum rdf:type owl:Class ;
+owl:sameAa  wo:Phylum.
+
+
+wo:Phylum  rdf:type owl:Class ;
+                                     rdfs:subClassOf wo:TaxonRank ;
+                                     <http://data.bioontology.org/metadata/prefixIRI> "wo:Phylum"^^xsd:string ;
+                                     rdfs:comment "A phylum - also known as a division when referring to plants - is a scientfic way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on."@en-gb ;
+                                     rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                     rdfs:label "Phylum"@en-gb ;
+                                     rdfs:seeAlso <http://en.wikipedia.org/wiki/Phylum> ,
+                                                  <http://www.bbc.co.uk/nature/phylum> ;
+                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:Phylum rdf:type owl:Class ;
+owl:sameAa  wo:Phylum.
+
+wo:Species rdf:type owl:Class ;
+                                      rdfs:subClassOf      wo:TaxonRank ;
+                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Species"^^xsd:string ;
+                                      rdfs:comment "Generic class defining a biological species"@en-gb ;
+                                      rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                      rdfs:label "species"@en-gb ;
+                                      rdfs:seeAlso <http://en.wikipedia.org/wiki/Species> ,
+                                                   <http://www.bbc.co.uk/nature/species> ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:TaxonRank rdf:type owl:Class ;
+owl:sameAa  wo:TaxonRank.
+
+
+wo:TaxonRank rdf:type owl:Class ;
+                                        rdfs:subClassOf owl:Thing ;
+                                        <http://data.bioontology.org/metadata/prefixIRI> "wo:TaxonRank"^^xsd:string ;
+                                        rdfs:comment "Generic concept for a taxonomic rank such as a Genus or Species."@en-gb ;
+                                        rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                        rdfs:label "Taxonomic Rank"@en-gb ;
+                                        rdfs:seeAlso <http://en.wikipedia.org/wiki/Taxonomic_rank> ;
+                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:Mammalia rdf:type owl:Class ;
+rdfs:subClassOf foo:Class ;
+owl:sameAa  wo:Mammalia.
+
+wo:Mammalia rdf:type owl:Class ;
+                                             rdfs:subClassOf   wo:Class ;
+                                             rdfs:comment """The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.
+https://www.merriam-webster.com/dictionary/Elephantidae"""^^xsd:string .
+
+foo:Reptilia rdf:type owl:Class ;
+rdfs:subClassOf foo:Class ;
+owl:sameAa  wo:Reptilia.
+
+
+wo:Reptilia  rdf:type owl:Class ;
+                                             rdfs:subClassOf   wo:Class;
+                                             rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."^^xsd:string .
+
+foo:Elephantidae rdf:type owl:Class ;
+rdfs:subClassOf foo:Family ;
+owl:sameAa  wo:Elephantidae.
+
+
+wo:Elephantidae rdf:type owl:Class ;
+                                                  rdfs:subClassOf    wo:Family ;
+                                                  rdfs:comment """ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.
+Source: https://www.merriam-webster.com/dictionary/Elephantidae"""^^xsd:string .
+
+
+foo:Viverridae rdf:type owl:Class ;
+rdfs:subClassOf foo:Family ;
+owl:sameAa  wo:Viverridae.
+
+wo:Viverridae  rdf:type owl:Class ;
+                                                rdfs:subClassOf wo:Family ;
+                                                rdfs:isDefinedBy "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line"^^xsd:string ,
+                                                                 "https://en.wikipedia.org/wiki/Viverridae"^^xsd:string .
+
+foo:Animalia rdf:type owl:Class ;
+rdfs:subClassOf foo:Kingdom ;
+owl:sameAa  wo:Animalia.
+
+
+ wo:Animalia  rdf:type owl:Class ;
+                                               rdfs:subClassOf wo:Kingdom ;
+                                               rdfs:comment """Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.
+
+All members of the kingdom Animalia share three key traits. They are multicellular organisms, and they are all eukaryotic, meaning their cells have membrane-enclosed organelles and a nucleus. All animals are heterotrophic and must feed on other organisms to survive.
+source:https://study.com/learn/lesson/animalia-kingdom-examples-characteristics-facts.html"""^^xsd:string .
+
+
+foo:Carnivora rdf:type owl:Class ;
+rdfs:subClassOf foo:Order ;
+owl:sameAa  wo:Carnivora.
+
+
+wo:Carnivora  rdf:type owl:Class ;
+                                              rdfs:subClassOf  wo:Order ;
+                                              rdfs:comment "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."^^xsd:string ;
+                                              rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Carnivora"^^xsd:string .
+
+foo:Proboscidea rdf:type owl:Class ;
+rdfs:subClassOf foo:Order ;
+owl:sameAa  wo:Proboscidea.
+
+
+wo:Proboscidea  rdf:type owl:Class ;
+                                                rdfs:subClassOf wo:Order ;
+                                                rdfs:comment """Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.
+https://www.merriam-webster.com/dictionary/proboscidean"""^^xsd:string .
+
+foo:Squamata rdf:type owl:Class ;
+rdfs:subClassOf foo:Order ;
+owl:sameAa  wo:Squamata.
+
+
+foo:Chordata  rdf:type owl:Class ;
+        rdfs:subClassOf wo:Order .
+
+
+wo:Chordata  rdf:type owl:Class ;
+             rdfs:subClassOf wo:Phylum ;
+             rdfs:comment """A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.
+
+
 
 ### Feature Of Interest Instances ##
 
@@ -97,6 +297,10 @@ foo:Soil rdf:type foo:FeatureOfInterest ;
 
 
 foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
+    rdf:type foo:Mammalia;
+    rdf:type foo:Elephantidae;
+    rdf:type foo:Animalia ;
+    rdf:type foo:Chordata ;
     rdfs:label "Asian Elephant"@en ;
     rdfs:label "Elephas maximus"@la ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en ;
