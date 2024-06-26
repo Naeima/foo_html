@@ -22,7 +22,6 @@
 @prefix prov:&lt;http://www.w3.org/ns/prov#&gt; .
 @prefix foaf: &lt;<http://xmlns.com/foaf/0.1/&gt .
 
-
 ### Ontology Declaration ###
 foo: a owl:Ontology ;
     owl:versionIRI <https://w3id.org/def/foo#V2.0> ;
@@ -88,7 +87,7 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
 foo:Class rdf:type owl:Class ;
-owl:sameAa  wo:Class. 
+    owl:sameAs wo:Class .
 
 wo:Class rdf:type owl:Class ;
     rdfs:subClassOf wo:TaxonRank ;
@@ -100,205 +99,176 @@ wo:Class rdf:type owl:Class ;
                  <http://www.bbc.co.uk/nature/class> ;
     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
-
 foo:Family rdf:type owl:Class ;
-owl:sameAa  wo:Family. 
+    owl:sameAs wo:Family .
 
 wo:Family rdf:type owl:Class ;
-     rdfs:subClassOf <http://purl.org/ontology/wo/TaxonRank> ;
-     <http://data.bioontology.org/metadata/prefixIRI> "wo:Family"^^xsd:string ;
-     rdfs:comment "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en-gb ;
-     rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-     rdfs:label "Family"@en-gb ;
-     rdfs:seeAlso <http://en.wikipedia.org/wiki/Family_%28biology%29> ,
-                  <http://www.bbc.co.uk/nature/family> ;
-     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
+    rdfs:subClassOf <http://purl.org/ontology/wo/TaxonRank> ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Family"^^xsd:string ;
+    rdfs:comment "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Family"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Family_%28biology%29> ,
+                 <http://www.bbc.co.uk/nature/family> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 foo:Genus rdf:type owl:Class ;
-owl:sameAa  wo:Genus. 
+    owl:sameAs wo:Genus .
 
 wo:Genus rdf:type owl:Class ;
-                                    rdfs:subClassOf wo:TaxonRank ;
-                                    <http://data.bioontology.org/metadata/prefixIRI> "wo:Genus"^^xsd:string ;
-                                    rdfs:comment "A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species' scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name"@en-gb ;
-                                    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-                                    rdfs:label "Genus"@en-gb ;
-                                    rdfs:seeAlso <http://en.wikipedia.org/wiki/Genus> ,
-                                                 <http://www.bbc.co.uk/nature/genus> ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Genus"^^xsd:string ;
+    rdfs:comment "A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species' scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name"@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Genus"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Genus> ,
+                 <http://www.bbc.co.uk/nature/genus> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 foo:Kingdom rdf:type owl:Class ;
-owl:sameAa  wo:Kingdom.
-
-
+    owl:sameAs wo:Kingdom .
 
 wo:Kingdom rdf:type owl:Class ;
-                                      rdfs:subClassOf wo:TaxonRank  ;
-                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Kingdom"^^xsd:string ;
-                                      rdfs:comment "Kingdoms are the major categories into which scientists divide up all living things. The main kingdoms are animals, plants, fungi and bacteria, although there are others. Each kingdom has its own suite of defining characteristics - for instance plants have rigid cell walls, whilst animals do not."@en-gb ;
-                                      rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-                                      rdfs:label "Kingdom"@en-gb ;
-                                      rdfs:seeAlso <http://en.wikipedia.org/wiki/Kingdom_%28biology%29> ,
-                                                   <http://www.bbc.co.uk/nature/kingdom> ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
-
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Kingdom"^^xsd:string ;
+    rdfs:comment "Kingdoms are the major categories into which scientists divide up all living things. The main kingdoms are animals, plants, fungi and bacteria, although there are others. Each kingdom has its own suite of defining characteristics - for instance plants have rigid cell walls, whilst animals do not."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Kingdom"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Kingdom_%28biology%29> ,
+                 <http://www.bbc.co.uk/nature/kingdom> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 foo:Order rdf:type owl:Class ;
-owl:sameAa  wo:Order.
-
+    owl:sameAs wo:Order .
 
 wo:Order rdf:type owl:Class ;
-                                    rdfs:subClassOf wo:TaxonRank  ;
-                                    <http://data.bioontology.org/metadata/prefixIRI> "wo:Order"^^xsd:string ;
-                                    rdfs:comment "An order is a scientific way to categorise related organisms. An order is a smaller grouping than a class, but bigger than a family or genus. Examples of orders are willows, cockroaches and primates."@en-gb ;
-                                    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-                                    rdfs:label "Order"@en-gb ;
-                                    rdfs:seeAlso <http://en.wikipedia.org/wiki/Order_%28biology%29> ,
-                                                 <http://www.bbc.co.uk/nature/order> ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Order"^^xsd:string ;
+    rdfs:comment "An order is a scientific way to categorise related organisms. An order is a smaller grouping than a class, but bigger than a family or genus. Examples of orders are willows, cockroaches and primates."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Order"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Order_%28biology%29> ,
+                 <http://www.bbc.co.uk/nature/order> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 foo:Phylum rdf:type owl:Class ;
-owl:sameAa  wo:Phylum.
+    owl:sameAs wo:Phylum .
 
+wo:Phylum rdf:type owl:Class ;
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Phylum"^^xsd:string ;
+    rdfs:comment "A phylum - also known as a division when referring to plants - is a scientific way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Phylum"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Phylum> ,
+                 <http://www.bbc.co.uk/nature/phylum> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
-wo:Phylum  rdf:type owl:Class ;
-                                     rdfs:subClassOf wo:TaxonRank ;
-                                     <http://data.bioontology.org/metadata/prefixIRI> "wo:Phylum"^^xsd:string ;
-                                     rdfs:comment "A phylum - also known as a division when referring to plants - is a scientfic way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on."@en-gb ;
-                                     rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-                                     rdfs:label "Phylum"@en-gb ;
-                                     rdfs:seeAlso <http://en.wikipedia.org/wiki/Phylum> ,
-                                                  <http://www.bbc.co.uk/nature/phylum> ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
-
-foo:Phylum rdf:type owl:Class ;
-owl:sameAa  wo:Phylum.
+foo:Species rdf:type owl:Class ;
+    owl:sameAs wo:Species .
 
 wo:Species rdf:type owl:Class ;
-                                      rdfs:subClassOf      wo:TaxonRank ;
-                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Species"^^xsd:string ;
-                                      rdfs:comment "Generic class defining a biological species"@en-gb ;
-                                      rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-                                      rdfs:label "species"@en-gb ;
-                                      rdfs:seeAlso <http://en.wikipedia.org/wiki/Species> ,
-                                                   <http://www.bbc.co.uk/nature/species> ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Species"^^xsd:string ;
+    rdfs:comment "Generic class defining a biological species"@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "species"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Species> ,
+                 <http://www.bbc.co.uk/nature/species> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 foo:TaxonRank rdf:type owl:Class ;
-owl:sameAa  wo:TaxonRank.
-
+    owl:sameAs wo:TaxonRank .
 
 wo:TaxonRank rdf:type owl:Class ;
-                                        rdfs:subClassOf owl:Thing ;
-                                        <http://data.bioontology.org/metadata/prefixIRI> "wo:TaxonRank"^^xsd:string ;
-                                        rdfs:comment "Generic concept for a taxonomic rank such as a Genus or Species."@en-gb ;
-                                        rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
-                                        rdfs:label "Taxonomic Rank"@en-gb ;
-                                        rdfs:seeAlso <http://en.wikipedia.org/wiki/Taxonomic_rank> ;
-                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
+    rdfs:subClassOf owl:Thing ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:TaxonRank"^^xsd:string ;
+    rdfs:comment "Generic concept for a taxonomic rank such as a Genus or Species."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Taxonomic Rank"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Taxonomic_rank> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 foo:Mammalia rdf:type owl:Class ;
-rdfs:subClassOf foo:Class ;
-owl:sameAa  wo:Mammalia.
+    rdfs:subClassOf foo:Class ;
+    owl:sameAs wo:Mammalia .
 
 wo:Mammalia rdf:type owl:Class ;
-                                             rdfs:subClassOf   wo:Class ;
-                                             rdfs:comment """The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.
-https://www.merriam-webster.com/dictionary/Elephantidae"""^^xsd:string .
+    rdfs:subClassOf wo:Class ;
+    rdfs:comment "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.
+https://www.merriam-webster.com/dictionary/Elephantidae".
 
 foo:Reptilia rdf:type owl:Class ;
-rdfs:subClassOf foo:Class ;
-owl:sameAa  wo:Reptilia.
+    rdfs:subClassOf foo:Class ;
+    owl:sameAs wo:Reptilia .
 
-
-wo:Reptilia  rdf:type owl:Class ;
-                                             rdfs:subClassOf   wo:Class;
-                                             rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."^^xsd:string .
+wo:Reptilia rdf:type owl:Class ;
+    rdfs:subClassOf wo:Class ;
+    rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."^^xsd:string .
 
 foo:Elephantidae rdf:type owl:Class ;
-rdfs:subClassOf foo:Family ;
-owl:sameAa  wo:Elephantidae.
-
+    rdfs:subClassOf foo:Family ;
+    owl:sameAs wo:Elephantidae .
 
 wo:Elephantidae rdf:type owl:Class ;
-                                                  rdfs:subClassOf    wo:Family ;
-                                                  rdfs:comment """ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.
-Source: https://www.merriam-webster.com/dictionary/Elephantidae"""^^xsd:string .
-
+    rdfs:subClassOf wo:Family ;
+    rdfs:comment "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.Source: https://www.merriam-webster.com/dictionary/Elephantidae".
 
 foo:Viverridae rdf:type owl:Class ;
-rdfs:subClassOf foo:Family ;
-owl:sameAa  wo:Viverridae.
+    rdfs:subClassOf foo:Family ;
+    owl:sameAs wo:Viverridae .
 
-wo:Viverridae  rdf:type owl:Class ;
-                                                rdfs:subClassOf wo:Family ;
-                                                rdfs:isDefinedBy "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line"^^xsd:string ,
-                                                                 "https://en.wikipedia.org/wiki/Viverridae"^^xsd:string .
+wo:Viverridae rdf:type owl:Class ;
+    rdfs:subClassOf wo:Family ;
+    rdfs:comment "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line";
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Viverridae> .
 
 foo:Animalia rdf:type owl:Class ;
-rdfs:subClassOf foo:Kingdom ;
-owl:sameAa  wo:Animalia.
+    rdfs:subClassOf foo:Kingdom ;
+    owl:sameAs wo:Animalia .
 
-
- wo:Animalia  rdf:type owl:Class ;
-                                               rdfs:subClassOf wo:Kingdom ;
-                                               rdfs:comment """Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.
-
-All members of the kingdom Animalia share three key traits. They are multicellular organisms, and they are all eukaryotic, meaning their cells have membrane-enclosed organelles and a nucleus. All animals are heterotrophic and must feed on other organisms to survive.
-source:https://study.com/learn/lesson/animalia-kingdom-examples-characteristics-facts.html"""^^xsd:string .
-
+wo:Animalia rdf:type owl:Class ;
+    rdfs:subClassOf wo:Kingdom ;
+    rdfs:comment  "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy. All members of the kingdom Animalia share three key traits. They are multicellular organisms, and they are all eukaryotic, meaning their cells have membrane-enclosed organelles and a nucleus. All animals are heterotrophic and must feed on other organisms to survive. source:https://study.com/learn/lesson animalia-kingdom-examples-characteristics-facts.html".
 
 foo:Carnivora rdf:type owl:Class ;
-rdfs:subClassOf foo:Order ;
-owl:sameAa  wo:Carnivora.
+    rdfs:subClassOf foo:Order ;
+    owl:sameAs wo:Carnivora .
 
-
-wo:Carnivora  rdf:type owl:Class ;
-                                              rdfs:subClassOf  wo:Order ;
-                                              rdfs:comment "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."^^xsd:string ;
-                                              rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Carnivora"^^xsd:string .
+wo:Carnivora rdf:type owl:Class ;
+    rdfs:subClassOf wo:Order ;
+    rdfs:comment "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."^^xsd:string ;
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Carnivora> .
 
 foo:Proboscidea rdf:type owl:Class ;
-rdfs:subClassOf foo:Order ;
-owl:sameAa  wo:Proboscidea.
+    rdfs:subClassOf foo:Order ;
+    owl:sameAs wo:Proboscidea .
 
-
-wo:Proboscidea  rdf:type owl:Class ;
-                                                rdfs:subClassOf wo:Order ;
-                                                rdfs:comment """Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.
-https://www.merriam-webster.com/dictionary/proboscidean"""^^xsd:string .
+wo:Proboscidea rdf:type owl:Class ;
+    rdfs:subClassOf wo:Order ;
+    rdfs:comment "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.
+https://www.merriam-webster.com/dictionary/proboscidean".
 
 foo:Squamata rdf:type owl:Class ;
-rdfs:subClassOf foo:Order ;
-owl:sameAa  wo:Squamata.
+    rdfs:subClassOf foo:Order ;
+    owl:sameAs wo:Squamata .
 
+foo:Chordata rdf:type owl:Class ;
+    rdfs:subClassOf wo:Order .
 
-foo:Chordata  rdf:type owl:Class ;
-        rdfs:subClassOf wo:Order .
+wo:Chordata rdf:type owl:Class ;
+    rdfs:subClassOf wo:Phylum ;
+    rdfs:comment "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.".
 
-
-wo:Chordata  rdf:type owl:Class ;
-             rdfs:subClassOf wo:Phylum ;
-             rdfs:comment """A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.
-
-
-
-### Feature Of Interest Instances ##
-
+### Feature Of Interest Instances ###
 foo:Soil rdf:type foo:FeatureOfInterest ;
     rdfs:label "Soil"@en ;
     skos:definition "A dataset describing soil properties from organic and mineral soil across various land uses in Sabah, Malaysia, sampled and measured at the Forest Research Centre Sabah Malaysia."@en ;
     dcterms:bibliographicCitation "Elias DM, McNamara NP, Ostle NJ, Majalap-Lee N, 2018. Soil properties across primary forest, logged forest, and oil palm plantation in Sabah, Malaysia. NERC Environmental Information Data Centre."@en .
 
-
 foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
-    rdf:type foo:Mammalia;
-    rdf:type foo:Elephantidae;
+    rdf:type foo:Mammalia ;
+    rdf:type foo:Elephantidae ;
     rdf:type foo:Animalia ;
     rdf:type foo:Chordata ;
     rdfs:label "Asian Elephant"@en ;
@@ -307,919 +277,895 @@ foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
     rdfs:definedBy <https://www.iucnredlist.org/species/7140/45818198>, <https://doi.org/10.1016/j.biocon.2016.02.008> .
 
-
-foo:Nasalislarvatus  rdf:type foo:FeatureOfInterest ;
+foo:Nasalislarvatus rdf:type foo:FeatureOfInterest ;
     rdfs:label "Nasalis larvatus"@la ;
     rdfs:label "Proboscis Monkey"@en ;
-    skos:definition   "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en ;
+    skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-    rdfs:definedBy  <https://doi/10.1126/sciadv.aaq0250> , <https://doi.org/10.1016/S0006-3207(99)00066-X>.
-
+    rdfs:definedBy <https://doi/10.1126/sciadv.aaq0250>, <https://doi.org/10.1016/S0006-3207(99)00066-X> .
 
 foo:ManisJavanica rdf:type foo:FeatureOfInterest ;
     rdfs:label "Manis javanica"@la ;
     rdfs:label "Sunda Pangolin"@en ;
-    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ; 
-    skos:definition   "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en ;
-    rdfs:definedBy  <https://doi.org/10.1016/j.gecco.2024.e02962> .
+    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+    skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> .
 
-
-foo:MalayopythonReticulatus  rdf:type   foo:FeatureOfInterest ;
+foo:MalayopythonReticulatus rdf:type foo:FeatureOfInterest ;
     rdfs:label "Malayopython reticulatus"@la ;
     rdfs:label "Reticulated Python"@en ;
-    skos:definition   "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
-    rdfs:definedBy  <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf>.
+    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
+    rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> .
 
-
-foo:Lianas rdf:type   foo:FeatureOfInterest ;
+foo:Lianas rdf:type foo:FeatureOfInterest ;
     rdfs:label "Lianas"@en ;
     skos:definition "Woody climbing plants found in tropical forests, commonly observed in forest plots."@en ;
-    rdfs:definedBy  <w3id.org/def/foo#>.
+    rdfs:definedBy <https://w3id.org/def/foo#> .
 
-foo:Image rdf:type    foo:FeatureOfInterest ;
+foo:Image rdf:type foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en ;
-    rdfs:definedBy  <w3id.org/def/foo#>.
-
+    rdfs:definedBy <https://w3id.org/def/foo#> .
 
 ### Properties ###
-
 foo:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
     owl:sameAs sosa:hasFeatureOfInterest ;
-     rdfs:label "has Feature Of Interest"@en ;
-    rdfs:domain    foo:Observation ;
-    rdfs:range     foo:FeatureOfInterest ;
+    rdfs:label "has Feature Of Interest"@en ;
+    rdfs:domain foo:Observation ;
+    rdfs:range foo:FeatureOfInterest ;
     skos:definition "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."@en ;
     skos:example "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."@en ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     rdfs:isDefinedBy sosa: .
-    
 
-foo:isFeatureOfInterestOf  rdf:type owl:ObjectProperty ;
+foo:isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     skos:definition "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."@en ;
-    rdfs:domain    foo:FeatureOfInterest ;
-    rdfs:range     foo:Observation ;
+    rdfs:domain foo:FeatureOfInterest ;
+    rdfs:range foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest ;
     rdfs:isDefinedBy sosa: .
-
 
 foo:observes rdf:type owl:ObjectProperty ;
     owl:sameAs sosa:observes ;
     rdfs:domain foo:Sensor ;
-    rdfs:range  foo:ObservableProperty ;
+    rdfs:range foo:ObservableProperty ;
     rdfs:label "observes"@en ;
     skos:definition "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
     rdfs:comment "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
     owl:inverseOf foo:isObservedBy ;
     rdfs:isDefinedBy sosa: .
 
-foo:isObservedBy a owl:ObjectProperty ;
-    owl:sameAs  sosa:isObservedBy ;
+foo:isObservedBy rdf:type owl:ObjectProperty ;
+    owl:sameAs sosa:isObservedBy ;
     rdfs:label "is observed by"@en ;
     skos:definition "Relation between an ObservableProperty and the Sensor able to observe it."@en ;
     rdfs:comment "Relation between an ObservableProperty and the Sensor able to observe it."@en ;
-    rdfs:domain foo:ObservableProperty;
-    rdfs:range  foo:Sensor;
+    rdfs:domain foo:ObservableProperty ;
+    rdfs:range foo:Sensor ;
     owl:inverseOf foo:observes ;
     rdfs:isDefinedBy sosa: .
 
-foo:madeObservation a owl:ObjectProperty ;
-    owl:sameAs  sosa:madeObservation ;
+foo:madeObservation rdf:type owl:ObjectProperty ;
+    owl:sameAs sosa:madeObservation ;
     rdfs:label "made observation"@en ;
     skos:definition "Relation between a Sensor and an Observation made by the Sensor."@en ;
     rdfs:comment "Relation between a Sensor and an Observation made by the Sensor."@en ;
-    rdfs:domain foo:Sensor;
-    rdfs:range  foo:Observation;
+    rdfs:domain foo:Sensor ;
+    rdfs:range foo:Observation ;
     owl:inverseOf sosa:madeBySensor ;
     rdfs:isDefinedBy sosa: .
 
 foo:madeBySensor rdf:type owl:ObjectProperty ;
-    owl:sameAs  sosa:madeBySensor  ;
+    owl:sameAs sosa:madeBySensor ;
     rdfs:label "made by sensor"@en ;
     skos:definition "Relation between an Observation and the Sensor which made the Observation."@en ;
     rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
-    rdfs:domain foo:Observation;
-    rdfs:range  foo:Sensor;
+    rdfs:domain foo:Observation ;
+    rdfs:range foo:Sensor ;
     owl:inverseOf foo:madeObservation ;
     rdfs:isDefinedBy sosa: .
 
-foo:observedProperty a owl:ObjectProperty ;
+foo:observedProperty rdf:type owl:ObjectProperty ;
     rdfs:label "observed property"@en ;
     skos:definition "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en ;
     rdfs:comment "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range  foo:ObservableProperty ;
+    rdfs:range foo:ObservableProperty ;
     rdfs:isDefinedBy sosa: .
 
 foo:ID rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     rdfs:label "ID" .
 
 foo:LocalDate rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
-    rdfs:domain foo:Observation ;
-    rdfs:range xsd:date;
-    rdfs:label "Local Date";
-    skos:definition  "The local date in Sabah, Malaysia, when the GPS collar records its readings.".
-
-foo:LocalTime rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
-    rdfs:domain foo:Observation ;
-    rdfs:range xsd:time ;
-    rdfs:label "Local Time";
-    skos:definition  "The local time in Sabah, Malaysia, when the GPS collar records its readings.".
-
-foo:GMTDate rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:date ;
-    rdfs:label  "GMT Date" ; 
-    skos:definition  "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.".
+    rdfs:label "Local Date" ;
+    skos:definition "The local date in Sabah, Malaysia, when the GPS collar records its readings." .
 
-foo:GMTTime rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
+foo:LocalTime rdf:type owl:DatatypeProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:time ;
-    rdfs:label  "GMT Time" ; 
-    skos:definition  "The GMT time in Sabah, Malaysia, when the GPS collar records its readings.".
+    rdfs:label "Local Time" ;
+    skos:definition "The local time in Sabah, Malaysia, when the GPS collar records its readings." .
+
+foo:GMTDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain foo:Observation ;
+    rdfs:range xsd:date ;
+    rdfs:label "GMT Date" ; 
+    skos:definition "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
+
+foo:GMTTime rdf:type owl:DatatypeProperty ;
+    rdfs:domain foo:Observation ;
+    rdfs:range xsd:time ;
+    rdfs:label "GMT Time" ; 
+    skos:definition "The GMT time in Sabah, Malaysia, when the GPS collar records its readings." .
 
 foo:Latitude rdf:type owl:DatatypeProperty ;
     owl:sameAs pos:lat ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label  "Latitude" ; 
-    skos:definition  "Latitudinal coordinate of the elephant at the moment of data collection.".
+    rdfs:label "Latitude" ; 
+    skos:definition "Latitudinal coordinate of the elephant at the moment of data collection." .
 
 foo:Longitude rdf:type owl:DatatypeProperty ;
     owl:sameAs pos:long ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Longitude" ;
-    skos:definition  "Longitudinal coordinate of the elephant at the moment of data collection.".
+    skos:definition "Longitudinal coordinate of the elephant at the moment of data collection." .
 
 foo:Temperature rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Temperature" ;
-    skos:definition  "Altitude of the elephant in meters at the moment of data collection.".
+    skos:definition "Estimated temperature of the elephant in Celsius at the moment of data collection." .
 
 foo:Speed rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Speed" ;
-    skos:definition  "Estimated temperature of the elephant in Celsius at the moment of data collection.".
+    skos:definition "Speed of the elephant at the moment of data collection." .
 
 foo:Direction rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer ;
     rdfs:label "Direction" ;
-    skos:definition  "Direction of elephant travel at the moment of data collection.".
+    skos:definition "Direction of elephant travel at the moment of data collection." .
 
 foo:Altitude rdf:type owl:DatatypeProperty ;
     owl:sameAs pos:alt ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Altitude";
-    skos:definition  "Altitude of the elephant in meters at the moment of data collection.".
+    rdfs:label "Altitude" ;
+    skos:definition "Altitude of the elephant in meters at the moment of data collection." .
 
 foo:Cov rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Cov";
-    skos:definition  "TBC".
+    rdfs:label "Cov" ;
+    skos:definition "TBC" .
 
 foo:HDOP rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "HDOP";
-    skos:definition  "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy in latitude and longitude. Lower values indicate better precision.".
+    rdfs:label "HDOP" ;
+    skos:definition "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy in latitude and longitude. Lower values indicate better precision." .
 
 foo:Distance rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Distance"@en ; 
-    skos:definition  "Distance (m) travelled from the last to the current data collection point.".
+    skos:definition "Distance (m) travelled from the last to the current data collection point." .
 
 foo:Count rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:integer ;
     rdfs:label "Count"@en ;
-    skos:definition  "Observation count per data set.".
-
+    skos:definition "Observation count per data set." .
 
 foo:Site rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     rdfs:label "Site"@en ;
-    skos:definition "Geographical area/site which samples were taken from"@en.
-    
-        
+    skos:definition "Geographical area/site which samples were taken from."@en .
+
 foo:LandUse rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     rdfs:label "Land Use"@en ;
-    skos:definition"Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation"@en .
+    skos:definition "Land use of the study plots: Unlogged tropical forest, Logged tropical forest or Oil palm plantation."@en .
 
 foo:PlotName rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
-    rdfs:label "Plot Name";
-    skos:definition "Name of the 1 Ha plot sampled"@en .
-
+    rdfs:label "Plot Name" ;
+    skos:definition "Name of the 1 Ha plot sampled."@en .
 
 foo:Subplot rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     rdfs:label "Sub plot"@en ;
-    skos:definition "Number of the subplot sampled within each 1 Ha plot"@en .
+    skos:definition "Number of the subplot sampled within each 1 Ha plot."@en .
 
 foo:Horizon rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     rdfs:label "Horizon"@en ;
-    skos:definition "Soil horizon sampled"@en .
+    skos:definition "Soil horizon sampled."@en .
 
 foo:SoilPH rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
-    rdfs:label "Soil PH";
-    skos:definition "Soil_pH Measured pH of the soil sample, numeric"@en .
-
+    rdfs:label "Soil PH" ;
+    skos:definition "Measured pH of the soil sample."@en .
 
 foo:TotalC rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Total C"@en ;
-    skos:definition "total carbon content of the soil sample"@en .
+    skos:definition "Total carbon content of the soil sample."@en .
 
 foo:TotalN rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Total N"@en ;
-    skos:definition "silt content of the soil sample"@en .
+    skos:definition "Total nitrogen content of the soil sample."@en .
 
 foo:Silt rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Silt"@en ;
-    skos:definition "silt content of the soil sample"@en .
+    skos:definition "Silt content of the soil sample."@en .
 
 foo:Clay rdf:type owl:DatatypeProperty ;
-    owl:sameAs sosa:observedProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:double ;
     rdfs:label "Clay"@en ;
-    skos:definition "clay content of the soil sample"@en .
+    skos:definition "Clay content of the soil sample."@en .
 
 ### Instances ###
 foo:Kuma rdf:type foo:Sensor ;
     rdfs:label "Kuma"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Jasmin rdf:type foo:Sensor ;
-     rdfs:label "Jasmin"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    rdfs:label "Jasmin"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Putut rdf:type foo:Sensor ;
     rdfs:label "Putut"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
-
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Bikang1 rdf:type foo:Sensor ;
     rdfs:label "Bikang 1"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Bikang2 rdf:type foo:Sensor ;
     rdfs:label "Bikang 2"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Sejati rdf:type foo:Sensor ;
     rdfs:label "Sejati"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Umas2 rdf:type foo:Sensor ;
- rdfs:label "Umas2"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    rdfs:label "Umas2"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Ita  rdf:type foo:Sensor ;
- rdfs:label "Ita"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+foo:Ita rdf:type foo:Sensor ;
+    rdfs:label "Ita"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-
-foo:Abaw  rdf:type foo:Sensor ;
-rdfs:label "Abaw"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+foo:Abaw rdf:type foo:Sensor ;
+    rdfs:label "Abaw"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Liun rdf:type foo:Sensor ;
- rdfs:label "Liun"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    rdfs:label "Liun"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Dara  rdf:type foo:Sensor ;
- rdfs:label "Dara"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+foo:Dara rdf:type foo:Sensor ;
+    rdfs:label "Dara"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Jasper  rdf:type foo:Sensor ;
-  rdfs:label "Jasper"@en ;
-  foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+foo:Jasper rdf:type foo:Sensor ;
+    rdfs:label "Jasper"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Guli rdf:type foo:Sensor ;
- rdfs:label "Guli"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    rdfs:label "Guli"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Maliau  rdf:type foo:Sensor ;
- rdfs:label "Maliau"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+foo:Maliau rdf:type foo:Sensor ;
+    rdfs:label "Maliau"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Tunglap  rdf:type foo:Sensor ;
+foo:Tunglap rdf:type foo:Sensor ;
     rdfs:label "Tunglap"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Seri rdf:type foo:Sensor ;
-  rdfs:label "Seri"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    rdfs:label "Seri"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Puteri  rdf:type foo:Sensor ;
+foo:Puteri rdf:type foo:Sensor ;
     rdfs:label "Puteri"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-foo:Tulid  rdf:type foo:Sensor ;
+foo:Tulid rdf:type foo:Sensor ;
     rdfs:label "Tulid"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Kasih rdf:type foo:Sensor ;
     rdfs:label "Kasih"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Aqeela rdf:type foo:Sensor ;
     rdfs:label "Aqeela"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Merotai rdf:type foo:Sensor ;
     rdfs:label "Merotai"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
 foo:Binbingan rdf:type foo:Sensor ;
     rdfs:label "Binbingan"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus;
-           foo:observes foo:GPSObservation.
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
 
-# Observation Instance    
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Kuma ;     
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
+# Observation Instance
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Kuma ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
 
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Jasmin ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2015-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "22:40:35"^^xsd:time ;
-                      foo:Latitude "1.537206"^^xsd:double ;
-                      foo:Longitude "565.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "11.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.14"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Jasmin ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2015-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "22:40:35"^^xsd:time ;
+    foo:Latitude "1.537206"^^xsd:double ;
+    foo:Longitude "565.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "11.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.14"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
 
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Putut ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Bikang1 ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Bikang2 ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Sejati ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Umas2 ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Ita ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Liun ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Dara ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Aqeela ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Jasper ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Guli ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Maliau ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Tunglap ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Seri ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Putut ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
 
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Puteri ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Tulid ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Kaish ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Aqeela ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Merotai ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
-foo:GPSObservation  rdf:type foo:Observation ;
-                      rdfs:label "GPS Observation"@en ;
-                      foo:madeBySensor foo:Binbingan ;
-                      foo:hasFeatureOfInterest foo:ElephasMaximus ;
-                      foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
-                      foo:ID "1SAT32" ;
-                      foo:LocalDate "2011-10-26"^^xsd:date ;
-                      foo:LocalTime "07:40:35"^^xsd:time ;
-                      foo:GMTDate "2011-10-25"^^xsd:date ;
-                      foo:GMTTime "23:40:35"^^xsd:time ;
-                      foo:Latitude "1.237206"^^xsd:double ;
-                      foo:Longitude "566.222302"^^xsd:double ;
-                      foo:Temperature "24.5"^^xsd:double ;
-                      foo:Speed "0.24"^^xsd:double ;
-                      foo:Direction "0"^^xsd:integer ;
-                      foo:Altitude "16.7"^^xsd:string ;
-                      foo:Cov "0"^^xsd:double ;
-                      foo:HDOP "1.64"^^xsd:double ;
-                      foo:Distance "0"^^xsd:double ;
-                      foo:Count "1"^^xsd:integer .
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Bikang1 ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
 
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Bikang2 ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Sejati ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Umas2 ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Ita ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Liun ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Dara ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Aqeela ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Jasper ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Guli ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Maliau ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Tunglap ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Seri ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Puteri ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Tulid ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Kasih ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Aqeela ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Merotai ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
+
+foo:GPSObservation rdf:type foo:Observation ;
+    rdfs:label "GPS Observation"@en ;
+    foo:madeBySensor foo:Binbingan ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime ;
+    foo:ID "1SAT32" ;
+    foo:LocalDate "2011-10-26"^^xsd:date ;
+    foo:LocalTime "07:40:35"^^xsd:time ;
+    foo:GMTDate "2011-10-25"^^xsd:date ;
+    foo:GMTTime "23:40:35"^^xsd:time ;
+    foo:Latitude "1.237206"^^xsd:double ;
+    foo:Longitude "566.222302"^^xsd:double ;
+    foo:Temperature "24.5"^^xsd:double ;
+    foo:Speed "0.24"^^xsd:double ;
+    foo:Direction "0"^^xsd:integer ;
+    foo:Altitude "16.7"^^xsd:double ;
+    foo:Cov "0"^^xsd:double ;
+    foo:HDOP "1.64"^^xsd:double ;
+    foo:Distance "0"^^xsd:double ;
+    foo:Count "1"^^xsd:integer .
 
 # Soil Sensor Instance
-foo:SoilSensor      rdf:type      foo:Sensor ;
-                    rdfs:label    "Soil Sensor"@en ;
-                    foo:hasFeatureOfInterest foo:Soil ;
-                    foo:observes  foo:SoilObservation.
+foo:SoilSensor rdf:type foo:Sensor ;
+    rdfs:label "Soil Sensor"@en ;
+    foo:hasFeatureOfInterest foo:Soil ;
+    foo:observes foo:SoilObservation .
 
 # Soil Instance
-foo:SoilObservation    rdf:type foo:Observation ;
-                  rdfs:label "Soil Observation"@en ;
-                  foo:madeBySensor foo:SoilSensor ;
-                  foo:hasFeatureOfInterest foo:Soil ;
-                  foo:Identifier "MB4" ;
-                  foo:Site "Maliau Basin Conservation Area"^^xsd:string ;
-                  foo:LandUse "Unlogged"^^xsd:string ;
-                  foo:PlotName "Belian"^^xsd:string ;
-                  foo:Subplot "4"^^xsd:string ;
-                  foo:Horizon "Organic"^^xsd:string ;
-                  foo:SoilPH "4.69"^^xsd:double ;
-                  foo:TotalC "5.45"^^xsd:double ;
-                  foo:TotalN "0.38"^^xsd:double ;
-                  foo:TotalP "263.74"^^xsd:double ;
-                  foo:InorganicP "25.03"^^xsd:double ;
-                  foo:CNRatio "14.24"^^xsd:double ;
-                  foo:Sand "20.66"^^xsd:double ;
-                  foo:Silt "16.46"^^xsd:double ;
-                  foo:Clay "62.88"^^xsd:double .
+foo:SoilObservation rdf:type foo:Observation ;
+    rdfs:label "Soil Observation"@en ;
+    foo:madeBySensor foo:SoilSensor ;
+    foo:hasFeatureOfInterest foo:Soil ;
+    foo:Identifier "MB4" ;
+    foo:Site "Maliau Basin Conservation Area"^^xsd:string ;
+    foo:LandUse "Unlogged"^^xsd:string ;
+    foo:PlotName "Belian"^^xsd:string ;
+    foo:Subplot "4"^^xsd:string ;
+    foo:Horizon "Organic"^^xsd:string ;
+    foo:SoilPH "4.69"^^xsd:double ;
+    foo:TotalC "5.45"^^xsd:double ;
+    foo:TotalN "0.38"^^xsd:double ;
+    foo:TotalP "263.74"^^xsd:double ;
+    foo:InorganicP "25.03"^^xsd:double ;
+    foo:CNRatio "14.24"^^xsd:double ;
+    foo:Sand "20.66"^^xsd:double ;
+    foo:Silt "16.46"^^xsd:double ;
+    foo:Clay "62.88"^^xsd:double .
+
+### lianas Instance ###
+foo:Lianas rdf:type foo:Sensor ;
+    rdfs:label "Lianas"@en ;
+    foo:ID "TS1" ;
+    foo:SiteName "Danum W15" ;
+    foo:PlotNo 1 ;
+    foo:SitePlotCode "F1P1" ;
+    foo:observes foo:TreeObservation .
+
+### lianasObservation Instance ###
+foo:TreeObservation rdf:type foo:Observation ;
+    rdfs:label "Tree Observation"@en ;
+    foo:madeBySensor foo:Lianas ;
+    foo:hasFeatureOfInterest foo:Lianas ;
+    foo:ID "TreeObs1" ;
+    foo:Date "2017-07-21"^^xsd:date ;
+    foo:TreeIndividualNo 2 ;
+    foo:TreeID "Shorea pauciflora" ;
+    foo:TreeDBH_cm 110 ;
+    foo:TreeHeight_m 60 ;
+    foo:TreeNLianas 3 ;
+    foo:LianaDBH_cm 10 ;
+    foo:TreeNotes "" ;
+    foo:SubplotRadius_m 30 .
 
 ### Camera Trap Sensor Instance ###
 foo:CameraTrap rdf:type foo:Sensor ;
-      foo:hasFeatureOfInterest foo:Image ;
-             rdfs:label "Camera Trap"@en ;
-                   foo:observes  foo:ImageObservation .
-
+    rdfs:label "Camera Trap"@en ;
+    foo:hasFeatureOfInterest foo:Image ;
+    foo:observes foo:ImageObservation .
 
 ### Camera Trap Observation Instance ###
-
-foo:ImageObservation  rdf:type foo:Observation ;
-    rdfs:label "Image Observation "@en ;
+foo:ImageObservation rdf:type foo:Observation ;
+    rdfs:label "Image Observation"@en ;
     foo:madeBySensor foo:CameraTrap ;
-    foo:ImageID  "001";
-    foo:date "2024-06-12"^^xsd:date ;
-    foo:time "12:34:56"^^xsd:time ;
-    foo:make "RECONYX" ;
-    foo:model "PC800 PROFESSIONAL" .
-
-### lianas Instance ###
-foo:lianas rdf:type foo:Sensor ;
-    rdfs:label "lianas"@en ;
-    foo:ID "TS1" ;
-    foo:siteName "Danum W15" ;
-    foo:plotNo 1 ;
-    foo:sitePlotCode "F1P1" ;
-    foo:observes foo:TreeObservation.
-
-### lianas Instance ###
-foo:lianasObservation rdf:type foo:Observation ;
-    rdfs:label "Tree Observation"@en ;
-    foo:madeBySensor foo:lianas ;
-    foo:hasFeatureOfInterest foo:Lianas ;
-    foo:ID "TreeObs1" ;
-    foo:date "2017-07-21"^^xsd:date ;
-    foo:treeIndividualNo 2 ;
-    foo:treeID "Shorea pauciflora" ;
-    foo:treeDBH_cm 110 ;
-    foo:treeHeight_m 60 ;
-    foo:treeNLianas 3 ;
-    foo:lianaDBH_cm 10 ;
-    foo:treeNotes "" ;
-    foo:subplotRadius_m 30 .
-</pre>
-</body>
-</html>
+    foo:ImageID "001" ;
+    foo:Date "2024-06-12"^^xsd:date ;
+    foo:Time "12:34:56"^^xsd:time ;
+    foo:Make "RECONYX" ;
+    foo:Model "PC800 PROFESSIONAL" .
