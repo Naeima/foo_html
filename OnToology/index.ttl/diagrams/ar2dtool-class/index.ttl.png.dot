@@ -176,7 +176,7 @@ node [shape = rectangle, color="orange"]; "wo:Animalia" "wo:Kingdom" "wo:Probosc
 	"foo@en:Nasalislarvatus" -> "https://doi/10.1126/sciadv.aaq0250" [ label = "rdfs:definedBy" ];
 	"foo@en:Nasalislarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "5de8b7749de285e7fa79146e71dfac55" [ label = "dcterms:creator" ];
+	"sosa:" -> "12a63dc89717ed8b810adf86dea5ae49" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
 	"foo@en:Proboscidea" -> "wo:Proboscidea" [ label = "owl:sameAs" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "owl:sameAs" ];
