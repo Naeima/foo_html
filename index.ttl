@@ -198,7 +198,7 @@ foo:Reptilia rdf:type owl:Class ;
 
 wo:Reptilia rdf:type owl:Class ;
     rdfs:subClassOf wo:Class ;
-    rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."^^xsd:string .
+    rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."
 
 foo:Elephantidae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
