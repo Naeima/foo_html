@@ -244,8 +244,7 @@ foo:Proboscidea rdf:type owl:Class ;
 
 wo:Proboscidea rdf:type owl:Class ;
     rdfs:subClassOf wo:Order ;
-    rdfs:comment "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.
-https://www.merriam-webster.com/dictionary/proboscidean".
+    rdfs:comment "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms. Source: https://www.merriam-webster.com/dictionary/proboscidean." .
 
 foo:Squamata rdf:type owl:Class ;
     rdfs:subClassOf foo:Order ;
