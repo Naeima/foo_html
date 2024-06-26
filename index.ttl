@@ -35,6 +35,7 @@ foo: a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/def/foo#" ;
     owl:imports sosa: ;
     owl:versionIRI foo:V2.0 ;
+    owl:versionInfo  "BBC Wildlife Ontology Reused 26 June 2024"
     prov:generatedAtTime "2024-06-01T00:00:00+00:00"^^xsd:dateTime ;
     prov:wasAttributedTo <https://github.com/Naeima> ;
     prov:wasDerivedFrom <https://ontology.forest-observatory.org> ;
