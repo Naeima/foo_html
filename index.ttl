@@ -189,10 +189,8 @@ foo:Mammalia rdf:type owl:Class ;
 
 wo:Mammalia rdf:type owl:Class ;
     rdfs:subClassOf wo:Class ;
-    rdfs:label "Mammalia"@en-gb ;
-    rdfs:comment "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.
-https://www.merriam-webster.com/dictionary/Elephantidae".
-
+    rdfs:label "Mammalia"@en-gb .
+   
 foo:Reptilia rdf:type owl:Class ;
     rdfs:subClassOf foo:Class ;
     rdfs:label "Reptilia"@en-gb ; 
@@ -209,7 +207,7 @@ foo:Elephantidae rdf:type owl:Class ;
 
 wo:Elephantidae rdf:type owl:Class ;
     rdfs:subClassOf wo:Family ;
-    rdfs:comment "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.Source: https://www.merriam-webster.com/dictionary/Elephantidae".
+    rdfs:comment "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.Source: https://www.merriam-webster.com/dictionary/Elephantidae.
 
 foo:Viverridae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
