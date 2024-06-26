@@ -168,7 +168,6 @@ owl:sameAa  wo:Phylum.
                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
 
 
-
 foo:Phylum rdf:type owl:Class ;
 owl:sameAa  wo:Phylum.
 
@@ -181,7 +180,6 @@ wo:Species rdf:type owl:Class ;
                                       rdfs:seeAlso <http://en.wikipedia.org/wiki/Species> ,
                                                    <http://www.bbc.co.uk/nature/species> ;
                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
-
 
 
 foo:TaxonRank rdf:type owl:Class ;
@@ -202,8 +200,6 @@ foo:Mammalia rdf:type owl:Class ;
 rdfs:subClassOf foo:Class ;
 owl:sameAa  wo:Mammalia.
 
-
-
 wo:Mammalia rdf:type owl:Class ;
                                              rdfs:subClassOf   wo:Class ;
                                              rdfs:comment """The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.
@@ -214,58 +210,76 @@ rdfs:subClassOf foo:Class ;
 owl:sameAa  wo:Reptilia.
 
 
-###  http://purl.org/ontology/wo/Class/Reptilia
-<http://purl.org/ontology/wo/Class/Reptilia> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.org/ontology/wo/Class> ;
+wo:Reptilia  rdf:type owl:Class ;
+                                             rdfs:subClassOf   wo:Class;
                                              rdfs:comment "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."^^xsd:string .
 
+foo:Elephantidae rdf:type owl:Class ;
+rdfs:subClassOf foo:Family ;
+owl:sameAa  wo:Elephantidae.
 
-###  http://purl.org/ontology/wo/Family/Elephantidae
-<http://purl.org/ontology/wo/Family/Elephantidae> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/ontology/wo/Family> ;
+
+wo:Elephantidae> rdf:type owl:Class ;
+                                                  rdfs:subClassOf    wo:Family ;
                                                   rdfs:comment """ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.
 Source: https://www.merriam-webster.com/dictionary/Elephantidae"""^^xsd:string .
 
 
-###  http://purl.org/ontology/wo/Family/Viverridae
+foo:Viverridae rdf:type owl:Class ;
+rdfs:subClassOf foo:Family ;
+owl:sameAa  wo:Viverridae.
+
 <http://purl.org/ontology/wo/Family/Viverridae> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/ontology/wo/Family> ;
+                                                rdfs:subClassOf wo:Family ;
                                                 rdfs:isDefinedBy "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line"^^xsd:string ,
                                                                  "https://en.wikipedia.org/wiki/Viverridae"^^xsd:string .
 
+foo:Animalia rdf:type owl:Class ;
+rdfs:subClassOf foo:Kingdom ;
+owl:sameAa  wo:Animalia.
 
-###  http://purl.org/ontology/wo/Kingdom/Animalia
-<http://purl.org/ontology/wo/Kingdom/Animalia> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.org/ontology/wo/Kingdom> ;
+
+ wo:Animalia  rdf:type owl:Class ;
+                                               rdfs:subClassOf wo:Kingdom ;
                                                rdfs:comment """Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.
 
 All members of the kingdom Animalia share three key traits. They are multicellular organisms, and they are all eukaryotic, meaning their cells have membrane-enclosed organelles and a nucleus. All animals are heterotrophic and must feed on other organisms to survive.
 source:https://study.com/learn/lesson/animalia-kingdom-examples-characteristics-facts.html"""^^xsd:string .
 
 
-###  http://purl.org/ontology/wo/Order/Carnivora
-<http://purl.org/ontology/wo/Order/Carnivora> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/ontology/wo/Order> ;
+foo:Carnivora rdf:type owl:Class ;
+rdfs:subClassOf foo:Order ;
+owl:sameAa  wo:Carnivora.
+
+
+wo:Carnivora  rdf:type owl:Class ;
+                                              rdfs:subClassOf  wo:Order ;
                                               rdfs:comment "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."^^xsd:string ;
                                               rdfs:isDefinedBy "https://en.wikipedia.org/wiki/Carnivora"^^xsd:string .
 
+foo:Proboscidea rdf:type owl:Class ;
+rdfs:subClassOf foo:Order ;
+owl:sameAa  wo:Proboscidea.
 
-###  http://purl.org/ontology/wo/Order/Proboscidea
-<http://purl.org/ontology/wo/Order/Proboscidea> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/ontology/wo/Order> ;
+
+wo:Proboscidea  rdf:type owl:Class ;
+                                                rdfs:subClassOf wo:Order ;
                                                 rdfs:comment """Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.
 https://www.merriam-webster.com/dictionary/proboscidean"""^^xsd:string .
 
+foo:Squamata rdf:type owl:Class ;
+rdfs:subClassOf foo:Order ;
+owl:sameAa  wo:Squamata.
 
-###  http://purl.org/ontology/wo/Order/Squamata
-<http://purl.org/ontology/wo/Order/Squamata> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.org/ontology/wo/Order> .
+
+foo:Chordata  rdf:type owl:Class ;
+        rdfs:subClassOf wo:Order .
 
 
-###  http://purl.org/ontology/wo/Phylum/Chordata
-<http://purl.org/ontology/wo/Phylum/Chordata> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/ontology/wo/Phylum> ;
-                                              rdfs:comment """A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.
+wo:Chordata  rdf:type owl:Class ;
+             rdfs:subClassOf wo:Phylum ;
+             rdfs:comment """A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.
+
 
 
 ### Feature Of Interest Instances ##
