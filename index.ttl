@@ -206,7 +206,7 @@ foo:Elephantidae rdf:type owl:Class ;
     owl:sameAs wo:Elephantidae .
 
 wo:Elephantidae rdf:type owl:Class ;
-    rdfs:subClassOf wo:Family ;
+    rdfs:subClassOf wo:Family .
 
 foo:Viverridae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
