@@ -184,7 +184,7 @@ wo:TaxonRank rdf:type owl:Class ;
 
 foo:Mammalia rdf:type owl:Class ;
     rdfs:subClassOf foo:Class ;
-    rdfs:label "Mammalia"@en-gb 
+    rdfs:label "Mammalia"@en-gb;
     owl:sameAs wo:Mammalia .
 
 wo:Mammalia rdf:type owl:Class ;
@@ -195,7 +195,7 @@ https://www.merriam-webster.com/dictionary/Elephantidae".
 
 foo:Reptilia rdf:type owl:Class ;
     rdfs:subClassOf foo:Class ;
-    rdfs:label "Reptilia"@en-gb 
+    rdfs:label "Reptilia"@en-gb ; 
     owl:sameAs wo:Reptilia .
 
 wo:Reptilia rdf:type owl:Class ;
@@ -204,7 +204,7 @@ wo:Reptilia rdf:type owl:Class ;
 
 foo:Elephantidae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
-    rdfs:label "Elephantidae"@en-gb 
+    rdfs:label "Elephantidae"@en-gb;
     owl:sameAs wo:Elephantidae .
 
 wo:Elephantidae rdf:type owl:Class ;
@@ -213,7 +213,7 @@ wo:Elephantidae rdf:type owl:Class ;
 
 foo:Viverridae rdf:type owl:Class ;
     rdfs:subClassOf foo:Family ;
-    rdfs:label "Viverridae"@en-gb 
+    rdfs:label "Viverridae"@en-gb ;
     owl:sameAs wo:Viverridae .
 
 wo:Viverridae rdf:type owl:Class ;
@@ -223,7 +223,7 @@ wo:Viverridae rdf:type owl:Class ;
 
 foo:Animalia rdf:type owl:Class ;
     rdfs:subClassOf foo:Kingdom ;
-    rdfs:label "Animalia"@en-gb 
+    rdfs:label "Animalia"@en-gb ;
     owl:sameAs wo:Animalia .
 
 wo:Animalia rdf:type owl:Class ;
@@ -241,7 +241,7 @@ wo:Carnivora rdf:type owl:Class ;
 
 foo:Proboscidea rdf:type owl:Class ;
     rdfs:subClassOf foo:Order ;
-    rdfs:label "Proboscidea "@en-gb 
+    rdfs:label "Proboscidea "@en-gb ;
     owl:sameAs wo:Proboscidea .
 
 wo:Proboscidea rdf:type owl:Class ;
@@ -251,7 +251,7 @@ https://www.merriam-webster.com/dictionary/proboscidean".
 
 foo:Squamata rdf:type owl:Class ;
     rdfs:subClassOf foo:Order ;
-    rdfs:label "Squamata"@en-gb 
+    rdfs:label "Squamata"@en-gb ;
     owl:sameAs wo:Squamata .
 
 foo:Chordata rdf:type owl:Class ;
