@@ -232,6 +232,7 @@ wo:Animalia rdf:type owl:Class ;
 
 foo:Carnivora rdf:type owl:Class ;
     rdfs:subClassOf foo:Order ;
+   rdfs:label "Carnivora"@en-gb ;
     owl:sameAs wo:Carnivora .
 
 wo:Carnivora rdf:type owl:Class ;
@@ -259,6 +260,7 @@ foo:Chordata rdf:type owl:Class ;
 
 wo:Chordata rdf:type owl:Class ;
     rdfs:subClassOf wo:Phylum ;
+    rdfs:label "SChordata"@en-gb ;
     rdfs:comment "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.".
 
 ### Feature Of Interest Instances ###
