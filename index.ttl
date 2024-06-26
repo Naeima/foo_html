@@ -111,9 +111,7 @@ wo:Family rdf:type owl:Class ;
 foo:Genus rdf:type owl:Class ;
 owl:sameAa  wo:Genus. 
 
-
-###  http://purl.org/ontology/wo/Genus
-<http://purl.org/ontology/wo/Genus> rdf:type owl:Class ;
+wo:Genus rdf:type owl:Class ;
                                     rdfs:subClassOf wo:TaxonRank ;
                                     <http://data.bioontology.org/metadata/prefixIRI> "wo:Genus"^^xsd:string ;
                                     rdfs:comment "A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species' scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name"@en-gb ;
@@ -157,7 +155,8 @@ wo:Order rdf:type owl:Class ;
 foo:Phylum rdf:type owl:Class ;
 owl:sameAa  wo:Phylum.
 
-<wo:Phylum  rdf:type owl:Class ;
+
+wo:Phylum  rdf:type owl:Class ;
                                      rdfs:subClassOf wo:TaxonRank ;
                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Phylum"^^xsd:string ;
                                      rdfs:comment "A phylum - also known as a division when referring to plants - is a scientfic way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on."@en-gb ;
@@ -219,7 +218,7 @@ rdfs:subClassOf foo:Family ;
 owl:sameAa  wo:Elephantidae.
 
 
-wo:Elephantidae> rdf:type owl:Class ;
+wo:Elephantidae rdf:type owl:Class ;
                                                   rdfs:subClassOf    wo:Family ;
                                                   rdfs:comment """ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.
 Source: https://www.merriam-webster.com/dictionary/Elephantidae"""^^xsd:string .
@@ -229,7 +228,7 @@ foo:Viverridae rdf:type owl:Class ;
 rdfs:subClassOf foo:Family ;
 owl:sameAa  wo:Viverridae.
 
-<http://purl.org/ontology/wo/Family/Viverridae> rdf:type owl:Class ;
+wo:Viverridae  rdf:type owl:Class ;
                                                 rdfs:subClassOf wo:Family ;
                                                 rdfs:isDefinedBy "Viverridae is a family of small to medium-sized, feliform mammals. The viverrids comprise 33 species placed in 14 genera. This family was named and first described by John Edward Gray in 1821. Viverrids occur all over Africa, southern Europe, and South and Southeast Asia, across the Wallace Line"^^xsd:string ,
                                                                  "https://en.wikipedia.org/wiki/Viverridae"^^xsd:string .
@@ -291,6 +290,10 @@ foo:Soil rdf:type foo:FeatureOfInterest ;
 
 
 foo:ElephasMaximus rdf:type foo:FeatureOfInterest ;
+    rdf:type foo:Mammalia;
+    rdf:type foo:Elephantidae;
+    rdf:type foo:Animalia ;
+    rdf:type foo:Chordata ;
     rdfs:label "Asian Elephant"@en ;
     rdfs:label "Elephas maximus"@la ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en ;
