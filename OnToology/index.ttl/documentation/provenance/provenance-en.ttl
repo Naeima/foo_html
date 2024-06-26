@@ -1,0 +1,21 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/def/foo#V2.0> a prov:Entity;
+	 dc:title "Forest Observatory Ontology (FOO)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/Naeima>;
+	 dc:creator <https://github.com/Naeima>;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2024-06-01T00:00:00+00:00";
+.
+:agent0 a prov:Agent; foaf:name "Naeima Hamed".
+:agent1 a prov:Agent; foaf:name "Benoit Goossens".
+:agent2 a prov:Agent; foaf:name "Charith Perera".
+:agent3 a prov:Agent; foaf:name "Omer Rana".
+:agent4 a prov:Agent; foaf:name "Pablo Orozco-terWengel".

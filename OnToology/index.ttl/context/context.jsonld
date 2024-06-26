@@ -1,0 +1,363 @@
+{
+  "@context" : {
+    "TreeNLianas" : {
+      "@id" : "https://w3id.org/def/foo#TreeNLianas"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+    },
+    "TreeNotes" : {
+      "@id" : "https://w3id.org/def/foo#TreeNotes"
+    },
+    "affiliation" : {
+      "@id" : "http://xmlns.com/foaf/0.1/affiliation"
+    },
+    "Order" : {
+      "@id" : "https://w3id.org/def/foo#Order"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "generatedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "Direction" : {
+      "@id" : "https://w3id.org/def/foo#Direction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Longitude" : {
+      "@id" : "https://w3id.org/def/foo#Longitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "TreeDBH_cm" : {
+      "@id" : "https://w3id.org/def/foo#TreeDBH_cm"
+    },
+    "Sand" : {
+      "@id" : "https://w3id.org/def/foo#Sand"
+    },
+    "LocalTime" : {
+      "@id" : "https://w3id.org/def/foo#LocalTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "Kingdom" : {
+      "@id" : "https://w3id.org/def/foo#Kingdom"
+    },
+    "citation" : {
+      "@id" : "https://schema.org/citation"
+    },
+    "Animalia" : {
+      "@id" : "https://w3id.org/def/foo#Animalia"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "PlotNo" : {
+      "@id" : "https://w3id.org/def/foo#PlotNo"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "ImageID" : {
+      "@id" : "https://w3id.org/def/foo#ImageID"
+    },
+    "InorganicP" : {
+      "@id" : "https://w3id.org/def/foo#InorganicP"
+    },
+    "Altitude" : {
+      "@id" : "https://w3id.org/def/foo#Altitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    },
+    "wasAttributedTo" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
+    },
+    "Class" : {
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class"
+    },
+    "Elephantidae" : {
+      "@id" : "https://w3id.org/def/foo#Elephantidae"
+    },
+    "TreeHeight_m" : {
+      "@id" : "https://w3id.org/def/foo#TreeHeight_m"
+    },
+    "Speed" : {
+      "@id" : "https://w3id.org/def/foo#Speed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "TotalN" : {
+      "@id" : "https://w3id.org/def/foo#TotalN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "madeBySensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
+      "@type" : "@id"
+    },
+    "Make" : {
+      "@id" : "https://w3id.org/def/foo#Make"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CNRatio" : {
+      "@id" : "https://w3id.org/def/foo#CNRatio"
+    },
+    "Chordata" : {
+      "@id" : "https://w3id.org/def/foo#Chordata"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "Count" : {
+      "@id" : "https://w3id.org/def/foo#Count",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "LandUse" : {
+      "@id" : "https://w3id.org/def/foo#LandUse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Viverridae" : {
+      "@id" : "https://w3id.org/def/foo#Viverridae"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/def/foo#Temperature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "Date" : {
+      "@id" : "https://w3id.org/def/foo#Date"
+    },
+    "Mammalia" : {
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
+    },
+    "resultTime" : {
+      "@id" : "https://w3id.org/def/foo#resultTime"
+    },
+    "Agent" : {
+      "@id" : "http://www.w3.org/ns/prov#Agent"
+    },
+    "TreeID" : {
+      "@id" : "https://w3id.org/def/foo#TreeID"
+    },
+    "LocalDate" : {
+      "@id" : "https://w3id.org/def/foo#LocalDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "GMTDate" : {
+      "@id" : "https://w3id.org/def/foo#GMTDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "PlotName" : {
+      "@id" : "https://w3id.org/def/foo#PlotName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "Model" : {
+      "@id" : "https://w3id.org/def/foo#Model"
+    },
+    "GMTTime" : {
+      "@id" : "https://w3id.org/def/foo#GMTTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "Family" : {
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family"
+    },
+    "ID" : {
+      "@id" : "https://w3id.org/def/foo#ID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Phylum" : {
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
+    },
+    "prefixIRI" : {
+      "@id" : "http://data.bioontology.org/metadata/prefixIRI"
+    },
+    "Distance" : {
+      "@id" : "https://w3id.org/def/foo#Distance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Carnivora" : {
+      "@id" : "https://w3id.org/def/foo#Carnivora"
+    },
+    "Cov" : {
+      "@id" : "https://w3id.org/def/foo#Cov",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Subplot" : {
+      "@id" : "https://w3id.org/def/foo#Subplot",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "observes" : {
+      "@id" : "https://w3id.org/def/foo#observes",
+      "@type" : "@id"
+    },
+    "TotalP" : {
+      "@id" : "https://w3id.org/def/foo#TotalP"
+    },
+    "Genus" : {
+      "@id" : "https://w3id.org/def/foo#Genus"
+    },
+    "Reptilia" : {
+      "@id" : "https://w3id.org/def/foo#Reptilia"
+    },
+    "Latitude" : {
+      "@id" : "https://w3id.org/def/foo#Latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isObservedBy" : {
+      "@id" : "https://w3id.org/def/foo#isObservedBy",
+      "@type" : "@id"
+    },
+    "LianaDBH_cm" : {
+      "@id" : "https://w3id.org/def/foo#LianaDBH_cm"
+    },
+    "TotalC" : {
+      "@id" : "https://w3id.org/def/foo#TotalC",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "Proboscidea" : {
+      "@id" : "https://w3id.org/def/foo#Proboscidea"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "SubplotRadius_m" : {
+      "@id" : "https://w3id.org/def/foo#SubplotRadius_m"
+    },
+    "Site" : {
+      "@id" : "https://w3id.org/def/foo#Site",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "observedProperty" : {
+      "@id" : "https://w3id.org/def/foo#observedProperty",
+      "@type" : "@id"
+    },
+    "Horizon" : {
+      "@id" : "https://w3id.org/def/foo#Horizon",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Silt" : {
+      "@id" : "https://w3id.org/def/foo#Silt",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "madeObservation" : {
+      "@id" : "https://w3id.org/def/foo#madeObservation",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "HDOP" : {
+      "@id" : "https://w3id.org/def/foo#HDOP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "SitePlotCode" : {
+      "@id" : "https://w3id.org/def/foo#SitePlotCode"
+    },
+    "Clay" : {
+      "@id" : "https://w3id.org/def/foo#Clay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "SoilPH" : {
+      "@id" : "https://w3id.org/def/foo#SoilPH",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ObservableProperty" : {
+      "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "Species" : {
+      "@id" : "https://w3id.org/def/foo#Species"
+    },
+    "SiteName" : {
+      "@id" : "https://w3id.org/def/foo#SiteName"
+    },
+    "Identifier" : {
+      "@id" : "https://w3id.org/def/foo#Identifier"
+    },
+    "Squamata" : {
+      "@id" : "https://w3id.org/def/foo#Squamata"
+    },
+    "TaxonRank" : {
+      "@id" : "http://purl.org/ontology/wo/TaxonRank"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Time" : {
+      "@id" : "https://w3id.org/def/foo#Time"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "TreeIndividualNo" : {
+      "@id" : "https://w3id.org/def/foo#TreeIndividualNo"
+    },
+    "Observation" : {
+      "@id" : "https://w3id.org/def/foo#Observation"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/def/foo#Sensor"
+    },
+    "isFeatureOfInterestOf" : {
+      "@id" : "https://w3id.org/def/foo#isFeatureOfInterestOf",
+      "@type" : "@id"
+    }
+  }
+}
