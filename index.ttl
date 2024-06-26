@@ -80,6 +80,123 @@ foo:FeatureOfInterest rdf:type owl:Class ;
     skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result, or whose property is being manipulated by an Actuator, or which is being sampled or transformed in the act of Sampling. In the context of FOO, Soil is the FeatureOfInterest. Most of the sensors are used to observe a property (phenomenon) of a location (e.g., the moisture of soil)."@en ;
     rdfs:definedBy <https://w3id.org/def/foo> .
 
+foo:Class rdf:type owl:Class ;
+owl:sameAa  wo:Class. 
+
+wo:Class rdf:type owl:Class ;
+    rdfs:subClassOf wo:TaxonRank ;
+    <http://data.bioontology.org/metadata/prefixIRI> "wo:Class"^^xsd:string ;
+    rdfs:comment "A class is a scientific way to group related organisms together, some examples of classes being jellyfish, reptiles and sea urchins. Classes are big groups and contain within them smaller groupings called orders, families, genera and species."@en-gb ;
+    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+    rdfs:label "Class"@en-gb ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Class_%28biology%29> ,
+                 <http://www.bbc.co.uk/nature/class> ;
+    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:Family rdf:type owl:Class ;
+owl:sameAa  wo:Family. 
+
+wo:Family rdf:type owl:Class ;
+     rdfs:subClassOf <http://purl.org/ontology/wo/TaxonRank> ;
+     <http://data.bioontology.org/metadata/prefixIRI> "wo:Family"^^xsd:string ;
+     rdfs:comment "A family is a scientific grouping of closely related organisms. It has smaller groups, called genera and species, within it. A family can have a lot of members or only a few. Examples of families include the cats (Felidae), the gulls (Laridae) and the grasses (Poaceae)."@en-gb ;
+     rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+     rdfs:label "Family"@en-gb ;
+     rdfs:seeAlso <http://en.wikipedia.org/wiki/Family_%28biology%29> ,
+                  <http://www.bbc.co.uk/nature/family> ;
+     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+foo:Genus rdf:type owl:Class ;
+owl:sameAa  wo:Genus. 
+
+
+###  http://purl.org/ontology/wo/Genus
+<http://purl.org/ontology/wo/Genus> rdf:type owl:Class ;
+                                    rdfs:subClassOf wo:TaxonRank ;
+                                    <http://data.bioontology.org/metadata/prefixIRI> "wo:Genus"^^xsd:string ;
+                                    rdfs:comment "A genus is a scientific way of showing that species are very closed related to each other. In fact the first word of the species' scientific name is its genus. So for lions (Panthera leo), Panthera is the genus and tells us that they are closely related to tigers (Panthera tigris), because they share the name"@en-gb ;
+                                    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                    rdfs:label "Genus"@en-gb ;
+                                    rdfs:seeAlso <http://en.wikipedia.org/wiki/Genus> ,
+                                                 <http://www.bbc.co.uk/nature/genus> ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+foo:Kingdom rdf:type owl:Class ;
+owl:sameAa  wo:Kingdom.
+
+
+
+wo:Kingdom rdf:type owl:Class ;
+                                      rdfs:subClassOf wo:TaxonRank  ;
+                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Kingdom"^^xsd:string ;
+                                      rdfs:comment "Kingdoms are the major categories into which scientists divide up all living things. The main kingdoms are animals, plants, fungi and bacteria, although there are others. Each kingdom has its own suite of defining characteristics - for instance plants have rigid cell walls, whilst animals do not."@en-gb ;
+                                      rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                      rdfs:label "Kingdom"@en-gb ;
+                                      rdfs:seeAlso <http://en.wikipedia.org/wiki/Kingdom_%28biology%29> ,
+                                                   <http://www.bbc.co.uk/nature/kingdom> ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+
+foo:Order rdf:type owl:Class ;
+owl:sameAa  wo:Order.
+
+
+wo:Order rdf:type owl:Class ;
+                                    rdfs:subClassOf wo:TaxonRank  ;
+                                    <http://data.bioontology.org/metadata/prefixIRI> "wo:Order"^^xsd:string ;
+                                    rdfs:comment "An order is a scientific way to categorise related organisms. An order is a smaller grouping than a class, but bigger than a family or genus. Examples of orders are willows, cockroaches and primates."@en-gb ;
+                                    rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                    rdfs:label "Order"@en-gb ;
+                                    rdfs:seeAlso <http://en.wikipedia.org/wiki/Order_%28biology%29> ,
+                                                 <http://www.bbc.co.uk/nature/order> ;
+                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+foo:Phylum rdf:type owl:Class ;
+owl:sameAa  wo:Phylum.
+
+<wo:Phylum  rdf:type owl:Class ;
+                                     rdfs:subClassOf wo:TaxonRank ;
+                                     <http://data.bioontology.org/metadata/prefixIRI> "wo:Phylum"^^xsd:string ;
+                                     rdfs:comment "A phylum - also known as a division when referring to plants - is a scientfic way of grouping together related organisms. All the members of a phylum have a common ancestor and anatomical similarities. For instance, all the arthropods have external skeletons. Phlya are large groups and are further subdivided into classes, orders, families and so on."@en-gb ;
+                                     rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                     rdfs:label "Phylum"@en-gb ;
+                                     rdfs:seeAlso <http://en.wikipedia.org/wiki/Phylum> ,
+                                                  <http://www.bbc.co.uk/nature/phylum> ;
+                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+
+foo:Phylum rdf:type owl:Class ;
+owl:sameAa  wo:Phylum.
+
+wo:Species rdf:type owl:Class ;
+                                      rdfs:subClassOf      wo:TaxonRank ;
+                                      <http://data.bioontology.org/metadata/prefixIRI> "wo:Species"^^xsd:string ;
+                                      rdfs:comment "Generic class defining a biological species"@en-gb ;
+                                      rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                      rdfs:label "species"@en-gb ;
+                                      rdfs:seeAlso <http://en.wikipedia.org/wiki/Species> ,
+                                                   <http://www.bbc.co.uk/nature/species> ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
+
+
+foo:TaxonRank rdf:type owl:Class ;
+owl:sameAa  wo:TaxonRank.
+
+
+wo:TaxonRank rdf:type owl:Class ;
+                                        rdfs:subClassOf owl:Thing ;
+                                        <http://data.bioontology.org/metadata/prefixIRI> "wo:TaxonRank"^^xsd:string ;
+                                        rdfs:comment "Generic concept for a taxonomic rank such as a Genus or Species."@en-gb ;
+                                        rdfs:isDefinedBy <http://purl.org/ontology/wo/> ;
+                                        rdfs:label "Taxonomic Rank"@en-gb ;
+                                        rdfs:seeAlso <http://en.wikipedia.org/wiki/Taxonomic_rank> ;
+                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string .
+
 
 ### Feature Of Interest Instances ##
 
