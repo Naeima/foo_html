@@ -198,6 +198,9 @@
       "@id" : "https://w3id.org/def/foo#ID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "identifier" : {
+      "@id" : "https://schema.org/identifier"
+    },
     "Phylum" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
     },
