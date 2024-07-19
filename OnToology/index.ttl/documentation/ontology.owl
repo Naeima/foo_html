@@ -991,7 +991,7 @@
     <owl:Class rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata">
         <rdfs:subClassOf rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
         <rdfs:comment>A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.</rdfs:comment>
-        <rdfs:label xml:lang="en-gb">SChordata</rdfs:label>
+        <rdfs:label xml:lang="en-gb">Chordata</rdfs:label>
     </owl:Class>
     
 

@@ -503,7 +503,7 @@
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/2000/01/rdf-schema#comment> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development." .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/2000/01/rdf-schema#label> "SChordata"@en-gb .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/2000/01/rdf-schema#label> "Chordata"@en-gb .
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Class
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
