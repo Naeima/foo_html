@@ -700,6 +700,6 @@ wo:TaxonRank a owl:Class ;
     ns2:term_status "testing"^^xsd:string .
 
 wo:Chordata a owl:Class ;
-    rdfs:label "SChordata"@en-gb ;
+    rdfs:label "Chordata"@en-gb ;
     rdfs:comment "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development." ;
     rdfs:subClassOf wo:Phylum .
