@@ -1977,7 +1977,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-gb",
-    "@value" : "SChordata"
+    "@value" : "Chordata"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
