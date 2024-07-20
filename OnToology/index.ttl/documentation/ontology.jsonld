@@ -83,6 +83,9 @@
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -112,6 +115,9 @@
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#Longitude"
   } ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -195,6 +201,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/mbox",
@@ -291,6 +300,9 @@
     "@language" : "en",
     "@value" : "Forest Observatory Ontology (FOO)"
   } ],
+  "http://purl.org/dc/terms/doi" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-031-43458-7_29"
+  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2024-06-01"
@@ -308,6 +320,11 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@value" : "https://w3id.org/def/foo#"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://naeima.github.io/foo_html/"
+  }, {
+    "@id" : "https://naeima.github.io/foo_html/index.ttl"
+  } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://www.w3.org/ns/sosa/"
   } ],
@@ -316,6 +333,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "BBC Wildlife Ontology Reused 26 June 2024"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#status" : [ {
+    "@value" : "Active"
   } ],
   "http://www.w3.org/ns/prov#generatedAtTime" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -326,6 +346,9 @@
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
     "@id" : "https://ontology.forest-observatory.org"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true"
   } ],
   "https://schema.org/citation" : [ {
     "@language" : "en",

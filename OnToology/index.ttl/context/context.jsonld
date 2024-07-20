@@ -121,6 +121,9 @@
     "CNRatio" : {
       "@id" : "https://w3id.org/def/foo#CNRatio"
     },
+    "doi" : {
+      "@id" : "http://purl.org/dc/terms/doi"
+    },
     "Chordata" : {
       "@id" : "https://w3id.org/def/foo#Chordata"
     },
@@ -197,6 +200,9 @@
     "ID" : {
       "@id" : "https://w3id.org/def/foo#ID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status"
     },
     "identifier" : {
       "@id" : "https://schema.org/identifier"
@@ -294,6 +300,9 @@
     "madeObservation" : {
       "@id" : "https://w3id.org/def/foo#madeObservation",
       "@type" : "@id"
+    },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo"
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
