@@ -594,7 +594,7 @@ foo:TreeObservation a foo:Observation ;
     foo:madeBySensor foo:Lianas .
 
 ### Feature of Interest Instances ###
-foo:Lianas a foo:FeatureOfInterest, foo:Sensor ;
+foo:Lianas a foo:FeatureOfInterest ;
     rdfs:label "Lianas"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Woody climbing plants found in tropical forests..."@en ;
