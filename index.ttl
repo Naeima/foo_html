@@ -357,22 +357,22 @@ foo:TotalN a owl:DatatypeProperty ;
 #### Sensor Instances ####
 foo:AqeelaGPS a foo:Sensor ;
     rdfs:label "Aqeela GPS"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Aqeela ;
     foo:observes foo:GPSObservation .
 
 foo:Bikang1GPS a foo:Sensor ;
     rdfs:label "Bikang 1 GPS"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Bikang1 ;
     foo:observes foo:GPSObservation .
 
 foo:Bikang2GPS a foo:Sensor ;
     rdfs:label "Bikang 2 GPS"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Bikang2 ;
     foo:observes foo:GPSObservation .
 
 foo:BinbinganGPS a foo:Sensor ;
     rdfs:label "Binbingan GPS"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Binbingan ;
     foo:observes foo:GPSObservation .
 
 foo:CameraTrap a foo:Sensor ;
@@ -382,82 +382,82 @@ foo:CameraTrap a foo:Sensor ;
 
 foo:GuliGPS a foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Guli ;
     foo:observes foo:GPSObservation .
 
 foo:ItaGPS a foo:Sensor ;
     rdfs:label "Ita"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Ita;
     foo:observes foo:GPSObservation .
 
 foo:JasminGPS a foo:Sensor ;
     rdfs:label "Jasmin"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Jasmin ;
     foo:observes foo:GPSObservation .
 
 foo:JasperGPS a foo:Sensor ;
     rdfs:label "Jasper"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Jasper ;
     foo:observes foo:GPSObservation .
 
-foo:KasiGPS a foo:Sensor ;
+foo:KasihGPS a foo:Sensor ;
     rdfs:label "Kasih"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Kasih ;
     foo:observes foo:GPSObservation .
 
 foo:KumaGPS a foo:Sensor ;
     rdfs:label "Kuma"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Kuma ;
     foo:observes foo:GPSObservation .
 
 foo:LiunGPS a foo:Sensor ;
     rdfs:label "Liun"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Luin ;
     foo:observes foo:GPSObservation .
 
 foo:MaliauGPS a foo:Sensor ;
     rdfs:label "Maliau"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Maliau ;
     foo:observes foo:GPSObservation .
 
 foo:MerotaiGPS a foo:Sensor ;
     rdfs:label "Merotai"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Merotai ;
     foo:observes foo:GPSObservation .
 
 foo:PuteriGPS a foo:Sensor ;
     rdfs:label "Puteri"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Puteri ;
     foo:observes foo:GPSObservation .
 
 foo:PututGPS a foo:Sensor ;
     rdfs:label "Putut"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Putut ;
     foo:observes foo:GPSObservation .
 
 foo:SejatiGPS a foo:Sensor ;
     rdfs:label "Sejati"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Sejati ;
     foo:observes foo:GPSObservation .
 
 foo:SeriGPS a foo:Sensor ;
     rdfs:label "Seri"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Seri ;
     foo:observes foo:GPSObservation .
 
 foo:TulidGPS a foo:Sensor ;
     rdfs:label "Tulid"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Tulid ;
     foo:observes foo:GPSObservation .
 
 foo:TunglapGPS a foo:Sensor ;
     rdfs:label "Tunglap"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Tunglap ;
     foo:observes foo:GPSObservation .
 
 foo:Umas2GPS a foo:Sensor ;
     rdfs:label "Umas2"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:Umas2 ;
     foo:observes foo:GPSObservation .
 
 #### Animal Instances ####
