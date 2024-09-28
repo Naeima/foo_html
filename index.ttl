@@ -82,6 +82,9 @@ foo: a owl:Ontology ;
     foaf:homepage <https://rdcu.be/dKNG2> ;
     foaf:name "Springer, Cham"@en .
 
+
+
+
 ### FOO Classes ###
 
 foo:Sensor a owl:Class ;
@@ -253,36 +256,32 @@ foo:GPSObservation a foo:Observation ;
     foo:Speed 2.4e-01 ;
     foo:Temperature 2.45e+01 ;
     foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:madeBySensor foo:Aqeela,
-        foo:Bikang1,
-        foo:Bikang2,
-        foo:Binbingan,
-        foo:Dara,
-        foo:Guli,
-        foo:Ita,
-        foo:Jasmin,
-        foo:Jasper,
-        foo:Kasih,
-        foo:Kuma,
-        foo:Liun,
-        foo:Maliau,
-        foo:Merotai,
-        foo:Puteri,
-        foo:Putut,
-        foo:Sejati,
-        foo:Seri,
-        foo:Tulid,
-        foo:Tunglap,
-        foo:Umas2 ;
+    foo:madeBySensor foo:AqeelaGPS,
+        foo:Bikang1GPS,
+        foo:Bikang2GPS,
+        foo:BinbinganGPS,
+        foo:DaraGPS,
+        foo:GuliGPS,
+        foo:ItaGPS,
+        foo:JasminGPS,
+        foo:JasperGPS,
+        foo:KasihGPS,
+        foo:KumaGPS,
+        foo:LiunGPS,
+        foo:MaliauGPS,
+        foo:MerotaiGPS,
+        foo:PuteriGPS,
+        foo:PututGPS,
+        foo:SejatiGPS,
+        foo:SeriGPS,
+        foo:TulidGPS,
+        foo:TunglapGPS,
+        foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime,
         "2015-10-26T07:40:35"^^xsd:dateTime .
 
 
-foo:ElephasMaximus a foo:Animalia,
-        foo:Chordata,
-        foo:Elephantidae,
-        foo:FeatureOfInterest,
-        foo:Mammalia,
+foo:ElephasMaximus a foo:Elephantidae,
         foo:Proboscidea ;
     rdfs:label "Asian Elephant"@en,
         "Elephas maximus"@la ;
@@ -426,15 +425,13 @@ foo:TotalN a owl:DatatypeProperty ;
 
 ### FOO Instances ###
 
-foo:Dara a foo:Sensor ;
+foo:Dara a  foo:ElephasMaximus;
     rdfs:label "Dara"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
+    
 
-foo:Abaw a foo:Sensor ;
+foo:Abaw a foo:ElephasMaximus; 
     rdfs:label "Abaw"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
+   
 foo:Altitude a owl:DatatypeProperty ;
     rdfs:label "Altitude" ;
     rdfs:domain foo:Observation ;
@@ -442,56 +439,63 @@ foo:Altitude a owl:DatatypeProperty ;
     owl:sameAs pos:alt ;
     skos:definition "Altitude of the elephant in meters at the moment of data collection." .
 
-foo:MalayopythonReticulatus a foo:FeatureOfInterest ;
+foo:MalayopythonReticulatus a foo:Animalia;
     rdfs:label "Reticulated Python"@en,
         "Malayopython reticulatus"@la ;
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
     skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
-foo:ManisJavanica a foo:FeatureOfInterest ;
+foo:ManisJavanica a foo:Animalia ;
     rdfs:label "Sunda Pangolin"@en,
         "Manis javanica"@la ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
     skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
-foo:Nasalislarvatus a foo:FeatureOfInterest ;
+foo:Nasalislarvatus a foo:Animalia ;
     rdfs:label "Proboscis Monkey"@en,
         "Nasalis larvatus"@la ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
     rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>,
         <https://doi/10.1126/sciadv.aaq0250> ;
     skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
+ foo:FeatureOfInterest,
 
-foo:Aqeela a foo:Sensor ;
-    rdfs:label "Aqeela"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+foo:AqeelaGPS a foo:Sensor ;
+    rdfs:label "Aqeela GPS"@en ;
+    foo:hasFeatureOfInterest foo:Aqeela ;
     foo:observes foo:GPSObservation .
-foo:Bikang1 a foo:Sensor ;
-    rdfs:label "Bikang 1"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+
+foo:Bikang1GPS a foo:Sensor ;
+    rdfs:label "Bikang 1 GPS"@en ;
+    foo:hasFeatureOfInterest foo:Bikang1 ;
     foo:observes foo:GPSObservation .
-foo:Bikang2 a foo:Sensor ;
-    rdfs:label "Bikang 2"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+
+foo:Bikang2GPS a foo:Sensor ;
+    rdfs:label "Bikang 2 GPS"@en ;
+    foo:hasFeatureOfInterest foo:Bikang2 ;
     foo:observes foo:GPSObservation .
-foo:Binbingan a foo:Sensor ;
-    rdfs:label "Binbingan"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+
+foo:BinbinganGPS a foo:Sensor ;
+    rdfs:label "Binbingan GPS"@en ;
+    foo:hasFeatureOfInterest foo:Binbingan ;
     foo:observes foo:GPSObservation .
+
 foo:CameraTrap a foo:Sensor ;
     rdfs:label "Camera Trap"@en ;
     foo:hasFeatureOfInterest foo:Image ;
     foo:observes foo:ImageObservation .
 
-foo:Guli a foo:Sensor ;
-    rdfs:label "Guli"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+foo:GuliGPS a foo:Sensor ;
+    rdfs:label "Guli GPS"@en ;
+    foo:hasFeatureOfInterest foo:Guli ;
     foo:observes foo:GPSObservation .
+
 foo:Image a foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en .
+
 foo:ImageObservation a foo:Observation ;
     rdfs:label "Image Observation"@en ;
     foo:Date "2024-06-12"^^xsd:date ;
@@ -500,64 +504,57 @@ foo:ImageObservation a foo:Observation ;
     foo:Model "PC800 PROFESSIONAL" ;
     foo:Time "12:34:56"^^xsd:time ;
     foo:madeBySensor foo:CameraTrap .
-foo:Ita a foo:Sensor ;
-    rdfs:label "Ita"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Jasmin a foo:Sensor ;
-    rdfs:label "Jasmin"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Jasper a foo:Sensor ;
-    rdfs:label "Jasper"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Kasih a foo:Sensor ;
-    rdfs:label "Kasih"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
+
+foo:Ita a  foo:ElephasMaximus  ;
+    rdfs:label "Ita"@en .
+   
+foo:Jasmin a   foo:ElephasMaximus ;
+    rdfs:label "Jasmin"@en .
+  
+foo:Jasper a foo:ElephasMaximus ;
+    rdfs:label "Jasper"@en .
+
+foo:Kasih a foo:ElephasMaximus ;
+    rdfs:label "Kasih"@en .
+    
 foo:Kingdom a owl:Class ;
     owl:sameAs wo:Kingdom .
-foo:Kuma a foo:Sensor ;
-    rdfs:label "Kuma"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Liun a foo:Sensor ;
-    rdfs:label "Liun"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Maliau a foo:Sensor ;
-    rdfs:label "Maliau"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
+
+foo:Kuma a foo:ElephasMaximus ;
+    rdfs:label "Kuma"@en .
+
+foo:Liun a foo:ElephasMaximus ;
+    rdfs:label "Liun"@en .
+   
+foo:Maliau a foo:ElephasMaximus ;
+    rdfs:label "Maliau"@en .
+
 foo:Mammalia a owl:Class ;
     rdfs:label "Mammalia"@en-gb ;
     rdfs:subClassOf foo:Class ;
     owl:sameAs wo:Mammalia .
-foo:Merotai a foo:Sensor ;
-    rdfs:label "Merotai"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
+
+foo:Merotai a foo:ElephasMaximus ;
+    rdfs:label "Merotai"@en.
+
 foo:Proboscidea a owl:Class ;
     rdfs:label "Proboscidea "@en-gb ;
     rdfs:subClassOf foo:Order ;
     owl:sameAs wo:Proboscidea .
-foo:Puteri a foo:Sensor ;
-    rdfs:label "Puteri"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Putut a foo:Sensor ;
-    rdfs:label "Putut"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Sejati a foo:Sensor ;
-    rdfs:label "Sejati"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
-foo:Seri a foo:Sensor ;
-    rdfs:label "Seri"@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:observes foo:GPSObservation .
+
+foo:Puteri a foo:ElephasMaximus;
+    rdfs:label "Puteri"@en.
+  
+foo:Putut a foo:ElephasMaximus ;
+    rdfs:label "Putut"@en .
+
+foo:SejatiGPS a foo:ElephasMaximus;
+    rdfs:label "Sejati"@n.
+
+foo:SeriGPS a foo:ElephasMaximus ;
+    rdfs:label "Seri"@en .
+
+   
 foo:SoilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
     foo:CNRatio 1.424e+01 ;
@@ -577,10 +574,12 @@ foo:SoilObservation a foo:Observation ;
     foo:TotalP 2.6374e+02 ;
     foo:hasFeatureOfInterest foo:Soil ;
     foo:madeBySensor foo:SoilSensor .
+
 foo:SoilSensor a foo:Sensor ;
     rdfs:label "Soil Sensor"@en ;
     foo:hasFeatureOfInterest foo:Soil ;
     foo:observes foo:SoilObservation .
+
 foo:TreeObservation a foo:Observation ;
     rdfs:label "Tree Observation"@en ;
     foo:Date "2017-07-21"^^xsd:date ;
@@ -595,6 +594,139 @@ foo:TreeObservation a foo:Observation ;
     foo:TreeNotes "" ;
     foo:hasFeatureOfInterest foo:Lianas ;
     foo:madeBySensor foo:Lianas .
+
+foo:TulidGPS a foo:Sensor ;
+    rdfs:label "Tulid"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:TunglapGPS a foo:Sensor ;
+    rdfs:label "Tunglap"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Umas2GPS a foo:Sensor ;
+    rdfs:label "Umas2"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+
+foo:AqeelaGPS a foo:Sensor ;
+    rdfs:label "Aqeela"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Bikang1GPS a foo:Sensor ;
+    rdfs:label "Bikang 1"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Bikang2GPS a foo:Sensor ;
+    rdfs:label "Bikang 2"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:BinbinganGPS a foo:Sensor ;
+    rdfs:label "Binbingan"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:CameraTrap a foo:Sensor ;
+    rdfs:label "Camera Trap"@en ;
+    foo:hasFeatureOfInterest foo:Image ;
+    foo:observes foo:ImageObservation .
+
+foo:GuliGPS a foo:Sensor ;
+    rdfs:label "Guli"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Image a foo:FeatureOfInterest ;
+    rdfs:label "Camera Trap Image"@en ;
+    rdfs:definedBy foo: ;
+    skos:definition "Image generated by motion-activated wildlife cameras."@en .
+
+foo:ImageObservation a foo:Observation ;
+    rdfs:label "Image Observation"@en ;
+    foo:Date "2024-06-12"^^xsd:date ;
+    foo:ImageID "001" ;
+    foo:Make "RECONYX" ;
+    foo:Model "PC800 PROFESSIONAL" ;
+    foo:Time "12:34:56"^^xsd:time ;
+    foo:madeBySensor foo:CameraTrap .
+foo:ItaGPS a foo:Sensor ;
+    rdfs:label "Ita"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:JasminGPS a foo:Sensor ;
+    rdfs:label "Jasmin"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:JasperGPS a foo:Sensor ;
+    rdfs:label "Jasper"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:KasiGPS a foo:Sensor ;
+    rdfs:label "Kasih"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Kingdom a owl:Class ;
+    owl:sameAs wo:Kingdom .
+
+foo:KumaGPS a foo:Sensor ;
+    rdfs:label "Kuma"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:LiunGPS a foo:Sensor ;
+    rdfs:label "Liun"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:MaliauGPS a foo:Sensor ;
+    rdfs:label "Maliau"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Mammalia a owl:Class ;
+    rdfs:label "Mammalia"@en-gb ;
+    rdfs:subClassOf foo:Class ;
+    owl:sameAs wo:Mammalia .
+
+foo:MerotaiGPS a foo:Sensor ;
+    rdfs:label "Merotai"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:Proboscidea a owl:Class ;
+    rdfs:label "Proboscidea "@en-gb ;
+    rdfs:subClassOf foo:Order ;
+    owl:sameAs wo:Proboscidea .
+
+foo:PuteriGPS a foo:Sensor ;
+    rdfs:label "Puteri"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:PututGPS a foo:Sensor ;
+    rdfs:label "Putut"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:SejatiGPS a foo:Sensor ;
+    rdfs:label "Sejati"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
+foo:SeriGPS a foo:Sensor ;
+    rdfs:label "Seri"@en ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:observes foo:GPSObservation .
+
 foo:Tulid a foo:Sensor ;
     rdfs:label "Tulid"@en ;
     foo:hasFeatureOfInterest foo:ElephasMaximus ;
