@@ -1,4 +1,4 @@
-@prefix cc: <http://creativecommons.org/ns#> .
+ @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -114,13 +114,14 @@ foo:Elephantidae a owl:Class ;
     rdfs:subClassOf foo:Family ;
     owl:sameAs wo:Elephantidae .
 
-foo:ElephasMaximus a owl:Class, foo:Elephantidae, foo:Proboscidea ;
+foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae, foo:Proboscidea;
     rdfs:label "ElephasMaximus"@en-gb ;
     rdfs:subClassOf  foo:Mammalia;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant..."@en .
+
 
 
 foo:Carnivora a owl:Class ;
@@ -364,111 +365,107 @@ foo:TotalN a owl:DatatypeProperty ;
 
 ### FOO Instances ###
 #### Sensor Instances ####
-foo:SensorGPS a  foo:Sensor;
-    rdfs:label "Sensor GPS "@en ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus.
-
-foo:AqeelaGPS a foo:SensorGPS ;
+foo:AqeelaGPS a foo:Sensor ;
     rdfs:label "Aqeela GPS"@en ;
     foo:hasFeatureOfInterest foo:Aqeela ;
     foo:observes foo:GPSObservation .
 
-foo:Bikang1GPS a foo:SensorGPS ;
+foo:Bikang1GPS a foo:Sensor ;
     rdfs:label "Bikang 1 GPS"@en ;
     foo:hasFeatureOfInterest foo:Bikang1 ;
     foo:observes foo:GPSObservation .
 
-foo:Bikang2GPS a foo:SensorGPS ;
+foo:Bikang2GPS a foo:Sensor ;
     rdfs:label "Bikang 2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Bikang2 ;
     foo:observes foo:GPSObservation .
 
-foo:BinbinganGPS a foo:SensorGPS ;
+foo:BinbinganGPS a foo:Sensor ;
     rdfs:label "Binbingan GPS"@en ;
     foo:hasFeatureOfInterest foo:Binbingan ;
     foo:observes foo:GPSObservation .
 
-foo:CameraTrap a foo:SensorGPS ;
+foo:CameraTrap a foo:Sensor ;
     rdfs:label "Camera Trap"@en ;
     foo:hasFeatureOfInterest foo:Image ;
     foo:observes foo:ImageObservation .
 
-foo:GuliGPS a foo:SensorGPS ;
+foo:GuliGPS a foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
     foo:hasFeatureOfInterest foo:Guli ;
     foo:observes foo:GPSObservation .
 
-foo:ItaGPS a foo:SensorGPS ;
+foo:ItaGPS a foo:Sensor ;
     rdfs:label "Ita GPS"@en ;
     foo:hasFeatureOfInterest foo:Ita;
     foo:observes foo:GPSObservation .
 
-foo:JasminGPS a foo:SensorGPS ;
+foo:JasminGPS a foo:Sensor ;
     rdfs:label "Jasmin GPS"@en ;
     foo:hasFeatureOfInterest foo:Jasmin ;
     foo:observes foo:GPSObservation .
 
-foo:JasperGPS a foo:SensorGPS ;
+foo:JasperGPS a foo:Sensor ;
     rdfs:label "Jasper GPS"@en ;
     foo:hasFeatureOfInterest foo:Jasper ;
     foo:observes foo:GPSObservation .
 
-foo:KasihGPS a foo:SensorGPS ;
+foo:KasihGPS a foo:Sensor ;
     rdfs:label "Kasih GPS"@en ;
     foo:hasFeatureOfInterest foo:Kasih ;
     foo:observes foo:GPSObservation .
 
-foo:KumaGPS a foo:SensorGPS ;
+foo:KumaGPS a foo:Sensor ;
     rdfs:label "Kuma GPS"@en ;
     foo:hasFeatureOfInterest foo:Kuma ;
     foo:observes foo:GPSObservation .
 
-foo:LiunGPS a foo:SensorGPS ;
+foo:LiunGPS a foo:Sensor ;
     rdfs:label "Liun GPS"@en ;
     foo:hasFeatureOfInterest foo:Luin ;
     foo:observes foo:GPSObservation .
 
-foo:MaliauGPS a foo:SensorGPS ;
+foo:MaliauGPS a foo:Sensor ;
     rdfs:label "Maliau GPS"@en ;
     foo:hasFeatureOfInterest foo:Maliau ;
     foo:observes foo:GPSObservation .
 
-foo:MerotaiGPS a foo:SensorGPS ;
+foo:MerotaiGPS a foo:Sensor ;
     rdfs:label "Merotai GPS"@en ;
     foo:hasFeatureOfInterest foo:Merotai ;
     foo:observes foo:GPSObservation .
 
-foo:PuteriGPS a foo:SensorGPS ;
+foo:PuteriGPS a foo:Sensor ;
     rdfs:label "Puteri GPS"@en ;
     foo:hasFeatureOfInterest foo:Puteri ;
     foo:observes foo:GPSObservation .
 
-foo:PututGPS a foo:SensorGPS ;
+foo:PututGPS a foo:Sensor ;
     rdfs:label "Putut GPS"@en ;
     foo:hasFeatureOfInterest foo:Putut ;
     foo:observes foo:GPSObservation .
 
-foo:SejatiGPS a foo:SensorGPS ;
+foo:SejatiGPS a foo:Sensor ;
     rdfs:label "Sejati GPS"@en ;
     foo:hasFeatureOfInterest foo:Sejati ;
     foo:observes foo:GPSObservation .
 
-foo:SeriGPS a foo:SensorGPS ;
+foo:SeriGPS a foo:Sensor ;
     rdfs:label "Seri GPS"@en ;
     foo:hasFeatureOfInterest foo:Seri ;
     foo:observes foo:GPSObservation .
 
-foo:TulidGPS a foo:SensorGPS ;
+foo:TulidGPS a foo:Sensor ;
     rdfs:label "Tulid GPS"@en ;
     foo:hasFeatureOfInterest foo:Tulid ;
     foo:observes foo:GPSObservation .
 
-foo:TunglapGPS a foo:SensorGPS ;
+foo:TunglapGPS a foo:Sensor ;
     rdfs:label "Tunglap GPS"@en ;
     foo:hasFeatureOfInterest foo:Tunglap ;
     foo:observes foo:GPSObservation .
 
-foo:Umas2GPS a foo:SensorGPS ;
+foo:Umas2GPS a foo:Sensor ;
     rdfs:label "Umas2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Umas2 ;
     foo:observes foo:GPSObservation .
@@ -563,7 +560,7 @@ foo:GPSObservation a foo:Observation ;
     foo:Speed 2.4e-01 ;
     foo:Temperature 2.45e+01 ;
     foo:hasFeatureOfInterest foo:ElephasMaximus ;
-    foo:madeBySensor foo:SenorGPS ;
+    foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
 foo:SoilObservation a foo:Observation ;
@@ -621,5 +618,3 @@ foo:Image a foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en .
-
-
