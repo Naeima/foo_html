@@ -462,6 +462,7 @@ foo:Umas2GPS a foo:Sensor ;
 
 #### Animal Instances ####
 foo:ElephasMaximus a foo:Elephantidae, foo:Proboscidea ;
+rdfs:subClassOf  foo:Mammalia;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
