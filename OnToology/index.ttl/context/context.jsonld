@@ -15,9 +15,6 @@
     "Order" : {
       "@id" : "https://w3id.org/def/foo#Order"
     },
-    "term_status" : {
-      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
-    },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
@@ -26,9 +23,6 @@
     },
     "generatedAtTime" : {
       "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
-    },
-    "example" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
     "Direction" : {
       "@id" : "https://w3id.org/def/foo#Direction",
@@ -72,18 +66,11 @@
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
-    "Thing" : {
-      "@id" : "http://www.w3.org/2002/07/owl#Thing"
-    },
-    "ImageID" : {
-      "@id" : "https://w3id.org/def/foo#ImageID"
-    },
     "InorganicP" : {
       "@id" : "https://w3id.org/def/foo#InorganicP"
     },
     "Altitude" : {
-      "@id" : "https://w3id.org/def/foo#Altitude",
-      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+      "@id" : "https://w3id.org/def/foo#Altitude"
     },
     "FeatureOfInterest" : {
       "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
@@ -112,14 +99,14 @@
       "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
       "@type" : "@id"
     },
-    "Make" : {
-      "@id" : "https://w3id.org/def/foo#Make"
-    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "CNRatio" : {
       "@id" : "https://w3id.org/def/foo#CNRatio"
+    },
+    "doi" : {
+      "@id" : "http://purl.org/dc/terms/doi"
     },
     "Chordata" : {
       "@id" : "https://w3id.org/def/foo#Chordata"
@@ -152,7 +139,7 @@
       "@id" : "https://w3id.org/def/foo#Date"
     },
     "Mammalia" : {
-      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
+      "@id" : "https://w3id.org/def/foo#Mammalia"
     },
     "resultTime" : {
       "@id" : "https://w3id.org/def/foo#resultTime"
@@ -178,14 +165,10 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "PlotName" : {
-      "@id" : "https://w3id.org/def/foo#PlotName",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@id" : "https://w3id.org/def/foo#PlotName"
     },
     "wasDerivedFrom" : {
       "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
-    },
-    "Model" : {
-      "@id" : "https://w3id.org/def/foo#Model"
     },
     "GMTTime" : {
       "@id" : "https://w3id.org/def/foo#GMTTime",
@@ -198,14 +181,14 @@
       "@id" : "https://w3id.org/def/foo#ID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status"
+    },
     "identifier" : {
       "@id" : "https://schema.org/identifier"
     },
     "Phylum" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
-    },
-    "prefixIRI" : {
-      "@id" : "http://data.bioontology.org/metadata/prefixIRI"
     },
     "Distance" : {
       "@id" : "https://w3id.org/def/foo#Distance",
@@ -225,9 +208,6 @@
       "@id" : "https://w3id.org/def/foo#Subplot",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "isDefinedBy" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
-    },
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
@@ -239,7 +219,7 @@
       "@id" : "https://w3id.org/def/foo#TotalP"
     },
     "Genus" : {
-      "@id" : "https://w3id.org/def/foo#Genus"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
     },
     "Reptilia" : {
       "@id" : "https://w3id.org/def/foo#Reptilia"
@@ -295,6 +275,9 @@
       "@id" : "https://w3id.org/def/foo#madeObservation",
       "@type" : "@id"
     },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo"
+    },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
@@ -307,6 +290,9 @@
     },
     "SitePlotCode" : {
       "@id" : "https://w3id.org/def/foo#SitePlotCode"
+    },
+    "ElephasMaximus" : {
+      "@id" : "https://w3id.org/def/foo#ElephasMaximus"
     },
     "Clay" : {
       "@id" : "https://w3id.org/def/foo#Clay",
@@ -326,7 +312,7 @@
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
     },
     "Species" : {
-      "@id" : "https://w3id.org/def/foo#Species"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
     },
     "SiteName" : {
       "@id" : "https://w3id.org/def/foo#SiteName"
@@ -338,13 +324,10 @@
       "@id" : "https://w3id.org/def/foo#Squamata"
     },
     "TaxonRank" : {
-      "@id" : "http://purl.org/ontology/wo/TaxonRank"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
-    },
-    "Time" : {
-      "@id" : "https://w3id.org/def/foo#Time"
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
