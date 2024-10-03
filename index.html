@@ -125,12 +125,11 @@ foo:Elephantidae a owl:Class ;
 foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae, foo:Proboscidea;
     rdfs:label "ElephasMaximus"@en-gb ;
     rdfs:subClassOf  foo:Mammalia;
+    rdfs:subClassOf  foo:Chordata;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant..."@en .
-
-
 
 foo:Carnivora a owl:Class ;
     rdfs:label "Carnivora"@en-gb ;
@@ -234,61 +233,61 @@ foo:observes a owl:ObjectProperty ;
 ### FOO Data Properties ###
 foo:Temperature a owl:DatatypeProperty ;
     rdfs:label "Temperature" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Estimated temperature of the elephant in Celsius at the moment of data collection." .
 
 foo:Clay a owl:DatatypeProperty ;
     rdfs:label "Clay"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Clay content of the soil sample."@en .
 
 foo:Count a owl:DatatypeProperty ;
     rdfs:label "Count"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:integer ;
     skos:definition "Observation count per data set." .
 
 foo:Cov a owl:DatatypeProperty ;
     rdfs:label "Cov" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "TBC" .
 
 foo:Direction a owl:DatatypeProperty ;
     rdfs:label "Direction" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty;
     rdfs:range xsd:integer ;
     skos:definition "Direction of elephant travel at the moment of data collection." .
 
 foo:Distance a owl:DatatypeProperty ;
     rdfs:label "Distance"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Distance (m) travelled from the last to the current data collection point." .
 
 foo:GMTDate a owl:DatatypeProperty ;
     rdfs:label "GMT Date" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:date ;
     skos:definition "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
 
 foo:GMTTime a owl:DatatypeProperty ;
     rdfs:label "GMT Time" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:time ;
     skos:definition "The GMT time in Sabah, Malaysia, when the GPS collar records its readings." .
 
 foo:HDOP a owl:DatatypeProperty ;
     rdfs:label "HDOP" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
 
 foo:Horizon a owl:DatatypeProperty ;
     rdfs:label "Horizon"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:string ;
     skos:definition "Soil horizon sampled."@en .
 
@@ -299,57 +298,57 @@ foo:ID a owl:DatatypeProperty ;
 
 foo:LandUse a owl:DatatypeProperty ;
     rdfs:label "Land Use"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty;
     rdfs:range xsd:string ;
     skos:definition "Land use of the study plots."@en .
 
 foo:Latitude a owl:DatatypeProperty ;
     rdfs:label "Latitude" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     owl:sameAs pos:lat ;
     skos:definition "Latitudinal coordinate of the elephant." .
 
 foo:LocalDate a owl:DatatypeProperty ;
     rdfs:label "Local Date" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:date ;
     skos:definition "The local date in Sabah, Malaysia." .
 
 foo:LocalTime a owl:DatatypeProperty ;
     rdfs:label "Local Time" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:time ;
     skos:definition "The local time in Sabah, Malaysia." .
 
 foo:Longitude a owl:DatatypeProperty ;
     rdfs:label "Longitude" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     owl:sameAs pos:long ;
     skos:definition "Longitudinal coordinate of the elephant." .
 
 foo:Silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Silt content of the soil sample."@en .
 
 foo:Site a owl:DatatypeProperty ;
     rdfs:label "Site"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:string ;
     skos:definition "Geographical area/site which samples were taken from."@en .
 
 foo:SoilPH a owl:DatatypeProperty ;
     rdfs:label "Soil PH" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Measured pH of the soil sample."@en .
 
 foo:Speed a owl:DatatypeProperty ;
     rdfs:label "Speed" ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Speed of the elephant at the moment of data collection." .
 
@@ -361,13 +360,13 @@ foo:Subplot a owl:DatatypeProperty ;
 
 foo:TotalC a owl:DatatypeProperty ;
     rdfs:label "Total C"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Total carbon content of the soil sample."@en .
 
 foo:TotalN a owl:DatatypeProperty ;
     rdfs:label "Total N"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Total nitrogen content of the soil sample."@en .
 
@@ -376,107 +375,140 @@ foo:TotalN a owl:DatatypeProperty ;
 foo:AqeelaGPS a foo:Sensor ;
     rdfs:label "Aqeela GPS"@en ;
     foo:hasFeatureOfInterest foo:Aqeela ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en ;
     foo:observes foo:GPSObservation .
 
 foo:Bikang1GPS a foo:Sensor ;
     rdfs:label "Bikang 1 GPS"@en ;
     foo:hasFeatureOfInterest foo:Bikang1 ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en ;
     foo:observes foo:GPSObservation .
 
 foo:Bikang2GPS a foo:Sensor ;
     rdfs:label "Bikang 2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Bikang2 ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 2."@en ;
     foo:observes foo:GPSObservation .
 
 foo:BinbinganGPS a foo:Sensor ;
     rdfs:label "Binbingan GPS"@en ;
     foo:hasFeatureOfInterest foo:Binbingan ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en ;
+    foo:observes foo:GPSObservation .
+
+
+foo:GuliGPS a foo:Sensor ;
+    rdfs:label "Guli GPS"@en ;
+    foo:hasFeatureOfInterest foo:Guli ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Guli."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:ItaGPS a foo:Sensor ;
+    rdfs:label "Ita GPS"@en ;
+    foo:hasFeatureOfInterest foo:Ita;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Ita."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:JasminGPS a foo:Sensor ;
+    rdfs:label "Jasmin GPS"@en ;
+    foo:hasFeatureOfInterest foo:Jasmin ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Jasmin."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:JasperGPS a foo:Sensor ;
+    rdfs:label "Jasper GPS"@en ;
+    foo:hasFeatureOfInterest foo:Jasper ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:KasihGPS a foo:Sensor ;
+    rdfs:label "Kasih GPS"@en ;
+    foo:hasFeatureOfInterest foo:Kasih ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Kasih."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:KumaGPS a foo:Sensor ;
+    rdfs:label "Kuma GPS"@en ;
+    foo:hasFeatureOfInterest foo:Kuma ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Kuma."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:LiunGPS a foo:Sensor ;
+    rdfs:label "Liun GPS"@en ;
+    foo:hasFeatureOfInterest foo:Luin ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Liun."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:MaliauGPS a foo:Sensor ;
+    rdfs:label "Maliau GPS"@en ;
+    foo:hasFeatureOfInterest foo:Maliau ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:MerotaiGPS a foo:Sensor ;
+    rdfs:label "Merotai GPS"@en ;
+    foo:hasFeatureOfInterest foo:Merotai ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Merotai."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:PuteriGPS a foo:Sensor ;
+    rdfs:label "Puteri GPS"@en ;
+    foo:hasFeatureOfInterest foo:Puteri ;
+     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Puteri."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:PututGPS a foo:Sensor ;
+    rdfs:label "Putut GPS"@en ;
+    foo:hasFeatureOfInterest foo:Putut ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:SejatiGPS a foo:Sensor ;
+    rdfs:label "Sejati GPS"@en ;
+    foo:hasFeatureOfInterest foo:Sejati ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Sejati."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:SeriGPS a foo:Sensor ;
+    rdfs:label "Seri GPS"@en ;
+    foo:hasFeatureOfInterest foo:Seri ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:TulidGPS a foo:Sensor ;
+    rdfs:label "Tulid GPS"@en ;
+    foo:hasFeatureOfInterest foo:Tulid ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Tulid."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:TunglapGPS a foo:Sensor ;
+    rdfs:label "Tunglap GPS"@en ;
+    foo:hasFeatureOfInterest foo:Tunglap ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Tunglap."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:Umas2GPS a foo:Sensor ;
+    rdfs:label "Umas2 GPS"@en ;
+    foo:hasFeatureOfInterest foo:Umas2 ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Umas2."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:DaraGPS a foo:Sensor ;
+    rdfs:label "Umas2 GPS"@en ;
+    foo:hasFeatureOfInterest foo:Dara ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en ;
+    foo:observes foo:GPSObservation .
+
+foo:AbawGPS a foo:Sensor ;
+    rdfs:label "Umas2 GPS"@en ;
+    foo:hasFeatureOfInterest foo:Abaw ;
+    skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en ;
     foo:observes foo:GPSObservation .
 
 foo:CameraTrap a foo:Sensor ;
     rdfs:label "Camera Trap"@en ;
     foo:hasFeatureOfInterest foo:Image ;
     foo:observes foo:ImageObservation .
-
-foo:GuliGPS a foo:Sensor ;
-    rdfs:label "Guli GPS"@en ;
-    foo:hasFeatureOfInterest foo:Guli ;
-    foo:observes foo:GPSObservation .
-
-foo:ItaGPS a foo:Sensor ;
-    rdfs:label "Ita GPS"@en ;
-    foo:hasFeatureOfInterest foo:Ita;
-    foo:observes foo:GPSObservation .
-
-foo:JasminGPS a foo:Sensor ;
-    rdfs:label "Jasmin GPS"@en ;
-    foo:hasFeatureOfInterest foo:Jasmin ;
-    foo:observes foo:GPSObservation .
-
-foo:JasperGPS a foo:Sensor ;
-    rdfs:label "Jasper GPS"@en ;
-    foo:hasFeatureOfInterest foo:Jasper ;
-    foo:observes foo:GPSObservation .
-
-foo:KasihGPS a foo:Sensor ;
-    rdfs:label "Kasih GPS"@en ;
-    foo:hasFeatureOfInterest foo:Kasih ;
-    foo:observes foo:GPSObservation .
-
-foo:KumaGPS a foo:Sensor ;
-    rdfs:label "Kuma GPS"@en ;
-    foo:hasFeatureOfInterest foo:Kuma ;
-    foo:observes foo:GPSObservation .
-
-foo:LiunGPS a foo:Sensor ;
-    rdfs:label "Liun GPS"@en ;
-    foo:hasFeatureOfInterest foo:Luin ;
-    foo:observes foo:GPSObservation .
-
-foo:MaliauGPS a foo:Sensor ;
-    rdfs:label "Maliau GPS"@en ;
-    foo:hasFeatureOfInterest foo:Maliau ;
-    foo:observes foo:GPSObservation .
-
-foo:MerotaiGPS a foo:Sensor ;
-    rdfs:label "Merotai GPS"@en ;
-    foo:hasFeatureOfInterest foo:Merotai ;
-    foo:observes foo:GPSObservation .
-
-foo:PuteriGPS a foo:Sensor ;
-    rdfs:label "Puteri GPS"@en ;
-    foo:hasFeatureOfInterest foo:Puteri ;
-    foo:observes foo:GPSObservation .
-
-foo:PututGPS a foo:Sensor ;
-    rdfs:label "Putut GPS"@en ;
-    foo:hasFeatureOfInterest foo:Putut ;
-    foo:observes foo:GPSObservation .
-
-foo:SejatiGPS a foo:Sensor ;
-    rdfs:label "Sejati GPS"@en ;
-    foo:hasFeatureOfInterest foo:Sejati ;
-    foo:observes foo:GPSObservation .
-
-foo:SeriGPS a foo:Sensor ;
-    rdfs:label "Seri GPS"@en ;
-    foo:hasFeatureOfInterest foo:Seri ;
-    foo:observes foo:GPSObservation .
-
-foo:TulidGPS a foo:Sensor ;
-    rdfs:label "Tulid GPS"@en ;
-    foo:hasFeatureOfInterest foo:Tulid ;
-    foo:observes foo:GPSObservation .
-
-foo:TunglapGPS a foo:Sensor ;
-    rdfs:label "Tunglap GPS"@en ;
-    foo:hasFeatureOfInterest foo:Tunglap ;
-    foo:observes foo:GPSObservation .
-
-foo:Umas2GPS a foo:Sensor ;
-    rdfs:label "Umas2 GPS"@en ;
-    foo:hasFeatureOfInterest foo:Umas2 ;
-    foo:observes foo:GPSObservation .
 
 #### Animal Instances ####
 
@@ -552,69 +584,74 @@ foo:Nasalislarvatus a foo:Animalia ;
 #### Observation Instances ####
 foo:GPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
-    foo:Altitude 1.17e+01, 1.67e+01 ;
-    foo:Count 1 ;
-    foo:Cov 0e+00 ;
-    foo:Direction 0 ;
-    foo:Distance 0e+00 ;
-    foo:GMTDate "2011-10-25"^^xsd:date ;
-    foo:GMTTime "22:40:35"^^xsd:time, "23:40:35"^^xsd:time ;
-    foo:HDOP 1.14e+00, 1.64e+00 ;
-    foo:ID "1SAT32" ;
-    foo:Latitude 1.237206e+00, 1.537206e+00 ;
-    foo:LocalDate "2011-10-26"^^xsd:date ;
-    foo:LocalTime "07:40:35"^^xsd:time ;
-    foo:Longitude 5.652223e+02, 5.662223e+02 ;
-    foo:Speed 2.4e-01 ;
-    foo:Temperature 2.45e+01 ;
+    foo:altitude 1.17e+01, 1.67e+01 ;
+    foo:count 1 ;
+    foo:cov 0e+00 ;
+    foo:direction 0 ;
+    foo:distance 0e+00 ;
+    foo:gMTDate "2011-10-25"^^xsd:date ;
+    foo:gMTTime "22:40:35"^^xsd:time, "23:40:35"^^xsd:time ;
+    foo:hDOP 1.14e+00, 1.64e+00 ;
+    foo:iD "1SAT32" ;
+    foo:latitude 1.237206e+00, 1.537206e+00 ;
+    foo:localDate "2011-10-26"^^xsd:date ;
+    foo:localTime "07:40:35"^^xsd:time ;
+    foo:longitude 5.652223e+02, 5.662223e+02 ;
+    foo:speed 2.4e-01 ;
+    foo:temperature 2.45e+01 ;
     foo:hasFeatureOfInterest foo:ElephasMaximus ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
 foo:SoilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
-    foo:CNRatio 1.424e+01 ;
-    foo:Clay 6.288e+01 ;
-    foo:Horizon "Organic"^^xsd:string ;
-    foo:Identifier "MB4" ;
-    foo:InorganicP 2.503e+01 ;
-    foo:LandUse "Unlogged"^^xsd:string ;
-    foo:PlotName "Belian"^^xsd:string ;
-    foo:Sand 2.066e+01 ;
-    foo:Silt 1.646e+01 ;
-    foo:Site "Maliau Basin Conservation Area"^^xsd:string ;
-    foo:SoilPH 4.69e+00 ;
-    foo:Subplot "4"^^xsd:string ;
-    foo:TotalC 5.45e+00 ;
-    foo:TotalN 3.8e-01 ;
-    foo:TotalP 2.6374e+02 ;
+    foo:cNRatio 1.424e+01 ;
+    foo:clay 6.288e+01 ;
+    foo:horizon "Organic"^^xsd:string ;
+    foo:identifier "MB4" ;
+    foo:inorganicP 2.503e+01 ;
+    foo:landUse "Unlogged"^^xsd:string ;
+    foo:plotName "Belian"^^xsd:string ;
+    foo:sand 2.066e+01 ;
+    foo:silt 1.646e+01 ;
+    foo:site "Maliau Basin Conservation Area"^^xsd:string ;
+    foo:soilPH 4.69e+00 ;
+    foo:subplot "4"^^xsd:string ;
+    foo:totalC 5.45e+00 ;
+    foo:totalN 3.8e-01 ;
+    foo:totalP 2.6374e+02 ;
     foo:hasFeatureOfInterest foo:Soil ;
     foo:madeBySensor foo:SoilSensor .
 
 foo:TreeObservation a foo:Observation ;
     rdfs:label "Tree Observation"@en ;
-    foo:Date "2017-07-21"^^xsd:date ;
-    foo:ID "TreeObs1" ;
-    foo:LianaDBH_cm 10 ;
-    foo:SubplotRadius_m 30 ;
-    foo:TreeDBH_cm 110 ;
-    foo:TreeHeight_m 60 ;
-    foo:TreeID "Shorea pauciflora" ;
-    foo:TreeIndividualNo 2 ;
-    foo:TreeNLianas 3 ;
-    foo:TreeNotes "" ;
+    foo:date "2017-07-21"^^xsd:date ;
+    foo:iD "TreeObs1" ;
+    foo:lianaDBH_cm 10 ;
+    foo:subplotRadius_m 30 ;
+    foo:treeDBH_cm 110 ;
+    foo:treeHeight_m 60 ;
+    foo:treeID "Shorea pauciflora" ;
+    foo:treeIndividualNo 2 ;
+    foo:treeNLianas 3 ;
+    foo:treeNotes "" ;
     foo:hasFeatureOfInterest foo:Lianas ;
     foo:madeBySensor foo:Lianas .
+
+foo:ImageObservation  a foo:Observation ;
+    rdfs:label "Image Observation"@en ;
+    foo:date "2017-07-21"^^xsd:date ;
+    foo:path "URL"^^xsd:anyURL . 
 
 ### Feature of Interest Instances ###
 foo:Lianas a foo:FeatureOfInterest ;
     rdfs:label "Lianas"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Woody climbing plants found in tropical forests..."@en ;
-    foo:ID "TS1" ;
-    foo:PlotNo 1 ;
-    foo:SiteName "Danum W15" ;
-    foo:SitePlotCode "F1P1" ;
+    foo:iD "TS1" ;
+    foo:plotNo 1 ;
+    foo:siteName "Danum W15" ;
+    foo:sitePlotCode "F1P1" ;
     foo:observes foo:TreeObservation .
 
 foo:Soil a foo:FeatureOfInterest ;
@@ -626,3 +663,4 @@ foo:Image a foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en .
+
