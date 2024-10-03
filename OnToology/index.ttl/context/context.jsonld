@@ -1,13 +1,13 @@
 {
   "@context" : {
-    "TreeNLianas" : {
-      "@id" : "https://w3id.org/def/foo#TreeNLianas"
+    "landUse" : {
+      "@id" : "https://w3id.org/def/foo#landUse"
+    },
+    "inorganicP" : {
+      "@id" : "https://w3id.org/def/foo#inorganicP"
     },
     "abstract" : {
       "@id" : "http://purl.org/dc/elements/1.1/abstract"
-    },
-    "TreeNotes" : {
-      "@id" : "https://w3id.org/def/foo#TreeNotes"
     },
     "affiliation" : {
       "@id" : "http://xmlns.com/foaf/0.1/affiliation"
@@ -15,8 +15,8 @@
     "Order" : {
       "@id" : "https://w3id.org/def/foo#Order"
     },
-    "term_status" : {
-      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    "cNRatio" : {
+      "@id" : "https://w3id.org/def/foo#cNRatio"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
@@ -26,9 +26,6 @@
     },
     "generatedAtTime" : {
       "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
-    },
-    "example" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
     "Direction" : {
       "@id" : "https://w3id.org/def/foo#Direction",
@@ -41,18 +38,15 @@
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
-    "TreeDBH_cm" : {
-      "@id" : "https://w3id.org/def/foo#TreeDBH_cm"
-    },
-    "Sand" : {
-      "@id" : "https://w3id.org/def/foo#Sand"
-    },
     "LocalTime" : {
       "@id" : "https://w3id.org/def/foo#LocalTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#time"
     },
     "Kingdom" : {
       "@id" : "https://w3id.org/def/foo#Kingdom"
+    },
+    "treeHeight_m" : {
+      "@id" : "https://w3id.org/def/foo#treeHeight_m"
     },
     "citation" : {
       "@id" : "https://schema.org/citation"
@@ -66,24 +60,11 @@
     "Organization" : {
       "@id" : "http://xmlns.com/foaf/0.1/Organization"
     },
-    "PlotNo" : {
-      "@id" : "https://w3id.org/def/foo#PlotNo"
-    },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
-    "Thing" : {
-      "@id" : "http://www.w3.org/2002/07/owl#Thing"
-    },
-    "ImageID" : {
-      "@id" : "https://w3id.org/def/foo#ImageID"
-    },
-    "InorganicP" : {
-      "@id" : "https://w3id.org/def/foo#InorganicP"
-    },
-    "Altitude" : {
-      "@id" : "https://w3id.org/def/foo#Altitude",
-      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    "soilPH" : {
+      "@id" : "https://w3id.org/def/foo#soilPH"
     },
     "FeatureOfInterest" : {
       "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
@@ -97,12 +78,12 @@
     "Elephantidae" : {
       "@id" : "https://w3id.org/def/foo#Elephantidae"
     },
-    "TreeHeight_m" : {
-      "@id" : "https://w3id.org/def/foo#TreeHeight_m"
-    },
     "Speed" : {
       "@id" : "https://w3id.org/def/foo#Speed",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "subplotRadius_m" : {
+      "@id" : "https://w3id.org/def/foo#subplotRadius_m"
     },
     "TotalN" : {
       "@id" : "https://w3id.org/def/foo#TotalN",
@@ -112,14 +93,20 @@
       "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
       "@type" : "@id"
     },
-    "Make" : {
-      "@id" : "https://w3id.org/def/foo#Make"
+    "hDOP" : {
+      "@id" : "https://w3id.org/def/foo#hDOP"
+    },
+    "plotName" : {
+      "@id" : "https://w3id.org/def/foo#plotName"
+    },
+    "totalP" : {
+      "@id" : "https://w3id.org/def/foo#totalP"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "CNRatio" : {
-      "@id" : "https://w3id.org/def/foo#CNRatio"
+    "doi" : {
+      "@id" : "http://purl.org/dc/terms/doi"
     },
     "Chordata" : {
       "@id" : "https://w3id.org/def/foo#Chordata"
@@ -127,13 +114,25 @@
     "mbox" : {
       "@id" : "http://xmlns.com/foaf/0.1/mbox"
     },
+    "longitude" : {
+      "@id" : "https://w3id.org/def/foo#longitude"
+    },
+    "localTime" : {
+      "@id" : "https://w3id.org/def/foo#localTime"
+    },
     "Count" : {
       "@id" : "https://w3id.org/def/foo#Count",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
+    "path" : {
+      "@id" : "https://w3id.org/def/foo#path"
+    },
     "LandUse" : {
       "@id" : "https://w3id.org/def/foo#LandUse",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "treeNotes" : {
+      "@id" : "https://w3id.org/def/foo#treeNotes"
     },
     "Viverridae" : {
       "@id" : "https://w3id.org/def/foo#Viverridae"
@@ -148,20 +147,26 @@
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
-    "Date" : {
-      "@id" : "https://w3id.org/def/foo#Date"
+    "altitude" : {
+      "@id" : "https://w3id.org/def/foo#altitude"
+    },
+    "count" : {
+      "@id" : "https://w3id.org/def/foo#count"
+    },
+    "totalN" : {
+      "@id" : "https://w3id.org/def/foo#totalN"
     },
     "Mammalia" : {
-      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
+      "@id" : "https://w3id.org/def/foo#Mammalia"
+    },
+    "latitude" : {
+      "@id" : "https://w3id.org/def/foo#latitude"
     },
     "resultTime" : {
       "@id" : "https://w3id.org/def/foo#resultTime"
     },
     "Agent" : {
       "@id" : "http://www.w3.org/ns/prov#Agent"
-    },
-    "TreeID" : {
-      "@id" : "https://w3id.org/def/foo#TreeID"
     },
     "LocalDate" : {
       "@id" : "https://w3id.org/def/foo#LocalDate",
@@ -173,30 +178,44 @@
     "name" : {
       "@id" : "http://xmlns.com/foaf/0.1/name"
     },
+    "clay" : {
+      "@id" : "https://w3id.org/def/foo#clay"
+    },
     "GMTDate" : {
       "@id" : "https://w3id.org/def/foo#GMTDate",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
-    "PlotName" : {
-      "@id" : "https://w3id.org/def/foo#PlotName",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "treeNLianas" : {
+      "@id" : "https://w3id.org/def/foo#treeNLianas"
     },
     "wasDerivedFrom" : {
       "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
     },
-    "Model" : {
-      "@id" : "https://w3id.org/def/foo#Model"
+    "sitePlotCode" : {
+      "@id" : "https://w3id.org/def/foo#sitePlotCode"
     },
     "GMTTime" : {
       "@id" : "https://w3id.org/def/foo#GMTTime",
       "@type" : "http://www.w3.org/2001/XMLSchema#time"
     },
+    "temperature" : {
+      "@id" : "https://w3id.org/def/foo#temperature"
+    },
+    "direction" : {
+      "@id" : "https://w3id.org/def/foo#direction"
+    },
     "Family" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family"
+    },
+    "plotNo" : {
+      "@id" : "https://w3id.org/def/foo#plotNo"
     },
     "ID" : {
       "@id" : "https://w3id.org/def/foo#ID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status"
     },
     "identifier" : {
       "@id" : "https://schema.org/identifier"
@@ -204,29 +223,38 @@
     "Phylum" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
     },
-    "prefixIRI" : {
-      "@id" : "http://data.bioontology.org/metadata/prefixIRI"
-    },
     "Distance" : {
       "@id" : "https://w3id.org/def/foo#Distance",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
+    "distance" : {
+      "@id" : "https://w3id.org/def/foo#distance"
+    },
     "preferredNamespacePrefix" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
     },
+    "silt" : {
+      "@id" : "https://w3id.org/def/foo#silt"
+    },
     "Carnivora" : {
       "@id" : "https://w3id.org/def/foo#Carnivora"
+    },
+    "site" : {
+      "@id" : "https://w3id.org/def/foo#site"
     },
     "Cov" : {
       "@id" : "https://w3id.org/def/foo#Cov",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
+    "gMTDate" : {
+      "@id" : "https://w3id.org/def/foo#gMTDate"
+    },
     "Subplot" : {
       "@id" : "https://w3id.org/def/foo#Subplot",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "isDefinedBy" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    "totalC" : {
+      "@id" : "https://w3id.org/def/foo#totalC"
     },
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
@@ -235,11 +263,11 @@
       "@id" : "https://w3id.org/def/foo#observes",
       "@type" : "@id"
     },
-    "TotalP" : {
-      "@id" : "https://w3id.org/def/foo#TotalP"
+    "localDate" : {
+      "@id" : "https://w3id.org/def/foo#localDate"
     },
     "Genus" : {
-      "@id" : "https://w3id.org/def/foo#Genus"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
     },
     "Reptilia" : {
       "@id" : "https://w3id.org/def/foo#Reptilia"
@@ -251,12 +279,12 @@
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
+    "subplot" : {
+      "@id" : "https://w3id.org/def/foo#subplot"
+    },
     "isObservedBy" : {
       "@id" : "https://w3id.org/def/foo#isObservedBy",
       "@type" : "@id"
-    },
-    "LianaDBH_cm" : {
-      "@id" : "https://w3id.org/def/foo#LianaDBH_cm"
     },
     "TotalC" : {
       "@id" : "https://w3id.org/def/foo#TotalC",
@@ -272,12 +300,12 @@
       "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "@type" : "@id"
     },
-    "SubplotRadius_m" : {
-      "@id" : "https://w3id.org/def/foo#SubplotRadius_m"
-    },
     "Site" : {
       "@id" : "https://w3id.org/def/foo#Site",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "iD" : {
+      "@id" : "https://w3id.org/def/foo#iD"
     },
     "observedProperty" : {
       "@id" : "https://w3id.org/def/foo#observedProperty",
@@ -295,6 +323,21 @@
       "@id" : "https://w3id.org/def/foo#madeObservation",
       "@type" : "@id"
     },
+    "lianaDBH_cm" : {
+      "@id" : "https://w3id.org/def/foo#lianaDBH_cm"
+    },
+    "treeIndividualNo" : {
+      "@id" : "https://w3id.org/def/foo#treeIndividualNo"
+    },
+    "gMTTime" : {
+      "@id" : "https://w3id.org/def/foo#gMTTime"
+    },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo"
+    },
+    "date" : {
+      "@id" : "https://w3id.org/def/foo#date"
+    },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
     },
@@ -305,12 +348,21 @@
     "Entity" : {
       "@id" : "http://www.w3.org/ns/prov#Entity"
     },
-    "SitePlotCode" : {
-      "@id" : "https://w3id.org/def/foo#SitePlotCode"
+    "sand" : {
+      "@id" : "https://w3id.org/def/foo#sand"
+    },
+    "cov" : {
+      "@id" : "https://w3id.org/def/foo#cov"
+    },
+    "ElephasMaximus" : {
+      "@id" : "https://w3id.org/def/foo#ElephasMaximus"
     },
     "Clay" : {
       "@id" : "https://w3id.org/def/foo#Clay",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "treeDBH_cm" : {
+      "@id" : "https://w3id.org/def/foo#treeDBH_cm"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
@@ -325,32 +377,32 @@
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
     },
+    "speed" : {
+      "@id" : "https://w3id.org/def/foo#speed"
+    },
     "Species" : {
-      "@id" : "https://w3id.org/def/foo#Species"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
     },
-    "SiteName" : {
-      "@id" : "https://w3id.org/def/foo#SiteName"
-    },
-    "Identifier" : {
-      "@id" : "https://w3id.org/def/foo#Identifier"
+    "siteName" : {
+      "@id" : "https://w3id.org/def/foo#siteName"
     },
     "Squamata" : {
       "@id" : "https://w3id.org/def/foo#Squamata"
     },
     "TaxonRank" : {
-      "@id" : "http://purl.org/ontology/wo/TaxonRank"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
     },
-    "Time" : {
-      "@id" : "https://w3id.org/def/foo#Time"
-    },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
     },
-    "TreeIndividualNo" : {
-      "@id" : "https://w3id.org/def/foo#TreeIndividualNo"
+    "horizon" : {
+      "@id" : "https://w3id.org/def/foo#horizon"
+    },
+    "treeID" : {
+      "@id" : "https://w3id.org/def/foo#treeID"
     },
     "Observation" : {
       "@id" : "https://w3id.org/def/foo#Observation"
