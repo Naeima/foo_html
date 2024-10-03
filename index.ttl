@@ -576,69 +576,74 @@ foo:Nasalislarvatus a foo:Animalia ;
 #### Observation Instances ####
 foo:GPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
-    foo:Altitude 1.17e+01, 1.67e+01 ;
-    foo:Count 1 ;
-    foo:Cov 0e+00 ;
-    foo:Direction 0 ;
-    foo:Distance 0e+00 ;
-    foo:GMTDate "2011-10-25"^^xsd:date ;
-    foo:GMTTime "22:40:35"^^xsd:time, "23:40:35"^^xsd:time ;
-    foo:HDOP 1.14e+00, 1.64e+00 ;
-    foo:ID "1SAT32" ;
-    foo:Latitude 1.237206e+00, 1.537206e+00 ;
-    foo:LocalDate "2011-10-26"^^xsd:date ;
-    foo:LocalTime "07:40:35"^^xsd:time ;
-    foo:Longitude 5.652223e+02, 5.662223e+02 ;
-    foo:Speed 2.4e-01 ;
-    foo:Temperature 2.45e+01 ;
+    foo:altitude 1.17e+01, 1.67e+01 ;
+    foo:count 1 ;
+    foo:cov 0e+00 ;
+    foo:direction 0 ;
+    foo:distance 0e+00 ;
+    foo:gMTDate "2011-10-25"^^xsd:date ;
+    foo:gMTTime "22:40:35"^^xsd:time, "23:40:35"^^xsd:time ;
+    foo:hDOP 1.14e+00, 1.64e+00 ;
+    foo:iD "1SAT32" ;
+    foo:latitude 1.237206e+00, 1.537206e+00 ;
+    foo:localDate "2011-10-26"^^xsd:date ;
+    foo:localTime "07:40:35"^^xsd:time ;
+    foo:longitude 5.652223e+02, 5.662223e+02 ;
+    foo:speed 2.4e-01 ;
+    foo:temperature 2.45e+01 ;
     foo:hasFeatureOfInterest foo:ElephasMaximus ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
 foo:SoilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
-    foo:CNRatio 1.424e+01 ;
-    foo:Clay 6.288e+01 ;
-    foo:Horizon "Organic"^^xsd:string ;
-    foo:Identifier "MB4" ;
-    foo:InorganicP 2.503e+01 ;
-    foo:LandUse "Unlogged"^^xsd:string ;
-    foo:PlotName "Belian"^^xsd:string ;
-    foo:Sand 2.066e+01 ;
-    foo:Silt 1.646e+01 ;
-    foo:Site "Maliau Basin Conservation Area"^^xsd:string ;
-    foo:SoilPH 4.69e+00 ;
-    foo:Subplot "4"^^xsd:string ;
-    foo:TotalC 5.45e+00 ;
-    foo:TotalN 3.8e-01 ;
-    foo:TotalP 2.6374e+02 ;
+    foo:cNRatio 1.424e+01 ;
+    foo:clay 6.288e+01 ;
+    foo:horizon "Organic"^^xsd:string ;
+    foo:identifier "MB4" ;
+    foo:inorganicP 2.503e+01 ;
+    foo:landUse "Unlogged"^^xsd:string ;
+    foo:plotName "Belian"^^xsd:string ;
+    foo:sand 2.066e+01 ;
+    foo:silt 1.646e+01 ;
+    foo:site "Maliau Basin Conservation Area"^^xsd:string ;
+    foo:soilPH 4.69e+00 ;
+    foo:subplot "4"^^xsd:string ;
+    foo:totalC 5.45e+00 ;
+    foo:totalN 3.8e-01 ;
+    foo:totalP 2.6374e+02 ;
     foo:hasFeatureOfInterest foo:Soil ;
     foo:madeBySensor foo:SoilSensor .
 
 foo:TreeObservation a foo:Observation ;
     rdfs:label "Tree Observation"@en ;
-    foo:Date "2017-07-21"^^xsd:date ;
-    foo:ID "TreeObs1" ;
-    foo:LianaDBH_cm 10 ;
-    foo:SubplotRadius_m 30 ;
-    foo:TreeDBH_cm 110 ;
-    foo:TreeHeight_m 60 ;
-    foo:TreeID "Shorea pauciflora" ;
-    foo:TreeIndividualNo 2 ;
-    foo:TreeNLianas 3 ;
-    foo:TreeNotes "" ;
+    foo:date "2017-07-21"^^xsd:date ;
+    foo:iD "TreeObs1" ;
+    foo:lianaDBH_cm 10 ;
+    foo:subplotRadius_m 30 ;
+    foo:treeDBH_cm 110 ;
+    foo:treeHeight_m 60 ;
+    foo:treeID "Shorea pauciflora" ;
+    foo:treeIndividualNo 2 ;
+    foo:treeNLianas 3 ;
+    foo:treeNotes "" ;
     foo:hasFeatureOfInterest foo:Lianas ;
     foo:madeBySensor foo:Lianas .
+
+foo:ImageObservation  a foo:Observation ;
+    rdfs:label "Image Observation"@en ;
+    foo:date "2017-07-21"^^xsd:date ;
+    foo:path "URL"^^xsd:anyURL . 
 
 ### Feature of Interest Instances ###
 foo:Lianas a foo:FeatureOfInterest ;
     rdfs:label "Lianas"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Woody climbing plants found in tropical forests..."@en ;
-    foo:ID "TS1" ;
-    foo:PlotNo 1 ;
-    foo:SiteName "Danum W15" ;
-    foo:SitePlotCode "F1P1" ;
+    foo:iD "TS1" ;
+    foo:plotNo 1 ;
+    foo:siteName "Danum W15" ;
+    foo:sitePlotCode "F1P1" ;
     foo:observes foo:TreeObservation .
 
 foo:Soil a foo:FeatureOfInterest ;
