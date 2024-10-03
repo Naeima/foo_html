@@ -284,7 +284,7 @@ foo:Horizon a owl:DatatypeProperty ;
     skos:definition "Soil horizon sampled."@en .
 
 foo:ID a owl:DatatypeProperty ;
-    rdfs:label "ID" ;
+    rdfs:label "id"@en ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
@@ -345,7 +345,7 @@ foo:Speed a owl:DatatypeProperty ;
     skos:definition "Speed of the elephant at the moment of data collection." .
 
 foo:Subplot a owl:DatatypeProperty ;
-    rdfs:label "Sub plot"@en ;
+    rdfs:label "subPlot"@en ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     skos:definition "Number of the subplot sampled within each 1 Ha plot."@en .
