@@ -231,61 +231,61 @@ foo:observes a owl:ObjectProperty ;
     owl:inverseOf foo:isObservedBy .
 
 ### FOO Data Properties ###
-foo:Temperature a owl:DatatypeProperty ;
+foo:temperature a owl:DatatypeProperty ;
     rdfs:label "Temperature" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Estimated temperature of the elephant in Celsius at the moment of data collection." .
 
-foo:Clay a owl:DatatypeProperty ;
+foo:clay a owl:DatatypeProperty ;
     rdfs:label "Clay"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Clay content of the soil sample."@en .
 
-foo:Count a owl:DatatypeProperty ;
+foo:count a owl:DatatypeProperty ;
     rdfs:label "Count"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:integer ;
     skos:definition "Observation count per data set." .
 
-foo:Cov a owl:DatatypeProperty ;
+foo:cov a owl:DatatypeProperty ;
     rdfs:label "Cov" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "TBC" .
 
-foo:Direction a owl:DatatypeProperty ;
+foo:direction a owl:DatatypeProperty ;
     rdfs:label "Direction" ;
     rdfs:domain foo:ObservableProperty;
     rdfs:range xsd:integer ;
     skos:definition "Direction of elephant travel at the moment of data collection." .
 
-foo:Distance a owl:DatatypeProperty ;
+foo:distance a owl:DatatypeProperty ;
     rdfs:label "Distance"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Distance (m) travelled from the last to the current data collection point." .
 
-foo:GMTDate a owl:DatatypeProperty ;
+foo:gMTDate a owl:DatatypeProperty ;
     rdfs:label "GMT Date" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:date ;
     skos:definition "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
 
-foo:GMTTime a owl:DatatypeProperty ;
+foo:gMTTime a owl:DatatypeProperty ;
     rdfs:label "GMT Time" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:time ;
     skos:definition "The GMT time in Sabah, Malaysia, when the GPS collar records its readings." .
 
-foo:HDOP a owl:DatatypeProperty ;
+foo:hDOP a owl:DatatypeProperty ;
     rdfs:label "HDOP" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
 
-foo:Horizon a owl:DatatypeProperty ;
+foo:horizon a owl:DatatypeProperty ;
     rdfs:label "Horizon"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:string ;
@@ -296,75 +296,75 @@ foo:ID a owl:DatatypeProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
-foo:LandUse a owl:DatatypeProperty ;
+foo:landUse a owl:DatatypeProperty ;
     rdfs:label "Land Use"@en ;
     rdfs:domain foo:ObservableProperty;
     rdfs:range xsd:string ;
     skos:definition "Land use of the study plots."@en .
 
-foo:Latitude a owl:DatatypeProperty ;
+foo:latitude a owl:DatatypeProperty ;
     rdfs:label "Latitude" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     owl:sameAs pos:lat ;
     skos:definition "Latitudinal coordinate of the elephant." .
 
-foo:LocalDate a owl:DatatypeProperty ;
+foo:localDate a owl:DatatypeProperty ;
     rdfs:label "Local Date" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:date ;
     skos:definition "The local date in Sabah, Malaysia." .
 
-foo:LocalTime a owl:DatatypeProperty ;
+foo:localTime a owl:DatatypeProperty ;
     rdfs:label "Local Time" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:time ;
     skos:definition "The local time in Sabah, Malaysia." .
 
-foo:Longitude a owl:DatatypeProperty ;
+foo:longitude a owl:DatatypeProperty ;
     rdfs:label "Longitude" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     owl:sameAs pos:long ;
     skos:definition "Longitudinal coordinate of the elephant." .
 
-foo:Silt a owl:DatatypeProperty ;
+foo:silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Silt content of the soil sample."@en .
 
-foo:Site a owl:DatatypeProperty ;
+foo:site a owl:DatatypeProperty ;
     rdfs:label "Site"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:string ;
     skos:definition "Geographical area/site which samples were taken from."@en .
 
-foo:SoilPH a owl:DatatypeProperty ;
+foo:soilPH a owl:DatatypeProperty ;
     rdfs:label "Soil PH" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Measured pH of the soil sample."@en .
 
-foo:Speed a owl:DatatypeProperty ;
+foo:speed a owl:DatatypeProperty ;
     rdfs:label "Speed" ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Speed of the elephant at the moment of data collection." .
 
-foo:Subplot a owl:DatatypeProperty ;
+foo:subplot a owl:DatatypeProperty ;
     rdfs:label "subPlot"@en ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string ;
     skos:definition "Number of the subplot sampled within each 1 Ha plot."@en .
 
-foo:TotalC a owl:DatatypeProperty ;
+foo:totalC a owl:DatatypeProperty ;
     rdfs:label "Total C"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
     skos:definition "Total carbon content of the soil sample."@en .
 
-foo:TotalN a owl:DatatypeProperty ;
+foo:totalN a owl:DatatypeProperty ;
     rdfs:label "Total N"@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range xsd:double ;
