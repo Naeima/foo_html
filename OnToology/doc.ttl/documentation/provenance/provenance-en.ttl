@@ -1,0 +1,21 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/def/foo#V2.0> a prov:Entity;
+	 dc:title "Forest Observatory Ontology (FOO)";
+	 prov:wasAttributedTo <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima>;
+	 dc:creator <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima>;
+	 prov:wasAttributedTo <https://github.com/Naeima>;
+	 dc:creator <https://github.com/Naeima>;
+	 prov:wasAttributedTo <https://profiles.cardiff.ac.uk/staff/ranaof>;
+	 dc:contributor <https://profiles.cardiff.ac.uk/staff/ranaof>;
+	 prov:wasAttributedTo <https://profiles.cardiff.ac.uk/staff/pererac>;
+	 dc:contributor <https://profiles.cardiff.ac.uk/staff/pererac>;
+	 prov:wasAttributedTo <https://profiles.cardiff.ac.uk/staff/goossensbr>;
+	 dc:contributor <https://profiles.cardiff.ac.uk/staff/goossensbr>;
+	 prov:wasAttributedTo <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa>;
+	 dc:contributor <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2024-06-01T00:00:00+00:00";
+.
