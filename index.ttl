@@ -560,7 +560,7 @@ foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en .
 
 #### Other Animal Instances ####
-foo:MalayopythonReticulatus a foo:Animalia;
+foo:MalayopythonReticulatus a foo:Python;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
     skos:definition "Malayopython reticulatus, aka the reticulated python..."@en .
