@@ -132,7 +132,7 @@ foo:Reptilia a owl:Class ;
     rdfs:subClassOf foo:Class ;
     owl:sameAs wo:Reptilia .
 
-foo:Python a owl:Class, foo:FeatureOfInterest, foo:Reptilia ;
+foo:Python a owl:Class, foo:FeatureOfInterest, foo:Reptilia, foo:Squamata ;
     rdfs:label "Python"@en-gb ;
     rdfs:definedBy <https://journals.biologists.com/jeb/article/218/21/3364/14434/The-big-squeeze-scaling-of-constriction-pressure> ;
     skos:definition "The Python snake is a member of the family Pythonidae, which consists of large, non-venomous snakes native to Africa, Asia, and Australia. These snakes are known for their method of killing prey through constriction, applying intense pressure to induce cardiac arrest in their prey. Two prominent species are the reticulated python (Python reticulatus), the world’s longest snake, and the Burmese python (Python molurus bivittatus), both of which can grow to impressive sizes, reaching lengths of up to 10 meters"@en .
