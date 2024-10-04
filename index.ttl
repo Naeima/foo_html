@@ -114,9 +114,7 @@ foo:Elephantidae a owl:Class ;
     rdfs:subClassOf foo:Family ;
     owl:sameAs wo:Elephantidae .
 
-foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae, foo:Proboscidea;
-    rdfs:subClassOf  foo:Mammalia;
-    rdfs:subClassOf  foo:Chordata;
+foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae, foo:Proboscidea, foo:Mammalia, foo:Chordata ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
