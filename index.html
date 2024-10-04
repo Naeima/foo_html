@@ -123,7 +123,6 @@ foo:Elephantidae a owl:Class ;
     owl:sameAs wo:Elephantidae .
 
 foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae, foo:Proboscidea;
-    rdfs:label "ElephasMaximus"@en-gb ;
     rdfs:subClassOf  foo:Mammalia;
     rdfs:subClassOf  foo:Chordata;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
@@ -140,6 +139,11 @@ foo:Reptilia a owl:Class ;
     rdfs:label "Reptilia"@en-gb ;
     rdfs:subClassOf foo:Class ;
     owl:sameAs wo:Reptilia .
+
+foo:Python a owl:Class, foo:FeatureOfInterest, foo:Reptilia ;
+    rdfs:label "Python"@en-gb ;
+    rdfs:definedBy <https://journals.biologists.com/jeb/article/218/21/3364/14434/The-big-squeeze-scaling-of-constriction-pressure> ;
+    skos:definition "The Python snake is a member of the family Pythonidae, which consists of large, non-venomous snakes native to Africa, Asia, and Australia. These snakes are known for their method of killing prey through constriction, applying intense pressure to induce cardiac arrest in their prey. Two prominent species are the reticulated python (Python reticulatus), the world’s longest snake, and the Burmese python (Python molurus bivittatus), both of which can grow to impressive sizes, reaching lengths of up to 10 meters"@en .
 
 foo:Squamata a owl:Class ;
     rdfs:label "Squamata"@en-gb ;
@@ -372,195 +376,195 @@ foo:totalN a owl:DatatypeProperty ;
 
 ### FOO Instances ###
 #### Sensor Instances ####
-foo:AqeelaGPS a foo:Sensor ;
+foo:aqeelaGPS a foo:Sensor ;
     rdfs:label "Aqeela GPS"@en ;
     foo:hasFeatureOfInterest foo:Aqeela ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en ;
     foo:observes foo:GPSObservation .
 
-foo:Bikang1GPS a foo:Sensor ;
+foo:bikang1GPS a foo:Sensor ;
     rdfs:label "Bikang 1 GPS"@en ;
     foo:hasFeatureOfInterest foo:Bikang1 ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en ;
     foo:observes foo:GPSObservation .
 
-foo:Bikang2GPS a foo:Sensor ;
+foo:bikang2GPS a foo:Sensor ;
     rdfs:label "Bikang 2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Bikang2 ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 2."@en ;
     foo:observes foo:GPSObservation .
 
-foo:BinbinganGPS a foo:Sensor ;
+foo:binbinganGPS a foo:Sensor ;
     rdfs:label "Binbingan GPS"@en ;
     foo:hasFeatureOfInterest foo:Binbingan ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en ;
     foo:observes foo:GPSObservation .
 
 
-foo:GuliGPS a foo:Sensor ;
+foo:guliGPS a foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
     foo:hasFeatureOfInterest foo:Guli ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Guli."@en ;
     foo:observes foo:GPSObservation .
 
-foo:ItaGPS a foo:Sensor ;
+foo:itaGPS a foo:Sensor ;
     rdfs:label "Ita GPS"@en ;
     foo:hasFeatureOfInterest foo:Ita;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Ita."@en ;
     foo:observes foo:GPSObservation .
 
-foo:JasminGPS a foo:Sensor ;
+foo:jasminGPS a foo:Sensor ;
     rdfs:label "Jasmin GPS"@en ;
     foo:hasFeatureOfInterest foo:Jasmin ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Jasmin."@en ;
     foo:observes foo:GPSObservation .
 
-foo:JasperGPS a foo:Sensor ;
+foo:jasperGPS a foo:Sensor ;
     rdfs:label "Jasper GPS"@en ;
     foo:hasFeatureOfInterest foo:Jasper ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper."@en ;
     foo:observes foo:GPSObservation .
 
-foo:KasihGPS a foo:Sensor ;
+foo:kasihGPS a foo:Sensor ;
     rdfs:label "Kasih GPS"@en ;
     foo:hasFeatureOfInterest foo:Kasih ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Kasih."@en ;
     foo:observes foo:GPSObservation .
 
-foo:KumaGPS a foo:Sensor ;
+foo:kumaGPS a foo:Sensor ;
     rdfs:label "Kuma GPS"@en ;
     foo:hasFeatureOfInterest foo:Kuma ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Kuma."@en ;
     foo:observes foo:GPSObservation .
 
-foo:LiunGPS a foo:Sensor ;
+foo:liunGPS a foo:Sensor ;
     rdfs:label "Liun GPS"@en ;
     foo:hasFeatureOfInterest foo:Luin ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Liun."@en ;
     foo:observes foo:GPSObservation .
 
-foo:MaliauGPS a foo:Sensor ;
+foo:maliauGPS a foo:Sensor ;
     rdfs:label "Maliau GPS"@en ;
     foo:hasFeatureOfInterest foo:Maliau ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en ;
     foo:observes foo:GPSObservation .
 
-foo:MerotaiGPS a foo:Sensor ;
+foo:merotaiGPS a foo:Sensor ;
     rdfs:label "Merotai GPS"@en ;
     foo:hasFeatureOfInterest foo:Merotai ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Merotai."@en ;
     foo:observes foo:GPSObservation .
 
-foo:PuteriGPS a foo:Sensor ;
+foo:puteriGPS a foo:Sensor ;
     rdfs:label "Puteri GPS"@en ;
     foo:hasFeatureOfInterest foo:Puteri ;
      skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Puteri."@en ;
     foo:observes foo:GPSObservation .
 
-foo:PututGPS a foo:Sensor ;
+foo:pututGPS a foo:Sensor ;
     rdfs:label "Putut GPS"@en ;
     foo:hasFeatureOfInterest foo:Putut ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en ;
     foo:observes foo:GPSObservation .
 
-foo:SejatiGPS a foo:Sensor ;
+foo:sejatiGPS a foo:Sensor ;
     rdfs:label "Sejati GPS"@en ;
     foo:hasFeatureOfInterest foo:Sejati ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Sejati."@en ;
     foo:observes foo:GPSObservation .
 
-foo:SeriGPS a foo:Sensor ;
+foo:seriGPS a foo:Sensor ;
     rdfs:label "Seri GPS"@en ;
     foo:hasFeatureOfInterest foo:Seri ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en ;
     foo:observes foo:GPSObservation .
 
-foo:TulidGPS a foo:Sensor ;
+foo:tulidGPS a foo:Sensor ;
     rdfs:label "Tulid GPS"@en ;
     foo:hasFeatureOfInterest foo:Tulid ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Tulid."@en ;
     foo:observes foo:GPSObservation .
 
-foo:TunglapGPS a foo:Sensor ;
+foo:tunglapGPS a foo:Sensor ;
     rdfs:label "Tunglap GPS"@en ;
     foo:hasFeatureOfInterest foo:Tunglap ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Tunglap."@en ;
     foo:observes foo:GPSObservation .
 
-foo:Umas2GPS a foo:Sensor ;
+foo:umas2GPS a foo:Sensor ;
     rdfs:label "Umas2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Umas2 ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Umas2."@en ;
     foo:observes foo:GPSObservation .
 
-foo:DaraGPS a foo:Sensor ;
+foo:daraGPS a foo:Sensor ;
     rdfs:label "Umas2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Dara ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en ;
     foo:observes foo:GPSObservation .
 
-foo:AbawGPS a foo:Sensor ;
+foo:abawGPS a foo:Sensor ;
     rdfs:label "Umas2 GPS"@en ;
     foo:hasFeatureOfInterest foo:Abaw ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en ;
     foo:observes foo:GPSObservation .
 
-foo:CameraTrap a foo:Sensor ;
+foo:cameraTrap a foo:Sensor ;
     rdfs:label "Camera Trap"@en ;
     foo:hasFeatureOfInterest foo:Image ;
     foo:observes foo:ImageObservation .
 
 #### Animal Instances ####
 
-foo:Dara a foo:ElephasMaximus;
+foo:dara a foo:ElephasMaximus;
     rdfs:label "Dara"@en .
 
-foo:Abaw a foo:ElephasMaximus; 
+foo:abaw a foo:ElephasMaximus; 
     rdfs:label "Abaw"@en .
 
-foo:Ita a foo:ElephasMaximus ;
+foo:ita a foo:ElephasMaximus ;
     rdfs:label "Ita"@en .
 
-foo:Jasmin a foo:ElephasMaximus ;
+foo:jasmin a foo:ElephasMaximus ;
     rdfs:label "Jasmin"@en .
 
-foo:Jasper a foo:ElephasMaximus ;
+foo:jasper a foo:ElephasMaximus ;
     rdfs:label "Jasper"@en .
 
-foo:Kasih a foo:ElephasMaximus ;
+foo:kasih a foo:ElephasMaximus ;
     rdfs:label "Kasih"@en .
 
-foo:Kuma a foo:ElephasMaximus ;
+foo:kuma a foo:ElephasMaximus ;
     rdfs:label "Kuma"@en .
 
-foo:Liun a foo:ElephasMaximus ;
+foo:liun a foo:ElephasMaximus ;
     rdfs:label "Liun"@en .
 
-foo:Maliau a foo:ElephasMaximus ;
+foo:maliau a foo:ElephasMaximus ;
     rdfs:label "Maliau"@en .
 
-foo:Merotai a foo:ElephasMaximus ;
+foo:merotai a foo:ElephasMaximus ;
     rdfs:label "Merotai"@en .
 
-foo:Puteri a foo:ElephasMaximus;
+foo:puteri a foo:ElephasMaximus;
     rdfs:label "Puteri"@en .
 
-foo:Putut a foo:ElephasMaximus ;
+foo:putut a foo:ElephasMaximus ;
     rdfs:label "Putut"@en .
 
-foo:Sejati a foo:ElephasMaximus ;
+foo:sejati a foo:ElephasMaximus ;
     rdfs:label "Sejati"@en .
 
-foo:Seri a foo:ElephasMaximus ;
+foo:seri a foo:ElephasMaximus ;
     rdfs:label "Seri"@en .
 
-foo:Tulid a foo:ElephasMaximus ;
+foo:tulid a foo:ElephasMaximus ;
     rdfs:label "Tulid"@en .
 
-foo:Tunglap a foo:ElephasMaximus ;
+foo:tunglap a foo:ElephasMaximus ;
     rdfs:label "Tunglap"@en .
 
-foo:Umas2 a foo:ElephasMaximus ;
+foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en .
 
 #### Other Animal Instances ####
