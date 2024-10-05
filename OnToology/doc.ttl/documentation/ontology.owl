@@ -51,9 +51,9 @@
         <schema:identifier rdf:resource="https://orcid.org/0000-0003-3597-2646"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
-        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/pererac"/>
-        <foaf:name xml:lang="en">Dr. Charith Perera</foaf:name>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0002-0190-3346"/>
+        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"/>
+        <foaf:name xml:lang="en">Dr. Pablo Orozco-terWengel</foaf:name>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-7951-4148"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/goossensbr"/>
@@ -61,9 +61,9 @@
         <schema:identifier rdf:resource="https://orcid.org/0000-0003-2360-4643"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
-        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"/>
-        <foaf:name xml:lang="en">Dr. Pablo Orozco-terWengel</foaf:name>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0002-7951-4148"/>
+        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/pererac"/>
+        <foaf:name xml:lang="en">Dr. Charith Perera</foaf:name>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-0190-3346"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
         <foaf:homepage rdf:resource="https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima"/>
