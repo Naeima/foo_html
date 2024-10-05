@@ -243,7 +243,7 @@
     "id" : "79",
     "type" : "owl:Class"
   }, {
-    "id" : "81",
+    "id" : "80",
     "type" : "owl:Class"
   }, {
     "id" : "86",
@@ -674,7 +674,32 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
+        "value" : "Dividing a field site into quadrants.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Sieving a powder to separate the subset finer than 100-mesh.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "Registering an image of the landscape.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Drilling an observation well.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Taking a diamond-drill core from a rock outcrop.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Crushing a rock sample in a ball mill.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -684,7 +709,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Drilling an observation well.",
+        "value" : "Establishing a station for environmental monitoring.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -699,32 +724,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Sieving a powder to separate the subset finer than 100-mesh.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
         "value" : "Splitting a piece of drill-core to create two new samples.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Taking a diamond-drill core from a rock outcrop.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Dividing a field site into quadrants.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Crushing a rock sample in a ball mill.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Establishing a station for environmental monitoring.",
         "type" : "label"
       } ]
     },
@@ -1045,7 +1045,7 @@
       "IRI-based" : "TaxonRank"
     },
     "attributes" : [ "external" ],
-    "id" : "81"
+    "id" : "80"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/Sample",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -1244,19 +1244,19 @@
         "en" : "Bikang 2 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#jasperGPS",
+      "iri" : "https://w3id.org/def/foo#itaGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.",
+          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Ita.",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "jasperGPS",
-        "en" : "Jasper GPS"
+        "IRI-based" : "itaGPS",
+        "en" : "Ita GPS"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#bikang1GPS",
@@ -1274,19 +1274,19 @@
         "en" : "Bikang 1 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#itaGPS",
+      "iri" : "https://w3id.org/def/foo#jasperGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Ita.",
+          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.",
           "type" : "label"
         } ]
       },
       "labels" : {
-        "IRI-based" : "itaGPS",
-        "en" : "Ita GPS"
+        "IRI-based" : "jasperGPS",
+        "en" : "Jasper GPS"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#sejatiGPS",
@@ -1379,21 +1379,6 @@
         "en" : "Seri GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#aqeelaGPS",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "aqeelaGPS",
-        "en" : "Aqeela GPS"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#cameraTrap",
       "baseIri" : "https://w3id.org/def/foo",
       "labels" : {
@@ -1414,6 +1399,21 @@
       "labels" : {
         "IRI-based" : "jasminGPS",
         "en" : "Jasmin GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#aqeelaGPS",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "aqeelaGPS",
+        "en" : "Aqeela GPS"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#pututGPS",
@@ -1744,18 +1744,18 @@
         "en" : "Merotai"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#abaw",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "abaw",
-        "en" : "Abaw"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#jasmin",
       "baseIri" : "https://w3id.org/def/foo",
       "labels" : {
         "IRI-based" : "jasmin",
         "en" : "Jasmin"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#abaw",
+      "baseIri" : "https://w3id.org/def/foo",
+      "labels" : {
+        "IRI-based" : "abaw",
+        "en" : "Abaw"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#liun",
@@ -2122,12 +2122,12 @@
         "resultTime" : [ {
           "identifier" : "resultTime",
           "language" : "undefined",
-          "value" : "2015-10-26T07:40:35",
+          "value" : "2011-10-26T07:40:35",
           "type" : "label"
         }, {
           "identifier" : "resultTime",
           "language" : "undefined",
-          "value" : "2011-10-26T07:40:35",
+          "value" : "2015-10-26T07:40:35",
           "type" : "label"
         } ],
         "altitude" : [ {
@@ -2156,16 +2156,16 @@
       "iri" : "https://w3id.org/def/foo#TreeObservation",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
-        "treeHeight_m" : [ {
-          "identifier" : "treeHeight_m",
-          "language" : "undefined",
-          "value" : "60",
-          "type" : "label"
-        } ],
         "date" : [ {
           "identifier" : "date",
           "language" : "undefined",
           "value" : "2017-07-21",
+          "type" : "label"
+        } ],
+        "treeHeight_m" : [ {
+          "identifier" : "treeHeight_m",
+          "language" : "undefined",
+          "value" : "60",
           "type" : "label"
         } ],
         "treeID" : [ {
@@ -2174,22 +2174,16 @@
           "value" : "Shorea pauciflora",
           "type" : "label"
         } ],
-        "treeIndividualNo" : [ {
-          "identifier" : "treeIndividualNo",
-          "language" : "undefined",
-          "value" : "2",
-          "type" : "label"
-        } ],
         "lianaDBH_cm" : [ {
           "identifier" : "lianaDBH_cm",
           "language" : "undefined",
           "value" : "10",
           "type" : "label"
         } ],
-        "subplotRadius_m" : [ {
-          "identifier" : "subplotRadius_m",
+        "treeIndividualNo" : [ {
+          "identifier" : "treeIndividualNo",
           "language" : "undefined",
-          "value" : "30",
+          "value" : "2",
           "type" : "label"
         } ],
         "treeNotes" : [ {
@@ -2198,22 +2192,28 @@
           "value" : "",
           "type" : "label"
         } ],
+        "subplotRadius_m" : [ {
+          "identifier" : "subplotRadius_m",
+          "language" : "undefined",
+          "value" : "30",
+          "type" : "label"
+        } ],
         "treeDBH_cm" : [ {
           "identifier" : "treeDBH_cm",
           "language" : "undefined",
           "value" : "110",
           "type" : "label"
         } ],
-        "iD" : [ {
-          "identifier" : "iD",
-          "language" : "undefined",
-          "value" : "TreeObs1",
-          "type" : "label"
-        } ],
         "treeNLianas" : [ {
           "identifier" : "treeNLianas",
           "language" : "undefined",
           "value" : "3",
+          "type" : "label"
+        } ],
+        "iD" : [ {
+          "identifier" : "iD",
+          "language" : "undefined",
+          "value" : "TreeObs1",
           "type" : "label"
         } ]
       },
@@ -2246,16 +2246,16 @@
       "iri" : "https://w3id.org/def/foo#SoilObservation",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
-        "identifier" : [ {
-          "identifier" : "identifier",
-          "language" : "undefined",
-          "value" : "MB4",
-          "type" : "label"
-        } ],
         "sand" : [ {
           "identifier" : "sand",
           "language" : "undefined",
           "value" : "20.66",
+          "type" : "label"
+        } ],
+        "identifier" : [ {
+          "identifier" : "identifier",
+          "language" : "undefined",
+          "value" : "MB4",
           "type" : "label"
         } ],
         "cNRatio" : [ {
@@ -2393,7 +2393,7 @@
     "id" : "78",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "80",
+    "id" : "81",
     "type" : "owl:objectProperty"
   }, {
     "id" : "34",
@@ -2501,10 +2501,10 @@
     "id" : "135",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "104",
+    "id" : "136",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "136",
+    "id" : "104",
     "type" : "owl:objectProperty"
   }, {
     "id" : "137",
@@ -2569,7 +2569,7 @@
     "comment" : {
       "en" : "Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "0"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/observedProperty",
@@ -2609,7 +2609,7 @@
     "comment" : {
       "en" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "2"
   }, {
     "domain" : "4",
@@ -2705,7 +2705,7 @@
     "comment" : {
       "en" : "Relation between an ObservableProperty and the Sensor able to observe it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "25"
   }, {
     "domain" : "20",
@@ -2762,7 +2762,7 @@
     "comment" : {
       "en" : "Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "33"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/actsOnProperty",
@@ -2809,7 +2809,7 @@
     "comment" : {
       "en" : "Relation between an Actuation and the property of a FeatureOfInterest it is acting upon."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "37"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/hasSample",
@@ -2850,7 +2850,7 @@
     "comment" : {
       "en" : "Relation between a FeatureOfInterest and the Sample used to represent it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "38"
   }, {
     "iri" : "https://w3id.org/def/foo#site",
@@ -2891,17 +2891,17 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -2924,7 +2924,7 @@
     "comment" : {
       "en" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "44"
   }, {
     "iri" : "https://w3id.org/def/foo#observes",
@@ -3019,7 +3019,7 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampler",
+        "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -3029,12 +3029,12 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Platform",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
+        "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       } ]
     },
@@ -3046,7 +3046,7 @@
     "comment" : {
       "en" : "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "57"
   }, {
     "iri" : "https://w3id.org/def/foo#ID",
@@ -3099,12 +3099,12 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3132,7 +3132,7 @@
     "comment" : {
       "en" : "Relation linking an Observation or Actuation or act of Sampling and a Result or Sample."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "68"
   }, {
     "iri" : "https://w3id.org/def/foo#clay",
@@ -3210,7 +3210,7 @@
     "comment" : {
       "en" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "26"
   }, {
     "iri" : "https://w3id.org/def/foo#landUse",
@@ -3244,7 +3244,7 @@
       "en" : "Relation linking an Observation to the property that was observed."
     },
     "attributes" : [ "object" ],
-    "id" : "80"
+    "id" : "81"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/madeSampling",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -3283,7 +3283,7 @@
     "comment" : {
       "en" : "Relation between a Sampler (sampling device or entity) and the Sampling act it performed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "34"
   }, {
     "range" : "50",
@@ -3330,23 +3330,23 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       } ]
     },
@@ -3358,7 +3358,7 @@
     "comment" : {
       "en" : "Relation linking a Result to the Observation or Actuation or act of Sampling that created or caused it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "69"
   }, {
     "range" : "92",
@@ -3403,7 +3403,7 @@
     "comment" : {
       "en" : "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "39"
   }, {
     "range" : "23",
@@ -3541,7 +3541,7 @@
     "comment" : {
       "en" : "Relation between an Actuator and the Actuation it has made."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "107"
   }, {
     "iri" : "https://w3id.org/def/foo#isObservedBy",
@@ -3579,22 +3579,22 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Platform",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3612,7 +3612,7 @@
     "comment" : {
       "en" : "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "110"
   }, {
     "iri" : "https://w3id.org/def/foo#count",
@@ -3662,12 +3662,6 @@
         "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
         "type" : "iri"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
-        "type" : "label"
-      } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
@@ -3676,13 +3670,19 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -3693,7 +3693,7 @@
     "comment" : {
       "en" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "52"
   }, {
     "iri" : "https://w3id.org/def/foo#cov",
@@ -3752,7 +3752,7 @@
     "comment" : {
       "en" : "Relation linking an Actuation to the Actuator that made that Actuation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "108"
   }, {
     "iri" : "https://w3id.org/def/foo#temperature",
@@ -3890,17 +3890,17 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ]
     },
@@ -3912,7 +3912,7 @@
     "comment" : {
       "en" : "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "127"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/resultTime",
@@ -3934,7 +3934,7 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -3944,7 +3944,7 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ]
     },
@@ -3997,6 +3997,46 @@
     "attributes" : [ "datatype" ],
     "id" : "135"
   }, {
+    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between a Sensor and an Observation made by the Sensor.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeObservation",
+      "en" : "made observation"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relation between a Sensor and an Observation made by the Sensor."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "136"
+  }, {
     "iri" : "http://www.w3.org/ns/sosa/madeBySensor",
     "inverse" : "136",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -4035,48 +4075,8 @@
     "comment" : {
       "en" : "Relation between an Observation and the Sensor which made the Observation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "104"
-  }, {
-    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
-    "baseIri" : "http://www.w3.org/ns/sosa",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Relation between a Sensor and an Observation made by the Sensor.",
-        "type" : "label"
-      } ],
-      "rangeIncludes" : [ {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
-        "type" : "iri"
-      } ],
-      "domainIncludes" : [ {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "madeObservation",
-      "en" : "made observation"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Relation between a Sensor and an Observation made by the Sensor."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "136"
   }, {
     "iri" : "https://w3id.org/def/foo#longitude",
     "baseIri" : "https://w3id.org/def/foo",
@@ -4160,12 +4160,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -4182,7 +4182,7 @@
     "comment" : {
       "en" : "A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "141"
   }, {
     "iri" : "https://w3id.org/def/foo#localDate",
@@ -4228,12 +4228,12 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "example" : [ {
