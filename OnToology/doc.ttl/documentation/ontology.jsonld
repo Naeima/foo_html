@@ -13,14 +13,14 @@
 }, {
   "@id" : "_:genid2",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Dr. Charith Perera"
+    "@value" : "Dr. Pablo Orozco-terWengel"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-0190-3346"
+    "@id" : "https://orcid.org/0000-0002-7951-4148"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -37,14 +37,14 @@
 }, {
   "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Dr. Pablo Orozco-terWengel"
+    "@value" : "Dr. Charith Perera"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-7951-4148"
+    "@id" : "https://orcid.org/0000-0002-0190-3346"
   } ]
 }, {
   "@id" : "_:genid5",

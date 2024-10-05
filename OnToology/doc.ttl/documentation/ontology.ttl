@@ -38,17 +38,17 @@ _:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/st
           <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
-          <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
+          <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
 _:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
           <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
-          <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+          <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
