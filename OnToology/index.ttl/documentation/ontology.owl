@@ -4,7 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:foo="https://w3id.org/def/foo#"
-     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -15,7 +15,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
+     xmlns:schema="https://schema.org/"
+     xmlns:schema1="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/def/foo#">
         <owl:versionIRI rdf:resource="https://w3id.org/def/foo#V2.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
@@ -37,7 +38,7 @@
         <rdfs:seeAlso rdf:resource="https://naeima.github.io/foo_html/"/>
         <rdfs:seeAlso rdf:resource="https://naeima.github.io/foo_html/index.ttl"/>
         <owl:versionInfo>BBC Wildlife Ontology Reused 26 June 2024</owl:versionInfo>
-        <ns1:status>Active</ns1:status>
+        <ns2:status>Active</ns2:status>
         <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-01T00:00:00+00:00</prov:generatedAtTime>
         <prov:wasAttributedTo rdf:resource="https://github.com/Naeima"/>
         <prov:wasDerivedFrom rdf:resource="https://ontology.forest-observatory.org"/>
@@ -133,13 +134,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/created -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
     <!-- http://purl.org/dc/terms/doi -->
 
 
@@ -154,13 +148,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
     <!-- http://purl.org/dc/terms/publisher -->
 
 
@@ -168,31 +155,10 @@
     
 
 
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#status -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#status"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#definition -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
@@ -242,13 +208,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
@@ -439,13 +398,6 @@
     
 
 
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
-
-
     <!-- http://www.w3.org/2001/XMLSchema#time -->
 
 
@@ -465,34 +417,13 @@
     
 
 
-    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/isFeatureOfInterestOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/madeBySensor -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor"/>
-    
-
-
     <!-- https://w3id.org/def/foo#hasFeatureOfInterest -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/foo#hasFeatureOfInterest">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
     </owl:ObjectProperty>
     
 
@@ -502,7 +433,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/foo#isFeatureOfInterestOf">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
         <rdfs:range rdf:resource="https://w3id.org/def/foo#Observation"/>
         <rdfs:comment xml:lang="en">A relation between a FeatureOfInterest and an Observation about it.</rdfs:comment>
         <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
@@ -898,7 +829,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Animalia">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Kingdom"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
@@ -907,7 +838,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Carnivora">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Order"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
     </owl:Class>
     
 
@@ -916,15 +847,8 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Chordata">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Phylum"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Animalia"/>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/foo#Class -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#Class"/>
     
 
 
@@ -932,8 +856,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Elephantidae">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Family"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Proboscidea"/>
     </owl:Class>
     
 
@@ -941,7 +864,10 @@
     <!-- https://w3id.org/def/foo#ElephasMaximus -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus"/>
+    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
+    </owl:Class>
     
 
 
@@ -959,18 +885,20 @@
     
 
 
-    <!-- https://w3id.org/def/foo#Kingdom -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#Kingdom"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Mammalia -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Mammalia">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Class"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Chordata"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#ManisJavanica -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#ManisJavanica">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
     </owl:Class>
     
 
@@ -989,25 +917,11 @@
     
 
 
-    <!-- https://w3id.org/def/foo#Order -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#Order"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#Phylum -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#Phylum"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Proboscidea -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Proboscidea">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Order"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
     </owl:Class>
     
 
@@ -1023,7 +937,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Reptilia">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Class"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Chordata"/>
     </owl:Class>
     
 
@@ -1046,7 +960,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Squamata">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Order"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Reptilia"/>
     </owl:Class>
     
 
@@ -1157,22 +1071,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#longitude"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
-        <owl:sameAs rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#FeatureOfInterest -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
     
 
 
@@ -1389,6 +1287,22 @@
     
 
 
+    <!-- https://w3id.org/def/foo#Chordata -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Chordata">
+        <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Dara -->
 
 
@@ -1407,7 +1321,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Elephantidae">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
         <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"/>
     </owl:NamedIndividual>
     
@@ -1424,17 +1337,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Chordata"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#FeatureOfInterest -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
     
 
 
@@ -1633,10 +1537,12 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#MalayopythonReticulatus">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#Python"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
         <rdfs:label xml:lang="la">Malayopython reticulatus</rdfs:label>
         <rdfs:label xml:lang="en">Reticulated Python</rdfs:label>
-        <skos:definition xml:lang="en">Malayopython reticulatus, aka the reticulated python...</skos:definition>
+        <skos:definition xml:lang="en">Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -1675,11 +1581,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ManisJavanica">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Animalia"/>
-        <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching...</rdfs:comment>
-        <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
-        <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
-        <skos:definition xml:lang="en">Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor...</skos:definition>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
     </owl:NamedIndividual>
     
 
@@ -1698,15 +1600,15 @@
     
 
 
-    <!-- https://w3id.org/def/foo#Nasalislarvatus -->
+    <!-- https://w3id.org/def/foo#NasalisLarvatus -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Nasalislarvatus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Animalia"/>
-        <rdfs:comment xml:lang="en">Male proboscis monkeys have notably large noses...</rdfs:comment>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#NasalisLarvatus">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
+        <rdfs:comment xml:lang="en">Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male&apos;s harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses.</rdfs:comment>
         <rdfs:label xml:lang="la">Nasalis larvatus</rdfs:label>
         <rdfs:label xml:lang="en">Proboscis Monkey</rdfs:label>
-        <skos:definition xml:lang="en">Nasalis larvatus, aka the proboscis monkey...</skos:definition>
+        <skos:definition xml:lang="en">Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -1722,22 +1624,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Observation"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#Phylum -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Phylum">
-        <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
     
 
 
@@ -1782,18 +1668,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#PututGPS"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#Python -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Python">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Animalia"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Reptilia"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Squamata"/>
-    </owl:NamedIndividual>
     
 
 
@@ -1891,22 +1765,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#Species -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Species">
-        <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Species -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"/>
     
 
 
@@ -2516,6 +2374,13 @@
     
 
 
+    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"/>
+    
+
+
     <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae -->
 
 
@@ -2530,13 +2395,6 @@
     
 
 
-    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
-    
-
-
     <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea -->
 
 
@@ -2548,13 +2406,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia"/>
-    
-
-
-    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Species -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"/>
     
 
 
@@ -2587,21 +2438,26 @@
     <rdf:Description rdf:about="https://w3id.org/def/foo#Carnivora">
         <rdfs:label xml:lang="en-gb">Carnivora</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#Chordata">
+        <rdfs:label xml:lang="en-gb">Chordata</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Elephantidae">
         <rdfs:label xml:lang="en-gb">Elephantidae</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits...</rdfs:comment>
+        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
         <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
         <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
-        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant...</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#FeatureOfInterest">
-        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
-        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation.</skos:definition>
+        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Mammalia">
         <rdfs:label xml:lang="en-gb">Mammalia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#ManisJavanica">
+        <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.</rdfs:comment>
+        <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
+        <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
+        <skos:definition xml:lang="en">Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#ObservableProperty">
         <rdfs:label xml:lang="en">Observable Property</rdfs:label>
@@ -2613,10 +2469,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Proboscidea">
         <rdfs:label xml:lang="en-gb">Proboscidea</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#Python">
-        <rdfs:label xml:lang="en-gb">Python</rdfs:label>
-        <skos:definition xml:lang="en">The Python snake is a member of the family Pythonidae, which consists of large, non-venomous snakes native to Africa, Asia, and Australia. These snakes are known for their method of killing prey through constriction, applying intense pressure to induce cardiac arrest in their prey. Two prominent species are the reticulated python (Python reticulatus), the world’s longest snake, and the Burmese python (Python molurus bivittatus), both of which can grow to impressive sizes, reaching lengths of up to 10 meters</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Reptilia">
         <rdfs:label xml:lang="en-gb">Reptilia</rdfs:label>
