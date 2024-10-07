@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:Squamata" "wo:Phylum" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "foo@en:Animalia" "foo@en:Phylum" "foo@en:ObservableProperty" "foo@en:ElephasMaximus" "foo@en:Sensor" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Species" "foo@en:Observation" "foo@en:Proboscidea" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Squamata" "foo@en:Mammalia" "wo:Genus" "foo@en:Genus" "foo@en:Animalia" "foo@en:ObservableProperty" "foo@en:Sensor" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Species" "foo@en:Reptilia" "foo@en:Observation" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
 	"foo@en:Squamata" -> "wo:Squamata" [ label = "owl:sameAs" ];
 	"foo@en:sejatiGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:sejatiGPS" -> "foo@en:Sejati" [ label = "foo@en:hasFeatureOfInterest" ];
@@ -10,33 +10,34 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:S
 	"foo@en:ElephasMaximus" -> "https://doi.org/10.1016/j.biocon.2016.02.008" [ label = "rdfs:definedBy" ];
 	"foo@en:ElephasMaximus" -> "https://www.iucnredlist.org/species/7140/45818198" [ label = "rdfs:definedBy" ];
 	"foo@en:Reptilia" -> "wo:Reptilia" [ label = "owl:sameAs" ];
-	"foo@en:Python" -> "https://journals.biologists.com/jeb/article/218/21/3364/14434/The-big-squeeze-scaling-of-constriction-pressure" [ label = "rdfs:definedBy" ];
 	"foo@en:guliGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:guliGPS" -> "foo@en:Guli" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:maliauGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:maliauGPS" -> "foo@en:Maliau" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:" -> "https://ontoology.linkeddata.es/" [ label = "dcterms:publisher" ];
+	"foo@en:" -> "77f6b6f94b6c5b803e811671b26fff12" [ label = "dc:creator" ];
+	"foo@en:" -> "6aeb22696e88a1eb19254c8861f9de7a" [ label = "dc:contributor" ];
 	"foo@en:" -> "sosa:" [ label = "owl:imports" ];
 	"foo@en:" -> "foo@en:V2.0" [ label = "owl:versionIRI" ];
 	"foo@en:" -> "https://doi.org/10.1007/978-3-031-43458-7_29" [ label = "dcterms:doi" ];
 	"foo@en:" -> "https://github.com/Naeima" [ label = "prov:wasAttributedTo" ];
-	"foo@en:" -> "7dcf57e1d77eb0c1d08eb00572f01249" [ label = "dc:contributor" ];
-	"foo@en:" -> "3557b060b3d9620edb7ec28db8572425" [ label = "dc:creator" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "cc:license" ];
 	"foo@en:" -> "https://naeima.github.io/foo_html/index.ttl" [ label = "rdfs:seeAlso" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "dcterms:license" ];
 	"foo@en:" -> "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true" [ label = "foaf:logo" ];
-	"foo@en:" -> "4241a2a2586f18bcf3ab478538c7890e" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://ontology.forest-observatory.org" [ label = "prov:wasDerivedFrom" ];
+	"foo@en:" -> "6b83edfd17e94d2136a417176d8502ae" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://naeima.github.io/foo_html/" [ label = "rdfs:seeAlso" ];
-	"foo@en:" -> "06798ebd534df739738cb3c54fc2eb53" [ label = "dc:contributor" ];
-	"foo@en:" -> "767ce1f5b6e617a5a0adc6e703ed134c" [ label = "dc:contributor" ];
+	"foo@en:" -> "08f0817fca7268a4ea4fdf595e196807" [ label = "dc:contributor" ];
+	"foo@en:" -> "753c1a70197b96c4875b91fcd132ce85" [ label = "dc:contributor" ];
 	"foo@en:bikang1GPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:bikang1GPS" -> "foo@en:Bikang1" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:kasihGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:kasihGPS" -> "foo@en:Kasih" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Observation" -> "sosa:Observation" [ label = "owl:sameAs" ];
 	"foo@en:Observation" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
+	"foo@en:Chordata" -> "wo:Chordata" [ label = "owl:sameAs" ];
+	"foo@en:Genus" -> "wo:Genus" [ label = "owl:sameAs" ];
 	"foo@en:GPSObservation" -> "foo@en:TunglapGPS" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:JasminGPS" [ label = "foo@en:madeBySensor" ];
 	"foo@en:GPSObservation" -> "foo@en:MaliauGPS" [ label = "foo@en:madeBySensor" ];
@@ -68,8 +69,6 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:S
 	"foo@en:cameraTrap" -> "foo@en:Image" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:tulidGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:tulidGPS" -> "foo@en:Tulid" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:FeatureOfInterest" -> "sosa:FeatureOfInterest" [ label = "owl:sameAs" ];
-	"foo@en:FeatureOfInterest" -> "https://w3id.org/def/foo" [ label = "rdfs:definedBy" ];
 	"foo@en:daraGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:daraGPS" -> "foo@en:Dara" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Viverridae" -> "wo:Viverridae" [ label = "owl:sameAs" ];
@@ -100,9 +99,9 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:S
 	"foo@en:SoilObservation" -> "foo@en:Soil" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:itaGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:itaGPS" -> "foo@en:Ita" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:NasalisLarvatus" -> "https://doi/10.1126/sciadv.aaq0250" [ label = "rdfs:definedBy" ];
+	"foo@en:NasalisLarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"foo@en:Species" -> "wo:Species" [ label = "owl:sameAs" ];
-	"foo@en:Nasalislarvatus" -> "https://doi/10.1126/sciadv.aaq0250" [ label = "rdfs:definedBy" ];
-	"foo@en:Nasalislarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"foo@en:Proboscidea" -> "wo:Proboscidea" [ label = "owl:sameAs" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "owl:sameAs" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "rdfs:definedBy" ];
@@ -116,7 +115,6 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:S
 	"foo@en:puteriGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:puteriGPS" -> "foo@en:Puteri" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Image" -> "foo@en:" [ label = "rdfs:definedBy" ];
-	"foo@en:Phylum" -> "wo:Phylum" [ label = "owl:sameAs" ];
 	"foo@en:jasperGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:jasperGPS" -> "foo@en:Jasper" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Carnivora" -> "wo:Carnivora" [ label = "owl:sameAs" ];
@@ -162,7 +160,7 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:S
 	"foo@en:ObservableProperty" -> "xsd:time" [ label = "foo@en:gMTTime" ];
 	"foo@en:ObservableProperty" -> "xsd:double" [ label = "foo@en:totalN" ];
 	"foo@en:Observation" -> "xsd:string" [ label = "foo@en:subplot" ];
-	"foo@en:Observation" -> "foo@en:FeatureOfInterest" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:FeatureOfInterest" -> "foo@en:Observation" [ label = "foo@en:isFeatureOfInterestOf" ];
+	"foo@en:Observation" -> "foo@en:Species" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Species" -> "foo@en:Observation" [ label = "foo@en:isFeatureOfInterestOf" ];
 
 }
