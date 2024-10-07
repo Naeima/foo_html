@@ -256,6 +256,13 @@ foo:observes a owl:ObjectProperty ;
     rdfs:range foo:ObservableProperty ;
     owl:inverseOf foo:isObservedBy .
 
+foo:isObservedAs a owl:ObjectProperty ;
+    rdfs:label "observed As@en ;
+    rdfs:comment "Relation between a Feature Of Interest and an creature that it is capable of sensing."@en ;
+    rdfs:domain foo:FeatureOfInterest .
+    
+
+
 ### FOO Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
     rdfs:label "Temperature" ;
