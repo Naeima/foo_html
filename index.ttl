@@ -137,9 +137,8 @@ foo:Squamata a owl:Class ;
 foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Proboscidea ;
-    owl:sameAs wo:Elephantidae ;
-    foo:isObservedAs foo:FeatureOfInterest .
-
+    owl:sameAs wo:Elephantidae.
+  
 #### Species as Individuals ####
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
@@ -193,11 +192,6 @@ foo:Sensor a owl:Class ;
     owl:sameAs sosa:Sensor ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
 
-foo:FeatureOfInterest a owl:Class ;
-    rdfs:label "Feature of Interest"@en ;
-    rdfs:definedBy <https://w3id.org/def/foo> ;
-    owl:sameAs sosa:FeatureOfInterest ;
-    skos:definition "The thing whose property is being estimated or calculated in the course of an Observation."@en .
 
 foo:ObservableProperty a owl:Class ;
     rdfs:label "Observable Property"@en ;
@@ -210,14 +204,14 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:FeatureOfInterest ;
+    rdfs:range foo:Elephantidae  ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
-    rdfs:domain foo:FeatureOfInterest ;
+    rdfs:domain foo:Elephantidae ;
     rdfs:range foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest .
 
