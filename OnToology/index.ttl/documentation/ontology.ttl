@@ -86,10 +86,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> rdf:type owl:AnnotationProperty .
 
@@ -98,28 +94,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#definition
-<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#generatedAtTime
@@ -148,10 +128,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 
 ###  http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
-
-
-###  http://xmlns.com/foaf/0.1/name
-<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/citation
@@ -258,10 +234,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 xsd:anyURL rdf:type rdfs:Datatype .
 
 
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type rdfs:Datatype .
-
-
 ###  http://www.w3.org/2001/XMLSchema#time
 xsd:time rdf:type rdfs:Datatype .
 
@@ -269,18 +241,6 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
-
-###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
-<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3.org/ns/sosa/madeBySensor
-<http://www.w3.org/ns/sosa/madeBySensor> rdf:type owl:ObjectProperty .
-
 
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
@@ -1597,10 +1557,10 @@ xsd:time rdf:type rdfs:Datatype .
 :Elephantidae rdfs:label "Elephantidae"@en-gb .
 
 
-:ElephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
+:ElephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
                 rdfs:label "Asian Elephant"@en ,
                            "Elephas maximus"@la ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant..."@en .
+                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 
 :FeatureOfInterest rdfs:label "Feature of Interest"@en ;
