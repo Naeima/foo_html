@@ -134,7 +134,7 @@ foo:Squamata a owl:Class ;
     rdfs:subClassOf foo:Reptilia ;
     owl:sameAs wo:Squamata .
 
-foo:Primates a foo:Order ;
+foo:Primates a owl:Class ;
     rdfs:label "Primates"@en-gb ;
     rdfs:subClassOf foo:Mammalia .
 
