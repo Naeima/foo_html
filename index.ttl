@@ -152,9 +152,10 @@ foo:Chordata a owl:Class ;
 
 foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae , foo:Chordata ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
-    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
-    skos:definition "Elephas maximus, commonly known as the Asian elephant..."@en .
+    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
+        <https://www.iucnredlist.org/species/7140/45818198> ;
+    skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 #### Observation and Sensor Classes ####
 foo:Observation a owl:Class ;
     rdfs:label "Observation"@en ;
