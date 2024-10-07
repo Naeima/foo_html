@@ -109,7 +109,7 @@ foo:Proboscidea a owl:Class ;
     rdfs:subClassOf foo:Order ;
     owl:sameAs wo:Proboscidea .
 
-foo:Elephantidae a owl:Class, foo:Proboscidea, foo:Mammalia, foo:Chordata, foo:Animalia ;
+foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Family ;
     owl:sameAs wo:Elephantidae .
