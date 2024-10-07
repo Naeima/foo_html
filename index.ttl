@@ -248,13 +248,7 @@ foo:observes a owl:ObjectProperty ;
     rdfs:comment "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
     rdfs:domain foo:Sensor ;
     rdfs:range foo:ObservableProperty ;
-    owl:inverseOf foo:isObservedBy .
-
-foo:isObservedAs a owl:ObjectProperty ;
-    rdfs:label "observed As@en ;
-    rdfs:comment "Relation between a Feature Of Interest and an creature that it is capable of sensing."@en ;
-    rdfs:domain foo:FeatureOfInterest .
-    
+    owl:inverseOf foo:isObservedBy .    
 
 
 ### FOO Data Properties ###
