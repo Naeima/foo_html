@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "foo@en:Python" "foo@en:Squamata" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "foo@en:Animalia" "foo@en:ObservableProperty" "foo@en:ElephasMaximus" "foo@en:Sensor" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Observation" "foo@en:Proboscidea" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:Python" "foo@en:Squamata" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "foo@en:Animalia" "foo@en:ObservableProperty" "foo@en:ElephasMaximus" "foo@en:Sensor" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Species" "foo@en:Reptilia" "foo@en:Observation" "foo@en:Proboscidea" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
 	"sosa:observedProperty" -> "sosa:ObservableProperty" [ label = ":rangeIncludes" ];
 	"sosa:observedProperty" -> "sosa:Observation" [ label = ":domainIncludes" ];
 	"foo@en:Squamata" -> "wo:Squamata" [ label = "owl:sameAs" ];
@@ -20,8 +20,8 @@ node [shape = rectangle, color="orange"]; "foo@en:Python" "foo@en:Squamata" "foo
 	"sosa:isObservedBy" -> "sosa:ObservableProperty" [ label = ":domainIncludes" ];
 	"foo@en:bikang2GPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:bikang2GPS" -> "foo@en:Bikang2" [ label = "foo@en:hasFeatureOfInterest" ];
-	"foo@en:ElephasMaximus" -> "https://doi.org/10.1016/j.biocon.2016.02.008" [ label = "rdfs:definedBy" ];
 	"foo@en:ElephasMaximus" -> "https://www.iucnredlist.org/species/7140/45818198" [ label = "rdfs:definedBy" ];
+	"foo@en:ElephasMaximus" -> "https://doi.org/10.1016/j.biocon.2016.02.008" [ label = "rdfs:definedBy" ];
 	"foo@en:Reptilia" -> "wo:Reptilia" [ label = "owl:sameAs" ];
 	"foo@en:Python" -> "https://journals.biologists.com/jeb/article/218/21/3364/14434/The-big-squeeze-scaling-of-constriction-pressure" [ label = "rdfs:definedBy" ];
 	"foo@en:guliGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
@@ -33,19 +33,19 @@ node [shape = rectangle, color="orange"]; "foo@en:Python" "foo@en:Squamata" "foo
 	"foo@en:" -> "https://ontoology.linkeddata.es/" [ label = "dcterms:publisher" ];
 	"foo@en:" -> "sosa:" [ label = "owl:imports" ];
 	"foo@en:" -> "foo@en:V2.0" [ label = "owl:versionIRI" ];
-	"foo@en:" -> "3ec897c3ff5a503a634236f7b2becbef" [ label = "dc:contributor" ];
-	"foo@en:" -> "a586319c3ac79726451be3df0609a5ad" [ label = "dc:contributor" ];
+	"foo@en:" -> "f286c62d3440ff0fc994b0f7dab543d7" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://doi.org/10.1007/978-3-031-43458-7_29" [ label = "dcterms:doi" ];
 	"foo@en:" -> "https://github.com/Naeima" [ label = "prov:wasAttributedTo" ];
-	"foo@en:" -> "e8c8faf1e06b743874a0fb75c489c82b" [ label = "dc:contributor" ];
-	"foo@en:" -> "7439a944e40e6cce35559f283309829f" [ label = "dc:contributor" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "cc:license" ];
-	"foo@en:" -> "ada987d0c46d47d4cdb9783f8e45b2df" [ label = "dc:creator" ];
+	"foo@en:" -> "9401f6be0a6eca27717c6953e65031ef" [ label = "dc:contributor" ];
+	"foo@en:" -> "140cf3303ee5da884a3479416163765d" [ label = "dc:creator" ];
+	"foo@en:" -> "1118860a1ae2065eea4013f676e1412e" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://naeima.github.io/foo_html/index.ttl" [ label = "rdfs:seeAlso" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "dcterms:license" ];
 	"foo@en:" -> "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true" [ label = "foaf:logo" ];
 	"foo@en:" -> "https://ontology.forest-observatory.org" [ label = "prov:wasDerivedFrom" ];
 	"foo@en:" -> "https://naeima.github.io/foo_html/" [ label = "rdfs:seeAlso" ];
+	"foo@en:" -> "a2ab359518ad282a5d6fc522f8e19206" [ label = "dc:contributor" ];
 	"sosa:phenomenonTime" -> "time:TemporalEntity" [ label = ":rangeIncludes" ];
 	"sosa:phenomenonTime" -> "sosa:Sampling" [ label = ":domainIncludes" ];
 	"sosa:phenomenonTime" -> "sosa:Observation" [ label = ":domainIncludes" ];
@@ -161,13 +161,14 @@ node [shape = rectangle, color="orange"]; "foo@en:Python" "foo@en:Squamata" "foo
 	"foo@en:SoilObservation" -> "foo@en:Soil" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:itaGPS" -> "foo@en:GPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:itaGPS" -> "foo@en:Ita" [ label = "foo@en:hasFeatureOfInterest" ];
+	"foo@en:Species" -> "wo:Species" [ label = "owl:sameAs" ];
 	"sosa:actsOnProperty" -> "sosa:ActuatableProperty" [ label = ":rangeIncludes" ];
 	"sosa:actsOnProperty" -> "sosa:Actuation" [ label = ":domainIncludes" ];
 	"foo@en:Nasalislarvatus" -> "https://doi/10.1126/sciadv.aaq0250" [ label = "rdfs:definedBy" ];
 	"foo@en:Nasalislarvatus" -> "https://doi.org/10.1016/S0006-3207(99)00066-X" [ label = "rdfs:definedBy" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "1a0bfdc9c1ca4ba5d47ea6e03e2eff2f" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
+	"sosa:" -> "e8baea19c64b98b7575d5d2da05ca179" [ label = "dcterms:creator" ];
 	"foo@en:Proboscidea" -> "wo:Proboscidea" [ label = "owl:sameAs" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "owl:sameAs" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "rdfs:definedBy" ];

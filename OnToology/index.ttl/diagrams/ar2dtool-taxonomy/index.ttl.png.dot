@@ -6,6 +6,7 @@ node [shape = rectangle, color="black"]; "foo@en:Squamata" "wo:Phylum" "foo@en:M
 	"foo@en:Chordata" -> "wo:Phylum" [ label = "rdfs:subClassOf" ];
 	"foo@en:Squamata" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
 	"foo@en:Proboscidea" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
+	"foo@en:Elephantidae" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Elephantidae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
 	"foo@en:Viverridae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
 	"foo@en:Carnivora" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];

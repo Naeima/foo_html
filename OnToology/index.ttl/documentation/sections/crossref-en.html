@@ -68,8 +68,7 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#ElephasMaximus" title="https://w3id.org/def/foo#ElephasMaximus">Asian Elephant</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Nasalislarvatus" title="https://w3id.org/def/foo#Nasalislarvatus">Proboscis Monkey</a>
+            <a href="#Nasalislarvatus" title="https://w3id.org/def/foo#Nasalislarvatus">Proboscis Monkey</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Python" title="https://w3id.org/def/foo#Python">Python</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ManisJavanica" title="https://w3id.org/def/foo#ManisJavanica">Sunda Pangolin</a>
             <sup class="type-ni" title="named individual">ni</sup>
@@ -128,11 +127,6 @@ This section provides details for each class and property defined by Forest Obse
                title="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum">phylum</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#ElephasMaximus" title="https://w3id.org/def/foo#ElephasMaximus">Asian Elephant</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="Elephantidae">
@@ -145,7 +139,8 @@ This section provides details for each class and property defined by Forest Obse
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="https://w3id.org/def/foo#Family"
+            <a href="#Mammalia" title="https://w3id.org/def/foo#Mammalia">Mammalia</a>
+            <sup class="type-c" title="class">c</sup>, <a href="https://w3id.org/def/foo#Family"
                target="_blank"
                title="https://w3id.org/def/foo#Family">family</a>
             <sup class="type-c" title="class">c</sup>
@@ -182,10 +177,10 @@ This section provides details for each class and property defined by Forest Obse
                title="https://w3id.org/def/foo#Class">class</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has members</dt>
+         <dt>has sub-classes</dt>
          <dd>
-            <a href="#ElephasMaximus" title="https://w3id.org/def/foo#ElephasMaximus">Asian Elephant</a>
-            <sup class="type-ni" title="named individual">ni</sup>
+            <a href="#Elephantidae" title="https://w3id.org/def/foo#Elephantidae">Elephantidae</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is same as</dt>
          <dd>
@@ -213,11 +208,6 @@ This section provides details for each class and property defined by Forest Obse
                target="_blank"
                title="https://w3id.org/def/foo#Order">order</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#ElephasMaximus" title="https://w3id.org/def/foo#ElephasMaximus">Asian Elephant</a>
-            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is same as</dt>
          <dd>
@@ -1553,6 +1543,11 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#SoilObservation" title="https://w3id.org/def/foo#SoilObservation">Soil Observation</a>
       </li>
       <li>
+         <a href="#Species" title="https://w3id.org/def/foo#Species">
+            <span>species</span>
+         </a>
+      </li>
+      <li>
          <a href="#Squamata" title="https://w3id.org/def/foo#Squamata">
             <span>Squamata</span>
          </a>
@@ -1696,14 +1691,6 @@ This section provides details for each class and property defined by Forest Obse
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#Animalia" title="https://w3id.org/def/foo#Animalia">Animalia</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#Chordata" title="https://w3id.org/def/foo#Chordata">chordata</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
             <a href="#Elephantidae" title="https://w3id.org/def/foo#Elephantidae">Elephantidae</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -1711,14 +1698,6 @@ This section provides details for each class and property defined by Forest Obse
             <a href="https://w3id.org/def/foo#FeatureOfInterest"
                target="_blank"
                title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#Mammalia" title="https://w3id.org/def/foo#Mammalia">Mammalia</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#Proboscidea" title="https://w3id.org/def/foo#Proboscidea">Proboscidea</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is also defined as</dt>
@@ -1917,6 +1896,13 @@ This section provides details for each class and property defined by Forest Obse
       <p>
          <strong>IRI:</strong> https://w3id.org/def/foo#Elephantidae</p>
       <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="https://w3id.org/def/foo#Species"
+               target="_blank"
+               title="https://w3id.org/def/foo#Species">species</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is same as</dt>
          <dd>
             <a href="https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
@@ -1939,7 +1925,7 @@ This section provides details for each class and property defined by Forest Obse
       <dl class="description">
          <dt>is same as</dt>
          <dd>
-            <a href="#d4e2431" title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
+            <a href="#d4e2446" title="https://w3id.org/def/foo#FeatureOfInterest">Feature of Interest</a>
          </dd>
       </dl>
    </div>
@@ -2859,7 +2845,7 @@ This section provides details for each class and property defined by Forest Obse
       <dl class="description">
          <dt>is same as</dt>
          <dd>
-            <a href="#d4e2446" title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
+            <a href="#d4e2461" title="https://w3id.org/def/foo#ObservableProperty">Observable Property</a>
          </dd>
       </dl>
    </div>
@@ -2873,7 +2859,7 @@ This section provides details for each class and property defined by Forest Obse
       <dl class="description">
          <dt>is same as</dt>
          <dd>
-            <a href="#d4e2455" title="https://w3id.org/def/foo#Observation">Observation</a>
+            <a href="#d4e2470" title="https://w3id.org/def/foo#Observation">Observation</a>
          </dd>
       </dl>
    </div>
@@ -3149,7 +3135,7 @@ This section provides details for each class and property defined by Forest Obse
       <dl class="description">
          <dt>is same as</dt>
          <dd>
-            <a href="#d4e2486" title="https://w3id.org/def/foo#Sensor">Sensor</a>
+            <a href="#d4e2501" title="https://w3id.org/def/foo#Sensor">Sensor</a>
          </dd>
       </dl>
    </div>
@@ -3311,6 +3297,24 @@ This section provides details for each class and property defined by Forest Obse
                   title="http://www.w3.org/2001/XMLSchema#double">double</a>
             </span>
          </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Species">
+      <h3>species<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Species</p>
+      <dl class="description">
+         <dt>is same as</dt>
+         <dd>
+            <a href="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
+               target="_blank"
+               title="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species">species</a>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>class</dd>
       </dl>
    </div>
    <div class="entity" id="Squamata">
