@@ -6,7 +6,8 @@
 </head>
 <body>
 <pre>
-@prefix cc: <http://creativecommons.org/ns#> .
+
+ @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -157,12 +158,33 @@ foo:Phylum  a owl:Class ;
 foo:Chordata a owl:Class ;
     rdfs:subClassOf foo:Phylum .
     
-
-foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae , foo:Chordata ;
+foo:ElephasMaximus a owl:Class, foo:Elephantidae, foo:Chordata, foo:FeatureOfInterest ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
-    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
-    skos:definition "Elephas maximus, commonly known as the Asian elephant..."@en .
+    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
+        <https://www.iucnredlist.org/species/7140/45818198> ;
+    skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
+
+
+foo:MalayopythonReticulatus a owl:Class,  foo:Species, foo:Python, foo:FeatureOfInterest ;
+    rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
+    rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
+    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+
+
+foo:ManisJavanica a owl:Class,  foo:Species,  foo:FeatureOfInterest  ;
+    rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
+    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
+    skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
+
+
+foo:Nasalislarvatus a owl:Class,  foo:Species,  foo:FeatureOfInterest;
+    rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
+    rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>, <https://doi/10.1126/sciadv.aaq0250> ;
+    skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
+
 #### Observation and Sensor Classes ####
 foo:Observation a owl:Class ;
     rdfs:label "Observation"@en ;
@@ -572,23 +594,6 @@ foo:tunglap a foo:ElephasMaximus ;
 foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en .
 
-#### Other Animal Instances ####
-foo:MalayopythonReticulatus a foo:Python;
-    rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
-    rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
-    skos:definition "Malayopython reticulatus, aka the reticulated python..."@en .
-
-foo:ManisJavanica a foo:Animalia ;
-    rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
-    rdfs:comment "Manis Javanica is a species critically threatened by poaching..."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
-    skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor..."@en .
-
-foo:Nasalislarvatus a foo:Animalia ;
-    rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
-    rdfs:comment "Male proboscis monkeys have notably large noses..."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>, <https://doi/10.1126/sciadv.aaq0250> ;
-    skos:definition "Nasalis larvatus, aka the proboscis monkey..."@en .
 
 #### Observation Instances ####
 foo:GPSObservation a foo:Observation ;
@@ -672,7 +677,3 @@ foo:Image a foo:FeatureOfInterest ;
     rdfs:label "Camera Trap Image"@en ;
     rdfs:definedBy foo: ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en .
-
-    
-    
-   
