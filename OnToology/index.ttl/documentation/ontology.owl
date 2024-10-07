@@ -1339,12 +1339,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Animalia"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Chordata"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Mammalia"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Proboscidea"/>
     </owl:NamedIndividual>
     
 
