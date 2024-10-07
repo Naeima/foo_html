@@ -112,6 +112,7 @@ foo:Proboscidea a owl:Class ;
 foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Family ;
+    rdfs:subClassOf foo:Mammalia ;
     owl:sameAs wo:Elephantidae .
 
 foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae ;
