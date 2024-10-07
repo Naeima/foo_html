@@ -70,32 +70,17 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2004/02/skos/core#definition
-<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/prov#generatedAtTime
 <http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -117,9 +102,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://xmlns.com/foaf/0.1/name
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://schema.org/citation
 <https://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -144,6 +126,9 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#inorganicP
 <https://w3id.org/def/foo#inorganicP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/foo#isObservedAs
+<https://w3id.org/def/foo#isObservedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/def/foo#lianaDBH_cm
 <https://w3id.org/def/foo#lianaDBH_cm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -205,9 +190,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://www.w3.org/2001/XMLSchema#anyURL
 <http://www.w3.org/2001/XMLSchema#anyURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
-# http://www.w3.org/2001/XMLSchema#date
-<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
-# 
 # http://www.w3.org/2001/XMLSchema#time
 <http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
@@ -219,15 +201,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #
 # #################################################################
 # 
-# 
-# http://www.w3.org/ns/sosa/hasFeatureOfInterest
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3.org/ns/sosa/isFeatureOfInterestOf
-<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://www.w3.org/ns/sosa/madeBySensor
-<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/def/foo#hasFeatureOfInterest
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -467,40 +440,38 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Animalia
 <https://w3id.org/def/foo#Animalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Kingdom> .
-<https://w3id.org/def/foo#Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 # 
 # https://w3id.org/def/foo#Carnivora
 <https://w3id.org/def/foo#Carnivora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Order> .
-<https://w3id.org/def/foo#Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 # 
 # https://w3id.org/def/foo#Chordata
 <https://w3id.org/def/foo#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Phylum> .
-# 
-# https://w3id.org/def/foo#Class
-<https://w3id.org/def/foo#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Animalia> .
 # 
 # https://w3id.org/def/foo#Elephantidae
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Family> .
-<https://w3id.org/def/foo#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Proboscidea> .
 # 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Elephantidae> .
+<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 # 
 # https://w3id.org/def/foo#Family
+<https://w3id.org/def/foo#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/foo#FeatureOfInterest
 <https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/def/foo#Kingdom
-# 
 # https://w3id.org/def/foo#Mammalia
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Class> .
+<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Chordata> .
+# 
+# https://w3id.org/def/foo#ManisJavanica
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 # 
 # https://w3id.org/def/foo#ObservableProperty
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -508,21 +479,16 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#Observation
 <https://w3id.org/def/foo#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/def/foo#Order
-# 
-# https://w3id.org/def/foo#Phylum
-<https://w3id.org/def/foo#Phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/def/foo#Proboscidea
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Order> .
+<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 # 
 # https://w3id.org/def/foo#Python
 <https://w3id.org/def/foo#Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/foo#Reptilia
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Class> .
+<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Chordata> .
 # 
 # https://w3id.org/def/foo#Sensor
 <https://w3id.org/def/foo#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -532,7 +498,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Squamata
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Squamata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Order> .
+<https://w3id.org/def/foo#Squamata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Reptilia> .
 # 
 # https://w3id.org/def/foo#Viverridae
 <https://w3id.org/def/foo#Viverridae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -691,6 +657,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
 # 
+# https://w3id.org/def/foo#Chordata
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
+# 
 # https://w3id.org/def/foo#Dara
 <https://w3id.org/def/foo#Dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -699,7 +672,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Elephantidae
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Species> .
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -707,9 +679,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Chordata> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Elephantidae> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#FeatureOfInterest> .
+<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Species> .
 # 
 # https://w3id.org/def/foo#FeatureOfInterest
 # 
@@ -840,10 +810,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#MalayopythonReticulatus
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#FeatureOfInterest> .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Python> .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Species> .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Malayopython reticulatus"@la .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Reticulated Python"@en .
-<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python..."@en .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 # 
 # https://w3id.org/def/foo#Maliau
 <https://w3id.org/def/foo#Maliau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -859,35 +831,24 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#ManisJavanica
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Animalia> .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#comment> "Manis Javanica is a species critically threatened by poaching..."@en .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Manis javanica"@la .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Sunda Pangolin"@en .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor..."@en .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Species> .
 # 
 # https://w3id.org/def/foo#Merotai
 <https://w3id.org/def/foo#Merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#MerotaiGPS
 # 
-# https://w3id.org/def/foo#Nasalislarvatus
-<https://w3id.org/def/foo#Nasalislarvatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Nasalislarvatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Animalia> .
-<https://w3id.org/def/foo#Nasalislarvatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Male proboscis monkeys have notably large noses..."@en .
-<https://w3id.org/def/foo#Nasalislarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nasalis larvatus"@la .
-<https://w3id.org/def/foo#Nasalislarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscis Monkey"@en .
-<https://w3id.org/def/foo#Nasalislarvatus> <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey..."@en .
+# https://w3id.org/def/foo#NasalisLarvatus
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Species> .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nasalis larvatus"@la .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscis Monkey"@en .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 # 
 # https://w3id.org/def/foo#ObservableProperty
 # 
 # https://w3id.org/def/foo#Observation
-# 
-# https://w3id.org/def/foo#Phylum
-<https://w3id.org/def/foo#Phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Phylum> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum
 # 
 # https://w3id.org/def/foo#Proboscidea
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -905,13 +866,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Putut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#PututGPS
-# 
-# https://w3id.org/def/foo#Python
-<https://w3id.org/def/foo#Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Animalia> .
-<https://w3id.org/def/foo#Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#FeatureOfInterest> .
-<https://w3id.org/def/foo#Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Reptilia> .
-<https://w3id.org/def/foo#Python> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Squamata> .
 # 
 # https://w3id.org/def/foo#Reptilia
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -963,13 +917,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#SoilObservation> <https://w3id.org/def/foo#totalP> "263.74"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://w3id.org/def/foo#SoilSensor
-# 
-# https://w3id.org/def/foo#Species
-<https://w3id.org/def/foo#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Species> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
 # 
 # https://w3id.org/def/foo#Squamata
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1296,17 +1243,15 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
 # 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
+# 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
 # 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum
-# 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
 # 
@@ -1325,17 +1270,25 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 <https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#label> "Carnivora"@en-gb .
 # 
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#label> "Elephantidae"@en-gb .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#label> "Chordata"@en-gb .
 # 
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#comment> "Bornean elephants exhibit distinct morphological and behavioural traits..."@en .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#label> "Elephantidae"@en-gb .
+<https://w3id.org/def/foo#Elephantidae> <https://w3id.org/def/foo#isObservedAs> <https://w3id.org/def/foo#FeatureOfInterest> .
+# 
+<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#comment> "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#label> "Asian Elephant"@en .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#label> "Elephas maximus"@la .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant..."@en .
+<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 # 
 <https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of Interest"@en .
 <https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation."@en .
 # 
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#label> "Mammalia"@en-gb .
+# 
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#comment> "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Manis javanica"@la .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Sunda Pangolin"@en .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 # 
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Property"@en .
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
@@ -1344,9 +1297,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Observation> <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
 # 
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscidea"@en-gb .
-# 
-<https://w3id.org/def/foo#Python> <http://www.w3.org/2000/01/rdf-schema#label> "Python"@en-gb .
-<https://w3id.org/def/foo#Python> <http://www.w3.org/2004/02/skos/core#definition> "The Python snake is a member of the family Pythonidae, which consists of large, non-venomous snakes native to Africa, Asia, and Australia. These snakes are known for their method of killing prey through constriction, applying intense pressure to induce cardiac arrest in their prey. Two prominent species are the reticulated python (Python reticulatus), the world’s longest snake, and the Burmese python (Python molurus bivittatus), both of which can grow to impressive sizes, reaching lengths of up to 10 meters"@en .
 # 
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#label> "Reptilia"@en-gb .
 # 
