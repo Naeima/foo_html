@@ -1,14 +1,14 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/goossensbr"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Professor Omer Rana"
+    "@value" : "Professor Benoit Goossens"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-3597-2646"
+    "@id" : "https://orcid.org/0000-0003-2360-4643"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -25,14 +25,14 @@
 }, {
   "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/goossensbr"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Professor Benoit Goossens"
+    "@value" : "Professor Omer Rana"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-2360-4643"
+    "@id" : "https://orcid.org/0000-0003-3597-2646"
   } ]
 }, {
   "@id" : "_:genid4",

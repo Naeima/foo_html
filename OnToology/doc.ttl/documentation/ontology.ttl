@@ -34,17 +34,17 @@
                              <http://xmlns.com/foaf/0.1/logo> <https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true> ;
                              <https://schema.org/citation> "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
 _:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
 _:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
