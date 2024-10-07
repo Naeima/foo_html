@@ -138,7 +138,14 @@ foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Proboscidea ;
     owl:sameAs wo:Elephantidae.
-  
+
+
+#### Additional Families ####
+foo:Viverridae a owl:Class ;
+    rdfs:label "Viverridae"@en-gb ;
+    rdfs:subClassOf foo:Family ;
+    owl:sameAs wo:Viverridae .
+
 #### Species as Individuals ####
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
@@ -171,11 +178,6 @@ foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Python, foo:
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
     skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
-#### Additional Families ####
-foo:Viverridae a owl:Class ;
-    rdfs:label "Viverridae"@en-gb ;
-    rdfs:subClassOf foo:Family ;
-    owl:sameAs wo:Viverridae .
 
 
 #### Observation and Sensor Classes ####
@@ -203,14 +205,14 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:Elephantidae  ;
+    rdfs:range foo:Species ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
-    rdfs:domain foo:Elephantidae ;
+    rdfs:domain foo:Species ;
     rdfs:range foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest .
 
