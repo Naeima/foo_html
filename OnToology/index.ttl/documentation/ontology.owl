@@ -4,7 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:foo="https://w3id.org/def/foo#"
-     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -15,8 +15,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/"
-     xmlns:schema1="http://schema.org/">
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/def/foo#">
         <owl:versionIRI rdf:resource="https://w3id.org/def/foo#V2.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
@@ -38,7 +37,7 @@
         <rdfs:seeAlso rdf:resource="https://naeima.github.io/foo_html/"/>
         <rdfs:seeAlso rdf:resource="https://naeima.github.io/foo_html/index.ttl"/>
         <owl:versionInfo>BBC Wildlife Ontology Reused 26 June 2024</owl:versionInfo>
-        <ns2:status>Active</ns2:status>
+        <ns1:status>Active</ns1:status>
         <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-01T00:00:00+00:00</prov:generatedAtTime>
         <prov:wasAttributedTo rdf:resource="https://github.com/Naeima"/>
         <prov:wasDerivedFrom rdf:resource="https://ontology.forest-observatory.org"/>
@@ -134,6 +133,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/doi -->
 
 
@@ -148,6 +154,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://purl.org/dc/terms/publisher -->
 
 
@@ -155,10 +168,31 @@
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#status -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
@@ -208,6 +242,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
@@ -398,6 +439,13 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#time -->
 
 
@@ -414,6 +462,27 @@
      -->
 
 
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/isFeatureOfInterestOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeBySensor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor"/>
     
 
 
@@ -847,7 +916,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Chordata">
-        <rdfs:subClassOf rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Phylum"/>
     </owl:Class>
     
 
@@ -864,6 +933,7 @@
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Elephantidae">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Family"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
     </owl:Class>
     
 
@@ -926,6 +996,13 @@
     
 
 
+    <!-- https://w3id.org/def/foo#Phylum -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Phylum"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Proboscidea -->
 
 
@@ -955,6 +1032,13 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Sensor"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#Species -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Species"/>
     
 
 
@@ -1323,6 +1407,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Elephantidae">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
         <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"/>
     </owl:NamedIndividual>
     
@@ -1339,12 +1424,9 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Animalia"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#Chordata"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Mammalia"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Proboscidea"/>
     </owl:NamedIndividual>
     
 
@@ -1643,6 +1725,22 @@
     
 
 
+    <!-- https://w3id.org/def/foo#Phylum -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Phylum">
+        <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Proboscidea -->
 
 
@@ -1793,6 +1891,22 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#Species -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Species">
+        <owl:sameAs rdf:resource="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Species -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"/>
     
 
 
@@ -2416,6 +2530,13 @@
     
 
 
+    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"/>
+    
+
+
     <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea -->
 
 
@@ -2427,6 +2548,13 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia"/>
+    
+
+
+    <!-- https://www.bbc.co.uk/ontologies/wildlife-ontology#Species -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"/>
     
 
 

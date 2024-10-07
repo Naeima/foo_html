@@ -80,16 +80,31 @@
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/doi",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#anyURL",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#time",
@@ -108,6 +123,9 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
@@ -150,13 +168,16 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#hasFeatureOfInterest"
   } ]
 }, {
+  "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#madeBySensor"
   } ]
@@ -177,6 +198,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://github.com/Naeima",
@@ -381,7 +405,7 @@
   "@id" : "https://w3id.org/def/foo#Chordata",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
+    "@id" : "https://w3id.org/def/foo#Phylum"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Class",
@@ -395,12 +419,17 @@
 }, {
   "@id" : "https://w3id.org/def/foo#Elephantidae",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Species"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-gb",
     "@value" : "Elephantidae"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/foo#Family"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Mammalia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
@@ -409,17 +438,11 @@
   "@id" : "https://w3id.org/def/foo#ElephasMaximus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
-  }, {
     "@id" : "https://w3id.org/def/foo#Chordata"
   }, {
     "@id" : "https://w3id.org/def/foo#Elephantidae"
   }, {
     "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Mammalia"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Proboscidea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -817,6 +840,12 @@
   "@id" : "https://w3id.org/def/foo#Order",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Phylum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Proboscidea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -988,6 +1017,12 @@
 }, {
   "@id" : "https://w3id.org/def/foo#SoilSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Species",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Squamata",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -2289,7 +2324,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -2298,7 +2333,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
