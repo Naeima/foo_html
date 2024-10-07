@@ -109,7 +109,7 @@ foo:Proboscidea a owl:Class ;
     rdfs:subClassOf foo:Order ;
     owl:sameAs wo:Proboscidea .
 
-foo:Elephantidae a owl:Class ;
+foo:Elephantidae a owl:Class, foo:Species ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Family ;
     rdfs:subClassOf foo:Mammalia ;
@@ -148,6 +148,9 @@ foo:Viverridae a owl:Class ;
 
 foo:Chordata a owl:Class ;
     rdfs:subClassOf wo:Phylum .
+
+foo:Species a owl:Class ;
+     owl:sameAs  wo:Species .
 
 #### Observation and Sensor Classes ####
 foo:Observation a owl:Class ;
