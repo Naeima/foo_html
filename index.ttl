@@ -98,6 +98,7 @@ wo:TaxonRank a owl:Class .
 foo:Animalia a owl:Class ;
     rdfs:label "Animalia"@en-gb ;
     rdfs:subClassOf owl:Thing ;
+    rdfs:comment  
     owl:sameAs wo:Animalia .
 
 #### Phylum ####
