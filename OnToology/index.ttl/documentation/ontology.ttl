@@ -784,7 +784,11 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Elephantidae
-:Elephantidae rdf:type owl:NamedIndividual ;
+:Elephantidae rdf:type owl:NamedIndividual ,
+                       :Animalia ,
+                       :Chordata ,
+                       :Mammalia ,
+                       :Proboscidea ;
               owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
 
 
@@ -794,12 +798,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:NamedIndividual ,
-                         :Animalia ,
-                         :Chordata ,
                          :Elephantidae ,
-                         :FeatureOfInterest ,
-                         :Mammalia ,
-                         :Proboscidea .
+                         :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#FeatureOfInterest
