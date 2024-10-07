@@ -86,6 +86,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> rdf:type owl:AnnotationProperty .
 
@@ -94,12 +98,28 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#generatedAtTime
@@ -128,6 +148,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 
 ###  http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/citation
@@ -234,6 +258,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 xsd:anyURL rdf:type rdfs:Datatype .
 
 
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#time
 xsd:time rdf:type rdfs:Datatype .
 
@@ -241,6 +269,18 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
@@ -514,7 +554,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#Chordata
 :Chordata rdf:type owl:Class ;
-          rdfs:subClassOf <https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> .
+          rdfs:subClassOf :Phylum .
 
 
 ###  https://w3id.org/def/foo#Class
@@ -523,7 +563,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#Elephantidae
 :Elephantidae rdf:type owl:Class ;
-              rdfs:subClassOf :Family .
+              rdfs:subClassOf :Family ,
+                              :Mammalia .
 
 
 ###  https://w3id.org/def/foo#ElephasMaximus
@@ -559,6 +600,10 @@ xsd:time rdf:type rdfs:Datatype .
 :Order rdf:type owl:Class .
 
 
+###  https://w3id.org/def/foo#Phylum
+:Phylum rdf:type owl:Class .
+
+
 ###  https://w3id.org/def/foo#Proboscidea
 :Proboscidea rdf:type owl:Class ;
              rdfs:subClassOf :Order .
@@ -575,6 +620,10 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#Sensor
 :Sensor rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#Species
+:Species rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Squamata
@@ -784,7 +833,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Elephantidae
-:Elephantidae rdf:type owl:NamedIndividual ;
+:Elephantidae rdf:type owl:NamedIndividual ,
+                       :Species ;
               owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
 
 
@@ -794,12 +844,9 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:NamedIndividual ,
-                         :Animalia ,
                          :Chordata ,
                          :Elephantidae ,
-                         :FeatureOfInterest ,
-                         :Mammalia ,
-                         :Proboscidea .
+                         :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#FeatureOfInterest
@@ -998,6 +1045,15 @@ xsd:time rdf:type rdfs:Datatype .
 :Observation rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Phylum
+:Phylum rdf:type owl:NamedIndividual ;
+        owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/def/foo#Proboscidea
 :Proboscidea rdf:type owl:NamedIndividual ;
              owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> .
@@ -1093,6 +1149,15 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#SoilSensor
 :SoilSensor rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#Species
+:Species rdf:type owl:NamedIndividual ;
+         owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Squamata
@@ -1495,12 +1560,20 @@ xsd:time rdf:type rdfs:Datatype .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> rdf:type owl:NamedIndividual .
 
 
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> rdf:type owl:NamedIndividual .
+
+
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> rdf:type owl:NamedIndividual .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
