@@ -175,6 +175,7 @@ foo:Genus  a owl:Class ;
     owl:sameAs  wo:Genus .
 
 #### Species as Individuals ####
+
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
     rdfs:subClassOf foo:Mammalia ;
