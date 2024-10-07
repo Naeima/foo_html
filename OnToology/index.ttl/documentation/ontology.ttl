@@ -794,12 +794,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:NamedIndividual ,
-                         :Animalia ,
-                         :Chordata ,
                          :Elephantidae ,
-                         :FeatureOfInterest ,
-                         :Mammalia ,
-                         :Proboscidea .
+                         :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#FeatureOfInterest
