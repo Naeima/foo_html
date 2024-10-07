@@ -456,6 +456,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Family> .
 <https://w3id.org/def/foo#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 # 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -492,6 +493,9 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Sensor
 <https://w3id.org/def/foo#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/foo#Species
+<https://w3id.org/def/foo#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/foo#Squamata
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -662,6 +666,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Elephantidae
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Species> .
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -669,12 +674,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Animalia> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Chordata> .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Elephantidae> .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#FeatureOfInterest> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Mammalia> .
-<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Proboscidea> .
 # 
 # https://w3id.org/def/foo#FeatureOfInterest
 # 
@@ -921,6 +922,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#SoilObservation> <https://w3id.org/def/foo#totalP> "263.74"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://w3id.org/def/foo#SoilSensor
+# 
+# https://w3id.org/def/foo#Species
+<https://w3id.org/def/foo#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Species> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
 # 
 # https://w3id.org/def/foo#Squamata
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1254,6 +1262,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
 # 
