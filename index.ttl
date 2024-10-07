@@ -109,17 +109,14 @@ foo:Proboscidea a owl:Class ;
     rdfs:subClassOf foo:Order ;
     owl:sameAs wo:Proboscidea .
 
+foo:Species a owl:Class ;
+     owl:sameAs  wo:Species .
+
 foo:Elephantidae a owl:Class, foo:Species ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Family ;
     rdfs:subClassOf foo:Mammalia ;
     owl:sameAs wo:Elephantidae .
-
-foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae ;
-    rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
-    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
-    skos:definition "Elephas maximus, commonly known as the Asian elephant..."@en .
 
 foo:Carnivora a owl:Class ;
     rdfs:label "Carnivora"@en-gb ;
@@ -146,12 +143,18 @@ foo:Viverridae a owl:Class ;
     rdfs:subClassOf foo:Family ;
     owl:sameAs wo:Viverridae .
 
+foo:Phylum  a owl:Class ;
+    owl:sameAs   wo:Phylum .
+
 foo:Chordata a owl:Class ;
-    rdfs:subClassOf wo:Phylum .
+    rdfs:subClassOf foo:Phylum .
+    
 
-foo:Species a owl:Class ;
-     owl:sameAs  wo:Species .
-
+foo:ElephasMaximus a owl:Class, foo:FeatureOfInterest, foo:Elephantidae , foo:Chordata ;
+    rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ; 
+    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits..."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>, <https://www.iucnredlist.org/species/7140/45818198> ;
+    skos:definition "Elephas maximus, commonly known as the Asian elephant..."@en .
 #### Observation and Sensor Classes ####
 foo:Observation a owl:Class ;
     rdfs:label "Observation"@en ;
