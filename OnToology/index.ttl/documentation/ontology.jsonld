@@ -80,31 +80,16 @@
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/doi",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#anyURL",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#time",
@@ -123,9 +108,6 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
@@ -168,16 +150,13 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#hasFeatureOfInterest"
   } ]
 }, {
-  "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#madeBySensor"
   } ]
@@ -198,9 +177,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/mbox",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://github.com/Naeima",
@@ -359,7 +335,7 @@
     "@value" : "Animalia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Kingdom"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia"
@@ -396,20 +372,24 @@
     "@value" : "Carnivora"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Order"
+    "@id" : "https://w3id.org/def/foo#Mammalia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Chordata",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Chordata"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Phylum"
+    "@id" : "https://w3id.org/def/foo#Animalia"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"
   } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#Class",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Dara",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -419,17 +399,12 @@
 }, {
   "@id" : "https://w3id.org/def/foo#Elephantidae",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Species"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-gb",
     "@value" : "Elephantidae"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Family"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Mammalia"
+    "@id" : "https://w3id.org/def/foo#Proboscidea"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
@@ -438,15 +413,11 @@
   "@id" : "https://w3id.org/def/foo#ElephasMaximus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Chordata"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Elephantidae"
-  }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Bornean elephants exhibit distinct morphological and behavioural traits..."
+    "@value" : "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -455,9 +426,14 @@
     "@language" : "la",
     "@value" : "Elephas maximus"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Elephantidae"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Mammalia"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Elephas maximus, commonly known as the Asian elephant..."
+    "@value" : "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Family",
@@ -686,9 +662,6 @@
   "@id" : "https://w3id.org/def/foo#KasihGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Kingdom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/def/foo#Kuma",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -734,7 +707,11 @@
   "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  }, {
     "@id" : "https://w3id.org/def/foo#Python"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "la",
@@ -745,7 +722,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Malayopython reticulatus, aka the reticulated python..."
+    "@value" : "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Maliau",
@@ -761,20 +738,20 @@
     "@value" : "Mammalia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Class"
+    "@id" : "https://w3id.org/def/foo#Chordata"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ManisJavanica",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Manis Javanica is a species critically threatened by poaching..."
+    "@value" : "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "la",
@@ -783,9 +760,12 @@
     "@language" : "en",
     "@value" : "Sunda Pangolin"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Mammalia"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor..."
+    "@value" : "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Merotai",
@@ -794,14 +774,14 @@
   "@id" : "https://w3id.org/def/foo#MerotaiGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Nasalislarvatus",
+  "@id" : "https://w3id.org/def/foo#NasalisLarvatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Male proboscis monkeys have notably large noses..."
+    "@value" : "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "la",
@@ -812,7 +792,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Nasalis larvatus, aka the proboscis monkey..."
+    "@value" : "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ObservableProperty",
@@ -837,15 +817,6 @@
     "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Order",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/foo#Phylum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/foo#Proboscidea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -853,7 +824,7 @@
     "@value" : "Proboscidea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Order"
+    "@id" : "https://w3id.org/def/foo#Mammalia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea"
@@ -872,24 +843,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Python",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
-  }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Reptilia"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Squamata"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-gb",
-    "@value" : "Python"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "The Python snake is a member of the family Pythonidae, which consists of large, non-venomous snakes native to Africa, Asia, and Australia. These snakes are known for their method of killing prey through constriction, applying intense pressure to induce cardiac arrest in their prey. Two prominent species are the reticulated python (Python reticulatus), the world’s longest snake, and the Burmese python (Python molurus bivittatus), both of which can grow to impressive sizes, reaching lengths of up to 10 meters"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Reptilia",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -898,7 +852,7 @@
     "@value" : "Reptilia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Class"
+    "@id" : "https://w3id.org/def/foo#Chordata"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia"
@@ -1019,10 +973,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Species",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Squamata",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -1031,7 +982,7 @@
     "@value" : "Squamata"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Order"
+    "@id" : "https://w3id.org/def/foo#Reptilia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata"
@@ -2302,6 +2253,9 @@
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -2324,7 +2278,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -2333,7 +2287,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]

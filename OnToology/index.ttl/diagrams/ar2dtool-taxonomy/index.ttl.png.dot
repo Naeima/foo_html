@@ -1,16 +1,18 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "foo@en:Squamata" "foo@en:Mammalia" "foo@en:Animalia" "foo@en:Phylum" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Chordata" "foo@en:Proboscidea" ; /*classes style*/
-	"foo@en:Reptilia" -> "foo@en:Class" [ label = "rdfs:subClassOf" ];
-	"foo@en:Chordata" -> "foo@en:Phylum" [ label = "rdfs:subClassOf" ];
-	"foo@en:Squamata" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
-	"foo@en:Proboscidea" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
-	"foo@en:Elephantidae" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
-	"foo@en:Elephantidae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "foo@en:Squamata" "foo@en:Mammalia" "foo@en:Animalia" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
+	"foo@en:ManisJavanica" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:Reptilia" -> "foo@en:Chordata" [ label = "rdfs:subClassOf" ];
+	"foo@en:Chordata" -> "foo@en:Animalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:Squamata" -> "foo@en:Reptilia" [ label = "rdfs:subClassOf" ];
+	"foo@en:Proboscidea" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:Elephantidae" -> "foo@en:Proboscidea" [ label = "rdfs:subClassOf" ];
 	"foo@en:Viverridae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
-	"foo@en:Carnivora" -> "foo@en:Order" [ label = "rdfs:subClassOf" ];
-	"foo@en:Animalia" -> "foo@en:Kingdom" [ label = "rdfs:subClassOf" ];
-	"foo@en:Mammalia" -> "foo@en:Class" [ label = "rdfs:subClassOf" ];
+	"foo@en:ElephasMaximus" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:ElephasMaximus" -> "foo@en:Elephantidae" [ label = "rdfs:subClassOf" ];
+	"foo@en:Carnivora" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:Animalia" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"foo@en:Mammalia" -> "foo@en:Chordata" [ label = "rdfs:subClassOf" ];
 
 }
