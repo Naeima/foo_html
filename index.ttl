@@ -137,7 +137,8 @@ foo:Squamata a owl:Class ;
 foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Proboscidea ;
-    owl:sameAs wo:Elephantidae .
+    owl:sameAs wo:Elephantidae ;
+    foo:isObservedAs foo:FeatureOfInterest .
 
 #### Species as Individuals ####
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species ;
