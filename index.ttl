@@ -190,7 +190,7 @@ foo:Pythonidae a foo:Family ;
     rdfs:label "Pythonidae"@en ;
     rdfs:subClassOf foo:Squamata .
 
-foo:Malayopython a wo:Genus ;
+foo:Malayopython a foo:Genus ;
     rdfs:label "Malayopython"@en ;
     rdfs:subClassOf foo:Pythonidae .  
 
