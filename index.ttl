@@ -643,10 +643,6 @@ foo:SoilSensor a sosa:Sensor ;
 foo:Soil a owl:NamedIndividual ;
     rdfs:label "Soil"@en .
 
-#### Soil Properties as Observable ####
-foo:SoilProperties a sosa:ObservableProperty ;
-    rdfs:label "Soil Properties"@en .
-
 #### Soil Observation ####
 foo:SoilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
@@ -722,11 +718,6 @@ foo:LianaSensor a foo:Sensor ;
     rdfs:label "Liana Sensor"@en ;
     foo:observes foo:LianaProperties .
 
-#### Liana Properties as Observable ####
-foo:LianaProperties a foo:ObservableProperty ;
-    rdfs:label "Liana Properties"@en .
-
-
 
 ##### Camera Trap Images Modeling #### 
 
@@ -750,8 +741,3 @@ foo:ImageObservation a foo:Observation ;
     foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
     foo:cameraLocation "Danum Valley"^^xsd:string ;
     foo:animalDetected "Jasmin"^^xsd:string .
-
-#### Wildlife Presence Property ####
-foo:WildlifePresence a foo:ObservableProperty ;
-    rdfs:label "Wildlife Presence"@en ;
-    skos:definition "The presence of wildlife as detected by the camera trap."@en .
