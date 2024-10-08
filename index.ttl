@@ -174,8 +174,6 @@ foo:Genus  a owl:Class ;
     rdfs:label  "Species"@en-gb ;
     owl:sameAs  wo:Genus .
 
-
-
 #### Species as Individuals ####
 
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
@@ -190,11 +188,7 @@ foo:Pythonidae a foo:Family ;
     rdfs:label "Pythonidae"@en ;
     rdfs:subClassOf foo:Squamata .
 
-foo:Python a foo:Genus ;
-    rdfs:label "Python"@en ;
-    rdfs:subClassOf foo:Pythonidae .
-
-foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Python ;
+foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Pythonidae ;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
     skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
