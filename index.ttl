@@ -174,6 +174,8 @@ foo:Genus  a owl:Class ;
     rdfs:label  "Species"@en-gb ;
     owl:sameAs  wo:Genus .
 
+
+
 #### Species as Individuals ####
 
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
@@ -183,6 +185,14 @@ foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
         <https://www.iucnredlist.org/species/7140/45818198> ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
+
+foo:Pythonidae a foo:Family ;
+    rdfs:label "Pythonidae"@en ;
+    rdfs:subClassOf foo:Squamata .
+
+foo:Python a foo:Genus ;
+    rdfs:label "Python"@en ;
+    rdfs:subClassOf foo:Pythonidae 
 
 foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Python ;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
