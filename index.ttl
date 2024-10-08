@@ -669,7 +669,7 @@ foo:TreeSensor a foo:Sensor ;
 
 #### Tree as a Feature of Interest ####
 foo:Tree a owl:NamedIndividual ;
-    rdfs:label "Tree"@en ;
+    rdfs:label "Tree"@en .
 
 
 #### Tree Properties as Observable ####
