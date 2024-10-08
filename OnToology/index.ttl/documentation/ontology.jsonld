@@ -430,8 +430,6 @@
   "@id" : "https://w3id.org/def/foo#ElephasMaximus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Elephantidae"
-  }, {
     "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -446,7 +444,7 @@
     "@value" : "Elephas maximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Mammalia"
+    "@id" : "https://w3id.org/def/foo#Elephantidae"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",

@@ -273,7 +273,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_foo@en:ElephasMaximus" target="nid_foo@en:Mammalia">
+    <edge id="eid_rdfs:subClassOf9" source="nid_foo@en:ElephasMaximus" target="nid_foo@en:Elephantidae">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
