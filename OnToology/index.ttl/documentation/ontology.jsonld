@@ -77,35 +77,14 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/doi",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#anyURL",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#time",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
@@ -125,9 +104,6 @@
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -142,12 +118,6 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
-  } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/ObservableProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -168,16 +138,13 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#hasFeatureOfInterest"
   } ]
 }, {
-  "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/def/foo#madeBySensor"
   } ]
@@ -198,9 +165,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/mbox",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://github.com/Naeima",
@@ -359,7 +323,7 @@
     "@value" : "Animalia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Kingdom"
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia"
@@ -389,6 +353,22 @@
   "@id" : "https://w3id.org/def/foo#BinbinganGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#CameraTrap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Camera Trap"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Image"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#ImageObservation"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Carnivora",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -396,20 +376,37 @@
     "@value" : "Carnivora"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Order"
+    "@id" : "https://w3id.org/def/foo#Mammalia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Chordata",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "https://w3id.org/def/foo#Cercopithecidae",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Cercopithecidae"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Phylum"
+    "@id" : "https://w3id.org/def/foo#Primates"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Class",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://w3id.org/def/foo#Chordata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Chordata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Animalia"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Dara",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -419,17 +416,12 @@
 }, {
   "@id" : "https://w3id.org/def/foo#Elephantidae",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Species"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-gb",
     "@value" : "Elephantidae"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Family"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Mammalia"
+    "@id" : "https://w3id.org/def/foo#Proboscidea"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
@@ -438,15 +430,13 @@
   "@id" : "https://w3id.org/def/foo#ElephasMaximus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Chordata"
-  }, {
     "@id" : "https://w3id.org/def/foo#Elephantidae"
   }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Bornean elephants exhibit distinct morphological and behavioural traits..."
+    "@value" : "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -455,27 +445,19 @@
     "@language" : "la",
     "@value" : "Elephas maximus"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Mammalia"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Elephas maximus, commonly known as the Asian elephant..."
+    "@value" : "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Family",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#FeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Feature of Interest"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "The thing whose property is being estimated or calculated in the course of an Observation."
-  } ]
-}, {
   "@id" : "https://w3id.org/def/foo#GPSObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ],
@@ -611,30 +593,24 @@
     "@value" : "24.5"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Genus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Species"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Guli",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#GuliGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#ID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "id"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/foo#Image",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Camera Trap Image"
@@ -653,13 +629,20 @@
     "@language" : "en",
     "@value" : "Image Observation"
   } ],
-  "https://w3id.org/def/foo#date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2017-07-21"
+  "https://w3id.org/def/foo#animalDetected" : [ {
+    "@value" : "Jasmin"
   } ],
-  "https://w3id.org/def/foo#path" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURL",
-    "@value" : "URL"
+  "https://w3id.org/def/foo#cameraLocation" : [ {
+    "@value" : "Danum Valley"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Image"
+  } ],
+  "https://w3id.org/def/foo#imageFile" : [ {
+    "@value" : "wildlife_image_001.jpg"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#CameraTrap"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Ita",
@@ -686,43 +669,43 @@
   "@id" : "https://w3id.org/def/foo#KasihGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Kingdom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/def/foo#Kuma",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#KumaGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Lianas",
+  "@id" : "https://w3id.org/def/foo#LianaProperties",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    "@id" : "https://w3id.org/def/foo#ObservableProperty"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Liana Properties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#LianaSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Liana Sensor"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#LianaProperties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Lianas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Lianas"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Woody climbing plants found in tropical forests..."
-  } ],
-  "https://w3id.org/def/foo#iD" : [ {
-    "@value" : "TS1"
-  } ],
-  "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
-  } ],
-  "https://w3id.org/def/foo#plotNo" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ],
-  "https://w3id.org/def/foo#siteName" : [ {
-    "@value" : "Danum W15"
-  } ],
-  "https://w3id.org/def/foo#sitePlotCode" : [ {
-    "@value" : "F1P1"
+  "https://w3id.org/def/foo#isObservedBy" : [ {
+    "@id" : "https://w3id.org/def/foo#LianaSensor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#LiunGPS",
@@ -731,10 +714,23 @@
   "@id" : "https://w3id.org/def/foo#Luin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@id" : "https://w3id.org/def/foo#Malayopython",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Python"
+    "@id" : "https://w3id.org/def/foo#Genus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Malayopython"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Pythonidae"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "la",
@@ -743,9 +739,12 @@
     "@language" : "en",
     "@value" : "Reticulated Python"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Malayopython"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Malayopython reticulatus, aka the reticulated python..."
+    "@value" : "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Maliau",
@@ -761,20 +760,20 @@
     "@value" : "Mammalia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Class"
+    "@id" : "https://w3id.org/def/foo#Chordata"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ManisJavanica",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Manis Javanica is a species critically threatened by poaching..."
+    "@value" : "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "la",
@@ -783,9 +782,12 @@
     "@language" : "en",
     "@value" : "Sunda Pangolin"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Mammalia"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor..."
+    "@value" : "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Merotai",
@@ -794,14 +796,27 @@
   "@id" : "https://w3id.org/def/foo#MerotaiGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Nasalislarvatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@id" : "https://w3id.org/def/foo#Nasalis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
+    "@id" : "https://w3id.org/def/foo#Genus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Nasalis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Cercopithecidae"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#NasalisLarvatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Male proboscis monkeys have notably large noses..."
+    "@value" : "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "la",
@@ -810,9 +825,12 @@
     "@language" : "en",
     "@value" : "Proboscis Monkey"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Nasalis"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Nasalis larvatus, aka the proboscis monkey..."
+    "@value" : "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ObservableProperty",
@@ -837,13 +855,14 @@
     "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Order",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/foo#Phylum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum"
+  "@id" : "https://w3id.org/def/foo#Primates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Primates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Mammalia"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Proboscidea",
@@ -853,7 +872,7 @@
     "@value" : "Proboscidea"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Order"
+    "@id" : "https://w3id.org/def/foo#Mammalia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea"
@@ -871,24 +890,17 @@
   "@id" : "https://w3id.org/def/foo#PututGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#Python",
+  "@id" : "https://w3id.org/def/foo#Pythonidae",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Animalia"
-  }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Reptilia"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Squamata"
+    "@id" : "https://w3id.org/def/foo#Family"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en-gb",
-    "@value" : "Python"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "The Python snake is a member of the family Pythonidae, which consists of large, non-venomous snakes native to Africa, Asia, and Australia. These snakes are known for their method of killing prey through constriction, applying intense pressure to induce cardiac arrest in their prey. Two prominent species are the reticulated python (Python reticulatus), the world’s longest snake, and the Burmese python (Python molurus bivittatus), both of which can grow to impressive sizes, reaching lengths of up to 10 meters"
+    "@value" : "Pythonidae"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#Squamata"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Reptilia",
@@ -898,7 +910,7 @@
     "@value" : "Reptilia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Class"
+    "@id" : "https://w3id.org/def/foo#Chordata"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia"
@@ -929,20 +941,9 @@
 }, {
   "@id" : "https://w3id.org/def/foo#Soil",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@language" : "en",
-    "@value" : "Elias DM, McNamara NP, Ostle NJ..."
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Soil"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A dataset describing soil properties from organic and mineral soil..."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#SoilObservation",
@@ -1015,11 +1016,38 @@
     "@value" : "263.74"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#SoilProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil Properties"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#SoilSensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil Sensor"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Soil"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#SoilProperties"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Species",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en-gb",
+    "@value" : "Species"
+  } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
   } ]
@@ -1031,10 +1059,20 @@
     "@value" : "Squamata"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/foo#Order"
+    "@id" : "https://w3id.org/def/foo#Reptilia"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Tree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#TreeObservation",
@@ -1051,7 +1089,7 @@
     "@value" : "2017-07-21"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Lianas"
+    "@id" : "https://w3id.org/def/foo#Tree"
   } ],
   "https://w3id.org/def/foo#iD" : [ {
     "@value" : "TreeObs1"
@@ -1061,7 +1099,7 @@
     "@value" : "10"
   } ],
   "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#Lianas"
+    "@id" : "https://w3id.org/def/foo#TreeSensor"
   } ],
   "https://w3id.org/def/foo#subplotRadius_m" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -1088,6 +1126,32 @@
   } ],
   "https://w3id.org/def/foo#treeNotes" : [ {
     "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#TreeProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree Properties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#TreeSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree Sensor"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#TreeProperties"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tulid",
@@ -1121,6 +1185,20 @@
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#WildlifePresence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wildlife Presence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The presence of wildlife as detected by the camera trap."
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#abaw",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1152,6 +1230,9 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#altitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#animalDetected",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/foo#aqeelaGPS",
@@ -1237,21 +1318,8 @@
   "@id" : "https://w3id.org/def/foo#cNRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#cameraTrap",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Sensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Camera Trap"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Image"
-  } ],
-  "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
-  } ]
+  "@id" : "https://w3id.org/def/foo#cameraLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/foo#clay",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1273,7 +1341,7 @@
   "@id" : "https://w3id.org/def/foo#count",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1289,7 +1357,7 @@
   "@id" : "https://w3id.org/def/foo#cov",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Cov"
@@ -1337,7 +1405,7 @@
   "@id" : "https://w3id.org/def/foo#direction",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Direction"
@@ -1352,7 +1420,7 @@
   "@id" : "https://w3id.org/def/foo#distance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1368,7 +1436,7 @@
   "@id" : "https://w3id.org/def/foo#gMTDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GMT Date"
@@ -1383,7 +1451,7 @@
   "@id" : "https://w3id.org/def/foo#gMTTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "GMT Time"
@@ -1418,7 +1486,7 @@
   "@id" : "https://w3id.org/def/foo#hDOP",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HDOP"
@@ -1444,7 +1512,7 @@
     "@value" : "has Feature Of Interest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
@@ -1470,7 +1538,23 @@
   "@id" : "https://w3id.org/def/foo#iD",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#imageFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/foo#inorganicP",
@@ -1483,7 +1567,7 @@
     "@value" : "A relation between a FeatureOfInterest and an Observation about it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    "@id" : "https://w3id.org/def/foo#Species"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1686,7 +1770,7 @@
   "@id" : "https://w3id.org/def/foo#latitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Latitude"
@@ -1734,7 +1818,7 @@
   "@id" : "https://w3id.org/def/foo#localDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Local Date"
@@ -1749,7 +1833,7 @@
   "@id" : "https://w3id.org/def/foo#localTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Local Time"
@@ -1764,7 +1848,7 @@
   "@id" : "https://w3id.org/def/foo#longitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Longitude"
@@ -1910,13 +1994,7 @@
     "@id" : "https://w3id.org/def/foo#ObservableProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#path",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/def/foo#plotName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/foo#plotNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/foo#puteri",
@@ -2079,12 +2157,6 @@
     "@value" : "Geographical area/site which samples were taken from."
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#siteName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/foo#sitePlotCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/def/foo#soilPH",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2104,7 +2176,7 @@
   "@id" : "https://w3id.org/def/foo#speed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Speed"
@@ -2119,7 +2191,7 @@
   "@id" : "https://w3id.org/def/foo#subplot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2139,7 +2211,7 @@
   "@id" : "https://w3id.org/def/foo#temperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ObservableProperty"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Temperature"
@@ -2302,6 +2374,9 @@
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -2312,7 +2387,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -2324,7 +2399,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
