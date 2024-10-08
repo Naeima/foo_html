@@ -696,8 +696,7 @@ foo:TreeObservation a foo:Observation ;
     
     # Link the observation to the feature of interest (tree) and sensor
     foo:hasFeatureOfInterest foo:Tree ;
-    foo:madeBySensor foo:TreeSensor ;
-    
+    foo:madeBySensor foo:TreeSensor .    
 
 #### Lianas as Feature of Interest ####
 foo:Lianas a owl:NamedIndividual ;
