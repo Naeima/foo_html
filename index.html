@@ -106,7 +106,6 @@ wo:TaxonRank a owl:Class .
 foo:Animalia a owl:Class ;
     rdfs:label "Animalia"@en-gb ;
     rdfs:subClassOf owl:Thing ;
-    rdfs:comment  
     owl:sameAs wo:Animalia .
 
 #### Phylum ####
@@ -184,7 +183,7 @@ foo:Genus  a owl:Class ;
     owl:sameAs  wo:Genus .
 
 #### Species as Individuals ####
-
+### Elephant ###
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
     rdfs:subClassOf foo:Mammalia ;
@@ -193,11 +192,24 @@ foo:ElephasMaximus a owl:NamedIndividual, foo:Species, foo:Elephantidae  ;
         <https://www.iucnredlist.org/species/7140/45818198> ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
-foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Python ;
+### Python (Snake)####
+
+foo:Pythonidae a foo:Family ;
+    rdfs:label "Pythonidae"@en ;
+    rdfs:subClassOf foo:Squamata .
+
+foo:Malayopython a foo:Genus ;
+    rdfs:label "Malayopython"@en ;
+    rdfs:subClassOf foo:Pythonidae .  
+
+foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species ;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
-    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
+    rdfs:subClassOf foo:Malayopython .  
 
+
+### Sunda Pangolin ###
 
 foo:ManisJavanica a owl:NamedIndividual, foo:Species ;
     rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
@@ -205,6 +217,7 @@ foo:ManisJavanica a owl:NamedIndividual, foo:Species ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
     skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
+
 
 
 #### Observation and Sensor Classes ####
@@ -219,7 +232,6 @@ foo:Sensor a owl:Class ;
     rdfs:definedBy sosa:Sensor ;
     owl:sameAs sosa:Sensor ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
-
 
 foo:ObservableProperty a owl:Class ;
     rdfs:label "Observable Property"@en ;
@@ -280,144 +292,242 @@ foo:observes a owl:ObjectProperty ;
 
 
 ### FOO Data Properties ###
+
+### GPS Observation Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
     rdfs:label "Temperature" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     skos:definition "Estimated temperature of the elephant in Celsius at the moment of data collection." .
 
-foo:clay a owl:DatatypeProperty ;
-    rdfs:label "Clay"@en ;
-    rdfs:domain foo:ObservableProperty ;
-    rdfs:range xsd:double ;
-    skos:definition "Clay content of the soil sample."@en .
-
 foo:count a owl:DatatypeProperty ;
     rdfs:label "Count"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:integer ;
     skos:definition "Observation count per data set." .
 
 foo:cov a owl:DatatypeProperty ;
     rdfs:label "Cov" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     skos:definition "TBC" .
 
 foo:direction a owl:DatatypeProperty ;
     rdfs:label "Direction" ;
-    rdfs:domain foo:ObservableProperty;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:integer ;
     skos:definition "Direction of elephant travel at the moment of data collection." .
 
 foo:distance a owl:DatatypeProperty ;
     rdfs:label "Distance"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     skos:definition "Distance (m) travelled from the last to the current data collection point." .
 
 foo:gMTDate a owl:DatatypeProperty ;
     rdfs:label "GMT Date" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:date ;
     skos:definition "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
 
 foo:gMTTime a owl:DatatypeProperty ;
     rdfs:label "GMT Time" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:time ;
     skos:definition "The GMT time in Sabah, Malaysia, when the GPS collar records its readings." .
 
 foo:hDOP a owl:DatatypeProperty ;
     rdfs:label "HDOP" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     skos:definition "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
 
 foo:horizon a owl:DatatypeProperty ;
     rdfs:label "Horizon"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:string ;
     skos:definition "Soil horizon sampled."@en .
 
-foo:ID a owl:DatatypeProperty ;
+foo:id a owl:DatatypeProperty ;
     rdfs:label "id"@en ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
 
 foo:landUse a owl:DatatypeProperty ;
     rdfs:label "Land Use"@en ;
-    rdfs:domain foo:ObservableProperty;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:string ;
     skos:definition "Land use of the study plots."@en .
 
 foo:latitude a owl:DatatypeProperty ;
     rdfs:label "Latitude" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     owl:sameAs pos:lat ;
     skos:definition "Latitudinal coordinate of the elephant." .
 
 foo:localDate a owl:DatatypeProperty ;
     rdfs:label "Local Date" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:date ;
     skos:definition "The local date in Sabah, Malaysia." .
 
 foo:localTime a owl:DatatypeProperty ;
     rdfs:label "Local Time" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:time ;
     skos:definition "The local time in Sabah, Malaysia." .
 
 foo:longitude a owl:DatatypeProperty ;
     rdfs:label "Longitude" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     owl:sameAs pos:long ;
     skos:definition "Longitudinal coordinate of the elephant." .
 
+foo:speed a owl:DatatypeProperty ;
+    rdfs:label "Speed" ;
+    rdfs:domain foo:GPSObservation ;
+    rdfs:range xsd:double ;
+    skos:definition "Speed of the elephant at the moment of data collection." .
+
+
+### Soil Data Properties ###
+
+foo:clay a owl:DatatypeProperty ;
+    rdfs:label "Clay"@en ;
+    rdfs:domain foo:SoilObservation  ;
+    rdfs:range xsd:double ;
+    skos:definition "Clay content of the soil sample."@en .
+
 foo:silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Silt content of the soil sample."@en .
 
 foo:site a owl:DatatypeProperty ;
     rdfs:label "Site"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:string ;
     skos:definition "Geographical area/site which samples were taken from."@en .
 
 foo:soilPH a owl:DatatypeProperty ;
     rdfs:label "Soil PH" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Measured pH of the soil sample."@en .
 
-foo:speed a owl:DatatypeProperty ;
-    rdfs:label "Speed" ;
-    rdfs:domain foo:ObservableProperty ;
-    rdfs:range xsd:double ;
-    skos:definition "Speed of the elephant at the moment of data collection." .
-
 foo:subplot a owl:DatatypeProperty ;
     rdfs:label "subPlot"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:string ;
     skos:definition "Number of the subplot sampled within each 1 Ha plot."@en .
 
 foo:totalC a owl:DatatypeProperty ;
     rdfs:label "Total C"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Total carbon content of the soil sample."@en .
 
 foo:totalN a owl:DatatypeProperty ;
     rdfs:label "Total N"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Total nitrogen content of the soil sample."@en .
+
+### Tree Observation Data Properties ###
+
+foo:lianaDBH_cm  owl:DatatypeProperty ;
+    rdfs:label "lianaDBH_cm 10a"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:string .
+
+ foo:subplotRadius_m a owl:DatatypeProperty ;
+    rdfs:label "SubplotRadius_m 30"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+
+ foo:treeDBH_cm a owl:DatatypeProperty ;
+    rdfs:label "TreeDBH_cm 110"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+
+ foo:treeHeight_m   a owl:DatatypeProperty ;
+    rdfs:label "treeHeight_m 60"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+
+ foo:treeID  a owl:DatatypeProperty ;
+    rdfs:label "TreeID"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:string .
+
+ foo:treeDBH_cm  a owl:DatatypeProperty ;
+    rdfs:label "TreeDBH_cm 110"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+    
+ foo:treeIndividualNo  a owl:DatatypeProperty ;
+    rdfs:label "TreeIndividualNo"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:integer .
+
+ foo:treeIndividualNo  a owl:DatatypeProperty ;
+    rdfs:label "TreeIndividualNo"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:integer .
+
+
+### Camera Trap Image Data Properties ###
+foo:name a owl:DatatypeProperty ;
+    rdfs:label "Image Name"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:string ;
+    skos:definition "The name assigned to an image at collection time."@en .
+
+foo:path a owl:DatatypeProperty ;
+    rdfs:label "Image Path"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:anyURI ;
+    skos:definition "The URI pointing to the location of the image in secure cloud storage."@en .
+
+foo:localDate a owl:DatatypeProperty ;
+    rdfs:label "Local Date"@en ;
+    rdfs:domain foo:ImageObservation;
+    rdfs:range xsd:date ;
+    skos:definition "The current local date in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:localTime a owl:DatatypeProperty ;
+    rdfs:label "Local Time"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:time ;
+    skos:definition "The current local time in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:gMTDate a owl:DatatypeProperty ;
+    rdfs:label "GMT Date"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:date ;
+    skos:definition "The GMT date in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:gMTTime a owl:DatatypeProperty ;
+    rdfs:label "GMT Time"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:time ;
+    skos:definition "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:model a owl:DatatypeProperty ;
+    rdfs:label "Camera Model"@en ;
+    rdfs:domain foo:Observation ;
+    rdfs:range xsd:string ;
+    skos:definition "The model of the trail camera used to capture the image."@en .
+
+foo:make a owl:DatatypeProperty ;
+    rdfs:label "Camera Make"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:string ;
+    skos:definition "The make of the trail camera used to capture the image."@en .
+
 
 ### FOO Instances ###
 #### Sensor Instances ####
@@ -444,7 +554,6 @@ foo:binbinganGPS a foo:Sensor ;
     foo:hasFeatureOfInterest foo:Binbingan ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en ;
     foo:observes foo:GPSObservation .
-
 
 foo:guliGPS a foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
@@ -554,10 +663,6 @@ foo:abawGPS a foo:Sensor ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en ;
     foo:observes foo:GPSObservation .
 
-foo:cameraTrap a foo:Sensor ;
-    rdfs:label "Camera Trap"@en ;
-    foo:hasFeatureOfInterest foo:Image ;
-    foo:observes foo:ImageObservation .
 
 #### Animal Instances ####
 
@@ -612,8 +717,6 @@ foo:tunglap a foo:ElephasMaximus ;
 foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en .
 
-
-#### Observation Instances ####
 foo:GPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
     foo:altitude 1.17e+01, 1.67e+01 ;
@@ -635,8 +738,23 @@ foo:GPSObservation a foo:Observation ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
+
+####Soil Modeling ####
+#### Soil Sensor ####
+foo:SoilSensor a sosa:Sensor ;
+    rdfs:label "Soil Sensor"@en ;
+    foo:observes foo:SoilProperties ;
+    foo:hasFeatureOfInterest foo:Soil .
+
+#### Soil ####
+foo:Soil a owl:NamedIndividual ;
+    rdfs:label "Soil"@en .
+
+#### Soil Observation ####
 foo:SoilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
+    
+    # Soil properties observed
     foo:cNRatio 1.424e+01 ;
     foo:clay 6.288e+01 ;
     foo:horizon "Organic"^^xsd:string ;
@@ -652,46 +770,81 @@ foo:SoilObservation a foo:Observation ;
     foo:totalC 5.45e+00 ;
     foo:totalN 3.8e-01 ;
     foo:totalP 2.6374e+02 ;
+    
+    # Link the observation to the soil feature and sensor
     foo:hasFeatureOfInterest foo:Soil ;
     foo:madeBySensor foo:SoilSensor .
+    
 
+
+#### Tree Modeling ####
+
+foo:TreeSensor a foo:Sensor ;
+    rdfs:label "Tree Sensor"@en ;
+    foo:observes foo:TreeProperties ;
+    foo:hasFeatureOfInterest foo:Tree .
+
+#### Tree as a Feature of Interest ####
+foo:Tree a owl:NamedIndividual, foo:Species;
+    rdfs:label "Tree"@en .
+
+
+#### Tree Properties as Observable ####
+foo:TreeProperties a sosa:ObservableProperty ;
+    rdfs:label "Tree Properties"@en .
+
+#### Tree Observation ####
 foo:TreeObservation a foo:Observation ;
     rdfs:label "Tree Observation"@en ;
+    
+    # Observation metadata
     foo:date "2017-07-21"^^xsd:date ;
     foo:iD "TreeObs1" ;
+    
+    # Tree measurements
     foo:lianaDBH_cm 10 ;
     foo:subplotRadius_m 30 ;
     foo:treeDBH_cm 110 ;
     foo:treeHeight_m 60 ;
-    foo:treeID "Shorea pauciflora" ;
+    foo:treeID "Shorea pauciflora"^^xsd:string ;
     foo:treeIndividualNo 2 ;
     foo:treeNLianas 3 ;
-    foo:treeNotes "" ;
-    foo:hasFeatureOfInterest foo:Lianas ;
-    foo:madeBySensor foo:Lianas .
+    foo:treeNotes ""^^xsd:string ;
+    
+    # Link the observation to the feature of interest (tree) and sensor
+    foo:hasFeatureOfInterest foo:Tree ;
+    foo:madeBySensor foo:TreeSensor .    
 
-foo:ImageObservation  a foo:Observation ;
-    rdfs:label "Image Observation"@en ;
-    foo:date "2017-07-21"^^xsd:date ;
-    foo:path "URL"^^xsd:anyURL . 
-
-### Feature of Interest Instances ###
-foo:Lianas a foo:FeatureOfInterest ;
+#### Lianas as Feature of Interest ####
+foo:Lianas a owl:NamedIndividual ;
     rdfs:label "Lianas"@en ;
-    rdfs:definedBy foo: ;
-    skos:definition "Woody climbing plants found in tropical forests..."@en ;
-    foo:iD "TS1" ;
-    foo:plotNo 1 ;
-    foo:siteName "Danum W15" ;
-    foo:sitePlotCode "F1P1" ;
-    foo:observes foo:TreeObservation .
+    foo:isObservedBy foo:LianaSensor .
 
-foo:Soil a foo:FeatureOfInterest ;
-    rdfs:label "Soil"@en ;
-    dcterms:bibliographicCitation "Elias DM, McNamara NP, Ostle NJ..."@en ;
-    skos:definition "A dataset describing soil properties from organic and mineral soil..."@en .
+#### Liana Sensor ####
+foo:LianaSensor a foo:Sensor ;
+    rdfs:label "Liana Sensor"@en ;
+    foo:observes foo:LianaProperties .
 
-foo:Image a foo:FeatureOfInterest ;
+
+##### Camera Trap Images Modeling #### 
+
+#### Camera Trap Sensor ####
+foo:CameraTrap a foo:Sensor ;
+    rdfs:label "Camera Trap"@en ;
+    foo:observes foo:ImageObservation ;
+    foo:hasFeatureOfInterest foo:Image .
+
+#### Image as a Feature of Interest ####
+foo:Image a owl:NamedIndividual ;
     rdfs:label "Camera Trap Image"@en ;
-    rdfs:definedBy foo: ;
-    skos:definition "Image generated by motion-activated wildlife cameras."@en .
+    skos:definition "Image generated by motion-activated wildlife cameras."@en ;
+    rdfs:definedBy <http://w3id.org/def/foo#> .
+
+#### Image Observation ####
+foo:ImageObservation a foo:Observation ;
+    rdfs:label "Image Observation"@en ;
+    foo:hasFeatureOfInterest foo:Image ;
+    foo:madeBySensor foo:CameraTrap ;
+    foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
+    foo:cameraLocation "Danum Valley"^^xsd:string ;
+    foo:animalDetected "Jasmin"^^xsd:string .
