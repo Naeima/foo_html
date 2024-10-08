@@ -282,18 +282,15 @@ foo:observes a owl:ObjectProperty ;
     rdfs:range foo:ObservableProperty ;
     owl:inverseOf foo:isObservedBy .    
 
+
 ### FOO Data Properties ###
+
+### GPS Observation Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
     rdfs:label "Temperature" ;
     rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:double ;
     skos:definition "Estimated temperature of the elephant in Celsius at the moment of data collection." .
-
-foo:clay a owl:DatatypeProperty ;
-    rdfs:label "Clay"@en ;
-    rdfs:domain foo:ObservableProperty ;
-    rdfs:range xsd:double ;
-    skos:definition "Clay content of the soil sample."@en .
 
 foo:count a owl:DatatypeProperty ;
     rdfs:label "Count"@en ;
@@ -380,6 +377,21 @@ foo:longitude a owl:DatatypeProperty ;
     owl:sameAs pos:long ;
     skos:definition "Longitudinal coordinate of the elephant." .
 
+foo:speed a owl:DatatypeProperty ;
+    rdfs:label "Speed" ;
+    rdfs:domain foo:GPSObservation ;
+    rdfs:range xsd:double ;
+    skos:definition "Speed of the elephant at the moment of data collection." .
+
+
+### Soil Data Properties ###
+
+foo:clay a owl:DatatypeProperty ;
+    rdfs:label "Clay"@en ;
+    rdfs:domain foo:SoilObservation  ;
+    rdfs:range xsd:double ;
+    skos:definition "Clay content of the soil sample."@en .
+
 foo:silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
     rdfs:domain foo:SoilObservation ;
@@ -398,12 +410,6 @@ foo:soilPH a owl:DatatypeProperty ;
     rdfs:range xsd:double ;
     skos:definition "Measured pH of the soil sample."@en .
 
-foo:speed a owl:DatatypeProperty ;
-    rdfs:label "Speed" ;
-    rdfs:domain foo:GPSObservation ;
-    rdfs:range xsd:double ;
-    skos:definition "Speed of the elephant at the moment of data collection." .
-
 foo:subplot a owl:DatatypeProperty ;
     rdfs:label "subPlot"@en ;
     rdfs:domain foo:GPSObservation ;
@@ -421,6 +427,99 @@ foo:totalN a owl:DatatypeProperty ;
     rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Total nitrogen content of the soil sample."@en .
+
+### Tree Observation Data Properties ###
+
+foo:lianaDBH_cm  owl:DatatypeProperty ;
+    rdfs:label "lianaDBH_cm 10a"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:string .
+
+ foo:subplotRadius_m a owl:DatatypeProperty ;
+    rdfs:label "SubplotRadius_m 30"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+
+ foo:treeDBH_cm a owl:DatatypeProperty ;
+    rdfs:label "TreeDBH_cm 110"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+
+ foo:treeHeight_m   a owl:DatatypeProperty ;
+    rdfs:label "treeHeight_m 60"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+
+ foo:treeID  a owl:DatatypeProperty ;
+    rdfs:label "TreeID"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:string .
+
+ foo:treeDBH_cm  a owl:DatatypeProperty ;
+    rdfs:label "TreeDBH_cm 110"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:float .
+    
+ foo:treeIndividualNo  a owl:DatatypeProperty ;
+    rdfs:label "TreeIndividualNo"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:integer .
+
+ foo:treeIndividualNo  a owl:DatatypeProperty ;
+    rdfs:label "TreeIndividualNo"@en ;
+    rdfs:domain foo:TreeObservation ;
+    rdfs:range xsd:integer .
+
+
+### Camera Trap Image Data Properties ###
+foo:name a owl:DatatypeProperty ;
+    rdfs:label "Image Name"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:string ;
+    skos:definition "The name assigned to an image at collection time."@en .
+
+foo:path a owl:DatatypeProperty ;
+    rdfs:label "Image Path"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:anyURI ;
+    skos:definition "The URI pointing to the location of the image in secure cloud storage."@en .
+
+foo:localDate a owl:DatatypeProperty ;
+    rdfs:label "Local Date"@en ;
+    rdfs:domain foo:ImageObservation;
+    rdfs:range xsd:date ;
+    skos:definition "The current local date in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:localTime a owl:DatatypeProperty ;
+    rdfs:label "Local Time"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:time ;
+    skos:definition "The current local time in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:gMTDate a owl:DatatypeProperty ;
+    rdfs:label "GMT Date"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:date ;
+    skos:definition "The GMT date in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:gMTTime a owl:DatatypeProperty ;
+    rdfs:label "GMT Time"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:time ;
+    skos:definition "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."@en .
+
+foo:model a owl:DatatypeProperty ;
+    rdfs:label "Camera Model"@en ;
+    rdfs:domain foo:Observation ;
+    rdfs:range xsd:string ;
+    skos:definition "The model of the trail camera used to capture the image."@en .
+
+foo:make a owl:DatatypeProperty ;
+    rdfs:label "Camera Make"@en ;
+    rdfs:domain foo:ImageObservation ;
+    rdfs:range xsd:string ;
+    skos:definition "The make of the trail camera used to capture the image."@en .
+
 
 ### FOO Instances ###
 #### Sensor Instances ####
