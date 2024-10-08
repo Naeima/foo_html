@@ -661,8 +661,8 @@ foo:SoilObservation a foo:Observation ;
 
 
 #### Tree Modeling ####
-#### Tree Sensor ####
-foo:TreeSensor a sosa:Sensor ;
+
+foo:TreeSensor a foo:Sensor ;
     rdfs:label "Tree Sensor"@en ;
     foo:observes foo:TreeProperties ;
     foo:hasFeatureOfInterest foo:Tree .
