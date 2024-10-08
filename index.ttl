@@ -350,7 +350,7 @@ foo:id a owl:DatatypeProperty ;
 
 foo:landUse a owl:DatatypeProperty ;
     rdfs:label "Land Use"@en ;
-    rdfs:domain foo:ObservableProperty;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:string ;
     skos:definition "Land use of the study plots."@en .
 
@@ -382,19 +382,19 @@ foo:longitude a owl:DatatypeProperty ;
 
 foo:silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Silt content of the soil sample."@en .
 
 foo:site a owl:DatatypeProperty ;
     rdfs:label "Site"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:string ;
     skos:definition "Geographical area/site which samples were taken from."@en .
 
 foo:soilPH a owl:DatatypeProperty ;
     rdfs:label "Soil PH" ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Measured pH of the soil sample."@en .
 
@@ -412,13 +412,13 @@ foo:subplot a owl:DatatypeProperty ;
 
 foo:totalC a owl:DatatypeProperty ;
     rdfs:label "Total C"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Total carbon content of the soil sample."@en .
 
 foo:totalN a owl:DatatypeProperty ;
     rdfs:label "Total N"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:double ;
     skos:definition "Total nitrogen content of the soil sample."@en .
 
