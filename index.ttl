@@ -656,7 +656,7 @@ foo:SoilObservation a foo:Observation ;
     
     # Link the observation to the soil feature and sensor
     foo:hasFeatureOfInterest foo:Soil ;
-    foo:madeBySensor foo:SoilSensor ;
+    foo:madeBySensor foo:SoilSensor .
     
 
 
