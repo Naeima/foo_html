@@ -212,7 +212,6 @@ foo:Sensor a owl:Class ;
     owl:sameAs sosa:Sensor ;
     skos:definition "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
 
-
 foo:ObservableProperty a owl:Class ;
     rdfs:label "Observable Property"@en ;
     rdfs:definedBy <https://w3id.org/def/foo> ;
@@ -269,7 +268,6 @@ foo:observes a owl:ObjectProperty ;
     rdfs:domain foo:Sensor ;
     rdfs:range foo:ObservableProperty ;
     owl:inverseOf foo:isObservedBy .    
-
 
 ### FOO Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
@@ -332,7 +330,7 @@ foo:horizon a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Soil horizon sampled."@en .
 
-foo:ID a owl:DatatypeProperty ;
+foo:id a owl:DatatypeProperty ;
     rdfs:label "id"@en ;
     rdfs:domain foo:Observation ;
     rdfs:range xsd:string .
@@ -436,7 +434,6 @@ foo:binbinganGPS a foo:Sensor ;
     foo:hasFeatureOfInterest foo:Binbingan ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en ;
     foo:observes foo:GPSObservation .
-
 
 foo:guliGPS a foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
@@ -546,10 +543,6 @@ foo:abawGPS a foo:Sensor ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en ;
     foo:observes foo:GPSObservation .
 
-foo:cameraTrap a foo:Sensor ;
-    rdfs:label "Camera Trap"@en ;
-    foo:hasFeatureOfInterest foo:Image ;
-    foo:observes foo:ImageObservation .
 
 #### Animal Instances ####
 
@@ -604,8 +597,6 @@ foo:tunglap a foo:ElephasMaximus ;
 foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en .
 
-
-#### Observation Instances ####
 foo:GPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
     foo:altitude 1.17e+01, 1.67e+01 ;
@@ -627,8 +618,27 @@ foo:GPSObservation a foo:Observation ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
+
+####Soil Modeling ####
+#### Soil Sensor ####
+foo:SoilSensor a sosa:Sensor ;
+    rdfs:label "Soil Sensor"@en ;
+    sosa:observes foo:SoilProperties ;
+    sosa:hasFeatureOfInterest foo:Soil .
+
+#### Soil ####
+foo:Soil a owl:NamedIndividual ;
+    rdfs:label "Soil"@en .
+
+#### Soil Properties as Observable ####
+foo:SoilProperties a sosa:ObservableProperty ;
+    rdfs:label "Soil Properties"@en .
+
+#### Soil Observation ####
 foo:SoilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
+    
+    # Soil properties observed
     foo:cNRatio 1.424e+01 ;
     foo:clay 6.288e+01 ;
     foo:horizon "Organic"^^xsd:string ;
@@ -644,46 +654,98 @@ foo:SoilObservation a foo:Observation ;
     foo:totalC 5.45e+00 ;
     foo:totalN 3.8e-01 ;
     foo:totalP 2.6374e+02 ;
+    
+    # Link the observation to the soil feature and sensor
     foo:hasFeatureOfInterest foo:Soil ;
-    foo:madeBySensor foo:SoilSensor .
+    foo:madeBySensor foo:SoilSensor ;
+    
+    # Additional metadata for observation
+    sosa:resultTime "2024-10-07T10:00:00"^^xsd:dateTime ;
+    sosa:observedProperty foo:SoilProperties .
 
+
+#### Tree Modeling ####
+#### Tree Sensor ####
+foo:TreeSensor a sosa:Sensor ;
+    rdfs:label "Tree Sensor"@en ;
+    sosa:observes foo:TreeProperties ;
+    sosa:hasFeatureOfInterest foo:Tree .
+
+#### Tree as a Feature of Interest ####
+foo:Tree a owl:NamedIndividual ;
+    rdfs:label "Tree"@en ;
+
+
+#### Tree Properties as Observable ####
+foo:TreeProperties a sosa:ObservableProperty ;
+    rdfs:label "Tree Properties"@en .
+
+#### Tree Observation ####
 foo:TreeObservation a foo:Observation ;
     rdfs:label "Tree Observation"@en ;
+    
+    # Observation metadata
     foo:date "2017-07-21"^^xsd:date ;
     foo:iD "TreeObs1" ;
+    
+    # Tree measurements
     foo:lianaDBH_cm 10 ;
     foo:subplotRadius_m 30 ;
     foo:treeDBH_cm 110 ;
     foo:treeHeight_m 60 ;
-    foo:treeID "Shorea pauciflora" ;
+    foo:treeID "Shorea pauciflora"^^xsd:string ;
     foo:treeIndividualNo 2 ;
     foo:treeNLianas 3 ;
-    foo:treeNotes "" ;
-    foo:hasFeatureOfInterest foo:Lianas ;
-    foo:madeBySensor foo:Lianas .
+    foo:treeNotes ""^^xsd:string ;
+    
+    # Link the observation to the feature of interest (tree) and sensor
+    foo:hasFeatureOfInterest foo:Tree ;
+    foo:madeBySensor foo:TreeSensor ;
+    
+    # Additional metadata for observation
+    foo:resultTime "2017-07-21T10:00:00"^^xsd:dateTime ;
+    foo:observedProperty foo:TreeProperties .
 
-foo:ImageObservation  a foo:Observation ;
-    rdfs:label "Image Observation"@en ;
-    foo:date "2017-07-21"^^xsd:date ;
-    foo:path "URL"^^xsd:anyURL . 
-
-### Feature of Interest Instances ###
-foo:Lianas a foo:FeatureOfInterest ;
+#### Lianas as Feature of Interest ####
+foo:Lianas a owl:NamedIndividual ;
     rdfs:label "Lianas"@en ;
-    rdfs:definedBy foo: ;
-    skos:definition "Woody climbing plants found in tropical forests..."@en ;
-    foo:iD "TS1" ;
-    foo:plotNo 1 ;
-    foo:siteName "Danum W15" ;
-    foo:sitePlotCode "F1P1" ;
-    foo:observes foo:TreeObservation .
+    sosa:isObservedBy foo:LianaSensor .
 
-foo:Soil a foo:FeatureOfInterest ;
-    rdfs:label "Soil"@en ;
-    dcterms:bibliographicCitation "Elias DM, McNamara NP, Ostle NJ..."@en ;
-    skos:definition "A dataset describing soil properties from organic and mineral soil..."@en .
+#### Liana Sensor ####
+foo:LianaSensor a foo:Sensor ;
+    rdfs:label "Liana Sensor"@en ;
+    foo:observes foo:LianaProperties .
 
-foo:Image a foo:FeatureOfInterest ;
+#### Liana Properties as Observable ####
+foo:LianaProperties a foo:ObservableProperty ;
+    rdfs:label "Liana Properties"@en .
+
+##### Camera Trap Images Modeling #### 
+
+#### Camera Trap Sensor ####
+foo:CameraTrap a foo:Sensor ;
+    rdfs:label "Camera Trap"@en ;
+    sosa:observes foo:ImageObservation ;
+    sosa:hasFeatureOfInterest foo:Image .
+
+#### Image as a Feature of Interest ####
+foo:Image a owl:NamedIndividual ;
     rdfs:label "Camera Trap Image"@en ;
-    rdfs:definedBy foo: ;
-    skos:definition "Image generated by motion-activated wildlife cameras."@en .
+    skos:definition "Image generated by motion-activated wildlife cameras."@en ;
+    rdfs:definedBy <http://example.org/ontology/Image> .
+
+#### Image Observation ####
+foo:ImageObservation a foo:Observation ;
+    rdfs:label "Image Observation"@en ;
+    sosa:resultTime "2024-10-07T12:00:00"^^xsd:dateTime ;
+    sosa:observedProperty foo:WildlifePresence ;
+    sosa:hasFeatureOfInterest foo:Image ;
+    sosa:madeBySensor foo:CameraTrap ;
+    foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
+    foo:cameraLocation "Forest Clearing"^^xsd:string ;
+    foo:animalDetected "Panthera pardus"^^xsd:string .
+
+#### Wildlife Presence Property ####
+foo:WildlifePresence a foo:ObservableProperty ;
+    rdfs:label "Wildlife Presence"@en ;
+    skos:definition "The presence of wildlife as detected by the camera trap."@en .
