@@ -734,8 +734,8 @@ foo:ImageObservation a foo:Observation ;
     foo:hasFeatureOfInterest foo:Image ;
     foo:madeBySensor foo:CameraTrap ;
     foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
-    foo:cameraLocation "Forest Clearing"^^xsd:string ;
-    foo:animalDetected "Panthera pardus"^^xsd:string .
+    foo:cameraLocation "Danum Valley"^^xsd:string ;
+    foo:animalDetected "Jasmin"^^xsd:string .
 
 #### Wildlife Presence Property ####
 foo:WildlifePresence a foo:ObservableProperty ;
