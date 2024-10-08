@@ -668,7 +668,7 @@ foo:TreeSensor a foo:Sensor ;
     foo:hasFeatureOfInterest foo:Tree .
 
 #### Tree as a Feature of Interest ####
-foo:Tree a owl:NamedIndividual ;
+foo:Tree a owl:NamedIndividual, foo:Species;
     rdfs:label "Tree"@en .
 
 
@@ -711,6 +711,8 @@ foo:LianaSensor a foo:Sensor ;
 #### Liana Properties as Observable ####
 foo:LianaProperties a foo:ObservableProperty ;
     rdfs:label "Liana Properties"@en .
+
+
 
 ##### Camera Trap Images Modeling #### 
 
