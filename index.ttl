@@ -192,7 +192,7 @@ foo:Pythonidae a foo:Family ;
 
 foo:Python a foo:Genus ;
     rdfs:label "Python"@en ;
-    rdfs:subClassOf foo:Pythonidae 
+    rdfs:subClassOf foo:Pythonidae .
 
 foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Python ;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
