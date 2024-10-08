@@ -339,7 +339,7 @@ foo:hDOP a owl:DatatypeProperty ;
 
 foo:horizon a owl:DatatypeProperty ;
     rdfs:label "Horizon"@en ;
-    rdfs:domain foo:ObservableProperty ;
+    rdfs:domain foo:SoilObservation ;
     rdfs:range xsd:string ;
     skos:definition "Soil horizon sampled."@en .
 
