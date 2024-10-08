@@ -10,11 +10,14 @@
     "abstract" : {
       "@id" : "http://purl.org/dc/elements/1.1/abstract"
     },
+    "Primates" : {
+      "@id" : "https://w3id.org/def/foo#Primates"
+    },
     "affiliation" : {
       "@id" : "http://xmlns.com/foaf/0.1/affiliation"
     },
     "Order" : {
-      "@id" : "https://w3id.org/def/foo#Order"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Order"
     },
     "cNRatio" : {
       "@id" : "https://w3id.org/def/foo#cNRatio"
@@ -25,6 +28,9 @@
     "created" : {
       "@id" : "http://purl.org/dc/terms/created"
     },
+    "NasalisLarvatus" : {
+      "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
+    },
     "generatedAtTime" : {
       "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
     },
@@ -32,10 +38,11 @@
       "@id" : "http://purl.org/dc/terms/license"
     },
     "Kingdom" : {
-      "@id" : "https://w3id.org/def/foo#Kingdom"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom"
     },
     "treeHeight_m" : {
-      "@id" : "https://w3id.org/def/foo#treeHeight_m"
+      "@id" : "https://w3id.org/def/foo#treeHeight_m",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "citation" : {
       "@id" : "https://schema.org/citation"
@@ -43,8 +50,9 @@
     "Animalia" : {
       "@id" : "https://w3id.org/def/foo#Animalia"
     },
-    "bibliographicCitation" : {
-      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    "model" : {
+      "@id" : "https://w3id.org/def/foo#model",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Organization" : {
       "@id" : "http://xmlns.com/foaf/0.1/Organization"
@@ -52,12 +60,15 @@
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
     "soilPH" : {
       "@id" : "https://w3id.org/def/foo#soilPH",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
-    "FeatureOfInterest" : {
-      "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    "Malayopython" : {
+      "@id" : "https://w3id.org/def/foo#Malayopython"
     },
     "wasAttributedTo" : {
       "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
@@ -65,14 +76,18 @@
     "Class" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class"
     },
+    "imageFile" : {
+      "@id" : "https://w3id.org/def/foo#imageFile"
+    },
     "Elephantidae" : {
       "@id" : "https://w3id.org/def/foo#Elephantidae"
     },
-    "Python" : {
-      "@id" : "https://w3id.org/def/foo#Python"
+    "Nasalis" : {
+      "@id" : "https://w3id.org/def/foo#Nasalis"
     },
     "subplotRadius_m" : {
-      "@id" : "https://w3id.org/def/foo#subplotRadius_m"
+      "@id" : "https://w3id.org/def/foo#subplotRadius_m",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "madeBySensor" : {
       "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
@@ -90,6 +105,9 @@
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "cameraLocation" : {
+      "@id" : "https://w3id.org/def/foo#cameraLocation"
     },
     "doi" : {
       "@id" : "http://purl.org/dc/terms/doi"
@@ -109,10 +127,15 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#time"
     },
     "path" : {
-      "@id" : "https://w3id.org/def/foo#path"
+      "@id" : "https://w3id.org/def/foo#path",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "treeNotes" : {
       "@id" : "https://w3id.org/def/foo#treeNotes"
+    },
+    "id" : {
+      "@id" : "https://w3id.org/def/foo#id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Viverridae" : {
       "@id" : "https://w3id.org/def/foo#Viverridae"
@@ -144,6 +167,12 @@
     "resultTime" : {
       "@id" : "https://w3id.org/def/foo#resultTime"
     },
+    "Cercopithecidae" : {
+      "@id" : "https://w3id.org/def/foo#Cercopithecidae"
+    },
+    "animalDetected" : {
+      "@id" : "https://w3id.org/def/foo#animalDetected"
+    },
     "Agent" : {
       "@id" : "http://www.w3.org/ns/prov#Agent"
     },
@@ -151,11 +180,15 @@
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
     "name" : {
-      "@id" : "http://xmlns.com/foaf/0.1/name"
+      "@id" : "https://w3id.org/def/foo#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "clay" : {
       "@id" : "https://w3id.org/def/foo#clay",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ManisJavanica" : {
+      "@id" : "https://w3id.org/def/foo#ManisJavanica"
     },
     "treeNLianas" : {
       "@id" : "https://w3id.org/def/foo#treeNLianas"
@@ -163,8 +196,9 @@
     "wasDerivedFrom" : {
       "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
     },
-    "sitePlotCode" : {
-      "@id" : "https://w3id.org/def/foo#sitePlotCode"
+    "make" : {
+      "@id" : "https://w3id.org/def/foo#make",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "temperature" : {
       "@id" : "https://w3id.org/def/foo#temperature",
@@ -176,13 +210,6 @@
     },
     "Family" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family"
-    },
-    "plotNo" : {
-      "@id" : "https://w3id.org/def/foo#plotNo"
-    },
-    "ID" : {
-      "@id" : "https://w3id.org/def/foo#ID",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "status" : {
       "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status"
@@ -215,6 +242,9 @@
       "@id" : "https://w3id.org/def/foo#gMTDate",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
+    "Pythonidae" : {
+      "@id" : "https://w3id.org/def/foo#Pythonidae"
+    },
     "totalC" : {
       "@id" : "https://w3id.org/def/foo#totalC",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
@@ -231,7 +261,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "Genus" : {
-      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
+      "@id" : "https://w3id.org/def/foo#Genus"
     },
     "Reptilia" : {
       "@id" : "https://w3id.org/def/foo#Reptilia"
@@ -269,10 +299,12 @@
       "@type" : "@id"
     },
     "lianaDBH_cm" : {
-      "@id" : "https://w3id.org/def/foo#lianaDBH_cm"
+      "@id" : "https://w3id.org/def/foo#lianaDBH_cm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "treeIndividualNo" : {
-      "@id" : "https://w3id.org/def/foo#treeIndividualNo"
+      "@id" : "https://w3id.org/def/foo#treeIndividualNo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "gMTTime" : {
       "@id" : "https://w3id.org/def/foo#gMTTime",
@@ -301,13 +333,14 @@
       "@id" : "https://w3id.org/def/foo#ElephasMaximus"
     },
     "treeDBH_cm" : {
-      "@id" : "https://w3id.org/def/foo#treeDBH_cm"
+      "@id" : "https://w3id.org/def/foo#treeDBH_cm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "ObservableProperty" : {
-      "@id" : "https://w3id.org/def/foo#ObservableProperty"
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
@@ -317,10 +350,10 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
     "Species" : {
-      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
+      "@id" : "https://w3id.org/def/foo#Species"
     },
-    "siteName" : {
-      "@id" : "https://w3id.org/def/foo#siteName"
+    "MalayopythonReticulatus" : {
+      "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
     },
     "Squamata" : {
       "@id" : "https://w3id.org/def/foo#Squamata"
@@ -338,14 +371,18 @@
       "@id" : "https://w3id.org/def/foo#horizon",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "GPSObservation" : {
+      "@id" : "https://w3id.org/def/foo#GPSObservation"
+    },
     "treeID" : {
-      "@id" : "https://w3id.org/def/foo#treeID"
+      "@id" : "https://w3id.org/def/foo#treeID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Observation" : {
       "@id" : "https://w3id.org/def/foo#Observation"
     },
     "Sensor" : {
-      "@id" : "https://w3id.org/def/foo#Sensor"
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
     },
     "isFeatureOfInterestOf" : {
       "@id" : "https://w3id.org/def/foo#isFeatureOfInterestOf",
