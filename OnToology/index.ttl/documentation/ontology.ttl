@@ -579,7 +579,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:Class ;
-                rdfs:subClassOf :Mammalia .
+                rdfs:subClassOf :Elephantidae .
 
 
 ###  https://w3id.org/def/foo#Family
@@ -903,7 +903,6 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:NamedIndividual ,
-                         :Elephantidae ,
                          :Species .
 
 
