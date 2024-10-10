@@ -11,7 +11,7 @@ node [shape = rectangle, color="black"]; "foo@en:Squamata" "foo@en:Mammalia" "fo
 	"foo@en:ManisJavanica" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Nasalis" -> "foo@en:Cercopithecidae" [ label = "rdfs:subClassOf" ];
 	"foo@en:Viverridae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
-	"foo@en:ElephasMaximus" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:ElephasMaximus" -> "foo@en:Elephantidae" [ label = "rdfs:subClassOf" ];
 	"foo@en:Animalia" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"foo@en:Malayopython" -> "foo@en:Pythonidae" [ label = "rdfs:subClassOf" ];
 	"foo@en:Carnivora" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
