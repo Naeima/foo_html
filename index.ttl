@@ -172,7 +172,7 @@ foo:Species  a owl:Class ;
     owl:sameAs  wo:Species .
 
 foo:Genus  a owl:Class ;
-    rdfs:label  "Species"@en-gb ;
+    rdfs:label  "Genus"@en-gb ;
     owl:sameAs  wo:Genus .
 
 #### Species as Individuals ####
