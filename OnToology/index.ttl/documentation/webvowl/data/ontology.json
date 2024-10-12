@@ -74,11 +74,6 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483653",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "_:genid2147483654",
         "type" : "label"
       }, {
@@ -90,6 +85,11 @@
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "_:genid2147483655",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483653",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -110,12 +110,6 @@
         "value" : "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true",
         "type" : "iri"
       } ],
-      "generatedAtTime" : [ {
-        "identifier" : "generatedAtTime",
-        "language" : "undefined",
-        "value" : "2024-06-01T00:00:00+00:00",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
@@ -127,6 +121,12 @@
         "language" : "undefined",
         "value" : "https://github.com/Naeima",
         "type" : "iri"
+      } ],
+      "generatedAtTime" : [ {
+        "identifier" : "generatedAtTime",
+        "language" : "undefined",
+        "value" : "2024-06-01T00:00:00+00:00",
+        "type" : "label"
       } ],
       "issued" : [ {
         "identifier" : "issued",
@@ -288,7 +288,7 @@
     "id" : "79",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "106",
+    "id" : "108",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "69",
@@ -378,7 +378,7 @@
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "131",
+    "id" : "133",
     "type" : "owl:Class"
   }, {
     "id" : "173",
@@ -396,7 +396,7 @@
     "id" : "111",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "108",
+    "id" : "106",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "65",
@@ -475,6 +475,14 @@
     "iri" : "https://w3id.org/def/foo#Elephantidae",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Elephantidae",
       "en-gb" : "Elephantidae"
@@ -610,6 +618,14 @@
     "iri" : "https://w3id.org/def/foo#Chordata",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Chordata",
       "en-gb" : "Chordata"
@@ -625,23 +641,23 @@
       "resultTime" : [ {
         "identifier" : "resultTime",
         "language" : "undefined",
-        "value" : "2011-10-26T07:40:35",
+        "value" : "2015-10-26T07:40:35",
         "type" : "label"
       }, {
         "identifier" : "resultTime",
         "language" : "undefined",
-        "value" : "2015-10-26T07:40:35",
+        "value" : "2011-10-26T07:40:35",
         "type" : "label"
       } ],
       "altitude" : [ {
         "identifier" : "altitude",
         "language" : "undefined",
-        "value" : "16.7",
+        "value" : "11.7",
         "type" : "label"
       }, {
         "identifier" : "altitude",
         "language" : "undefined",
-        "value" : "11.7",
+        "value" : "16.7",
         "type" : "label"
       } ],
       "iD" : [ {
@@ -768,18 +784,18 @@
         "en" : "Seri"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#putut",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "putut",
-        "en" : "Putut"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#tulid",
       "baseIri" : "https://w3id.org/def/foo",
       "labels" : {
         "IRI-based" : "tulid",
         "en" : "Tulid"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#putut",
+      "baseIri" : "https://w3id.org/def/foo",
+      "labels" : {
+        "IRI-based" : "putut",
+        "en" : "Putut"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#kuma",
@@ -1125,6 +1141,14 @@
     "iri" : "https://w3id.org/def/foo#Reptilia",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Reptilia",
       "en-gb" : "Reptilia"
@@ -1253,37 +1277,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Establishing a station for environmental monitoring.",
+        "value" : "Crushing a rock sample in a ball mill.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Registering an image of the landscape.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Digging a pit through a soil sequence.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Splitting a piece of drill-core to create two new samples.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Taking a diamond-drill core from a rock outcrop.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Drawing blood from a patient.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Crushing a rock sample in a ball mill.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1298,12 +1297,37 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Selecting a subset of a population.",
+        "value" : "Drawing blood from a patient.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Splitting a piece of drill-core to create two new samples.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Establishing a station for environmental monitoring.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Dividing a field site into quadrants.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Digging a pit through a soil sequence.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Taking a diamond-drill core from a rock outcrop.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Selecting a subset of a population.",
         "type" : "label"
       } ]
     },
@@ -1329,6 +1353,14 @@
     "iri" : "https://w3id.org/def/foo#Carnivora",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Carnivora",
       "en-gb" : "Carnivora"
@@ -1366,7 +1398,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "106",
+    "id" : "108",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1596,7 +1628,7 @@
       "en" : "Sample"
     },
     "comment" : {
-      "en" : "Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made."
+      "en" : "Physical samples are sometimes known as 'specimens'."
     },
     "attributes" : [ "external" ],
     "id" : "134"
@@ -1871,13 +1903,6 @@
         "en" : "Bikang 1 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#LianaSensor",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "LianaSensor",
-        "en" : "Liana Sensor"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#sejatiGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -1891,6 +1916,13 @@
       "labels" : {
         "IRI-based" : "sejatiGPS",
         "en" : "Sejati GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#LianaSensor",
+      "baseIri" : "https://w3id.org/def/foo",
+      "labels" : {
+        "IRI-based" : "LianaSensor",
+        "en" : "Liana Sensor"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#tulidGPS",
@@ -2081,16 +2113,16 @@
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
     "annotations" : {
-      "sand" : [ {
-        "identifier" : "sand",
-        "language" : "undefined",
-        "value" : "20.66",
-        "type" : "label"
-      } ],
       "identifier" : [ {
         "identifier" : "identifier",
         "language" : "undefined",
         "value" : "MB4",
+        "type" : "label"
+      } ],
+      "sand" : [ {
+        "identifier" : "sand",
+        "language" : "undefined",
+        "value" : "20.66",
         "type" : "label"
       } ],
       "cNRatio" : [ {
@@ -2127,6 +2159,14 @@
     "iri" : "https://w3id.org/def/foo#Proboscidea",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Proboscidea",
       "en-gb" : "Proboscidea"
@@ -2138,6 +2178,14 @@
     "iri" : "https://w3id.org/def/foo#Species",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 4,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Generic class defining a biological species.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Species",
       "en-gb" : "Species"
@@ -2171,7 +2219,7 @@
     "comment" : {
       "en" : "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."
     },
-    "id" : "131",
+    "id" : "133",
     "superClasses" : [ "31" ]
   }, {
     "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
@@ -2218,11 +2266,19 @@
     "iri" : "https://w3id.org/def/foo#Mammalia",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Mammalia",
       "en-gb" : "Mammalia"
     },
-    "subClasses" : [ "109", "8", "131", "30" ],
+    "subClasses" : [ "109", "8", "133", "30" ],
     "id" : "31",
     "superClasses" : [ "43" ]
   }, {
@@ -2249,7 +2305,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "108",
+    "id" : "106",
     "label" : {
       "IRI-based" : "double"
     }
@@ -2311,6 +2367,14 @@
     "iri" : "https://w3id.org/def/foo#Animalia",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "Animalia",
       "en-gb" : "Animalia"
@@ -2585,10 +2649,10 @@
     "id" : "130",
     "type" : "rdf:Property"
   }, {
-    "id" : "132",
+    "id" : "131",
     "type" : "rdf:Property"
   }, {
-    "id" : "133",
+    "id" : "132",
     "type" : "rdf:Property"
   }, {
     "id" : "135",
@@ -2755,7 +2819,7 @@
     "comment" : {
       "en" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "0"
   }, {
     "iri" : "https://w3id.org/def/foo#madeBySensor",
@@ -2792,12 +2856,12 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -2808,12 +2872,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
         "type" : "iri"
       } ]
     },
@@ -2825,7 +2889,7 @@
     "comment" : {
       "en" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "10"
   }, {
     "iri" : "https://w3id.org/def/foo#observes",
@@ -2878,22 +2942,22 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Platform",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuator",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
         "type" : "iri"
       } ]
     },
@@ -2905,7 +2969,7 @@
     "comment" : {
       "en" : "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "16"
   }, {
     "iri" : "https://w3id.org/def/foo#silt",
@@ -3021,7 +3085,7 @@
     "comment" : {
       "en" : "Relation between a Sampler (sampling device or entity) and the Sampling act it performed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "33"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/isResultOf",
@@ -3043,7 +3107,7 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3053,18 +3117,18 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ]
     },
@@ -3076,7 +3140,7 @@
     "comment" : {
       "en" : "Relation linking a Result to the Observation or Actuation or act of Sampling that created or caused it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "34"
   }, {
     "iri" : "https://w3id.org/def/foo#path",
@@ -3167,22 +3231,22 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampler",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuator",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Platform",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3200,7 +3264,7 @@
     "comment" : {
       "en" : "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "49"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
@@ -3231,12 +3295,6 @@
         "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
         "type" : "iri"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
-        "type" : "label"
-      } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
@@ -3252,6 +3310,12 @@
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -3262,7 +3326,7 @@
     "comment" : {
       "en" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "50"
   }, {
     "iri" : "https://w3id.org/def/foo#cov",
@@ -3343,17 +3407,17 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ]
     },
@@ -3365,7 +3429,7 @@
     "comment" : {
       "en" : "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "59"
   }, {
     "iri" : "https://w3id.org/def/foo#gMTDate",
@@ -3475,12 +3539,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -3497,7 +3561,7 @@
     "comment" : {
       "en" : "A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "76"
   }, {
     "iri" : "https://w3id.org/def/foo#localDate",
@@ -3506,13 +3570,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The current local date in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The local date in Sabah, Malaysia.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The local date in Sabah, Malaysia.",
+        "language" : "en",
+        "value" : "The current local date in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -3547,17 +3611,17 @@
         "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. ",
-        "type" : "label"
-      } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/ActuatableProperty",
         "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. ",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -3568,7 +3632,7 @@
     "comment" : {
       "en" : "Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "80"
   }, {
     "iri" : "https://w3id.org/def/foo#model",
@@ -3628,7 +3692,7 @@
     "comment" : {
       "en" : "Relation between an ObservableProperty and the Sensor able to observe it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "88"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/madeBySampler",
@@ -3669,7 +3733,7 @@
     "comment" : {
       "en" : "Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "93"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/actsOnProperty",
@@ -3716,7 +3780,7 @@
     "comment" : {
       "en" : "Relation between an Actuation and the property of a FeatureOfInterest it is acting upon."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "95"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/hasSample",
@@ -3757,7 +3821,7 @@
     "comment" : {
       "en" : "Relation between a FeatureOfInterest and the Sample used to represent it."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "96"
   }, {
     "iri" : "https://w3id.org/def/foo#site",
@@ -3801,20 +3865,9 @@
     "attributes" : [ "datatype" ],
     "id" : "102"
   }, {
-    "iri" : "https://w3id.org/def/foo#lianaDBH_cm",
-    "baseIri" : "https://w3id.org/def/foo",
-    "range" : "106",
-    "label" : {
-      "IRI-based" : "lianaDBH_cm",
-      "en" : "lianaDBH_cm 10a"
-    },
-    "domain" : "14",
-    "attributes" : [ "datatype" ],
-    "id" : "105"
-  }, {
     "iri" : "https://w3id.org/def/foo#distance",
     "baseIri" : "https://w3id.org/def/foo",
-    "range" : "108",
+    "range" : "106",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -3828,6 +3881,17 @@
       "en" : "Distance"
     },
     "domain" : "40",
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/def/foo#lianaDBH_cm",
+    "baseIri" : "https://w3id.org/def/foo",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "lianaDBH_cm",
+      "en" : "lianaDBH_cm 10a"
+    },
+    "domain" : "14",
     "attributes" : [ "datatype" ],
     "id" : "107"
   }, {
@@ -3912,12 +3976,12 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ]
     },
@@ -3929,12 +3993,12 @@
     "comment" : {
       "en" : "Relation linking an Observation or Actuation or act of Sampling and a Result or Sample."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "117"
   }, {
     "range" : "73",
     "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/observes",
@@ -3974,7 +4038,7 @@
     "comment" : {
       "en" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "89"
   }, {
     "iri" : "https://w3id.org/def/foo#landUse",
@@ -4011,7 +4075,7 @@
     "id" : "125"
   }, {
     "domain" : "58",
-    "range" : "131",
+    "range" : "74",
     "id" : "130",
     "label" : {
       "IRI-based" : "43",
@@ -4020,15 +4084,15 @@
   }, {
     "domain" : "58",
     "range" : "47",
-    "id" : "132",
+    "id" : "131",
     "label" : {
       "IRI-based" : "42",
       "undefined" : "is a"
     }
   }, {
     "domain" : "58",
-    "range" : "74",
-    "id" : "133",
+    "range" : "133",
+    "id" : "132",
     "label" : {
       "IRI-based" : "45",
       "undefined" : "is a"
@@ -4043,7 +4107,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "27",
+    "range" : "14",
     "id" : "137",
     "label" : {
       "IRI-based" : "41",
@@ -4051,7 +4115,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "14",
+    "range" : "40",
     "id" : "138",
     "label" : {
       "IRI-based" : "40",
@@ -4095,7 +4159,7 @@
     "comment" : {
       "en" : "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "97"
   }, {
     "iri" : "https://w3id.org/def/foo#subplotRadius_m",
@@ -4126,7 +4190,7 @@
     }
   }, {
     "domain" : "36",
-    "range" : "73",
+    "range" : "32",
     "id" : "142",
     "label" : {
       "IRI-based" : "35",
@@ -4134,7 +4198,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "40",
+    "range" : "27",
     "id" : "143",
     "label" : {
       "IRI-based" : "38",
@@ -4150,7 +4214,7 @@
     }
   }, {
     "domain" : "36",
-    "range" : "32",
+    "range" : "73",
     "id" : "146",
     "label" : {
       "IRI-based" : "34",
@@ -4220,17 +4284,17 @@
     "comment" : {
       "en" : "Relation between an Actuator and the Actuation it has made."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "150"
   }, {
     "range" : "72",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "152"
   }, {
     "range" : "31",
-    "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "133",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "153"
   }, {
     "iri" : "https://w3id.org/def/foo#count",
@@ -4254,37 +4318,37 @@
   }, {
     "range" : "31",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "156"
   }, {
     "range" : "44",
     "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "157"
   }, {
     "range" : "31",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "158"
   }, {
     "range" : "32",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "159"
   }, {
     "range" : "46",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "160"
   }, {
     "range" : "31",
     "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "161"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "162"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/madeByActuator",
@@ -4324,7 +4388,7 @@
     "comment" : {
       "en" : "Relation linking an Actuation to the Actuator that made that Actuation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "151"
   }, {
     "iri" : "https://w3id.org/def/foo#temperature",
@@ -4348,22 +4412,22 @@
   }, {
     "range" : "43",
     "domain" : "45",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "164"
   }, {
     "range" : "43",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
     "range" : "36",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "166"
   }, {
     "range" : "7",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "167"
   }, {
     "iri" : "https://w3id.org/def/foo#treeHeight_m",
@@ -4379,7 +4443,7 @@
   }, {
     "range" : "45",
     "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "169"
   }, {
     "iri" : "https://w3id.org/def/foo#latitude",
@@ -4403,12 +4467,12 @@
   }, {
     "range" : "83",
     "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "171"
   }, {
     "range" : "30",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "172"
   }, {
     "iri" : "https://w3id.org/def/foo#horizon",
@@ -4436,13 +4500,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The current local time in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The local time in Sabah, Malaysia.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The local time in Sabah, Malaysia.",
+        "language" : "en",
+        "value" : "The current local time in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -4556,7 +4620,7 @@
     "comment" : {
       "en" : "Relation between an Observation and the Sensor which made the Observation."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "42"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/madeObservation",
@@ -4596,7 +4660,7 @@
     "comment" : {
       "en" : "Relation between a Sensor and an Observation made by the Sensor."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "184"
   }, {
     "iri" : "https://w3id.org/def/foo#speed",
@@ -4634,10 +4698,16 @@
         "value" : "The simple value of an Observation or Actuation or act of Sampling.",
         "type" : "label"
       } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For instance, the values 23 or true.",
+        "type" : "label"
+      } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -4647,14 +4717,8 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "For instance, the values 23 or true.",
-        "type" : "label"
       } ]
     },
     "label" : {
