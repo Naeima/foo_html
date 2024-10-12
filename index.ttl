@@ -667,87 +667,87 @@ foo:abawGPS a foo:Sensor ;
 
 foo:aqeela a foo:ElephasMaximus;
     rdfs:label "Aqeela"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:guli a foo:ElephasMaximus;
     rdfs:label "Guli"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant."@en .
 
 foo:bikang1 a foo:ElephasMaximus;
     rdfs:label "Bikang 1"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:bikang2 a foo:ElephasMaximus;
     rdfs:label "Bikang 2"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:dara a foo:ElephasMaximus;
     rdfs:label "Dara"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:abaw a foo:ElephasMaximus; 
     rdfs:label "Abaw"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:ita a foo:ElephasMaximus ;
     rdfs:label "Ita"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:jasmin a foo:ElephasMaximus ;
     rdfs:label "Jasmin"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:jasper a foo:ElephasMaximus ;
     rdfs:label "Jasper"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant."@en .
 
 foo:kasih a foo:ElephasMaximus ;
     rdfs:label "Kasih"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:kuma a foo:ElephasMaximus ;
     rdfs:label "Kuma"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant."@en .
 
 foo:liun a foo:ElephasMaximus ;
     rdfs:label "Liun"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:maliau a foo:ElephasMaximus ;
     rdfs:label "Maliau"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant."@en .
 
 foo:merotai a foo:ElephasMaximus ;
     rdfs:label "Merotai"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant."@en .
 
 foo:puteri a foo:ElephasMaximus;
     rdfs:label "Puteri"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:putut a foo:ElephasMaximus ;
     rdfs:label "Putut"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:sejati a foo:ElephasMaximus ;
     rdfs:label "Sejati"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant."@en .
 
 foo:seri a foo:ElephasMaximus ;
     rdfs:label "Seri"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant ."@en .
 
 foo:tulid a foo:ElephasMaximus ;
     rdfs:label "Tulid"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant ."@en .
 
 foo:tunglap a foo:ElephasMaximus ;
     rdfs:label "Tunglap"@en ;
-    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Female Asian Elephant."@en .
 
 foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en ;
-    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+    skos:definition "Male Asian Elephant ."@en .
 
 foo:GPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
