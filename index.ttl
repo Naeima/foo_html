@@ -83,7 +83,7 @@ foo: a owl:Ontology ;
     foaf:name "Springer, Cham"@en .
 
 ### FOO Classes ###
-#### Taxonomic Classes ####
+#### BBC Wildlife Ontology Taxonomic Classes ####
 wo:Kingdom a owl:Class .
 wo:Phylum a owl:Class .
 wo:Class a owl:Class .
@@ -98,36 +98,43 @@ wo:TaxonRank a owl:Class .
 foo:Animalia a owl:Class ;
     rdfs:label "Animalia"@en-gb ;
     rdfs:subClassOf owl:Thing ;
-    owl:sameAs wo:Animalia .
+    owl:sameAs wo:Animalia ;
+    skos:definition "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en.
 
 #### Phylum ####
 foo:Chordata a owl:Class ;
     rdfs:label "Chordata"@en-gb ;
     rdfs:subClassOf foo:Animalia ;
-    owl:sameAs wo:Chordata .
+    owl:sameAs wo:Chordata ;
+    skos:definition  "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 
 #### Class ####
 foo:Mammalia a owl:Class ;
     rdfs:label "Mammalia"@en-gb ;
     rdfs:subClassOf foo:Chordata ;
-    owl:sameAs wo:Mammalia .
+    owl:sameAs wo:Mammalia ;
+    skos:definition  "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en.
 
 foo:Reptilia a owl:Class ;
     rdfs:label "Reptilia"@en-gb ;
     rdfs:subClassOf foo:Chordata ;
-    owl:sameAs wo:Reptilia .
+    owl:sameAs wo:Reptilia ;
+    skos:definition   "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en.
+    
 
 
 #### Order ####
 foo:Proboscidea a owl:Class ;
     rdfs:label "Proboscidea"@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
-    owl:sameAs wo:Proboscidea .
+    owl:sameAs wo:Proboscidea ;
+    skos:definition "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en.
 
 foo:Carnivora a owl:Class ;
     rdfs:label "Carnivora"@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
-    owl:sameAs wo:Carnivora .
+    owl:sameAs wo:Carnivora ;
+    skos:definition  "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 
 foo:Squamata a owl:Class ;
     rdfs:label "Squamata"@en-gb ;
@@ -138,13 +145,13 @@ foo:Primates a owl:Class ;
     rdfs:label "Primates"@en-gb ;
     rdfs:subClassOf foo:Mammalia .
 
-
 #### Family ####
 foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Proboscidea ;
-    owl:sameAs wo:Elephantidae .
-
+    owl:sameAs wo:Elephantidae ;
+    skos:definition "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en.
+ 
 foo:Cercopithecidae a foo:Family ;
     rdfs:label "Cercopithecidae"@en-gb ;
     rdfs:subClassOf foo:Primates .
@@ -169,13 +176,15 @@ foo:Viverridae a owl:Class ;
 
 foo:Species  a owl:Class ;
     rdfs:label  "Species"@en-gb ;
-    owl:sameAs  wo:Species .
+    owl:sameAs  wo:Species 
+    skos:definition  "Generic class defining a biological species."@en.
 
 foo:Genus  a owl:Class ;
     rdfs:label  "Genus"@en-gb ;
     owl:sameAs  wo:Genus .
 
 #### Species as Individuals ####
+
 ### Elephant ###
 foo:ElephasMaximus a owl:NamedIndividual, foo:Species;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
