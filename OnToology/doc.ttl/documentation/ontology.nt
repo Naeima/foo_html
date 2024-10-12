@@ -1073,6 +1073,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#abaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#abaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#abaw> <http://www.w3.org/2000/01/rdf-schema#label> "Abaw"@en .
+<https://w3id.org/def/foo#abaw> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#abawGPS
 <https://w3id.org/def/foo#abawGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1082,6 +1083,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#abawGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Umas2 GPS"@en .
 <https://w3id.org/def/foo#abawGPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en .
 # 
+# https://w3id.org/def/foo#aqeela
+<https://w3id.org/def/foo#aqeela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#aqeela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#aqeela> <http://www.w3.org/2000/01/rdf-schema#label> "Aqeela"@en .
+<https://w3id.org/def/foo#aqeela> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
+# 
 # https://w3id.org/def/foo#aqeelaGPS
 <https://w3id.org/def/foo#aqeelaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#aqeelaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
@@ -1090,6 +1097,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#aqeelaGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Aqeela GPS"@en .
 <https://w3id.org/def/foo#aqeelaGPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en .
 # 
+# https://w3id.org/def/foo#bikang1
+<https://w3id.org/def/foo#bikang1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#bikang1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#bikang1> <http://www.w3.org/2000/01/rdf-schema#label> "Bikang 1"@en .
+<https://w3id.org/def/foo#bikang1> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
+# 
 # https://w3id.org/def/foo#bikang1GPS
 <https://w3id.org/def/foo#bikang1GPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#bikang1GPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
@@ -1097,6 +1110,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#bikang1GPS> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#GPSObservation> .
 <https://w3id.org/def/foo#bikang1GPS> <http://www.w3.org/2000/01/rdf-schema#label> "Bikang 1 GPS"@en .
 <https://w3id.org/def/foo#bikang1GPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en .
+# 
+# https://w3id.org/def/foo#bikang2
+<https://w3id.org/def/foo#bikang2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#bikang2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#bikang2> <http://www.w3.org/2000/01/rdf-schema#label> "Bikang 2"@en .
+<https://w3id.org/def/foo#bikang2> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#bikang2GPS
 <https://w3id.org/def/foo#bikang2GPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1118,6 +1137,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#dara> <http://www.w3.org/2000/01/rdf-schema#label> "Dara"@en .
+<https://w3id.org/def/foo#dara> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#daraGPS
 <https://w3id.org/def/foo#daraGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1126,6 +1146,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#daraGPS> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#GPSObservation> .
 <https://w3id.org/def/foo#daraGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Umas2 GPS"@en .
 <https://w3id.org/def/foo#daraGPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en .
+# 
+# https://w3id.org/def/foo#guli
+<https://w3id.org/def/foo#guli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#guli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
+<https://w3id.org/def/foo#guli> <http://www.w3.org/2000/01/rdf-schema#label> "Guli"@en .
+<https://w3id.org/def/foo#guli> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#guliGPS
 <https://w3id.org/def/foo#guliGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1141,6 +1167,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#ita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#ita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#ita> <http://www.w3.org/2000/01/rdf-schema#label> "Ita"@en .
+<https://w3id.org/def/foo#ita> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#itaGPS
 <https://w3id.org/def/foo#itaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1154,6 +1181,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#jasmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#jasmin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#jasmin> <http://www.w3.org/2000/01/rdf-schema#label> "Jasmin"@en .
+<https://w3id.org/def/foo#jasmin> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#jasminGPS
 <https://w3id.org/def/foo#jasminGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1167,6 +1195,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#jasper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#jasper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#jasper> <http://www.w3.org/2000/01/rdf-schema#label> "Jasper"@en .
+<https://w3id.org/def/foo#jasper> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#jasperGPS
 <https://w3id.org/def/foo#jasperGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1180,6 +1209,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#kasih> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#kasih> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#kasih> <http://www.w3.org/2000/01/rdf-schema#label> "Kasih"@en .
+<https://w3id.org/def/foo#kasih> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#kasihGPS
 <https://w3id.org/def/foo#kasihGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1193,6 +1223,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#kuma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#kuma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#kuma> <http://www.w3.org/2000/01/rdf-schema#label> "Kuma"@en .
+<https://w3id.org/def/foo#kuma> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#kumaGPS
 <https://w3id.org/def/foo#kumaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1208,6 +1239,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#liun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#liun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#liun> <http://www.w3.org/2000/01/rdf-schema#label> "Liun"@en .
+<https://w3id.org/def/foo#liun> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#liunGPS
 <https://w3id.org/def/foo#liunGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1225,6 +1257,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#maliau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#maliau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#maliau> <http://www.w3.org/2000/01/rdf-schema#label> "Maliau"@en .
+<https://w3id.org/def/foo#maliau> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#maliauGPS
 <https://w3id.org/def/foo#maliauGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1238,6 +1271,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#merotai> <http://www.w3.org/2000/01/rdf-schema#label> "Merotai"@en .
+<https://w3id.org/def/foo#merotai> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#merotaiGPS
 <https://w3id.org/def/foo#merotaiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1251,6 +1285,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#puteri> <http://www.w3.org/2000/01/rdf-schema#label> "Puteri"@en .
+<https://w3id.org/def/foo#puteri> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#puteriGPS
 <https://w3id.org/def/foo#puteriGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1264,6 +1299,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#putut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#putut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#putut> <http://www.w3.org/2000/01/rdf-schema#label> "Putut"@en .
+<https://w3id.org/def/foo#putut> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#pututGPS
 <https://w3id.org/def/foo#pututGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1277,6 +1313,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#sejati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#sejati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#sejati> <http://www.w3.org/2000/01/rdf-schema#label> "Sejati"@en .
+<https://w3id.org/def/foo#sejati> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#sejatiGPS
 <https://w3id.org/def/foo#sejatiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1290,6 +1327,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#seri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#seri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#seri> <http://www.w3.org/2000/01/rdf-schema#label> "Seri"@en .
+<https://w3id.org/def/foo#seri> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant ."@en .
 # 
 # https://w3id.org/def/foo#seriGPS
 <https://w3id.org/def/foo#seriGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1303,6 +1341,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#tulid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#tulid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#tulid> <http://www.w3.org/2000/01/rdf-schema#label> "Tulid"@en .
+<https://w3id.org/def/foo#tulid> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant ."@en .
 # 
 # https://w3id.org/def/foo#tulidGPS
 <https://w3id.org/def/foo#tulidGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1316,6 +1355,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#tunglap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#tunglap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#tunglap> <http://www.w3.org/2000/01/rdf-schema#label> "Tunglap"@en .
+<https://w3id.org/def/foo#tunglap> <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 # 
 # https://w3id.org/def/foo#tunglapGPS
 <https://w3id.org/def/foo#tunglapGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1329,6 +1369,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#umas2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#umas2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#umas2> <http://www.w3.org/2000/01/rdf-schema#label> "Umas2"@en .
+<https://w3id.org/def/foo#umas2> <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant ."@en .
 # 
 # https://w3id.org/def/foo#umas2GPS
 <https://w3id.org/def/foo#umas2GPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1370,14 +1411,18 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # 
 <https://w3id.org/def/foo#Animalia> <http://www.w3.org/2000/01/rdf-schema#label> "Animalia"@en-gb .
+<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
 # 
 <https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#label> "Carnivora"@en-gb .
+<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 # 
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2000/01/rdf-schema#label> "Cercopithecidae"@en-gb .
 # 
 <https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#label> "Chordata"@en-gb .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 # 
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#label> "Elephantidae"@en-gb .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 # 
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#comment> "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#label> "Asian Elephant"@en .
@@ -1391,7 +1436,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#GPSObservation> <https://w3id.org/def/foo#resultTime> "2011-10-26T07:40:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/def/foo#GPSObservation> <https://w3id.org/def/foo#resultTime> "2015-10-26T07:40:35"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 # 
-<https://w3id.org/def/foo#Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en-gb .
+<https://w3id.org/def/foo#Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en-gb .
 # 
 <https://w3id.org/def/foo#ImageObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Image Observation"@en .
 <https://w3id.org/def/foo#ImageObservation> <https://w3id.org/def/foo#animalDetected> "Jasmin" .
@@ -1405,6 +1450,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 # 
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#label> "Mammalia"@en-gb .
+<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
 # 
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#comment> "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en .
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Manis javanica"@la .
@@ -1412,6 +1458,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 # 
 <https://w3id.org/def/foo#Nasalis> <http://www.w3.org/2000/01/rdf-schema#label> "Nasalis"@en-gb .
+<https://w3id.org/def/foo#Nasalis> <http://www.w3.org/2004/02/skos/core#definition> "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
 # 
 <https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en .
 <https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nasalis larvatus"@la .
@@ -1425,10 +1472,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Observation> <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
 # 
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscidea"@en-gb .
+<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
 # 
 <https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/2000/01/rdf-schema#label> "Pythonidae"@en .
 # 
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#label> "Reptilia"@en-gb .
+<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
 # 
 <https://w3id.org/def/foo#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
 <https://w3id.org/def/foo#Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
@@ -1442,6 +1491,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#SoilObservation> <https://w3id.org/def/foo#totalP> "263.74"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
 <https://w3id.org/def/foo#Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en-gb .
+<https://w3id.org/def/foo#Species> <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
 # 
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/2000/01/rdf-schema#label> "Squamata"@en-gb .
 # 
