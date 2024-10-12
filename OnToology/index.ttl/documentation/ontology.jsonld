@@ -1,6 +1,18 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Professor Omer Rana"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-3597-2646"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
@@ -11,7 +23,7 @@
     "@id" : "https://orcid.org/0000-0002-7951-4148"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/goossensbr"
   } ],
@@ -23,7 +35,7 @@
     "@id" : "https://orcid.org/0000-0003-2360-4643"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
   } ],
@@ -33,18 +45,6 @@
   } ],
   "https://schema.org/identifier" : [ {
     "@id" : "https://orcid.org/0000-0002-0190-3346"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "en",
-    "@value" : "Professor Omer Rana"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-3597-2646"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -1213,6 +1213,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Abaw"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#abawGPS",
@@ -1241,6 +1245,20 @@
   "@id" : "https://w3id.org/def/foo#animalDetected",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#aqeela",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aqeela"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#aqeelaGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1261,6 +1279,20 @@
     "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#bikang1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bikang 1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#bikang1GPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1279,6 +1311,20 @@
   } ],
   "https://w3id.org/def/foo#observes" : [ {
     "@id" : "https://w3id.org/def/foo#GPSObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#bikang2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bikang 2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang2GPS",
@@ -1383,6 +1429,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Dara"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#daraGPS",
@@ -1483,6 +1533,20 @@
     "@value" : "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."
   }, {
     "@value" : "The GMT time in Sabah, Malaysia, when the GPS collar records its readings."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#guli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Guli"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#guliGPS",
@@ -1630,6 +1694,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Ita"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#itaGPS",
@@ -1660,6 +1728,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Jasmin"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasminGPS",
@@ -1690,6 +1762,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Jasper"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasperGPS",
@@ -1720,6 +1796,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Kasih"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kasihGPS",
@@ -1750,6 +1830,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Kuma"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kumaGPS",
@@ -1825,6 +1909,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Liun"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#liunGPS",
@@ -1973,6 +2061,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Maliau"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#maliauGPS",
@@ -2003,6 +2095,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Merotai"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#merotaiGPS",
@@ -2121,6 +2217,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Puteri"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#puteriGPS",
@@ -2151,6 +2251,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Putut"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#pututGPS",
@@ -2187,6 +2291,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Sejati"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#sejatiGPS",
@@ -2217,6 +2325,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Seri"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#seriGPS",
@@ -2452,6 +2564,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Tulid"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tulidGPS",
@@ -2482,6 +2598,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Tunglap"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tunglapGPS",
@@ -2512,6 +2632,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Umas2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant or ElephasMaximuas."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#umas2GPS",
