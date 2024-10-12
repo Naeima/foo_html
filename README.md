@@ -1,5 +1,5 @@
 # Forest Observatory Ontology (FOO)
-Source file = https://naeima.github.io/foo_html/index.ttl
+Source file = https://w3id.org/def/foo
 # Documentation 
-https://w3id.org/def/foo#
+https://w3id.org/def/fooDocs
 
