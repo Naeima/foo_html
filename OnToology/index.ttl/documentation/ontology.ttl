@@ -34,21 +34,21 @@
                              <http://xmlns.com/foaf/0.1/logo> <https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true> ;
                              <https://schema.org/citation> "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
+
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
           <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
-
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
@@ -1282,7 +1282,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#abaw
 :abaw rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
-      rdfs:label "Abaw"@en .
+      rdfs:label "Abaw"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#abawGPS
@@ -1294,6 +1295,13 @@ xsd:time rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en .
 
 
+###  https://w3id.org/def/foo#aqeela
+:aqeela rdf:type owl:NamedIndividual ,
+                 :ElephasMaximus ;
+        rdfs:label "Aqeela"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+
+
 ###  https://w3id.org/def/foo#aqeelaGPS
 :aqeelaGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
@@ -1303,6 +1311,13 @@ xsd:time rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en .
 
 
+###  https://w3id.org/def/foo#bikang1
+:bikang1 rdf:type owl:NamedIndividual ,
+                  :ElephasMaximus ;
+         rdfs:label "Bikang 1"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+
+
 ###  https://w3id.org/def/foo#bikang1GPS
 :bikang1GPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
@@ -1310,6 +1325,13 @@ xsd:time rdf:type rdfs:Datatype .
             :observes :GPSObservation ;
             rdfs:label "Bikang 1 GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en .
+
+
+###  https://w3id.org/def/foo#bikang2
+:bikang2 rdf:type owl:NamedIndividual ,
+                  :ElephasMaximus ;
+         rdfs:label "Bikang 2"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#bikang2GPS
@@ -1333,7 +1355,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#dara
 :dara rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
-      rdfs:label "Dara"@en .
+      rdfs:label "Dara"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#daraGPS
@@ -1343,6 +1366,13 @@ xsd:time rdf:type rdfs:Datatype .
          :observes :GPSObservation ;
          rdfs:label "Umas2 GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en .
+
+
+###  https://w3id.org/def/foo#guli
+:guli rdf:type owl:NamedIndividual ,
+               :ElephasMaximus ;
+      rdfs:label "Guli"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#guliGPS
@@ -1361,7 +1391,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#ita
 :ita rdf:type owl:NamedIndividual ,
               :ElephasMaximus ;
-     rdfs:label "Ita"@en .
+     rdfs:label "Ita"@en ;
+     <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#itaGPS
@@ -1376,7 +1407,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#jasmin
 :jasmin rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
-        rdfs:label "Jasmin"@en .
+        rdfs:label "Jasmin"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#jasminGPS
@@ -1391,7 +1423,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#jasper
 :jasper rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
-        rdfs:label "Jasper"@en .
+        rdfs:label "Jasper"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#jasperGPS
@@ -1406,7 +1439,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#kasih
 :kasih rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
-       rdfs:label "Kasih"@en .
+       rdfs:label "Kasih"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#kasihGPS
@@ -1421,7 +1455,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#kuma
 :kuma rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
-      rdfs:label "Kuma"@en .
+      rdfs:label "Kuma"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#kumaGPS
@@ -1440,7 +1475,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#liun
 :liun rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
-      rdfs:label "Liun"@en .
+      rdfs:label "Liun"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#liunGPS
@@ -1463,7 +1499,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#maliau
 :maliau rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
-        rdfs:label "Maliau"@en .
+        rdfs:label "Maliau"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#maliauGPS
@@ -1478,7 +1515,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#merotai
 :merotai rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
-         rdfs:label "Merotai"@en .
+         rdfs:label "Merotai"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#merotaiGPS
@@ -1493,7 +1531,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#puteri
 :puteri rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
-        rdfs:label "Puteri"@en .
+        rdfs:label "Puteri"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#puteriGPS
@@ -1508,7 +1547,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#putut
 :putut rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
-       rdfs:label "Putut"@en .
+       rdfs:label "Putut"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#pututGPS
@@ -1523,7 +1563,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#sejati
 :sejati rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
-        rdfs:label "Sejati"@en .
+        rdfs:label "Sejati"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#sejatiGPS
@@ -1538,7 +1579,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#seri
 :seri rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
-      rdfs:label "Seri"@en .
+      rdfs:label "Seri"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#seriGPS
@@ -1553,7 +1595,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#tulid
 :tulid rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
-       rdfs:label "Tulid"@en .
+       rdfs:label "Tulid"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#tulidGPS
@@ -1568,7 +1611,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#tunglap
 :tunglap rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
-         rdfs:label "Tunglap"@en .
+         rdfs:label "Tunglap"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#tunglapGPS
@@ -1583,7 +1627,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#umas2
 :umas2 rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
-       rdfs:label "Umas2"@en .
+       rdfs:label "Umas2"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
 
 
 ###  https://w3id.org/def/foo#umas2GPS
