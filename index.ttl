@@ -673,7 +673,7 @@ foo:guli a foo:ElephasMaximus;
     rdfs:label "Guli"@en ;
     skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
-foo:bikang1 foo:ElephasMaximus;
+foo:bikang1 a foo:ElephasMaximus;
     rdfs:label "Bikang 1"@en ;
     skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
