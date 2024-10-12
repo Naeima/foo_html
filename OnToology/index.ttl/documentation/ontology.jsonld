@@ -1,29 +1,17 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Professor Omer Rana"
+    "@value" : "Dr. Charith Perera"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-3597-2646"
+    "@id" : "https://orcid.org/0000-0002-0190-3346"
   } ]
 }, {
   "@id" : "_:genid2",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "en",
-    "@value" : "Dr. Pablo Orozco-terWengel"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-7951-4148"
-  } ]
-}, {
-  "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/goossensbr"
   } ],
@@ -35,16 +23,28 @@
     "@id" : "https://orcid.org/0000-0003-2360-4643"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Dr. Charith Perera"
+    "@value" : "Dr. Pablo Orozco-terWengel"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-0190-3346"
+    "@id" : "https://orcid.org/0000-0002-7951-4148"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Professor Omer Rana"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-3597-2646"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -595,7 +595,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-gb",
-    "@value" : "Species"
+    "@value" : "Genus"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
