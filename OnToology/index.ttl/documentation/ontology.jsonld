@@ -1,14 +1,14 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Dr. Charith Perera"
+    "@value" : "Dr. Pablo Orozco-terWengel"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-0190-3346"
+    "@id" : "https://orcid.org/0000-0002-7951-4148"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -25,14 +25,14 @@
 }, {
   "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
+    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@language" : "en",
-    "@value" : "Dr. Pablo Orozco-terWengel"
+    "@value" : "Dr. Charith Perera"
   } ],
   "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-7951-4148"
+    "@id" : "https://orcid.org/0000-0002-0190-3346"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -327,6 +327,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Aqeela",
@@ -380,6 +384,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Cercopithecidae",
@@ -406,6 +414,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Dara",
@@ -425,6 +437,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ElephasMaximus",
@@ -755,6 +771,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ManisJavanica",
@@ -871,6 +891,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Puteri",
@@ -909,6 +933,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Sejati",
@@ -1038,6 +1066,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Generic class defining a biological species."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Squamata",
