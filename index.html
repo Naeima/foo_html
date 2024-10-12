@@ -91,7 +91,7 @@ foo: a owl:Ontology ;
     foaf:name "Springer, Cham"@en .
 
 ### FOO Classes ###
-#### Taxonomic Classes ####
+#### BBC Wildlife Ontology Taxonomic Classes ####
 wo:Kingdom a owl:Class .
 wo:Phylum a owl:Class .
 wo:Class a owl:Class .
@@ -106,36 +106,42 @@ wo:TaxonRank a owl:Class .
 foo:Animalia a owl:Class ;
     rdfs:label "Animalia"@en-gb ;
     rdfs:subClassOf owl:Thing ;
-    owl:sameAs wo:Animalia .
+    owl:sameAs wo:Animalia ;
+    skos:definition "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en.
 
 #### Phylum ####
 foo:Chordata a owl:Class ;
     rdfs:label "Chordata"@en-gb ;
     rdfs:subClassOf foo:Animalia ;
-    owl:sameAs wo:Chordata .
+    owl:sameAs wo:Chordata ;
+    skos:definition  "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 
 #### Class ####
 foo:Mammalia a owl:Class ;
     rdfs:label "Mammalia"@en-gb ;
     rdfs:subClassOf foo:Chordata ;
-    owl:sameAs wo:Mammalia .
+    owl:sameAs wo:Mammalia ;
+    skos:definition  "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en.
 
 foo:Reptilia a owl:Class ;
     rdfs:label "Reptilia"@en-gb ;
     rdfs:subClassOf foo:Chordata ;
-    owl:sameAs wo:Reptilia .
-
+    owl:sameAs wo:Reptilia ;
+    skos:definition   "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en.
+    
 
 #### Order ####
 foo:Proboscidea a owl:Class ;
     rdfs:label "Proboscidea"@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
-    owl:sameAs wo:Proboscidea .
+    owl:sameAs wo:Proboscidea ;
+    skos:definition "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en.
 
 foo:Carnivora a owl:Class ;
     rdfs:label "Carnivora"@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
-    owl:sameAs wo:Carnivora .
+    owl:sameAs wo:Carnivora ;
+    skos:definition  "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 
 foo:Squamata a owl:Class ;
     rdfs:label "Squamata"@en-gb ;
@@ -146,26 +152,27 @@ foo:Primates a owl:Class ;
     rdfs:label "Primates"@en-gb ;
     rdfs:subClassOf foo:Mammalia .
 
-
 #### Family ####
 foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
     rdfs:subClassOf foo:Proboscidea ;
-    owl:sameAs wo:Elephantidae .
-
+    owl:sameAs wo:Elephantidae ;
+    skos:definition "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en.
+ 
 foo:Cercopithecidae a foo:Family ;
     rdfs:label "Cercopithecidae"@en-gb ;
     rdfs:subClassOf foo:Primates .
   
 foo:Nasalis a foo:Genus ;
     rdfs:label "Nasalis"@en-gb ;
-    rdfs:subClassOf foo:Cercopithecidae .
+    rdfs:subClassOf foo:Cercopithecidae;
+    skos:definition "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
 
 foo:NasalisLarvatus a foo:Species ;
     rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
     rdfs:subClassOf foo:Nasalis ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>, <https://doi/10.1126/sciadv.aaq0250> ;
+    rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>, <https://doi/10.1126/sciadv.aaq0250> , <https://10.1371/journal.pone.0174891> ; 
     skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 #### Additional Families ####
@@ -176,15 +183,17 @@ foo:Viverridae a owl:Class ;
 
 foo:Species  a owl:Class ;
     rdfs:label  "Species"@en-gb ;
-    owl:sameAs  wo:Species .
+    owl:sameAs  wo:Species ;
+    skos:definition  "Generic class defining a biological species."@en.
 
 foo:Genus  a owl:Class ;
-    rdfs:label  "Species"@en-gb ;
+    rdfs:label  "Genus"@en-gb ;
     owl:sameAs  wo:Genus .
 
 #### Species as Individuals ####
+
 ### Elephant ###
-foo:ElephasMaximus a owl:NamedIndividual, foo:Species  ;
+foo:ElephasMaximus a owl:NamedIndividual, foo:Species;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
     rdfs:subClassOf foo:Elephantidae;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
@@ -193,7 +202,6 @@ foo:ElephasMaximus a owl:NamedIndividual, foo:Species  ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 ### Python (Snake)####
-
 foo:Pythonidae a foo:Family ;
     rdfs:label "Pythonidae"@en ;
     rdfs:subClassOf foo:Squamata .
@@ -210,7 +218,6 @@ foo:MalayopythonReticulatus a owl:NamedIndividual, foo:Species ;
 
 
 ### Sunda Pangolin ###
-
 foo:ManisJavanica a owl:NamedIndividual, foo:Species ;
     rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
     rdfs:subClassOf foo:Mammalia ;
@@ -438,7 +445,7 @@ foo:totalN a owl:DatatypeProperty ;
 
 ### Tree Observation Data Properties ###
 
-foo:lianaDBH_cm  a owl:DatatypeProperty ;
+foo:lianaDBH_cm a owl:DatatypeProperty ;
     rdfs:label "lianaDBH_cm 10a"@en ;
     rdfs:domain foo:TreeObservation ;
     rdfs:range xsd:string .
@@ -666,56 +673,89 @@ foo:abawGPS a foo:Sensor ;
 
 #### Animal Instances ####
 
+foo:aqeela a foo:ElephasMaximus;
+    rdfs:label "Aqeela"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+
+foo:guli a foo:ElephasMaximus;
+    rdfs:label "Guli"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
+
+foo:bikang1 foo:ElephasMaximus;
+    rdfs:label "Bikang 1"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+
+foo:bikang2 a foo:ElephasMaximus;
+    rdfs:label "Bikang 2"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
+
 foo:dara a foo:ElephasMaximus;
-    rdfs:label "Dara"@en .
+    rdfs:label "Dara"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:abaw a foo:ElephasMaximus; 
-    rdfs:label "Abaw"@en .
+    rdfs:label "Abaw"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:ita a foo:ElephasMaximus ;
-    rdfs:label "Ita"@en .
+    rdfs:label "Ita"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:jasmin a foo:ElephasMaximus ;
-    rdfs:label "Jasmin"@en .
+    rdfs:label "Jasmin"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:jasper a foo:ElephasMaximus ;
-    rdfs:label "Jasper"@en .
+    rdfs:label "Jasper"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
 foo:kasih a foo:ElephasMaximus ;
-    rdfs:label "Kasih"@en .
+    rdfs:label "Kasih"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:kuma a foo:ElephasMaximus ;
-    rdfs:label "Kuma"@en .
+    rdfs:label "Kuma"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
 foo:liun a foo:ElephasMaximus ;
-    rdfs:label "Liun"@en .
+    rdfs:label "Liun"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:maliau a foo:ElephasMaximus ;
-    rdfs:label "Maliau"@en .
+    rdfs:label "Maliau"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
 foo:merotai a foo:ElephasMaximus ;
-    rdfs:label "Merotai"@en .
+    rdfs:label "Merotai"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
 foo:puteri a foo:ElephasMaximus;
-    rdfs:label "Puteri"@en .
+    rdfs:label "Puteri"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:putut a foo:ElephasMaximus ;
-    rdfs:label "Putut"@en .
+    rdfs:label "Putut"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:sejati a foo:ElephasMaximus ;
-    rdfs:label "Sejati"@en .
+    rdfs:label "Sejati"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
 foo:seri a foo:ElephasMaximus ;
-    rdfs:label "Seri"@en .
+    rdfs:label "Seri"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:tulid a foo:ElephasMaximus ;
-    rdfs:label "Tulid"@en .
+    rdfs:label "Tulid"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:tunglap a foo:ElephasMaximus ;
-    rdfs:label "Tunglap"@en .
+    rdfs:label "Tunglap"@en ;
+    skos:definition "Female Asian Elephant or ElephasMaximuas."@en .
 
 foo:umas2 a foo:ElephasMaximus ;
-    rdfs:label "Umas2"@en .
+    rdfs:label "Umas2"@en ;
+    skos:definition "Male Asian Elephant or ElephasMaximuas."@en .
 
 foo:GPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
@@ -776,7 +816,6 @@ foo:SoilObservation a foo:Observation ;
     foo:madeBySensor foo:SoilSensor .
     
 
-
 #### Tree Modeling ####
 
 foo:TreeSensor a foo:Sensor ;
@@ -824,7 +863,6 @@ foo:Lianas a owl:NamedIndividual ;
 foo:LianaSensor a foo:Sensor ;
     rdfs:label "Liana Sensor"@en ;
     foo:observes foo:LianaProperties .
-
 
 ##### Camera Trap Images Modeling #### 
 
