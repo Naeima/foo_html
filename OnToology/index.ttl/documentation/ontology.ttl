@@ -34,21 +34,21 @@
                              <http://xmlns.com/foaf/0.1/logo> <https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true> ;
                              <https://schema.org/citation> "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
-          <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
-
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
+
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+          <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
@@ -1643,19 +1643,23 @@ xsd:time rdf:type rdfs:Datatype .
 #    Annotations
 #################################################################
 
-:Animalia rdfs:label "Animalia"@en-gb .
+:Animalia rdfs:label "Animalia"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
 
 
-:Carnivora rdfs:label "Carnivora"@en-gb .
+:Carnivora rdfs:label "Carnivora"@en-gb ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 
 
 :Cercopithecidae rdfs:label "Cercopithecidae"@en-gb .
 
 
-:Chordata rdfs:label "Chordata"@en-gb .
+:Chordata rdfs:label "Chordata"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 
 
-:Elephantidae rdfs:label "Elephantidae"@en-gb .
+:Elephantidae rdfs:label "Elephantidae"@en-gb ;
+              <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 
 
 :ElephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
@@ -1689,7 +1693,8 @@ xsd:time rdf:type rdfs:Datatype .
                          <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
-:Mammalia rdfs:label "Mammalia"@en-gb .
+:Mammalia rdfs:label "Mammalia"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
 
 
 :ManisJavanica rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
@@ -1716,13 +1721,15 @@ xsd:time rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
 
 
-:Proboscidea rdfs:label "Proboscidea"@en-gb .
+:Proboscidea rdfs:label "Proboscidea"@en-gb ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
 
 
 :Pythonidae rdfs:label "Pythonidae"@en .
 
 
-:Reptilia rdfs:label "Reptilia"@en-gb .
+:Reptilia rdfs:label "Reptilia"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
 
 
 :Sensor rdfs:label "Sensor"@en ;
@@ -1738,7 +1745,8 @@ xsd:time rdf:type rdfs:Datatype .
                  :totalP "263.74"^^xsd:double .
 
 
-:Species rdfs:label "Species"@en-gb .
+:Species rdfs:label "Species"@en-gb ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
 
 
 :Squamata rdfs:label "Squamata"@en-gb .
