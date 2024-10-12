@@ -122,7 +122,6 @@ foo:Reptilia a owl:Class ;
     skos:definition   "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en.
     
 
-
 #### Order ####
 foo:Proboscidea a owl:Class ;
     rdfs:label "Proboscidea"@en-gb ;
