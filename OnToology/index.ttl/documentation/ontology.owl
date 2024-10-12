@@ -2121,7 +2121,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#abaw">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Abaw</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2145,7 +2145,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#aqeela">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Aqeela</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2169,7 +2169,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang1">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Bikang 1</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2193,7 +2193,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang2">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Bikang 2</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2230,7 +2230,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#dara">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Dara</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2254,7 +2254,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#guli">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Guli</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2285,7 +2285,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ita">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Ita</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2309,7 +2309,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasmin">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Jasmin</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2333,7 +2333,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasper">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Jasper</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2357,7 +2357,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kasih">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Kasih</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2381,7 +2381,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kuma">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Kuma</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2412,7 +2412,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#liun">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Liun</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2450,7 +2450,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#maliau">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Maliau</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2474,7 +2474,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#merotai">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Merotai</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2498,7 +2498,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#puteri">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Puteri</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2522,7 +2522,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#putut">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Putut</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2546,7 +2546,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#sejati">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Sejati</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2570,7 +2570,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#seri">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Seri</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2594,7 +2594,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tulid">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Tulid</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2618,7 +2618,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tunglap">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Tunglap</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2642,7 +2642,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#umas2">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Umas2</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
     
 
