@@ -2742,6 +2742,7 @@
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Nasalis">
         <rdfs:label xml:lang="en-gb">Nasalis</rdfs:label>
+        <skos:definition xml:lang="en">Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#NasalisLarvatus">
         <rdfs:comment xml:lang="en">Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male&apos;s harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses.</rdfs:comment>
