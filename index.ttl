@@ -176,7 +176,7 @@ foo:Viverridae a owl:Class ;
 
 foo:Species  a owl:Class ;
     rdfs:label  "Species"@en-gb ;
-    owl:sameAs  wo:Species 
+    owl:sameAs  wo:Species ;
     skos:definition  "Generic class defining a biological species."@en.
 
 foo:Genus  a owl:Class ;
