@@ -369,6 +369,14 @@
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#Image"
   } ],
+  "https://w3id.org/def/foo#make" : [ {
+    "@language" : "en",
+    "@value" : "Make"
+  } ],
+  "https://w3id.org/def/foo#model" : [ {
+    "@language" : "en",
+    "@value" : "Model"
+  } ],
   "https://w3id.org/def/foo#observes" : [ {
     "@id" : "https://w3id.org/def/foo#ImageObservation"
   } ]
@@ -525,6 +533,10 @@
   } ],
   "https://w3id.org/def/foo#iD" : [ {
     "@value" : "1SAT32"
+  } ],
+  "https://w3id.org/def/foo#id" : [ {
+    "@language" : "en",
+    "@value" : "id"
   } ],
   "https://w3id.org/def/foo#latitude" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
@@ -1216,7 +1228,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#abawGPS",
@@ -1256,7 +1268,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#aqeelaGPS",
@@ -1290,7 +1302,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang1GPS",
@@ -1324,7 +1336,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang2GPS",
@@ -1432,7 +1444,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#daraGPS",
@@ -1546,7 +1558,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#guliGPS",
@@ -1627,7 +1639,7 @@
   "@id" : "https://w3id.org/def/foo#id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1697,7 +1709,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#itaGPS",
@@ -1731,7 +1743,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasminGPS",
@@ -1765,7 +1777,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasperGPS",
@@ -1799,7 +1811,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kasihGPS",
@@ -1833,7 +1845,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kumaGPS",
@@ -1912,7 +1924,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#liunGPS",
@@ -2064,7 +2076,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#maliauGPS",
@@ -2098,7 +2110,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#merotaiGPS",
@@ -2124,7 +2136,7 @@
   "@id" : "https://w3id.org/def/foo#model",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#ImageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2220,7 +2232,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#puteriGPS",
@@ -2254,7 +2266,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#pututGPS",
@@ -2294,7 +2306,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#sejatiGPS",
@@ -2328,7 +2340,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#seriGPS",
@@ -2567,7 +2579,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tulidGPS",
@@ -2601,7 +2613,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tunglapGPS",
@@ -2635,7 +2647,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#umas2GPS",
