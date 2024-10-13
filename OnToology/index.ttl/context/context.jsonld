@@ -252,6 +252,9 @@
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
+    "gPSObservation" : {
+      "@id" : "https://w3id.org/def/foo#gPSObservation"
+    },
     "observes" : {
       "@id" : "https://w3id.org/def/foo#observes",
       "@type" : "@id"
@@ -370,9 +373,6 @@
     "horizon" : {
       "@id" : "https://w3id.org/def/foo#horizon",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "GPSObservation" : {
-      "@id" : "https://w3id.org/def/foo#GPSObservation"
     },
     "treeID" : {
       "@id" : "https://w3id.org/def/foo#treeID",
