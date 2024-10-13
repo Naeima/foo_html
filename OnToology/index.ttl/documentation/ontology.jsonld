@@ -369,8 +369,16 @@
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#Image"
   } ],
+  "https://w3id.org/def/foo#make" : [ {
+    "@language" : "en",
+    "@value" : "Make"
+  } ],
+  "https://w3id.org/def/foo#model" : [ {
+    "@language" : "en",
+    "@value" : "Model"
+  } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Carnivora",
@@ -470,143 +478,6 @@
   "@id" : "https://w3id.org/def/foo#Family",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/def/foo#GPSObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "GPS Observation"
-  } ],
-  "https://w3id.org/def/foo#altitude" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "11.7"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "16.7"
-  } ],
-  "https://w3id.org/def/foo#count" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ],
-  "https://w3id.org/def/foo#cov" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "0.0"
-  } ],
-  "https://w3id.org/def/foo#direction" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "0"
-  } ],
-  "https://w3id.org/def/foo#distance" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "0.0"
-  } ],
-  "https://w3id.org/def/foo#gMTDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2011-10-25"
-  } ],
-  "https://w3id.org/def/foo#gMTTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#time",
-    "@value" : "22:40:35"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#time",
-    "@value" : "23:40:35"
-  } ],
-  "https://w3id.org/def/foo#hDOP" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "1.14"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "1.64"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
-  } ],
-  "https://w3id.org/def/foo#iD" : [ {
-    "@value" : "1SAT32"
-  } ],
-  "https://w3id.org/def/foo#latitude" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "1.237206"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "1.537206"
-  } ],
-  "https://w3id.org/def/foo#localDate" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2011-10-26"
-  } ],
-  "https://w3id.org/def/foo#localTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#time",
-    "@value" : "07:40:35"
-  } ],
-  "https://w3id.org/def/foo#longitude" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "565.2223"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "566.2223"
-  } ],
-  "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#AqeelaGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Bikang1GPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Bikang2GPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#BinbinganGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#DaraGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#GuliGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#ItaGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#JasminGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#JasperGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#KasihGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#KumaGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#LiunGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#MaliauGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#MerotaiGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#PuteriGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#PututGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#SejatiGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#SeriGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#TulidGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#TunglapGPS"
-  }, {
-    "@id" : "https://w3id.org/def/foo#Umas2GPS"
-  } ],
-  "https://w3id.org/def/foo#resultTime" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2011-10-26T07:40:35"
-  }, {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2015-10-26T07:40:35"
-  } ],
-  "https://w3id.org/def/foo#speed" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "0.24"
-  } ],
-  "https://w3id.org/def/foo#temperature" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "24.5"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/foo#Genus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -632,31 +503,6 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Image generated by motion-activated wildlife cameras."
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#ImageObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Image Observation"
-  } ],
-  "https://w3id.org/def/foo#animalDetected" : [ {
-    "@value" : "Jasmin"
-  } ],
-  "https://w3id.org/def/foo#cameraLocation" : [ {
-    "@value" : "Danum Valley"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Image"
-  } ],
-  "https://w3id.org/def/foo#imageFile" : [ {
-    "@value" : "wildlife_image_001.jpg"
-  } ],
-  "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#CameraTrap"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Ita",
@@ -969,76 +815,6 @@
     "@value" : "Soil"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#SoilObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Soil Observation"
-  } ],
-  "https://w3id.org/def/foo#cNRatio" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "14.24"
-  } ],
-  "https://w3id.org/def/foo#clay" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "62.88"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Soil"
-  } ],
-  "https://w3id.org/def/foo#horizon" : [ {
-    "@value" : "Organic"
-  } ],
-  "https://w3id.org/def/foo#identifier" : [ {
-    "@value" : "MB4"
-  } ],
-  "https://w3id.org/def/foo#inorganicP" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "25.03"
-  } ],
-  "https://w3id.org/def/foo#landUse" : [ {
-    "@value" : "Unlogged"
-  } ],
-  "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilSensor"
-  } ],
-  "https://w3id.org/def/foo#plotName" : [ {
-    "@value" : "Belian"
-  } ],
-  "https://w3id.org/def/foo#sand" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "20.66"
-  } ],
-  "https://w3id.org/def/foo#silt" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "16.46"
-  } ],
-  "https://w3id.org/def/foo#site" : [ {
-    "@value" : "Maliau Basin Conservation Area"
-  } ],
-  "https://w3id.org/def/foo#soilPH" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "4.69"
-  } ],
-  "https://w3id.org/def/foo#subplot" : [ {
-    "@value" : "4"
-  } ],
-  "https://w3id.org/def/foo#totalC" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "5.45"
-  } ],
-  "https://w3id.org/def/foo#totalN" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "0.38"
-  } ],
-  "https://w3id.org/def/foo#totalP" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "263.74"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/foo#SoilProperties",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -1093,59 +869,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Tree"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#TreeObservation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Tree Observation"
-  } ],
-  "https://w3id.org/def/foo#date" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2017-07-21"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Tree"
-  } ],
-  "https://w3id.org/def/foo#iD" : [ {
-    "@value" : "TreeObs1"
-  } ],
-  "https://w3id.org/def/foo#lianaDBH_cm" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "10"
-  } ],
-  "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeSensor"
-  } ],
-  "https://w3id.org/def/foo#subplotRadius_m" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "30"
-  } ],
-  "https://w3id.org/def/foo#treeDBH_cm" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "110"
-  } ],
-  "https://w3id.org/def/foo#treeHeight_m" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "60"
-  } ],
-  "https://w3id.org/def/foo#treeID" : [ {
-    "@value" : "Shorea pauciflora"
-  } ],
-  "https://w3id.org/def/foo#treeIndividualNo" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
-  } ],
-  "https://w3id.org/def/foo#treeNLianas" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
-  } ],
-  "https://w3id.org/def/foo#treeNotes" : [ {
-    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#TreeProperties",
@@ -1216,7 +939,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#abawGPS",
@@ -1236,7 +959,7 @@
     "@id" : "https://w3id.org/def/foo#Abaw"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#altitude",
@@ -1256,7 +979,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#aqeelaGPS",
@@ -1276,7 +999,7 @@
     "@id" : "https://w3id.org/def/foo#Aqeela"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang1",
@@ -1290,7 +1013,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang1GPS",
@@ -1310,7 +1033,7 @@
     "@id" : "https://w3id.org/def/foo#Bikang1"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang2",
@@ -1324,7 +1047,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang2GPS",
@@ -1344,7 +1067,7 @@
     "@id" : "https://w3id.org/def/foo#Bikang2"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#binbinganGPS",
@@ -1364,7 +1087,7 @@
     "@id" : "https://w3id.org/def/foo#Binbingan"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#cNRatio",
@@ -1376,7 +1099,7 @@
   "@id" : "https://w3id.org/def/foo#clay",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1393,7 +1116,7 @@
   "@id" : "https://w3id.org/def/foo#count",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1409,7 +1132,7 @@
   "@id" : "https://w3id.org/def/foo#cov",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Cov"
@@ -1432,7 +1155,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#daraGPS",
@@ -1452,7 +1175,7 @@
     "@id" : "https://w3id.org/def/foo#Dara"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#date",
@@ -1461,7 +1184,7 @@
   "@id" : "https://w3id.org/def/foo#direction",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Direction"
@@ -1476,7 +1199,7 @@
   "@id" : "https://w3id.org/def/foo#distance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1492,9 +1215,9 @@
   "@id" : "https://w3id.org/def/foo#gMTDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   }, {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1515,9 +1238,9 @@
   "@id" : "https://w3id.org/def/foo#gMTTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   }, {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1535,6 +1258,147 @@
     "@value" : "The GMT time in Sabah, Malaysia, when the GPS collar records its readings."
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#gPSObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GPS Observation"
+  } ],
+  "https://w3id.org/def/foo#altitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "11.7"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "16.7"
+  } ],
+  "https://w3id.org/def/foo#count" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://w3id.org/def/foo#cov" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "https://w3id.org/def/foo#direction" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "https://w3id.org/def/foo#distance" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "https://w3id.org/def/foo#gMTDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2011-10-25"
+  } ],
+  "https://w3id.org/def/foo#gMTTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#time",
+    "@value" : "22:40:35"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#time",
+    "@value" : "23:40:35"
+  } ],
+  "https://w3id.org/def/foo#hDOP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.14"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.64"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "https://w3id.org/def/foo#iD" : [ {
+    "@value" : "1SAT32"
+  } ],
+  "https://w3id.org/def/foo#id" : [ {
+    "@language" : "en",
+    "@value" : "id"
+  } ],
+  "https://w3id.org/def/foo#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.237206"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.537206"
+  } ],
+  "https://w3id.org/def/foo#localDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2011-10-26"
+  } ],
+  "https://w3id.org/def/foo#localTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#time",
+    "@value" : "07:40:35"
+  } ],
+  "https://w3id.org/def/foo#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "565.2223"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "566.2223"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#AqeelaGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Bikang1GPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Bikang2GPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#BinbinganGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#DaraGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#GuliGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#ItaGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#JasminGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#JasperGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#KasihGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#KumaGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#LiunGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#MaliauGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#MerotaiGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#PuteriGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#PututGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#SejatiGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#SeriGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#TulidGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#TunglapGPS"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Umas2GPS"
+  } ],
+  "https://w3id.org/def/foo#resultTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2011-10-26T07:40:35"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-10-26T07:40:35"
+  } ],
+  "https://w3id.org/def/foo#speed" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.24"
+  } ],
+  "https://w3id.org/def/foo#temperature" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "24.5"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#guli",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1546,7 +1410,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#guliGPS",
@@ -1566,13 +1430,13 @@
     "@id" : "https://w3id.org/def/foo#Guli"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#hDOP",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HDOP"
@@ -1607,7 +1471,7 @@
   "@id" : "https://w3id.org/def/foo#horizon",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1627,7 +1491,7 @@
   "@id" : "https://w3id.org/def/foo#id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1642,6 +1506,31 @@
 }, {
   "@id" : "https://w3id.org/def/foo#imageFile",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#imageObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Image Observation"
+  } ],
+  "https://w3id.org/def/foo#animalDetected" : [ {
+    "@value" : "Jasmin"
+  } ],
+  "https://w3id.org/def/foo#cameraLocation" : [ {
+    "@value" : "Danum Valley"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Image"
+  } ],
+  "https://w3id.org/def/foo#imageFile" : [ {
+    "@value" : "wildlife_image_001.jpg"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#CameraTrap"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#inorganicP",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -1697,7 +1586,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#itaGPS",
@@ -1717,7 +1606,7 @@
     "@id" : "https://w3id.org/def/foo#Ita"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasmin",
@@ -1731,7 +1620,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasminGPS",
@@ -1751,7 +1640,7 @@
     "@id" : "https://w3id.org/def/foo#Jasmin"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasper",
@@ -1765,7 +1654,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasperGPS",
@@ -1785,7 +1674,7 @@
     "@id" : "https://w3id.org/def/foo#Jasper"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kasih",
@@ -1799,7 +1688,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kasihGPS",
@@ -1819,7 +1708,7 @@
     "@id" : "https://w3id.org/def/foo#Kasih"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kuma",
@@ -1833,7 +1722,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kumaGPS",
@@ -1853,13 +1742,13 @@
     "@id" : "https://w3id.org/def/foo#Kuma"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#landUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1876,7 +1765,7 @@
   "@id" : "https://w3id.org/def/foo#latitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Latitude"
@@ -1891,7 +1780,7 @@
   "@id" : "https://w3id.org/def/foo#lianaDBH_cm",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
+    "@id" : "https://w3id.org/def/foo#treeObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1912,7 +1801,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#liunGPS",
@@ -1932,15 +1821,15 @@
     "@id" : "https://w3id.org/def/foo#Luin"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#localDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   }, {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1961,9 +1850,9 @@
   "@id" : "https://w3id.org/def/foo#localTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   }, {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1984,7 +1873,7 @@
   "@id" : "https://w3id.org/def/foo#longitude",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Longitude"
@@ -2039,7 +1928,7 @@
   "@id" : "https://w3id.org/def/foo#make",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2064,7 +1953,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#maliauGPS",
@@ -2084,7 +1973,7 @@
     "@id" : "https://w3id.org/def/foo#Maliau"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#merotai",
@@ -2098,7 +1987,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#merotaiGPS",
@@ -2118,13 +2007,13 @@
     "@id" : "https://w3id.org/def/foo#Merotai"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#model",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2141,7 +2030,7 @@
   "@id" : "https://w3id.org/def/foo#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2192,7 +2081,7 @@
   "@id" : "https://w3id.org/def/foo#path",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#ImageObservation"
+    "@id" : "https://w3id.org/def/foo#imageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2220,7 +2109,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#puteriGPS",
@@ -2240,7 +2129,7 @@
     "@id" : "https://w3id.org/def/foo#Puteri"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#putut",
@@ -2254,7 +2143,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#pututGPS",
@@ -2274,7 +2163,7 @@
     "@id" : "https://w3id.org/def/foo#Putut"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#resultTime",
@@ -2294,7 +2183,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#sejatiGPS",
@@ -2314,7 +2203,7 @@
     "@id" : "https://w3id.org/def/foo#Sejati"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#seri",
@@ -2328,7 +2217,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#seriGPS",
@@ -2348,13 +2237,13 @@
     "@id" : "https://w3id.org/def/foo#Seri"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#silt",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2371,7 +2260,7 @@
   "@id" : "https://w3id.org/def/foo#site",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2385,10 +2274,80 @@
     "@value" : "Geographical area/site which samples were taken from."
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#soilObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil Observation"
+  } ],
+  "https://w3id.org/def/foo#cNRatio" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "14.24"
+  } ],
+  "https://w3id.org/def/foo#clay" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "62.88"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Soil"
+  } ],
+  "https://w3id.org/def/foo#horizon" : [ {
+    "@value" : "Organic"
+  } ],
+  "https://w3id.org/def/foo#identifier" : [ {
+    "@value" : "MB4"
+  } ],
+  "https://w3id.org/def/foo#inorganicP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "25.03"
+  } ],
+  "https://w3id.org/def/foo#landUse" : [ {
+    "@value" : "Unlogged"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#SoilSensor"
+  } ],
+  "https://w3id.org/def/foo#plotName" : [ {
+    "@value" : "Belian"
+  } ],
+  "https://w3id.org/def/foo#sand" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "20.66"
+  } ],
+  "https://w3id.org/def/foo#silt" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "16.46"
+  } ],
+  "https://w3id.org/def/foo#site" : [ {
+    "@value" : "Maliau Basin Conservation Area"
+  } ],
+  "https://w3id.org/def/foo#soilPH" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "4.69"
+  } ],
+  "https://w3id.org/def/foo#subplot" : [ {
+    "@value" : "4"
+  } ],
+  "https://w3id.org/def/foo#totalC" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "5.45"
+  } ],
+  "https://w3id.org/def/foo#totalN" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.38"
+  } ],
+  "https://w3id.org/def/foo#totalP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "263.74"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#soilPH",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Soil PH"
@@ -2404,7 +2363,7 @@
   "@id" : "https://w3id.org/def/foo#speed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Speed"
@@ -2419,7 +2378,7 @@
   "@id" : "https://w3id.org/def/foo#subplot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2436,7 +2395,7 @@
   "@id" : "https://w3id.org/def/foo#subplotRadius_m",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
+    "@id" : "https://w3id.org/def/foo#treeObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2449,7 +2408,7 @@
   "@id" : "https://w3id.org/def/foo#temperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Temperature"
@@ -2464,7 +2423,7 @@
   "@id" : "https://w3id.org/def/foo#totalC",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2481,7 +2440,7 @@
   "@id" : "https://w3id.org/def/foo#totalN",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilObservation"
+    "@id" : "https://w3id.org/def/foo#soilObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2501,7 +2460,7 @@
   "@id" : "https://w3id.org/def/foo#treeDBH_cm",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
+    "@id" : "https://w3id.org/def/foo#treeObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2514,7 +2473,7 @@
   "@id" : "https://w3id.org/def/foo#treeHeight_m",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
+    "@id" : "https://w3id.org/def/foo#treeObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2527,7 +2486,7 @@
   "@id" : "https://w3id.org/def/foo#treeID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
+    "@id" : "https://w3id.org/def/foo#treeObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2540,7 +2499,7 @@
   "@id" : "https://w3id.org/def/foo#treeIndividualNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeObservation"
+    "@id" : "https://w3id.org/def/foo#treeObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2556,6 +2515,59 @@
   "@id" : "https://w3id.org/def/foo#treeNotes",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#treeObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree Observation"
+  } ],
+  "https://w3id.org/def/foo#date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2017-07-21"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "https://w3id.org/def/foo#iD" : [ {
+    "@value" : "TreeObs1"
+  } ],
+  "https://w3id.org/def/foo#lianaDBH_cm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "https://w3id.org/def/foo#madeBySensor" : [ {
+    "@id" : "https://w3id.org/def/foo#TreeSensor"
+  } ],
+  "https://w3id.org/def/foo#subplotRadius_m" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "30"
+  } ],
+  "https://w3id.org/def/foo#treeDBH_cm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "110"
+  } ],
+  "https://w3id.org/def/foo#treeHeight_m" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "60"
+  } ],
+  "https://w3id.org/def/foo#treeID" : [ {
+    "@value" : "Shorea pauciflora"
+  } ],
+  "https://w3id.org/def/foo#treeIndividualNo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "https://w3id.org/def/foo#treeNLianas" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://w3id.org/def/foo#treeNotes" : [ {
+    "@value" : ""
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#tulid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2567,7 +2579,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tulidGPS",
@@ -2587,7 +2599,7 @@
     "@id" : "https://w3id.org/def/foo#Tulid"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tunglap",
@@ -2601,7 +2613,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Female Asian Elephant or ElephasMaximuas."
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tunglapGPS",
@@ -2621,7 +2633,7 @@
     "@id" : "https://w3id.org/def/foo#Tunglap"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#umas2",
@@ -2635,7 +2647,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Male Asian Elephant or ElephasMaximuas."
+    "@value" : "Male Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#umas2GPS",
@@ -2655,7 +2667,7 @@
     "@id" : "https://w3id.org/def/foo#Umas2"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#GPSObservation"
+    "@id" : "https://w3id.org/def/foo#gPSObservation"
   } ]
 }, {
   "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia",
