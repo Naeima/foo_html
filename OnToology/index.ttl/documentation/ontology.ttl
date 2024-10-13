@@ -269,7 +269,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#clay
 :clay rdf:type owl:DatatypeProperty ;
-      rdfs:domain :SoilObservation ;
+      rdfs:domain :soilObservation ;
       rdfs:range xsd:double ;
       rdfs:label "Clay"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Clay content of the soil sample."@en .
@@ -277,7 +277,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#count
 :count rdf:type owl:DatatypeProperty ;
-       rdfs:domain :GPSObservation ;
+       rdfs:domain :gPSObservation ;
        rdfs:range xsd:integer ;
        rdfs:label "Count"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Observation count per data set." .
@@ -285,7 +285,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#cov
 :cov rdf:type owl:DatatypeProperty ;
-     rdfs:domain :GPSObservation ;
+     rdfs:domain :gPSObservation ;
      rdfs:range xsd:double ;
      rdfs:label "Cov" ;
      <http://www.w3.org/2004/02/skos/core#definition> "TBC" .
@@ -293,7 +293,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#direction
 :direction rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ;
+           rdfs:domain :gPSObservation ;
            rdfs:range xsd:integer ;
            rdfs:label "Direction" ;
            <http://www.w3.org/2004/02/skos/core#definition> "Direction of elephant travel at the moment of data collection." .
@@ -301,7 +301,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#distance
 :distance rdf:type owl:DatatypeProperty ;
-          rdfs:domain :GPSObservation ;
+          rdfs:domain :gPSObservation ;
           rdfs:range xsd:double ;
           rdfs:label "Distance"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Distance (m) travelled from the last to the current data collection point." .
@@ -309,8 +309,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#gMTDate
 :gMTDate rdf:type owl:DatatypeProperty ;
-         rdfs:domain :GPSObservation ,
-                     :ImageObservation ;
+         rdfs:domain :gPSObservation ,
+                     :imageObservation ;
          rdfs:range xsd:date ;
          rdfs:label "GMT Date"@en ,
                     "GMT Date" ;
@@ -320,8 +320,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#gMTTime
 :gMTTime rdf:type owl:DatatypeProperty ;
-         rdfs:domain :GPSObservation ,
-                     :ImageObservation ;
+         rdfs:domain :gPSObservation ,
+                     :imageObservation ;
          rdfs:range xsd:time ;
          rdfs:label "GMT Time"@en ,
                     "GMT Time" ;
@@ -331,7 +331,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#hDOP
 :hDOP rdf:type owl:DatatypeProperty ;
-      rdfs:domain :GPSObservation ;
+      rdfs:domain :gPSObservation ;
       rdfs:range xsd:double ;
       rdfs:label "HDOP" ;
       <http://www.w3.org/2004/02/skos/core#definition> "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
@@ -339,7 +339,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#horizon
 :horizon rdf:type owl:DatatypeProperty ;
-         rdfs:domain :SoilObservation ;
+         rdfs:domain :soilObservation ;
          rdfs:range xsd:string ;
          rdfs:label "Horizon"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Soil horizon sampled."@en .
@@ -347,14 +347,14 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#id
 :id rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Observation ;
+    rdfs:domain :gPSObservation ;
     rdfs:range xsd:string ;
     rdfs:label "id"@en .
 
 
 ###  https://w3id.org/def/foo#landUse
 :landUse rdf:type owl:DatatypeProperty ;
-         rdfs:domain :SoilObservation ;
+         rdfs:domain :soilObservation ;
          rdfs:range xsd:string ;
          rdfs:label "Land Use"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Land use of the study plots."@en .
@@ -362,21 +362,21 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#latitude
 :latitude rdf:type owl:DatatypeProperty ;
-          rdfs:domain :GPSObservation ;
+          rdfs:domain :gPSObservation ;
           rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#lianaDBH_cm
 :lianaDBH_cm rdf:type owl:DatatypeProperty ;
-             rdfs:domain :TreeObservation ;
+             rdfs:domain :treeObservation ;
              rdfs:range xsd:string ;
              rdfs:label "lianaDBH_cm 10a"@en .
 
 
 ###  https://w3id.org/def/foo#localDate
 :localDate rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ,
-                       :ImageObservation ;
+           rdfs:domain :gPSObservation ,
+                       :imageObservation ;
            rdfs:range xsd:date ;
            rdfs:label "Local Date"@en ,
                       "Local Date" ;
@@ -386,8 +386,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#localTime
 :localTime rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ,
-                       :ImageObservation ;
+           rdfs:domain :gPSObservation ,
+                       :imageObservation ;
            rdfs:range xsd:time ;
            rdfs:label "Local Time"@en ,
                       "Local Time" ;
@@ -397,13 +397,13 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#longitude
 :longitude rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ;
+           rdfs:domain :gPSObservation ;
            rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#make
 :make rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ImageObservation ;
+      rdfs:domain :imageObservation ;
       rdfs:range xsd:string ;
       rdfs:label "Camera Make"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "The make of the trail camera used to capture the image."@en .
@@ -411,7 +411,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#model
 :model rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Observation ;
+       rdfs:domain :imageObservation ;
        rdfs:range xsd:string ;
        rdfs:label "Camera Model"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "The model of the trail camera used to capture the image."@en .
@@ -419,7 +419,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ImageObservation ;
+      rdfs:domain :imageObservation ;
       rdfs:range xsd:string ;
       rdfs:label "Image Name"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "The name assigned to an image at collection time."@en .
@@ -427,7 +427,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#path
 :path rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ImageObservation ;
+      rdfs:domain :imageObservation ;
       rdfs:range xsd:anyURI ;
       rdfs:label "Image Path"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "The URI pointing to the location of the image in secure cloud storage."@en .
@@ -435,7 +435,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#silt
 :silt rdf:type owl:DatatypeProperty ;
-      rdfs:domain :SoilObservation ;
+      rdfs:domain :soilObservation ;
       rdfs:range xsd:double ;
       rdfs:label "Silt"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Silt content of the soil sample."@en .
@@ -443,7 +443,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#site
 :site rdf:type owl:DatatypeProperty ;
-      rdfs:domain :SoilObservation ;
+      rdfs:domain :soilObservation ;
       rdfs:range xsd:string ;
       rdfs:label "Site"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Geographical area/site which samples were taken from."@en .
@@ -451,7 +451,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#soilPH
 :soilPH rdf:type owl:DatatypeProperty ;
-        rdfs:domain :SoilObservation ;
+        rdfs:domain :soilObservation ;
         rdfs:range xsd:double ;
         rdfs:label "Soil PH" ;
         <http://www.w3.org/2004/02/skos/core#definition> "Measured pH of the soil sample."@en .
@@ -459,7 +459,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#speed
 :speed rdf:type owl:DatatypeProperty ;
-       rdfs:domain :GPSObservation ;
+       rdfs:domain :gPSObservation ;
        rdfs:range xsd:double ;
        rdfs:label "Speed" ;
        <http://www.w3.org/2004/02/skos/core#definition> "Speed of the elephant at the moment of data collection." .
@@ -467,7 +467,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#subplot
 :subplot rdf:type owl:DatatypeProperty ;
-         rdfs:domain :GPSObservation ;
+         rdfs:domain :gPSObservation ;
          rdfs:range xsd:string ;
          rdfs:label "subPlot"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Number of the subplot sampled within each 1 Ha plot."@en .
@@ -475,14 +475,14 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#subplotRadius_m
 :subplotRadius_m rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :TreeObservation ;
+                 rdfs:domain :treeObservation ;
                  rdfs:range xsd:float ;
                  rdfs:label "SubplotRadius_m 30"@en .
 
 
 ###  https://w3id.org/def/foo#temperature
 :temperature rdf:type owl:DatatypeProperty ;
-             rdfs:domain :GPSObservation ;
+             rdfs:domain :gPSObservation ;
              rdfs:range xsd:double ;
              rdfs:label "Temperature" ;
              <http://www.w3.org/2004/02/skos/core#definition> "Estimated temperature of the elephant in Celsius at the moment of data collection." .
@@ -490,7 +490,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#totalC
 :totalC rdf:type owl:DatatypeProperty ;
-        rdfs:domain :SoilObservation ;
+        rdfs:domain :soilObservation ;
         rdfs:range xsd:double ;
         rdfs:label "Total C"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Total carbon content of the soil sample."@en .
@@ -498,7 +498,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#totalN
 :totalN rdf:type owl:DatatypeProperty ;
-        rdfs:domain :SoilObservation ;
+        rdfs:domain :soilObservation ;
         rdfs:range xsd:double ;
         rdfs:label "Total N"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Total nitrogen content of the soil sample."@en .
@@ -506,28 +506,28 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#treeDBH_cm
 :treeDBH_cm rdf:type owl:DatatypeProperty ;
-            rdfs:domain :TreeObservation ;
+            rdfs:domain :treeObservation ;
             rdfs:range xsd:float ;
             rdfs:label "TreeDBH_cm 110"@en .
 
 
 ###  https://w3id.org/def/foo#treeHeight_m
 :treeHeight_m rdf:type owl:DatatypeProperty ;
-              rdfs:domain :TreeObservation ;
+              rdfs:domain :treeObservation ;
               rdfs:range xsd:float ;
               rdfs:label "treeHeight_m 60"@en .
 
 
 ###  https://w3id.org/def/foo#treeID
 :treeID rdf:type owl:DatatypeProperty ;
-        rdfs:domain :TreeObservation ;
+        rdfs:domain :treeObservation ;
         rdfs:range xsd:string ;
         rdfs:label "TreeID"@en .
 
 
 ###  https://w3id.org/def/foo#treeIndividualNo
 :treeIndividualNo rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :TreeObservation ;
+                  rdfs:domain :treeObservation ;
                   rdfs:range xsd:integer ;
                   rdfs:label "TreeIndividualNo"@en .
 
@@ -578,44 +578,24 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#ElephasMaximus
-:ElephasMaximus rdf:type owl:Class ;
-                rdfs:subClassOf :Elephantidae .
+:ElephasMaximus rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Family
 :Family rdf:type owl:Class .
 
 
-###  https://w3id.org/def/foo#GPSObservation
-:GPSObservation rdf:type owl:Class .
-
-
 ###  https://w3id.org/def/foo#Genus
 :Genus rdf:type owl:Class .
 
 
-###  https://w3id.org/def/foo#ImageObservation
-:ImageObservation rdf:type owl:Class .
-
-
 ###  https://w3id.org/def/foo#Malayopython
-:Malayopython rdf:type owl:Class ;
-              rdfs:subClassOf :Pythonidae .
-
-
-###  https://w3id.org/def/foo#MalayopythonReticulatus
-:MalayopythonReticulatus rdf:type owl:Class ;
-                         rdfs:subClassOf :Malayopython .
+:Malayopython rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Mammalia
 :Mammalia rdf:type owl:Class ;
           rdfs:subClassOf :Chordata .
-
-
-###  https://w3id.org/def/foo#ManisJavanica
-:ManisJavanica rdf:type owl:Class ;
-               rdfs:subClassOf :Mammalia .
 
 
 ###  https://w3id.org/def/foo#Nasalis
@@ -648,8 +628,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Pythonidae
-:Pythonidae rdf:type owl:Class ;
-            rdfs:subClassOf :Squamata .
+:Pythonidae rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Reptilia
@@ -661,10 +640,6 @@ xsd:time rdf:type rdfs:Datatype .
 :Sensor rdf:type owl:Class .
 
 
-###  https://w3id.org/def/foo#SoilObservation
-:SoilObservation rdf:type owl:Class .
-
-
 ###  https://w3id.org/def/foo#Species
 :Species rdf:type owl:Class .
 
@@ -674,13 +649,50 @@ xsd:time rdf:type rdfs:Datatype .
           rdfs:subClassOf :Reptilia .
 
 
-###  https://w3id.org/def/foo#TreeObservation
-:TreeObservation rdf:type owl:Class .
-
-
 ###  https://w3id.org/def/foo#Viverridae
 :Viverridae rdf:type owl:Class ;
             rdfs:subClassOf :Family .
+
+
+###  https://w3id.org/def/foo#elephasMaximus
+:elephasMaximus rdf:type owl:Class ;
+                rdfs:subClassOf :Elephantidae .
+
+
+###  https://w3id.org/def/foo#gPSObservation
+:gPSObservation rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#imageObservation
+:imageObservation rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#malayopython
+:malayopython rdf:type owl:Class ;
+              rdfs:subClassOf :Pythonidae .
+
+
+###  https://w3id.org/def/foo#malayopythonReticulatus
+:malayopythonReticulatus rdf:type owl:Class ;
+                         rdfs:subClassOf :Malayopython .
+
+
+###  https://w3id.org/def/foo#manisJavanica
+:manisJavanica rdf:type owl:Class ;
+               rdfs:subClassOf :Mammalia .
+
+
+###  https://w3id.org/def/foo#pythonidae
+:pythonidae rdf:type owl:Class ;
+            rdfs:subClassOf :Squamata .
+
+
+###  https://w3id.org/def/foo#soilObservation
+:soilObservation rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#treeObservation
+:treeObservation rdf:type owl:Class .
 
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Class
@@ -857,7 +869,9 @@ xsd:time rdf:type rdfs:Datatype .
 :CameraTrap rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Image ;
-            :observes :ImageObservation ;
+            :observes :imageObservation ;
+            :make "Make"@en ;
+            :model "Model"@en ;
             rdfs:label "Camera Trap"@en .
 
 
@@ -902,52 +916,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#ElephasMaximus
-:ElephasMaximus rdf:type owl:NamedIndividual ,
-                         :Species .
-
-
-###  https://w3id.org/def/foo#GPSObservation
-:GPSObservation rdf:type owl:NamedIndividual ,
-                         :Observation ;
-                :hasFeatureOfInterest :ElephasMaximus ;
-                :madeBySensor :AqeelaGPS ,
-                              :Bikang1GPS ,
-                              :Bikang2GPS ,
-                              :BinbinganGPS ,
-                              :DaraGPS ,
-                              :GuliGPS ,
-                              :ItaGPS ,
-                              :JasminGPS ,
-                              :JasperGPS ,
-                              :KasihGPS ,
-                              :KumaGPS ,
-                              :LiunGPS ,
-                              :MaliauGPS ,
-                              :MerotaiGPS ,
-                              :PuteriGPS ,
-                              :PututGPS ,
-                              :SejatiGPS ,
-                              :SeriGPS ,
-                              :TulidGPS ,
-                              :TunglapGPS ,
-                              :Umas2GPS ;
-                :count 1 ;
-                :cov "0.0"^^xsd:double ;
-                :direction 0 ;
-                :distance "0.0"^^xsd:double ;
-                :gMTDate "2011-10-25"^^xsd:date ;
-                :gMTTime "22:40:35"^^xsd:time ,
-                         "23:40:35"^^xsd:time ;
-                :hDOP "1.14"^^xsd:double ,
-                      "1.64"^^xsd:double ;
-                :latitude "1.237206"^^xsd:double ,
-                          "1.537206"^^xsd:double ;
-                :localDate "2011-10-26"^^xsd:date ;
-                :localTime "07:40:35"^^xsd:time ;
-                :longitude "565.2223"^^xsd:double ,
-                           "566.2223"^^xsd:double ;
-                :speed "0.24"^^xsd:double ;
-                :temperature "24.5"^^xsd:double .
+:ElephasMaximus rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Genus
@@ -971,13 +940,6 @@ xsd:time rdf:type rdfs:Datatype .
 :Image rdf:type owl:NamedIndividual ;
        rdfs:label "Camera Trap Image"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
-
-
-###  https://w3id.org/def/foo#ImageObservation
-:ImageObservation rdf:type owl:NamedIndividual ,
-                           :Observation ;
-                  :hasFeatureOfInterest :Image ;
-                  :madeBySensor :CameraTrap .
 
 
 ###  https://w3id.org/def/foo#Ita
@@ -1045,16 +1007,6 @@ xsd:time rdf:type rdfs:Datatype .
 :Luin rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#Malayopython
-:Malayopython rdf:type owl:NamedIndividual ,
-                       :Genus .
-
-
-###  https://w3id.org/def/foo#MalayopythonReticulatus
-:MalayopythonReticulatus rdf:type owl:NamedIndividual ,
-                                  :Species .
-
-
 ###  https://w3id.org/def/foo#Maliau
 :Maliau rdf:type owl:NamedIndividual .
 
@@ -1070,11 +1022,6 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#ManisJavanica
-:ManisJavanica rdf:type owl:NamedIndividual ,
-                        :Species .
 
 
 ###  https://w3id.org/def/foo#Merotai
@@ -1128,11 +1075,6 @@ xsd:time rdf:type rdfs:Datatype .
 :PututGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#Pythonidae
-:Pythonidae rdf:type owl:NamedIndividual ,
-                     :Family .
-
-
 ###  https://w3id.org/def/foo#Reptilia
 :Reptilia rdf:type owl:NamedIndividual ;
           owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> .
@@ -1165,22 +1107,6 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#Soil
 :Soil rdf:type owl:NamedIndividual ;
       rdfs:label "Soil"@en .
-
-
-###  https://w3id.org/def/foo#SoilObservation
-:SoilObservation rdf:type owl:NamedIndividual ,
-                          :Observation ;
-                 :hasFeatureOfInterest :Soil ;
-                 :madeBySensor :SoilSensor ;
-                 :clay "62.88"^^xsd:double ;
-                 :horizon "Organic" ;
-                 :landUse "Unlogged" ;
-                 :silt "16.46"^^xsd:double ;
-                 :site "Maliau Basin Conservation Area" ;
-                 :soilPH "4.69"^^xsd:double ;
-                 :subplot "4" ;
-                 :totalC "5.45"^^xsd:double ;
-                 :totalN "0.38"^^xsd:double .
 
 
 ###  https://w3id.org/def/foo#SoilProperties
@@ -1217,19 +1143,6 @@ xsd:time rdf:type rdfs:Datatype .
 :Tree rdf:type owl:NamedIndividual ,
                :Species ;
       rdfs:label "Tree"@en .
-
-
-###  https://w3id.org/def/foo#TreeObservation
-:TreeObservation rdf:type owl:NamedIndividual ,
-                          :Observation ;
-                 :hasFeatureOfInterest :Tree ;
-                 :madeBySensor :TreeSensor ;
-                 :lianaDBH_cm 10 ;
-                 :subplotRadius_m 30 ;
-                 :treeDBH_cm 110 ;
-                 :treeHeight_m 60 ;
-                 :treeID "Shorea pauciflora" ;
-                 :treeIndividualNo 2 .
 
 
 ###  https://w3id.org/def/foo#TreeProperties
@@ -1283,14 +1196,14 @@ xsd:time rdf:type rdfs:Datatype .
 :abaw rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
       rdfs:label "Abaw"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#abawGPS
 :abawGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Abaw ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Umas2 GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en .
 
@@ -1299,14 +1212,14 @@ xsd:time rdf:type rdfs:Datatype .
 :aqeela rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
         rdfs:label "Aqeela"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#aqeelaGPS
 :aqeelaGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Aqeela ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Aqeela GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en .
 
@@ -1315,14 +1228,14 @@ xsd:time rdf:type rdfs:Datatype .
 :bikang1 rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
          rdfs:label "Bikang 1"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#bikang1GPS
 :bikang1GPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Bikang1 ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Bikang 1 GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en .
 
@@ -1331,14 +1244,14 @@ xsd:time rdf:type rdfs:Datatype .
 :bikang2 rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
          rdfs:label "Bikang 2"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#bikang2GPS
 :bikang2GPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Bikang2 ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Bikang 2 GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 2."@en .
 
@@ -1347,7 +1260,7 @@ xsd:time rdf:type rdfs:Datatype .
 :binbinganGPS rdf:type owl:NamedIndividual ,
                        :Sensor ;
               :hasFeatureOfInterest :Binbingan ;
-              :observes :GPSObservation ;
+              :observes :gPSObservation ;
               rdfs:label "Binbingan GPS"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en .
 
@@ -1356,30 +1269,80 @@ xsd:time rdf:type rdfs:Datatype .
 :dara rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
       rdfs:label "Dara"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#daraGPS
 :daraGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Dara ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Umas2 GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en .
+
+
+###  https://w3id.org/def/foo#elephasMaximus
+:elephasMaximus rdf:type owl:NamedIndividual ,
+                         :Species .
+
+
+###  https://w3id.org/def/foo#gPSObservation
+:gPSObservation rdf:type owl:NamedIndividual ,
+                         :Observation ;
+                :hasFeatureOfInterest :ElephasMaximus ;
+                :madeBySensor :AqeelaGPS ,
+                              :Bikang1GPS ,
+                              :Bikang2GPS ,
+                              :BinbinganGPS ,
+                              :DaraGPS ,
+                              :GuliGPS ,
+                              :ItaGPS ,
+                              :JasminGPS ,
+                              :JasperGPS ,
+                              :KasihGPS ,
+                              :KumaGPS ,
+                              :LiunGPS ,
+                              :MaliauGPS ,
+                              :MerotaiGPS ,
+                              :PuteriGPS ,
+                              :PututGPS ,
+                              :SejatiGPS ,
+                              :SeriGPS ,
+                              :TulidGPS ,
+                              :TunglapGPS ,
+                              :Umas2GPS ;
+                :count 1 ;
+                :cov "0.0"^^xsd:double ;
+                :direction 0 ;
+                :distance "0.0"^^xsd:double ;
+                :gMTDate "2011-10-25"^^xsd:date ;
+                :gMTTime "22:40:35"^^xsd:time ,
+                         "23:40:35"^^xsd:time ;
+                :hDOP "1.14"^^xsd:double ,
+                      "1.64"^^xsd:double ;
+                :id "id"@en ;
+                :latitude "1.237206"^^xsd:double ,
+                          "1.537206"^^xsd:double ;
+                :localDate "2011-10-26"^^xsd:date ;
+                :localTime "07:40:35"^^xsd:time ;
+                :longitude "565.2223"^^xsd:double ,
+                           "566.2223"^^xsd:double ;
+                :speed "0.24"^^xsd:double ;
+                :temperature "24.5"^^xsd:double .
 
 
 ###  https://w3id.org/def/foo#guli
 :guli rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
       rdfs:label "Guli"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#guliGPS
 :guliGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Guli ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Guli GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Guli."@en .
 
@@ -1388,18 +1351,25 @@ xsd:time rdf:type rdfs:Datatype .
 :hasFeatureOfInterest rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#imageObservation
+:imageObservation rdf:type owl:NamedIndividual ,
+                           :Observation ;
+                  :hasFeatureOfInterest :Image ;
+                  :madeBySensor :CameraTrap .
+
+
 ###  https://w3id.org/def/foo#ita
 :ita rdf:type owl:NamedIndividual ,
               :ElephasMaximus ;
      rdfs:label "Ita"@en ;
-     <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+     <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#itaGPS
 :itaGPS rdf:type owl:NamedIndividual ,
                  :Sensor ;
         :hasFeatureOfInterest :Ita ;
-        :observes :GPSObservation ;
+        :observes :gPSObservation ;
         rdfs:label "Ita GPS"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Ita."@en .
 
@@ -1408,14 +1378,14 @@ xsd:time rdf:type rdfs:Datatype .
 :jasmin rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
         rdfs:label "Jasmin"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#jasminGPS
 :jasminGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Jasmin ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Jasmin GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Jasmin."@en .
 
@@ -1424,14 +1394,14 @@ xsd:time rdf:type rdfs:Datatype .
 :jasper rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
         rdfs:label "Jasper"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#jasperGPS
 :jasperGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Jasper ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Jasper GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper."@en .
 
@@ -1440,14 +1410,14 @@ xsd:time rdf:type rdfs:Datatype .
 :kasih rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
        rdfs:label "Kasih"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#kasihGPS
 :kasihGPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Kasih ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Kasih GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Kasih."@en .
 
@@ -1456,14 +1426,14 @@ xsd:time rdf:type rdfs:Datatype .
 :kuma rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
       rdfs:label "Kuma"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#kumaGPS
 :kumaGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Kuma ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Kuma GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Kuma."@en .
 
@@ -1476,14 +1446,14 @@ xsd:time rdf:type rdfs:Datatype .
 :liun rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
       rdfs:label "Liun"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#liunGPS
 :liunGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Luin ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Liun GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Liun."@en .
 
@@ -1496,34 +1466,49 @@ xsd:time rdf:type rdfs:Datatype .
 :madeBySensor rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#malayopython
+:malayopython rdf:type owl:NamedIndividual ,
+                       :Genus .
+
+
+###  https://w3id.org/def/foo#malayopythonReticulatus
+:malayopythonReticulatus rdf:type owl:NamedIndividual ,
+                                  :Species .
+
+
 ###  https://w3id.org/def/foo#maliau
 :maliau rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
         rdfs:label "Maliau"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#maliauGPS
 :maliauGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Maliau ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Maliau GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en .
+
+
+###  https://w3id.org/def/foo#manisJavanica
+:manisJavanica rdf:type owl:NamedIndividual ,
+                        :Species .
 
 
 ###  https://w3id.org/def/foo#merotai
 :merotai rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
          rdfs:label "Merotai"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#merotaiGPS
 :merotaiGPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Merotai ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Merotai GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Merotai."@en .
 
@@ -1532,14 +1517,14 @@ xsd:time rdf:type rdfs:Datatype .
 :puteri rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
         rdfs:label "Puteri"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#puteriGPS
 :puteriGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Puteri ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Puteri GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Puteri."@en .
 
@@ -1548,30 +1533,35 @@ xsd:time rdf:type rdfs:Datatype .
 :putut rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
        rdfs:label "Putut"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#pututGPS
 :pututGPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Putut ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Putut GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en .
+
+
+###  https://w3id.org/def/foo#pythonidae
+:pythonidae rdf:type owl:NamedIndividual ,
+                     :Family .
 
 
 ###  https://w3id.org/def/foo#sejati
 :sejati rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
         rdfs:label "Sejati"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#sejatiGPS
 :sejatiGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Sejati ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Sejati GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Sejati."@en .
 
@@ -1580,30 +1570,59 @@ xsd:time rdf:type rdfs:Datatype .
 :seri rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
       rdfs:label "Seri"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant ."@en .
 
 
 ###  https://w3id.org/def/foo#seriGPS
 :seriGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Seri ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Seri GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en .
+
+
+###  https://w3id.org/def/foo#soilObservation
+:soilObservation rdf:type owl:NamedIndividual ,
+                          :Observation ;
+                 :hasFeatureOfInterest :Soil ;
+                 :madeBySensor :SoilSensor ;
+                 :clay "62.88"^^xsd:double ;
+                 :horizon "Organic" ;
+                 :landUse "Unlogged" ;
+                 :silt "16.46"^^xsd:double ;
+                 :site "Maliau Basin Conservation Area" ;
+                 :soilPH "4.69"^^xsd:double ;
+                 :subplot "4" ;
+                 :totalC "5.45"^^xsd:double ;
+                 :totalN "0.38"^^xsd:double .
+
+
+###  https://w3id.org/def/foo#treeObservation
+:treeObservation rdf:type owl:NamedIndividual ,
+                          :Observation ;
+                 :hasFeatureOfInterest :Tree ;
+                 :madeBySensor :TreeSensor ;
+                 :lianaDBH_cm 10 ;
+                 :subplotRadius_m 30 ;
+                 :treeDBH_cm 110 ;
+                 :treeHeight_m 60 ;
+                 :treeID "Shorea pauciflora" ;
+                 :treeIndividualNo 2 .
 
 
 ###  https://w3id.org/def/foo#tulid
 :tulid rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
        rdfs:label "Tulid"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant ."@en .
 
 
 ###  https://w3id.org/def/foo#tulidGPS
 :tulidGPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Tulid ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Tulid GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Tulid."@en .
 
@@ -1612,14 +1631,14 @@ xsd:time rdf:type rdfs:Datatype .
 :tunglap rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
          rdfs:label "Tunglap"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant or ElephasMaximuas."@en .
+         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
 
 ###  https://w3id.org/def/foo#tunglapGPS
 :tunglapGPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Tunglap ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Tunglap GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Tunglap."@en .
 
@@ -1628,14 +1647,14 @@ xsd:time rdf:type rdfs:Datatype .
 :umas2 rdf:type owl:NamedIndividual ,
                 :ElephasMaximus ;
        rdfs:label "Umas2"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant or ElephasMaximuas."@en .
+       <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant ."@en .
 
 
 ###  https://w3id.org/def/foo#umas2GPS
 :umas2GPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Umas2 ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Umas2 GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Umas2."@en .
 
@@ -1707,45 +1726,11 @@ xsd:time rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 
 
-:ElephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
-                rdfs:label "Asian Elephant"@en ,
-                           "Elephas maximus"@la ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
-
-
-:GPSObservation rdfs:label "GPS Observation"@en ;
-                :altitude "11.7"^^xsd:double ,
-                          "16.7"^^xsd:double ;
-                :iD "1SAT32" ;
-                :resultTime "2011-10-26T07:40:35"^^xsd:dateTime ,
-                            "2015-10-26T07:40:35"^^xsd:dateTime .
-
-
 :Genus rdfs:label "Genus"@en-gb .
-
-
-:ImageObservation rdfs:label "Image Observation"@en ;
-                  :animalDetected "Jasmin" ;
-                  :cameraLocation "Danum Valley" ;
-                  :imageFile "wildlife_image_001.jpg" .
-
-
-:Malayopython rdfs:label "Malayopython"@en .
-
-
-:MalayopythonReticulatus rdfs:label "Malayopython reticulatus"@la ,
-                                    "Reticulated Python"@en ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
 :Mammalia rdfs:label "Mammalia"@en-gb ;
           <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
-
-
-:ManisJavanica rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
-               rdfs:label "Manis javanica"@la ,
-                          "Sunda Pangolin"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
 
 :Nasalis rdfs:label "Nasalis"@en-gb ;
@@ -1770,24 +1755,12 @@ xsd:time rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
 
 
-:Pythonidae rdfs:label "Pythonidae"@en .
-
-
 :Reptilia rdfs:label "Reptilia"@en-gb ;
           <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
 
 
 :Sensor rdfs:label "Sensor"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
-
-
-:SoilObservation rdfs:label "Soil Observation"@en ;
-                 :cNRatio "14.24"^^xsd:double ;
-                 :identifier "MB4" ;
-                 :inorganicP "25.03"^^xsd:double ;
-                 :plotName "Belian" ;
-                 :sand "20.66"^^xsd:double ;
-                 :totalP "263.74"^^xsd:double .
 
 
 :Species rdfs:label "Species"@en-gb ;
@@ -1797,18 +1770,31 @@ xsd:time rdf:type rdfs:Datatype .
 :Squamata rdfs:label "Squamata"@en-gb .
 
 
-:TreeObservation rdfs:label "Tree Observation"@en ;
-                 :date "2017-07-21"^^xsd:date ;
-                 :iD "TreeObs1" ;
-                 :treeNLianas 3 ;
-                 :treeNotes "" .
-
-
 :Viverridae rdfs:label "Viverridae"@en-gb .
+
+
+:elephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+                rdfs:label "Asian Elephant"@en ,
+                           "Elephas maximus"@la ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
+
+
+:gPSObservation rdfs:label "GPS Observation"@en ;
+                :altitude "11.7"^^xsd:double ,
+                          "16.7"^^xsd:double ;
+                :iD "1SAT32" ;
+                :resultTime "2011-10-26T07:40:35"^^xsd:dateTime ,
+                            "2015-10-26T07:40:35"^^xsd:dateTime .
 
 
 :hasFeatureOfInterest rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
                       rdfs:label "has Feature Of Interest"@en .
+
+
+:imageObservation rdfs:label "Image Observation"@en ;
+                  :animalDetected "Jasmin" ;
+                  :cameraLocation "Danum Valley" ;
+                  :imageFile "wildlife_image_001.jpg" .
 
 
 :latitude rdfs:label "Latitude" ;
@@ -1821,6 +1807,39 @@ xsd:time rdf:type rdfs:Datatype .
 
 :madeBySensor rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
               rdfs:label "made by sensor"@en .
+
+
+:malayopython rdfs:label "Malayopython"@en .
+
+
+:malayopythonReticulatus rdfs:label "Malayopython reticulatus"@la ,
+                                    "Reticulated Python"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+
+
+:manisJavanica rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+               rdfs:label "Manis javanica"@la ,
+                          "Sunda Pangolin"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
+
+
+:pythonidae rdfs:label "Pythonidae"@en .
+
+
+:soilObservation rdfs:label "Soil Observation"@en ;
+                 :cNRatio "14.24"^^xsd:double ;
+                 :identifier "MB4" ;
+                 :inorganicP "25.03"^^xsd:double ;
+                 :plotName "Belian" ;
+                 :sand "20.66"^^xsd:double ;
+                 :totalP "263.74"^^xsd:double .
+
+
+:treeObservation rdfs:label "Tree Observation"@en ;
+                 :date "2017-07-21"^^xsd:date ;
+                 :iD "TreeObs1" ;
+                 :treeNLianas 3 ;
+                 :treeNotes "" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
