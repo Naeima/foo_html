@@ -659,87 +659,87 @@ foo:abawGPS a foo:Sensor ;
 
 #### Animal Instances ####
 
-foo:aqeela a foo:ElephasMaximus;
+foo:aqeela a foo:elephasMaximus;
     rdfs:label "Aqeela"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:guli a foo:ElephasMaximus;
+foo:guli a foo:elephasMaximus;
     rdfs:label "Guli"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:bikang1 a foo:ElephasMaximus;
+foo:bikang1 a foo:elephasMaximus;
     rdfs:label "Bikang 1"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:bikang2 a foo:ElephasMaximus;
+foo:bikang2 a foo:elephasMaximus;
     rdfs:label "Bikang 2"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:dara a foo:ElephasMaximus;
+foo:dara a foo:elephasMaximus;
     rdfs:label "Dara"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:abaw a foo:ElephasMaximus; 
+foo:abaw a foo:elephasMaximus; 
     rdfs:label "Abaw"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:ita a foo:ElephasMaximus ;
+foo:ita a foo:elephasMaximus ;
     rdfs:label "Ita"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:jasmin a foo:ElephasMaximus ;
+foo:jasmin a foo:elephasMaximus ;
     rdfs:label "Jasmin"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:jasper a foo:ElephasMaximus ;
+foo:jasper a foo:elephasMaximus ;
     rdfs:label "Jasper"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:kasih a foo:ElephasMaximus ;
+foo:kasih a foo:elephasMaximus ;
     rdfs:label "Kasih"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:kuma a foo:ElephasMaximus ;
+foo:kuma a foo:elephasMaximus ;
     rdfs:label "Kuma"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:liun a foo:ElephasMaximus ;
+foo:liun a foo:elephasMaximus ;
     rdfs:label "Liun"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:maliau a foo:ElephasMaximus ;
+foo:maliau a foo:elephasMaximus ;
     rdfs:label "Maliau"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:merotai a foo:ElephasMaximus ;
+foo:merotai a foo:elephasMaximus ;
     rdfs:label "Merotai"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:puteri a foo:ElephasMaximus;
+foo:puteri a foo:elephasMaximus;
     rdfs:label "Puteri"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:putut a foo:ElephasMaximus ;
+foo:putut a foo:elephasMaximus ;
     rdfs:label "Putut"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:sejati a foo:ElephasMaximus ;
+foo:sejati a foo:elephasMaximus ;
     rdfs:label "Sejati"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:seri a foo:ElephasMaximus ;
+foo:seri a foo:elephasMaximus ;
     rdfs:label "Seri"@en ;
     skos:definition "Female Asian Elephant ."@en .
 
-foo:tulid a foo:ElephasMaximus ;
+foo:tulid a foo:elephasMaximus ;
     rdfs:label "Tulid"@en ;
     skos:definition "Female Asian Elephant ."@en .
 
-foo:tunglap a foo:ElephasMaximus ;
+foo:tunglap a foo:elephasMaximus ;
     rdfs:label "Tunglap"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:umas2 a foo:ElephasMaximus ;
+foo:umas2 a foo:elephasMaximus ;
     rdfs:label "Umas2"@en ;
     skos:definition "Male Asian Elephant ."@en .
 
@@ -761,20 +761,20 @@ foo:gPSObservation a foo:Observation ;
     foo:longitude 5.652223e+02, 5.662223e+02 ;
     foo:speed 2.4e-01 ;
     foo:temperature 2.45e+01 ;
-    foo:hasFeatureOfInterest foo:ElephasMaximus ;
+    foo:hasFeatureOfInterest foo:elephasMaximus ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
 
 ####Soil Modeling ####
 #### Soil Sensor ####
-foo:SoilSensor a sosa:Sensor ;
+foo:soilSensor a sosa:Sensor ;
     rdfs:label "Soil Sensor"@en ;
-    foo:observes foo:SoilProperties ;
-    foo:hasFeatureOfInterest foo:Soil .
+    foo:observes foo:soilProperties ;
+    foo:hasFeatureOfInterest foo:soil .
 
 #### Soil ####
-foo:Soil a owl:NamedIndividual ;
+foo:soil a owl:NamedIndividual ;
     rdfs:label "Soil"@en .
 
 #### Soil Observation ####
@@ -806,18 +806,18 @@ foo:soilObservation a foo:Observation ;
 
 #### Tree Modeling ####
 
-foo:TreeSensor a foo:Sensor ;
+foo:treeSensor a foo:Sensor ;
     rdfs:label "Tree Sensor"@en ;
-    foo:observes foo:TreeProperties ;
+    foo:observes foo:treeProperties ;
     foo:hasFeatureOfInterest foo:Tree .
 
 #### Tree as a Feature of Interest ####
-foo:Tree a owl:NamedIndividual, foo:Species;
+foo:tree a owl:NamedIndividual, foo:Species;
     rdfs:label "Tree"@en .
 
 
 #### Tree Properties as Observable ####
-foo:TreeProperties a sosa:ObservableProperty ;
+foo:treeProperties a sosa:ObservableProperty ;
     rdfs:label "Tree Properties"@en .
 
 #### Tree Observation ####
@@ -839,18 +839,18 @@ foo:treeObservation a foo:Observation ;
     foo:treeNotes ""^^xsd:string ;
     
     # Link the observation to the feature of interest (tree) and sensor
-    foo:hasFeatureOfInterest foo:Tree ;
-    foo:madeBySensor foo:TreeSensor .    
+    foo:hasFeatureOfInterest foo:tree ;
+    foo:madeBySensor foo:treeSensor .    
 
 #### Lianas as Feature of Interest ####
-foo:Lianas a owl:NamedIndividual ;
+foo:lianas a owl:NamedIndividual ;
     rdfs:label "Lianas"@en ;
-    foo:isObservedBy foo:LianaSensor .
+    foo:isObservedBy foo:lianaSensor .
 
 #### Liana Sensor ####
-foo:LianaSensor a foo:Sensor ;
+foo:lianaSensor a foo:Sensor ;
     rdfs:label "Liana Sensor"@en ;
-    foo:observes foo:LianaProperties .
+    foo:observes foo:lianaProperties .
 
 
 ##### Camera Trap Images Modeling #### 
