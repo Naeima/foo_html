@@ -934,13 +934,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#ElephasMaximus -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Family -->
 
 
@@ -1069,6 +1062,13 @@
     <owl:Class rdf:about="https://w3id.org/def/foo#Viverridae">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Family"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#elephasMaximus -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#elephasMaximus"/>
     
 
 
@@ -1473,13 +1473,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#ElephasMaximus -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ElephasMaximus"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Genus -->
 
 
@@ -1587,34 +1580,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#KumaGPS"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#LianaProperties -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#LianaProperties"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#LianaSensor -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#LianaSensor">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
-        <observes rdf:resource="https://w3id.org/def/foo#LianaProperties"/>
-        <rdfs:label xml:lang="en">Liana Sensor</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#Lianas -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Lianas">
-        <isObservedBy rdf:resource="https://w3id.org/def/foo#LianaSensor"/>
-        <rdfs:label xml:lang="en">Lianas</rdfs:label>
-    </owl:NamedIndividual>
     
 
 
@@ -1797,28 +1762,14 @@
     <!-- https://w3id.org/def/foo#Soil -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Soil">
-        <rdfs:label xml:lang="en">Soil</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#SoilProperties -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilProperties"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Soil"/>
     
 
 
     <!-- https://w3id.org/def/foo#SoilSensor -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor">
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
-        <observes rdf:resource="https://w3id.org/def/foo#SoilProperties"/>
-        <rdfs:label xml:lang="en">Soil Sensor</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor"/>
     
 
 
@@ -1857,32 +1808,7 @@
     <!-- https://w3id.org/def/foo#Tree -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tree">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:label xml:lang="en">Tree</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#TreeProperties -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeProperties">
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:label xml:lang="en">Tree Properties</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#TreeSensor -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeSensor">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
-        <observes rdf:resource="https://w3id.org/def/foo#TreeProperties"/>
-        <rdfs:label xml:lang="en">Tree Sensor</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tree"/>
     
 
 
@@ -1948,7 +1874,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#abaw">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Abaw</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -1972,7 +1898,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#aqeela">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Aqeela</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -1996,7 +1922,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang1">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Bikang 1</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2020,7 +1946,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang2">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Bikang 2</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2057,7 +1983,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#dara">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Dara</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2083,10 +2009,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#elephasMaximus">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
         <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
-        <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
-        <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
-        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2096,7 +2018,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#gPSObservation">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <madeBySensor rdf:resource="https://w3id.org/def/foo#AqeelaGPS"/>
         <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang1GPS"/>
         <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang2GPS"/>
@@ -2144,7 +2066,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#guli">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Guli</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2186,7 +2108,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ita">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Ita</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2210,7 +2132,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasmin">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Jasmin</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2234,7 +2156,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasper">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Jasper</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2258,7 +2180,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kasih">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Kasih</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2282,7 +2204,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kuma">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Kuma</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2309,11 +2231,39 @@
     
 
 
+    <!-- https://w3id.org/def/foo#lianaProperties -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianaProperties"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#lianaSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianaSensor">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
+        <observes rdf:resource="https://w3id.org/def/foo#lianaProperties"/>
+        <rdfs:label xml:lang="en">Liana Sensor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#lianas -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianas">
+        <isObservedBy rdf:resource="https://w3id.org/def/foo#lianaSensor"/>
+        <rdfs:label xml:lang="en">Lianas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#liun -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#liun">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Liun</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2374,7 +2324,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#maliau">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Maliau</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2411,7 +2361,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#merotai">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Merotai</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2435,7 +2385,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#puteri">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Puteri</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2459,7 +2409,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#putut">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Putut</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2493,7 +2443,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#sejati">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Sejati</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2517,7 +2467,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#seri">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Seri</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
@@ -2533,6 +2483,15 @@
         <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Seri GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Seri.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#soil -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soil">
+        <rdfs:label xml:lang="en">Soil</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2557,13 +2516,42 @@
     
 
 
+    <!-- https://w3id.org/def/foo#soilProperties -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soilProperties"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#soilSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soilSensor">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#soil"/>
+        <observes rdf:resource="https://w3id.org/def/foo#soilProperties"/>
+        <rdfs:label xml:lang="en">Soil Sensor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#tree -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tree">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
+        <rdfs:label xml:lang="en">Tree</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#treeObservation -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeObservation">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#TreeSensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#tree"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#treeSensor"/>
         <lianaDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</lianaDBH_cm>
         <subplotRadius_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</subplotRadius_m>
         <treeDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</treeDBH_cm>
@@ -2574,11 +2562,33 @@
     
 
 
+    <!-- https://w3id.org/def/foo#treeProperties -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeProperties">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Tree Properties</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#treeSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeSensor">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
+        <observes rdf:resource="https://w3id.org/def/foo#treeProperties"/>
+        <rdfs:label xml:lang="en">Tree Sensor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#tulid -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tulid">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Tulid</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
@@ -2602,7 +2612,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tunglap">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Tunglap</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2626,7 +2636,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#umas2">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#elephasMaximus"/>
         <rdfs:label xml:lang="en">Umas2</rdfs:label>
         <skos:definition xml:lang="en">Male Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
@@ -2790,6 +2800,12 @@
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Viverridae">
         <rdfs:label xml:lang="en-gb">Viverridae</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#elephasMaximus">
+        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
+        <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
+        <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
+        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#gPSObservation">
         <rdfs:label xml:lang="en">GPS Observation</rdfs:label>
