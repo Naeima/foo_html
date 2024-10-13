@@ -336,7 +336,7 @@
     "id" : "129",
     "type" : "owl:Class"
   }, {
-    "id" : "133",
+    "id" : "134",
     "type" : "owl:Class"
   }, {
     "id" : "136",
@@ -378,7 +378,7 @@
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "135",
+    "id" : "131",
     "type" : "owl:Class"
   }, {
     "id" : "173",
@@ -652,12 +652,12 @@
       "altitude" : [ {
         "identifier" : "altitude",
         "language" : "undefined",
-        "value" : "16.7",
+        "value" : "11.7",
         "type" : "label"
       }, {
         "identifier" : "altitude",
         "language" : "undefined",
-        "value" : "11.7",
+        "value" : "16.7",
         "type" : "label"
       } ],
       "iD" : [ {
@@ -776,7 +776,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
+          "value" : "Male Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -791,7 +791,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant .",
           "type" : "label"
         } ]
       },
@@ -806,7 +806,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -821,7 +821,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -836,7 +836,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant .",
           "type" : "label"
         } ]
       },
@@ -851,7 +851,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
+          "value" : "Male Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -866,7 +866,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -875,28 +875,13 @@
         "en" : "Kasih"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#merotai",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "merotai",
-        "en" : "Merotai"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#maliau",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
+          "value" : "Male Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -905,13 +890,28 @@
         "en" : "Maliau"
       }
     }, {
+      "iri" : "https://w3id.org/def/foo#merotai",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Male Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "merotai",
+        "en" : "Merotai"
+      }
+    }, {
       "iri" : "https://w3id.org/def/foo#abaw",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -926,7 +926,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -941,7 +941,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -956,7 +956,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
+          "value" : "Male Asian Elephant .",
           "type" : "label"
         } ]
       },
@@ -971,7 +971,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
+          "value" : "Male Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -986,7 +986,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1001,7 +1001,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1016,7 +1016,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Male Asian Elephant or ElephasMaximuas.",
+          "value" : "Male Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1031,7 +1031,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1046,7 +1046,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1061,7 +1061,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1076,7 +1076,7 @@
         "definition" : [ {
           "identifier" : "definition",
           "language" : "en",
-          "value" : "Female Asian Elephant or ElephasMaximuas.",
+          "value" : "Female Asian Elephant.",
           "type" : "label"
         } ]
       },
@@ -1473,17 +1473,27 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Digging a pit through a soil sequence.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
         "value" : "Drilling an observation well.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Taking a diamond-drill core from a rock outcrop.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Digging a pit through a soil sequence.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Establishing a station for environmental monitoring.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Dividing a field site into quadrants.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1498,27 +1508,17 @@
       }, {
         "identifier" : "example",
         "language" : "en",
+        "value" : "Selecting a subset of a population.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "Sieving a powder to separate the subset finer than 100-mesh.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Drawing blood from a patient.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Dividing a field site into quadrants.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Establishing a station for environmental monitoring.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Selecting a subset of a population.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1824,10 +1824,10 @@
       "en" : "Sample"
     },
     "comment" : {
-      "en" : "Physical samples are sometimes known as 'specimens'."
+      "en" : "Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made."
     },
     "attributes" : [ "external" ],
-    "id" : "133"
+    "id" : "134"
   }, {
     "iri" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class",
     "baseIri" : "https://www.bbc.co.uk/ontologies/wildlife-ontology",
@@ -2099,13 +2099,6 @@
         "en" : "Bikang 1 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#LianaSensor",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "LianaSensor",
-        "en" : "Liana Sensor"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#sejatiGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -2119,6 +2112,13 @@
       "labels" : {
         "IRI-based" : "sejatiGPS",
         "en" : "Sejati GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#LianaSensor",
+      "baseIri" : "https://w3id.org/def/foo",
+      "labels" : {
+        "IRI-based" : "LianaSensor",
+        "en" : "Liana Sensor"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#tulidGPS",
@@ -2309,16 +2309,16 @@
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
     "annotations" : {
-      "sand" : [ {
-        "identifier" : "sand",
-        "language" : "undefined",
-        "value" : "20.66",
-        "type" : "label"
-      } ],
       "identifier" : [ {
         "identifier" : "identifier",
         "language" : "undefined",
         "value" : "MB4",
+        "type" : "label"
+      } ],
+      "sand" : [ {
+        "identifier" : "sand",
+        "language" : "undefined",
+        "value" : "20.66",
         "type" : "label"
       } ],
       "cNRatio" : [ {
@@ -2415,7 +2415,7 @@
     "comment" : {
       "en" : "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."
     },
-    "id" : "135",
+    "id" : "131",
     "superClasses" : [ "31" ]
   }, {
     "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
@@ -2474,7 +2474,7 @@
       "IRI-based" : "Mammalia",
       "en-gb" : "Mammalia"
     },
-    "subClasses" : [ "109", "8", "135", "30" ],
+    "subClasses" : [ "109", "8", "131", "30" ],
     "id" : "31",
     "superClasses" : [ "43" ]
   }, {
@@ -2845,13 +2845,13 @@
     "id" : "130",
     "type" : "rdf:Property"
   }, {
-    "id" : "131",
-    "type" : "rdf:Property"
-  }, {
     "id" : "132",
     "type" : "rdf:Property"
   }, {
-    "id" : "134",
+    "id" : "133",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "135",
     "type" : "rdf:Property"
   }, {
     "id" : "137",
@@ -2965,10 +2965,10 @@
     "id" : "183",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "184",
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "42",
+    "id" : "184",
     "type" : "owl:objectProperty"
   }, {
     "id" : "185",
@@ -3052,7 +3052,7 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3062,7 +3062,7 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3138,12 +3138,7 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampler",
+        "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -3153,7 +3148,12 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Platform",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       } ]
     },
@@ -3308,23 +3308,23 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ]
     },
@@ -3427,7 +3427,7 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
+        "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3437,12 +3437,12 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampler",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3491,12 +3491,13 @@
         "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
         "type" : "iri"
       } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
+        "type" : "label"
+      } ],
       "domainIncludes" : [ {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
-        "type" : "iri"
-      }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
@@ -3504,14 +3505,13 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
-        "type" : "label"
       } ]
     },
     "label" : {
@@ -3634,13 +3634,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The GMT date in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.",
+        "language" : "en",
+        "value" : "The GMT date in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -3740,12 +3740,12 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ]
     },
@@ -3766,13 +3766,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The current local date in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The local date in Sabah, Malaysia.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The local date in Sabah, Malaysia.",
+        "language" : "en",
+        "value" : "The current local date in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -3846,7 +3846,7 @@
       "IRI-based" : "model",
       "en" : "Camera Model"
     },
-    "domain" : "3",
+    "domain" : "27",
     "attributes" : [ "datatype" ],
     "id" : "81"
   }, {
@@ -4132,7 +4132,7 @@
       "IRI-based" : "id",
       "en" : "id"
     },
-    "domain" : "3",
+    "domain" : "40",
     "attributes" : [ "datatype" ],
     "id" : "114"
   }, {
@@ -4156,20 +4156,15 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
-        "type" : "iri"
-      }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
@@ -4178,6 +4173,11 @@
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ]
     },
@@ -4271,7 +4271,7 @@
     "id" : "125"
   }, {
     "domain" : "58",
-    "range" : "9",
+    "range" : "131",
     "id" : "130",
     "label" : {
       "IRI-based" : "43",
@@ -4279,8 +4279,8 @@
     }
   }, {
     "domain" : "58",
-    "range" : "47",
-    "id" : "131",
+    "range" : "9",
+    "id" : "132",
     "label" : {
       "IRI-based" : "42",
       "undefined" : "is a"
@@ -4288,22 +4288,22 @@
   }, {
     "domain" : "58",
     "range" : "74",
-    "id" : "132",
+    "id" : "133",
     "label" : {
       "IRI-based" : "45",
       "undefined" : "is a"
     }
   }, {
     "domain" : "58",
-    "range" : "135",
-    "id" : "134",
+    "range" : "47",
+    "id" : "135",
     "label" : {
       "IRI-based" : "44",
       "undefined" : "is a"
     }
   }, {
     "domain" : "3",
-    "range" : "18",
+    "range" : "40",
     "id" : "137",
     "label" : {
       "IRI-based" : "41",
@@ -4311,7 +4311,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "40",
+    "range" : "18",
     "id" : "138",
     "label" : {
       "IRI-based" : "40",
@@ -4386,7 +4386,7 @@
     }
   }, {
     "domain" : "36",
-    "range" : "73",
+    "range" : "32",
     "id" : "142",
     "label" : {
       "IRI-based" : "35",
@@ -4410,7 +4410,7 @@
     }
   }, {
     "domain" : "36",
-    "range" : "32",
+    "range" : "73",
     "id" : "146",
     "label" : {
       "IRI-based" : "34",
@@ -4489,7 +4489,7 @@
     "id" : "152"
   }, {
     "range" : "31",
-    "domain" : "135",
+    "domain" : "131",
     "attributes" : [ "object", "anonymous" ],
     "id" : "153"
   }, {
@@ -4532,8 +4532,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "159"
   }, {
-    "range" : "36",
-    "domain" : "35",
+    "range" : "46",
+    "domain" : "47",
     "attributes" : [ "object", "anonymous" ],
     "id" : "160"
   }, {
@@ -4616,8 +4616,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
-    "range" : "46",
-    "domain" : "47",
+    "range" : "36",
+    "domain" : "35",
     "attributes" : [ "object", "anonymous" ],
     "id" : "166"
   }, {
@@ -4696,13 +4696,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The current local time in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The local time in Sabah, Malaysia.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The local time in Sabah, Malaysia.",
+        "language" : "en",
+        "value" : "The current local time in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -4734,17 +4734,17 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ]
     },
@@ -4777,46 +4777,6 @@
     "domain" : "27",
     "attributes" : [ "datatype" ],
     "id" : "183"
-  }, {
-    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
-    "baseIri" : "http://www.w3.org/ns/sosa",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Relation between a Sensor and an Observation made by the Sensor.",
-        "type" : "label"
-      } ],
-      "rangeIncludes" : [ {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
-        "type" : "iri"
-      } ],
-      "domainIncludes" : [ {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "madeObservation",
-      "en" : "made observation"
-    },
-    "domain" : "1",
-    "comment" : {
-      "en" : "Relation between a Sensor and an Observation made by the Sensor."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "184"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/madeBySensor",
     "inverse" : "184",
@@ -4859,6 +4819,46 @@
     "attributes" : [ "external", "object" ],
     "id" : "42"
   }, {
+    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between a Sensor and an Observation made by the Sensor.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeObservation",
+      "en" : "made observation"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relation between a Sensor and an Observation made by the Sensor."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "184"
+  }, {
     "iri" : "https://w3id.org/def/foo#speed",
     "baseIri" : "https://w3id.org/def/foo",
     "range" : "87",
@@ -4897,12 +4897,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
