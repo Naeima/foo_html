@@ -455,7 +455,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#clay">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">Clay</rdfs:label>
         <skos:definition xml:lang="en">Clay content of the soil sample.</skos:definition>
@@ -467,7 +467,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#count">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">Count</rdfs:label>
         <skos:definition>Observation count per data set.</skos:definition>
@@ -479,7 +479,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#cov">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label>Cov</rdfs:label>
         <skos:definition>TBC</skos:definition>
@@ -491,7 +491,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#direction">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label>Direction</rdfs:label>
         <skos:definition>Direction of elephant travel at the moment of data collection.</skos:definition>
@@ -503,7 +503,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#distance">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">Distance</rdfs:label>
         <skos:definition>Distance (m) travelled from the last to the current data collection point.</skos:definition>
@@ -515,8 +515,8 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#gMTDate">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label xml:lang="en">GMT Date</rdfs:label>
         <rdfs:label>GMT Date</rdfs:label>
@@ -530,8 +530,8 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#gMTTime">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
         <rdfs:label xml:lang="en">GMT Time</rdfs:label>
         <rdfs:label>GMT Time</rdfs:label>
@@ -545,7 +545,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#hDOP">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label>HDOP</rdfs:label>
         <skos:definition>Horizontal Dilution of Precision (HDOP), indicating GPS accuracy.</skos:definition>
@@ -557,7 +557,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#horizon">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">Horizon</rdfs:label>
         <skos:definition xml:lang="en">Soil horizon sampled.</skos:definition>
@@ -569,7 +569,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#id">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">id</rdfs:label>
     </owl:DatatypeProperty>
@@ -580,7 +580,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#landUse">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">Land Use</rdfs:label>
         <skos:definition xml:lang="en">Land use of the study plots.</skos:definition>
@@ -592,7 +592,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#latitude">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
@@ -602,7 +602,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#lianaDBH_cm">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#TreeObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#treeObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">lianaDBH_cm 10a</rdfs:label>
     </owl:DatatypeProperty>
@@ -613,8 +613,8 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#localDate">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label xml:lang="en">Local Date</rdfs:label>
         <rdfs:label>Local Date</rdfs:label>
@@ -628,8 +628,8 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#localTime">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
         <rdfs:label xml:lang="en">Local Time</rdfs:label>
         <rdfs:label>Local Time</rdfs:label>
@@ -643,7 +643,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#longitude">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
@@ -653,7 +653,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#make">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">Camera Make</rdfs:label>
         <skos:definition xml:lang="en">The make of the trail camera used to capture the image.</skos:definition>
@@ -665,7 +665,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#model">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">Camera Model</rdfs:label>
         <skos:definition xml:lang="en">The model of the trail camera used to capture the image.</skos:definition>
@@ -677,7 +677,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#name">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">Image Name</rdfs:label>
         <skos:definition xml:lang="en">The name assigned to an image at collection time.</skos:definition>
@@ -689,7 +689,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#path">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#imageObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">Image Path</rdfs:label>
         <skos:definition xml:lang="en">The URI pointing to the location of the image in secure cloud storage.</skos:definition>
@@ -701,7 +701,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#silt">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">Silt</rdfs:label>
         <skos:definition xml:lang="en">Silt content of the soil sample.</skos:definition>
@@ -713,7 +713,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#site">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">Site</rdfs:label>
         <skos:definition xml:lang="en">Geographical area/site which samples were taken from.</skos:definition>
@@ -725,7 +725,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#soilPH">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label>Soil PH</rdfs:label>
         <skos:definition xml:lang="en">Measured pH of the soil sample.</skos:definition>
@@ -737,7 +737,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#speed">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label>Speed</rdfs:label>
         <skos:definition>Speed of the elephant at the moment of data collection.</skos:definition>
@@ -749,7 +749,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#subplot">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">subPlot</rdfs:label>
         <skos:definition xml:lang="en">Number of the subplot sampled within each 1 Ha plot.</skos:definition>
@@ -761,7 +761,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#subplotRadius_m">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#TreeObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#treeObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">SubplotRadius_m 30</rdfs:label>
     </owl:DatatypeProperty>
@@ -772,7 +772,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#temperature">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label>Temperature</rdfs:label>
         <skos:definition>Estimated temperature of the elephant in Celsius at the moment of data collection.</skos:definition>
@@ -784,7 +784,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#totalC">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">Total C</rdfs:label>
         <skos:definition xml:lang="en">Total carbon content of the soil sample.</skos:definition>
@@ -796,7 +796,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#totalN">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#SoilObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#soilObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:label xml:lang="en">Total N</rdfs:label>
         <skos:definition xml:lang="en">Total nitrogen content of the soil sample.</skos:definition>
@@ -808,7 +808,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#treeDBH_cm">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#TreeObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#treeObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">TreeDBH_cm 110</rdfs:label>
     </owl:DatatypeProperty>
@@ -819,7 +819,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#treeHeight_m">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#TreeObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#treeObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">treeHeight_m 60</rdfs:label>
     </owl:DatatypeProperty>
@@ -830,7 +830,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#treeID">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#TreeObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#treeObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">TreeID</rdfs:label>
     </owl:DatatypeProperty>
@@ -841,7 +841,7 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/def/foo#treeIndividualNo">
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#TreeObservation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#treeObservation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">TreeIndividualNo</rdfs:label>
     </owl:DatatypeProperty>
@@ -936,9 +936,7 @@
     <!-- https://w3id.org/def/foo#ElephasMaximus -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus"/>
     
 
 
@@ -949,13 +947,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#GPSObservation -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#GPSObservation"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Genus -->
 
 
@@ -963,28 +954,10 @@
     
 
 
-    <!-- https://w3id.org/def/foo#ImageObservation -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#ImageObservation"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Malayopython -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#Malayopython">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Pythonidae"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/foo#MalayopythonReticulatus -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#MalayopythonReticulatus">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Malayopython"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/foo#Malayopython"/>
     
 
 
@@ -993,15 +966,6 @@
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Mammalia">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Chordata"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/foo#ManisJavanica -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#ManisJavanica">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
     </owl:Class>
     
 
@@ -1060,9 +1024,7 @@
     <!-- https://w3id.org/def/foo#Pythonidae -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#Pythonidae">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Squamata"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/def/foo#Pythonidae"/>
     
 
 
@@ -1082,13 +1044,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#SoilObservation -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#SoilObservation"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Species -->
 
 
@@ -1105,19 +1060,85 @@
     
 
 
-    <!-- https://w3id.org/def/foo#TreeObservation -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#TreeObservation"/>
-    
-
-
     <!-- https://w3id.org/def/foo#Viverridae -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Viverridae">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Family"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#elephasMaximus -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#elephasMaximus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#gPSObservation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#gPSObservation"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#imageObservation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#imageObservation"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#malayopython -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#malayopython">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Pythonidae"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#malayopythonReticulatus -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#malayopythonReticulatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Malayopython"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#manisJavanica -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#manisJavanica">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#pythonidae -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#pythonidae">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Squamata"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#soilObservation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#soilObservation"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#treeObservation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#treeObservation"/>
     
 
 
@@ -1424,7 +1445,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#CameraTrap">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Image"/>
-        <observes rdf:resource="https://w3id.org/def/foo#ImageObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#imageObservation"/>
+        <make xml:lang="en">Make</make>
+        <model xml:lang="en">Model</model>
         <rdfs:label xml:lang="en">Camera Trap</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1504,57 +1527,7 @@
     <!-- https://w3id.org/def/foo#ElephasMaximus -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#GPSObservation -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#GPSObservation">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#AqeelaGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang1GPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang2GPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#BinbinganGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#DaraGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#GuliGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#ItaGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#JasminGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#JasperGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#KasihGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#KumaGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#LiunGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#MaliauGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#MerotaiGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#PuteriGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#PututGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#SejatiGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#SeriGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#TulidGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#TunglapGPS"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#Umas2GPS"/>
-        <count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</count>
-        <cov rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cov>
-        <direction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</direction>
-        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</distance>
-        <gMTDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-25</gMTDate>
-        <gMTTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">22:40:35</gMTTime>
-        <gMTTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:40:35</gMTTime>
-        <hDOP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.14</hDOP>
-        <hDOP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.64</hDOP>
-        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.237206</latitude>
-        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.537206</latitude>
-        <localDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-26</localDate>
-        <localTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:40:35</localTime>
-        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">565.2223</longitude>
-        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">566.2223</longitude>
-        <speed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.24</speed>
-        <temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.5</temperature>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ElephasMaximus"/>
     
 
 
@@ -1594,17 +1567,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Image">
         <rdfs:label xml:lang="en">Camera Trap Image</rdfs:label>
         <skos:definition xml:lang="en">Image generated by motion-activated wildlife cameras.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#ImageObservation -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ImageObservation">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Image"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#CameraTrap"/>
     </owl:NamedIndividual>
     
 
@@ -1721,24 +1683,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#Malayopython -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Malayopython">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Genus"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#MalayopythonReticulatus -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#MalayopythonReticulatus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/def/foo#Maliau -->
 
 
@@ -1766,15 +1710,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#ManisJavanica -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ManisJavanica">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-    </owl:NamedIndividual>
     
 
 
@@ -1868,15 +1803,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#Pythonidae -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Pythonidae">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Family"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/def/foo#Reptilia -->
 
 
@@ -1933,26 +1859,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Soil">
         <rdfs:label xml:lang="en">Soil</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#SoilObservation -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilObservation">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#SoilSensor"/>
-        <clay rdf:datatype="http://www.w3.org/2001/XMLSchema#double">62.88</clay>
-        <horizon>Organic</horizon>
-        <landUse>Unlogged</landUse>
-        <silt rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.46</silt>
-        <site>Maliau Basin Conservation Area</site>
-        <soilPH rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.69</soilPH>
-        <subplot>4</subplot>
-        <totalC rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.45</totalC>
-        <totalN rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38</totalN>
     </owl:NamedIndividual>
     
 
@@ -2014,23 +1920,6 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tree">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
         <rdfs:label xml:lang="en">Tree</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#TreeObservation -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeObservation">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#TreeSensor"/>
-        <lianaDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</lianaDBH_cm>
-        <subplotRadius_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</subplotRadius_m>
-        <treeDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</treeDBH_cm>
-        <treeHeight_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</treeHeight_m>
-        <treeID>Shorea pauciflora</treeID>
-        <treeIndividualNo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</treeIndividualNo>
     </owl:NamedIndividual>
     
 
@@ -2121,7 +2010,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#abaw">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Abaw</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2132,7 +2021,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#abawGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Abaw"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Umas2 GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Abaw .</skos:definition>
     </owl:NamedIndividual>
@@ -2145,7 +2034,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#aqeela">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Aqeela</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2156,7 +2045,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#aqeelaGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Aqeela"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Aqeela GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela.</skos:definition>
     </owl:NamedIndividual>
@@ -2169,7 +2058,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang1">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Bikang 1</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2180,7 +2069,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang1GPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Bikang1"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Bikang 1 GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1.</skos:definition>
     </owl:NamedIndividual>
@@ -2193,7 +2082,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang2">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Bikang 2</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2204,7 +2093,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#bikang2GPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Bikang2"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Bikang 2 GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 2.</skos:definition>
     </owl:NamedIndividual>
@@ -2217,7 +2106,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#binbinganGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Binbingan"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Binbingan GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan.</skos:definition>
     </owl:NamedIndividual>
@@ -2230,7 +2119,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#dara">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Dara</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2241,9 +2130,67 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#daraGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Dara"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Umas2 GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Dara.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#elephasMaximus -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#elephasMaximus">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#gPSObservation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#gPSObservation">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#AqeelaGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang1GPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Bikang2GPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#BinbinganGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#DaraGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#GuliGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#ItaGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#JasminGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#JasperGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#KasihGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#KumaGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#LiunGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#MaliauGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#MerotaiGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#PuteriGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#PututGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#SejatiGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#SeriGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#TulidGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#TunglapGPS"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#Umas2GPS"/>
+        <count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</count>
+        <cov rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</cov>
+        <direction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</direction>
+        <distance rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</distance>
+        <gMTDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-25</gMTDate>
+        <gMTTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">22:40:35</gMTTime>
+        <gMTTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">23:40:35</gMTTime>
+        <hDOP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.14</hDOP>
+        <hDOP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.64</hDOP>
+        <id xml:lang="en">id</id>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.237206</latitude>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.537206</latitude>
+        <localDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-10-26</localDate>
+        <localTime rdf:datatype="http://www.w3.org/2001/XMLSchema#time">07:40:35</localTime>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">565.2223</longitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">566.2223</longitude>
+        <speed rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.24</speed>
+        <temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.5</temperature>
     </owl:NamedIndividual>
     
 
@@ -2254,7 +2201,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#guli">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Guli</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2265,7 +2212,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#guliGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Guli"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Guli GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Guli.</skos:definition>
     </owl:NamedIndividual>
@@ -2279,13 +2226,24 @@
     
 
 
+    <!-- https://w3id.org/def/foo#imageObservation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#imageObservation">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Image"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#CameraTrap"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#ita -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#ita">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Ita</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2296,7 +2254,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#itaGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Ita"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Ita GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Ita.</skos:definition>
     </owl:NamedIndividual>
@@ -2309,7 +2267,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasmin">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Jasmin</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2320,7 +2278,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasminGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Jasmin"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Jasmin GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Jasmin.</skos:definition>
     </owl:NamedIndividual>
@@ -2333,7 +2291,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasper">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Jasper</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2344,7 +2302,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#jasperGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Jasper"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Jasper GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.</skos:definition>
     </owl:NamedIndividual>
@@ -2357,7 +2315,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kasih">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Kasih</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2368,7 +2326,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kasihGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Kasih"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Kasih GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Kasih.</skos:definition>
     </owl:NamedIndividual>
@@ -2381,7 +2339,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kuma">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Kuma</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2392,7 +2350,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#kumaGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Kuma"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Kuma GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Kuma.</skos:definition>
     </owl:NamedIndividual>
@@ -2412,7 +2370,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#liun">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Liun</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2423,7 +2381,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#liunGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Luin"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Liun GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Liun.</skos:definition>
     </owl:NamedIndividual>
@@ -2444,13 +2402,31 @@
     
 
 
+    <!-- https://w3id.org/def/foo#malayopython -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#malayopython">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Genus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#malayopythonReticulatus -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#malayopythonReticulatus">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#maliau -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#maliau">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Maliau</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2461,9 +2437,18 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#maliauGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Maliau"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Maliau GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Maliau.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#manisJavanica -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#manisJavanica">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
     </owl:NamedIndividual>
     
 
@@ -2474,7 +2459,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#merotai">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Merotai</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2485,7 +2470,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#merotaiGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Merotai"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Merotai GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Merotai.</skos:definition>
     </owl:NamedIndividual>
@@ -2498,7 +2483,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#puteri">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Puteri</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2509,7 +2494,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#puteriGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Puteri"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Puteri GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Puteri.</skos:definition>
     </owl:NamedIndividual>
@@ -2522,7 +2507,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#putut">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Putut</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2533,9 +2518,18 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#pututGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Putut"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Putut GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Putut.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#pythonidae -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#pythonidae">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Family"/>
     </owl:NamedIndividual>
     
 
@@ -2546,7 +2540,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#sejati">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Sejati</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2557,7 +2551,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#sejatiGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Sejati"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Sejati GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Sejati.</skos:definition>
     </owl:NamedIndividual>
@@ -2570,7 +2564,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#seri">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Seri</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2581,9 +2575,46 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#seriGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Seri"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Seri GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Seri.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#soilObservation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soilObservation">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#SoilSensor"/>
+        <clay rdf:datatype="http://www.w3.org/2001/XMLSchema#double">62.88</clay>
+        <horizon>Organic</horizon>
+        <landUse>Unlogged</landUse>
+        <silt rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.46</silt>
+        <site>Maliau Basin Conservation Area</site>
+        <soilPH rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.69</soilPH>
+        <subplot>4</subplot>
+        <totalC rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.45</totalC>
+        <totalN rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.38</totalN>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#treeObservation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeObservation">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#TreeSensor"/>
+        <lianaDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</lianaDBH_cm>
+        <subplotRadius_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</subplotRadius_m>
+        <treeDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</treeDBH_cm>
+        <treeHeight_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</treeHeight_m>
+        <treeID>Shorea pauciflora</treeID>
+        <treeIndividualNo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</treeIndividualNo>
     </owl:NamedIndividual>
     
 
@@ -2594,7 +2625,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tulid">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Tulid</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2605,7 +2636,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tulidGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tulid"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Tulid GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Tulid.</skos:definition>
     </owl:NamedIndividual>
@@ -2618,7 +2649,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tunglap">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Tunglap</rdfs:label>
-        <skos:definition xml:lang="en">Female Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2629,7 +2660,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tunglapGPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tunglap"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Tunglap GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Tunglap.</skos:definition>
     </owl:NamedIndividual>
@@ -2642,7 +2673,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#umas2">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:label xml:lang="en">Umas2</rdfs:label>
-        <skos:definition xml:lang="en">Male Asian Elephant or ElephasMaximuas.</skos:definition>
+        <skos:definition xml:lang="en">Male Asian Elephant .</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2653,7 +2684,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#umas2GPS">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
         <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Umas2"/>
-        <observes rdf:resource="https://w3id.org/def/foo#GPSObservation"/>
+        <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Umas2 GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Umas2.</skos:definition>
     </owl:NamedIndividual>
@@ -2765,46 +2796,12 @@
         <rdfs:label xml:lang="en-gb">Elephantidae</rdfs:label>
         <skos:definition xml:lang="en">ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.</skos:definition>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#ElephasMaximus">
-        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
-        <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
-        <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
-        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#GPSObservation">
-        <rdfs:label xml:lang="en">GPS Observation</rdfs:label>
-        <altitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.7</altitude>
-        <altitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.7</altitude>
-        <iD>1SAT32</iD>
-        <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-26T07:40:35</resultTime>
-        <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-26T07:40:35</resultTime>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Genus">
         <rdfs:label xml:lang="en-gb">Genus</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#ImageObservation">
-        <rdfs:label xml:lang="en">Image Observation</rdfs:label>
-        <animalDetected>Jasmin</animalDetected>
-        <cameraLocation>Danum Valley</cameraLocation>
-        <imageFile>wildlife_image_001.jpg</imageFile>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#Malayopython">
-        <rdfs:label xml:lang="en">Malayopython</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#MalayopythonReticulatus">
-        <rdfs:label xml:lang="la">Malayopython reticulatus</rdfs:label>
-        <rdfs:label xml:lang="en">Reticulated Python</rdfs:label>
-        <skos:definition xml:lang="en">Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Mammalia">
         <rdfs:label xml:lang="en-gb">Mammalia</rdfs:label>
         <skos:definition xml:lang="en">The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#ManisJavanica">
-        <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.</rdfs:comment>
-        <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
-        <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
-        <skos:definition xml:lang="en">Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Nasalis">
         <rdfs:label xml:lang="en-gb">Nasalis</rdfs:label>
@@ -2828,9 +2825,6 @@
         <rdfs:label xml:lang="en-gb">Proboscidea</rdfs:label>
         <skos:definition xml:lang="en">Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.</skos:definition>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#Pythonidae">
-        <rdfs:label xml:lang="en">Pythonidae</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Reptilia">
         <rdfs:label xml:lang="en-gb">Reptilia</rdfs:label>
         <skos:definition xml:lang="en">Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.</skos:definition>
@@ -2839,15 +2833,6 @@
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
         <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure.</skos:definition>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#SoilObservation">
-        <rdfs:label xml:lang="en">Soil Observation</rdfs:label>
-        <cNRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.24</cNRatio>
-        <identifier>MB4</identifier>
-        <inorganicP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.03</inorganicP>
-        <plotName>Belian</plotName>
-        <sand rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.66</sand>
-        <totalP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">263.74</totalP>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Species">
         <rdfs:label xml:lang="en-gb">Species</rdfs:label>
         <skos:definition xml:lang="en">Generic class defining a biological species.</skos:definition>
@@ -2855,19 +2840,32 @@
     <rdf:Description rdf:about="https://w3id.org/def/foo#Squamata">
         <rdfs:label xml:lang="en-gb">Squamata</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#TreeObservation">
-        <rdfs:label xml:lang="en">Tree Observation</rdfs:label>
-        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</date>
-        <iD>TreeObs1</iD>
-        <treeNLianas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</treeNLianas>
-        <treeNotes></treeNotes>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Viverridae">
         <rdfs:label xml:lang="en-gb">Viverridae</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#elephasMaximus">
+        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
+        <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
+        <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
+        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#gPSObservation">
+        <rdfs:label xml:lang="en">GPS Observation</rdfs:label>
+        <altitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.7</altitude>
+        <altitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.7</altitude>
+        <iD>1SAT32</iD>
+        <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-26T07:40:35</resultTime>
+        <resultTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-26T07:40:35</resultTime>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#hasFeatureOfInterest">
         <rdfs:comment xml:lang="en">A relation between an Observation and the entity whose quality was observed.</rdfs:comment>
         <rdfs:label xml:lang="en">has Feature Of Interest</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#imageObservation">
+        <rdfs:label xml:lang="en">Image Observation</rdfs:label>
+        <animalDetected>Jasmin</animalDetected>
+        <cameraLocation>Danum Valley</cameraLocation>
+        <imageFile>wildlife_image_001.jpg</imageFile>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#latitude">
         <rdfs:label>Latitude</rdfs:label>
@@ -2880,6 +2878,39 @@
     <rdf:Description rdf:about="https://w3id.org/def/foo#madeBySensor">
         <rdfs:comment xml:lang="en">Relation between an Observation and the Sensor which made the Observation.</rdfs:comment>
         <rdfs:label xml:lang="en">made by sensor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#malayopython">
+        <rdfs:label xml:lang="en">Malayopython</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#malayopythonReticulatus">
+        <rdfs:label xml:lang="la">Malayopython reticulatus</rdfs:label>
+        <rdfs:label xml:lang="en">Reticulated Python</rdfs:label>
+        <skos:definition xml:lang="en">Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#manisJavanica">
+        <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.</rdfs:comment>
+        <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
+        <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
+        <skos:definition xml:lang="en">Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#pythonidae">
+        <rdfs:label xml:lang="en">Pythonidae</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#soilObservation">
+        <rdfs:label xml:lang="en">Soil Observation</rdfs:label>
+        <cNRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.24</cNRatio>
+        <identifier>MB4</identifier>
+        <inorganicP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.03</inorganicP>
+        <plotName>Belian</plotName>
+        <sand rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.66</sand>
+        <totalP rdf:datatype="http://www.w3.org/2001/XMLSchema#double">263.74</totalP>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#treeObservation">
+        <rdfs:label xml:lang="en">Tree Observation</rdfs:label>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</date>
+        <iD>TreeObs1</iD>
+        <treeNLianas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</treeNLianas>
+        <treeNotes></treeNotes>
     </rdf:Description>
 </rdf:RDF>
 

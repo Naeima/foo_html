@@ -31,6 +31,9 @@
     "NasalisLarvatus" : {
       "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
     },
+    "elephasMaximus" : {
+      "@id" : "https://w3id.org/def/foo#elephasMaximus"
+    },
     "generatedAtTime" : {
       "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
     },
@@ -88,6 +91,9 @@
     "subplotRadius_m" : {
       "@id" : "https://w3id.org/def/foo#subplotRadius_m",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "malayopython" : {
+      "@id" : "https://w3id.org/def/foo#malayopython"
     },
     "madeBySensor" : {
       "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
@@ -187,9 +193,6 @@
       "@id" : "https://w3id.org/def/foo#clay",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
-    "ManisJavanica" : {
-      "@id" : "https://w3id.org/def/foo#ManisJavanica"
-    },
     "treeNLianas" : {
       "@id" : "https://w3id.org/def/foo#treeNLianas"
     },
@@ -213,6 +216,9 @@
     },
     "status" : {
       "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status"
+    },
+    "manisJavanica" : {
+      "@id" : "https://w3id.org/def/foo#manisJavanica"
     },
     "identifier" : {
       "@id" : "https://schema.org/identifier"
@@ -252,6 +258,9 @@
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
+    "gPSObservation" : {
+      "@id" : "https://w3id.org/def/foo#gPSObservation"
+    },
     "observes" : {
       "@id" : "https://w3id.org/def/foo#observes",
       "@type" : "@id"
@@ -286,6 +295,9 @@
     "hasFeatureOfInterest" : {
       "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "@type" : "@id"
+    },
+    "pythonidae" : {
+      "@id" : "https://w3id.org/def/foo#pythonidae"
     },
     "iD" : {
       "@id" : "https://w3id.org/def/foo#iD"
@@ -352,8 +364,8 @@
     "Species" : {
       "@id" : "https://w3id.org/def/foo#Species"
     },
-    "MalayopythonReticulatus" : {
-      "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
+    "malayopythonReticulatus" : {
+      "@id" : "https://w3id.org/def/foo#malayopythonReticulatus"
     },
     "Squamata" : {
       "@id" : "https://w3id.org/def/foo#Squamata"
@@ -370,9 +382,6 @@
     "horizon" : {
       "@id" : "https://w3id.org/def/foo#horizon",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "GPSObservation" : {
-      "@id" : "https://w3id.org/def/foo#GPSObservation"
     },
     "treeID" : {
       "@id" : "https://w3id.org/def/foo#treeID",
