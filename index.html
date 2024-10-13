@@ -159,16 +159,16 @@ foo:Elephantidae a owl:Class ;
     owl:sameAs wo:Elephantidae ;
     skos:definition "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en.
  
-foo:Cercopithecidae a foo:Family ;
+foo:Cercopithecidae a owl:Class;
     rdfs:label "Cercopithecidae"@en-gb ;
     rdfs:subClassOf foo:Primates .
   
-foo:Nasalis a foo:Genus ;
+foo:Nasalis a  owl:Class ;
     rdfs:label "Nasalis"@en-gb ;
     rdfs:subClassOf foo:Cercopithecidae;
     skos:definition "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
 
-foo:NasalisLarvatus a foo:Species ;
+foo:NasalisLarvatus a foo:Nasalis ;
     rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
     rdfs:subClassOf foo:Nasalis ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
@@ -193,38 +193,32 @@ foo:Genus  a owl:Class ;
 #### Species as Individuals ####
 
 ### Elephant ###
-foo:elephasMaximus a owl:NamedIndividual, foo:Species;
+foo:elephasMaximus a owl:NamedIndividual, foo:Species,  foo:Elephantidae ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
-    rdfs:subClassOf foo:Elephantidae;
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
         <https://www.iucnredlist.org/species/7140/45818198> ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 ### Python (Snake)####
-foo:pythonidae a foo:Family ;
-    rdfs:label "Pythonidae"@en ;
-    rdfs:subClassOf foo:Squamata .
+foo:pythonidae a foo:Squamata  ;
+    rdfs:label "Pythonidae"@en .
 
-foo:malayopython a foo:Genus ;
-    rdfs:label "Malayopython"@en ;
-    rdfs:subClassOf foo:Pythonidae .  
+foo:malayopython a foo:Pythonidae  ;
+    rdfs:label "Malayopython"@en .  
 
-foo:malayopythonReticulatus a owl:NamedIndividual, foo:Species ;
+foo:malayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Malayopython  ;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
-    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en ;
-    rdfs:subClassOf foo:Malayopython .  
+    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
 ### Sunda Pangolin ###
 foo:manisJavanica a owl:NamedIndividual, foo:Species ;
     rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
-    rdfs:subClassOf foo:Mammalia ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
     skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
-
 
 
 #### Observation and Sensor Classes ####
