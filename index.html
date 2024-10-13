@@ -5,7 +5,8 @@
     <title>FOO Ontology</title>
 </head>
 <body>
-<pre>@prefix cc: <http://creativecommons.org/ns#> .
+<pre>
+@prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -356,7 +357,7 @@ foo:horizon a owl:DatatypeProperty ;
 
 foo:id a owl:DatatypeProperty ;
     rdfs:label "id"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:GPSObservation ;
     rdfs:range xsd:string .
 
 foo:landUse a owl:DatatypeProperty ;
@@ -524,7 +525,7 @@ foo:gMTTime a owl:DatatypeProperty ;
 
 foo:model a owl:DatatypeProperty ;
     rdfs:label "Camera Model"@en ;
-    rdfs:domain foo:Observation ;
+    rdfs:domain foo:ImageObservation ;
     rdfs:range xsd:string ;
     skos:definition "The model of the trail camera used to capture the image."@en .
 
