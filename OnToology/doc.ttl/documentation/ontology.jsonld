@@ -327,6 +327,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Aqeela",
@@ -365,6 +369,14 @@
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
     "@id" : "https://w3id.org/def/foo#Image"
   } ],
+  "https://w3id.org/def/foo#make" : [ {
+    "@language" : "en",
+    "@value" : "Make"
+  } ],
+  "https://w3id.org/def/foo#model" : [ {
+    "@language" : "en",
+    "@value" : "Model"
+  } ],
   "https://w3id.org/def/foo#observes" : [ {
     "@id" : "https://w3id.org/def/foo#ImageObservation"
   } ]
@@ -380,6 +392,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Cercopithecidae",
@@ -406,6 +422,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Dara",
@@ -425,6 +445,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ElephasMaximus",
@@ -509,6 +533,10 @@
   } ],
   "https://w3id.org/def/foo#iD" : [ {
     "@value" : "1SAT32"
+  } ],
+  "https://w3id.org/def/foo#id" : [ {
+    "@language" : "en",
+    "@value" : "id"
   } ],
   "https://w3id.org/def/foo#latitude" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
@@ -595,7 +623,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en-gb",
-    "@value" : "Species"
+    "@value" : "Genus"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
@@ -755,6 +783,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ManisJavanica",
@@ -798,6 +830,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/foo#Cercopithecidae"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#NasalisLarvatus",
@@ -867,6 +903,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Puteri",
@@ -905,6 +945,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Sejati",
@@ -1034,6 +1078,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Species"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Generic class defining a biological species."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Squamata",
@@ -1177,6 +1225,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Abaw"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#abawGPS",
@@ -1205,6 +1257,20 @@
   "@id" : "https://w3id.org/def/foo#animalDetected",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#aqeela",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aqeela"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#aqeelaGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1225,6 +1291,20 @@
     "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#bikang1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bikang 1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#bikang1GPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1243,6 +1323,20 @@
   } ],
   "https://w3id.org/def/foo#observes" : [ {
     "@id" : "https://w3id.org/def/foo#GPSObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#bikang2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bikang 2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang2GPS",
@@ -1347,6 +1441,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Dara"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#daraGPS",
@@ -1449,6 +1547,20 @@
     "@value" : "The GMT time in Sabah, Malaysia, when the GPS collar records its readings."
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#guli",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Guli"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant."
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#guliGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -1527,7 +1639,7 @@
   "@id" : "https://w3id.org/def/foo#id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#GPSObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1594,6 +1706,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Ita"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#itaGPS",
@@ -1624,6 +1740,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Jasmin"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasminGPS",
@@ -1654,6 +1774,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Jasper"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#jasperGPS",
@@ -1684,6 +1808,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Kasih"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kasihGPS",
@@ -1714,6 +1842,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Kuma"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#kumaGPS",
@@ -1789,6 +1921,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Liun"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#liunGPS",
@@ -1937,6 +2073,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Maliau"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#maliauGPS",
@@ -1967,6 +2107,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Merotai"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#merotaiGPS",
@@ -1992,7 +2136,7 @@
   "@id" : "https://w3id.org/def/foo#model",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Observation"
+    "@id" : "https://w3id.org/def/foo#ImageObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2085,6 +2229,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Puteri"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#puteriGPS",
@@ -2115,6 +2263,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Putut"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#pututGPS",
@@ -2151,6 +2303,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Sejati"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#sejatiGPS",
@@ -2181,6 +2337,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Seri"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#seriGPS",
@@ -2416,6 +2576,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Tulid"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tulidGPS",
@@ -2446,6 +2610,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Tunglap"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Female Asian Elephant."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#tunglapGPS",
@@ -2476,6 +2644,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Umas2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Male Asian Elephant ."
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#umas2GPS",
