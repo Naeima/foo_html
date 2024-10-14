@@ -232,6 +232,15 @@ foo:ObservableProperty a owl:Class ;
     owl:sameAs sosa:ObservableProperty ;
     skos:definition "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
 
+
+foo:FeatureOfInterest a owl:Class ;
+  rdfs:label "Feature Of Interest"@en ;
+  skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+  rdfs:comment "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+  skos:example "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en ;
+  owl:sameAs  sosa:FeatureOfInterest ;
+  rdfs:isDefinedBy sosa: .
+
 ### FOO Object Properties ###
 foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
