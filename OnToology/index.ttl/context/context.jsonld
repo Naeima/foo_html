@@ -31,8 +31,14 @@
     "NasalisLarvatus" : {
       "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
     },
+    "elephasMaximus" : {
+      "@id" : "https://w3id.org/def/foo#elephasMaximus"
+    },
     "generatedAtTime" : {
       "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
@@ -69,6 +75,9 @@
     },
     "Malayopython" : {
       "@id" : "https://w3id.org/def/foo#Malayopython"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
     },
     "wasAttributedTo" : {
       "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
@@ -246,6 +255,9 @@
       "@id" : "https://w3id.org/def/foo#totalC",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
@@ -328,9 +340,6 @@
     "cov" : {
       "@id" : "https://w3id.org/def/foo#cov",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
-    },
-    "ElephasMaximus" : {
-      "@id" : "https://w3id.org/def/foo#ElephasMaximus"
     },
     "treeDBH_cm" : {
       "@id" : "https://w3id.org/def/foo#treeDBH_cm",

@@ -578,12 +578,12 @@ xsd:time rdf:type rdfs:Datatype .
               rdfs:subClassOf :Proboscidea .
 
 
-###  https://w3id.org/def/foo#ElephasMaximus
-:ElephasMaximus rdf:type owl:Class .
-
-
 ###  https://w3id.org/def/foo#Family
 :Family rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Genus
@@ -657,6 +657,10 @@ xsd:time rdf:type rdfs:Datatype .
             rdfs:subClassOf :Family .
 
 
+###  https://w3id.org/def/foo#elephasMaximus
+:elephasMaximus rdf:type owl:Class .
+
+
 ###  https://w3id.org/def/foo#gPSObservation
 :gPSObservation rdf:type owl:Class .
 
@@ -725,6 +729,15 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#longitude
 :longitude rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:NamedIndividual ;
+                                              owl:sameAs :FeatureOfInterest .
+
+
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:NamedIndividual .
 
 
 ###  http://www.w3.org/ns/sosa/ObservableProperty
@@ -888,8 +901,8 @@ xsd:time rdf:type rdfs:Datatype .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#ElephasMaximus
-:ElephasMaximus rdf:type owl:NamedIndividual .
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Genus
@@ -953,23 +966,6 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#KumaGPS
 :KumaGPS rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#LianaProperties
-:LianaProperties rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#LianaSensor
-:LianaSensor rdf:type owl:NamedIndividual ,
-                      :Sensor ;
-             :observes :LianaProperties ;
-             rdfs:label "Liana Sensor"@en .
-
-
-###  https://w3id.org/def/foo#Lianas
-:Lianas rdf:type owl:NamedIndividual ;
-        :isObservedBy :LianaSensor ;
-        rdfs:label "Lianas"@en .
 
 
 ###  https://w3id.org/def/foo#LiunGPS
@@ -1073,20 +1069,11 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Soil
-:Soil rdf:type owl:NamedIndividual ;
-      rdfs:label "Soil"@en .
-
-
-###  https://w3id.org/def/foo#SoilProperties
-:SoilProperties rdf:type owl:NamedIndividual .
+:Soil rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#SoilSensor
-:SoilSensor rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/ns/sosa/Sensor> ;
-            :hasFeatureOfInterest :Soil ;
-            :observes :SoilProperties ;
-            rdfs:label "Soil Sensor"@en .
+:SoilSensor rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Species
@@ -1108,23 +1095,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Tree
-:Tree rdf:type owl:NamedIndividual ,
-               :Species ;
-      rdfs:label "Tree"@en .
-
-
-###  https://w3id.org/def/foo#TreeProperties
-:TreeProperties rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                rdfs:label "Tree Properties"@en .
-
-
-###  https://w3id.org/def/foo#TreeSensor
-:TreeSensor rdf:type owl:NamedIndividual ,
-                     :Sensor ;
-            :hasFeatureOfInterest :Tree ;
-            :observes :TreeProperties ;
-            rdfs:label "Tree Sensor"@en .
+:Tree rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Tulid
@@ -1162,7 +1133,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#abaw
 :abaw rdf:type owl:NamedIndividual ,
-               :ElephasMaximus ;
+               :elephasMaximus ;
       rdfs:label "Abaw"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1178,7 +1149,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#aqeela
 :aqeela rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :elephasMaximus ;
         rdfs:label "Aqeela"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1194,7 +1165,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#bikang1
 :bikang1 rdf:type owl:NamedIndividual ,
-                  :ElephasMaximus ;
+                  :elephasMaximus ;
          rdfs:label "Bikang 1"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1210,7 +1181,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#bikang2
 :bikang2 rdf:type owl:NamedIndividual ,
-                  :ElephasMaximus ;
+                  :elephasMaximus ;
          rdfs:label "Bikang 2"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1235,7 +1206,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#dara
 :dara rdf:type owl:NamedIndividual ,
-               :ElephasMaximus ;
+               :elephasMaximus ;
       rdfs:label "Dara"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1252,17 +1223,13 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#elephasMaximus
 :elephasMaximus rdf:type owl:NamedIndividual ,
                          :Elephantidae ,
-                         :Species ;
-                rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
-                rdfs:label "Asian Elephant"@en ,
-                           "Elephas maximus"@la ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
+                         :Species .
 
 
 ###  https://w3id.org/def/foo#gPSObservation
 :gPSObservation rdf:type owl:NamedIndividual ,
                          :Observation ;
-                :hasFeatureOfInterest :ElephasMaximus ;
+                :hasFeatureOfInterest :elephasMaximus ;
                 :madeBySensor :AqeelaGPS ,
                               :Bikang1GPS ,
                               :Bikang2GPS ,
@@ -1306,7 +1273,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#guli
 :guli rdf:type owl:NamedIndividual ,
-               :ElephasMaximus ;
+               :elephasMaximus ;
       rdfs:label "Guli"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
@@ -1333,7 +1300,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ita
 :ita rdf:type owl:NamedIndividual ,
-              :ElephasMaximus ;
+              :elephasMaximus ;
      rdfs:label "Ita"@en ;
      <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1349,7 +1316,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#jasmin
 :jasmin rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :elephasMaximus ;
         rdfs:label "Jasmin"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1365,7 +1332,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#jasper
 :jasper rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :elephasMaximus ;
         rdfs:label "Jasper"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
@@ -1381,7 +1348,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#kasih
 :kasih rdf:type owl:NamedIndividual ,
-                :ElephasMaximus ;
+                :elephasMaximus ;
        rdfs:label "Kasih"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1397,7 +1364,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#kuma
 :kuma rdf:type owl:NamedIndividual ,
-               :ElephasMaximus ;
+               :elephasMaximus ;
       rdfs:label "Kuma"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
@@ -1415,9 +1382,26 @@ xsd:time rdf:type rdfs:Datatype .
 :latitude rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#lianaProperties
+:lianaProperties rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#lianaSensor
+:lianaSensor rdf:type owl:NamedIndividual ,
+                      :Sensor ;
+             :observes :lianaProperties ;
+             rdfs:label "Liana Sensor"@en .
+
+
+###  https://w3id.org/def/foo#lianas
+:lianas rdf:type owl:NamedIndividual ;
+        :isObservedBy :lianaSensor ;
+        rdfs:label "Lianas"@en .
+
+
 ###  https://w3id.org/def/foo#liun
 :liun rdf:type owl:NamedIndividual ,
-               :ElephasMaximus ;
+               :elephasMaximus ;
       rdfs:label "Liun"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1456,7 +1440,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#maliau
 :maliau rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :elephasMaximus ;
         rdfs:label "Maliau"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
@@ -1481,7 +1465,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#merotai
 :merotai rdf:type owl:NamedIndividual ,
-                  :ElephasMaximus ;
+                  :elephasMaximus ;
          rdfs:label "Merotai"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
@@ -1497,7 +1481,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#puteri
 :puteri rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :elephasMaximus ;
         rdfs:label "Puteri"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1513,7 +1497,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#putut
 :putut rdf:type owl:NamedIndividual ,
-                :ElephasMaximus ;
+                :elephasMaximus ;
        rdfs:label "Putut"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1535,7 +1519,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#sejati
 :sejati rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :elephasMaximus ;
         rdfs:label "Sejati"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant."@en .
 
@@ -1551,7 +1535,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#seri
 :seri rdf:type owl:NamedIndividual ,
-               :ElephasMaximus ;
+               :elephasMaximus ;
       rdfs:label "Seri"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant ."@en .
 
@@ -1563,6 +1547,11 @@ xsd:time rdf:type rdfs:Datatype .
          :observes :gPSObservation ;
          rdfs:label "Seri GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en .
+
+
+###  https://w3id.org/def/foo#soil
+:soil rdf:type owl:NamedIndividual ;
+      rdfs:label "Soil"@en .
 
 
 ###  https://w3id.org/def/foo#soilObservation
@@ -1581,11 +1570,29 @@ xsd:time rdf:type rdfs:Datatype .
                  :totalN "0.38"^^xsd:double .
 
 
+###  https://w3id.org/def/foo#soilProperties
+:soilProperties rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#soilSensor
+:soilSensor rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/sosa/Sensor> ;
+            :hasFeatureOfInterest :soil ;
+            :observes :soilProperties ;
+            rdfs:label "Soil Sensor"@en .
+
+
+###  https://w3id.org/def/foo#tree
+:tree rdf:type owl:NamedIndividual ,
+               :Species ;
+      rdfs:label "Tree"@en .
+
+
 ###  https://w3id.org/def/foo#treeObservation
 :treeObservation rdf:type owl:NamedIndividual ,
                           :Observation ;
-                 :hasFeatureOfInterest :Tree ;
-                 :madeBySensor :TreeSensor ;
+                 :hasFeatureOfInterest :tree ;
+                 :madeBySensor :treeSensor ;
                  :lianaDBH_cm 10 ;
                  :subplotRadius_m 30 ;
                  :treeDBH_cm 110 ;
@@ -1594,9 +1601,23 @@ xsd:time rdf:type rdfs:Datatype .
                  :treeIndividualNo 2 .
 
 
+###  https://w3id.org/def/foo#treeProperties
+:treeProperties rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                rdfs:label "Tree Properties"@en .
+
+
+###  https://w3id.org/def/foo#treeSensor
+:treeSensor rdf:type owl:NamedIndividual ,
+                     :Sensor ;
+            :hasFeatureOfInterest :Tree ;
+            :observes :treeProperties ;
+            rdfs:label "Tree Sensor"@en .
+
+
 ###  https://w3id.org/def/foo#tulid
 :tulid rdf:type owl:NamedIndividual ,
-                :ElephasMaximus ;
+                :elephasMaximus ;
        rdfs:label "Tulid"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant ."@en .
 
@@ -1612,7 +1633,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#tunglap
 :tunglap rdf:type owl:NamedIndividual ,
-                  :ElephasMaximus ;
+                  :elephasMaximus ;
          rdfs:label "Tunglap"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1628,7 +1649,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#umas2
 :umas2 rdf:type owl:NamedIndividual ,
-                :ElephasMaximus ;
+                :elephasMaximus ;
        rdfs:label "Umas2"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Male Asian Elephant ."@en .
 
@@ -1706,6 +1727,13 @@ xsd:time rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 
 
+:FeatureOfInterest rdfs:comment "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/sosa/> ;
+                   rdfs:label "Feature Of Interest"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+                   <http://www.w3.org/2004/02/skos/core#example> "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en .
+
+
 :Genus rdfs:label "Genus"@en-gb .
 
 
@@ -1747,6 +1775,12 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 :Viverridae rdfs:label "Viverridae"@en-gb .
+
+
+:elephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+                rdfs:label "Asian Elephant"@en ,
+                           "Elephas maximus"@la ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 
 :gPSObservation rdfs:label "GPS Observation"@en ;
