@@ -42,13 +42,13 @@ _:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/st
           <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
-          <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
-
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
           <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
+
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+          <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
@@ -211,13 +211,20 @@ xsd:time rdf:type rdfs:Datatype .
                       owl:inverseOf <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> ;
                       rdfs:domain :Observation ;
                       rdfs:range :ElephasMaximus ,
-                                 :FeatureOfInterest .
+                                 :FeatureOfInterest ,
+                                 :MalayopythonReticulatus ,
+                                 :ManisJavanica ,
+                                 :NasalisLarvatus .
 
 
 ###  https://w3id.org/def/foo#isFeatureOfInterestOf
 :isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
                        owl:inverseOf <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
-                       rdfs:domain :Species ;
+                       rdfs:domain :ElephasMaximus ,
+                                   :FeatureOfInterest ,
+                                   :MalayopythonReticulatus ,
+                                   :ManisJavanica ,
+                                   :NasalisLarvatus ;
                        rdfs:range :Observation ;
                        rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
                        rdfs:label "is feature of interest of"@en .
@@ -637,7 +644,11 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#NasalisLarvatus
 :NasalisLarvatus rdf:type owl:Class ;
-                 rdfs:subClassOf :Nasalis .
+                 rdfs:subClassOf :Nasalis ;
+                 rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
+                 rdfs:label "Nasalis larvatus"@la ,
+                            "Proboscis Monkey"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
@@ -1032,11 +1043,6 @@ xsd:time rdf:type rdfs:Datatype .
 :MerotaiGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#NasalisLarvatus
-:NasalisLarvatus rdf:type owl:NamedIndividual ,
-                          :Nasalis .
-
-
 ###  https://w3id.org/def/foo#ObservableProperty
 :ObservableProperty rdf:type owl:NamedIndividual .
 
@@ -1180,8 +1186,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#aqeela
 :aqeela rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ,
-                 :FeatureOfInterest ;
+                 :ElephasMaximus ;
         rdfs:label "Aqeela"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1741,12 +1746,6 @@ xsd:time rdf:type rdfs:Datatype .
 
 :Mammalia rdfs:label "Mammalia"@en-gb ;
           <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
-
-
-:NasalisLarvatus rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-                 rdfs:label "Nasalis larvatus"@la ,
-                            "Proboscis Monkey"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 
 :ObservableProperty rdfs:label "Observable Property"@en ;
