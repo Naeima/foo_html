@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "foo@en:Squamata" "foo@en:Mammalia" "foo@en:Malayopython" "foo@en:Animalia" "foo@en:Cercopithecidae" "foo@en:ManisJavanica" "foo@en:ElephasMaximus" "foo@en:MalayopythonReticulatus" "foo@en:Primates" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Nasalis" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Pythonidae" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
+node [shape = rectangle, color="black"]; "foo@en:NasalisLarvatus" "foo@en:Squamata" "foo@en:Mammalia" "foo@en:Malayopython" "foo@en:Animalia" "foo@en:Cercopithecidae" "foo@en:ManisJavanica" "foo@en:ElephasMaximus" "foo@en:MalayopythonReticulatus" "foo@en:Primates" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Nasalis" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Pythonidae" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
 	"foo@en:Cercopithecidae" -> "foo@en:Primates" [ label = "rdfs:subClassOf" ];
 	"foo@en:Chordata" -> "foo@en:Animalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Squamata" -> "foo@en:Reptilia" [ label = "rdfs:subClassOf" ];

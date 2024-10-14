@@ -25,18 +25,6 @@
 }, {
   "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "en",
-    "@value" : "Dr. Charith Perera"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-0190-3346"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
@@ -45,6 +33,18 @@
   } ],
   "https://schema.org/identifier" : [ {
     "@id" : "https://orcid.org/0000-0003-3597-2646"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Dr. Charith Perera"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0002-0190-3346"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -658,10 +658,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#NasalisLarvatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Nasalis"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."
@@ -903,8 +900,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
-  }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1398,6 +1393,12 @@
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   }, {
     "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#ManisJavanica"
+  }, {
+    "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
@@ -1477,7 +1478,15 @@
     "@value" : "A relation between a FeatureOfInterest and an Observation about it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Species"
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#ManisJavanica"
+  }, {
+    "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
