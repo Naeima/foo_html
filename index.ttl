@@ -183,7 +183,8 @@ foo:Genus  a owl:Class ;
     owl:sameAs  wo:Genus . 
 
 ### Elephant ###
-foo: ElephasMaximus a owl:Class ;
+
+foo:ElephasMaximus a owl:Class ;
     rdfs:subClassOf foo:Elephantidae ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
@@ -672,87 +673,87 @@ foo:abawGPS a foo:Sensor ;
 
 #### Animal Instances ####
 
-foo:aqeela a foo:elephasMaximus;
+foo:aqeela a foo:ElephasMaximus, foo:FeatureOfInterest ;
     rdfs:label "Aqeela"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:guli a foo:elephasMaximus;
+foo:guli a foo:ElephasMaximus;
     rdfs:label "Guli"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:bikang1 a foo:elephasMaximus;
+foo:bikang1 a foo:ElephasMaximus;
     rdfs:label "Bikang 1"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:bikang2 a foo:elephasMaximus;
+foo:bikang2 a foo:ElephasMaximus;
     rdfs:label "Bikang 2"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:dara a foo:elephasMaximus;
+foo:dara a foo:ElephasMaximus;
     rdfs:label "Dara"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:abaw a foo:elephasMaximus; 
+foo:abaw a foo:ElephasMaximus; 
     rdfs:label "Abaw"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:ita a foo:elephasMaximus ;
+foo:ita a foo:ElephasMaximus ;
     rdfs:label "Ita"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:jasmin a foo:elephasMaximus ;
+foo:jasmin a foo:ElephasMaximus ;
     rdfs:label "Jasmin"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:jasper a foo:elephasMaximus ;
+foo:jasper a foo:ElephasMaximus ;
     rdfs:label "Jasper"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:kasih a foo:elephasMaximus ;
+foo:kasih a foo:ElephasMaximus ;
     rdfs:label "Kasih"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:kuma a foo:elephasMaximus ;
+foo:kuma a foo:ElephasMaximus ;
     rdfs:label "Kuma"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:liun a foo:elephasMaximus ;
+foo:liun a foo:ElephasMaximus ;
     rdfs:label "Liun"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:maliau a foo:elephasMaximus ;
+foo:maliau a foo:ElephasMaximus ;
     rdfs:label "Maliau"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:merotai a foo:elephasMaximus ;
+foo:merotai a foo:ElephasMaximus ;
     rdfs:label "Merotai"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:puteri a foo:elephasMaximus;
+foo:puteri a foo:ElephasMaximus;
     rdfs:label "Puteri"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:putut a foo:elephasMaximus ;
+foo:putut a foo:ElephasMaximus ;
     rdfs:label "Putut"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:sejati a foo:elephasMaximus ;
+foo:sejati a foo:ElephasMaximus ;
     rdfs:label "Sejati"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:seri a foo:elephasMaximus ;
+foo:seri a foo:ElephasMaximus ;
     rdfs:label "Seri"@en ;
     skos:definition "Female Asian Elephant ."@en .
 
-foo:tulid a foo:elephasMaximus ;
+foo:tulid a foo:ElephasMaximus ;
     rdfs:label "Tulid"@en ;
     skos:definition "Female Asian Elephant ."@en .
 
-foo:tunglap a foo:elephasMaximus ;
+foo:tunglap a foo:ElephasMaximus ;
     rdfs:label "Tunglap"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:umas2 a foo:elephasMaximus ;
+foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en ;
     skos:definition "Male Asian Elephant ."@en .
 
@@ -774,7 +775,7 @@ foo:gPSObservation a foo:Observation ;
     foo:longitude 5.652223e+02, 5.662223e+02 ;
     foo:speed 2.4e-01 ;
     foo:temperature 2.45e+01 ;
-    foo:hasFeatureOfInterest foo:elephasMaximus ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
