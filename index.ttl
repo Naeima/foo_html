@@ -212,7 +212,7 @@ foo:MalayopythonReticulatus a owl:Class ;
 
 ### Sunda Pangolin ###
 foo:ManisJavanica a owl:Class ;
-    rdfs:subClassOf foo:Mammilia ;
+    rdfs:subClassOf foo:Mammalia ;
     rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
