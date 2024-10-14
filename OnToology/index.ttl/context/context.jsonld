@@ -34,6 +34,9 @@
     "generatedAtTime" : {
       "@id" : "http://www.w3.org/ns/prov#generatedAtTime"
     },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
@@ -70,6 +73,9 @@
     "Malayopython" : {
       "@id" : "https://w3id.org/def/foo#Malayopython"
     },
+    "FeatureOfInterest" : {
+      "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+    },
     "wasAttributedTo" : {
       "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
     },
@@ -88,6 +94,9 @@
     "subplotRadius_m" : {
       "@id" : "https://w3id.org/def/foo#subplotRadius_m",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Mammilia" : {
+      "@id" : "https://w3id.org/def/foo#Mammilia"
     },
     "madeBySensor" : {
       "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
@@ -187,6 +196,9 @@
       "@id" : "https://w3id.org/def/foo#clay",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
+    "ManisJavanica" : {
+      "@id" : "https://w3id.org/def/foo#ManisJavanica"
+    },
     "treeNLianas" : {
       "@id" : "https://w3id.org/def/foo#treeNLianas"
     },
@@ -245,6 +257,9 @@
     "totalC" : {
       "@id" : "https://w3id.org/def/foo#totalC",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
@@ -351,6 +366,9 @@
     },
     "Species" : {
       "@id" : "https://w3id.org/def/foo#Species"
+    },
+    "MalayopythonReticulatus" : {
+      "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
     },
     "Squamata" : {
       "@id" : "https://w3id.org/def/foo#Squamata"
