@@ -46,24 +46,24 @@
         <schema:citation xml:lang="en">Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29</schema:citation>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
-        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/ranaof"/>
-        <foaf:name xml:lang="en">Professor Omer Rana</foaf:name>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0003-3597-2646"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid2">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"/>
         <foaf:name xml:lang="en">Dr. Pablo Orozco-terWengel</foaf:name>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-7951-4148"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid3">
+    <rdf:Description rdf:nodeID="genid2">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/goossensbr"/>
         <foaf:name xml:lang="en">Professor Benoit Goossens</foaf:name>
         <schema:identifier rdf:resource="https://orcid.org/0000-0003-2360-4643"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid4">
+    <rdf:Description rdf:nodeID="genid3">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/pererac"/>
         <foaf:name xml:lang="en">Dr. Charith Perera</foaf:name>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-0190-3346"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/ranaof"/>
+        <foaf:name xml:lang="en">Professor Omer Rana</foaf:name>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0003-3597-2646"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
         <foaf:homepage rdf:resource="https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima"/>
@@ -360,7 +360,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/foo#hasFeatureOfInterest">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/foo#Species"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
     </owl:ObjectProperty>
     
 
@@ -937,7 +938,9 @@
     <!-- https://w3id.org/def/foo#ElephasMaximus -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus"/>
+    <owl:Class rdf:about="https://w3id.org/def/foo#ElephasMaximus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
+    </owl:Class>
     
 
 
@@ -945,6 +948,13 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Family"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
     
 
 
@@ -958,7 +968,22 @@
     <!-- https://w3id.org/def/foo#Malayopython -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#Malayopython"/>
+    <owl:Class rdf:about="https://w3id.org/def/foo#Malayopython">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Pythonidae"/>
+        <rdfs:label xml:lang="en">Malayopython</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#MalayopythonReticulatus -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#MalayopythonReticulatus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Malayopython"/>
+        <rdfs:label xml:lang="la">Malayopython reticulatus</rdfs:label>
+        <rdfs:label xml:lang="en">Reticulated Python</rdfs:label>
+        <skos:definition xml:lang="en">Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.</skos:definition>
+    </owl:Class>
     
 
 
@@ -967,6 +992,26 @@
 
     <owl:Class rdf:about="https://w3id.org/def/foo#Mammalia">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Chordata"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#Mammilia -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Mammilia"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#ManisJavanica -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#ManisJavanica">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammilia"/>
+        <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.</rdfs:comment>
+        <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
+        <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
+        <skos:definition xml:lang="en">Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.</skos:definition>
     </owl:Class>
     
 
@@ -1027,7 +1072,10 @@
     <!-- https://w3id.org/def/foo#Pythonidae -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/foo#Pythonidae"/>
+    <owl:Class rdf:about="https://w3id.org/def/foo#Pythonidae">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Squamata"/>
+        <rdfs:label xml:lang="en">Pythonidae</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1197,6 +1245,22 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#longitude"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <owl:sameAs rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#FeatureOfInterest -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
     
 
 
@@ -1480,6 +1544,13 @@
     
 
 
+    <!-- https://w3id.org/def/foo#FeatureOfInterest -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#FeatureOfInterest"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Genus -->
 
 
@@ -1587,34 +1658,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#KumaGPS"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#LianaProperties -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#LianaProperties"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#LianaSensor -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#LianaSensor">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
-        <observes rdf:resource="https://w3id.org/def/foo#LianaProperties"/>
-        <rdfs:label xml:lang="en">Liana Sensor</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#Lianas -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Lianas">
-        <isObservedBy rdf:resource="https://w3id.org/def/foo#LianaSensor"/>
-        <rdfs:label xml:lang="en">Lianas</rdfs:label>
-    </owl:NamedIndividual>
     
 
 
@@ -1797,28 +1840,14 @@
     <!-- https://w3id.org/def/foo#Soil -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Soil">
-        <rdfs:label xml:lang="en">Soil</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#SoilProperties -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilProperties"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Soil"/>
     
 
 
     <!-- https://w3id.org/def/foo#SoilSensor -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor">
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
-        <observes rdf:resource="https://w3id.org/def/foo#SoilProperties"/>
-        <rdfs:label xml:lang="en">Soil Sensor</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#SoilSensor"/>
     
 
 
@@ -1857,32 +1886,7 @@
     <!-- https://w3id.org/def/foo#Tree -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tree">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:label xml:lang="en">Tree</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#TreeProperties -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeProperties">
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:label xml:lang="en">Tree Properties</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#TreeSensor -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#TreeSensor">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
-        <observes rdf:resource="https://w3id.org/def/foo#TreeProperties"/>
-        <rdfs:label xml:lang="en">Tree Sensor</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Tree"/>
     
 
 
@@ -1973,6 +1977,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#aqeela">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
         <rdfs:label xml:lang="en">Aqeela</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2073,20 +2078,6 @@
         <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Umas2 GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Dara.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#elephasMaximus -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#elephasMaximus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Elephantidae"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
-        <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
-        <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
-        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2309,6 +2300,34 @@
     
 
 
+    <!-- https://w3id.org/def/foo#lianaProperties -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianaProperties"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#lianaSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianaSensor">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
+        <observes rdf:resource="https://w3id.org/def/foo#lianaProperties"/>
+        <rdfs:label xml:lang="en">Liana Sensor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#lianas -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianas">
+        <isObservedBy rdf:resource="https://w3id.org/def/foo#lianaSensor"/>
+        <rdfs:label xml:lang="en">Lianas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#liun -->
 
 
@@ -2347,29 +2366,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#malayopython -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#malayopython">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Pythonidae"/>
-        <rdfs:label xml:lang="en">Malayopython</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#malayopythonReticulatus -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#malayopythonReticulatus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Malayopython"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:label xml:lang="la">Malayopython reticulatus</rdfs:label>
-        <rdfs:label xml:lang="en">Reticulated Python</rdfs:label>
-        <skos:definition xml:lang="en">Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/def/foo#maliau -->
 
 
@@ -2390,19 +2386,6 @@
         <observes rdf:resource="https://w3id.org/def/foo#gPSObservation"/>
         <rdfs:label xml:lang="en">Maliau GPS</rdfs:label>
         <skos:definition xml:lang="en">A GPS collar sensor fitted around the neck of an Asian elephant named Maliau.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/foo#manisJavanica -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#manisJavanica">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.</rdfs:comment>
-        <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
-        <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
-        <skos:definition xml:lang="en">Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -2479,16 +2462,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#pythonidae -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#pythonidae">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Squamata"/>
-        <rdfs:label xml:lang="en">Pythonidae</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/def/foo#sejati -->
 
 
@@ -2537,6 +2510,15 @@
     
 
 
+    <!-- https://w3id.org/def/foo#soil -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soil">
+        <rdfs:label xml:lang="en">Soil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#soilObservation -->
 
 
@@ -2557,19 +2539,70 @@
     
 
 
+    <!-- https://w3id.org/def/foo#soilProperties -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soilProperties"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#soilSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soilSensor">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#soil"/>
+        <observes rdf:resource="https://w3id.org/def/foo#soilProperties"/>
+        <rdfs:label xml:lang="en">Soil Sensor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#tree -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tree">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
+        <rdfs:label xml:lang="en">Tree</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/foo#treeObservation -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeObservation">
         <rdf:type rdf:resource="https://w3id.org/def/foo#Observation"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
-        <madeBySensor rdf:resource="https://w3id.org/def/foo#TreeSensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#tree"/>
+        <madeBySensor rdf:resource="https://w3id.org/def/foo#treeSensor"/>
         <lianaDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</lianaDBH_cm>
         <subplotRadius_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</subplotRadius_m>
         <treeDBH_cm rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</treeDBH_cm>
         <treeHeight_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</treeHeight_m>
         <treeID>Shorea pauciflora</treeID>
         <treeIndividualNo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</treeIndividualNo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#treeProperties -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeProperties">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Tree Properties</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#treeSensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#treeSensor">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Sensor"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Tree"/>
+        <observes rdf:resource="https://w3id.org/def/foo#treeProperties"/>
+        <rdfs:label xml:lang="en">Tree Sensor</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2747,6 +2780,19 @@
     <rdf:Description rdf:about="https://w3id.org/def/foo#Elephantidae">
         <rdfs:label xml:lang="en-gb">Elephantidae</rdfs:label>
         <skos:definition xml:lang="en">ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#ElephasMaximus">
+        <rdfs:comment xml:lang="en">Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200.</rdfs:comment>
+        <rdfs:label xml:lang="en">Asian Elephant</rdfs:label>
+        <rdfs:label xml:lang="la">Elephas maximus</rdfs:label>
+        <skos:definition xml:lang="en">Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#FeatureOfInterest">
+        <rdfs:comment xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Feature Of Interest</rdfs:label>
+        <skos:definition xml:lang="en">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</skos:definition>
+        <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Genus">
         <rdfs:label xml:lang="en-gb">Genus</rdfs:label>
