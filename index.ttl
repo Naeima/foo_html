@@ -673,7 +673,7 @@ foo:abawGPS a foo:Sensor ;
 
 #### Animal Instances ####
 
-foo:aqeela a foo:ElephasMaximus, foo:FeatureOfInterest ;
+foo:aqeela a foo:ElephasMaximus ;
     rdfs:label "Aqeela"@en ;
     skos:definition "Female Asian Elephant."@en .
 
