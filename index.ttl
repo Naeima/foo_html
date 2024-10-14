@@ -160,7 +160,7 @@ foo:Nasalis a  owl:Class ;
     rdfs:subClassOf foo:Cercopithecidae;
     skos:definition "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
 
-foo:NasalisLarvatus a foo:Nasalis ;
+foo:NasalisLarvatus a owl:Class ;
     rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
     rdfs:subClassOf foo:Nasalis ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
@@ -168,6 +168,7 @@ foo:NasalisLarvatus a foo:Nasalis ;
     skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 #### Additional Families ####
+
 foo:Viverridae a owl:Class ;
     rdfs:label "Viverridae"@en-gb ;
     rdfs:subClassOf foo:Family ;
@@ -251,14 +252,14 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus ;
+    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica  ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
-    rdfs:domain foo:Species ;
+    rdfs:domain foo:FeatureOfInterest, foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica  ; 
     rdfs:range foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest .
 
