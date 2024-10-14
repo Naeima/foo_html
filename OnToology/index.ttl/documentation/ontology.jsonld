@@ -119,6 +119,12 @@
   "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ]
+}, {
   "@id" : "http://www.w3.org/ns/sosa/ObservableProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
@@ -448,11 +454,30 @@
     "@value" : "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#ElephasMaximus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "https://w3id.org/def/foo#Family",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature Of Interest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Genus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -510,32 +535,6 @@
 }, {
   "@id" : "https://w3id.org/def/foo#KumaGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/def/foo#LianaProperties",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "https://w3id.org/def/foo#LianaSensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Sensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Liana Sensor"
-  } ],
-  "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#LianaProperties"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#Lianas",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Lianas"
-  } ],
-  "https://w3id.org/def/foo#isObservedBy" : [ {
-    "@id" : "https://w3id.org/def/foo#LianaSensor"
-  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#LiunGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -718,30 +717,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Soil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Soil"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#SoilProperties",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#SoilSensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Sensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Soil Sensor"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Soil"
-  } ],
-  "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#SoilProperties"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Species",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -771,40 +750,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tree",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Species"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Tree"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#TreeProperties",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Tree Properties"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/foo#TreeSensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Sensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Tree Sensor"
-  } ],
-  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Tree"
-  } ],
-  "https://w3id.org/def/foo#observes" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeProperties"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tulid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -840,7 +786,7 @@
   "@id" : "https://w3id.org/def/foo#abaw",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -880,7 +826,7 @@
   "@id" : "https://w3id.org/def/foo#aqeela",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -914,7 +860,7 @@
   "@id" : "https://w3id.org/def/foo#bikang1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -948,7 +894,7 @@
   "@id" : "https://w3id.org/def/foo#bikang2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1056,7 +1002,7 @@
   "@id" : "https://w3id.org/def/foo#dara",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1122,7 +1068,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#elephasMaximus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#Elephantidae"
   }, {
@@ -1241,7 +1187,7 @@
     "@value" : "1.64"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "https://w3id.org/def/foo#iD" : [ {
     "@value" : "1SAT32"
@@ -1334,7 +1280,7 @@
   "@id" : "https://w3id.org/def/foo#guli",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1510,7 +1456,7 @@
   "@id" : "https://w3id.org/def/foo#ita",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1544,7 +1490,7 @@
   "@id" : "https://w3id.org/def/foo#jasmin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1578,7 +1524,7 @@
   "@id" : "https://w3id.org/def/foo#jasper",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1612,7 +1558,7 @@
   "@id" : "https://w3id.org/def/foo#kasih",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1646,7 +1592,7 @@
   "@id" : "https://w3id.org/def/foo#kuma",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1722,10 +1668,36 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#lianaProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#lianaSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Liana Sensor"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#lianaProperties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#lianas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lianas"
+  } ],
+  "https://w3id.org/def/foo#isObservedBy" : [ {
+    "@id" : "https://w3id.org/def/foo#lianaSensor"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#liun",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1906,7 +1878,7 @@
   "@id" : "https://w3id.org/def/foo#maliau",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1961,7 +1933,7 @@
   "@id" : "https://w3id.org/def/foo#merotai",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2083,7 +2055,7 @@
   "@id" : "https://w3id.org/def/foo#puteri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2117,7 +2089,7 @@
   "@id" : "https://w3id.org/def/foo#putut",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2167,7 +2139,7 @@
   "@id" : "https://w3id.org/def/foo#sejati",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2201,7 +2173,7 @@
   "@id" : "https://w3id.org/def/foo#seri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2264,6 +2236,13 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Geographical area/site which samples were taken from."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#soil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#soilObservation",
@@ -2350,6 +2329,25 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Measured pH of the soil sample."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#soilProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#soilSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil Sensor"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#soil"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#soilProperties"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#speed",
@@ -2449,6 +2447,16 @@
   "@id" : "https://w3id.org/def/foo#totalP",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#tree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#treeDBH_cm",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2521,7 +2529,7 @@
     "@value" : "2017-07-21"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#Tree"
+    "@id" : "https://w3id.org/def/foo#tree"
   } ],
   "https://w3id.org/def/foo#iD" : [ {
     "@value" : "TreeObs1"
@@ -2531,7 +2539,7 @@
     "@value" : "10"
   } ],
   "https://w3id.org/def/foo#madeBySensor" : [ {
-    "@id" : "https://w3id.org/def/foo#TreeSensor"
+    "@id" : "https://w3id.org/def/foo#treeSensor"
   } ],
   "https://w3id.org/def/foo#subplotRadius_m" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -2560,10 +2568,36 @@
     "@value" : ""
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#treeProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree Properties"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#treeSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree Sensor"
+  } ],
+  "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "https://w3id.org/def/foo#observes" : [ {
+    "@id" : "https://w3id.org/def/foo#treeProperties"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#tulid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2597,7 +2631,7 @@
   "@id" : "https://w3id.org/def/foo#tunglap",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2631,7 +2665,7 @@
   "@id" : "https://w3id.org/def/foo#umas2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+    "@id" : "https://w3id.org/def/foo#elephasMaximus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
