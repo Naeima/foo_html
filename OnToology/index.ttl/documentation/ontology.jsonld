@@ -1,6 +1,18 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Professor Omer Rana"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-3597-2646"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
@@ -11,7 +23,7 @@
     "@id" : "https://orcid.org/0000-0002-7951-4148"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/goossensbr"
   } ],
@@ -23,7 +35,7 @@
     "@id" : "https://orcid.org/0000-0003-2360-4643"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
   } ],
@@ -33,18 +45,6 @@
   } ],
   "https://schema.org/identifier" : [ {
     "@id" : "https://orcid.org/0000-0002-0190-3346"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "en",
-    "@value" : "Professor Omer Rana"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-3597-2646"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -517,7 +517,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Image",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Camera Trap Image"
@@ -658,10 +658,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#NasalisLarvatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Nasalis"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."
@@ -793,7 +790,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#Soil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#SoilSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -826,7 +827,11 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tree",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tree"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tulid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -903,8 +908,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
-  }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1398,6 +1401,18 @@
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
   }, {
     "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Image"
+  }, {
+    "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#ManisJavanica"
+  }, {
+    "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Soil"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Tree"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
@@ -1477,7 +1492,21 @@
     "@value" : "A relation between a FeatureOfInterest and an Observation about it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/foo#Species"
+    "@id" : "https://w3id.org/def/foo#ElephasMaximus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Image"
+  }, {
+    "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#ManisJavanica"
+  }, {
+    "@id" : "https://w3id.org/def/foo#NasalisLarvatus"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Soil"
+  }, {
+    "@id" : "https://w3id.org/def/foo#Tree"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1743,6 +1772,9 @@
 }, {
   "@id" : "https://w3id.org/def/foo#lianas",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Lianas"
@@ -2235,13 +2267,6 @@
     "@value" : "Geographical area/site which samples were taken from."
   } ]
 }, {
-  "@id" : "https://w3id.org/def/foo#soil",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Soil"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/foo#soilObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2341,7 +2366,7 @@
     "@value" : "Soil Sensor"
   } ],
   "https://w3id.org/def/foo#hasFeatureOfInterest" : [ {
-    "@id" : "https://w3id.org/def/foo#soil"
+    "@id" : "https://w3id.org/def/foo#Soil"
   } ],
   "https://w3id.org/def/foo#observes" : [ {
     "@id" : "https://w3id.org/def/foo#soilProperties"
@@ -2445,14 +2470,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/foo#tree",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/def/foo#Species"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Tree"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/foo#treeDBH_cm",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],

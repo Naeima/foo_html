@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="252" parse.nodes="207" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="252" parse.nodes="206" parse.order="free">
       <node id="nid_sosa:observedProperty">
          <data key="d0">
             <y:ShapeNode>
@@ -157,19 +157,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_foo@en:soil">
+      <node id="nid_foo@en:Soil">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">foo@en:soil</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">foo@en:Soil</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_foo@en:hasFeatureOfInterest5" source="nid_foo@en:soilSensor" target="nid_foo@en:soil">
+    <edge id="eid_foo@en:hasFeatureOfInterest5" source="nid_foo@en:soilSensor" target="nid_foo@en:Soil">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -779,29 +779,6 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_0519f03667358d529994afff96c4945f">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">0519f03667358d529994afff96c4945f</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_dc:contributor31" source="nid_foo@en:" target="nid_0519f03667358d529994afff96c4945f">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dc:contributor</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_https://ontoology.linkeddata.es/">
          <data key="d0">
             <y:ShapeNode>
@@ -814,7 +791,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:publisher32" source="nid_foo@en:" target="nid_https://ontoology.linkeddata.es/">
+    <edge id="eid_dcterms:publisher31" source="nid_foo@en:" target="nid_https://ontoology.linkeddata.es/">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -837,7 +814,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:imports33" source="nid_foo@en:" target="nid_sosa:">
+    <edge id="eid_owl:imports32" source="nid_foo@en:" target="nid_sosa:">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -860,7 +837,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:versionIRI34" source="nid_foo@en:" target="nid_foo@en:V2.0">
+    <edge id="eid_owl:versionIRI33" source="nid_foo@en:" target="nid_foo@en:V2.0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -871,19 +848,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_2878e199c423640c094e358b6a2d9cf5">
+      <node id="nid_ad23a20b0815a005c02e4968568702fc">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">2878e199c423640c094e358b6a2d9cf5</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">ad23a20b0815a005c02e4968568702fc</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dc:creator35" source="nid_foo@en:" target="nid_2878e199c423640c094e358b6a2d9cf5">
+    <edge id="eid_dc:creator34" source="nid_foo@en:" target="nid_ad23a20b0815a005c02e4968568702fc">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -906,7 +883,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:doi36" source="nid_foo@en:" target="nid_https://doi.org/10.1007/978-3-031-43458-7_29">
+    <edge id="eid_dcterms:doi35" source="nid_foo@en:" target="nid_https://doi.org/10.1007/978-3-031-43458-7_29">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -917,19 +894,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_cab7810c0064fa831f6093f708ef9fd1">
+      <node id="nid_6197073c584a3b3e816b87afbc452e23">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">cab7810c0064fa831f6093f708ef9fd1</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">6197073c584a3b3e816b87afbc452e23</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dc:contributor37" source="nid_foo@en:" target="nid_cab7810c0064fa831f6093f708ef9fd1">
+    <edge id="eid_dc:contributor36" source="nid_foo@en:" target="nid_6197073c584a3b3e816b87afbc452e23">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -952,7 +929,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasAttributedTo38" source="nid_foo@en:" target="nid_https://github.com/Naeima">
+    <edge id="eid_prov:wasAttributedTo37" source="nid_foo@en:" target="nid_https://github.com/Naeima">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -975,7 +952,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_cc:license39" source="nid_foo@en:" target="nid_http://creativecommons.org/licenses/by-sa/4.0/">
+    <edge id="eid_cc:license38" source="nid_foo@en:" target="nid_http://creativecommons.org/licenses/by-sa/4.0/">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -986,42 +963,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_a18259c36acbce086298ca132336bc65">
+      <node id="nid_0aca0286f0e83bed6ee48993918b003d">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">a18259c36acbce086298ca132336bc65</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">0aca0286f0e83bed6ee48993918b003d</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dc:contributor40" source="nid_foo@en:" target="nid_a18259c36acbce086298ca132336bc65">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dc:contributor</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_4c1dfc8859480c83ac95d286343be3a1">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">4c1dfc8859480c83ac95d286343be3a1</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_dc:contributor41" source="nid_foo@en:" target="nid_4c1dfc8859480c83ac95d286343be3a1">
+    <edge id="eid_dc:contributor39" source="nid_foo@en:" target="nid_0aca0286f0e83bed6ee48993918b003d">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1044,7 +998,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:seeAlso42" source="nid_foo@en:" target="nid_https://naeima.github.io/foo_html/index.ttl">
+    <edge id="eid_rdfs:seeAlso40" source="nid_foo@en:" target="nid_https://naeima.github.io/foo_html/index.ttl">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1055,7 +1009,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_dcterms:license43" source="nid_foo@en:" target="nid_http://creativecommons.org/licenses/by-sa/4.0/">
+    <edge id="eid_dcterms:license41" source="nid_foo@en:" target="nid_http://creativecommons.org/licenses/by-sa/4.0/">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1078,7 +1032,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_foaf:logo44" source="nid_foo@en:" target="nid_https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true">
+    <edge id="eid_foaf:logo42" source="nid_foo@en:" target="nid_https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1101,7 +1055,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom45" source="nid_foo@en:" target="nid_https://ontology.forest-observatory.org">
+    <edge id="eid_prov:wasDerivedFrom43" source="nid_foo@en:" target="nid_https://ontology.forest-observatory.org">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1124,12 +1078,58 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:seeAlso46" source="nid_foo@en:" target="nid_https://naeima.github.io/foo_html/">
+    <edge id="eid_rdfs:seeAlso44" source="nid_foo@en:" target="nid_https://naeima.github.io/foo_html/">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:seeAlso</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_7f8b45784be5a5ed47915d1d847bf494">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">7f8b45784be5a5ed47915d1d847bf494</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_dc:contributor45" source="nid_foo@en:" target="nid_7f8b45784be5a5ed47915d1d847bf494">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dc:contributor</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_1ff13feb5ca267bf930cd65254fe2c58">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">1ff13feb5ca267bf930cd65254fe2c58</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_dc:contributor46" source="nid_foo@en:" target="nid_1ff13feb5ca267bf930cd65254fe2c58">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dc:contributor</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2395,18 +2395,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_foo@en:Soil">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="110.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">foo@en:Soil</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
     <edge id="eid_foo@en:hasFeatureOfInterest107" source="nid_foo@en:soilObservation" target="nid_foo@en:Soil">
          <data key="d2">
             <y:PolyLineEdge>
@@ -3189,7 +3177,7 @@
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="220.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">foo@en:NasalisLarvatus</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -3201,7 +3189,7 @@
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="360.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://10.1371/journal.pone.0174891</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -3224,7 +3212,7 @@
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="340.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://doi/10.1126/sciadv.aaq0250</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -3247,7 +3235,7 @@
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="450.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://doi.org/10.1016/S0006-3207(99)00066-X</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -3404,29 +3392,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_42749cbe3998cca21ed24e295874798f">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">42749cbe3998cca21ed24e295874798f</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_dcterms:creator154" source="nid_sosa:" target="nid_42749cbe3998cca21ed24e295874798f">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dcterms:creator</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
          <data key="d0">
             <y:ShapeNode>
@@ -3439,12 +3404,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:license155" source="nid_sosa:" target="nid_http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
+    <edge id="eid_dcterms:license154" source="nid_sosa:" target="nid_http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dcterms:license</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_98cd205cf17e2c7060a20109c0439380">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">98cd205cf17e2c7060a20109c0439380</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_dcterms:creator155" source="nid_sosa:" target="nid_98cd205cf17e2c7060a20109c0439380">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">dcterms:creator</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -3797,7 +3785,7 @@
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://w3id.org/def/foo#</y:NodeLabel>
                <y:Shape type="rectangle" />
@@ -5207,7 +5195,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_foo@en:hasFeatureOfInterest247" source="nid_foo@en:Observation" target="nid_foo@en:FeatureOfInterest">
+    <edge id="eid_foo@en:hasFeatureOfInterest247" source="nid_foo@en:Observation" target="nid_foo@en:Soil">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -5229,7 +5217,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_foo@en:isFeatureOfInterestOf249" source="nid_foo@en:Species" target="nid_foo@en:Observation">
+    <edge id="eid_foo@en:isFeatureOfInterestOf249" source="nid_foo@en:Tree" target="nid_foo@en:Observation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
