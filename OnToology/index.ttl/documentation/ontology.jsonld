@@ -1,6 +1,18 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Professor Omer Rana"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-3597-2646"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
@@ -11,7 +23,7 @@
     "@id" : "https://orcid.org/0000-0002-7951-4148"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid3",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/goossensbr"
   } ],
@@ -23,7 +35,7 @@
     "@id" : "https://orcid.org/0000-0003-2360-4643"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@id" : "https://profiles.cardiff.ac.uk/staff/pererac"
   } ],
@@ -33,18 +45,6 @@
   } ],
   "https://schema.org/identifier" : [ {
     "@id" : "https://orcid.org/0000-0002-0190-3346"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://profiles.cardiff.ac.uk/staff/ranaof"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@language" : "en",
-    "@value" : "Professor Omer Rana"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-3597-2646"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -903,8 +903,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/def/foo#ElephasMaximus"
-  }, {
-    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
