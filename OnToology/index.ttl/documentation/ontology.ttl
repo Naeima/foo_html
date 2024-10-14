@@ -34,21 +34,21 @@
                              <http://xmlns.com/foaf/0.1/logo> <https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true> ;
                              <https://schema.org/citation> "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
+
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
           <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
-
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
@@ -211,13 +211,26 @@ xsd:time rdf:type rdfs:Datatype .
                       owl:inverseOf <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> ;
                       rdfs:domain :Observation ;
                       rdfs:range :ElephasMaximus ,
-                                 :FeatureOfInterest .
+                                 :FeatureOfInterest ,
+                                 :Image ,
+                                 :MalayopythonReticulatus ,
+                                 :ManisJavanica ,
+                                 :NasalisLarvatus ,
+                                 :Soil ,
+                                 :Tree .
 
 
 ###  https://w3id.org/def/foo#isFeatureOfInterestOf
 :isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
                        owl:inverseOf <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
-                       rdfs:domain :Species ;
+                       rdfs:domain :ElephasMaximus ,
+                                   :FeatureOfInterest ,
+                                   :Image ,
+                                   :MalayopythonReticulatus ,
+                                   :ManisJavanica ,
+                                   :NasalisLarvatus ,
+                                   :Soil ,
+                                   :Tree ;
                        rdfs:range :Observation ;
                        rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
                        rdfs:label "is feature of interest of"@en .
@@ -596,6 +609,10 @@ xsd:time rdf:type rdfs:Datatype .
 :Genus rdf:type owl:Class .
 
 
+###  https://w3id.org/def/foo#Image
+:Image rdf:type owl:Class .
+
+
 ###  https://w3id.org/def/foo#Malayopython
 :Malayopython rdf:type owl:Class ;
               rdfs:subClassOf :Pythonidae ;
@@ -637,7 +654,11 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#NasalisLarvatus
 :NasalisLarvatus rdf:type owl:Class ;
-                 rdfs:subClassOf :Nasalis .
+                 rdfs:subClassOf :Nasalis ;
+                 rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
+                 rdfs:label "Nasalis larvatus"@la ,
+                            "Proboscis Monkey"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
@@ -674,6 +695,10 @@ xsd:time rdf:type rdfs:Datatype .
 :Sensor rdf:type owl:Class .
 
 
+###  https://w3id.org/def/foo#Soil
+:Soil rdf:type owl:Class .
+
+
 ###  https://w3id.org/def/foo#Species
 :Species rdf:type owl:Class .
 
@@ -681,6 +706,10 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#Squamata
 :Squamata rdf:type owl:Class ;
           rdfs:subClassOf :Reptilia .
+
+
+###  https://w3id.org/def/foo#Tree
+:Tree rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Viverridae
@@ -954,9 +983,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Image
-:Image rdf:type owl:NamedIndividual ;
-       rdfs:label "Camera Trap Image"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
+:Image rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Ita
@@ -1030,11 +1057,6 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#MerotaiGPS
 :MerotaiGPS rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#NasalisLarvatus
-:NasalisLarvatus rdf:type owl:NamedIndividual ,
-                          :Nasalis .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
@@ -1180,8 +1202,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#aqeela
 :aqeela rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ,
-                 :FeatureOfInterest ;
+                 :ElephasMaximus ;
         rdfs:label "Aqeela"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1420,7 +1441,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#lianas
-:lianas rdf:type owl:NamedIndividual ;
+:lianas rdf:type owl:NamedIndividual ,
+                 :Tree ;
         :isObservedBy :lianaSensor ;
         rdfs:label "Lianas"@en .
 
@@ -1545,11 +1567,6 @@ xsd:time rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en .
 
 
-###  https://w3id.org/def/foo#soil
-:soil rdf:type owl:NamedIndividual ;
-      rdfs:label "Soil"@en .
-
-
 ###  https://w3id.org/def/foo#soilObservation
 :soilObservation rdf:type owl:NamedIndividual ,
                           :Observation ;
@@ -1573,15 +1590,13 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#soilSensor
 :soilSensor rdf:type owl:NamedIndividual ,
                      <http://www.w3.org/ns/sosa/Sensor> ;
-            :hasFeatureOfInterest :soil ;
+            :hasFeatureOfInterest :Soil ;
             :observes :soilProperties ;
             rdfs:label "Soil Sensor"@en .
 
 
 ###  https://w3id.org/def/foo#tree
-:tree rdf:type owl:NamedIndividual ,
-               :Species ;
-      rdfs:label "Tree"@en .
+:tree rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#treeObservation
@@ -1739,14 +1754,12 @@ xsd:time rdf:type rdfs:Datatype .
 :Genus rdfs:label "Genus"@en-gb .
 
 
+:Image rdfs:label "Camera Trap Image"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
+
+
 :Mammalia rdfs:label "Mammalia"@en-gb ;
           <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
-
-
-:NasalisLarvatus rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-                 rdfs:label "Nasalis larvatus"@la ,
-                            "Proboscis Monkey"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 
 :ObservableProperty rdfs:label "Observable Property"@en ;
@@ -1769,11 +1782,17 @@ xsd:time rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
 
 
+:Soil rdfs:label "Soil"@en .
+
+
 :Species rdfs:label "Species"@en-gb ;
          <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
 
 
 :Squamata rdfs:label "Squamata"@en-gb .
+
+
+:Tree rdfs:label "Tree"@en .
 
 
 :Viverridae rdfs:label "Viverridae"@en-gb .

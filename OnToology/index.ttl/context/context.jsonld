@@ -38,7 +38,7 @@
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
     "license" : {
-      "@id" : "http://purl.org/dc/terms/license"
+      "@id" : "http://creativecommons.org/ns#license"
     },
     "Kingdom" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom"
@@ -162,6 +162,9 @@
       "@id" : "https://w3id.org/def/foo#count",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
+    "Soil" : {
+      "@id" : "https://w3id.org/def/foo#Soil"
+    },
     "totalN" : {
       "@id" : "https://w3id.org/def/foo#totalN",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
@@ -202,6 +205,9 @@
     "treeNLianas" : {
       "@id" : "https://w3id.org/def/foo#treeNLianas"
     },
+    "soilObservation" : {
+      "@id" : "https://w3id.org/def/foo#soilObservation"
+    },
     "wasDerivedFrom" : {
       "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
     },
@@ -220,8 +226,14 @@
     "Family" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Family"
     },
+    "imageObservation" : {
+      "@id" : "https://w3id.org/def/foo#imageObservation"
+    },
     "status" : {
       "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status"
+    },
+    "treeObservation" : {
+      "@id" : "https://w3id.org/def/foo#treeObservation"
     },
     "identifier" : {
       "@id" : "https://schema.org/identifier"
@@ -344,6 +356,9 @@
       "@id" : "https://w3id.org/def/foo#cov",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
+    "Tree" : {
+      "@id" : "https://w3id.org/def/foo#Tree"
+    },
     "ElephasMaximus" : {
       "@id" : "https://w3id.org/def/foo#ElephasMaximus"
     },
@@ -353,6 +368,9 @@
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Image" : {
+      "@id" : "https://w3id.org/def/foo#Image"
     },
     "ObservableProperty" : {
       "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
