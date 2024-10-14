@@ -34,21 +34,21 @@
                              <http://xmlns.com/foaf/0.1/logo> <https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true> ;
                              <https://schema.org/citation> "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
-
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
           <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
+
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
@@ -210,7 +210,8 @@ xsd:time rdf:type rdfs:Datatype .
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
                       owl:inverseOf <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> ;
                       rdfs:domain :Observation ;
-                      rdfs:range :Species .
+                      rdfs:range :ElephasMaximus ,
+                                 :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#isFeatureOfInterestOf
@@ -579,11 +580,16 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#ElephasMaximus
-:ElephasMaximus rdf:type owl:Class .
+:ElephasMaximus rdf:type owl:Class ;
+                rdfs:subClassOf :Elephantidae .
 
 
 ###  https://w3id.org/def/foo#Family
 :Family rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/foo#Genus
@@ -591,12 +597,35 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Malayopython
-:Malayopython rdf:type owl:Class .
+:Malayopython rdf:type owl:Class ;
+              rdfs:subClassOf :Pythonidae ;
+              rdfs:label "Malayopython"@en .
+
+
+###  https://w3id.org/def/foo#MalayopythonReticulatus
+:MalayopythonReticulatus rdf:type owl:Class ;
+                         rdfs:subClassOf :Malayopython ;
+                         rdfs:label "Malayopython reticulatus"@la ,
+                                    "Reticulated Python"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
 ###  https://w3id.org/def/foo#Mammalia
 :Mammalia rdf:type owl:Class ;
           rdfs:subClassOf :Chordata .
+
+
+###  https://w3id.org/def/foo#Mammilia
+:Mammilia rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#ManisJavanica
+:ManisJavanica rdf:type owl:Class ;
+               rdfs:subClassOf :Mammilia ;
+               rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+               rdfs:label "Manis javanica"@la ,
+                          "Sunda Pangolin"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
 
 ###  https://w3id.org/def/foo#Nasalis
@@ -631,7 +660,9 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Pythonidae
-:Pythonidae rdf:type owl:Class .
+:Pythonidae rdf:type owl:Class ;
+            rdfs:subClassOf :Squamata ;
+            rdfs:label "Pythonidae"@en .
 
 
 ###  https://w3id.org/def/foo#Reptilia
@@ -725,6 +756,15 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#longitude
 :longitude rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:NamedIndividual ;
+                                              owl:sameAs :FeatureOfInterest .
+
+
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:NamedIndividual .
 
 
 ###  http://www.w3.org/ns/sosa/ObservableProperty
@@ -892,6 +932,10 @@ xsd:time rdf:type rdfs:Datatype .
 :ElephasMaximus rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/def/foo#Genus
 :Genus rdf:type owl:NamedIndividual ;
        owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> .
@@ -953,23 +997,6 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#KumaGPS
 :KumaGPS rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#LianaProperties
-:LianaProperties rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#LianaSensor
-:LianaSensor rdf:type owl:NamedIndividual ,
-                      :Sensor ;
-             :observes :LianaProperties ;
-             rdfs:label "Liana Sensor"@en .
-
-
-###  https://w3id.org/def/foo#Lianas
-:Lianas rdf:type owl:NamedIndividual ;
-        :isObservedBy :LianaSensor ;
-        rdfs:label "Lianas"@en .
 
 
 ###  https://w3id.org/def/foo#LiunGPS
@@ -1073,20 +1100,11 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Soil
-:Soil rdf:type owl:NamedIndividual ;
-      rdfs:label "Soil"@en .
-
-
-###  https://w3id.org/def/foo#SoilProperties
-:SoilProperties rdf:type owl:NamedIndividual .
+:Soil rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#SoilSensor
-:SoilSensor rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/ns/sosa/Sensor> ;
-            :hasFeatureOfInterest :Soil ;
-            :observes :SoilProperties ;
-            rdfs:label "Soil Sensor"@en .
+:SoilSensor rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Species
@@ -1108,23 +1126,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Tree
-:Tree rdf:type owl:NamedIndividual ,
-               :Species ;
-      rdfs:label "Tree"@en .
-
-
-###  https://w3id.org/def/foo#TreeProperties
-:TreeProperties rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                rdfs:label "Tree Properties"@en .
-
-
-###  https://w3id.org/def/foo#TreeSensor
-:TreeSensor rdf:type owl:NamedIndividual ,
-                     :Sensor ;
-            :hasFeatureOfInterest :Tree ;
-            :observes :TreeProperties ;
-            rdfs:label "Tree Sensor"@en .
+:Tree rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Tulid
@@ -1178,7 +1180,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#aqeela
 :aqeela rdf:type owl:NamedIndividual ,
-                 :ElephasMaximus ;
+                 :ElephasMaximus ,
+                 :FeatureOfInterest ;
         rdfs:label "Aqeela"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "Female Asian Elephant."@en .
 
@@ -1247,16 +1250,6 @@ xsd:time rdf:type rdfs:Datatype .
          :observes :gPSObservation ;
          rdfs:label "Umas2 GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en .
-
-
-###  https://w3id.org/def/foo#elephasMaximus
-:elephasMaximus rdf:type owl:NamedIndividual ,
-                         :Elephantidae ,
-                         :Species ;
-                rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
-                rdfs:label "Asian Elephant"@en ,
-                           "Elephas maximus"@la ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 
 ###  https://w3id.org/def/foo#gPSObservation
@@ -1415,6 +1408,23 @@ xsd:time rdf:type rdfs:Datatype .
 :latitude rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#lianaProperties
+:lianaProperties rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#lianaSensor
+:lianaSensor rdf:type owl:NamedIndividual ,
+                      :Sensor ;
+             :observes :lianaProperties ;
+             rdfs:label "Liana Sensor"@en .
+
+
+###  https://w3id.org/def/foo#lianas
+:lianas rdf:type owl:NamedIndividual ;
+        :isObservedBy :lianaSensor ;
+        rdfs:label "Lianas"@en .
+
+
 ###  https://w3id.org/def/foo#liun
 :liun rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
@@ -1439,21 +1449,6 @@ xsd:time rdf:type rdfs:Datatype .
 :madeBySensor rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#malayopython
-:malayopython rdf:type owl:NamedIndividual ,
-                       :Pythonidae ;
-              rdfs:label "Malayopython"@en .
-
-
-###  https://w3id.org/def/foo#malayopythonReticulatus
-:malayopythonReticulatus rdf:type owl:NamedIndividual ,
-                                  :Malayopython ,
-                                  :Species ;
-                         rdfs:label "Malayopython reticulatus"@la ,
-                                    "Reticulated Python"@en ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
-
-
 ###  https://w3id.org/def/foo#maliau
 :maliau rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
@@ -1468,15 +1463,6 @@ xsd:time rdf:type rdfs:Datatype .
            :observes :gPSObservation ;
            rdfs:label "Maliau GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en .
-
-
-###  https://w3id.org/def/foo#manisJavanica
-:manisJavanica rdf:type owl:NamedIndividual ,
-                        :Species ;
-               rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
-               rdfs:label "Manis javanica"@la ,
-                          "Sunda Pangolin"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
 
 ###  https://w3id.org/def/foo#merotai
@@ -1527,12 +1513,6 @@ xsd:time rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en .
 
 
-###  https://w3id.org/def/foo#pythonidae
-:pythonidae rdf:type owl:NamedIndividual ,
-                     :Squamata ;
-            rdfs:label "Pythonidae"@en .
-
-
 ###  https://w3id.org/def/foo#sejati
 :sejati rdf:type owl:NamedIndividual ,
                  :ElephasMaximus ;
@@ -1565,6 +1545,11 @@ xsd:time rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en .
 
 
+###  https://w3id.org/def/foo#soil
+:soil rdf:type owl:NamedIndividual ;
+      rdfs:label "Soil"@en .
+
+
 ###  https://w3id.org/def/foo#soilObservation
 :soilObservation rdf:type owl:NamedIndividual ,
                           :Observation ;
@@ -1581,17 +1566,49 @@ xsd:time rdf:type rdfs:Datatype .
                  :totalN "0.38"^^xsd:double .
 
 
+###  https://w3id.org/def/foo#soilProperties
+:soilProperties rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#soilSensor
+:soilSensor rdf:type owl:NamedIndividual ,
+                     <http://www.w3.org/ns/sosa/Sensor> ;
+            :hasFeatureOfInterest :soil ;
+            :observes :soilProperties ;
+            rdfs:label "Soil Sensor"@en .
+
+
+###  https://w3id.org/def/foo#tree
+:tree rdf:type owl:NamedIndividual ,
+               :Species ;
+      rdfs:label "Tree"@en .
+
+
 ###  https://w3id.org/def/foo#treeObservation
 :treeObservation rdf:type owl:NamedIndividual ,
                           :Observation ;
-                 :hasFeatureOfInterest :Tree ;
-                 :madeBySensor :TreeSensor ;
+                 :hasFeatureOfInterest :tree ;
+                 :madeBySensor :treeSensor ;
                  :lianaDBH_cm 10 ;
                  :subplotRadius_m 30 ;
                  :treeDBH_cm 110 ;
                  :treeHeight_m 60 ;
                  :treeID "Shorea pauciflora" ;
                  :treeIndividualNo 2 .
+
+
+###  https://w3id.org/def/foo#treeProperties
+:treeProperties rdf:type owl:NamedIndividual ,
+                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                rdfs:label "Tree Properties"@en .
+
+
+###  https://w3id.org/def/foo#treeSensor
+:treeSensor rdf:type owl:NamedIndividual ,
+                     :Sensor ;
+            :hasFeatureOfInterest :Tree ;
+            :observes :treeProperties ;
+            rdfs:label "Tree Sensor"@en .
 
 
 ###  https://w3id.org/def/foo#tulid
@@ -1704,6 +1721,19 @@ xsd:time rdf:type rdfs:Datatype .
 
 :Elephantidae rdfs:label "Elephantidae"@en-gb ;
               <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
+
+
+:ElephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+                rdfs:label "Asian Elephant"@en ,
+                           "Elephas maximus"@la ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
+
+
+:FeatureOfInterest rdfs:comment "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/sosa/> ;
+                   rdfs:label "Feature Of Interest"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+                   <http://www.w3.org/2004/02/skos/core#example> "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en .
 
 
 :Genus rdfs:label "Genus"@en-gb .
