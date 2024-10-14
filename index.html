@@ -188,12 +188,12 @@ foo:Species  a owl:Class ;
 
 foo:Genus  a owl:Class ;
     rdfs:label  "Genus"@en-gb ;
-    owl:sameAs  wo:Genus .
-
-#### Species as Individuals ####
+    owl:sameAs  wo:Genus . 
 
 ### Elephant ###
-foo:elephasMaximus a owl:NamedIndividual, foo:Species,  foo:Elephantidae ;
+
+foo:ElephasMaximus a owl:Class ;
+    rdfs:subClassOf foo:Elephantidae ;
     rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
     rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
@@ -201,20 +201,25 @@ foo:elephasMaximus a owl:NamedIndividual, foo:Species,  foo:Elephantidae ;
     skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 ### Python (Snake)####
-foo:pythonidae a foo:Squamata  ;
+
+foo:Pythonidae a owl:Class ;
+    rdfs:subClassOf foo:Squamata  ;
     rdfs:label "Pythonidae"@en .
 
-foo:malayopython a foo:Pythonidae  ;
-    rdfs:label "Malayopython"@en .  
+foo:Malayopython a owl:Class ;
+     rdfs:subClassOf foo:Pythonidae  ;
+     rdfs:label "Malayopython"@en .  
 
-foo:malayopythonReticulatus a owl:NamedIndividual, foo:Species, foo:Malayopython  ;
+foo:MalayopythonReticulatus a owl:Class ;
+    rdfs:subClassOf  foo:Malayopython  ;
     rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
     rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
     skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
 ### Sunda Pangolin ###
-foo:manisJavanica a owl:NamedIndividual, foo:Species ;
+foo:ManisJavanica a owl:Class ;
+    rdfs:subClassOf foo:Mammilia ;
     rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
@@ -240,12 +245,21 @@ foo:ObservableProperty a owl:Class ;
     owl:sameAs sosa:ObservableProperty ;
     skos:definition "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
 
+
+foo:FeatureOfInterest a owl:Class ;
+  rdfs:label "Feature Of Interest"@en ;
+  skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+  rdfs:comment "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+  skos:example "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en ;
+  owl:sameAs  sosa:FeatureOfInterest ;
+  rdfs:isDefinedBy sosa: .
+
 ### FOO Object Properties ###
 foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:Species ;
+    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
@@ -667,87 +681,87 @@ foo:abawGPS a foo:Sensor ;
 
 #### Animal Instances ####
 
-foo:aqeela a foo:elephasMaximus;
+foo:aqeela a foo:ElephasMaximus ;
     rdfs:label "Aqeela"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:guli a foo:elephasMaximus;
+foo:guli a foo:ElephasMaximus;
     rdfs:label "Guli"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:bikang1 a foo:elephasMaximus;
+foo:bikang1 a foo:ElephasMaximus;
     rdfs:label "Bikang 1"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:bikang2 a foo:elephasMaximus;
+foo:bikang2 a foo:ElephasMaximus;
     rdfs:label "Bikang 2"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:dara a foo:elephasMaximus;
+foo:dara a foo:ElephasMaximus;
     rdfs:label "Dara"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:abaw a foo:elephasMaximus; 
+foo:abaw a foo:ElephasMaximus; 
     rdfs:label "Abaw"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:ita a foo:elephasMaximus ;
+foo:ita a foo:ElephasMaximus ;
     rdfs:label "Ita"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:jasmin a foo:elephasMaximus ;
+foo:jasmin a foo:ElephasMaximus ;
     rdfs:label "Jasmin"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:jasper a foo:elephasMaximus ;
+foo:jasper a foo:ElephasMaximus ;
     rdfs:label "Jasper"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:kasih a foo:elephasMaximus ;
+foo:kasih a foo:ElephasMaximus ;
     rdfs:label "Kasih"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:kuma a foo:elephasMaximus ;
+foo:kuma a foo:ElephasMaximus ;
     rdfs:label "Kuma"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:liun a foo:elephasMaximus ;
+foo:liun a foo:ElephasMaximus ;
     rdfs:label "Liun"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:maliau a foo:elephasMaximus ;
+foo:maliau a foo:ElephasMaximus ;
     rdfs:label "Maliau"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:merotai a foo:elephasMaximus ;
+foo:merotai a foo:ElephasMaximus ;
     rdfs:label "Merotai"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:puteri a foo:elephasMaximus;
+foo:puteri a foo:ElephasMaximus;
     rdfs:label "Puteri"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:putut a foo:elephasMaximus ;
+foo:putut a foo:ElephasMaximus ;
     rdfs:label "Putut"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:sejati a foo:elephasMaximus ;
+foo:sejati a foo:ElephasMaximus ;
     rdfs:label "Sejati"@en ;
     skos:definition "Male Asian Elephant."@en .
 
-foo:seri a foo:elephasMaximus ;
+foo:seri a foo:ElephasMaximus ;
     rdfs:label "Seri"@en ;
     skos:definition "Female Asian Elephant ."@en .
 
-foo:tulid a foo:elephasMaximus ;
+foo:tulid a foo:ElephasMaximus ;
     rdfs:label "Tulid"@en ;
     skos:definition "Female Asian Elephant ."@en .
 
-foo:tunglap a foo:elephasMaximus ;
+foo:tunglap a foo:ElephasMaximus ;
     rdfs:label "Tunglap"@en ;
     skos:definition "Female Asian Elephant."@en .
 
-foo:umas2 a foo:elephasMaximus ;
+foo:umas2 a foo:ElephasMaximus ;
     rdfs:label "Umas2"@en ;
     skos:definition "Male Asian Elephant ."@en .
 
@@ -769,7 +783,7 @@ foo:gPSObservation a foo:Observation ;
     foo:longitude 5.652223e+02, 5.662223e+02 ;
     foo:speed 2.4e-01 ;
     foo:temperature 2.45e+01 ;
-    foo:hasFeatureOfInterest foo:elephasMaximus ;
+    foo:hasFeatureOfInterest foo:ElephasMaximus ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
 
@@ -885,3 +899,5 @@ foo:imageObservation a foo:Observation ;
     foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
     foo:cameraLocation "Danum Valley"^^xsd:string ;
     foo:animalDetected "Jasmin"^^xsd:string .
+
+
