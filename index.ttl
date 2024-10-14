@@ -251,7 +251,7 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:FeatureOfInterest ; foo:ElephasMaximus ;
+    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
