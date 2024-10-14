@@ -6,6 +6,7 @@
 </head>
 <body>
 <pre>
+
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -168,7 +169,7 @@ foo:Nasalis a  owl:Class ;
     rdfs:subClassOf foo:Cercopithecidae;
     skos:definition "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
 
-foo:NasalisLarvatus a foo:Nasalis ;
+foo:NasalisLarvatus a owl:Class ;
     rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
     rdfs:subClassOf foo:Nasalis ;
     rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
@@ -176,6 +177,7 @@ foo:NasalisLarvatus a foo:Nasalis ;
     skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 #### Additional Families ####
+
 foo:Viverridae a owl:Class ;
     rdfs:label "Viverridae"@en-gb ;
     rdfs:subClassOf foo:Family ;
@@ -219,7 +221,7 @@ foo:MalayopythonReticulatus a owl:Class ;
 
 ### Sunda Pangolin ###
 foo:ManisJavanica a owl:Class ;
-    rdfs:subClassOf foo:Mammilia ;
+    rdfs:subClassOf foo:Mammalia ;
     rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
@@ -227,6 +229,7 @@ foo:ManisJavanica a owl:Class ;
 
 
 #### Observation and Sensor Classes ####
+
 foo:Observation a owl:Class ;
     rdfs:label "Observation"@en ;
     rdfs:definedBy <https://w3id.org/def/foo> ;
@@ -245,7 +248,6 @@ foo:ObservableProperty a owl:Class ;
     owl:sameAs sosa:ObservableProperty ;
     skos:definition "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
 
-
 foo:FeatureOfInterest a owl:Class ;
   rdfs:label "Feature Of Interest"@en ;
   skos:definition "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
@@ -259,14 +261,14 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus ;
+    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica, foo:Soil, foo:Tree, foo:Image  ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:label "is feature of interest of"@en ;
     rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
-    rdfs:domain foo:Species ;
+    rdfs:domain foo:FeatureOfInterest, foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica, foo:Soil, foo:Tree, foo:Image ; 
     rdfs:range foo:Observation ;
     owl:inverseOf sosa:hasFeatureOfInterest .
 
@@ -793,10 +795,10 @@ foo:gPSObservation a foo:Observation ;
 foo:soilSensor a sosa:Sensor ;
     rdfs:label "Soil Sensor"@en ;
     foo:observes foo:soilProperties ;
-    foo:hasFeatureOfInterest foo:soil .
+    foo:hasFeatureOfInterest foo:Soil .
 
 #### Soil ####
-foo:soil a owl:NamedIndividual ;
+foo:Soil a owl:Class ;
     rdfs:label "Soil"@en .
 
 #### Soil Observation ####
@@ -834,7 +836,7 @@ foo:treeSensor a foo:Sensor ;
     foo:hasFeatureOfInterest foo:Tree .
 
 #### Tree as a Feature of Interest ####
-foo:tree a owl:NamedIndividual, foo:Species;
+foo:Tree a owl:Class ;
     rdfs:label "Tree"@en .
 
 
@@ -865,7 +867,7 @@ foo:treeObservation a foo:Observation ;
     foo:madeBySensor foo:treeSensor .    
 
 #### Lianas as Feature of Interest ####
-foo:lianas a owl:NamedIndividual ;
+foo:lianas a foo:Tree ;
     rdfs:label "Lianas"@en ;
     foo:isObservedBy foo:lianaSensor .
 
@@ -886,7 +888,7 @@ foo:CameraTrap a foo:Sensor ;
     foo:hasFeatureOfInterest foo:Image .
 
 #### Image as a Feature of Interest ####
-foo:Image a owl:NamedIndividual ;
+foo:Image a owl:Class ;
     rdfs:label "Camera Trap Image"@en ;
     skos:definition "Image generated by motion-activated wildlife cameras."@en ;
     rdfs:definedBy <http://w3id.org/def/foo#> .
@@ -899,5 +901,3 @@ foo:imageObservation a foo:Observation ;
     foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
     foo:cameraLocation "Danum Valley"^^xsd:string ;
     foo:animalDetected "Jasmin"^^xsd:string .
-
-
