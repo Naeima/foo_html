@@ -252,7 +252,7 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:FeatureOfInterest , foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica, foo:Soil, foo:Tree, foo:Image  ;
+    rdfs:range foo:FeatureOfInterest, foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica, foo:Soil, foo:Tree, foo:Image  ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
     owl:sameAs sosa:hasFeatureOfInterest .
 
