@@ -4,7 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:foo="https://w3id.org/def/foo#"
-     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -15,8 +15,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/"
-     xmlns:schema1="http://schema.org/">
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/def/foo#">
         <owl:versionIRI rdf:resource="https://w3id.org/def/foo#V2.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
@@ -38,7 +37,7 @@
         <rdfs:seeAlso rdf:resource="https://naeima.github.io/foo_html/"/>
         <rdfs:seeAlso rdf:resource="https://naeima.github.io/foo_html/index.ttl"/>
         <owl:versionInfo>BBC Wildlife Ontology Reused 26 June 2024</owl:versionInfo>
-        <ns2:status>Active</ns2:status>
+        <ns1:status>Active</ns1:status>
         <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-01T00:00:00+00:00</prov:generatedAtTime>
         <prov:wasAttributedTo rdf:resource="https://github.com/Naeima"/>
         <prov:wasDerivedFrom rdf:resource="https://ontology.forest-observatory.org"/>
@@ -46,24 +45,24 @@
         <schema:citation xml:lang="en">Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29</schema:citation>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
+        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/ranaof"/>
+        <foaf:name xml:lang="en">Professor Omer Rana</foaf:name>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0003-3597-2646"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa"/>
         <foaf:name xml:lang="en">Dr. Pablo Orozco-terWengel</foaf:name>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-7951-4148"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid2">
+    <rdf:Description rdf:nodeID="genid3">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/goossensbr"/>
         <foaf:name xml:lang="en">Professor Benoit Goossens</foaf:name>
         <schema:identifier rdf:resource="https://orcid.org/0000-0003-2360-4643"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid3">
+    <rdf:Description rdf:nodeID="genid4">
         <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/pererac"/>
         <foaf:name xml:lang="en">Dr. Charith Perera</foaf:name>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-0190-3346"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid4">
-        <foaf:homepage rdf:resource="https://profiles.cardiff.ac.uk/staff/ranaof"/>
-        <foaf:name xml:lang="en">Professor Omer Rana</foaf:name>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0003-3597-2646"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
         <foaf:homepage rdf:resource="https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima"/>
@@ -127,6 +126,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
     <!-- http://purl.org/dc/terms/doi -->
 
 
@@ -141,6 +147,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
     <!-- http://purl.org/dc/terms/publisher -->
 
 
@@ -148,10 +161,38 @@
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#status -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
@@ -201,6 +242,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
@@ -335,6 +383,13 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#time -->
 
 
@@ -354,6 +409,27 @@
     
 
 
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/isFeatureOfInterestOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeBySensor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor"/>
+    
+
+
     <!-- https://w3id.org/def/foo#hasFeatureOfInterest -->
 
 
@@ -362,6 +438,12 @@
         <rdfs:domain rdf:resource="https://w3id.org/def/foo#Observation"/>
         <rdfs:range rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
         <rdfs:range rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#Image"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#MalayopythonReticulatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#ManisJavanica"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#NasalisLarvatus"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#Soil"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/foo#Tree"/>
     </owl:ObjectProperty>
     
 
@@ -371,7 +453,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/foo#isFeatureOfInterestOf">
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
-        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Species"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Image"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#MalayopythonReticulatus"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#ManisJavanica"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#NasalisLarvatus"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Soil"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/foo#Tree"/>
         <rdfs:range rdf:resource="https://w3id.org/def/foo#Observation"/>
         <rdfs:comment xml:lang="en">A relation between a FeatureOfInterest and an Observation about it.</rdfs:comment>
         <rdfs:label xml:lang="en">is feature of interest of</rdfs:label>
@@ -875,6 +964,20 @@
     
 
 
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
 
@@ -965,6 +1068,13 @@
     
 
 
+    <!-- https://w3id.org/def/foo#Image -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Image"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Malayopython -->
 
 
@@ -996,18 +1106,11 @@
     
 
 
-    <!-- https://w3id.org/def/foo#Mammilia -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/foo#Mammilia"/>
-    
-
-
     <!-- https://w3id.org/def/foo#ManisJavanica -->
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#ManisJavanica">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammilia"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Mammalia"/>
         <rdfs:comment xml:lang="en">Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.</rdfs:comment>
         <rdfs:label xml:lang="la">Manis javanica</rdfs:label>
         <rdfs:label xml:lang="en">Sunda Pangolin</rdfs:label>
@@ -1032,6 +1135,10 @@
 
     <owl:Class rdf:about="https://w3id.org/def/foo#NasalisLarvatus">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Nasalis"/>
+        <rdfs:comment xml:lang="en">Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male&apos;s harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses.</rdfs:comment>
+        <rdfs:label xml:lang="la">Nasalis larvatus</rdfs:label>
+        <rdfs:label xml:lang="en">Proboscis Monkey</rdfs:label>
+        <skos:definition xml:lang="en">Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities.</skos:definition>
     </owl:Class>
     
 
@@ -1095,6 +1202,13 @@
     
 
 
+    <!-- https://w3id.org/def/foo#Soil -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Soil"/>
+    
+
+
     <!-- https://w3id.org/def/foo#Species -->
 
 
@@ -1108,6 +1222,13 @@
     <owl:Class rdf:about="https://w3id.org/def/foo#Squamata">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#Reptilia"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#Tree -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Tree"/>
     
 
 
@@ -1584,10 +1705,7 @@
     <!-- https://w3id.org/def/foo#Image -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Image">
-        <rdfs:label xml:lang="en">Camera Trap Image</rdfs:label>
-        <skos:definition xml:lang="en">Image generated by motion-activated wildlife cameras.</skos:definition>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Image"/>
     
 
 
@@ -1716,15 +1834,6 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#MerotaiGPS"/>
-    
-
-
-    <!-- https://w3id.org/def/foo#NasalisLarvatus -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#NasalisLarvatus">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Nasalis"/>
-    </owl:NamedIndividual>
     
 
 
@@ -1977,7 +2086,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#aqeela">
         <rdf:type rdf:resource="https://w3id.org/def/foo#ElephasMaximus"/>
-        <rdf:type rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
         <rdfs:label xml:lang="en">Aqeela</rdfs:label>
         <skos:definition xml:lang="en">Female Asian Elephant.</skos:definition>
     </owl:NamedIndividual>
@@ -2322,6 +2430,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#lianas">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#Tree"/>
         <isObservedBy rdf:resource="https://w3id.org/def/foo#lianaSensor"/>
         <rdfs:label xml:lang="en">Lianas</rdfs:label>
     </owl:NamedIndividual>
@@ -2510,15 +2619,6 @@
     
 
 
-    <!-- https://w3id.org/def/foo#soil -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soil">
-        <rdfs:label xml:lang="en">Soil</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/def/foo#soilObservation -->
 
 
@@ -2551,7 +2651,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#soilSensor">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#soil"/>
+        <hasFeatureOfInterest rdf:resource="https://w3id.org/def/foo#Soil"/>
         <observes rdf:resource="https://w3id.org/def/foo#soilProperties"/>
         <rdfs:label xml:lang="en">Soil Sensor</rdfs:label>
     </owl:NamedIndividual>
@@ -2561,10 +2661,7 @@
     <!-- https://w3id.org/def/foo#tree -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tree">
-        <rdf:type rdf:resource="https://w3id.org/def/foo#Species"/>
-        <rdfs:label xml:lang="en">Tree</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#tree"/>
     
 
 
@@ -2797,15 +2894,13 @@
     <rdf:Description rdf:about="https://w3id.org/def/foo#Genus">
         <rdfs:label xml:lang="en-gb">Genus</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#Image">
+        <rdfs:label xml:lang="en">Camera Trap Image</rdfs:label>
+        <skos:definition xml:lang="en">Image generated by motion-activated wildlife cameras.</skos:definition>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Mammalia">
         <rdfs:label xml:lang="en-gb">Mammalia</rdfs:label>
         <skos:definition xml:lang="en">The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.</skos:definition>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://w3id.org/def/foo#NasalisLarvatus">
-        <rdfs:comment xml:lang="en">Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male&apos;s harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses.</rdfs:comment>
-        <rdfs:label xml:lang="la">Nasalis larvatus</rdfs:label>
-        <rdfs:label xml:lang="en">Proboscis Monkey</rdfs:label>
-        <skos:definition xml:lang="en">Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#ObservableProperty">
         <rdfs:label xml:lang="en">Observable Property</rdfs:label>
@@ -2827,12 +2922,18 @@
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
         <skos:definition xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure.</skos:definition>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#Soil">
+        <rdfs:label xml:lang="en">Soil</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Species">
         <rdfs:label xml:lang="en-gb">Species</rdfs:label>
         <skos:definition xml:lang="en">Generic class defining a biological species.</skos:definition>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Squamata">
         <rdfs:label xml:lang="en-gb">Squamata</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/def/foo#Tree">
+        <rdfs:label xml:lang="en">Tree</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/def/foo#Viverridae">
         <rdfs:label xml:lang="en-gb">Viverridae</rdfs:label>
