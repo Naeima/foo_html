@@ -793,7 +793,7 @@ foo:soilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
     
 # Soil properties observed
-    foo:observedProperty foo:cNRatio  ;
+    foo:observedProperty foo:cNRatio ,
     foo:clay,
     foo:horizon ,
     foo:identifier ,
