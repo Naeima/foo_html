@@ -298,7 +298,6 @@ foo:observes a owl:ObjectProperty ;
     rdfs:range foo:ObservableProperty ;
     owl:inverseOf foo:isObservedBy .    
 
-
 ### FOO Data Properties ###
 
 ### GPS Observation Data Properties ###
@@ -760,22 +759,21 @@ foo:umas2 a foo:ElephasMaximus ;
 
 foo:gPSObservation a foo:Observation ;
     rdfs:label "GPS Observation"@en ;
-    foo:id   "id"@en ;
-    foo:altitude 1.17e+01, 1.67e+01 ;
-    foo:count 1 ;
-    foo:cov 0e+00 ;
-    foo:direction 0 ;
-    foo:distance 0e+00 ;
-    foo:gMTDate "2011-10-25"^^xsd:date ;
-    foo:gMTTime "22:40:35"^^xsd:time, "23:40:35"^^xsd:time ;
-    foo:hDOP 1.14e+00, 1.64e+00 ;
-    foo:iD "1SAT32" ;
-    foo:latitude 1.237206e+00, 1.537206e+00 ;
-    foo:localDate "2011-10-26"^^xsd:date ;
-    foo:localTime "07:40:35"^^xsd:time ;
-    foo:longitude 5.652223e+02, 5.662223e+02 ;
-    foo:speed 2.4e-01 ;
-    foo:temperature 2.45e+01 ;
+    foo:observedProperty  foo:id;
+     foo:altitude ;
+      foo:count ;
+      foo:cov ;
+       foo:direction ;
+       foo:distance ;
+       foo:gMTDate ;
+      foo:gMTTime ;
+       foo:hDOP ;
+       foo:latitude ;
+      foo:localDate ;
+     foo:local-time  ;
+      foo:longitude ;
+      foo:speed  ;
+    foo:temperature  ;
     foo:hasFeatureOfInterest foo:ElephasMaximus ;
     foo:madeBySensor foo:AqeelaGPS, foo:Bikang1GPS, foo:Bikang2GPS, foo:BinbinganGPS, foo:DaraGPS, foo:GuliGPS, foo:ItaGPS, foo:JasminGPS, foo:JasperGPS, foo:KasihGPS, foo:KumaGPS, foo:LiunGPS, foo:MaliauGPS, foo:MerotaiGPS, foo:PuteriGPS, foo:PututGPS, foo:SejatiGPS, foo:SeriGPS, foo:TulidGPS, foo:TunglapGPS, foo:Umas2GPS ;
     foo:resultTime "2011-10-26T07:40:35"^^xsd:dateTime, "2015-10-26T07:40:35"^^xsd:dateTime .
@@ -783,9 +781,8 @@ foo:gPSObservation a foo:Observation ;
 
 ####Soil Modeling ####
 #### Soil Sensor ####
-foo:soilSensor a sosa:Sensor ;
+foo:soilSensor a foo:Sensor ;
     rdfs:label "Soil Sensor"@en ;
-    foo:observes foo:soilProperties ;
     foo:hasFeatureOfInterest foo:Soil .
 
 #### Soil ####
@@ -796,26 +793,26 @@ foo:Soil a owl:Class ;
 foo:soilObservation a foo:Observation ;
     rdfs:label "Soil Observation"@en ;
     
-    # Soil properties observed
-    foo:cNRatio 1.424e+01 ;
-    foo:clay 6.288e+01 ;
-    foo:horizon "Organic"^^xsd:string ;
-    foo:identifier "MB4" ;
-    foo:inorganicP 2.503e+01 ;
-    foo:landUse "Unlogged"^^xsd:string ;
-    foo:plotName "Belian"^^xsd:string ;
-    foo:sand 2.066e+01 ;
-    foo:silt 1.646e+01 ;
-    foo:site "Maliau Basin Conservation Area"^^xsd:string ;
-    foo:soilPH 4.69e+00 ;
-    foo:subplot "4"^^xsd:string ;
-    foo:totalC 5.45e+00 ;
-    foo:totalN 3.8e-01 ;
-    foo:totalP 2.6374e+02 ;
+# Soil properties observed
+    foo:observedProperty foo:cNRatio  ;
+    foo:clay  ;
+    foo:horizon  ;
+    foo:identifier  ;
+    foo:inorganicP  ;
+    foo:landUse  ;
+    foo:plotName  ;
+    foo:sand  ;
+    foo:silt  ;
+    foo:site  ;
+    foo:soilPH  ;
+    foo:subplot  ;
+    foo:totalC  ;
+    foo:totalN  ;
+    foo:totalP ;
     
-    # Link the observation to the soil feature and sensor
+# Link the observation to the soil feature and sensor
     foo:hasFeatureOfInterest foo:Soil ;
-    foo:madeBySensor foo:SoilSensor .
+    foo:madeBySensor foo:soilSensor .
     
 
 
@@ -830,31 +827,26 @@ foo:treeSensor a foo:Sensor ;
 foo:Tree a owl:Class ;
     rdfs:label "Tree"@en .
 
-
-#### Tree Properties as Observable ####
-foo:treeProperties a sosa:ObservableProperty ;
-    rdfs:label "Tree Properties"@en .
-
 #### Tree Observation ####
 foo:treeObservation a foo:Observation ;
     rdfs:label "Tree Observation"@en ;
     
-    # Observation metadata
-    foo:date "2017-07-21"^^xsd:date ;
-    foo:iD "TreeObs1" ;
+# Observation metadata
+    foo:observedProperty  foo:date ;
+    foo:iD  ;
     
     # Tree measurements
-    foo:lianaDBH_cm 10 ;
-    foo:subplotRadius_m 30 ;
-    foo:treeDBH_cm 110 ;
-    foo:treeHeight_m 60 ;
-    foo:treeID "Shorea pauciflora"^^xsd:string ;
-    foo:treeIndividualNo 2 ;
-    foo:treeNLianas 3 ;
-    foo:treeNotes ""^^xsd:string ;
+    foo:lianaDBH_cm  ;
+    foo:subplotRadius_m ;
+    foo:treeDBH_cm  ;
+    foo:treeHeight_m  ;
+    foo:treeID  ;
+    foo:treeIndividualNo  ;
+    foo:treeNLianas ;
+    foo:treeNotes ;
     
     # Link the observation to the feature of interest (tree) and sensor
-    foo:hasFeatureOfInterest foo:tree ;
+    foo:hasFeatureOfInterest foo:Tree ;
     foo:madeBySensor foo:treeSensor .    
 
 #### Lianas as Feature of Interest ####
@@ -874,8 +866,8 @@ foo:lianaSensor a foo:Sensor ;
 foo:CameraTrap a foo:Sensor ;
     rdfs:label "Camera Trap"@en ;
     foo:observes foo:imageObservation ;
-    foo:model  "Model"@en ;
-    foo:make   "Make"@en  ;
+    foo:observedProperty  foo:model  ;
+    foo:make    ;
     foo:hasFeatureOfInterest foo:Image .
 
 #### Image as a Feature of Interest ####
@@ -889,6 +881,6 @@ foo:imageObservation a foo:Observation ;
     rdfs:label "Image Observation"@en ;
     foo:hasFeatureOfInterest foo:Image ;
     foo:madeBySensor foo:CameraTrap ;
-    foo:imageFile "wildlife_image_001.jpg"^^xsd:string ;
-    foo:cameraLocation "Danum Valley"^^xsd:string ;
-    foo:animalDetected "Jasmin"^^xsd:string .
+    foo:observedProperty   foo:imageFile ;
+    foo:cameraLocation ;
+    foo:animalDetected .
