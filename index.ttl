@@ -807,7 +807,7 @@ foo:soilObservation a foo:Observation ;
     foo:subplot  ,
     foo:totalC  ,
     foo:totalN ,
-    foo:totalP ,
+    foo:totalP ;
     
 # Link the observation to the soil feature and sensor
     foo:hasFeatureOfInterest foo:Soil ;
@@ -842,7 +842,7 @@ foo:treeObservation a foo:Observation ;
     foo:treeID  ,
     foo:treeIndividualNo  ,
     foo:treeNLianas ,
-    foo:treeNotes ,
+    foo:treeNotes ;
     
     # Link the observation to the feature of interest (tree) and sensor
     foo:hasFeatureOfInterest foo:Tree ;
