@@ -67,17 +67,35 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/prov#generatedAtTime
 <http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -100,6 +118,9 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://schema.org/citation
 <https://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -118,6 +139,9 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # http://www.w3.org/2001/XMLSchema#time
 <http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
@@ -129,6 +153,15 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #
 # #################################################################
 # 
+# 
+# http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/def/foo#hasFeatureOfInterest
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -417,6 +450,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Primates> .
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2000/01/rdf-schema#label> "Cercopithecidae"@en-gb .
+<https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2004/02/skos/core#definition> "African and Asian monkeys with tail as balancing organ, opposable thumb and large toe, nostrils close together and directed downward; social in large groups, some ground dwelling" .
 # 
 # https://w3id.org/def/foo#Chordata
 <https://w3id.org/def/foo#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -445,14 +479,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#Malayopython
 <https://w3id.org/def/foo#Malayopython> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Malayopython> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Pythonidae> .
-<https://w3id.org/def/foo#Malayopython> <http://www.w3.org/2000/01/rdf-schema#label> "Malayopython"@en .
 # 
 # https://w3id.org/def/foo#MalayopythonReticulatus
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Malayopython> .
-<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Malayopython reticulatus"@la .
-<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Reticulated Python"@en .
-<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 # 
 # https://w3id.org/def/foo#Mammalia
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -461,10 +491,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#ManisJavanica
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#comment> "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Manis javanica"@la .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Sunda Pangolin"@en .
-<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 # 
 # https://w3id.org/def/foo#Nasalis
 <https://w3id.org/def/foo#Nasalis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -475,10 +501,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#NasalisLarvatus
 <https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Nasalis> .
-<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en .
-<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nasalis larvatus"@la .
-<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscis Monkey"@en .
-<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 # 
 # https://w3id.org/def/foo#ObservableProperty
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -490,6 +512,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Primates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Primates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 <https://w3id.org/def/foo#Primates> <http://www.w3.org/2000/01/rdf-schema#label> "Primates"@en-gb .
+<https://w3id.org/def/foo#Primates> <http://www.w3.org/2004/02/skos/core#definition> "An order of mammals consisting of more than 300 species that include LEMURS; LORISIDAE; TARSIERS; MONKEYS; and HOMINIDS. They are characterized by a relatively large brain when compared with other terrestrial" .
 # 
 # https://w3id.org/def/foo#Proboscidea
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -498,7 +521,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#Pythonidae
 <https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Squamata> .
-<https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/2000/01/rdf-schema#label> "Pythonidae"@en .
 # 
 # https://w3id.org/def/foo#Reptilia
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -565,6 +587,41 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
+# http://purl.bioontology.org/ontology/NCBITAXON/9974
+<http://purl.bioontology.org/ontology/NCBITAXON/9974> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.bioontology.org/ontology/NCBITAXON/9974> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#ManisJavanica> .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#ManisJavanica
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_1496304
+<http://purl.obolibrary.org/obo/NCBITaxon_1496304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/NCBITaxon_1496304> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#Malayopython> .
+<https://w3id.org/def/foo#Malayopython> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Malayopython
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_1496311
+<http://purl.obolibrary.org/obo/NCBITaxon_1496311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/NCBITaxon_1496311> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#MalayopythonReticulatus> .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#MalayopythonReticulatus
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_34984
+<http://purl.obolibrary.org/obo/NCBITaxon_34984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/NCBITaxon_34984> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#Pythonidae> .
+<https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Pythonidae
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_43780
+<http://purl.obolibrary.org/obo/NCBITaxon_43780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/NCBITaxon_43780> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#NasalisLarvatus> .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#NasalisLarvatus
+# 
 # http://www.w3.org/2003/01/geo/wgs84_pos#lat
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#latitude> .
@@ -620,6 +677,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#madeBySensor
+# 
+# http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#Image> .
+<https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Image
 # 
 # https://ontology.forest-observatory.org
 <https://ontology.forest-observatory.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -682,7 +746,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Image> .
-<https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#make> .
 <https://w3id.org/def/foo#make> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#model> .
@@ -774,6 +837,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#Luin
 <https://w3id.org/def/foo#Luin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#Malayopython
+# 
+# https://w3id.org/def/foo#MalayopythonReticulatus
+# 
 # https://w3id.org/def/foo#Maliau
 <https://w3id.org/def/foo#Maliau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -787,11 +854,15 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
 # 
+# https://w3id.org/def/foo#ManisJavanica
+# 
 # https://w3id.org/def/foo#Merotai
 <https://w3id.org/def/foo#Merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#MerotaiGPS
 <https://w3id.org/def/foo#MerotaiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#NasalisLarvatus
 # 
 # https://w3id.org/def/foo#ObservableProperty
 # 
@@ -815,6 +886,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#PututGPS
 <https://w3id.org/def/foo#PututGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Pythonidae
 # 
 # https://w3id.org/def/foo#Reptilia
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1492,11 +1565,28 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 <https://w3id.org/def/foo#Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en-gb .
 # 
+<https://w3id.org/def/foo#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology." .
 <https://w3id.org/def/foo#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Trap Image"@en .
 <https://w3id.org/def/foo#Image> <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
 # 
+<https://w3id.org/def/foo#Malayopython> <http://www.w3.org/2000/01/rdf-schema#label> "Malayopython"@en .
+# 
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Malayopython reticulatus"@la .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Reticulated Python"@en .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+# 
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#label> "Mammalia"@en-gb .
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
+# 
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#comment> "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Manis javanica"@la .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Sunda Pangolin"@en .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
+# 
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nasalis larvatus"@la .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscis Monkey"@en .
+<https://w3id.org/def/foo#NasalisLarvatus> <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 # 
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Property"@en .
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
@@ -1506,6 +1596,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscidea"@en-gb .
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
+# 
+<https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/2000/01/rdf-schema#label> "Pythonidae"@en .
 # 
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#label> "Reptilia"@en-gb .
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .

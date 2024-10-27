@@ -82,6 +82,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> rdf:type owl:AnnotationProperty .
 
@@ -90,12 +94,32 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#generatedAtTime
@@ -126,6 +150,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/citation
 <https://schema.org/citation> rdf:type owl:AnnotationProperty .
 
@@ -142,6 +170,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 #    Datatypes
 #################################################################
 
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#time
 xsd:time rdf:type rdfs:Datatype .
 
@@ -149,6 +181,18 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> rdf:type owl:ObjectProperty .
+
 
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
@@ -468,7 +512,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#Cercopithecidae
 :Cercopithecidae rdf:type owl:Class ;
                  rdfs:subClassOf :Primates ;
-                 rdfs:label "Cercopithecidae"@en-gb .
+                 rdfs:label "Cercopithecidae"@en-gb ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "African and Asian monkeys with tail as balancing organ, opposable thumb and large toe, nostrils close together and directed downward; social in large groups, some ground dwelling" .
 
 
 ###  https://w3id.org/def/foo#Chordata
@@ -504,16 +549,12 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#Malayopython
 :Malayopython rdf:type owl:Class ;
-              rdfs:subClassOf :Pythonidae ;
-              rdfs:label "Malayopython"@en .
+              rdfs:subClassOf :Pythonidae .
 
 
 ###  https://w3id.org/def/foo#MalayopythonReticulatus
 :MalayopythonReticulatus rdf:type owl:Class ;
-                         rdfs:subClassOf :Malayopython ;
-                         rdfs:label "Malayopython reticulatus"@la ,
-                                    "Reticulated Python"@en ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+                         rdfs:subClassOf :Malayopython .
 
 
 ###  https://w3id.org/def/foo#Mammalia
@@ -523,11 +564,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#ManisJavanica
 :ManisJavanica rdf:type owl:Class ;
-               rdfs:subClassOf :Mammalia ;
-               rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
-               rdfs:label "Manis javanica"@la ,
-                          "Sunda Pangolin"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
+               rdfs:subClassOf :Mammalia .
 
 
 ###  https://w3id.org/def/foo#Nasalis
@@ -539,11 +576,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#NasalisLarvatus
 :NasalisLarvatus rdf:type owl:Class ;
-                 rdfs:subClassOf :Nasalis ;
-                 rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-                 rdfs:label "Nasalis larvatus"@la ,
-                            "Proboscis Monkey"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
+                 rdfs:subClassOf :Nasalis .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
@@ -557,7 +590,8 @@ xsd:time rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/foo#Primates
 :Primates rdf:type owl:Class ;
           rdfs:subClassOf :Mammalia ;
-          rdfs:label "Primates"@en-gb .
+          rdfs:label "Primates"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "An order of mammals consisting of more than 300 species that include LEMURS; LORISIDAE; TARSIERS; MONKEYS; and HOMINIDS. They are characterized by a relatively large brain when compared with other terrestrial" .
 
 
 ###  https://w3id.org/def/foo#Proboscidea
@@ -567,8 +601,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#Pythonidae
 :Pythonidae rdf:type owl:Class ;
-            rdfs:subClassOf :Squamata ;
-            rdfs:label "Pythonidae"@en .
+            rdfs:subClassOf :Squamata .
 
 
 ###  https://w3id.org/def/foo#Reptilia
@@ -654,6 +687,51 @@ xsd:time rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
+###  http://purl.bioontology.org/ontology/NCBITAXON/9974
+<http://purl.bioontology.org/ontology/NCBITAXON/9974> rdf:type owl:NamedIndividual ;
+                                                      owl:sameAs :ManisJavanica .
+
+
+###  https://w3id.org/def/foo#ManisJavanica
+:ManisJavanica rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_1496304
+<http://purl.obolibrary.org/obo/NCBITaxon_1496304> rdf:type owl:NamedIndividual ;
+                                                   owl:sameAs :Malayopython .
+
+
+###  https://w3id.org/def/foo#Malayopython
+:Malayopython rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_1496311
+<http://purl.obolibrary.org/obo/NCBITaxon_1496311> rdf:type owl:NamedIndividual ;
+                                                   owl:sameAs :MalayopythonReticulatus .
+
+
+###  https://w3id.org/def/foo#MalayopythonReticulatus
+:MalayopythonReticulatus rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_34984
+<http://purl.obolibrary.org/obo/NCBITaxon_34984> rdf:type owl:NamedIndividual ;
+                                                 owl:sameAs :Pythonidae .
+
+
+###  https://w3id.org/def/foo#Pythonidae
+:Pythonidae rdf:type owl:NamedIndividual .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_43780
+<http://purl.obolibrary.org/obo/NCBITaxon_43780> rdf:type owl:NamedIndividual ;
+                                                 owl:sameAs :NasalisLarvatus .
+
+
+###  https://w3id.org/def/foo#NasalisLarvatus
+:NasalisLarvatus rdf:type owl:NamedIndividual .
+
+
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:NamedIndividual ;
                                               owl:sameAs :latitude .
@@ -724,6 +802,15 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#madeBySensor
 :madeBySensor rdf:type owl:NamedIndividual .
+
+
+###  http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> rdf:type owl:NamedIndividual ;
+                                  owl:sameAs :Image .
+
+
+###  https://w3id.org/def/foo#Image
+:Image rdf:type owl:NamedIndividual .
 
 
 ###  https://ontology.forest-observatory.org
@@ -919,6 +1006,14 @@ xsd:time rdf:type rdfs:Datatype .
 :Luin rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Malayopython
+:Malayopython rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#MalayopythonReticulatus
+:MalayopythonReticulatus rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/def/foo#Maliau
 :Maliau rdf:type owl:NamedIndividual .
 
@@ -936,12 +1031,20 @@ xsd:time rdf:type rdfs:Datatype .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#ManisJavanica
+:ManisJavanica rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/def/foo#Merotai
 :Merotai rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#MerotaiGPS
 :MerotaiGPS rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#NasalisLarvatus
+:NasalisLarvatus rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
@@ -975,6 +1078,10 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#PututGPS
 :PututGPS rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#Pythonidae
+:Pythonidae rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Reptilia
@@ -1806,12 +1913,33 @@ xsd:time rdf:type rdfs:Datatype .
 :Genus rdfs:label "Genus"@en-gb .
 
 
-:Image rdfs:label "Camera Trap Image"@en ;
+:Image rdfs:comment "The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology." ;
+       rdfs:label "Camera Trap Image"@en ;
        <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
+
+
+:Malayopython rdfs:label "Malayopython"@en .
+
+
+:MalayopythonReticulatus rdfs:label "Malayopython reticulatus"@la ,
+                                    "Reticulated Python"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
 :Mammalia rdfs:label "Mammalia"@en-gb ;
           <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
+
+
+:ManisJavanica rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+               rdfs:label "Manis javanica"@la ,
+                          "Sunda Pangolin"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
+
+
+:NasalisLarvatus rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
+                 rdfs:label "Nasalis larvatus"@la ,
+                            "Proboscis Monkey"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 
 :ObservableProperty rdfs:label "Observable Property"@en ;
@@ -1824,6 +1952,9 @@ xsd:time rdf:type rdfs:Datatype .
 
 :Proboscidea rdfs:label "Proboscidea"@en-gb ;
              <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
+
+
+:Pythonidae rdfs:label "Pythonidae"@en .
 
 
 :Reptilia rdfs:label "Reptilia"@en-gb ;
