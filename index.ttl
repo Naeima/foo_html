@@ -867,7 +867,7 @@ foo:imageObservation a foo:Observation ;
     foo:cameraLocation ,
     foo:animalDetected .
 
-##### Note on Ontology Reuse#######
+##### How to reuse FOO #######
 
 # To enable effective reuse of this ontology, please follow these guidelines:
 # 1. Create your own custom ontology using identical class and property names as in this model.
