@@ -82,7 +82,8 @@ foo: a owl:Ontology ;
     foaf:homepage <https://rdcu.be/dKNG2> ;
     foaf:name "Springer, Cham"@en .
 
-### FOO Classes ###
+
+### FOO Classes (Reused from FOO) ###
 #### BBC Wildlife Ontology Taxonomic Classes ####
 wo:Kingdom a owl:Class .
 wo:Phylum a owl:Class .
@@ -92,7 +93,6 @@ wo:Family a owl:Class .
 wo:Genus a owl:Class .
 wo:Species a owl:Class .
 wo:TaxonRank a owl:Class .
-
 
 #### Kingdom ####
 foo:Animalia a owl:Class ;
@@ -127,13 +127,11 @@ foo:Proboscidea a owl:Class ;
     rdfs:subClassOf foo:Mammalia ;
     owl:sameAs wo:Proboscidea ;
     skos:definition "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en.
-
 foo:Carnivora a owl:Class ;
     rdfs:label "Carnivora"@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
     owl:sameAs wo:Carnivora ;
     skos:definition  "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
-
 foo:Squamata a owl:Class ;
     rdfs:label "Squamata"@en-gb ;
     rdfs:subClassOf foo:Reptilia ;
@@ -149,22 +147,6 @@ foo:Elephantidae a owl:Class ;
     rdfs:subClassOf foo:Proboscidea ;
     owl:sameAs wo:Elephantidae ;
     skos:definition "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en.
- 
-foo:Cercopithecidae a owl:Class;
-    rdfs:label "Cercopithecidae"@en-gb ;
-    rdfs:subClassOf foo:Primates .
-  
-foo:Nasalis a  owl:Class ;
-    rdfs:label "Nasalis"@en-gb ;
-    rdfs:subClassOf foo:Cercopithecidae;
-    skos:definition "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
-
-foo:NasalisLarvatus a owl:Class ;
-    rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
-    rdfs:subClassOf foo:Nasalis ;
-    rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>, <https://doi/10.1126/sciadv.aaq0250> , <https://10.1371/journal.pone.0174891> ; 
-    skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 #### Additional Families ####
 
@@ -182,43 +164,9 @@ foo:Genus  a owl:Class ;
     rdfs:label  "Genus"@en-gb ;
     owl:sameAs  wo:Genus . 
 
-### Elephant ###
+#############################################################################
 
-foo:ElephasMaximus a owl:Class ;
-    rdfs:subClassOf foo:Elephantidae ;
-    rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
-    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
-        <https://www.iucnredlist.org/species/7140/45818198> ;
-    skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
-
-### Python (Snake)####
-
-foo:Pythonidae a owl:Class ;
-    rdfs:subClassOf foo:Squamata  ;
-    rdfs:label "Pythonidae"@en .
-
-foo:Malayopython a owl:Class ;
-     rdfs:subClassOf foo:Pythonidae  ;
-     rdfs:label "Malayopython"@en .  
-
-foo:MalayopythonReticulatus a owl:Class ;
-    rdfs:subClassOf  foo:Malayopython  ;
-    rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
-    rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
-    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
-
-
-### Sunda Pangolin ###
-foo:ManisJavanica a owl:Class ;
-    rdfs:subClassOf foo:Mammalia ;
-    rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
-    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
-    rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
-    skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
-
-
-#### Observation and Sensor Classes ####
+#### FOO Observation and Sensor Classes (Reused from SOSA) ####
 
 foo:Observation a owl:Class ;
     rdfs:label "Observation"@en ;
@@ -246,7 +194,9 @@ foo:FeatureOfInterest a owl:Class ;
   owl:sameAs  sosa:FeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
 
-### FOO Object Properties ###
+
+### FOO Object Properties (Reused from SOSA) ###
+
 foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:label "has Feature Of Interest"@en ;
     rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
@@ -295,7 +245,56 @@ foo:observes a owl:ObjectProperty ;
     rdfs:comment "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
     rdfs:domain foo:Sensor ;
     rdfs:range foo:ObservableProperty ;
-    owl:inverseOf foo:isObservedBy .    
+    owl:inverseOf foo:isObservedBy .  
+
+#########################################################################################################
+
+### FOO defined Classes###
+
+foo:Cercopithecidae a owl:Class;
+    rdfs:label "Cercopithecidae"@en-gb ;
+    rdfs:subClassOf foo:Primates .
+  
+foo:Nasalis a  owl:Class ;
+    rdfs:label "Nasalis"@en-gb ;
+    rdfs:subClassOf foo:Cercopithecidae;
+    skos:definition "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
+
+foo:NasalisLarvatus a owl:Class ;
+    rdfs:label "Proboscis Monkey"@en, "Nasalis larvatus"@la ;
+    rdfs:subClassOf foo:Nasalis ;
+    rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/S0006-3207(99)00066-X>, <https://doi/10.1126/sciadv.aaq0250> , <https://10.1371/journal.pone.0174891> ; 
+    skos:definition "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
+
+foo:ElephasMaximus a owl:Class ;
+    rdfs:subClassOf foo:Elephantidae ;
+    rdfs:label "Asian Elephant"@en, "Elephas maximus"@la ;  
+    rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.biocon.2016.02.008>,
+        <https://www.iucnredlist.org/species/7140/45818198> ;
+    skos:definition "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
+
+foo:Pythonidae a owl:Class ;
+    rdfs:subClassOf foo:Squamata  ;
+    rdfs:label "Pythonidae"@en .
+
+foo:Malayopython a owl:Class ;
+     rdfs:subClassOf foo:Pythonidae  ;
+     rdfs:label "Malayopython"@en .  
+
+foo:MalayopythonReticulatus a owl:Class ;
+    rdfs:subClassOf  foo:Malayopython  ;
+    rdfs:label "Reticulated Python"@en, "Malayopython reticulatus"@la ;
+    rdfs:definedBy <https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf> ;
+    skos:definition "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+
+foo:ManisJavanica a owl:Class ;
+    rdfs:subClassOf foo:Mammalia ;
+    rdfs:label "Sunda Pangolin"@en, "Manis javanica"@la ;
+    rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+    rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
+    skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
 ### FOO Data Properties ###
 
@@ -842,8 +841,14 @@ foo:lianaSensor a foo:Sensor ;
     rdfs:label "Liana Sensor"@en ;
     foo:observes foo:lianaProperties .
 
-
 ##### Camera Trap Images Modeling #### 
+#### Image as a Feature of Interest ####
+foo:Image a owl:Class ;
+    owl:sameAs   foaf:Image ;
+    rdfs:label "Camera Trap Image"@en ;
+    skos:definition "Image generated by motion-activated wildlife cameras."@en ;
+    rdfs:comment   "The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology."
+    rdfs:definedBy <http://w3id.org/def/foo#> .
 
 #### Camera Trap Sensor ####
 foo:CameraTrap a foo:Sensor ;
@@ -853,13 +858,6 @@ foo:CameraTrap a foo:Sensor ;
     foo:make  ;
     foo:hasFeatureOfInterest foo:Image .
 
-#### Image as a Feature of Interest ####
-foo:Image a owl:Class ;
-owl:sameAs   foaf:Image ;
-    rdfs:label "Camera Trap Image"@en ;
-    skos:definition "Image generated by motion-activated wildlife cameras."@en ;
-    rdfs:definedBy <http://w3id.org/def/foo#> .
-
 #### Image Observation ####
 foo:imageObservation a foo:Observation ;
     rdfs:label "Image Observation"@en ;
@@ -868,3 +866,11 @@ foo:imageObservation a foo:Observation ;
     foo:observedProperty   foo:imageFile ,
     foo:cameraLocation ,
     foo:animalDetected .
+
+##### Note on Ontology Reuse#######
+
+# To enable effective reuse of this ontology, please follow these guidelines:
+# 1. Create your own custom ontology using identical class and property names as in this model.
+# 2. Import the `FOO` ontology (https://w3id.org/def/foo#) directly into your new ontology.
+# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using `owl:sameAs`.
+# This approach will maintain semantic consistency and allow for smooth interoperability across ontologies that reference shared terms and structures.
