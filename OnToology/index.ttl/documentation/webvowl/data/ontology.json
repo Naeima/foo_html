@@ -52,12 +52,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://naeima.github.io/foo_html/",
+        "value" : "https://naeima.github.io/foo_html/index.ttl",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://naeima.github.io/foo_html/index.ttl",
+        "value" : "https://naeima.github.io/foo_html/",
         "type" : "iri"
       } ],
       "license" : [ {
@@ -74,12 +74,7 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483652",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "_:genid2147483655",
+        "value" : "_:genid2147483653",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -89,7 +84,12 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483653",
+        "value" : "_:genid2147483655",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "_:genid2147483652",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -98,16 +98,22 @@
         "value" : "foo",
         "type" : "label"
       } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true",
+        "type" : "iri"
+      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "https://ontoology.linkeddata.es/",
         "type" : "iri"
       } ],
-      "logo" : [ {
-        "identifier" : "logo",
+      "wasAttributedTo" : [ {
+        "identifier" : "wasAttributedTo",
         "language" : "undefined",
-        "value" : "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true",
+        "value" : "https://github.com/Naeima",
         "type" : "iri"
       } ],
       "generatedAtTime" : [ {
@@ -115,12 +121,6 @@
         "language" : "undefined",
         "value" : "2024-06-01T00:00:00+00:00",
         "type" : "label"
-      } ],
-      "wasAttributedTo" : [ {
-        "identifier" : "wasAttributedTo",
-        "language" : "undefined",
-        "value" : "https://github.com/Naeima",
-        "type" : "iri"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
@@ -134,17 +134,17 @@
         "value" : "2024-06-01",
         "type" : "label"
       } ],
-      "doi" : [ {
-        "identifier" : "doi",
-        "language" : "undefined",
-        "value" : "https://doi.org/10.1007/978-3-031-43458-7_29",
-        "type" : "iri"
-      } ],
       "status" : [ {
         "identifier" : "status",
         "language" : "undefined",
         "value" : "Active",
         "type" : "label"
+      } ],
+      "doi" : [ {
+        "identifier" : "doi",
+        "language" : "undefined",
+        "value" : "https://doi.org/10.1007/978-3-031-43458-7_29",
+        "type" : "iri"
       } ]
     }
   },
@@ -303,7 +303,7 @@
     "id" : "80",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "109",
+    "id" : "111",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "70",
@@ -393,10 +393,10 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "161",
+    "id" : "137",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
+    "id" : "161",
     "type" : "owl:Class"
   }, {
     "id" : "171",
@@ -414,7 +414,7 @@
     "id" : "116",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "111",
+    "id" : "109",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "65",
@@ -757,12 +757,12 @@
       "resultTime" : [ {
         "identifier" : "resultTime",
         "language" : "undefined",
-        "value" : "2015-10-26T07:40:35",
+        "value" : "2011-10-26T07:40:35",
         "type" : "label"
       }, {
         "identifier" : "resultTime",
         "language" : "undefined",
-        "value" : "2011-10-26T07:40:35",
+        "value" : "2015-10-26T07:40:35",
         "type" : "label"
       } ]
     },
@@ -894,21 +894,6 @@
         "en" : "Kasih"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#maliau",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Male Asian Elephant.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "maliau",
-        "en" : "Maliau"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#merotai",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -922,6 +907,21 @@
       "labels" : {
         "IRI-based" : "merotai",
         "en" : "Merotai"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#maliau",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Male Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "maliau",
+        "en" : "Maliau"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#jasmin",
@@ -1014,21 +1014,6 @@
         "en" : "Puteri"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#bikang2",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Female Asian Elephant.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "bikang2",
-        "en" : "Bikang 2"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#guli",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -1042,6 +1027,21 @@
       "labels" : {
         "IRI-based" : "guli",
         "en" : "Guli"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#bikang2",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Female Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "bikang2",
+        "en" : "Bikang 2"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#dara",
@@ -1074,21 +1074,6 @@
         "en" : "Bikang 1"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#ita",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Female Asian Elephant.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ita",
-        "en" : "Ita"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#tunglap",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -1102,6 +1087,21 @@
       "labels" : {
         "IRI-based" : "tunglap",
         "en" : "Tunglap"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#ita",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Female Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ita",
+        "en" : "Ita"
       }
     } ],
     "comment" : {
@@ -1281,6 +1281,9 @@
     "label" : {
       "IRI-based" : "Image",
       "en" : "Camera Trap Image"
+    },
+    "comment" : {
+      "undefined" : "The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology."
     },
     "id" : "87"
   }, {
@@ -1515,22 +1518,7 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Drilling an observation well.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Crushing a rock sample in a ball mill.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Digging a pit through a soil sequence.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Registering an image of the landscape.",
+        "value" : "Selecting a subset of a population.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1540,12 +1528,7 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Drawing blood from a patient.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Selecting a subset of a population.",
+        "value" : "Establishing a station for environmental monitoring.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1555,17 +1538,37 @@
       }, {
         "identifier" : "example",
         "language" : "en",
+        "value" : "Crushing a rock sample in a ball mill.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
         "value" : "Taking a diamond-drill core from a rock outcrop.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Establishing a station for environmental monitoring.",
+        "value" : "Drawing blood from a patient.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Drilling an observation well.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Registering an image of the landscape.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Splitting a piece of drill-core to create two new samples.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Digging a pit through a soil sequence.",
         "type" : "label"
       } ]
     },
@@ -1645,7 +1648,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "109",
+    "id" : "111",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1804,17 +1807,17 @@
   }, {
     "instances" : 0,
     "union" : [ "87", "9", "137", "47", "138", "68", "96", "75" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "58"
   }, {
     "instances" : 0,
     "union" : [ "27", "40" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "139"
   }, {
     "instances" : 0,
     "union" : [ "27", "40" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "79"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/Sample",
@@ -1842,12 +1845,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "A 'station' is essentially an identifiable locality where a sensor system or Procedure may be deployed and an observation made. In the context of the observation model, it connotes the 'world in the vicinity of the station', so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc.",
+        "value" : "A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population.",
+        "value" : "A 'station' is essentially an identifiable locality where a sensor system or Procedure may be deployed and an observation made. In the context of the observation model, it connotes the 'world in the vicinity of the station', so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc.",
         "type" : "label"
       } ]
     },
@@ -1863,7 +1866,7 @@
   }, {
     "instances" : 0,
     "union" : [ "27", "40" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "64"
   }, {
     "iri" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class",
@@ -1876,13 +1879,13 @@
     "id" : "141"
   }, {
     "instances" : 0,
-    "union" : [ "87", "9", "137", "47", "138", "68", "96", "75" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "87", "9", "137", "47", "68", "138", "96", "75" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "114"
   }, {
     "instances" : 0,
     "union" : [ "27", "40" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "142"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1996,21 +1999,6 @@
         "en" : "Bikang 2 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#jasperGPS",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "jasperGPS",
-        "en" : "Jasper GPS"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#itaGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -2024,6 +2012,21 @@
       "labels" : {
         "IRI-based" : "itaGPS",
         "en" : "Ita GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#jasperGPS",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "jasperGPS",
+        "en" : "Jasper GPS"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#umas2GPS",
@@ -2041,13 +2044,6 @@
         "en" : "Umas2 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#treeSensor",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "treeSensor",
-        "en" : "Tree Sensor"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#daraGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -2061,6 +2057,13 @@
       "labels" : {
         "IRI-based" : "daraGPS",
         "en" : "Umas2 GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#treeSensor",
+      "baseIri" : "https://w3id.org/def/foo",
+      "labels" : {
+        "IRI-based" : "treeSensor",
+        "en" : "Tree Sensor"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#aqeelaGPS",
@@ -2372,23 +2375,6 @@
     "id" : "8",
     "superClasses" : [ "31" ]
   }, {
-    "iri" : "https://w3id.org/def/foo#Species",
-    "baseIri" : "https://w3id.org/def/foo",
-    "instances" : 0,
-    "annotations" : {
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Generic class defining a biological species.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Species",
-      "en-gb" : "Species"
-    },
-    "id" : "161"
-  }, {
     "iri" : "https://w3id.org/def/foo#ManisJavanica",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
@@ -2410,6 +2396,23 @@
     },
     "id" : "137",
     "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/foo#Species",
+    "baseIri" : "https://w3id.org/def/foo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Generic class defining a biological species.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Species",
+      "en-gb" : "Species"
+    },
+    "id" : "161"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -2486,7 +2489,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "111",
+    "id" : "109",
     "label" : {
       "IRI-based" : "double"
     }
@@ -3013,7 +3016,7 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3023,7 +3026,7 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3104,17 +3107,17 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampler",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
         "type" : "iri"
       } ]
     },
@@ -3264,7 +3267,7 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3274,18 +3277,18 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ]
     },
@@ -3388,7 +3391,12 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Platform",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3398,12 +3406,7 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3455,17 +3458,17 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -3564,12 +3567,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -3595,13 +3598,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The GMT date in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.",
+        "language" : "en",
+        "value" : "The GMT date in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -3696,12 +3699,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -4022,20 +4025,9 @@
     "attributes" : [ "datatype" ],
     "id" : "105"
   }, {
-    "iri" : "https://w3id.org/def/foo#lianaDBH_cm",
-    "baseIri" : "https://w3id.org/def/foo",
-    "range" : "109",
-    "label" : {
-      "IRI-based" : "lianaDBH_cm",
-      "en" : "lianaDBH_cm 10a"
-    },
-    "domain" : "14",
-    "attributes" : [ "datatype" ],
-    "id" : "108"
-  }, {
     "iri" : "https://w3id.org/def/foo#distance",
     "baseIri" : "https://w3id.org/def/foo",
-    "range" : "111",
+    "range" : "109",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -4049,6 +4041,17 @@
       "en" : "Distance"
     },
     "domain" : "40",
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/def/foo#lianaDBH_cm",
+    "baseIri" : "https://w3id.org/def/foo",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "lianaDBH_cm",
+      "en" : "lianaDBH_cm 10a"
+    },
+    "domain" : "14",
     "attributes" : [ "datatype" ],
     "id" : "110"
   }, {
@@ -4117,15 +4120,20 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/Result",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Result",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
@@ -4134,11 +4142,6 @@
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ]
     },
@@ -4155,17 +4158,17 @@
   }, {
     "range" : "84",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "126"
   }, {
     "range" : "43",
     "domain" : "45",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
     "range" : "43",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "128"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/observes",
@@ -4243,22 +4246,22 @@
   }, {
     "range" : "45",
     "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "133"
   }, {
     "range" : "74",
     "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "134"
   }, {
     "range" : "30",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "135"
   }, {
     "range" : "7",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "136"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/isSampleOf",
@@ -4313,7 +4316,7 @@
     "id" : "143"
   }, {
     "domain" : "3",
-    "range" : "40",
+    "range" : "27",
     "id" : "145",
     "label" : {
       "IRI-based" : "36",
@@ -4321,7 +4324,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "27",
+    "range" : "18",
     "id" : "146",
     "label" : {
       "IRI-based" : "35",
@@ -4329,7 +4332,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "14",
+    "range" : "40",
     "id" : "147",
     "label" : {
       "IRI-based" : "37",
@@ -4337,7 +4340,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "18",
+    "range" : "14",
     "id" : "149",
     "label" : {
       "IRI-based" : "34",
@@ -4431,17 +4434,17 @@
   }, {
     "range" : "44",
     "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "157"
   }, {
     "range" : "31",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "158"
   }, {
     "range" : "73",
     "domain" : "75",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "159"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/madeByActuator",
@@ -4505,22 +4508,22 @@
   }, {
     "range" : "31",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "162"
   }, {
     "range" : "31",
     "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "163"
   }, {
     "range" : "31",
     "domain" : "137",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "164"
   }, {
     "range" : "36",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
     "iri" : "https://w3id.org/def/foo#treeHeight_m",
@@ -4536,7 +4539,7 @@
   }, {
     "range" : "46",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "167"
   }, {
     "iri" : "https://w3id.org/def/foo#latitude",
@@ -4560,12 +4563,12 @@
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "169"
   }, {
     "range" : "32",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "170"
   }, {
     "iri" : "https://w3id.org/def/foo#horizon",
@@ -4631,7 +4634,7 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -4641,7 +4644,7 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ]
     },
@@ -4794,17 +4797,17 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ],
       "example" : [ {
