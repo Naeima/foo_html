@@ -303,7 +303,7 @@
     "id" : "80",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "109",
+    "id" : "111",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "70",
@@ -351,7 +351,7 @@
     "id" : "141",
     "type" : "owl:Class"
   }, {
-    "id" : "114",
+    "id" : "116",
     "type" : "owl:Class"
   }, {
     "id" : "142",
@@ -393,10 +393,10 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "161",
+    "id" : "137",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
+    "id" : "161",
     "type" : "owl:Class"
   }, {
     "id" : "171",
@@ -411,10 +411,10 @@
     "id" : "52",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "116",
+    "id" : "114",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "111",
+    "id" : "109",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "65",
@@ -757,12 +757,12 @@
       "resultTime" : [ {
         "identifier" : "resultTime",
         "language" : "undefined",
-        "value" : "2015-10-26T07:40:35",
+        "value" : "2011-10-26T07:40:35",
         "type" : "label"
       }, {
         "identifier" : "resultTime",
         "language" : "undefined",
-        "value" : "2011-10-26T07:40:35",
+        "value" : "2015-10-26T07:40:35",
         "type" : "label"
       } ]
     },
@@ -834,21 +834,6 @@
         "en" : "Aqeela"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#tulid",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Female Asian Elephant .",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "tulid",
-        "en" : "Tulid"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#putut",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -862,6 +847,21 @@
       "labels" : {
         "IRI-based" : "putut",
         "en" : "Putut"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#tulid",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Female Asian Elephant .",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "tulid",
+        "en" : "Tulid"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#kuma",
@@ -924,21 +924,6 @@
         "en" : "Merotai"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#jasmin",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Female Asian Elephant.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "jasmin",
-        "en" : "Jasmin"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#abaw",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -952,6 +937,21 @@
       "labels" : {
         "IRI-based" : "abaw",
         "en" : "Abaw"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#jasmin",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Female Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "jasmin",
+        "en" : "Jasmin"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#liun",
@@ -1014,21 +1014,6 @@
         "en" : "Puteri"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#bikang2",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Female Asian Elephant.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "bikang2",
-        "en" : "Bikang 2"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#guli",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -1042,6 +1027,21 @@
       "labels" : {
         "IRI-based" : "guli",
         "en" : "Guli"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#bikang2",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Female Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "bikang2",
+        "en" : "Bikang 2"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#dara",
@@ -1074,21 +1074,6 @@
         "en" : "Bikang 1"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#ita",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "Female Asian Elephant.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "ita",
-        "en" : "Ita"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#tunglap",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -1102,6 +1087,21 @@
       "labels" : {
         "IRI-based" : "tunglap",
         "en" : "Tunglap"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#ita",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Female Asian Elephant.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ita",
+        "en" : "Ita"
       }
     } ],
     "comment" : {
@@ -1515,37 +1515,17 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Drilling an observation well.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Crushing a rock sample in a ball mill.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Digging a pit through a soil sequence.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "Registering an image of the landscape.",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "en",
         "value" : "Dividing a field site into quadrants.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Drawing blood from a patient.",
+        "value" : "Selecting a subset of a population.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Selecting a subset of a population.",
+        "value" : "Registering an image of the landscape.",
         "type" : "label"
       }, {
         "identifier" : "example",
@@ -1560,12 +1540,32 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "Establishing a station for environmental monitoring.",
+        "value" : "Crushing a rock sample in a ball mill.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Drawing blood from a patient.",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
         "value" : "Splitting a piece of drill-core to create two new samples.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Digging a pit through a soil sequence.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Drilling an observation well.",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Establishing a station for environmental monitoring.",
         "type" : "label"
       } ]
     },
@@ -1645,7 +1645,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "109",
+    "id" : "111",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1803,7 +1803,7 @@
     "id" : "132"
   }, {
     "instances" : 0,
-    "union" : [ "87", "9", "137", "47", "138", "68", "96", "75" ],
+    "union" : [ "87", "9", "137", "47", "68", "138", "96", "75" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "58"
   }, {
@@ -1856,7 +1856,7 @@
       "en" : "Sample"
     },
     "comment" : {
-      "en" : "Physical samples are sometimes known as 'specimens'."
+      "en" : "Samples are artifacts of an observational strategy, and have no significant function outside of their role in the observation process. The characteristics of the samples themselves are of little interest, except perhaps to the manager of a sampling campaign.\n\nA Sample is intended to sample some FatureOfInterest, so there is an expectation of at least one isSampleOf property. However, in some cases the identity, and even the exact type, of the sampled feature may not be known when observations are made using the sampling features."
     },
     "attributes" : [ "external" ],
     "id" : "140"
@@ -1878,7 +1878,7 @@
     "instances" : 0,
     "union" : [ "87", "9", "137", "47", "138", "68", "96", "75" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "114"
+    "id" : "116"
   }, {
     "instances" : 0,
     "union" : [ "27", "40" ],
@@ -1996,21 +1996,6 @@
         "en" : "Bikang 2 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#jasperGPS",
-      "baseIri" : "https://w3id.org/def/foo",
-      "annotations" : {
-        "definition" : [ {
-          "identifier" : "definition",
-          "language" : "en",
-          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "jasperGPS",
-        "en" : "Jasper GPS"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#itaGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -2024,6 +2009,21 @@
       "labels" : {
         "IRI-based" : "itaGPS",
         "en" : "Ita GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#jasperGPS",
+      "baseIri" : "https://w3id.org/def/foo",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "jasperGPS",
+        "en" : "Jasper GPS"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#umas2GPS",
@@ -2041,13 +2041,6 @@
         "en" : "Umas2 GPS"
       }
     }, {
-      "iri" : "https://w3id.org/def/foo#treeSensor",
-      "baseIri" : "https://w3id.org/def/foo",
-      "labels" : {
-        "IRI-based" : "treeSensor",
-        "en" : "Tree Sensor"
-      }
-    }, {
       "iri" : "https://w3id.org/def/foo#daraGPS",
       "baseIri" : "https://w3id.org/def/foo",
       "annotations" : {
@@ -2061,6 +2054,13 @@
       "labels" : {
         "IRI-based" : "daraGPS",
         "en" : "Umas2 GPS"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/foo#treeSensor",
+      "baseIri" : "https://w3id.org/def/foo",
+      "labels" : {
+        "IRI-based" : "treeSensor",
+        "en" : "Tree Sensor"
       }
     }, {
       "iri" : "https://w3id.org/def/foo#aqeelaGPS",
@@ -2372,23 +2372,6 @@
     "id" : "8",
     "superClasses" : [ "31" ]
   }, {
-    "iri" : "https://w3id.org/def/foo#Species",
-    "baseIri" : "https://w3id.org/def/foo",
-    "instances" : 0,
-    "annotations" : {
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Generic class defining a biological species.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Species",
-      "en-gb" : "Species"
-    },
-    "id" : "161"
-  }, {
     "iri" : "https://w3id.org/def/foo#ManisJavanica",
     "baseIri" : "https://w3id.org/def/foo",
     "instances" : 0,
@@ -2410,6 +2393,23 @@
     },
     "id" : "137",
     "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/foo#Species",
+    "baseIri" : "https://w3id.org/def/foo",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Generic class defining a biological species.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Species",
+      "en-gb" : "Species"
+    },
+    "id" : "161"
   }, {
     "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
     "baseIri" : "http://www.w3.org/ns/sosa",
@@ -2479,14 +2479,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "116",
+    "id" : "114",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "111",
+    "id" : "109",
     "label" : {
       "IRI-based" : "double"
     }
@@ -2804,10 +2804,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "113",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "115",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "118",
     "type" : "owl:datatypeProperty"
@@ -3013,7 +3013,7 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
@@ -3023,18 +3023,18 @@
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ]
     },
@@ -3099,22 +3099,22 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sensor",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuator",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampler",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuator",
         "type" : "iri"
       } ]
     },
@@ -3264,17 +3264,17 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3388,11 +3388,6 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Platform",
-        "type" : "iri"
-      }, {
-        "identifier" : "rangeIncludes",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampler",
         "type" : "iri"
       }, {
@@ -3404,6 +3399,11 @@
         "identifier" : "rangeIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      }, {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Platform",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
@@ -3444,15 +3444,20 @@
       "rangeIncludes" : [ {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sample",
+        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
         "type" : "iri"
       }, {
         "identifier" : "rangeIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+        "value" : "http://www.w3.org/ns/sosa/Sample",
         "type" : "iri"
       } ],
       "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
@@ -3461,11 +3466,6 @@
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Sampling",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -3564,17 +3564,17 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
-        "type" : "iri"
-      }, {
-        "identifier" : "domainIncludes",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       } ]
     },
@@ -3595,13 +3595,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The GMT date in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The GMT date in Sabah, Malaysia, when the GPS collar records its readings.",
+        "language" : "en",
+        "value" : "The GMT date in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       } ]
     },
@@ -3696,12 +3696,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
@@ -3768,17 +3768,17 @@
         "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. ",
-        "type" : "label"
-      } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/ActuatableProperty",
         "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. ",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -3916,17 +3916,17 @@
         "value" : "http://www.w3.org/ns/sosa/ActuatableProperty",
         "type" : "iri"
       } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. ",
-        "type" : "label"
-      } ],
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. ",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -4022,20 +4022,9 @@
     "attributes" : [ "datatype" ],
     "id" : "105"
   }, {
-    "iri" : "https://w3id.org/def/foo#lianaDBH_cm",
-    "baseIri" : "https://w3id.org/def/foo",
-    "range" : "109",
-    "label" : {
-      "IRI-based" : "lianaDBH_cm",
-      "en" : "lianaDBH_cm 10a"
-    },
-    "domain" : "14",
-    "attributes" : [ "datatype" ],
-    "id" : "108"
-  }, {
     "iri" : "https://w3id.org/def/foo#distance",
     "baseIri" : "https://w3id.org/def/foo",
-    "range" : "111",
+    "range" : "109",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -4050,26 +4039,22 @@
     },
     "domain" : "40",
     "attributes" : [ "datatype" ],
-    "id" : "110"
+    "id" : "108"
   }, {
-    "iri" : "https://w3id.org/def/foo#isFeatureOfInterestOf",
-    "inverse" : "50",
+    "iri" : "https://w3id.org/def/foo#lianaDBH_cm",
     "baseIri" : "https://w3id.org/def/foo",
-    "range" : "3",
+    "range" : "111",
     "label" : {
-      "IRI-based" : "isFeatureOfInterestOf",
-      "en" : "is feature of interest of"
+      "IRI-based" : "lianaDBH_cm",
+      "en" : "lianaDBH_cm 10a"
     },
-    "domain" : "114",
-    "comment" : {
-      "en" : "A relation between a FeatureOfInterest and an Observation about it."
-    },
-    "attributes" : [ "object" ],
-    "id" : "113"
+    "domain" : "14",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
   }, {
     "iri" : "https://w3id.org/def/foo#direction",
     "baseIri" : "https://w3id.org/def/foo",
-    "range" : "116",
+    "range" : "114",
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
@@ -4084,6 +4069,21 @@
     },
     "domain" : "40",
     "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/def/foo#isFeatureOfInterestOf",
+    "inverse" : "50",
+    "baseIri" : "https://w3id.org/def/foo",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isFeatureOfInterestOf",
+      "en" : "is feature of interest of"
+    },
+    "domain" : "116",
+    "comment" : {
+      "en" : "A relation between a FeatureOfInterest and an Observation about it."
+    },
+    "attributes" : [ "object" ],
     "id" : "115"
   }, {
     "iri" : "https://w3id.org/def/foo#id",
@@ -4133,12 +4133,12 @@
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       } ]
     },
@@ -4313,7 +4313,7 @@
     "id" : "143"
   }, {
     "domain" : "3",
-    "range" : "40",
+    "range" : "14",
     "id" : "145",
     "label" : {
       "IRI-based" : "36",
@@ -4321,7 +4321,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "27",
+    "range" : "18",
     "id" : "146",
     "label" : {
       "IRI-based" : "35",
@@ -4329,7 +4329,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "14",
+    "range" : "27",
     "id" : "147",
     "label" : {
       "IRI-based" : "37",
@@ -4337,7 +4337,7 @@
     }
   }, {
     "domain" : "3",
-    "range" : "18",
+    "range" : "40",
     "id" : "149",
     "label" : {
       "IRI-based" : "34",
@@ -4350,13 +4350,13 @@
     "annotations" : {
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "The GMT time in Sabah, Malaysia, when the GPS collar records its readings.",
+        "language" : "en",
+        "value" : "The GMT time in Sabah, Malaysia when the GPS collar collects its readings.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The GMT time in Sabah, Malaysia when the GPS collar collects its readings.",
+        "language" : "undefined",
+        "value" : "The GMT time in Sabah, Malaysia, when the GPS collar records its readings.",
         "type" : "label"
       } ]
     },
@@ -4794,12 +4794,12 @@
       "domainIncludes" : [ {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
         "type" : "iri"
       }, {
         "identifier" : "domainIncludes",

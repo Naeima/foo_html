@@ -621,6 +621,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#madeBySensor
 # 
+# http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#Image> .
+<https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Image
+# 
 # https://ontology.forest-observatory.org
 <https://ontology.forest-observatory.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://ontology.forest-observatory.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
@@ -682,7 +689,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Image> .
-<https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#make> .
 <https://w3id.org/def/foo#make> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#model> .

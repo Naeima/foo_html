@@ -1222,6 +1222,22 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <owl:sameAs rdf:resource="https://w3id.org/def/foo#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/foo#Image -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#Image"/>
+    
+
+
     <!-- https://ontology.forest-observatory.org -->
 
 
