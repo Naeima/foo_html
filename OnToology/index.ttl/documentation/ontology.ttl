@@ -726,6 +726,15 @@ xsd:time rdf:type rdfs:Datatype .
 :madeBySensor rdf:type owl:NamedIndividual .
 
 
+###  http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> rdf:type owl:NamedIndividual ;
+                                  owl:sameAs :Image .
+
+
+###  https://w3id.org/def/foo#Image
+:Image rdf:type owl:NamedIndividual .
+
+
 ###  https://ontology.forest-observatory.org
 <https://ontology.forest-observatory.org> rdf:type owl:NamedIndividual ,
                                                    <http://www.w3.org/ns/prov#Entity> ;
