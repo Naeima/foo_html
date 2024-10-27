@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:NasalisLarvatus" "foo@en:Soil" "foo@en:Squamata" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "wo:Genus" "foo@en:Image" "foo@en:Genus" "foo@en:Animalia" "foo@en:Tree" "foo@en:ManisJavanica" "foo@en:ObservableProperty" "foo@en:Sensor" "foo@en:ElephasMaximus" "foo@en:MalayopythonReticulatus" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Species" "foo@en:Reptilia" "foo@en:Observation" "foo@en:Proboscidea" "foo@en:Chordata" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:NasalisLarvatus" "foo@en:Soil" "foo@en:Squamata" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "wo:Genus" "foo@en:Image" "foo@en:Genus" "foo@en:Animalia" "foo@en:Tree" "foo@en:ManisJavanica" "foo@en:ObservableProperty" "foo@en:MalayopythonReticulatus" "foo@en:ElephasMaximus" "foo@en:Sensor" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Species" "foo@en:Reptilia" "foo@en:Observation" "foo@en:Proboscidea" "foo@en:Chordata" "sosa:ObservableProperty" "sosa:FeatureOfInterest" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Observation" "sosa:Sample" "time:TemporalEntity" "sosa:Sensor" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
 	"sosa:observedProperty" -> "sosa:ObservableProperty" [ label = ":rangeIncludes" ];
 	"sosa:observedProperty" -> "sosa:Observation" [ label = ":domainIncludes" ];
 	"foo@en:Squamata" -> "wo:Squamata" [ label = "owl:sameAs" ];
@@ -36,18 +36,18 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:NasalisLarvatus" 
 	"foo@en:" -> "sosa:" [ label = "owl:imports" ];
 	"foo@en:" -> "foo@en:V2.0" [ label = "owl:versionIRI" ];
 	"foo@en:" -> "https://doi.org/10.1007/978-3-031-43458-7_29" [ label = "dcterms:doi" ];
-	"foo@en:" -> "ca13e1e17520030e9ddc5fd1dce267be" [ label = "dc:creator" ];
+	"foo@en:" -> "d4e172ebb282a69bc9e9f6ba25953b65" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://github.com/Naeima" [ label = "prov:wasAttributedTo" ];
-	"foo@en:" -> "01409215cf1c307fa669e284b5733bbf" [ label = "dc:contributor" ];
+	"foo@en:" -> "b954bbd540331f36aafc168fda46d612" [ label = "dc:creator" ];
+	"foo@en:" -> "1b259c7e53419a68f4aefdb360bf4639" [ label = "dc:contributor" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "cc:license" ];
-	"foo@en:" -> "087f1135934b0a258f9e36330c4343ff" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://naeima.github.io/foo_html/index.ttl" [ label = "rdfs:seeAlso" ];
 	"foo@en:" -> "http://creativecommons.org/licenses/by-sa/4.0/" [ label = "dcterms:license" ];
+	"foo@en:" -> "9214fec6a2ea5b6a49fdae9bede83de3" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true" [ label = "foaf:logo" ];
 	"foo@en:" -> "https://ontology.forest-observatory.org" [ label = "prov:wasDerivedFrom" ];
+	"foo@en:" -> "e3dc5d9326337c08082c21adbbe96837" [ label = "dc:contributor" ];
 	"foo@en:" -> "https://naeima.github.io/foo_html/" [ label = "rdfs:seeAlso" ];
-	"foo@en:" -> "39837ba88b0bf353b11a7d04ea0d2f9f" [ label = "dc:contributor" ];
-	"foo@en:" -> "868fadcaad6deaafca6ee9e73fe31b6a" [ label = "dc:contributor" ];
 	"sosa:phenomenonTime" -> "time:TemporalEntity" [ label = ":rangeIncludes" ];
 	"sosa:phenomenonTime" -> "sosa:Sampling" [ label = ":domainIncludes" ];
 	"sosa:phenomenonTime" -> "sosa:Observation" [ label = ":domainIncludes" ];
@@ -185,7 +185,7 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:NasalisLarvatus" 
 	"foo@en:treeObservation" -> "foo@en:lianaDBH_cm" [ label = "foo@en:observedProperty" ];
 	"foo@en:treeObservation" -> "foo@en:treeNotes" [ label = "foo@en:observedProperty" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "5ec2bc62e14473ddc62e2ade81e693a7" [ label = "dcterms:creator" ];
+	"sosa:" -> "58c93684c75ee6515460ca9dece2e16b" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
 	"foo@en:Proboscidea" -> "wo:Proboscidea" [ label = "owl:sameAs" ];
 	"foo@en:Sensor" -> "sosa:Sensor" [ label = "owl:sameAs" ];
@@ -205,6 +205,7 @@ node [shape = rectangle, color="orange"]; "wo:Species" "foo@en:NasalisLarvatus" 
 	"foo@en:puteriGPS" -> "foo@en:gPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:puteriGPS" -> "foo@en:Puteri" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Image" -> "http://w3id.org/def/foo#" [ label = "rdfs:definedBy" ];
+	"foo@en:Image" -> "foaf:Image" [ label = "owl:sameAs" ];
 	"foo@en:jasperGPS" -> "foo@en:gPSObservation" [ label = "foo@en:observes" ];
 	"foo@en:jasperGPS" -> "foo@en:Jasper" [ label = "foo@en:hasFeatureOfInterest" ];
 	"foo@en:Carnivora" -> "wo:Carnivora" [ label = "owl:sameAs" ];
