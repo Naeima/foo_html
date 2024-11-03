@@ -115,51 +115,51 @@ wo:TaxonRank a owl:Class .
 foo:Animalia a owl:Class ;
     rdfs:label &quot;Animalia&quot;@en-gb ;
     rdfs:subClassOf owl:Thing ;
-    owl:sameAs wo:Animalia ;
+    owl:equivalentClass wo:Animalia ;
     skos:definition &quot;Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy.&quot;@en.
 
 #### Phylum ####
 foo:Chordata a owl:Class ;
     rdfs:label &quot;Chordata&quot;@en-gb ;
     rdfs:subClassOf foo:Animalia ;
-    owl:sameAs wo:Chordata ;
+    owl:equivalentClass wo:Chordata ;
     skos:definition  &quot;A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development.&quot;@en .
 
 #### Class ####
 foo:Mammalia a owl:Class ;
     rdfs:label &quot;Mammalia&quot;@en-gb ;
     rdfs:subClassOf foo:Chordata ;
-    owl:sameAs wo:Mammalia ;
+    owl:equivalentClass wo:Mammalia ;
     skos:definition  &quot;The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands.&quot;@en.
 
 foo:Reptilia a owl:Class ;
     rdfs:label &quot;Reptilia&quot;@en-gb ;
     rdfs:subClassOf foo:Chordata ;
-    owl:sameAs wo:Reptilia ;
+    owl:equivalentClass wo:Reptilia ;
     skos:definition   &quot;Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.&quot;@en.
     
 #### Order ####
 foo:Proboscidea a owl:Class ;
     rdfs:label &quot;Proboscidea&quot;@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
-    owl:sameAs wo:Proboscidea ;
+    owl:equivalentClass wo:Proboscidea ;
     skos:definition &quot;Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms.&quot;@en.
 foo:Carnivora a owl:Class ;
     rdfs:label &quot;Carnivora&quot;@en-gb ;
     rdfs:subClassOf foo:Mammalia ;
-    owl:sameAs wo:Carnivora ;
+    owl:equivalentClass wo:Carnivora ;
     skos:definition  &quot;Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh.&quot;@en .
 foo:Squamata a owl:Class ;
     rdfs:label &quot;Squamata&quot;@en-gb ;
     rdfs:subClassOf foo:Reptilia ;
-    owl:sameAs wo:Squamata .
+    owl:equivalentClass wo:Squamata .
 
 
 #### Family ####
 foo:Elephantidae a owl:Class ;
     rdfs:label &quot;Elephantidae&quot;@en-gb ;
     rdfs:subClassOf foo:Proboscidea ;
-    owl:sameAs wo:Elephantidae ;
+    owl:equivalentClass wo:Elephantidae ;
     skos:definition &quot;ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms.&quot;@en.
 
 #### Additional Families ####
@@ -167,16 +167,16 @@ foo:Elephantidae a owl:Class ;
 foo:Viverridae a owl:Class ;
     rdfs:label &quot;Viverridae&quot;@en-gb ;
     rdfs:subClassOf foo:Family ;
-    owl:sameAs wo:Viverridae .
+    owl:equivalentClass wo:Viverridae .
 
 foo:Species  a owl:Class ;
     rdfs:label  &quot;Species&quot;@en-gb ;
-    owl:sameAs  wo:Species ;
+    owl:equivalentClass  wo:Species ;
     skos:definition  &quot;Generic class defining a biological species.&quot;@en.
 
 foo:Genus  a owl:Class ;
     rdfs:label  &quot;Genus&quot;@en-gb ;
-    owl:sameAs  wo:Genus . 
+    owl:equivalentClass  wo:Genus . 
 
 #############################################################################
 
@@ -185,19 +185,19 @@ foo:Genus  a owl:Class ;
 foo:Observation a owl:Class ;
     rdfs:label &quot;Observation&quot;@en ;
     rdfs:definedBy &lt;https://w3id.org/def/foo&gt; ;
-    owl:sameAs sosa:Observation ;
+    owl:equivalentClass sosa:Observation ;
     skos:definition &quot;Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant).&quot;@en .
 
 foo:Sensor a owl:Class ;
     rdfs:label &quot;Sensor&quot;@en ;
     rdfs:definedBy sosa:Sensor ;
-    owl:sameAs sosa:Sensor ;
+    owl:equivalentClass sosa:Sensor ;
     skos:definition &quot;Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure.&quot;@en .
 
 foo:ObservableProperty a owl:Class ;
     rdfs:label &quot;Observable Property&quot;@en ;
     rdfs:definedBy &lt;https://w3id.org/def/foo&gt; ;
-    owl:sameAs sosa:ObservableProperty ;
+    owl:equivalentClass sosa:ObservableProperty ;
     skos:definition &quot;An observable quality (property, characteristic) of a FeatureOfInterest.&quot;@en .
 
 foo:FeatureOfInterest a owl:Class ;
@@ -205,7 +205,7 @@ foo:FeatureOfInterest a owl:Class ;
   skos:definition &quot;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&quot;@en ;
   rdfs:comment &quot;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&quot;@en ;
   skos:example &quot;When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.&quot;@en ;
-  owl:sameAs  sosa:FeatureOfInterest ;
+  owl:equivalentProperty  sosa:FeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
 
 
@@ -217,7 +217,7 @@ foo:hasFeatureOfInterest a owl:ObjectProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range foo:FeatureOfInterest, foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica, foo:Soil, foo:Tree, foo:Image  ;
     owl:inverseOf sosa:isFeatureOfInterestOf ;
-    owl:sameAs sosa:hasFeatureOfInterest .
+    owl:equivalentProperty sosa:hasFeatureOfInterest .
 
 foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:label &quot;is feature of interest of&quot;@en ;
@@ -232,7 +232,7 @@ foo:madeBySensor a owl:ObjectProperty ;
     rdfs:domain foo:Observation ;
     rdfs:range foo:Sensor ;
     owl:inverseOf foo:madeObservation ;
-    owl:sameAs sosa:madeBySensor .
+    owl:equivalentProperty sosa:madeBySensor .
 
 foo:observedProperty a owl:ObjectProperty ;
     rdfs:label &quot;observed property&quot;@en ;
@@ -285,7 +285,7 @@ foo:Nasalis a  owl:Class ;
 foo:NasalisLarvatus a owl:Class ;
     rdfs:label &quot;Proboscis Monkey&quot;@en, &quot;Nasalis larvatus&quot;@la ;
     rdfs:subClassOf foo:Nasalis ;
-    owl:sameAs   &lt;http://purl.obolibrary.org/obo/NCBITaxon_43780&gt; ;
+    owl:equivalentClass   &lt;http://purl.obolibrary.org/obo/NCBITaxon_43780&gt; ;
     rdfs:comment &quot;Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses.&quot;@en ;
     rdfs:definedBy &lt;https://doi.org/10.1016/S0006-3207(99)00066-X&gt;, &lt;https://doi/10.1126/sciadv.aaq0250&gt; , &lt;https://10.1371/journal.pone.0174891&gt; ; 
     skos:definition &quot;Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities.&quot;@en .
@@ -300,25 +300,25 @@ foo:ElephasMaximus a owl:Class ;
 
 foo:Pythonidae a owl:Class ;
     rdfs:subClassOf foo:Squamata  ;
-    owl:sameAs   &lt;http://purl.obolibrary.org/obo/NCBITaxon_34984&gt; ;
+    owl:equivalentClass   &lt;http://purl.obolibrary.org/obo/NCBITaxon_34984&gt; ;
     rdfs:label &quot;Pythonidae&quot;@en .
 
 foo:Malayopython a owl:Class ;
      rdfs:subClassOf foo:Pythonidae  ;
-     owl:sameAs  &lt;http://purl.obolibrary.org/obo/NCBITaxon_1496304&gt; ;
+     owl:equivalentClass  &lt;http://purl.obolibrary.org/obo/NCBITaxon_1496304&gt; ;
      rdfs:label &quot;Malayopython&quot;@en .  
 
 foo:MalayopythonReticulatus a owl:Class ;
     rdfs:subClassOf  foo:Malayopython  ;
     rdfs:label &quot;Reticulated Python&quot;@en, &quot;Malayopython reticulatus&quot;@la ;
-    owl:sameAs  &lt;http://purl.obolibrary.org/obo/NCBITaxon_1496311&gt; ;
+    owl:equivalentClass  &lt;http://purl.obolibrary.org/obo/NCBITaxon_1496311&gt; ;
     rdfs:definedBy &lt;https://orca.cardiff.ac.uk/id/eprint/152386/15/2022burgerphd.pdf&gt; ;
     skos:definition &quot;Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance.&quot;@en .
 
 foo:ManisJavanica a owl:Class ;
     rdfs:subClassOf foo:Mammalia ;
     rdfs:label &quot;Sunda Pangolin&quot;@en, &quot;Manis javanica&quot;@la ;
-    owl:sameAs  &lt;http://purl.bioontology.org/ontology/NCBITAXON/9974&gt; ;
+    owl:equivalentClass  &lt;http://purl.bioontology.org/ontology/NCBITAXON/9974&gt; ;
     rdfs:comment &quot;Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.&quot;@en ;
     rdfs:definedBy &lt;https://doi.org/10.1016/j.gecco.2024.e02962&gt; ;
     skos:definition &quot;Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.&quot;@en .
@@ -395,7 +395,7 @@ foo:latitude a owl:DatatypeProperty ;
     rdfs:label &quot;Latitude&quot; ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:double ;
-    owl:sameAs pos:lat ;
+    owl:equivalentProperty pos:lat ;
     skos:definition &quot;Latitudinal coordinate of the elephant.&quot; .
 
 foo:localDate a owl:DatatypeProperty ;
@@ -414,7 +414,7 @@ foo:longitude a owl:DatatypeProperty ;
     rdfs:label &quot;Longitude&quot; ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:double ;
-    owl:sameAs pos:long ;
+    owl:equivalentProperty pos:long ;
     skos:definition &quot;Longitudinal coordinate of the elephant.&quot; .
 
 foo:speed a owl:DatatypeProperty ;
@@ -871,7 +871,7 @@ foo:lianaSensor a foo:Sensor ;
 ##### Camera Trap Images Modeling #### 
 #### Image as a Feature of Interest ####
 foo:Image a owl:Class ;
-    owl:sameAs   foaf:Image ;
+    owl:equivalentClass   foaf:Image ;
     rdfs:label &quot;Camera Trap Image&quot;@en ;
     skos:definition &quot;Image generated by motion-activated wildlife cameras.&quot;@en ;
     rdfs:comment   &quot;The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology.&quot;; 
@@ -899,7 +899,8 @@ foo:imageObservation a foo:Observation ;
 # To enable effective reuse of this ontology, please follow these guidelines:
 # 1. Create your own custom ontology using identical class and property names as in this model.
 # 2. Import the `FOO` ontology (https://w3id.org/def/foo#) directly into your new ontology.
-# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using `owl:sameAs`.
-# This approach will maintain semantic consistency and allow for smooth interoperability across ontologies that reference shared terms and structures.</pre>
+# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using while owl:equivalentClass and owl:equivalentProperty.
+# This approach will maintain semantic consistency and allow for smooth interoperability across ontologies that reference shared terms and structures.
+</pre>
 </body>
 </html>
