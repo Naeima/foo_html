@@ -164,11 +164,6 @@ foo:Elephantidae a owl:Class ;
 
 #### Additional Families ####
 
-foo:Viverridae a owl:Class ;
-    rdfs:label &quot;Viverridae&quot;@en-gb ;
-    rdfs:subClassOf foo:Family ;
-    owl:equivalentClass wo:Viverridae .
-
 foo:Species  a owl:Class ;
     rdfs:label  &quot;Species&quot;@en-gb ;
     owl:equivalentClass  wo:Species ;
@@ -205,7 +200,7 @@ foo:FeatureOfInterest a owl:Class ;
   skos:definition &quot;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&quot;@en ;
   rdfs:comment &quot;The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.&quot;@en ;
   skos:example &quot;When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.&quot;@en ;
-  owl:equivalentProperty  sosa:FeatureOfInterest ;
+  owl:equivalentClass  sosa:FeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
 
 
@@ -224,7 +219,8 @@ foo:isFeatureOfInterestOf a owl:ObjectProperty ;
     rdfs:comment &quot;A relation between a FeatureOfInterest and an Observation about it.&quot;@en ;
     rdfs:domain foo:FeatureOfInterest, foo:ElephasMaximus, foo:MalayopythonReticulatus, foo:NasalisLarvatus, foo:ManisJavanica, foo:Soil, foo:Tree, foo:Image ; 
     rdfs:range foo:Observation ;
-    owl:inverseOf sosa:hasFeatureOfInterest .
+    owl:inverseOf sosa:hasFeatureOfInterest ;
+    owl:equivalentProperty  sosa:isFeatureOfInterestOf .
 
 foo:madeBySensor a owl:ObjectProperty ;
     rdfs:label &quot;made by sensor&quot;@en ;
@@ -238,28 +234,32 @@ foo:observedProperty a owl:ObjectProperty ;
     rdfs:label &quot;observed property&quot;@en ;
     rdfs:comment &quot;Relation linking an Observation to the property that was observed.&quot;@en ;
     rdfs:domain foo:Observation ;
-    rdfs:range foo:ObservableProperty .
+    rdfs:range foo:ObservableProperty ;
+    owl:equivalentProperty    sosa:observedProperty  .
 
 foo:isObservedBy a owl:ObjectProperty ;
     rdfs:label &quot;is observed by&quot;@en ;
     rdfs:comment &quot;Relation between an ObservableProperty and the Sensor able to observe it.&quot;@en ;
     rdfs:domain foo:ObservableProperty ;
     rdfs:range foo:Sensor ;
-    owl:inverseOf foo:observes .
+    owl:inverseOf foo:observes ;
+    owl:equivalentProperty  sosa:isObservedBy .
 
 foo:madeObservation a owl:ObjectProperty ;
     rdfs:label &quot;made observation&quot;@en ;
     rdfs:comment &quot;Relation between a Sensor and an Observation made by the Sensor.&quot;@en ;
     rdfs:domain foo:Sensor ;
     rdfs:range foo:Observation ;
-    owl:inverseOf sosa:madeBySensor .
+    owl:inverseOf sosa:madeBySensor ;
+    owl:equivalentProperty  sosa:madeObservation  .
 
 foo:observes a owl:ObjectProperty ;
     rdfs:label &quot;observes&quot;@en ;
     rdfs:comment &quot;Relation between a Sensor and an ObservableProperty that it is capable of sensing.&quot;@en ;
     rdfs:domain foo:Sensor ;
     rdfs:range foo:ObservableProperty ;
-    owl:inverseOf foo:isObservedBy .  
+    owl:inverseOf foo:isObservedBy ;
+    owl:equivalentProperty  sosa:observes  .  
 
 #########################################################################################################
 
@@ -324,7 +324,6 @@ foo:ManisJavanica a owl:Class ;
     skos:definition &quot;Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.&quot;@en .
 
 ### FOO Data Properties ###
-
 ### GPS Observation Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
     rdfs:label &quot;Temperature&quot; ;
@@ -683,13 +682,13 @@ foo:umas2GPS a foo:Sensor ;
     foo:observes foo:gPSObservation .
 
 foo:daraGPS a foo:Sensor ;
-    rdfs:label &quot;Umas2 GPS&quot;@en ;
+    rdfs:label &quot;Dara GPS&quot;@en ;
     foo:hasFeatureOfInterest foo:Dara ;
     skos:definition &quot;A GPS collar sensor fitted around the neck of an Asian elephant named Dara.&quot;@en ;
     foo:observes foo:gPSObservation .
 
 foo:abawGPS a foo:Sensor ;
-    rdfs:label &quot;Umas2 GPS&quot;@en ;
+    rdfs:label &quot;Abaw GPS&quot;@en ;
     foo:hasFeatureOfInterest foo:Abaw ;
     skos:definition &quot;A GPS collar sensor fitted around the neck of an Asian elephant named Abaw .&quot;@en ;
     foo:observes foo:gPSObservation .
