@@ -665,13 +665,13 @@ foo:umas2GPS a foo:Sensor ;
     foo:observes foo:gPSObservation .
 
 foo:daraGPS a foo:Sensor ;
-    rdfs:label "Umas2 GPS"@en ;
+    rdfs:label "Dara GPS"@en ;
     foo:hasFeatureOfInterest foo:Dara ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en ;
     foo:observes foo:gPSObservation .
 
 foo:abawGPS a foo:Sensor ;
-    rdfs:label "Umas2 GPS"@en ;
+    rdfs:label "Abaw GPS"@en ;
     foo:hasFeatureOfInterest foo:Abaw ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en ;
     foo:observes foo:gPSObservation .
