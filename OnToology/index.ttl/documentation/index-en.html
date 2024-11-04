@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -793,11 +794,13 @@ foo:gPSObservation a foo:Observation ;
 #### Soil Sensor ####
 foo:soilSensor a foo:Sensor ;
     rdfs:label &quot;Soil Sensor&quot;@en ;
+    owl:sameAs  &lt;https://saref.etsi.org/saref4agri/SoilTensiometer&gt; ;
     foo:hasFeatureOfInterest foo:Soil .
 
 #### Soil ####
 foo:Soil a owl:Class ;
-    rdfs:label &quot;Soil&quot;@en .
+    rdfs:label &quot;Soil&quot;@en ;
+    owl:equivalentClass  &lt;https://saref.etsi.org/saref4agri/Soil&gt;  .
 
 #### Soil Observation ####
 foo:soilObservation a foo:Observation ;
@@ -851,8 +854,7 @@ foo:treeObservation a foo:Observation ;
     foo:treeID  ,
     foo:treeIndividualNo  ,
     foo:treeNLianas ,
-    foo:treeNotes ;
-    
+    foo:treeNotes ;    
     # Link the observation to the feature of interest (tree) and sensor
     foo:hasFeatureOfInterest foo:Tree ;
     foo:madeBySensor foo:treeSensor .    
