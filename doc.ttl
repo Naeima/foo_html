@@ -776,11 +776,13 @@ foo:gPSObservation a foo:Observation ;
 #### Soil Sensor ####
 foo:soilSensor a foo:Sensor ;
     rdfs:label "Soil Sensor"@en ;
+    owl:sameAs  <https://saref.etsi.org/saref4agri/SoilTensiometer> ;
     foo:hasFeatureOfInterest foo:Soil .
 
 #### Soil ####
 foo:Soil a owl:Class ;
-    rdfs:label "Soil"@en .
+    rdfs:label "Soil"@en ;
+    owl:equivalentClass  <https://saref.etsi.org/saref4agri/Soil>  .
 
 #### Soil Observation ####
 foo:soilObservation a foo:Observation ;
