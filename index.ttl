@@ -306,6 +306,11 @@ foo:ManisJavanica a owl:Class ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
     skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
+foo:OilPalmPlantation a  owl:Class ;
+    rdfs:label   "Oil Palm Plantation" ;
+    owl:equivalentClass      <http://purl.obolibrary.org/obo/ENVO_00000120> . 
+
+
 ### FOO Data Properties ###
 ### GPS Observation Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
@@ -584,7 +589,7 @@ foo:binbinganGPS a owl:NamedIndividual,  foo:Sensor ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en ;
     foo:observes foo:gPSObservation .
 
-foo:guliGPS a foo:Sensor ;
+foo:guliGPS a  owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
     foo:hasFeatureOfInterest foo:Guli ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Guli."@en ;
