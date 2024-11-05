@@ -1,5 +1,8 @@
 {
   "@context" : {
+    "" : {
+      "@id" : "http://purl.bioontology.org/ontology/NCBITAXON/9974"
+    },
     "landUse" : {
       "@id" : "https://w3id.org/def/foo#landUse",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -9,6 +12,9 @@
     },
     "Primates" : {
       "@id" : "https://w3id.org/def/foo#Primates"
+    },
+    "NCBITaxon_1496304" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_1496304"
     },
     "affiliation" : {
       "@id" : "http://xmlns.com/foaf/0.1/affiliation"
@@ -68,7 +74,7 @@
       "@id" : "https://w3id.org/def/foo#Malayopython"
     },
     "FeatureOfInterest" : {
-      "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
     },
     "wasAttributedTo" : {
       "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
@@ -76,8 +82,12 @@
     "Class" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Class"
     },
+    "imageFile" : {
+      "@id" : "https://w3id.org/def/foo#imageFile",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Elephantidae" : {
-      "@id" : "https://w3id.org/def/foo#Elephantidae"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae"
     },
     "Nasalis" : {
       "@id" : "https://w3id.org/def/foo#Nasalis"
@@ -96,6 +106,10 @@
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "cameraLocation" : {
+      "@id" : "https://w3id.org/def/foo#cameraLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "doi" : {
       "@id" : "http://purl.org/dc/terms/doi"
@@ -122,11 +136,14 @@
       "@id" : "https://w3id.org/def/foo#id",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "Viverridae" : {
-      "@id" : "https://w3id.org/def/foo#Viverridae"
-    },
     "homepage" : {
       "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "OilPalmPlantation" : {
+      "@id" : "https://w3id.org/def/foo#OilPalmPlantation"
+    },
+    "NCBITaxon_43780" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_43780"
     },
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
@@ -143,7 +160,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
     "Mammalia" : {
-      "@id" : "https://w3id.org/def/foo#Mammalia"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia"
     },
     "latitude" : {
       "@id" : "https://w3id.org/def/foo#latitude",
@@ -154,6 +171,10 @@
     },
     "Cercopithecidae" : {
       "@id" : "https://w3id.org/def/foo#Cercopithecidae"
+    },
+    "animalDetected" : {
+      "@id" : "https://w3id.org/def/foo#animalDetected",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Agent" : {
       "@id" : "http://www.w3.org/ns/prov#Agent"
@@ -247,7 +268,7 @@
       "@id" : "https://w3id.org/def/foo#gPSObservation"
     },
     "observes" : {
-      "@id" : "https://w3id.org/def/foo#observes",
+      "@id" : "http://www.w3.org/ns/sosa/observes",
       "@type" : "@id"
     },
     "localDate" : {
@@ -255,7 +276,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
     "Genus" : {
-      "@id" : "https://w3id.org/def/foo#Genus"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
     },
     "Reptilia" : {
       "@id" : "https://w3id.org/def/foo#Reptilia"
@@ -268,7 +289,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "isObservedBy" : {
-      "@id" : "https://w3id.org/def/foo#isObservedBy",
+      "@id" : "http://www.w3.org/ns/sosa/isObservedBy",
       "@type" : "@id"
     },
     "publisher" : {
@@ -286,7 +307,7 @@
       "@type" : "@id"
     },
     "madeObservation" : {
-      "@id" : "https://w3id.org/def/foo#madeObservation",
+      "@id" : "http://www.w3.org/ns/sosa/madeObservation",
       "@type" : "@id"
     },
     "lianaDBH_cm" : {
@@ -330,8 +351,11 @@
     "Image" : {
       "@id" : "https://w3id.org/def/foo#Image"
     },
+    "ENVO_00000120" : {
+      "@id" : "http://purl.obolibrary.org/obo/ENVO_00000120"
+    },
     "ObservableProperty" : {
-      "@id" : "https://w3id.org/def/foo#ObservableProperty"
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
@@ -343,11 +367,17 @@
     "Species" : {
       "@id" : "https://w3id.org/def/foo#Species"
     },
+    "NCBITaxon_1496311" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_1496311"
+    },
+    "NCBITaxon_34984" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCBITaxon_34984"
+    },
     "MalayopythonReticulatus" : {
       "@id" : "https://w3id.org/def/foo#MalayopythonReticulatus"
     },
     "Squamata" : {
-      "@id" : "https://w3id.org/def/foo#Squamata"
+      "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata"
     },
     "TaxonRank" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank"
@@ -367,10 +397,10 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Observation" : {
-      "@id" : "https://w3id.org/def/foo#Observation"
+      "@id" : "http://www.w3.org/ns/sosa/Observation"
     },
     "Sensor" : {
-      "@id" : "https://w3id.org/def/foo#Sensor"
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
     },
     "isFeatureOfInterestOf" : {
       "@id" : "https://w3id.org/def/foo#isFeatureOfInterestOf",
