@@ -34,21 +34,21 @@
                              <http://xmlns.com/foaf/0.1/logo> <https://github.com/Naeima/Forest-Observatory-Ontology/blob/main/logo.png?raw=true> ;
                              <https://schema.org/citation> "Cite this vocabulary as: Hamed, N., Rana, O., Goossens, B., Orozco-terWengel, P., Perera, C. (2023). FOO: An Upper-Level Ontology for the Forest Observatory. In: Pesquita, C., et al. The Semantic Web: ESWC 2023 Satellite Events. ESWC 2023. Lecture Notes in Computer Science, vol 13998. Springer, Cham. https://doi.org/10.1007/978-3-031-43458-7_29"@en .
 
-_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
-          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
-
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
+_:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/orozco-terwengelpa> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Pablo Orozco-terWengel"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-7951-4148> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/goossensbr> ;
           <http://xmlns.com/foaf/0.1/name> "Professor Benoit Goossens"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-2360-4643> .
 
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/pererac> ;
           <http://xmlns.com/foaf/0.1/name> "Dr. Charith Perera"@en ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-0190-3346> .
+
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://profiles.cardiff.ac.uk/staff/ranaof> ;
+          <http://xmlns.com/foaf/0.1/name> "Professor Omer Rana"@en ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0003-3597-2646> .
 
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/research-students/view/2501164-hamed-naeima> ;
           <http://xmlns.com/foaf/0.1/name> "Naeima Hamed"@en ;
@@ -134,64 +134,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://schema.org/identifier> rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/def/foo#altitude
-:altitude rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#animalDetected
-:animalDetected rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#cNRatio
-:cNRatio rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#cameraLocation
-:cameraLocation rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#date
-:date rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#iD
-:iD rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#identifier
-:identifier rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#imageFile
-:imageFile rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#inorganicP
-:inorganicP rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#plotName
-:plotName rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/def/foo#resultTime
 :resultTime rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#sand
-:sand rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#totalP
-:totalP rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#treeNLianas
-:treeNLianas rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/def/foo#treeNotes
-:treeNotes rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -206,17 +150,47 @@ xsd:time rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> owl:equivalentProperty :hasFeatureOfInterest .
+
+
+###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> owl:equivalentProperty :isFeatureOfInterestOf .
+
+
+###  http://www.w3.org/ns/sosa/isObservedBy
+<http://www.w3.org/ns/sosa/isObservedBy> owl:equivalentProperty :isObservedBy .
+
+
+###  http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> owl:equivalentProperty :madeBySensor .
+
+
+###  http://www.w3.org/ns/sosa/madeObservation
+<http://www.w3.org/ns/sosa/madeObservation> owl:equivalentProperty :madeObservation .
+
+
+###  http://www.w3.org/ns/sosa/observedProperty
+<http://www.w3.org/ns/sosa/observedProperty> owl:equivalentProperty :observedProperty .
+
+
+###  http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> owl:equivalentProperty :observes .
+
+
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
                       owl:inverseOf <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> ;
                       rdfs:domain :Observation ;
-                      rdfs:range :Species .
+                      rdfs:range :FeatureOfInterest ;
+                      rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
+                      rdfs:label "has Feature Of Interest"@en .
 
 
 ###  https://w3id.org/def/foo#isFeatureOfInterestOf
 :isFeatureOfInterestOf rdf:type owl:ObjectProperty ;
                        owl:inverseOf <http://www.w3.org/ns/sosa/hasFeatureOfInterest> ;
-                       rdfs:domain :Species ;
+                       rdfs:domain :FeatureOfInterest ;
                        rdfs:range :Observation ;
                        rdfs:comment "A relation between a FeatureOfInterest and an Observation about it."@en ;
                        rdfs:label "is feature of interest of"@en .
@@ -235,7 +209,9 @@ xsd:time rdf:type rdfs:Datatype .
 :madeBySensor rdf:type owl:ObjectProperty ;
               owl:inverseOf :madeObservation ;
               rdfs:domain :Observation ;
-              rdfs:range :Sensor .
+              rdfs:range :Sensor ;
+              rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
+              rdfs:label "made by sensor"@en .
 
 
 ###  https://w3id.org/def/foo#madeObservation
@@ -267,127 +243,115 @@ xsd:time rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+###  https://w3id.org/def/foo#animalDetected
+:animalDetected rdf:type owl:DatatypeProperty ;
+                rdfs:domain :imageObservation ;
+                rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/foo#cameraLocation
+:cameraLocation rdf:type owl:DatatypeProperty ;
+                rdfs:domain :imageObservation ;
+                rdfs:range xsd:string .
+
+
 ###  https://w3id.org/def/foo#clay
 :clay rdf:type owl:DatatypeProperty ;
-      rdfs:domain :SoilObservation ;
-      rdfs:range xsd:double ;
-      rdfs:label "Clay"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Clay content of the soil sample."@en .
+      rdfs:domain :soilObservation ;
+      rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#count
 :count rdf:type owl:DatatypeProperty ;
-       rdfs:domain :GPSObservation ;
-       rdfs:range xsd:integer ;
-       rdfs:label "Count"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Observation count per data set." .
+       rdfs:domain :gPSObservation ;
+       rdfs:range xsd:integer .
 
 
 ###  https://w3id.org/def/foo#cov
 :cov rdf:type owl:DatatypeProperty ;
-     rdfs:domain :GPSObservation ;
-     rdfs:range xsd:double ;
-     rdfs:label "Cov" ;
-     <http://www.w3.org/2004/02/skos/core#definition> "TBC" .
+     rdfs:domain :gPSObservation ;
+     rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#direction
 :direction rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ;
-           rdfs:range xsd:integer ;
-           rdfs:label "Direction" ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Direction of elephant travel at the moment of data collection." .
+           rdfs:domain :gPSObservation ;
+           rdfs:range xsd:integer .
 
 
 ###  https://w3id.org/def/foo#distance
 :distance rdf:type owl:DatatypeProperty ;
-          rdfs:domain :GPSObservation ;
-          rdfs:range xsd:double ;
-          rdfs:label "Distance"@en ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Distance (m) travelled from the last to the current data collection point." .
+          rdfs:domain :gPSObservation ;
+          rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#gMTDate
 :gMTDate rdf:type owl:DatatypeProperty ;
-         rdfs:domain :GPSObservation ,
-                     :ImageObservation ;
-         rdfs:range xsd:date ;
-         rdfs:label "GMT Date"@en ,
-                    "GMT Date" ;
-         <http://www.w3.org/2004/02/skos/core#definition> "The GMT date in Sabah, Malaysia when the GPS collar collects its readings."@en ,
-                                                          "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
+         rdfs:domain :gPSObservation ,
+                     :imageObservation ;
+         rdfs:range xsd:date .
 
 
 ###  https://w3id.org/def/foo#gMTTime
 :gMTTime rdf:type owl:DatatypeProperty ;
-         rdfs:domain :GPSObservation ,
-                     :ImageObservation ;
-         rdfs:range xsd:time ;
-         rdfs:label "GMT Time"@en ,
-                    "GMT Time" ;
-         <http://www.w3.org/2004/02/skos/core#definition> "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."@en ,
-                                                          "The GMT time in Sabah, Malaysia, when the GPS collar records its readings." .
+         rdfs:domain :gPSObservation ,
+                     :imageObservation ;
+         rdfs:range xsd:time .
 
 
 ###  https://w3id.org/def/foo#hDOP
 :hDOP rdf:type owl:DatatypeProperty ;
-      rdfs:domain :GPSObservation ;
-      rdfs:range xsd:double ;
-      rdfs:label "HDOP" ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
+      rdfs:domain :gPSObservation ;
+      rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#horizon
 :horizon rdf:type owl:DatatypeProperty ;
-         rdfs:domain :SoilObservation ;
-         rdfs:range xsd:string ;
-         rdfs:label "Horizon"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Soil horizon sampled."@en .
+         rdfs:domain :soilObservation ;
+         rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#id
 :id rdf:type owl:DatatypeProperty ;
-    rdfs:domain :GPSObservation ;
-    rdfs:range xsd:string ;
-    rdfs:label "id"@en .
+    rdfs:domain :gPSObservation ;
+    rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/foo#imageFile
+:imageFile rdf:type owl:DatatypeProperty ;
+           rdfs:domain :imageObservation ;
+           rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#landUse
 :landUse rdf:type owl:DatatypeProperty ;
-         rdfs:domain :SoilObservation ;
-         rdfs:range xsd:string ;
-         rdfs:label "Land Use"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Land use of the study plots."@en .
+         rdfs:domain :soilObservation ;
+         rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#latitude
 :latitude rdf:type owl:DatatypeProperty ;
-          rdfs:domain :GPSObservation ;
+          rdfs:domain :gPSObservation ;
           rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#lianaDBH_cm
 :lianaDBH_cm rdf:type owl:DatatypeProperty ;
-             rdfs:domain :TreeObservation ;
-             rdfs:range xsd:string ;
-             rdfs:label "lianaDBH_cm 10a"@en .
+             rdfs:domain :treeObservation ;
+             rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#localDate
 :localDate rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ,
-                       :ImageObservation ;
-           rdfs:range xsd:date ;
-           rdfs:label "Local Date"@en ,
-                      "Local Date" ;
-           <http://www.w3.org/2004/02/skos/core#definition> "The current local date in Sabah, Malaysia when the GPS collar collects its readings."@en ,
-                                                            "The local date in Sabah, Malaysia." .
+           rdfs:domain :gPSObservation ,
+                       :imageObservation ;
+           rdfs:range xsd:date .
 
 
 ###  https://w3id.org/def/foo#localTime
 :localTime rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ,
-                       :ImageObservation ;
+           rdfs:domain :gPSObservation ,
+                       :imageObservation ;
            rdfs:range xsd:time ;
            rdfs:label "Local Time"@en ,
                       "Local Time" ;
@@ -397,29 +361,25 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#longitude
 :longitude rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPSObservation ;
+           rdfs:domain :gPSObservation ;
            rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#make
 :make rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ImageObservation ;
-      rdfs:range xsd:string ;
-      rdfs:label "Camera Make"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "The make of the trail camera used to capture the image."@en .
+      rdfs:domain :imageObservation ;
+      rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#model
 :model rdf:type owl:DatatypeProperty ;
-       rdfs:domain :ImageObservation ;
-       rdfs:range xsd:string ;
-       rdfs:label "Camera Model"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "The model of the trail camera used to capture the image."@en .
+       rdfs:domain :imageObservation ;
+       rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ImageObservation ;
+      rdfs:domain :imageObservation ;
       rdfs:range xsd:string ;
       rdfs:label "Image Name"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "The name assigned to an image at collection time."@en .
@@ -427,7 +387,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#path
 :path rdf:type owl:DatatypeProperty ;
-      rdfs:domain :ImageObservation ;
+      rdfs:domain :imageObservation ;
       rdfs:range xsd:anyURI ;
       rdfs:label "Image Path"@en ;
       <http://www.w3.org/2004/02/skos/core#definition> "The URI pointing to the location of the image in secure cloud storage."@en .
@@ -435,106 +395,115 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#silt
 :silt rdf:type owl:DatatypeProperty ;
-      rdfs:domain :SoilObservation ;
-      rdfs:range xsd:double ;
-      rdfs:label "Silt"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Silt content of the soil sample."@en .
+      rdfs:domain :soilObservation ;
+      rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#site
 :site rdf:type owl:DatatypeProperty ;
-      rdfs:domain :SoilObservation ;
-      rdfs:range xsd:string ;
-      rdfs:label "Site"@en ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Geographical area/site which samples were taken from."@en .
+      rdfs:domain :soilObservation ;
+      rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#soilPH
 :soilPH rdf:type owl:DatatypeProperty ;
-        rdfs:domain :SoilObservation ;
-        rdfs:range xsd:double ;
-        rdfs:label "Soil PH" ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Measured pH of the soil sample."@en .
+        rdfs:domain :soilObservation ;
+        rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#speed
 :speed rdf:type owl:DatatypeProperty ;
-       rdfs:domain :GPSObservation ;
-       rdfs:range xsd:double ;
-       rdfs:label "Speed" ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Speed of the elephant at the moment of data collection." .
+       rdfs:domain :gPSObservation ;
+       rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#subplot
 :subplot rdf:type owl:DatatypeProperty ;
-         rdfs:domain :GPSObservation ;
-         rdfs:range xsd:string ;
-         rdfs:label "subPlot"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Number of the subplot sampled within each 1 Ha plot."@en .
+         rdfs:domain :gPSObservation ;
+         rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#subplotRadius_m
 :subplotRadius_m rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :TreeObservation ;
-                 rdfs:range xsd:float ;
-                 rdfs:label "SubplotRadius_m 30"@en .
+                 rdfs:domain :treeObservation ;
+                 rdfs:range xsd:float .
 
 
 ###  https://w3id.org/def/foo#temperature
 :temperature rdf:type owl:DatatypeProperty ;
-             rdfs:domain :GPSObservation ;
-             rdfs:range xsd:double ;
-             rdfs:label "Temperature" ;
-             <http://www.w3.org/2004/02/skos/core#definition> "Estimated temperature of the elephant in Celsius at the moment of data collection." .
+             rdfs:domain :gPSObservation ;
+             rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#totalC
 :totalC rdf:type owl:DatatypeProperty ;
-        rdfs:domain :SoilObservation ;
-        rdfs:range xsd:double ;
-        rdfs:label "Total C"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Total carbon content of the soil sample."@en .
+        rdfs:domain :soilObservation ;
+        rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#totalN
 :totalN rdf:type owl:DatatypeProperty ;
-        rdfs:domain :SoilObservation ;
-        rdfs:range xsd:double ;
-        rdfs:label "Total N"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Total nitrogen content of the soil sample."@en .
+        rdfs:domain :soilObservation ;
+        rdfs:range xsd:double .
 
 
 ###  https://w3id.org/def/foo#treeDBH_cm
 :treeDBH_cm rdf:type owl:DatatypeProperty ;
-            rdfs:domain :TreeObservation ;
-            rdfs:range xsd:float ;
-            rdfs:label "TreeDBH_cm 110"@en .
+            rdfs:domain :treeObservation ;
+            rdfs:range xsd:float .
 
 
 ###  https://w3id.org/def/foo#treeHeight_m
 :treeHeight_m rdf:type owl:DatatypeProperty ;
-              rdfs:domain :TreeObservation ;
-              rdfs:range xsd:float ;
-              rdfs:label "treeHeight_m 60"@en .
+              rdfs:domain :treeObservation ;
+              rdfs:range xsd:float .
 
 
 ###  https://w3id.org/def/foo#treeID
 :treeID rdf:type owl:DatatypeProperty ;
-        rdfs:domain :TreeObservation ;
-        rdfs:range xsd:string ;
-        rdfs:label "TreeID"@en .
+        rdfs:domain :treeObservation ;
+        rdfs:range xsd:string .
 
 
 ###  https://w3id.org/def/foo#treeIndividualNo
 :treeIndividualNo rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :TreeObservation ;
-                  rdfs:range xsd:integer ;
-                  rdfs:label "TreeIndividualNo"@en .
+                  rdfs:domain :treeObservation ;
+                  rdfs:range xsd:integer .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.bioontology.org/ontology/NCBITAXON/9974
+<http://purl.bioontology.org/ontology/NCBITAXON/9974> rdf:type owl:Class ;
+                                                      owl:equivalentClass :ManisJavanica .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000120
+<http://purl.obolibrary.org/obo/ENVO_00000120> rdf:type owl:Class ;
+                                               owl:equivalentClass :OilPalmPlantation .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_1496304
+<http://purl.obolibrary.org/obo/NCBITaxon_1496304> rdf:type owl:Class ;
+                                                   owl:equivalentClass :Malayopython .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_1496311
+<http://purl.obolibrary.org/obo/NCBITaxon_1496311> rdf:type owl:Class ;
+                                                   owl:equivalentClass :MalayopythonReticulatus .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_34984
+<http://purl.obolibrary.org/obo/NCBITaxon_34984> rdf:type owl:Class ;
+                                                 owl:equivalentClass :Pythonidae .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_43780
+<http://purl.obolibrary.org/obo/NCBITaxon_43780> rdf:type owl:Class ;
+                                                 owl:equivalentClass :NasalisLarvatus .
+
 
 ###  http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
@@ -542,6 +511,27 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> owl:equivalentClass :FeatureOfInterest .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> owl:equivalentClass :ObservableProperty .
+
+
+###  http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> owl:equivalentClass :Observation .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> owl:equivalentClass :Sensor .
+
+
+###  http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> rdf:type owl:Class ;
+                                  owl:equivalentClass :Image .
 
 
 ###  http://xmlns.com/foaf/0.1/Organization
@@ -552,139 +542,235 @@ xsd:time rdf:type rdfs:Datatype .
 <http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
 
 
+###  https://saref.etsi.org/saref4agri/Soil
+<https://saref.etsi.org/saref4agri/Soil> rdf:type owl:Class ;
+                                         owl:equivalentClass :Soil .
+
+
 ###  https://w3id.org/def/foo#Animalia
 :Animalia rdf:type owl:Class ;
-          rdfs:subClassOf owl:Thing .
+          owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> ;
+          rdfs:subClassOf owl:Thing ;
+          rdfs:label "Animalia"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
 
 
 ###  https://w3id.org/def/foo#Carnivora
 :Carnivora rdf:type owl:Class ;
-           rdfs:subClassOf :Mammalia .
+           owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> ;
+           rdfs:subClassOf :Mammalia ;
+           rdfs:label "Carnivora"@en-gb ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 
 
 ###  https://w3id.org/def/foo#Cercopithecidae
 :Cercopithecidae rdf:type owl:Class ;
-                 rdfs:subClassOf :Primates .
+                 rdfs:subClassOf :Primates ;
+                 rdfs:label "Cercopithecidae"@en-gb ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "African and Asian monkeys with tail as balancing organ, opposable thumb and large toe, nostrils close together and directed downward; social in large groups, some ground dwelling" .
 
 
 ###  https://w3id.org/def/foo#Chordata
 :Chordata rdf:type owl:Class ;
-          rdfs:subClassOf :Animalia .
+          owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> ;
+          rdfs:subClassOf :Animalia ;
+          rdfs:label "Chordata"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 
 
 ###  https://w3id.org/def/foo#Elephantidae
 :Elephantidae rdf:type owl:Class ;
-              rdfs:subClassOf :Proboscidea .
+              owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> ;
+              rdfs:subClassOf :Proboscidea ;
+              rdfs:label "Elephantidae"@en-gb ;
+              <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 
 
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:Class ;
-                rdfs:subClassOf :Elephantidae .
+                rdfs:subClassOf :Elephantidae ,
+                                :FeatureOfInterest .
 
 
-###  https://w3id.org/def/foo#Family
-:Family rdf:type owl:Class .
-
-
-###  https://w3id.org/def/foo#GPSObservation
-:GPSObservation rdf:type owl:Class .
+###  https://w3id.org/def/foo#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class ;
+                   rdfs:comment "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/sosa/> ;
+                   rdfs:label "Feature Of Interest"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en ;
+                   <http://www.w3.org/2004/02/skos/core#example> "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en .
 
 
 ###  https://w3id.org/def/foo#Genus
-:Genus rdf:type owl:Class .
+:Genus rdf:type owl:Class ;
+       owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> ;
+       rdfs:label "Genus"@en-gb .
 
 
-###  https://w3id.org/def/foo#ImageObservation
-:ImageObservation rdf:type owl:Class .
+###  https://w3id.org/def/foo#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#Malayopython
 :Malayopython rdf:type owl:Class ;
-              rdfs:subClassOf :Pythonidae .
+              rdfs:subClassOf :Pythonidae ;
+              rdfs:label "Malayopython"@en .
 
 
 ###  https://w3id.org/def/foo#MalayopythonReticulatus
 :MalayopythonReticulatus rdf:type owl:Class ;
-                         rdfs:subClassOf :Malayopython .
+                         rdfs:subClassOf :FeatureOfInterest ,
+                                         :Malayopython ;
+                         rdfs:label "Malayopython reticulatus"@la ,
+                                    "Reticulated Python"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
 
 
 ###  https://w3id.org/def/foo#Mammalia
 :Mammalia rdf:type owl:Class ;
-          rdfs:subClassOf :Chordata .
+          owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> ;
+          rdfs:subClassOf :Chordata ;
+          rdfs:label "Mammalia"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
 
 
 ###  https://w3id.org/def/foo#ManisJavanica
 :ManisJavanica rdf:type owl:Class ;
-               rdfs:subClassOf :Mammalia .
+               rdfs:subClassOf :FeatureOfInterest ,
+                               :Mammalia ;
+               rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
+               rdfs:label "Manis javanica"@la ,
+                          "Sunda Pangolin"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
 
 ###  https://w3id.org/def/foo#Nasalis
 :Nasalis rdf:type owl:Class ;
-         rdfs:subClassOf :Cercopithecidae .
+         rdfs:subClassOf :Cercopithecidae ;
+         rdfs:label "Nasalis"@en-gb ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
 
 
 ###  https://w3id.org/def/foo#NasalisLarvatus
 :NasalisLarvatus rdf:type owl:Class ;
-                 rdfs:subClassOf :Nasalis .
+                 rdfs:subClassOf :Nasalis ;
+                 rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
+                 rdfs:label "Nasalis larvatus"@la ,
+                            "Proboscis Monkey"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
 
 
 ###  https://w3id.org/def/foo#ObservableProperty
-:ObservableProperty rdf:type owl:Class .
+:ObservableProperty rdf:type owl:Class ;
+                    rdfs:label "Observable Property"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
 
 
 ###  https://w3id.org/def/foo#Observation
-:Observation rdf:type owl:Class .
+:Observation rdf:type owl:Class ;
+             rdfs:label "Observation"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
+
+
+###  https://w3id.org/def/foo#OilPalmPlantation
+:OilPalmPlantation rdf:type owl:Class ;
+                   rdfs:label "Oil Palm Plantation" .
 
 
 ###  https://w3id.org/def/foo#Primates
 :Primates rdf:type owl:Class ;
           rdfs:subClassOf :Mammalia ;
-          rdfs:label "Primates"@en-gb .
+          rdfs:label "Primates"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "An order of mammals consisting of more than 300 species that include LEMURS; LORISIDAE; TARSIERS; MONKEYS; and HOMINIDS. They are characterized by a relatively large brain when compared with other terrestrial" .
 
 
 ###  https://w3id.org/def/foo#Proboscidea
 :Proboscidea rdf:type owl:Class ;
-             rdfs:subClassOf :Mammalia .
+             owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> ;
+             rdfs:subClassOf :Mammalia ;
+             rdfs:label "Proboscidea"@en-gb ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
 
 
 ###  https://w3id.org/def/foo#Pythonidae
 :Pythonidae rdf:type owl:Class ;
-            rdfs:subClassOf :Squamata .
+            rdfs:subClassOf :Squamata ;
+            rdfs:label "Pythonidae"@en .
 
 
 ###  https://w3id.org/def/foo#Reptilia
 :Reptilia rdf:type owl:Class ;
-          rdfs:subClassOf :Chordata .
+          owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> ;
+          rdfs:subClassOf :Chordata ;
+          rdfs:label "Reptilia"@en-gb ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
 
 
 ###  https://w3id.org/def/foo#Sensor
-:Sensor rdf:type owl:Class .
+:Sensor rdf:type owl:Class ;
+        rdfs:label "Sensor"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
 
 
-###  https://w3id.org/def/foo#SoilObservation
-:SoilObservation rdf:type owl:Class .
+###  https://w3id.org/def/foo#Soil
+:Soil rdf:type owl:Class ;
+      rdfs:subClassOf :FeatureOfInterest .
 
 
 ###  https://w3id.org/def/foo#Species
-:Species rdf:type owl:Class .
+:Species rdf:type owl:Class ;
+         owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> ;
+         rdfs:label "Species"@en-gb ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
 
 
 ###  https://w3id.org/def/foo#Squamata
 :Squamata rdf:type owl:Class ;
-          rdfs:subClassOf :Reptilia .
+          owl:equivalentClass <https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> ;
+          rdfs:subClassOf :Reptilia ;
+          rdfs:label "Squamata"@en-gb .
 
 
-###  https://w3id.org/def/foo#TreeObservation
-:TreeObservation rdf:type owl:Class .
+###  https://w3id.org/def/foo#Tree
+:Tree rdf:type owl:Class ;
+      rdfs:subClassOf :FeatureOfInterest .
 
 
-###  https://w3id.org/def/foo#Viverridae
-:Viverridae rdf:type owl:Class ;
-            rdfs:subClassOf :Family .
+###  https://w3id.org/def/foo#gPSObservation
+:gPSObservation rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#imageObservation
+:imageObservation rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#soilObservation
+:soilObservation rdf:type owl:Class .
+
+
+###  https://w3id.org/def/foo#treeObservation
+:treeObservation rdf:type owl:Class .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> rdf:type owl:Class .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> rdf:type owl:Class .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> rdf:type owl:Class .
 
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Class
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Class> rdf:type owl:Class .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> rdf:type owl:Class .
 
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Family
@@ -699,6 +785,10 @@ xsd:time rdf:type rdfs:Datatype .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom> rdf:type owl:Class .
 
 
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> rdf:type owl:Class .
+
+
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Order
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Order> rdf:type owl:Class .
 
@@ -707,8 +797,20 @@ xsd:time rdf:type rdfs:Datatype .
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> rdf:type owl:Class .
 
 
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> rdf:type owl:Class .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> rdf:type owl:Class .
+
+
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> rdf:type owl:Class .
+
+
+###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> rdf:type owl:Class .
 
 
 ###  https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank
@@ -718,69 +820,6 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 #    Individuals
 #################################################################
-
-###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
-<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:NamedIndividual ;
-                                              owl:sameAs :latitude .
-
-
-###  https://w3id.org/def/foo#latitude
-:latitude rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/2003/01/geo/wgs84_pos#long
-<http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:NamedIndividual ;
-                                               owl:sameAs :longitude .
-
-
-###  https://w3id.org/def/foo#longitude
-:longitude rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/sosa/ObservableProperty
-<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:NamedIndividual ;
-                                               owl:sameAs :ObservableProperty .
-
-
-###  https://w3id.org/def/foo#ObservableProperty
-:ObservableProperty rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/sosa/Observation
-<http://www.w3.org/ns/sosa/Observation> rdf:type owl:NamedIndividual ;
-                                        owl:sameAs :Observation .
-
-
-###  https://w3id.org/def/foo#Observation
-:Observation rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:NamedIndividual ;
-                                   owl:sameAs :Sensor .
-
-
-###  https://w3id.org/def/foo#Sensor
-:Sensor rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdf:type owl:NamedIndividual ;
-                                                 owl:sameAs :hasFeatureOfInterest .
-
-
-###  https://w3id.org/def/foo#hasFeatureOfInterest
-:hasFeatureOfInterest rdf:type owl:NamedIndividual .
-
-
-###  http://www.w3.org/ns/sosa/madeBySensor
-<http://www.w3.org/ns/sosa/madeBySensor> rdf:type owl:NamedIndividual ;
-                                         owl:sameAs :madeBySensor .
-
-
-###  https://w3id.org/def/foo#madeBySensor
-:madeBySensor rdf:type owl:NamedIndividual .
-
 
 ###  https://ontology.forest-observatory.org
 <https://ontology.forest-observatory.org> rdf:type owl:NamedIndividual ,
@@ -808,17 +847,15 @@ xsd:time rdf:type rdfs:Datatype .
                                                                  <http://xmlns.com/foaf/0.1/name> "Springer, Cham"@en .
 
 
+###  https://saref.etsi.org/saref4agri/SoilTensiometer
+<https://saref.etsi.org/saref4agri/SoilTensiometer> rdf:type owl:NamedIndividual ;
+                                                    owl:sameAs :soilSensor .
+
+
+###  https://w3id.org/def/foo#soilSensor
+
 ###  https://w3id.org/def/foo#Abaw
 :Abaw rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Animalia
-:Animalia rdf:type owl:NamedIndividual ;
-          owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Aqeela
@@ -853,39 +890,6 @@ xsd:time rdf:type rdfs:Datatype .
 :BinbinganGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#CameraTrap
-:CameraTrap rdf:type owl:NamedIndividual ,
-                     :Sensor ;
-            :hasFeatureOfInterest :Image ;
-            :observes :ImageObservation ;
-            :make "Make"@en ;
-            :model "Model"@en ;
-            rdfs:label "Camera Trap"@en .
-
-
-###  https://w3id.org/def/foo#Carnivora
-:Carnivora rdf:type owl:NamedIndividual ;
-           owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Cercopithecidae
-:Cercopithecidae rdf:type owl:NamedIndividual ,
-                          :Family .
-
-
-###  https://w3id.org/def/foo#Chordata
-:Chordata rdf:type owl:NamedIndividual ;
-          owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> rdf:type owl:NamedIndividual .
-
-
 ###  https://w3id.org/def/foo#Dara
 :Dara rdf:type owl:NamedIndividual .
 
@@ -894,72 +898,8 @@ xsd:time rdf:type rdfs:Datatype .
 :DaraGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#Elephantidae
-:Elephantidae rdf:type owl:NamedIndividual ;
-              owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> rdf:type owl:NamedIndividual .
-
-
 ###  https://w3id.org/def/foo#ElephasMaximus
-:ElephasMaximus rdf:type owl:NamedIndividual ,
-                         :Species .
-
-
-###  https://w3id.org/def/foo#GPSObservation
-:GPSObservation rdf:type owl:NamedIndividual ,
-                         :Observation ;
-                :hasFeatureOfInterest :ElephasMaximus ;
-                :madeBySensor :AqeelaGPS ,
-                              :Bikang1GPS ,
-                              :Bikang2GPS ,
-                              :BinbinganGPS ,
-                              :DaraGPS ,
-                              :GuliGPS ,
-                              :ItaGPS ,
-                              :JasminGPS ,
-                              :JasperGPS ,
-                              :KasihGPS ,
-                              :KumaGPS ,
-                              :LiunGPS ,
-                              :MaliauGPS ,
-                              :MerotaiGPS ,
-                              :PuteriGPS ,
-                              :PututGPS ,
-                              :SejatiGPS ,
-                              :SeriGPS ,
-                              :TulidGPS ,
-                              :TunglapGPS ,
-                              :Umas2GPS ;
-                :count 1 ;
-                :cov "0.0"^^xsd:double ;
-                :direction 0 ;
-                :distance "0.0"^^xsd:double ;
-                :gMTDate "2011-10-25"^^xsd:date ;
-                :gMTTime "22:40:35"^^xsd:time ,
-                         "23:40:35"^^xsd:time ;
-                :hDOP "1.14"^^xsd:double ,
-                      "1.64"^^xsd:double ;
-                :id "id"@en ;
-                :latitude "1.237206"^^xsd:double ,
-                          "1.537206"^^xsd:double ;
-                :localDate "2011-10-26"^^xsd:date ;
-                :localTime "07:40:35"^^xsd:time ;
-                :longitude "565.2223"^^xsd:double ,
-                           "566.2223"^^xsd:double ;
-                :speed "0.24"^^xsd:double ;
-                :temperature "24.5"^^xsd:double .
-
-
-###  https://w3id.org/def/foo#Genus
-:Genus rdf:type owl:NamedIndividual ;
-       owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> rdf:type owl:NamedIndividual .
+:ElephasMaximus rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Guli
@@ -971,16 +911,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Image
-:Image rdf:type owl:NamedIndividual ;
-       rdfs:label "Camera Trap Image"@en ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
-
-
-###  https://w3id.org/def/foo#ImageObservation
-:ImageObservation rdf:type owl:NamedIndividual ,
-                           :Observation ;
-                  :hasFeatureOfInterest :Image ;
-                  :madeBySensor :CameraTrap .
+:Image rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Ita
@@ -1023,39 +954,12 @@ xsd:time rdf:type rdfs:Datatype .
 :KumaGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#LianaProperties
-:LianaProperties rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#LianaSensor
-:LianaSensor rdf:type owl:NamedIndividual ,
-                      :Sensor ;
-             :observes :LianaProperties ;
-             rdfs:label "Liana Sensor"@en .
-
-
-###  https://w3id.org/def/foo#Lianas
-:Lianas rdf:type owl:NamedIndividual ;
-        :isObservedBy :LianaSensor ;
-        rdfs:label "Lianas"@en .
-
-
 ###  https://w3id.org/def/foo#LiunGPS
 :LiunGPS rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Luin
 :Luin rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Malayopython
-:Malayopython rdf:type owl:NamedIndividual ,
-                       :Genus .
-
-
-###  https://w3id.org/def/foo#MalayopythonReticulatus
-:MalayopythonReticulatus rdf:type owl:NamedIndividual ,
-                                  :Species .
 
 
 ###  https://w3id.org/def/foo#Maliau
@@ -1066,53 +970,12 @@ xsd:time rdf:type rdfs:Datatype .
 :MaliauGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#Mammalia
-:Mammalia rdf:type owl:NamedIndividual ;
-          owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#ManisJavanica
-:ManisJavanica rdf:type owl:NamedIndividual ,
-                        :Species .
-
-
 ###  https://w3id.org/def/foo#Merotai
 :Merotai rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#MerotaiGPS
 :MerotaiGPS rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Nasalis
-:Nasalis rdf:type owl:NamedIndividual ,
-                  :Genus .
-
-
-###  https://w3id.org/def/foo#NasalisLarvatus
-:NasalisLarvatus rdf:type owl:NamedIndividual ,
-                          :Species .
-
-
-###  https://w3id.org/def/foo#ObservableProperty
-:ObservableProperty rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Observation
-:Observation rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Proboscidea
-:Proboscidea rdf:type owl:NamedIndividual ;
-             owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Puteri
@@ -1131,30 +994,12 @@ xsd:time rdf:type rdfs:Datatype .
 :PututGPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#Pythonidae
-:Pythonidae rdf:type owl:NamedIndividual ,
-                     :Family .
-
-
-###  https://w3id.org/def/foo#Reptilia
-:Reptilia rdf:type owl:NamedIndividual ;
-          owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> rdf:type owl:NamedIndividual .
-
-
 ###  https://w3id.org/def/foo#Sejati
 :Sejati rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#SejatiGPS
 :SejatiGPS rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Sensor
-:Sensor rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Seri
@@ -1166,87 +1011,11 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/foo#Soil
-:Soil rdf:type owl:NamedIndividual ;
-      rdfs:label "Soil"@en .
-
-
-###  https://w3id.org/def/foo#SoilObservation
-:SoilObservation rdf:type owl:NamedIndividual ,
-                          :Observation ;
-                 :hasFeatureOfInterest :Soil ;
-                 :madeBySensor :SoilSensor ;
-                 :clay "62.88"^^xsd:double ;
-                 :horizon "Organic" ;
-                 :landUse "Unlogged" ;
-                 :silt "16.46"^^xsd:double ;
-                 :site "Maliau Basin Conservation Area" ;
-                 :soilPH "4.69"^^xsd:double ;
-                 :subplot "4" ;
-                 :totalC "5.45"^^xsd:double ;
-                 :totalN "0.38"^^xsd:double .
-
-
-###  https://w3id.org/def/foo#SoilProperties
-:SoilProperties rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#SoilSensor
-:SoilSensor rdf:type owl:NamedIndividual ,
-                     <http://www.w3.org/ns/sosa/Sensor> ;
-            :hasFeatureOfInterest :Soil ;
-            :observes :SoilProperties ;
-            rdfs:label "Soil Sensor"@en .
-
-
-###  https://w3id.org/def/foo#Species
-:Species rdf:type owl:NamedIndividual ;
-         owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> rdf:type owl:NamedIndividual .
-
-
-###  https://w3id.org/def/foo#Squamata
-:Squamata rdf:type owl:NamedIndividual ;
-          owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> rdf:type owl:NamedIndividual .
+:Soil rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Tree
-:Tree rdf:type owl:NamedIndividual ,
-               :Species ;
-      rdfs:label "Tree"@en .
-
-
-###  https://w3id.org/def/foo#TreeObservation
-:TreeObservation rdf:type owl:NamedIndividual ,
-                          :Observation ;
-                 :hasFeatureOfInterest :Tree ;
-                 :madeBySensor :TreeSensor ;
-                 :lianaDBH_cm 10 ;
-                 :subplotRadius_m 30 ;
-                 :treeDBH_cm 110 ;
-                 :treeHeight_m 60 ;
-                 :treeID "Shorea pauciflora" ;
-                 :treeIndividualNo 2 .
-
-
-###  https://w3id.org/def/foo#TreeProperties
-:TreeProperties rdf:type owl:NamedIndividual ,
-                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                rdfs:label "Tree Properties"@en .
-
-
-###  https://w3id.org/def/foo#TreeSensor
-:TreeSensor rdf:type owl:NamedIndividual ,
-                     :Sensor ;
-            :hasFeatureOfInterest :Tree ;
-            :observes :TreeProperties ;
-            rdfs:label "Tree Sensor"@en .
+:Tree rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#Tulid
@@ -1273,15 +1042,6 @@ xsd:time rdf:type rdfs:Datatype .
 :Umas2GPS rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#Viverridae
-:Viverridae rdf:type owl:NamedIndividual ;
-            owl:sameAs <https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> rdf:type owl:NamedIndividual .
-
-
 ###  https://w3id.org/def/foo#abaw
 :abaw rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
@@ -1293,9 +1053,17 @@ xsd:time rdf:type rdfs:Datatype .
 :abawGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Abaw ;
-         :observes :GPSObservation ;
-         rdfs:label "Umas2 GPS"@en ;
+         :observes :gPSObservation ;
+         rdfs:label "Abaw GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en .
+
+
+###  https://w3id.org/def/foo#altitude
+:altitude rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#animalDetected
+:animalDetected rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#aqeela
@@ -1309,7 +1077,7 @@ xsd:time rdf:type rdfs:Datatype .
 :aqeelaGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Aqeela ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Aqeela GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en .
 
@@ -1325,7 +1093,7 @@ xsd:time rdf:type rdfs:Datatype .
 :bikang1GPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Bikang1 ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Bikang 1 GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en .
 
@@ -1341,7 +1109,7 @@ xsd:time rdf:type rdfs:Datatype .
 :bikang2GPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Bikang2 ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Bikang 2 GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 2."@en .
 
@@ -1350,9 +1118,39 @@ xsd:time rdf:type rdfs:Datatype .
 :binbinganGPS rdf:type owl:NamedIndividual ,
                        :Sensor ;
               :hasFeatureOfInterest :Binbingan ;
-              :observes :GPSObservation ;
+              :observes :gPSObservation ;
               rdfs:label "Binbingan GPS"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en .
+
+
+###  https://w3id.org/def/foo#cNRatio
+:cNRatio rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#cameraLocation
+:cameraLocation rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#cameraTrap
+:cameraTrap rdf:type owl:NamedIndividual ,
+                     :Sensor ;
+            :hasFeatureOfInterest :Image ;
+            :observedProperty :make ,
+                              :model ;
+            :observes :imageObservation ;
+            rdfs:label "Camera Trap"@en .
+
+
+###  https://w3id.org/def/foo#clay
+:clay rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#count
+:count rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#cov
+:cov rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#dara
@@ -1366,9 +1164,71 @@ xsd:time rdf:type rdfs:Datatype .
 :daraGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Dara ;
-         :observes :GPSObservation ;
-         rdfs:label "Umas2 GPS"@en ;
+         :observes :gPSObservation ;
+         rdfs:label "Dara GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en .
+
+
+###  https://w3id.org/def/foo#date
+:date rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#direction
+:direction rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#distance
+:distance rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#gMTDate
+:gMTDate rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#gMTTime
+:gMTTime rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#gPSObservation
+:gPSObservation rdf:type owl:NamedIndividual ,
+                         :Observation ;
+                :hasFeatureOfInterest :ElephasMaximus ;
+                :madeBySensor :AqeelaGPS ,
+                              :Bikang1GPS ,
+                              :Bikang2GPS ,
+                              :BinbinganGPS ,
+                              :DaraGPS ,
+                              :GuliGPS ,
+                              :ItaGPS ,
+                              :JasminGPS ,
+                              :JasperGPS ,
+                              :KasihGPS ,
+                              :KumaGPS ,
+                              :LiunGPS ,
+                              :MaliauGPS ,
+                              :MerotaiGPS ,
+                              :PuteriGPS ,
+                              :PututGPS ,
+                              :SejatiGPS ,
+                              :SeriGPS ,
+                              :TulidGPS ,
+                              :TunglapGPS ,
+                              :Umas2GPS ;
+                :observedProperty :altitude ,
+                                  :count ,
+                                  :cov ,
+                                  :direction ,
+                                  :distance ,
+                                  :gMTDate ,
+                                  :gMTTime ,
+                                  :hDOP ,
+                                  :id ,
+                                  :latitude ,
+                                  :local-time ,
+                                  :localDate ,
+                                  :longitude ,
+                                  :speed ,
+                                  :temperature .
 
 
 ###  https://w3id.org/def/foo#guli
@@ -1382,13 +1242,47 @@ xsd:time rdf:type rdfs:Datatype .
 :guliGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Guli ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Guli GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Guli."@en .
 
 
-###  https://w3id.org/def/foo#hasFeatureOfInterest
-:hasFeatureOfInterest rdf:type owl:NamedIndividual .
+###  https://w3id.org/def/foo#hDOP
+:hDOP rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#horizon
+:horizon rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#iD
+:iD rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#id
+:id rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#identifier
+:identifier rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#imageFile
+:imageFile rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#imageObservation
+:imageObservation rdf:type owl:NamedIndividual ,
+                           :Observation ;
+                  :hasFeatureOfInterest :Image ;
+                  :madeBySensor :cameraTrap ;
+                  :observedProperty :animalDetected ,
+                                    :cameraLocation ,
+                                    :imageFile .
+
+
+###  https://w3id.org/def/foo#inorganicP
+:inorganicP rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#ita
@@ -1402,7 +1296,7 @@ xsd:time rdf:type rdfs:Datatype .
 :itaGPS rdf:type owl:NamedIndividual ,
                  :Sensor ;
         :hasFeatureOfInterest :Ita ;
-        :observes :GPSObservation ;
+        :observes :gPSObservation ;
         rdfs:label "Ita GPS"@en ;
         <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Ita."@en .
 
@@ -1418,7 +1312,7 @@ xsd:time rdf:type rdfs:Datatype .
 :jasminGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Jasmin ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Jasmin GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Jasmin."@en .
 
@@ -1434,7 +1328,7 @@ xsd:time rdf:type rdfs:Datatype .
 :jasperGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Jasper ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Jasper GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper."@en .
 
@@ -1450,7 +1344,7 @@ xsd:time rdf:type rdfs:Datatype .
 :kasihGPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Kasih ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Kasih GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Kasih."@en .
 
@@ -1466,13 +1360,39 @@ xsd:time rdf:type rdfs:Datatype .
 :kumaGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Kuma ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Kuma GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Kuma."@en .
 
 
+###  https://w3id.org/def/foo#landUse
+:landUse rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/def/foo#latitude
 :latitude rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#lianaDBH_cm
+:lianaDBH_cm rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#lianaProperties
+:lianaProperties rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#lianaSensor
+:lianaSensor rdf:type owl:NamedIndividual ,
+                      :Sensor ;
+             :observes :lianaProperties ;
+             rdfs:label "Liana Sensor"@en .
+
+
+###  https://w3id.org/def/foo#lianas
+:lianas rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        :isObservedBy :lianaSensor ;
+        rdfs:label "Lianas"@en .
 
 
 ###  https://w3id.org/def/foo#liun
@@ -1486,17 +1406,25 @@ xsd:time rdf:type rdfs:Datatype .
 :liunGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Luin ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Liun GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Liun."@en .
+
+
+###  https://w3id.org/def/foo#local-time
+:local-time rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#localDate
+:localDate rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#longitude
 :longitude rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/def/foo#madeBySensor
-:madeBySensor rdf:type owl:NamedIndividual .
+###  https://w3id.org/def/foo#make
+:make rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#maliau
@@ -1510,7 +1438,7 @@ xsd:time rdf:type rdfs:Datatype .
 :maliauGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Maliau ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Maliau GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en .
 
@@ -1526,9 +1454,17 @@ xsd:time rdf:type rdfs:Datatype .
 :merotaiGPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Merotai ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Merotai GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Merotai."@en .
+
+
+###  https://w3id.org/def/foo#model
+:model rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#plotName
+:plotName rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#puteri
@@ -1542,7 +1478,7 @@ xsd:time rdf:type rdfs:Datatype .
 :puteriGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Puteri ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Puteri GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Puteri."@en .
 
@@ -1558,9 +1494,13 @@ xsd:time rdf:type rdfs:Datatype .
 :pututGPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Putut ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Putut GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en .
+
+
+###  https://w3id.org/def/foo#sand
+:sand rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#sejati
@@ -1574,7 +1514,7 @@ xsd:time rdf:type rdfs:Datatype .
 :sejatiGPS rdf:type owl:NamedIndividual ,
                     :Sensor ;
            :hasFeatureOfInterest :Sejati ;
-           :observes :GPSObservation ;
+           :observes :gPSObservation ;
            rdfs:label "Sejati GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Sejati."@en .
 
@@ -1590,9 +1530,131 @@ xsd:time rdf:type rdfs:Datatype .
 :seriGPS rdf:type owl:NamedIndividual ,
                   :Sensor ;
          :hasFeatureOfInterest :Seri ;
-         :observes :GPSObservation ;
+         :observes :gPSObservation ;
          rdfs:label "Seri GPS"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en .
+
+
+###  https://w3id.org/def/foo#silt
+:silt rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#site
+:site rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#soilObservation
+:soilObservation rdf:type owl:NamedIndividual ,
+                          :Observation ;
+                 :hasFeatureOfInterest :Soil ;
+                 :madeBySensor :soilSensor ;
+                 :observedProperty :cNRatio ,
+                                   :clay ,
+                                   :horizon ,
+                                   :identifier ,
+                                   :inorganicP ,
+                                   :landUse ,
+                                   :plotName ,
+                                   :sand ,
+                                   :silt ,
+                                   :site ,
+                                   :soilPH ,
+                                   :subplot ,
+                                   :totalC ,
+                                   :totalN ,
+                                   :totalP .
+
+
+###  https://w3id.org/def/foo#soilPH
+:soilPH rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#soilSensor
+:soilSensor rdf:type owl:NamedIndividual ,
+                     :Sensor ;
+            :hasFeatureOfInterest :Soil ;
+            rdfs:label "Soil Sensor"@en .
+
+
+###  https://w3id.org/def/foo#speed
+:speed rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#subplot
+:subplot rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#subplotRadius_m
+:subplotRadius_m rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#temperature
+:temperature rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#totalC
+:totalC rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#totalN
+:totalN rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#totalP
+:totalP rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeDBH_cm
+:treeDBH_cm rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeHeight_m
+:treeHeight_m rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeID
+:treeID rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeIndividualNo
+:treeIndividualNo rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeNLianas
+:treeNLianas rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeNotes
+:treeNotes rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeObservation
+:treeObservation rdf:type owl:NamedIndividual ,
+                          :Observation ;
+                 :hasFeatureOfInterest :Tree ;
+                 :madeBySensor :treeSensor ;
+                 :observedProperty :date ,
+                                   :iD ,
+                                   :lianaDBH_cm ,
+                                   :subplotRadius_m ,
+                                   :treeDBH_cm ,
+                                   :treeHeight_m ,
+                                   :treeID ,
+                                   :treeIndividualNo ,
+                                   :treeNLianas ,
+                                   :treeNotes .
+
+
+###  https://w3id.org/def/foo#treeProperties
+:treeProperties rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#treeSensor
+:treeSensor rdf:type owl:NamedIndividual ,
+                     :Sensor ;
+            :hasFeatureOfInterest :Tree ;
+            :observes :treeProperties ;
+            rdfs:label "Tree Sensor"@en .
 
 
 ###  https://w3id.org/def/foo#tulid
@@ -1606,7 +1668,7 @@ xsd:time rdf:type rdfs:Datatype .
 :tulidGPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Tulid ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Tulid GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Tulid."@en .
 
@@ -1622,7 +1684,7 @@ xsd:time rdf:type rdfs:Datatype .
 :tunglapGPS rdf:type owl:NamedIndividual ,
                      :Sensor ;
             :hasFeatureOfInterest :Tunglap ;
-            :observes :GPSObservation ;
+            :observes :gPSObservation ;
             rdfs:label "Tunglap GPS"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Tunglap."@en .
 
@@ -1638,77 +1700,14 @@ xsd:time rdf:type rdfs:Datatype .
 :umas2GPS rdf:type owl:NamedIndividual ,
                    :Sensor ;
           :hasFeatureOfInterest :Umas2 ;
-          :observes :GPSObservation ;
+          :observes :gPSObservation ;
           rdfs:label "Umas2 GPS"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Umas2."@en .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> rdf:type owl:NamedIndividual .
-
-
-###  https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> rdf:type owl:NamedIndividual .
 
 
 #################################################################
 #    Annotations
 #################################################################
-
-:Animalia rdfs:label "Animalia"@en-gb ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
-
-
-:Carnivora rdfs:label "Carnivora"@en-gb ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
-
-
-:Cercopithecidae rdfs:label "Cercopithecidae"@en-gb .
-
-
-:Chordata rdfs:label "Chordata"@en-gb ;
-          <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
-
-
-:Elephantidae rdfs:label "Elephantidae"@en-gb ;
-              <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
-
 
 :ElephasMaximus rdfs:comment "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en ;
                 rdfs:label "Asian Elephant"@en ,
@@ -1716,114 +1715,159 @@ xsd:time rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 
 
-:GPSObservation rdfs:label "GPS Observation"@en ;
-                :altitude "11.7"^^xsd:double ,
-                          "16.7"^^xsd:double ;
-                :iD "1SAT32" ;
+:Image rdfs:comment "The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology." ;
+       rdfs:label "Camera Trap Image"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
+
+
+:Soil rdfs:label "Soil"@en .
+
+
+:Tree rdfs:label "Tree"@en .
+
+
+:animalDetected rdfs:label "Animal Detected"@en .
+
+
+:cameraLocation rdfs:label "Camera Location"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The location information (address) of the camera trap."@en .
+
+
+:clay rdfs:label "Clay"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Clay content of the soil sample."@en .
+
+
+:count rdfs:label "Count"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Observation count per data set." .
+
+
+:cov rdfs:label "Cov" ;
+     <http://www.w3.org/2004/02/skos/core#definition> "TBC" .
+
+
+:direction rdfs:label "Direction" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Direction of elephant travel at the moment of data collection." .
+
+
+:distance rdfs:label "Distance"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Distance (m) travelled from the last to the current data collection point." .
+
+
+:gMTDate rdfs:label "GMT Date"@en ,
+                    "GMT Date" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "The GMT date in Sabah, Malaysia when the GPS collar collects its readings."@en ,
+                                                          "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
+
+
+:gMTTime rdfs:label "GMT Time"@en ,
+                    "GMT Time" ;
+         <http://www.w3.org/2004/02/skos/core#definition> "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."@en ,
+                                                          "The GMT time in Sabah, Malaysia, when the GPS collar records its readings." .
+
+
+:gPSObservation rdfs:label "GPS Observation"@en ;
                 :resultTime "2011-10-26T07:40:35"^^xsd:dateTime ,
                             "2015-10-26T07:40:35"^^xsd:dateTime .
 
 
-:Genus rdfs:label "Genus"@en-gb .
+:hDOP rdfs:label "HDOP" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
 
 
-:ImageObservation rdfs:label "Image Observation"@en ;
-                  :animalDetected "Jasmin" ;
-                  :cameraLocation "Danum Valley" ;
-                  :imageFile "wildlife_image_001.jpg" .
+:horizon rdfs:label "Horizon"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Soil horizon sampled."@en .
 
 
-:Malayopython rdfs:label "Malayopython"@en .
+:id rdfs:label "id"@en .
 
 
-:MalayopythonReticulatus rdfs:label "Malayopython reticulatus"@la ,
-                                    "Reticulated Python"@en ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "Malayopython reticulatus, aka the reticulated python, is a large snake species native to Southeast Asia. Renowned for its impressive length, it is the longest snake in the world, often exceeding 6 meters. It inhabits various environments, including rainforests, woodlands, and plantations, demonstrating adaptability. As a generalist predator, it feeds on many animals, contributing to its ecological significance."@en .
+:imageFile rdfs:label "Image File"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "The image file name generated by the image observation."@en .
 
 
-:Mammalia rdfs:label "Mammalia"@en-gb ;
-          <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
+:imageObservation rdfs:label "Image Observation"@en .
 
 
-:ManisJavanica rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
-               rdfs:label "Manis javanica"@la ,
-                          "Sunda Pangolin"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
-
-
-:Nasalis rdfs:label "Nasalis"@en-gb ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Nasalis is a genus within the family Cercopithecidae (Old World monkeys), specifically part of the subfamily Colobinae, which comprises leaf-eating monkeys. The genus Nasalis is characterized by its sole species, Nasalis larvatus, commonly known as the proboscis monkey."@en .
-
-
-:NasalisLarvatus rdfs:comment "Male proboscis monkeys have notably large noses, which are believed to have evolved due to their sexually competitive social system. Significant correlations exist between nose size, body size, testis size, and the number of females in a male's harem. This suggests that both male competition and female choice have driven the evolution of these enlarged noses."@en ;
-                 rdfs:label "Nasalis larvatus"@la ,
-                            "Proboscis Monkey"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."@en .
-
-
-:ObservableProperty rdfs:label "Observable Property"@en ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
-
-
-:Observation rdfs:label "Observation"@en ;
-             <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
-
-
-:Proboscidea rdfs:label "Proboscidea"@en-gb ;
-             <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
-
-
-:Pythonidae rdfs:label "Pythonidae"@en .
-
-
-:Reptilia rdfs:label "Reptilia"@en-gb ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
-
-
-:Sensor rdfs:label "Sensor"@en ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
-
-
-:SoilObservation rdfs:label "Soil Observation"@en ;
-                 :cNRatio "14.24"^^xsd:double ;
-                 :identifier "MB4" ;
-                 :inorganicP "25.03"^^xsd:double ;
-                 :plotName "Belian" ;
-                 :sand "20.66"^^xsd:double ;
-                 :totalP "263.74"^^xsd:double .
-
-
-:Species rdfs:label "Species"@en-gb ;
-         <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
-
-
-:Squamata rdfs:label "Squamata"@en-gb .
-
-
-:TreeObservation rdfs:label "Tree Observation"@en ;
-                 :date "2017-07-21"^^xsd:date ;
-                 :iD "TreeObs1" ;
-                 :treeNLianas 3 ;
-                 :treeNotes "" .
-
-
-:Viverridae rdfs:label "Viverridae"@en-gb .
-
-
-:hasFeatureOfInterest rdfs:comment "A relation between an Observation and the entity whose quality was observed."@en ;
-                      rdfs:label "has Feature Of Interest"@en .
+:landUse rdfs:label "Land Use"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Land use of the study plots."@en .
 
 
 :latitude rdfs:label "Latitude" ;
           <http://www.w3.org/2004/02/skos/core#definition> "Latitudinal coordinate of the elephant." .
 
 
+:lianaDBH_cm rdfs:label "lianaDBH_cm 10a"@en .
+
+
+:localDate rdfs:label "Local Date"@en ,
+                      "Local Date" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "The current local date in Sabah, Malaysia when the GPS collar collects its readings."@en ,
+                                                            "The local date in Sabah, Malaysia." .
+
+
 :longitude rdfs:label "Longitude" ;
            <http://www.w3.org/2004/02/skos/core#definition> "Longitudinal coordinate of the elephant." .
 
 
-:madeBySensor rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
-              rdfs:label "made by sensor"@en .
+:make rdfs:label "Camera Make"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "The make of the trail camera used to capture the image."@en .
+
+
+:model rdfs:label "Camera Model"@en ;
+       <http://www.w3.org/2004/02/skos/core#definition> "The model of the trail camera used to capture the image."@en .
+
+
+:silt rdfs:label "Silt"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Silt content of the soil sample."@en .
+
+
+:site rdfs:label "Site"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Geographical area/site which samples were taken from."@en .
+
+
+:soilObservation rdfs:label "Soil Observation"@en .
+
+
+:soilPH rdfs:label "Soil PH" ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Measured pH of the soil sample."@en .
+
+
+:speed rdfs:label "Speed" ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Speed of the elephant at the moment of data collection." .
+
+
+:subplot rdfs:label "subPlot"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Number of the subplot sampled within each 1 Ha plot."@en .
+
+
+:subplotRadius_m rdfs:label "SubplotRadius_m 30"@en .
+
+
+:temperature rdfs:label "Temperature" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Estimated temperature of the elephant in Celsius at the moment of data collection." .
+
+
+:totalC rdfs:label "Total C"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Total carbon content of the soil sample."@en .
+
+
+:totalN rdfs:label "Total N"@en ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Total nitrogen content of the soil sample."@en .
+
+
+:treeDBH_cm rdfs:label "TreeDBH_cm 110"@en .
+
+
+:treeHeight_m rdfs:label "treeHeight_m 60"@en .
+
+
+:treeID rdfs:label "TreeID"@en .
+
+
+:treeIndividualNo rdfs:label "TreeIndividualNo"@en .
+
+
+:treeObservation rdfs:label "Tree Observation"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
