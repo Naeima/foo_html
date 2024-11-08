@@ -1,24 +1,29 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "foo@en:Squamata" "foo@en:Mammalia" "foo@en:Animalia" "foo@en:Primates" "foo@en:Carnivora" "foo@en:Viverridae" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
+node [shape = rectangle, color="black"]; "foo@en:NasalisLarvatus" "foo@en:Soil" "foo@en:Squamata" "foo@en:Mammalia" "foo@en:FeatureOfInterest" "foo@en:Image" "foo@en:Malayopython" "foo@en:Animalia" "foo@en:Tree" "foo@en:Cercopithecidae" "foo@en:ManisJavanica" "foo@en:MalayopythonReticulatus" "foo@en:ElephasMaximus" "foo@en:Primates" "foo@en:Carnivora" "foo@en:Nasalis" "foo@en:Elephantidae" "foo@en:Reptilia" "foo@en:Pythonidae" "foo@en:Proboscidea" "foo@en:Chordata" ; /*classes style*/
+	"foo@en:Tree" -> "foo@en:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"foo@en:Cercopithecidae" -> "foo@en:Primates" [ label = "rdfs:subClassOf" ];
 	"foo@en:Chordata" -> "foo@en:Animalia" [ label = "rdfs:subClassOf" ];
+	"foo@en:Soil" -> "foo@en:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"foo@en:Squamata" -> "foo@en:Reptilia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Elephantidae" -> "foo@en:Proboscidea" [ label = "rdfs:subClassOf" ];
 	"foo@en:Proboscidea" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Reptilia" -> "foo@en:Chordata" [ label = "rdfs:subClassOf" ];
+	"foo@en:ManisJavanica" -> "foo@en:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"foo@en:ManisJavanica" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Nasalis" -> "foo@en:Cercopithecidae" [ label = "rdfs:subClassOf" ];
-	"foo@en:Viverridae" -> "foo@en:Family" [ label = "rdfs:subClassOf" ];
+	"foo@en:ElephasMaximus" -> "foo@en:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"foo@en:ElephasMaximus" -> "foo@en:Elephantidae" [ label = "rdfs:subClassOf" ];
 	"foo@en:Animalia" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"foo@en:Malayopython" -> "foo@en:Pythonidae" [ label = "rdfs:subClassOf" ];
 	"foo@en:Carnivora" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:Mammalia" -> "foo@en:Chordata" [ label = "rdfs:subClassOf" ];
+	"foo@en:MalayopythonReticulatus" -> "foo@en:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 	"foo@en:MalayopythonReticulatus" -> "foo@en:Malayopython" [ label = "rdfs:subClassOf" ];
 	"foo@en:Pythonidae" -> "foo@en:Squamata" [ label = "rdfs:subClassOf" ];
 	"foo@en:Primates" -> "foo@en:Mammalia" [ label = "rdfs:subClassOf" ];
 	"foo@en:NasalisLarvatus" -> "foo@en:Nasalis" [ label = "rdfs:subClassOf" ];
+	"foo@en:Image" -> "foo@en:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 
 }
