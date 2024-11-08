@@ -130,30 +130,39 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
+# http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#hasFeatureOfInterest> .
+# 
+# http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#isFeatureOfInterestOf> .
+# 
+# http://www.w3.org/ns/sosa/isObservedBy
+<http://www.w3.org/ns/sosa/isObservedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#isObservedBy> .
+# 
+# http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#madeBySensor> .
+# 
+# http://www.w3.org/ns/sosa/madeObservation
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#madeObservation> .
+# 
+# http://www.w3.org/ns/sosa/observedProperty
+<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#observedProperty> .
+# 
+# http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#observes> .
+# 
 # https://w3id.org/def/foo#hasFeatureOfInterest
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> .
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Observation> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#FeatureOfInterest> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Image> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#MalayopythonReticulatus> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#ManisJavanica> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#NasalisLarvatus> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Soil> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an Observation and the entity whose quality was observed."@en .
+<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "has Feature Of Interest"@en .
 # 
 # https://w3id.org/def/foo#isFeatureOfInterestOf
 <https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/hasFeatureOfInterest> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#FeatureOfInterest> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Image> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#MalayopythonReticulatus> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#ManisJavanica> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#NasalisLarvatus> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Soil> .
-<https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Tree> .
 <https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a FeatureOfInterest and an Observation about it."@en .
 <https://w3id.org/def/foo#isFeatureOfInterestOf> <http://www.w3.org/2000/01/rdf-schema#label> "is feature of interest of"@en .
@@ -171,6 +180,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/foo#madeObservation> .
 <https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Sensor> .
+<https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an Observation and the Sensor which made the Observation."@en .
+<https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "made by sensor"@en .
 # 
 # https://w3id.org/def/foo#madeObservation
 <https://w3id.org/def/foo#madeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -203,6 +214,17 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
+# https://w3id.org/def/foo#animalDetected
+<https://w3id.org/def/foo#animalDetected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/foo#animalDetected> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#imageObservation> .
+<https://w3id.org/def/foo#imageObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#animalDetected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/foo#cameraLocation
+<https://w3id.org/def/foo#cameraLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/foo#cameraLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#imageObservation> .
+<https://w3id.org/def/foo#cameraLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
 # https://w3id.org/def/foo#clay
 <https://w3id.org/def/foo#clay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/foo#clay> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#soilObservation> .
@@ -234,7 +256,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#gMTDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/foo#gMTDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#gPSObservation> .
 <https://w3id.org/def/foo#gMTDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#imageObservation> .
-<https://w3id.org/def/foo#imageObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#gMTDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
 # 
 # https://w3id.org/def/foo#gMTTime
@@ -257,6 +278,11 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/foo#id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#gPSObservation> .
 <https://w3id.org/def/foo#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/def/foo#imageFile
+<https://w3id.org/def/foo#imageFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/foo#imageFile> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#imageObservation> .
+<https://w3id.org/def/foo#imageFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://w3id.org/def/foo#landUse
 <https://w3id.org/def/foo#landUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -393,11 +419,51 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
+# http://purl.bioontology.org/ontology/NCBITAXON/9974
+<http://purl.bioontology.org/ontology/NCBITAXON/9974> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.bioontology.org/ontology/NCBITAXON/9974> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#ManisJavanica> .
+# 
+# http://purl.obolibrary.org/obo/ENVO_00000120
+<http://purl.obolibrary.org/obo/ENVO_00000120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/ENVO_00000120> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#OilPalmPlantation> .
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_1496304
+<http://purl.obolibrary.org/obo/NCBITaxon_1496304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCBITaxon_1496304> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Malayopython> .
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_1496311
+<http://purl.obolibrary.org/obo/NCBITaxon_1496311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCBITaxon_1496311> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#MalayopythonReticulatus> .
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_34984
+<http://purl.obolibrary.org/obo/NCBITaxon_34984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCBITaxon_34984> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Pythonidae> .
+# 
+# http://purl.obolibrary.org/obo/NCBITaxon_43780
+<http://purl.obolibrary.org/obo/NCBITaxon_43780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCBITaxon_43780> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#NasalisLarvatus> .
+# 
 # http://www.w3.org/ns/prov#Agent
 <http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#FeatureOfInterest> .
+# 
+# http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#ObservableProperty> .
+# 
+# http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Observation> .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Sensor> .
+# 
+# http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Image> .
 # 
 # http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -405,42 +471,69 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://saref.etsi.org/saref4agri/Soil
+<https://saref.etsi.org/saref4agri/Soil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4agri/Soil> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Soil> .
+# 
 # https://w3id.org/def/foo#Animalia
 <https://w3id.org/def/foo#Animalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Animalia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2000/01/rdf-schema#label> "Animalia"@en-gb .
+<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
 # 
 # https://w3id.org/def/foo#Carnivora
 <https://w3id.org/def/foo#Carnivora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
+<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#label> "Carnivora"@en-gb .
+<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
 # 
 # https://w3id.org/def/foo#Cercopithecidae
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Primates> .
 <https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2000/01/rdf-schema#label> "Cercopithecidae"@en-gb .
+<https://w3id.org/def/foo#Cercopithecidae> <http://www.w3.org/2004/02/skos/core#definition> "African and Asian monkeys with tail as balancing organ, opposable thumb and large toe, nostrils close together and directed downward; social in large groups, some ground dwelling" .
 # 
 # https://w3id.org/def/foo#Chordata
 <https://w3id.org/def/foo#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Animalia> .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#label> "Chordata"@en-gb .
+<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
 # 
 # https://w3id.org/def/foo#Elephantidae
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Proboscidea> .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#label> "Elephantidae"@en-gb .
+<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
 # 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Elephantidae> .
-# 
-# https://w3id.org/def/foo#Family
-<https://w3id.org/def/foo#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 # 
 # https://w3id.org/def/foo#FeatureOfInterest
 <https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en .
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Of Interest"@en .
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en .
+<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#example> "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en .
 # 
 # https://w3id.org/def/foo#Genus
 <https://w3id.org/def/foo#Genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Genus> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> .
+<https://w3id.org/def/foo#Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en-gb .
 # 
 # https://w3id.org/def/foo#Image
 <https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 # 
 # https://w3id.org/def/foo#Malayopython
 <https://w3id.org/def/foo#Malayopython> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -449,6 +542,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#MalayopythonReticulatus
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Malayopython> .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Malayopython reticulatus"@la .
 <https://w3id.org/def/foo#MalayopythonReticulatus> <http://www.w3.org/2000/01/rdf-schema#label> "Reticulated Python"@en .
@@ -456,10 +550,15 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Mammalia
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Chordata> .
+<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#label> "Mammalia"@en-gb .
+<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
 # 
 # https://w3id.org/def/foo#ManisJavanica
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#comment> "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en .
 <https://w3id.org/def/foo#ManisJavanica> <http://www.w3.org/2000/01/rdf-schema#label> "Manis javanica"@la .
@@ -482,18 +581,31 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#ObservableProperty
 <https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Property"@en .
+<https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
 # 
 # https://w3id.org/def/foo#Observation
 <https://w3id.org/def/foo#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+<https://w3id.org/def/foo#Observation> <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
+# 
+# https://w3id.org/def/foo#OilPalmPlantation
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#label> "Oil Palm Plantation" .
 # 
 # https://w3id.org/def/foo#Primates
 <https://w3id.org/def/foo#Primates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Primates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 <https://w3id.org/def/foo#Primates> <http://www.w3.org/2000/01/rdf-schema#label> "Primates"@en-gb .
+<https://w3id.org/def/foo#Primates> <http://www.w3.org/2004/02/skos/core#definition> "An order of mammals consisting of more than 300 species that include LEMURS; LORISIDAE; TARSIERS; MONKEYS; and HOMINIDS. They are characterized by a relatively large brain when compared with other terrestrial" .
 # 
 # https://w3id.org/def/foo#Proboscidea
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
+<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscidea"@en-gb .
+<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
 # 
 # https://w3id.org/def/foo#Pythonidae
 <https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -502,27 +614,37 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Reptilia
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Chordata> .
+<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#label> "Reptilia"@en-gb .
+<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
 # 
 # https://w3id.org/def/foo#Sensor
 <https://w3id.org/def/foo#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
 # 
 # https://w3id.org/def/foo#Soil
 <https://w3id.org/def/foo#Soil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Soil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 # 
 # https://w3id.org/def/foo#Species
 <https://w3id.org/def/foo#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Species> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> .
+<https://w3id.org/def/foo#Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en-gb .
+<https://w3id.org/def/foo#Species> <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
 # 
 # https://w3id.org/def/foo#Squamata
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Squamata> <http://www.w3.org/2002/07/owl#equivalentClass> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> .
+<https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/foo#Squamata> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Reptilia> .
+<https://w3id.org/def/foo#Squamata> <http://www.w3.org/2000/01/rdf-schema#label> "Squamata"@en-gb .
 # 
 # https://w3id.org/def/foo#Tree
 <https://w3id.org/def/foo#Tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/def/foo#Viverridae
-<https://w3id.org/def/foo#Viverridae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/foo#Viverridae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Family> .
+<https://w3id.org/def/foo#Tree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 # 
 # https://w3id.org/def/foo#gPSObservation
 # 
@@ -532,8 +654,16 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#treeObservation
 # 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
+# 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Class
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Family
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -544,14 +674,22 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
+# 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Order
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
+# 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
 # 
 # https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank
 <https://www.bbc.co.uk/ontologies/wildlife-ontology#TaxonRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -564,62 +702,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #
 # #################################################################
 # 
-# 
-# http://www.w3.org/2003/01/geo/wgs84_pos#lat
-<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#latitude> .
-<https://w3id.org/def/foo#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#latitude
-# 
-# http://www.w3.org/2003/01/geo/wgs84_pos#long
-<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#longitude> .
-<https://w3id.org/def/foo#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#longitude
-# 
-# http://www.w3.org/ns/sosa/FeatureOfInterest
-<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#FeatureOfInterest> .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#FeatureOfInterest
-# 
-# http://www.w3.org/ns/sosa/ObservableProperty
-<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#ObservableProperty> .
-<https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#ObservableProperty
-# 
-# http://www.w3.org/ns/sosa/Observation
-<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#Observation> .
-<https://w3id.org/def/foo#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#Observation
-# 
-# http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#Sensor> .
-<https://w3id.org/def/foo#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#Sensor
-# 
-# http://www.w3.org/ns/sosa/hasFeatureOfInterest
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#hasFeatureOfInterest> .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#hasFeatureOfInterest
-# 
-# http://www.w3.org/ns/sosa/madeBySensor
-<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#madeBySensor> .
-<https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#madeBySensor
 # 
 # https://ontology.forest-observatory.org
 <https://ontology.forest-observatory.org> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -644,15 +726,14 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://link.springer.com/chapter/10.1007/978-3-031-43458-7_29> <http://xmlns.com/foaf/0.1/homepage> <https://rdcu.be/dKNG2> .
 <https://link.springer.com/chapter/10.1007/978-3-031-43458-7_29> <http://xmlns.com/foaf/0.1/name> "Springer, Cham"@en .
 # 
+# https://saref.etsi.org/saref4agri/SoilTensiometer
+<https://saref.etsi.org/saref4agri/SoilTensiometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4agri/SoilTensiometer> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/def/foo#soilSensor> .
+# 
+# https://w3id.org/def/foo#soilSensor
+# 
 # https://w3id.org/def/foo#Abaw
 <https://w3id.org/def/foo#Abaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#Animalia
-<https://w3id.org/def/foo#Animalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia
 # 
 # https://w3id.org/def/foo#Aqeela
 <https://w3id.org/def/foo#Aqeela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -678,57 +759,14 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#BinbinganGPS
 <https://w3id.org/def/foo#BinbinganGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/def/foo#CameraTrap
-<https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
-<https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Image> .
-<https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#make> .
-<https://w3id.org/def/foo#make> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#model> .
-<https://w3id.org/def/foo#model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#CameraTrap> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#imageObservation> .
-<https://w3id.org/def/foo#imageObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#CameraTrap> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Trap"@en .
-# 
-# https://w3id.org/def/foo#Carnivora
-<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
-# 
-# https://w3id.org/def/foo#Chordata
-<https://w3id.org/def/foo#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
-# 
 # https://w3id.org/def/foo#Dara
 <https://w3id.org/def/foo#Dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#DaraGPS
 <https://w3id.org/def/foo#DaraGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/def/foo#Elephantidae
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
-# 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#FeatureOfInterest
-# 
-# https://w3id.org/def/foo#Genus
-<https://w3id.org/def/foo#Genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Genus> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus
 # 
 # https://w3id.org/def/foo#Guli
 <https://w3id.org/def/foo#Guli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -737,6 +775,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#GuliGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#Image
+<https://w3id.org/def/foo#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#Ita
 <https://w3id.org/def/foo#Ita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -780,29 +819,11 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#MaliauGPS
 <https://w3id.org/def/foo#MaliauGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/def/foo#Mammalia
-<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
-# 
 # https://w3id.org/def/foo#Merotai
 <https://w3id.org/def/foo#Merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#MerotaiGPS
 <https://w3id.org/def/foo#MerotaiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#ObservableProperty
-# 
-# https://w3id.org/def/foo#Observation
-# 
-# https://w3id.org/def/foo#Proboscidea
-<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
 # 
 # https://w3id.org/def/foo#Puteri
 <https://w3id.org/def/foo#Puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -816,20 +837,11 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#PututGPS
 <https://w3id.org/def/foo#PututGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/def/foo#Reptilia
-<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
-# 
 # https://w3id.org/def/foo#Sejati
 <https://w3id.org/def/foo#Sejati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#SejatiGPS
 <https://w3id.org/def/foo#SejatiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#Sensor
 # 
 # https://w3id.org/def/foo#Seri
 <https://w3id.org/def/foo#Seri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -839,20 +851,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Soil
 <https://w3id.org/def/foo#Soil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://w3id.org/def/foo#Species
-<https://w3id.org/def/foo#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Species> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
-# 
-# https://w3id.org/def/foo#Squamata
-<https://w3id.org/def/foo#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Squamata> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
 # 
 # https://w3id.org/def/foo#Tree
 <https://w3id.org/def/foo#Tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -875,13 +873,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#Umas2GPS
 <https://w3id.org/def/foo#Umas2GPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://w3id.org/def/foo#Viverridae
-<https://w3id.org/def/foo#Viverridae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#Viverridae> <http://www.w3.org/2002/07/owl#sameAs> <https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> .
-<https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae
-# 
 # https://w3id.org/def/foo#abaw
 <https://w3id.org/def/foo#abaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#abaw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#ElephasMaximus> .
@@ -893,8 +884,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#abawGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#abawGPS> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Abaw> .
 <https://w3id.org/def/foo#abawGPS> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#gPSObservation> .
-<https://w3id.org/def/foo#gPSObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/foo#abawGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Umas2 GPS"@en .
+<https://w3id.org/def/foo#abawGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Abaw GPS"@en .
 <https://w3id.org/def/foo#abawGPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en .
 # 
 # https://w3id.org/def/foo#altitude
@@ -959,6 +949,17 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#cameraLocation
 <https://w3id.org/def/foo#cameraLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#cameraTrap
+<https://w3id.org/def/foo#cameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#cameraTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
+<https://w3id.org/def/foo#cameraTrap> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Image> .
+<https://w3id.org/def/foo#cameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#make> .
+<https://w3id.org/def/foo#make> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#cameraTrap> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#model> .
+<https://w3id.org/def/foo#model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#cameraTrap> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#imageObservation> .
+<https://w3id.org/def/foo#cameraTrap> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Trap"@en .
+# 
 # https://w3id.org/def/foo#clay
 <https://w3id.org/def/foo#clay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -979,7 +980,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#daraGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#daraGPS> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Dara> .
 <https://w3id.org/def/foo#daraGPS> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#gPSObservation> .
-<https://w3id.org/def/foo#daraGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Umas2 GPS"@en .
+<https://w3id.org/def/foo#daraGPS> <http://www.w3.org/2000/01/rdf-schema#label> "Dara GPS"@en .
 <https://w3id.org/def/foo#daraGPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en .
 # 
 # https://w3id.org/def/foo#date
@@ -998,6 +999,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#gMTTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#gPSObservation
+<https://w3id.org/def/foo#gPSObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#ElephasMaximus> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#AqeelaGPS> .
@@ -1033,11 +1035,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#id> .
 <https://w3id.org/def/foo#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#latitude> .
+<https://w3id.org/def/foo#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#local-time> .
 <https://w3id.org/def/foo#local-time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#localDate> .
 <https://w3id.org/def/foo#localDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#longitude> .
+<https://w3id.org/def/foo#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#speed> .
 <https://w3id.org/def/foo#speed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#gPSObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#temperature> .
@@ -1059,8 +1063,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#hDOP
 # 
-# https://w3id.org/def/foo#hasFeatureOfInterest
-# 
 # https://w3id.org/def/foo#horizon
 <https://w3id.org/def/foo#horizon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -1076,9 +1078,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#imageFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#imageObservation
+<https://w3id.org/def/foo#imageObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#imageObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#imageObservation> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Image> .
-<https://w3id.org/def/foo#imageObservation> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#CameraTrap> .
+<https://w3id.org/def/foo#imageObservation> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#cameraTrap> .
 <https://w3id.org/def/foo#imageObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#animalDetected> .
 <https://w3id.org/def/foo#imageObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#cameraLocation> .
 <https://w3id.org/def/foo#imageObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#imageFile> .
@@ -1199,8 +1202,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#longitude
 # 
-# https://w3id.org/def/foo#madeBySensor
-# 
 # https://w3id.org/def/foo#make
 # 
 # https://w3id.org/def/foo#maliau
@@ -1306,7 +1307,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#soilObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#soilObservation> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Soil> .
 <https://w3id.org/def/foo#soilObservation> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#soilSensor> .
-<https://w3id.org/def/foo#soilSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#soilObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#cNRatio> .
 <https://w3id.org/def/foo#soilObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#clay> .
 <https://w3id.org/def/foo#soilObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#horizon> .
@@ -1331,6 +1331,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#soilPH
 # 
 # https://w3id.org/def/foo#soilSensor
+<https://w3id.org/def/foo#soilSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#soilSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#soilSensor> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Soil> .
 <https://w3id.org/def/foo#soilSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Sensor"@en .
@@ -1373,7 +1374,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#treeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Observation> .
 <https://w3id.org/def/foo#treeObservation> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Tree> .
 <https://w3id.org/def/foo#treeObservation> <https://w3id.org/def/foo#madeBySensor> <https://w3id.org/def/foo#treeSensor> .
-<https://w3id.org/def/foo#treeSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#treeObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#date> .
 <https://w3id.org/def/foo#treeObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#iD> .
 <https://w3id.org/def/foo#treeObservation> <https://w3id.org/def/foo#observedProperty> <https://w3id.org/def/foo#lianaDBH_cm> .
@@ -1389,6 +1389,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#treeProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#treeSensor
+<https://w3id.org/def/foo#treeSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/foo#treeSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#treeSensor> <https://w3id.org/def/foo#hasFeatureOfInterest> <https://w3id.org/def/foo#Tree> .
 <https://w3id.org/def/foo#treeSensor> <https://w3id.org/def/foo#observes> <https://w3id.org/def/foo#treeProperties> .
@@ -1436,28 +1437,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#umas2GPS> <http://www.w3.org/2000/01/rdf-schema#label> "Umas2 GPS"@en .
 <https://w3id.org/def/foo#umas2GPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Umas2."@en .
 # 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Animalia
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Carnivora
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Chordata
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Elephantidae
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Mammalia
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Proboscidea
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Reptilia
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Species
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata
-# 
-# https://www.bbc.co.uk/ontologies/wildlife-ontology#Viverridae
-# 
 # 
 # 
 # #################################################################
@@ -1467,62 +1446,23 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
-<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2000/01/rdf-schema#label> "Animalia"@en-gb .
-<https://w3id.org/def/foo#Animalia> <http://www.w3.org/2004/02/skos/core#definition> "Animalia is the scientific grouping that includes all animals. Scientists, historians, and others classify similar things together, using a taxonomy."@en .
-# 
-<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2000/01/rdf-schema#label> "Carnivora"@en-gb .
-<https://w3id.org/def/foo#Carnivora> <http://www.w3.org/2004/02/skos/core#definition> "Carnivora is a monophyletic order of placental mammals consisting of the most recent common ancestor of all cats and dogs, and all descendants of that ancestor. Members of this group are formally referred to as carnivorans, and have evolved to specialize in eating flesh."@en .
-# 
-<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2000/01/rdf-schema#label> "Chordata"@en-gb .
-<https://w3id.org/def/foo#Chordata> <http://www.w3.org/2004/02/skos/core#definition> "A large phylum of animals that includes the vertebrates together with the sea squirts and lancelets. They are distinguished by the possession of a notochord at some stage during their development."@en .
-# 
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2000/01/rdf-schema#label> "Elephantidae"@en-gb .
-<https://w3id.org/def/foo#Elephantidae> <http://www.w3.org/2004/02/skos/core#definition> "ELEPHANTIDAE is a family of bulky mammals (order Proboscidea) comprising the recent elephants and related extinct forms."@en .
-# 
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#comment> "Bornean elephants exhibit distinct morphological and behavioural traits compared to mainland Asian elephants, and their genetic uniqueness emphasises their priority for conservation efforts. Although they are considered an evolutionary significant unit requiring tailored conservation measures, their formal recognition as a subspecies awaits further research. Restricted to about 5% of Borneo, primarily in Sabah, Bornean elephants typically form family groups of 5 to 20 individuals, occasionally merging into larger herds of up to 200."@en .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#label> "Asian Elephant"@en .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2000/01/rdf-schema#label> "Elephas maximus"@la .
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/2004/02/skos/core#definition> "Elephas maximus, commonly known as the Asian elephant, is a species of large mammal native to various regions in South and Southeast Asia, including India, Sri Lanka, Thailand, and parts of Indonesia. It is distinguished by its smaller ears compared to its African relatives, and it has a prominent domed head with two hemispherical bulges. The Asian elephant is classified as Endangered due to significant threats from habitat loss, fragmentation, and poaching. This species plays a crucial ecological role, aiding in forest maintenance through seed dispersal and the creation of clearings in dense vegetation."@en .
 # 
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Of Interest"@en .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#definition> "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."@en .
-<https://w3id.org/def/foo#FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#example> "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en .
-# 
-<https://w3id.org/def/foo#Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en-gb .
-# 
+<https://w3id.org/def/foo#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "The image as feature of interest for the camera trap because it carries data critical to wildlife analysis such as species. However, it should ideally have a clear, semantically relevant role—such as representing visual evidence in an image recognition or object detection model—otherwise, it might dilute the clarity of the knowledge graph or ontology." .
 <https://w3id.org/def/foo#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Trap Image"@en .
 <https://w3id.org/def/foo#Image> <http://www.w3.org/2004/02/skos/core#definition> "Image generated by motion-activated wildlife cameras."@en .
 # 
-<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2000/01/rdf-schema#label> "Mammalia"@en-gb .
-<https://w3id.org/def/foo#Mammalia> <http://www.w3.org/2004/02/skos/core#definition> "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."@en .
-# 
-<https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observable Property"@en .
-<https://w3id.org/def/foo#ObservableProperty> <http://www.w3.org/2004/02/skos/core#definition> "An observable quality (property, characteristic) of a FeatureOfInterest."@en .
-# 
-<https://w3id.org/def/foo#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
-<https://w3id.org/def/foo#Observation> <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest (e.g., Elephant)."@en .
-# 
-<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscidea"@en-gb .
-<https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
-# 
-<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2000/01/rdf-schema#label> "Reptilia"@en-gb .
-<https://w3id.org/def/foo#Reptilia> <http://www.w3.org/2004/02/skos/core#definition> "Reptilia is a vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises. They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land."@en .
-# 
-<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
-<https://w3id.org/def/foo#Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."@en .
-# 
 <https://w3id.org/def/foo#Soil> <http://www.w3.org/2000/01/rdf-schema#label> "Soil"@en .
-# 
-<https://w3id.org/def/foo#Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en-gb .
-<https://w3id.org/def/foo#Species> <http://www.w3.org/2004/02/skos/core#definition> "Generic class defining a biological species."@en .
-# 
-<https://w3id.org/def/foo#Squamata> <http://www.w3.org/2000/01/rdf-schema#label> "Squamata"@en-gb .
 # 
 <https://w3id.org/def/foo#Tree> <http://www.w3.org/2000/01/rdf-schema#label> "Tree"@en .
 # 
-<https://w3id.org/def/foo#Viverridae> <http://www.w3.org/2000/01/rdf-schema#label> "Viverridae"@en-gb .
+<https://w3id.org/def/foo#animalDetected> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Detected"@en .
+# 
+<https://w3id.org/def/foo#cameraLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Location"@en .
+<https://w3id.org/def/foo#cameraLocation> <http://www.w3.org/2004/02/skos/core#definition> "The location information (address) of the camera trap."@en .
 # 
 <https://w3id.org/def/foo#clay> <http://www.w3.org/2000/01/rdf-schema#label> "Clay"@en .
 <https://w3id.org/def/foo#clay> <http://www.w3.org/2004/02/skos/core#definition> "Clay content of the soil sample."@en .
@@ -1556,13 +1496,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#hDOP> <http://www.w3.org/2000/01/rdf-schema#label> "HDOP" .
 <https://w3id.org/def/foo#hDOP> <http://www.w3.org/2004/02/skos/core#definition> "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
 # 
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an Observation and the entity whose quality was observed."@en .
-<https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "has Feature Of Interest"@en .
-# 
 <https://w3id.org/def/foo#horizon> <http://www.w3.org/2000/01/rdf-schema#label> "Horizon"@en .
 <https://w3id.org/def/foo#horizon> <http://www.w3.org/2004/02/skos/core#definition> "Soil horizon sampled."@en .
 # 
 <https://w3id.org/def/foo#id> <http://www.w3.org/2000/01/rdf-schema#label> "id"@en .
+# 
+<https://w3id.org/def/foo#imageFile> <http://www.w3.org/2000/01/rdf-schema#label> "Image File"@en .
+<https://w3id.org/def/foo#imageFile> <http://www.w3.org/2004/02/skos/core#definition> "The image file name generated by the image observation."@en .
 # 
 <https://w3id.org/def/foo#imageObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Image Observation"@en .
 # 
@@ -1581,9 +1521,6 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 <https://w3id.org/def/foo#longitude> <http://www.w3.org/2000/01/rdf-schema#label> "Longitude" .
 <https://w3id.org/def/foo#longitude> <http://www.w3.org/2004/02/skos/core#definition> "Longitudinal coordinate of the elephant." .
-# 
-<https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an Observation and the Sensor which made the Observation."@en .
-<https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "made by sensor"@en .
 # 
 <https://w3id.org/def/foo#make> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Make"@en .
 <https://w3id.org/def/foo#make> <http://www.w3.org/2004/02/skos/core#definition> "The make of the trail camera used to capture the image."@en .
