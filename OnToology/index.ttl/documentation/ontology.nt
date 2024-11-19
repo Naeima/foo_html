@@ -591,6 +591,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#OilPalmPlantation
 <https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
 <https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#label> "Oil Palm Plantation" .
 # 
 # https://w3id.org/def/foo#Primates

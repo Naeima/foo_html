@@ -1138,6 +1138,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#OilPalmPlantation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
         <rdfs:label>Oil Palm Plantation</rdfs:label>
     </owl:Class>
     
