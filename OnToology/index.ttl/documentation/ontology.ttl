@@ -675,6 +675,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#OilPalmPlantation
 :OilPalmPlantation rdf:type owl:Class ;
+                   rdfs:subClassOf :FeatureOfInterest ;
                    rdfs:label "Oil Palm Plantation" .
 
 
