@@ -308,6 +308,7 @@ foo:ManisJavanica a owl:Class ;
 
 foo:OilPalmPlantation a  owl:Class ;
     rdfs:label   "Oil Palm Plantation" ;
+    rdfs:subClassOf  foo:FeatureOfInterest  ;
     owl:equivalentClass      <http://purl.obolibrary.org/obo/ENVO_00000120> . 
 
 
