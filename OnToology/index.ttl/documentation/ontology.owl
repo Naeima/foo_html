@@ -16,7 +16,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
-     xmlns:schema1="https://schema.org/">
+     xmlns:schema1="https://schema.org/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="https://w3id.org/def/foo#">
         <owl:versionIRI rdf:resource="https://w3id.org/def/foo#V2.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
@@ -145,6 +146,20 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#latitude -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#latitude"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#longitude -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#longitude"/>
     
 
 
@@ -1138,6 +1153,8 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/foo#OilPalmPlantation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/foo#FeatureOfInterest"/>
+        <rdfs:comment>Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans.</rdfs:comment>
         <rdfs:label>Oil Palm Plantation</rdfs:label>
     </owl:Class>
     
@@ -2411,6 +2428,17 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#model"/>
+    
+
+
+    <!-- https://w3id.org/def/foo#plantation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/foo#plantation">
+        <rdf:type rdf:resource="https://w3id.org/def/foo#OilPalmPlantation"/>
+        <wgs84_pos:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.36</wgs84_pos:latitude>
+        <wgs84_pos:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">118.66</wgs84_pos:longitude>
+    </owl:NamedIndividual>
     
 
 
