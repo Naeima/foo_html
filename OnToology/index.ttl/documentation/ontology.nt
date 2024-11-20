@@ -67,17 +67,41 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/prov#generatedAtTime
 <http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -100,6 +124,9 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://xmlns.com/foaf/0.1/mbox
 <http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://schema.org/citation
 <https://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -118,6 +145,9 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # #################################################################
 # 
 # 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # http://www.w3.org/2001/XMLSchema#time
 <http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
@@ -131,25 +161,16 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # 
 # http://www.w3.org/ns/sosa/hasFeatureOfInterest
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#hasFeatureOfInterest> .
 # 
 # http://www.w3.org/ns/sosa/isFeatureOfInterestOf
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#isFeatureOfInterestOf> .
 # 
-# http://www.w3.org/ns/sosa/isObservedBy
-<http://www.w3.org/ns/sosa/isObservedBy> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#isObservedBy> .
-# 
 # http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#madeBySensor> .
-# 
-# http://www.w3.org/ns/sosa/madeObservation
-<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#madeObservation> .
-# 
-# http://www.w3.org/ns/sosa/observedProperty
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#observedProperty> .
-# 
-# http://www.w3.org/ns/sosa/observes
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#observes> .
 # 
 # https://w3id.org/def/foo#hasFeatureOfInterest
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -450,15 +471,19 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#FeatureOfInterest> .
 # 
 # http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#ObservableProperty> .
 # 
 # http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Observation> .
 # 
 # http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Sensor> .
 # 
 # http://xmlns.com/foaf/0.1/Image
@@ -591,6 +616,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#OilPalmPlantation
 <https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#comment> "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans." .
 <https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#label> "Oil Palm Plantation" .
 # 
 # https://w3id.org/def/foo#Primates
@@ -824,6 +851,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#MerotaiGPS
 <https://w3id.org/def/foo#MerotaiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Plantation
+<https://w3id.org/def/foo#Plantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Plantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#OilPalmPlantation> .
+<https://w3id.org/def/foo#Plantation> <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "5.36"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/foo#Plantation> <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "118.66"^^<http://www.w3.org/2001/XMLSchema#float> .
 # 
 # https://w3id.org/def/foo#Puteri
 <https://w3id.org/def/foo#Puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

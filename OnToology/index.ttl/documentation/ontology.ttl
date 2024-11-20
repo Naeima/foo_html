@@ -82,6 +82,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/doi
 <http://purl.org/dc/terms/doi> rdf:type owl:AnnotationProperty .
 
@@ -90,12 +94,40 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#generatedAtTime
@@ -126,6 +158,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/citation
 <https://schema.org/citation> rdf:type owl:AnnotationProperty .
 
@@ -142,6 +178,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 #    Datatypes
 #################################################################
 
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#time
 xsd:time rdf:type rdfs:Datatype .
 
@@ -151,31 +191,18 @@ xsd:time rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://www.w3.org/ns/sosa/hasFeatureOfInterest
-<http://www.w3.org/ns/sosa/hasFeatureOfInterest> owl:equivalentProperty :hasFeatureOfInterest .
+<http://www.w3.org/ns/sosa/hasFeatureOfInterest> rdf:type owl:ObjectProperty ;
+                                                 owl:equivalentProperty :hasFeatureOfInterest .
 
 
 ###  http://www.w3.org/ns/sosa/isFeatureOfInterestOf
-<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> owl:equivalentProperty :isFeatureOfInterestOf .
-
-
-###  http://www.w3.org/ns/sosa/isObservedBy
-<http://www.w3.org/ns/sosa/isObservedBy> owl:equivalentProperty :isObservedBy .
+<http://www.w3.org/ns/sosa/isFeatureOfInterestOf> rdf:type owl:ObjectProperty ;
+                                                  owl:equivalentProperty :isFeatureOfInterestOf .
 
 
 ###  http://www.w3.org/ns/sosa/madeBySensor
-<http://www.w3.org/ns/sosa/madeBySensor> owl:equivalentProperty :madeBySensor .
-
-
-###  http://www.w3.org/ns/sosa/madeObservation
-<http://www.w3.org/ns/sosa/madeObservation> owl:equivalentProperty :madeObservation .
-
-
-###  http://www.w3.org/ns/sosa/observedProperty
-<http://www.w3.org/ns/sosa/observedProperty> owl:equivalentProperty :observedProperty .
-
-
-###  http://www.w3.org/ns/sosa/observes
-<http://www.w3.org/ns/sosa/observes> owl:equivalentProperty :observes .
+<http://www.w3.org/ns/sosa/madeBySensor> rdf:type owl:ObjectProperty ;
+                                         owl:equivalentProperty :madeBySensor .
 
 
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
@@ -514,19 +541,23 @@ xsd:time rdf:type rdfs:Datatype .
 
 
 ###  http://www.w3.org/ns/sosa/FeatureOfInterest
-<http://www.w3.org/ns/sosa/FeatureOfInterest> owl:equivalentClass :FeatureOfInterest .
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class ;
+                                              owl:equivalentClass :FeatureOfInterest .
 
 
 ###  http://www.w3.org/ns/sosa/ObservableProperty
-<http://www.w3.org/ns/sosa/ObservableProperty> owl:equivalentClass :ObservableProperty .
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class ;
+                                               owl:equivalentClass :ObservableProperty .
 
 
 ###  http://www.w3.org/ns/sosa/Observation
-<http://www.w3.org/ns/sosa/Observation> owl:equivalentClass :Observation .
+<http://www.w3.org/ns/sosa/Observation> rdf:type owl:Class ;
+                                        owl:equivalentClass :Observation .
 
 
 ###  http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> owl:equivalentClass :Sensor .
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class ;
+                                   owl:equivalentClass :Sensor .
 
 
 ###  http://xmlns.com/foaf/0.1/Image
@@ -675,6 +706,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#OilPalmPlantation
 :OilPalmPlantation rdf:type owl:Class ;
+                   rdfs:subClassOf :FeatureOfInterest ;
+                   rdfs:comment "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans." ;
                    rdfs:label "Oil Palm Plantation" .
 
 
@@ -976,6 +1009,13 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#MerotaiGPS
 :MerotaiGPS rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#Plantation
+:Plantation rdf:type owl:NamedIndividual ,
+                     :OilPalmPlantation ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "5.36"^^xsd:float ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "118.66"^^xsd:float .
 
 
 ###  https://w3id.org/def/foo#Puteri

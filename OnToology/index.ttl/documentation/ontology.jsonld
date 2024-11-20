@@ -113,19 +113,46 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/doi",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#time",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#Agent",
@@ -144,58 +171,45 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/ObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/def/foo#ObservableProperty"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/def/foo#Observation"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/def/foo#Sensor"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
     "@id" : "https://w3id.org/def/foo#hasFeatureOfInterest"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
     "@id" : "https://w3id.org/def/foo#isFeatureOfInterestOf"
   } ]
 }, {
-  "@id" : "http://www.w3.org/ns/sosa/isObservedBy",
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/def/foo#isObservedBy"
-  } ]
-}, {
   "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
     "@id" : "https://w3id.org/def/foo#madeBySensor"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/sosa/madeObservation",
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/def/foo#madeObservation"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/sosa/observedProperty",
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/def/foo#observedProperty"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/ns/sosa/observes",
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/def/foo#observes"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Image",
@@ -220,6 +234,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://github.com/Naeima",
@@ -748,8 +765,28 @@
 }, {
   "@id" : "https://w3id.org/def/foo#OilPalmPlantation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Oil Palm Plantation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Plantation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#OilPalmPlantation"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.36"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "118.66"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Primates",
