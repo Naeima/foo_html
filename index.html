@@ -154,7 +154,6 @@ foo:Squamata a owl:Class ;
     rdfs:subClassOf foo:Reptilia ;
     owl:equivalentClass wo:Squamata .
 
-
 #### Family ####
 foo:Elephantidae a owl:Class ;
     rdfs:label &quot;Elephantidae&quot;@en-gb ;
@@ -202,7 +201,6 @@ foo:FeatureOfInterest a owl:Class ;
   skos:example &quot;When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.&quot;@en ;
   owl:equivalentClass  sosa:FeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
-
 
 ### FOO Object Properties (Reused from SOSA) ###
 
@@ -322,13 +320,6 @@ foo:ManisJavanica a owl:Class ;
     rdfs:comment &quot;Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands.&quot;@en ;
     rdfs:definedBy &lt;https://doi.org/10.1016/j.gecco.2024.e02962&gt; ;
     skos:definition &quot;Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations.&quot;@en .
-
-foo:OilPalmPlantation a  owl:Class ;
-    rdfs:label   &quot;Oil Palm Plantation&quot; ;
-    rdfs:subClassOf  foo:FeatureOfInterest ;
-    rdfs:comment  &quot;Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans. ; &quot;
-    owl:equivalentClass      &lt;http://purl.obolibrary.org/obo/ENVO_00000120&gt; . 
-
 
 ### FOO Data Properties ###
 ### GPS Observation Data Properties ###
@@ -825,8 +816,7 @@ foo:soilSensor a  owl:NamedIndividual, foo:Sensor ;
 
 #### Soil Observation ####
 foo:soilObservation a  owl:NamedIndividual,  foo:Observation ;
-    rdfs:label &quot;Soil Observation&quot;@en ;
-    
+    rdfs:label &quot;Soil Observation&quot;@en ;    
 # Soil properties observed
     foo:observedProperty foo:cNRatio ,
     foo:clay,
@@ -918,12 +908,23 @@ foo:imageObservation a owl:NamedIndividual,  foo:Observation ;
     foo:cameraLocation ,
     foo:animalDetected .
 
+##### Oil Palm Plantation ######
+foo:OilPalmPlantation a  owl:Class ;
+    rdfs:label   &quot;Oil Palm Plantation&quot; ;
+    rdfs:subClassOf  foo:FeatureOfInterest ;
+    rdfs:comment  &quot;Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans.&quot;;
+    owl:equivalentClass      &lt;http://purl.obolibrary.org/obo/ENVO_00000120&gt; . 
+
+foo:Plantation a foo:OilPalmPlantation;
+    pos:latitude &quot;5.36&quot;^^xsd:float;
+    pos:longitude &quot;118.66 &quot;^^xsd:float.
+
 ##### How to reuse FOO #######
 
 # To enable effective reuse of this ontology, please follow these guidelines:
 # 1. Create your own custom ontology using identical class and property names as in this model.
 # 2. Import the `FOO` ontology (https://w3id.org/def/foo#) directly into your new ontology.
-# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using owl:equivalentClass and owl:equivalentProperty.
+# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using owl:equivalentClass, owl:equivalentProperty, and owl:sameAs.
 # This approach will maintain semantic consistency and allow for smooth interoperability across ontologies that reference shared terms and structures.
 </pre>
 </body>
