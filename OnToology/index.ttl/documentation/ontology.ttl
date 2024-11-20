@@ -94,6 +94,14 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
 
@@ -675,6 +683,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#OilPalmPlantation
 :OilPalmPlantation rdf:type owl:Class ;
+                   rdfs:subClassOf :FeatureOfInterest ;
+                   rdfs:comment "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans." ;
                    rdfs:label "Oil Palm Plantation" .
 
 
@@ -1461,6 +1471,13 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#model
 :model rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#plantation
+:plantation rdf:type owl:NamedIndividual ,
+                     :OilPalmPlantation ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "5.36"^^xsd:float ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "118.66"^^xsd:float .
 
 
 ###  https://w3id.org/def/foo#plotName
