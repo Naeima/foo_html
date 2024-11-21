@@ -242,6 +242,12 @@ foo:observes a owl:ObjectProperty ;
     owl:inverseOf foo:isObservedBy ;
     owl:equivalentProperty  sosa:observes  .  
 
+foo:based_near  a owl:ObjectProperty ;
+    rdfs:label "near" @en ;
+    rdfs:domain foo:FeatureOfInterest ; 
+    rdfs:range foo:Observation ;
+    owl:equivalentProperty    foaf:based_near .
+
 #########################################################################################################
 
 ### FOO defined Classes###
