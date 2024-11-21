@@ -837,6 +837,7 @@ foo:treeSensor a  owl:NamedIndividual, foo:Sensor ;
 #### Tree modeling ####
 foo:Tree a owl:Class ;
     rdfs:subClassOf   foo:FeatureOfInterest ;
+    owl:equivalentClass  <http://purl.dataone.org/odo/ECSO_00000501> ;
     rdfs:label "Tree"@en .
 
 #### Tree Observation ####
