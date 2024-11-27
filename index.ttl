@@ -249,7 +249,7 @@ foo:observes a owl:ObjectProperty ;
     owl:equivalentProperty  sosa:observes  .  
 
 foo:based_near  a owl:ObjectProperty ;
-    rdfs:label "near" @en ;
+    rdfs:label "near"@en ;
     rdfs:domain foo:FeatureOfInterest ; 
     rdfs:range foo:Observation ;
     owl:equivalentProperty    foaf:based_near .
