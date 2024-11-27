@@ -445,8 +445,8 @@ foo:clay a owl:DatatypeProperty ;
     rdfs:domain foo:soilObservation  ;
     rdfs:range xsd:double ;
     owl:equivalentProperty sosa:hasResult ;
-    rdfs:comment "Equivalent to SOSA hasResult for recording measurement results such as clay content." ;
-    skos:definition "Clay content of the soil sample."@en .
+    skos:definition "Clay content of the soil sample."@en ;
+    rdfs:comment "Equivalent to SOSA hasResult for recording measurement results such as clay content." .
 
 foo:silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
@@ -454,7 +454,7 @@ foo:silt a owl:DatatypeProperty ;
     rdfs:range xsd:double ;
     owl:equivalentProperty sosa:hasResult ;
     skos:definition "Equivalent to SOSA hasResult for recording measurement results such as silt content." ;
-    skos:definition "Silt content of the soil sample."@en .
+    rdfs:comment "Silt content of the soil sample."@en .
 
 foo:site a owl:DatatypeProperty ;
     rdfs:label "Site"@en ;
