@@ -440,11 +440,6 @@ foo:speed a owl:DatatypeProperty ;
     rdfs:comment "Speed of the elephant at the moment of data collection." .
 
 ### Soil Data Properties ###
-
-# Mapping Total Nitrogen Content
-foo:totalN 
-
-
 foo:clay a owl:DatatypeProperty ;
     rdfs:label "Clay"@en ;
     rdfs:domain foo:soilObservation  ;
