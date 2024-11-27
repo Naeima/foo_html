@@ -15,12 +15,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix wo: <https://www.bbc.co.uk/ontologies/wildlife-ontology#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix qudt: <http://qudt.org/schema/qudt/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#>  .
-@prefix time: <http://www.w3.org/2006/time#>  .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>  .
-@prefix exif: <http://www.w3.org/2003/12/exif/ns#>   .
-
 
 ### Ontology Declaration ###
 
@@ -249,7 +243,7 @@ foo:observes a owl:ObjectProperty ;
     owl:equivalentProperty  sosa:observes  .  
 
 foo:based_near  a owl:ObjectProperty ;
-    rdfs:label "near"@en ;
+    rdfs:label "near" @en ;
     rdfs:domain foo:FeatureOfInterest ; 
     rdfs:range foo:Observation ;
     owl:equivalentProperty    foaf:based_near .
@@ -317,38 +311,30 @@ foo:ManisJavanica a owl:Class ;
     skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
 
 ### FOO Data Properties ###
-
 ### GPS Observation Data Properties ###
 foo:temperature a owl:DatatypeProperty ;
     rdfs:label "Temperature" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty schema:temperature ;
-    skos:definition  "Equivalent to Schema.org temperature for data collection." ;
-    rdfs:comment "Estimated temperature of the elephant in Celsius at the moment of data collection." .
+    skos:definition "Estimated temperature of the elephant in Celsius at the moment of data collection." .
 
 foo:count a owl:DatatypeProperty ;
     rdfs:label "Count"@en ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:integer ;
-    owl:equivalentProperty schema:count ;
-    skos:definition "Equivalent to Schema.org count for observation data." ;
-    rdfs:comment "Observation count per data set." .
+    skos:definition "Observation count per data set." .
 
 foo:cov a owl:DatatypeProperty ;
     rdfs:label "Cov" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty qudt:covariance ;
-    skos:definition "Equivalent to QUDT Covariance for statistical data representation." .
-    
+    skos:definition "TBC" .
+
 foo:direction a owl:DatatypeProperty ;
     rdfs:label "Direction" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:integer ;
-    owl:equivalentProperty geo:orientation ;
-    skos:definition "Equivalent to GeoSPARQL orientation for direction data." ;
-    rdfs:comment "Direction of elephant travel at the moment of data collection." .
+    skos:definition "Direction of elephant travel at the moment of data collection." .
 
 foo:distance a owl:DatatypeProperty ;
     rdfs:label "Distance"@en ;
@@ -360,9 +346,7 @@ foo:gMTDate a owl:DatatypeProperty ;
     rdfs:label "GMT Date" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:date ;
-    owl:equivalentProperty time:inXSDDate ;
-    skos:definition "Equivalent to Time Ontology's date representation for GMT." ;
-    rdfs:comment "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
+    skos:definition "The GMT date in Sabah, Malaysia, when the GPS collar records its readings." .
 
 foo:gMTTime a owl:DatatypeProperty ;
     rdfs:label "GMT Time" ;
@@ -374,31 +358,23 @@ foo:hDOP a owl:DatatypeProperty ;
     rdfs:label "HDOP" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty sosa:hasAccuracy ;  
-    skos:definition "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." ;
-    rdfs:comment "Equivalent to SOSA accuracy property for precision of GPS data." .
+    skos:definition "Horizontal Dilution of Precision (HDOP), indicating GPS accuracy." .
 
 foo:horizon a owl:DatatypeProperty ;
     rdfs:label "Horizon"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty dcterms:description ;
-    skos:definition "Soil horizon sampled."@en ;
-    rdfs:comment  "Mapped to Dublin Core description for soil horizon data, as no specific equivalent exists." .
+    skos:definition "Soil horizon sampled."@en .
 
 foo:id a owl:DatatypeProperty ;
     rdfs:label "id"@en ;
     rdfs:domain foo:gPSObservation ;
-    rdfs:range xsd:string ; 
-    owl:equivalentProperty dcterms:identifier ;
-    skos:definition "Equivalent to Dublin Core identifier for unique observation IDs." .
+    rdfs:range xsd:string .
 
 foo:landUse a owl:DatatypeProperty ;
     rdfs:label "Land Use"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty schema:landUse ;
-    rdfs:comment "Equivalent to Schema.org landUse property for representing land use types." ;
     skos:definition "Land use of the study plots."@en .
 
 foo:latitude a owl:DatatypeProperty ;
@@ -412,17 +388,13 @@ foo:localDate a owl:DatatypeProperty ;
     rdfs:label "Local Date" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:date ;
-    owl:equivalentProperty time:inXSDDate ;
-    skos:definition "Equivalent to Time Ontology's representation of dates in XSD format." ;
-    rdfs:comment "The local date in Sabah, Malaysia." .
+    skos:definition "The local date in Sabah, Malaysia." .
 
 foo:localTime a owl:DatatypeProperty ;
     rdfs:label "Local Time" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:time ;
-    owl:equivalentProperty time:inXSDTime ;
-    skos:definition "Equivalent to Time Ontology's representation of times in XSD format." ;
-    rdfs:comment  "The local time in Sabah, Malaysia." .
+    skos:definition "The local time in Sabah, Malaysia." .
 
 foo:longitude a owl:DatatypeProperty ;
     rdfs:label "Longitude" ;
@@ -435,100 +407,78 @@ foo:speed a owl:DatatypeProperty ;
     rdfs:label "Speed" ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty qudt:speed ;
-    skos:definition "Equivalent to QUDT Speed property for velocity measurements." ;
-    rdfs:comment "Speed of the elephant at the moment of data collection." .
+    skos:definition "Speed of the elephant at the moment of data collection." .
 
 ### Soil Data Properties ###
+
 foo:clay a owl:DatatypeProperty ;
     rdfs:label "Clay"@en ;
-    rdfs:domain foo:soilObservation ;
+    rdfs:domain foo:soilObservation  ;
     rdfs:range xsd:double ;
-    skos:definition "Clay content of the soil sample."@en ;
-    rdfs:comment "Represents clay content as a direct measurement in the soil observation context." .
+    skos:definition "Clay content of the soil sample."@en .
 
 foo:silt a owl:DatatypeProperty ;
     rdfs:label "Silt"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty sosa:hasResult ;
-    skos:definition "Equivalent to SOSA hasResult for recording measurement results such as silt content." ;
-    rdfs:comment "Silt content of the soil sample."@en .
+    skos:definition "Silt content of the soil sample."@en .
 
 foo:site a owl:DatatypeProperty ;
     rdfs:label "Site"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty dcterms:spatial ;
-    skos:definition "Equivalent to Dublin Core spatial for specifying the geographical area/site of observation." ;
-    rdfs:comment "Geographical area/site which samples were taken from."@en .
+    skos:definition "Geographical area/site which samples were taken from."@en .
 
 foo:soilPH a owl:DatatypeProperty ;
-    rdfs:label "Soil PH"@en ;
+    rdfs:label "Soil PH" ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty qudt:chemicalpH ;
-    skos:definition "Equivalent to QUDT ChemicalpH for representing soil pH measurements." @en .
-    
+    skos:definition "Measured pH of the soil sample."@en .
+
 foo:subplot a owl:DatatypeProperty ;
     rdfs:label "subPlot"@en ;
     rdfs:domain foo:gPSObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty schema:identifier ;
-    skos:definition "Mapped to Schema.org identifier for unique identification of subplots." ;
-    rdfs:comment "Number of the subplot sampled within each 1 Ha plot."@en .
+    skos:definition "Number of the subplot sampled within each 1 Ha plot."@en .
 
 foo:totalC a owl:DatatypeProperty ;
     rdfs:label "Total C"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty qudt:massFraction ;
-    skos:definition "Mapped to QUDT MassFraction for representing carbon content as a mass fraction." ;
-    rdfs:comment "Total carbon content of the soil sample."@en .
+    skos:definition "Total carbon content of the soil sample."@en .
 
 foo:totalN a owl:DatatypeProperty ;
     rdfs:label "Total N"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:double ;
-    owl:equivalentProperty qudt:massFraction ;
-    skos:definition "Mapped to QUDT MassFraction for representing nitrogen content as a mass fraction." ;
-    rdfs:comment  "Total nitrogen content of the soil sample."@en .
+    skos:definition "Total nitrogen content of the soil sample."@en .
 
 ### Tree Observation Data Properties ###
+
 foo:lianaDBH_cm a owl:DatatypeProperty ;
     rdfs:label "lianaDBH_cm 10a"@en ;
     rdfs:domain foo:treeObservation ;
-    rdfs:range xsd:string ;
-    owl:equivalentProperty qudt:diameter ;
-    skos:definition "Equivalent to QUDT Diameter for measurement of liana diameter at breast height." .
+    rdfs:range xsd:string .
 
  foo:subplotRadius_m a owl:DatatypeProperty ;
     rdfs:label "SubplotRadius_m 30"@en ;
     rdfs:domain foo:treeObservation ;
-    rdfs:range xsd:float ;
-    owl:equivalentProperty qudt:radius ;
-    skos:definition "Equivalent to QUDT Radius for representing the radius of the subplot." .
+    rdfs:range xsd:float .
 
  foo:treeDBH_cm a owl:DatatypeProperty ;
     rdfs:label "TreeDBH_cm 110"@en ;
     rdfs:domain foo:treeObservation ;
-    rdfs:range xsd:float ;
-    owl:equivalentProperty qudt:diameter ;
-    skos:definition "Equivalent to QUDT Diameter for measurement of tree diameter at breast height." .
+    rdfs:range xsd:float .
 
  foo:treeHeight_m   a owl:DatatypeProperty ;
     rdfs:label "treeHeight_m 60"@en ;
     rdfs:domain foo:treeObservation ;
-    rdfs:range xsd:float ;
-    owl:equivalentProperty qudt:height ;
-    skos:definition "Equivalent to QUDT Height for representing the height of the tree." .
+    rdfs:range xsd:float .
 
  foo:treeID  a owl:DatatypeProperty ;
     rdfs:label "TreeID"@en ;
     rdfs:domain foo:treeObservation ;
-    rdfs:range xsd:string ;
-    owl:equivalentProperty dcterms:identifier ;
-    skos:definition "Equivalent to Dublin Core identifier for unique tree IDs." .
+    rdfs:range xsd:string .
 
  foo:treeDBH_cm  a owl:DatatypeProperty ;
     rdfs:label "TreeDBH_cm 110"@en ;
@@ -538,42 +488,38 @@ foo:lianaDBH_cm a owl:DatatypeProperty ;
  foo:treeIndividualNo  a owl:DatatypeProperty ;
     rdfs:label "TreeIndividualNo"@en ;
     rdfs:domain foo:treeObservation ;
-    rdfs:range xsd:integer ;
-    owl:equivalentProperty schema:identifier ;
-    skos:definition "Equivalent to Schema.org identifier for identifying individual trees." .
+    rdfs:range xsd:integer .
+
+ foo:treeIndividualNo  a owl:DatatypeProperty ;
+    rdfs:label "TreeIndividualNo"@en ;
+    rdfs:domain foo:treeObservation ;
+    rdfs:range xsd:integer .
+
 
 ### Camera Trap Image Data Properties ###
 foo:name a owl:DatatypeProperty ;
     rdfs:label "Image Name"@en ;
     rdfs:domain foo:imageObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty dcterms:title ;
-    skos:definition "Equivalent to Dublin Core title for assigning a name to an image." ;
-    rdfs:comment  "The name assigned to an image at collection time."@en .
+    skos:definition "The name assigned to an image at collection time."@en .
 
 foo:path a owl:DatatypeProperty ;
     rdfs:label "Image Path"@en ;
     rdfs:domain foo:imageObservation ;
     rdfs:range xsd:anyURI ;
-    owl:equivalentProperty schema:contentUrl ;
-    skos:definition "Equivalent to Schema.org contentUrl for URI pointing to the image storage location." ;
-    rdfs:comment "The URI pointing to the location of the image in secure cloud storage."@en .
+    skos:definition "The URI pointing to the location of the image in secure cloud storage."@en .
 
 foo:localDate a owl:DatatypeProperty ;
     rdfs:label "Local Date"@en ;
     rdfs:domain foo:imageObservation;
     rdfs:range xsd:date ;
-    owl:equivalentProperty time:inXSDDate ;
-    skos:definition "Equivalent to Time Ontology inXSDDate for local date representation." ;
-    rdfs:comment  "The current local date in Sabah, Malaysia when the GPS collar collects its readings."@en .
+    skos:definition "The current local date in Sabah, Malaysia when the GPS collar collects its readings."@en .
 
 foo:localTime a owl:DatatypeProperty ;
     rdfs:label "Local Time"@en ;
     rdfs:domain foo:imageObservation ;
     rdfs:range xsd:time ;
-    owl:equivalentProperty time:inXSDTime ;
-    skos:definition "Equivalent to Time Ontology inXSDTime for local time representation." ;
-    rdfs:comment  "The current local time in Sabah, Malaysia when the GPS collar collects its readings."@en .
+    skos:definition "The current local time in Sabah, Malaysia when the GPS collar collects its readings."@en .
 
 foo:gMTDate a owl:DatatypeProperty ;
     rdfs:label "GMT Date"@en ;
@@ -585,180 +531,168 @@ foo:gMTTime a owl:DatatypeProperty ;
     rdfs:label "GMT Time"@en ;
     rdfs:domain foo:imageObservation ;
     rdfs:range xsd:time ;
-    owl:equivalentProperty time:inXSDDate ;
-    skos:definition "Equivalent to Time Ontology inXSDDate for GMT date representation." ;
-    rdfs:comment  "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."@en .
+    skos:definition "The GMT time in Sabah, Malaysia when the GPS collar collects its readings."@en .
 
 foo:model a owl:DatatypeProperty ;
     rdfs:label "Camera Model"@en ;
     rdfs:domain foo:imageObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty exif:model ;
-    skos:definition "Equivalent to EXIF model for recording the camera model." ;
-    rdfs:comment  "The model of the trail camera used to capture the image."@en .
+    skos:definition "The model of the trail camera used to capture the image."@en .
 
 foo:make a owl:DatatypeProperty ;
     rdfs:label "Camera Make"@en ;
     rdfs:domain foo:imageObservation ;
     rdfs:range xsd:string ;
-    owl:equivalentProperty exif:make ;
-    skos:definition "Equivalent to EXIF make for recording the camera manufacturer." ;
-    rdfs:comment  "The make of the trail camera used to capture the image."@en .
+    skos:definition "The make of the trail camera used to capture the image."@en .
 
 foo:imageFile a owl:DatatypeProperty ;
     rdfs:label "Image File"@en ;
     rdfs:domain  foo:imageObservation ;
     rdfs:range    xsd:string ;
-    owl:equivalentProperty schema:fileFormat ;
-    skos:definition "Equivalent to Schema.org fileFormat for naming or formatting image files." ;
-    rdfs:comment  "The image file name generated by the image observation."@en .
+    skos:definition "The image file name generated by the image observation."@en .
 
 foo:cameraLocation a owl:DatatypeProperty ;
     rdfs:label "Camera Location"@en ;
     rdfs:domain  foo:imageObservation ;
     rdfs:range    xsd:string ;
-    owl:equivalentProperty dcterms:spatial ;
-    skos:definition "Equivalent to Dublin Core spatial for specifying the camera's location." ;
-    rdfs:comment  "The location information (address) of the camera trap."@en .
+    skos:definition "The location information (address) of the camera trap."@en .
 
  foo:animalDetected a owl:DatatypeProperty ;
     rdfs:label "Animal Detected"@en ;
     rdfs:domain  foo:imageObservation ;
-    rdfs:range    xsd:string ;
-    owl:equivalentProperty schema:name ;
-    skos:definition "Equivalent to Schema.org name for identifying detected animals." . 
+    rdfs:range    xsd:string .
 
 ### FOO Instances ###
 #### Sensor Instances ####
 foo:aqeelaGPS a owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Aqeela GPS"@en ;
-    foo:hasFeatureOfInterest foo:aqeela ;
+    foo:hasFeatureOfInterest foo:Aqeela ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en ;
     foo:observes foo:gPSObservation .
 
 foo:bikang1GPS a owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Bikang 1 GPS"@en ;
-    foo:hasFeatureOfInterest foo:bikang1 ;
+    foo:hasFeatureOfInterest foo:Bikang1 ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 1."@en ;
     foo:observes foo:gPSObservation .
 
 foo:bikang2GPS a owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Bikang 2 GPS"@en ;
-    foo:hasFeatureOfInterest foo:bikang2 ;
+    foo:hasFeatureOfInterest foo:Bikang2 ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Bikang 2."@en ;
     foo:observes foo:gPSObservation .
 
 foo:binbinganGPS a owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Binbingan GPS"@en ;
-    foo:hasFeatureOfInterest foo:binbingan ;
+    foo:hasFeatureOfInterest foo:Binbingan ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en ;
     foo:observes foo:gPSObservation .
 
 foo:guliGPS a  owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Guli GPS"@en ;
-    foo:hasFeatureOfInterest foo:guli ;
+    foo:hasFeatureOfInterest foo:Guli ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Guli."@en ;
     foo:observes foo:gPSObservation .
 
 foo:itaGPS a owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Ita GPS"@en ;
-    foo:hasFeatureOfInterest foo:ita;
+    foo:hasFeatureOfInterest foo:Ita;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Ita."@en ;
     foo:observes foo:gPSObservation .
 
 foo:jasminGPS a owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Jasmin GPS"@en ;
-    foo:hasFeatureOfInterest foo:jasmin ;
+    foo:hasFeatureOfInterest foo:Jasmin ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Jasmin."@en ;
     foo:observes foo:gPSObservation .
 
 foo:jasperGPS a owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Jasper GPS"@en ;
-    foo:hasFeatureOfInterest foo:jasper ;
+    foo:hasFeatureOfInterest foo:Jasper ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Jasper."@en ;
     foo:observes foo:gPSObservation .
 
 foo:kasihGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Kasih GPS"@en ;
-    foo:hasFeatureOfInterest foo:kasih ;
+    foo:hasFeatureOfInterest foo:Kasih ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Kasih."@en ;
     foo:observes foo:gPSObservation .
 
 foo:kumaGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Kuma GPS"@en ;
-    foo:hasFeatureOfInterest foo:kuma ;
+    foo:hasFeatureOfInterest foo:Kuma ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Kuma."@en ;
     foo:observes foo:gPSObservation .
 
 foo:liunGPS a  owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Liun GPS"@en ;
-    foo:hasFeatureOfInterest foo:luin ;
+    foo:hasFeatureOfInterest foo:Luin ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Liun."@en ;
     foo:observes foo:gPSObservation .
 
 foo:maliauGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Maliau GPS"@en ;
-    foo:hasFeatureOfInterest foo:maliau ;
+    foo:hasFeatureOfInterest foo:Maliau ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en ;
     foo:observes foo:gPSObservation .
 
 foo:merotaiGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Merotai GPS"@en ;
-    foo:hasFeatureOfInterest foo:merotai ;
+    foo:hasFeatureOfInterest foo:Merotai ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Merotai."@en ;
     foo:observes foo:gPSObservation .
 
 foo:puteriGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Puteri GPS"@en ;
-    foo:hasFeatureOfInterest foo:puteri ;
+    foo:hasFeatureOfInterest foo:Puteri ;
      skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Puteri."@en ;
     foo:observes foo:gPSObservation .
 
 foo:pututGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Putut GPS"@en ;
-    foo:hasFeatureOfInterest foo:putut ;
+    foo:hasFeatureOfInterest foo:Putut ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en ;
     foo:observes foo:gPSObservation .
 
 foo:sejatiGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Sejati GPS"@en ;
-    foo:hasFeatureOfInterest foo:sejati ;
+    foo:hasFeatureOfInterest foo:Sejati ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Sejati."@en ;
     foo:observes foo:gPSObservation .
 
 foo:seriGPS a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Seri GPS"@en ;
-    foo:hasFeatureOfInterest foo:seri ;
+    foo:hasFeatureOfInterest foo:Seri ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Seri."@en ;
     foo:observes foo:gPSObservation .
 
 foo:tulidGPS a  owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Tulid GPS"@en ;
-    foo:hasFeatureOfInterest foo:tulid ;
+    foo:hasFeatureOfInterest foo:Tulid ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Tulid."@en ;
     foo:observes foo:gPSObservation .
 
 foo:tunglapGPS a   owl:NamedIndividual,  foo:Sensor ;
     rdfs:label "Tunglap GPS"@en ;
-    foo:hasFeatureOfInterest foo:tunglap ;
+    foo:hasFeatureOfInterest foo:Tunglap ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Tunglap."@en ;
     foo:observes foo:gPSObservation .
 
 foo:umas2GPS a   owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Umas2 GPS"@en ;
-    foo:hasFeatureOfInterest foo:umas2 ;
+    foo:hasFeatureOfInterest foo:Umas2 ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Umas2."@en ;
     foo:observes foo:gPSObservation .
 
 foo:daraGPS a   owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Dara GPS"@en ;
-    foo:hasFeatureOfInterest foo:dara ;
+    foo:hasFeatureOfInterest foo:Dara ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Dara."@en ;
     foo:observes foo:gPSObservation .
 
 foo:abawGPS a   owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Abaw GPS"@en ;
-    foo:hasFeatureOfInterest foo:abaw ;
+    foo:hasFeatureOfInterest foo:Abaw ;
     skos:definition "A GPS collar sensor fitted around the neck of an Asian elephant named Abaw ."@en ;
     foo:observes foo:gPSObservation .
 
