@@ -384,7 +384,7 @@ foo:horizon a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     owl:equivalentProperty dcterms:description ;
     skos:definition "Soil horizon sampled."@en ;
-    rdfs:comment  "Mapped to Dublin Core description for soil horizon data, as no specific equivalent exists." 
+    rdfs:comment  "Mapped to Dublin Core description for soil horizon data, as no specific equivalent exists." .
 
 foo:id a owl:DatatypeProperty ;
     rdfs:label "id"@en ;
