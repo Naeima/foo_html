@@ -389,7 +389,7 @@ foo:horizon a owl:DatatypeProperty ;
 foo:id a owl:DatatypeProperty ;
     rdfs:label "id"@en ;
     rdfs:domain foo:gPSObservation ;
-    rdfs:range xsd:string 
+    rdfs:range xsd:string ; 
     owl:equivalentProperty dcterms:identifier ;
     skos:definition "Equivalent to Dublin Core identifier for unique observation IDs." .
 
