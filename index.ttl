@@ -470,7 +470,7 @@ foo:site a owl:DatatypeProperty ;
     rdfs:comment "Geographical area/site which samples were taken from."@en .
 
 foo:soilPH a owl:DatatypeProperty ;
-    rdfs:label "Soil PH" ;
+    rdfs:label "Soil PH"@en ;
     rdfs:domain foo:soilObservation ;
     rdfs:range xsd:double ;
     owl:equivalentProperty qudt:chemicalpH ;
