@@ -82,7 +82,6 @@ foo: a owl:Ontology ;
     foaf:homepage <https://rdcu.be/dKNG2> ;
     foaf:name "Springer, Cham"@en .
 
-
 ### FOO Classes (Reused from BBC Wildlife Ontology (wo)) ###
 #### BBC Wildlife Ontology Taxonomic Classes ####
 wo:Kingdom a owl:Class .
