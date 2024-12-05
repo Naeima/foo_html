@@ -827,19 +827,17 @@ foo:soilObservation a  owl:NamedIndividual,  foo:Observation ;
     foo:madeBySensor foo:soilSensor .
 
 #### Tree Modeling ####
-
-foo:treeSensor a  owl:NamedIndividual, foo:Sensor ;
-    rdfs:label "Tree Sensor"@en ;
-    foo:observes foo:treeProperties ;
-    foo:hasFeatureOfInterest foo:Tree .
-
-#### Tree modeling ####
 foo:Tree a owl:Class ;
     rdfs:subClassOf   foo:FeatureOfInterest ;
     owl:equivalentClass  <http://purl.dataone.org/odo/ECSO_00000501> ;
     rdfs:label "Tree"@en .
 
 #### Tree Observation ####
+foo:treeSensor a  owl:NamedIndividual, foo:Sensor ;
+    rdfs:label "Tree Sensor"@en ;
+    foo:observes foo:treeProperties ;
+    foo:hasFeatureOfInterest foo:Tree .
+
 foo:treeObservation a  owl:NamedIndividual, foo:Observation ;
     rdfs:label "Tree Observation"@en ;
     
@@ -869,6 +867,105 @@ foo:lianas a  owl:NamedIndividual, foo:Tree ;
 foo:lianaSensor a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Liana Sensor"@en ;
     foo:observes foo:lianaProperties .
+
+#### Grow Borneo Project ####
+foo:Project a owl:Class ;
+    rdfs:label "Project" ;
+    rdfs:comment "Represents a reforestation project." .
+
+### Object Properties
+foo:isPlantedIn a owl:ObjectProperty ;
+    rdfs:label "is planted in" ;
+    rdfs:domain foo:Tree ;
+    rdfs:range foo:Project ;
+    rdfs:comment "Links a tree species to the reforestation project where it is planted." .
+
+### Individuals (Tree Species)
+foo:Bongkol a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Bongkol" ;
+    rdfs:comment "A tree species named Bongkol in Malay." .
+
+foo:Selongapid a  owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Selongapid" ;
+    rdfs:comment "A tree species named Selongapid in Malay." .
+
+foo:Binuang a  owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Binuang" ;
+    rdfs:comment "A tree species named Binuang in Malay." .
+
+foo:Terosob a  owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Terosob" ;
+    rdfs:comment "A tree species named Terosob in Malay." .
+
+foo:Kelumpang a  owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Kelumpang" ;
+    rdfs:comment "A tree species named Kelumpang in Malay." .
+
+foo:Mangkapon a  owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Mangkapon" ;
+    rdfs:comment "A tree species named Mangkapon in Malay." .
+
+foo:Nyatoh a    owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Nyatoh" ;
+    rdfs:comment "A tree species named Nyatoh in Malay." .
+
+foo:Durian a  owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Durian" ;
+    rdfs:comment "A tree species named Durian in Malay." .
+
+foo:Tarap a   owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Tarap" ;
+    rdfs:comment "A tree species named Tarap in Malay." .
+
+foo:Rambutan a   owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Rambutan" ;
+    rdfs:comment "A tree species named Rambutan in Malay." .
+
+foo:Pulai a   owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Pulai" ;
+    rdfs:comment "A tree species named Pulai in Malay." .
+
+foo:PayungPayung a     owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Payung Payung" ;
+    rdfs:comment "A tree species named Payung Payung in Malay." .
+
+foo:KayuMalam a    owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Kayu Malam" ;
+    rdfs:comment "A tree species named Kayu Malam in Malay." .
+
+foo:Kerodong a    owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Kerodong" ;
+    rdfs:comment "A tree species named Kerodong in Malay." .
+
+foo:KeruingPaya a   owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Keruing Paya" ;
+    rdfs:comment "A tree species named Keruing Paya in Malay." .
+
+foo:Bayur a   owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Bayur" ;
+    rdfs:comment "A tree species named Bayur in Malay." .
+
+foo:Tangkol a    owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Tangkol" ;
+    rdfs:comment "A tree species named Tangkol in Malay." .
+
+foo:Sepat a owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Sepat" ;
+    rdfs:comment "A tree species named Sepat in Malay." .
+
+foo:Belian a   owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Belian" ;
+    rdfs:comment "A tree species named Belian in Malay." .
+
+foo:Keranji a  owl:NamedIndividual,  foo:Tree ;
+    rdfs:label "Keranji" ;
+    rdfs:comment "A tree species named Keranji in Malay." .
+
+### Individual (Grow Borneo Project)
+foo:GrowBorneo a  owl:NamedIndividual,  foo:Project ;
+    rdfs:label "Grow Borneo" ;
+    rdfs:comment "A reforestation project in Borneo that plants various tree species." .
+
 
 ##### Camera Trap Images Modeling #### 
 #### Image as a Feature of Interest ####
