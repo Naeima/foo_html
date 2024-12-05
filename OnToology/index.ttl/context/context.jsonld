@@ -148,6 +148,10 @@
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
+    "based_near" : {
+      "@id" : "https://w3id.org/def/foo#based_near",
+      "@type" : "@id"
+    },
     "count" : {
       "@id" : "https://w3id.org/def/foo#count",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -275,6 +279,9 @@
       "@id" : "https://w3id.org/def/foo#localDate",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
     },
+    "Project" : {
+      "@id" : "https://w3id.org/def/foo#Project"
+    },
     "Genus" : {
       "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
     },
@@ -360,6 +367,9 @@
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
     },
+    "ECSO_00000501" : {
+      "@id" : "http://purl.dataone.org/odo/ECSO_00000501"
+    },
     "speed" : {
       "@id" : "https://w3id.org/def/foo#speed",
       "@type" : "http://www.w3.org/2001/XMLSchema#double"
@@ -398,6 +408,10 @@
     },
     "Observation" : {
       "@id" : "http://www.w3.org/ns/sosa/Observation"
+    },
+    "isPlantedIn" : {
+      "@id" : "https://w3id.org/def/foo#isPlantedIn",
+      "@type" : "@id"
     },
     "Sensor" : {
       "@id" : "http://www.w3.org/ns/sosa/Sensor"
