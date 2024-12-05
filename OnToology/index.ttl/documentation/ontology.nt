@@ -76,6 +76,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -151,6 +157,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # http://www.w3.org/ns/sosa/observes
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/def/foo#observes> .
 # 
+# https://w3id.org/def/foo#based_near
+<https://w3id.org/def/foo#based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/foo#based_near> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#FeatureOfInterest> .
+<https://w3id.org/def/foo#based_near> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Observation> .
+<https://w3id.org/def/foo#based_near> <http://www.w3.org/2000/01/rdf-schema#label> "near"@en .
+# 
 # https://w3id.org/def/foo#hasFeatureOfInterest
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/foo#hasFeatureOfInterest> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> .
@@ -174,6 +186,13 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Sensor> .
 <https://w3id.org/def/foo#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an ObservableProperty and the Sensor able to observe it."@en .
 <https://w3id.org/def/foo#isObservedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is observed by"@en .
+# 
+# https://w3id.org/def/foo#isPlantedIn
+<https://w3id.org/def/foo#isPlantedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/foo#isPlantedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#isPlantedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/foo#Project> .
+<https://w3id.org/def/foo#isPlantedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a tree species to the reforestation project where it is planted." .
+<https://w3id.org/def/foo#isPlantedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is planted in" .
 # 
 # https://w3id.org/def/foo#madeBySensor
 <https://w3id.org/def/foo#madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -423,6 +442,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.bioontology.org/ontology/NCBITAXON/9974> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.bioontology.org/ontology/NCBITAXON/9974> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#ManisJavanica> .
 # 
+# http://purl.dataone.org/odo/ECSO_00000501
+<http://purl.dataone.org/odo/ECSO_00000501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.dataone.org/odo/ECSO_00000501> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#Tree> .
+# 
 # http://purl.obolibrary.org/obo/ENVO_00000120
 <http://purl.obolibrary.org/obo/ENVO_00000120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.obolibrary.org/obo/ENVO_00000120> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/def/foo#OilPalmPlantation> .
@@ -591,6 +614,8 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#OilPalmPlantation
 <https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#FeatureOfInterest> .
+<https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#comment> "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans." .
 <https://w3id.org/def/foo#OilPalmPlantation> <http://www.w3.org/2000/01/rdf-schema#label> "Oil Palm Plantation" .
 # 
 # https://w3id.org/def/foo#Primates
@@ -606,6 +631,11 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/foo#Mammalia> .
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2000/01/rdf-schema#label> "Proboscidea"@en-gb .
 <https://w3id.org/def/foo#Proboscidea> <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
+# 
+# https://w3id.org/def/foo#Project
+<https://w3id.org/def/foo#Project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Project> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a reforestation project." .
+<https://w3id.org/def/foo#Project> <http://www.w3.org/2000/01/rdf-schema#label> "Project" .
 # 
 # https://w3id.org/def/foo#Pythonidae
 <https://w3id.org/def/foo#Pythonidae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -741,6 +771,18 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#AqeelaGPS
 <https://w3id.org/def/foo#AqeelaGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#Bayur
+<https://w3id.org/def/foo#Bayur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Bayur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Bayur> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Bayur in Malay." .
+<https://w3id.org/def/foo#Bayur> <http://www.w3.org/2000/01/rdf-schema#label> "Bayur" .
+# 
+# https://w3id.org/def/foo#Belian
+<https://w3id.org/def/foo#Belian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Belian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Belian> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Belian in Malay." .
+<https://w3id.org/def/foo#Belian> <http://www.w3.org/2000/01/rdf-schema#label> "Belian" .
+# 
 # https://w3id.org/def/foo#Bikang1
 <https://w3id.org/def/foo#Bikang1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -759,14 +801,38 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#BinbinganGPS
 <https://w3id.org/def/foo#BinbinganGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#Binuang
+<https://w3id.org/def/foo#Binuang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Binuang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Binuang> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Binuang in Malay." .
+<https://w3id.org/def/foo#Binuang> <http://www.w3.org/2000/01/rdf-schema#label> "Binuang" .
+# 
+# https://w3id.org/def/foo#Bongkol
+<https://w3id.org/def/foo#Bongkol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Bongkol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Bongkol> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Bongkol in Malay." .
+<https://w3id.org/def/foo#Bongkol> <http://www.w3.org/2000/01/rdf-schema#label> "Bongkol" .
+# 
 # https://w3id.org/def/foo#Dara
 <https://w3id.org/def/foo#Dara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#DaraGPS
 <https://w3id.org/def/foo#DaraGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#Durian
+<https://w3id.org/def/foo#Durian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Durian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Durian> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Durian in Malay." .
+<https://w3id.org/def/foo#Durian> <http://www.w3.org/2000/01/rdf-schema#label> "Durian" .
+# 
 # https://w3id.org/def/foo#ElephasMaximus
 <https://w3id.org/def/foo#ElephasMaximus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#GrowBorneo
+<https://w3id.org/def/foo#GrowBorneo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#GrowBorneo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Project> .
+<https://w3id.org/def/foo#GrowBorneo> <http://www.w3.org/2000/01/rdf-schema#comment> "A reforestation project in Borneo that plants various tree species." .
+<https://w3id.org/def/foo#GrowBorneo> <http://www.w3.org/2000/01/rdf-schema#label> "Grow Borneo" .
 # 
 # https://w3id.org/def/foo#Guli
 <https://w3id.org/def/foo#Guli> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -801,6 +867,36 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#KasihGPS
 <https://w3id.org/def/foo#KasihGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#KayuMalam
+<https://w3id.org/def/foo#KayuMalam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#KayuMalam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#KayuMalam> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Kayu Malam in Malay." .
+<https://w3id.org/def/foo#KayuMalam> <http://www.w3.org/2000/01/rdf-schema#label> "Kayu Malam" .
+# 
+# https://w3id.org/def/foo#Kelumpang
+<https://w3id.org/def/foo#Kelumpang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Kelumpang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Kelumpang> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Kelumpang in Malay." .
+<https://w3id.org/def/foo#Kelumpang> <http://www.w3.org/2000/01/rdf-schema#label> "Kelumpang" .
+# 
+# https://w3id.org/def/foo#Keranji
+<https://w3id.org/def/foo#Keranji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Keranji> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Keranji> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Keranji in Malay." .
+<https://w3id.org/def/foo#Keranji> <http://www.w3.org/2000/01/rdf-schema#label> "Keranji" .
+# 
+# https://w3id.org/def/foo#Kerodong
+<https://w3id.org/def/foo#Kerodong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Kerodong> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Kerodong> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Kerodong in Malay." .
+<https://w3id.org/def/foo#Kerodong> <http://www.w3.org/2000/01/rdf-schema#label> "Kerodong" .
+# 
+# https://w3id.org/def/foo#KeruingPaya
+<https://w3id.org/def/foo#KeruingPaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#KeruingPaya> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#KeruingPaya> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Keruing Paya in Malay." .
+<https://w3id.org/def/foo#KeruingPaya> <http://www.w3.org/2000/01/rdf-schema#label> "Keruing Paya" .
+# 
 # https://w3id.org/def/foo#Kuma
 <https://w3id.org/def/foo#Kuma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
@@ -819,11 +915,35 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#MaliauGPS
 <https://w3id.org/def/foo#MaliauGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#Mangkapon
+<https://w3id.org/def/foo#Mangkapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Mangkapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Mangkapon> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Mangkapon in Malay." .
+<https://w3id.org/def/foo#Mangkapon> <http://www.w3.org/2000/01/rdf-schema#label> "Mangkapon" .
+# 
 # https://w3id.org/def/foo#Merotai
 <https://w3id.org/def/foo#Merotai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#MerotaiGPS
 <https://w3id.org/def/foo#MerotaiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Nyatoh
+<https://w3id.org/def/foo#Nyatoh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Nyatoh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Nyatoh> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Nyatoh in Malay." .
+<https://w3id.org/def/foo#Nyatoh> <http://www.w3.org/2000/01/rdf-schema#label> "Nyatoh" .
+# 
+# https://w3id.org/def/foo#PayungPayung
+<https://w3id.org/def/foo#PayungPayung> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#PayungPayung> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#PayungPayung> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Payung Payung in Malay." .
+<https://w3id.org/def/foo#PayungPayung> <http://www.w3.org/2000/01/rdf-schema#label> "Payung Payung" .
+# 
+# https://w3id.org/def/foo#Pulai
+<https://w3id.org/def/foo#Pulai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Pulai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Pulai> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Pulai in Malay." .
+<https://w3id.org/def/foo#Pulai> <http://www.w3.org/2000/01/rdf-schema#label> "Pulai" .
 # 
 # https://w3id.org/def/foo#Puteri
 <https://w3id.org/def/foo#Puteri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -837,11 +957,29 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # https://w3id.org/def/foo#PututGPS
 <https://w3id.org/def/foo#PututGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
+# https://w3id.org/def/foo#Rambutan
+<https://w3id.org/def/foo#Rambutan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Rambutan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Rambutan> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Rambutan in Malay." .
+<https://w3id.org/def/foo#Rambutan> <http://www.w3.org/2000/01/rdf-schema#label> "Rambutan" .
+# 
 # https://w3id.org/def/foo#Sejati
 <https://w3id.org/def/foo#Sejati> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/foo#SejatiGPS
 <https://w3id.org/def/foo#SejatiGPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Selongapid
+<https://w3id.org/def/foo#Selongapid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Selongapid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Selongapid> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Selongapid in Malay." .
+<https://w3id.org/def/foo#Selongapid> <http://www.w3.org/2000/01/rdf-schema#label> "Selongapid" .
+# 
+# https://w3id.org/def/foo#Sepat
+<https://w3id.org/def/foo#Sepat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Sepat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Sepat> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Sepat in Malay." .
+<https://w3id.org/def/foo#Sepat> <http://www.w3.org/2000/01/rdf-schema#label> "Sepat" .
 # 
 # https://w3id.org/def/foo#Seri
 <https://w3id.org/def/foo#Seri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -851,6 +989,24 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 # 
 # https://w3id.org/def/foo#Soil
 <https://w3id.org/def/foo#Soil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/foo#Tangkol
+<https://w3id.org/def/foo#Tangkol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Tangkol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Tangkol> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Tangkol in Malay." .
+<https://w3id.org/def/foo#Tangkol> <http://www.w3.org/2000/01/rdf-schema#label> "Tangkol" .
+# 
+# https://w3id.org/def/foo#Tarap
+<https://w3id.org/def/foo#Tarap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Tarap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Tarap> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Tarap in Malay." .
+<https://w3id.org/def/foo#Tarap> <http://www.w3.org/2000/01/rdf-schema#label> "Tarap" .
+# 
+# https://w3id.org/def/foo#Terosob
+<https://w3id.org/def/foo#Terosob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#Terosob> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#Tree> .
+<https://w3id.org/def/foo#Terosob> <http://www.w3.org/2000/01/rdf-schema#comment> "A tree species named Terosob in Malay." .
+<https://w3id.org/def/foo#Terosob> <http://www.w3.org/2000/01/rdf-schema#label> "Terosob" .
 # 
 # https://w3id.org/def/foo#Tree
 <https://w3id.org/def/foo#Tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1233,6 +1389,12 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <https://w3id.org/def/foo#merotaiGPS> <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Merotai."@en .
 # 
 # https://w3id.org/def/foo#model
+# 
+# https://w3id.org/def/foo#plantation
+<https://w3id.org/def/foo#plantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/foo#plantation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/foo#OilPalmPlantation> .
+<https://w3id.org/def/foo#plantation> <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "5.36"^^<http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/def/foo#plantation> <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "118.66"^^<http://www.w3.org/2001/XMLSchema#float> .
 # 
 # https://w3id.org/def/foo#plotName
 <https://w3id.org/def/foo#plotName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

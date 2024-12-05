@@ -68,6 +68,12 @@
     "@id" : "https://w3id.org/def/foo#ManisJavanica"
   } ]
 }, {
+  "@id" : "http://purl.dataone.org/odo/ECSO_00000501",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ]
+}, {
   "@id" : "http://purl.obolibrary.org/obo/ENVO_00000120",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
@@ -124,6 +130,12 @@
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#time",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -406,6 +418,30 @@
   "@id" : "https://w3id.org/def/foo#AqeelaGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Bayur",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Bayur in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bayur"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Belian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Belian in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Belian"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Bikang1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -423,6 +459,30 @@
 }, {
   "@id" : "https://w3id.org/def/foo#BinbinganGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Binuang",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Binuang in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Binuang"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Bongkol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Bongkol in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bongkol"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Carnivora",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -476,6 +536,18 @@
 }, {
   "@id" : "https://w3id.org/def/foo#DaraGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Durian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Durian in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Durian"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Elephantidae",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -549,6 +621,18 @@
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Genus"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#GrowBorneo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A reforestation project in Borneo that plants various tree species."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grow Borneo"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Guli",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -595,6 +679,66 @@
 }, {
   "@id" : "https://w3id.org/def/foo#KasihGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/foo#KayuMalam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Kayu Malam in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Kayu Malam"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Kelumpang",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Kelumpang in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Kelumpang"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Keranji",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Keranji in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Keranji"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Kerodong",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Kerodong in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Kerodong"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#KeruingPaya",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Keruing Paya in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Keruing Paya"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Kuma",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -658,6 +802,18 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "The highest class of the subphylum Vertebrata comprising humans and all other animals that nourish their young with milk secreted by mammary glands."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Mangkapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Mangkapon in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mangkapon"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#ManisJavanica",
@@ -724,6 +880,18 @@
     "@value" : "Nasalis larvatus, aka the proboscis monkey, is a primate species endemic to the island of Borneo. Characterized by its large, pendulous nose in males, this arboreal monkey primarily inhabits mangrove forests, riverine, and coastal areas, and is known for its distinct vocalizations and swimming abilities."
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Nyatoh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Nyatoh in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Nyatoh"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#ObservableProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -748,8 +916,26 @@
 }, {
   "@id" : "https://w3id.org/def/foo#OilPalmPlantation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Oil Palm Plantation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#PayungPayung",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Payung Payung in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Payung Payung"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Primates",
@@ -782,6 +968,27 @@
     "@value" : "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a reforestation project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Project"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Pulai",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Pulai in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pulai"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Puteri",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
@@ -802,6 +1009,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/foo#Squamata"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Rambutan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Rambutan in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rambutan"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Reptilia",
@@ -827,6 +1046,18 @@
   "@id" : "https://w3id.org/def/foo#SejatiGPS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "https://w3id.org/def/foo#Selongapid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Selongapid in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Selongapid"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -836,6 +1067,18 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Sepat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Sepat in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sepat"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Seri",
@@ -879,6 +1122,42 @@
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://www.bbc.co.uk/ontologies/wildlife-ontology#Squamata"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Tangkol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Tangkol in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tangkol"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Tarap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Tarap in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tarap"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#Terosob",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tree species named Terosob in Malay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Terosob"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#Tree",
@@ -991,6 +1270,19 @@
   } ],
   "https://w3id.org/def/foo#observes" : [ {
     "@id" : "https://w3id.org/def/foo#gPSObservation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#based_near",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "near"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#Observation"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#bikang1",
@@ -1566,6 +1858,21 @@
     "@id" : "https://w3id.org/def/foo#observes"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/foo#isPlantedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a tree species to the reforestation project where it is planted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/foo#Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is planted in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/foo#Project"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/foo#ita",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2116,6 +2423,20 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "The URI pointing to the location of the image in secure cloud storage."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/foo#plantation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/foo#OilPalmPlantation"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#latitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.36"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#longitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "118.66"
   } ]
 }, {
   "@id" : "https://w3id.org/def/foo#plotName",

@@ -94,6 +94,14 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
 
@@ -178,6 +186,13 @@ xsd:time rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/sosa/observes> owl:equivalentProperty :observes .
 
 
+###  https://w3id.org/def/foo#based_near
+:based_near rdf:type owl:ObjectProperty ;
+            rdfs:domain :FeatureOfInterest ;
+            rdfs:range :Observation ;
+            rdfs:label "near"@en .
+
+
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
                       owl:inverseOf <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> ;
@@ -203,6 +218,14 @@ xsd:time rdf:type rdfs:Datatype .
               rdfs:range :Sensor ;
               rdfs:comment "Relation between an ObservableProperty and the Sensor able to observe it."@en ;
               rdfs:label "is observed by"@en .
+
+
+###  https://w3id.org/def/foo#isPlantedIn
+:isPlantedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Tree ;
+             rdfs:range :Project ;
+             rdfs:comment "Links a tree species to the reforestation project where it is planted." ;
+             rdfs:label "is planted in" .
 
 
 ###  https://w3id.org/def/foo#madeBySensor
@@ -480,6 +503,11 @@ xsd:time rdf:type rdfs:Datatype .
                                                       owl:equivalentClass :ManisJavanica .
 
 
+###  http://purl.dataone.org/odo/ECSO_00000501
+<http://purl.dataone.org/odo/ECSO_00000501> rdf:type owl:Class ;
+                                            owl:equivalentClass :Tree .
+
+
 ###  http://purl.obolibrary.org/obo/ENVO_00000120
 <http://purl.obolibrary.org/obo/ENVO_00000120> rdf:type owl:Class ;
                                                owl:equivalentClass :OilPalmPlantation .
@@ -675,6 +703,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#OilPalmPlantation
 :OilPalmPlantation rdf:type owl:Class ;
+                   rdfs:subClassOf :FeatureOfInterest ;
+                   rdfs:comment "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans." ;
                    rdfs:label "Oil Palm Plantation" .
 
 
@@ -691,6 +721,12 @@ xsd:time rdf:type rdfs:Datatype .
              rdfs:subClassOf :Mammalia ;
              rdfs:label "Proboscidea"@en-gb ;
              <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
+
+
+###  https://w3id.org/def/foo#Project
+:Project rdf:type owl:Class ;
+         rdfs:comment "Represents a reforestation project." ;
+         rdfs:label "Project" .
 
 
 ###  https://w3id.org/def/foo#Pythonidae
@@ -866,6 +902,20 @@ xsd:time rdf:type rdfs:Datatype .
 :AqeelaGPS rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Bayur
+:Bayur rdf:type owl:NamedIndividual ,
+                :Tree ;
+       rdfs:comment "A tree species named Bayur in Malay." ;
+       rdfs:label "Bayur" .
+
+
+###  https://w3id.org/def/foo#Belian
+:Belian rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        rdfs:comment "A tree species named Belian in Malay." ;
+        rdfs:label "Belian" .
+
+
 ###  https://w3id.org/def/foo#Bikang1
 :Bikang1 rdf:type owl:NamedIndividual .
 
@@ -890,6 +940,20 @@ xsd:time rdf:type rdfs:Datatype .
 :BinbinganGPS rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Binuang
+:Binuang rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         rdfs:comment "A tree species named Binuang in Malay." ;
+         rdfs:label "Binuang" .
+
+
+###  https://w3id.org/def/foo#Bongkol
+:Bongkol rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         rdfs:comment "A tree species named Bongkol in Malay." ;
+         rdfs:label "Bongkol" .
+
+
 ###  https://w3id.org/def/foo#Dara
 :Dara rdf:type owl:NamedIndividual .
 
@@ -898,8 +962,22 @@ xsd:time rdf:type rdfs:Datatype .
 :DaraGPS rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Durian
+:Durian rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        rdfs:comment "A tree species named Durian in Malay." ;
+        rdfs:label "Durian" .
+
+
 ###  https://w3id.org/def/foo#ElephasMaximus
 :ElephasMaximus rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#GrowBorneo
+:GrowBorneo rdf:type owl:NamedIndividual ,
+                     :Project ;
+            rdfs:comment "A reforestation project in Borneo that plants various tree species." ;
+            rdfs:label "Grow Borneo" .
 
 
 ###  https://w3id.org/def/foo#Guli
@@ -946,6 +1024,41 @@ xsd:time rdf:type rdfs:Datatype .
 :KasihGPS rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#KayuMalam
+:KayuMalam rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           rdfs:comment "A tree species named Kayu Malam in Malay." ;
+           rdfs:label "Kayu Malam" .
+
+
+###  https://w3id.org/def/foo#Kelumpang
+:Kelumpang rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           rdfs:comment "A tree species named Kelumpang in Malay." ;
+           rdfs:label "Kelumpang" .
+
+
+###  https://w3id.org/def/foo#Keranji
+:Keranji rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         rdfs:comment "A tree species named Keranji in Malay." ;
+         rdfs:label "Keranji" .
+
+
+###  https://w3id.org/def/foo#Kerodong
+:Kerodong rdf:type owl:NamedIndividual ,
+                   :Tree ;
+          rdfs:comment "A tree species named Kerodong in Malay." ;
+          rdfs:label "Kerodong" .
+
+
+###  https://w3id.org/def/foo#KeruingPaya
+:KeruingPaya rdf:type owl:NamedIndividual ,
+                      :Tree ;
+             rdfs:comment "A tree species named Keruing Paya in Malay." ;
+             rdfs:label "Keruing Paya" .
+
+
 ###  https://w3id.org/def/foo#Kuma
 :Kuma rdf:type owl:NamedIndividual .
 
@@ -970,12 +1083,40 @@ xsd:time rdf:type rdfs:Datatype .
 :MaliauGPS rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Mangkapon
+:Mangkapon rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           rdfs:comment "A tree species named Mangkapon in Malay." ;
+           rdfs:label "Mangkapon" .
+
+
 ###  https://w3id.org/def/foo#Merotai
 :Merotai rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#MerotaiGPS
 :MerotaiGPS rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#Nyatoh
+:Nyatoh rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        rdfs:comment "A tree species named Nyatoh in Malay." ;
+        rdfs:label "Nyatoh" .
+
+
+###  https://w3id.org/def/foo#PayungPayung
+:PayungPayung rdf:type owl:NamedIndividual ,
+                       :Tree ;
+              rdfs:comment "A tree species named Payung Payung in Malay." ;
+              rdfs:label "Payung Payung" .
+
+
+###  https://w3id.org/def/foo#Pulai
+:Pulai rdf:type owl:NamedIndividual ,
+                :Tree ;
+       rdfs:comment "A tree species named Pulai in Malay." ;
+       rdfs:label "Pulai" .
 
 
 ###  https://w3id.org/def/foo#Puteri
@@ -994,12 +1135,33 @@ xsd:time rdf:type rdfs:Datatype .
 :PututGPS rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#Rambutan
+:Rambutan rdf:type owl:NamedIndividual ,
+                   :Tree ;
+          rdfs:comment "A tree species named Rambutan in Malay." ;
+          rdfs:label "Rambutan" .
+
+
 ###  https://w3id.org/def/foo#Sejati
 :Sejati rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/foo#SejatiGPS
 :SejatiGPS rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#Selongapid
+:Selongapid rdf:type owl:NamedIndividual ,
+                     :Tree ;
+            rdfs:comment "A tree species named Selongapid in Malay." ;
+            rdfs:label "Selongapid" .
+
+
+###  https://w3id.org/def/foo#Sepat
+:Sepat rdf:type owl:NamedIndividual ,
+                :Tree ;
+       rdfs:comment "A tree species named Sepat in Malay." ;
+       rdfs:label "Sepat" .
 
 
 ###  https://w3id.org/def/foo#Seri
@@ -1012,6 +1174,27 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#Soil
 :Soil rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#Tangkol
+:Tangkol rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         rdfs:comment "A tree species named Tangkol in Malay." ;
+         rdfs:label "Tangkol" .
+
+
+###  https://w3id.org/def/foo#Tarap
+:Tarap rdf:type owl:NamedIndividual ,
+                :Tree ;
+       rdfs:comment "A tree species named Tarap in Malay." ;
+       rdfs:label "Tarap" .
+
+
+###  https://w3id.org/def/foo#Terosob
+:Terosob rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         rdfs:comment "A tree species named Terosob in Malay." ;
+         rdfs:label "Terosob" .
 
 
 ###  https://w3id.org/def/foo#Tree
@@ -1461,6 +1644,13 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#model
 :model rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#plantation
+:plantation rdf:type owl:NamedIndividual ,
+                     :OilPalmPlantation ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "5.36"^^xsd:float ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "118.66"^^xsd:float .
 
 
 ###  https://w3id.org/def/foo#plotName

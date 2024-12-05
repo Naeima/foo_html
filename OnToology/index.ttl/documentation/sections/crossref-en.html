@@ -34,6 +34,11 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#Chordata" title="https://w3id.org/def/foo#Chordata">Chordata</a>
       </li>
       <li>
+         <a href="#http://purl.dataone.org/odo/ECSO_00000501" title="http://purl.dataone.org/odo/ECSO_00000501">
+            <span>e c s o 00000501</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://purl.obolibrary.org/obo/ENVO_00000120" title="http://purl.obolibrary.org/obo/ENVO_00000120">
             <span>e n v o 00000120</span>
          </a>
@@ -98,6 +103,9 @@ This section provides details for each class and property defined by Forest Obse
       </li>
       <li>
          <a href="#NasalisLarvatus" title="https://w3id.org/def/foo#NasalisLarvatus">Proboscis Monkey</a>
+      </li>
+      <li>
+         <a href="#Project" title="https://w3id.org/def/foo#Project">Project</a>
       </li>
       <li>
          <a href="#Pythonidae" title="https://w3id.org/def/foo#Pythonidae">Pythonidae</a>
@@ -323,6 +331,21 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://purl.dataone.org/odo/ECSO_00000501">
+      <h3>e c s o 00000501<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.dataone.org/odo/ECSO_00000501</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://purl.obolibrary.org/obo/ENVO_00000120">
       <h3>e n v o 00000120<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -398,6 +421,7 @@ This section provides details for each class and property defined by Forest Obse
          <dd>
             <a href="#ElephasMaximus" title="https://w3id.org/def/foo#ElephasMaximus">Asian Elephant</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Image" title="https://w3id.org/def/foo#Image">Camera Trap Image</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OilPalmPlantation" title="https://w3id.org/def/foo#OilPalmPlantation">Oil Palm Plantation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MalayopythonReticulatus"
                title="https://w3id.org/def/foo#MalayopythonReticulatus">Reticulated Python</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Soil" title="https://w3id.org/def/foo#Soil">Soil</a>
@@ -408,6 +432,7 @@ This section provides details for each class and property defined by Forest Obse
          <dt>is in domain of</dt>
          <dd>
             <a href="#isFeatureOfInterestOf" title="https://w3id.org/def/foo#isFeatureOfInterestOf">is feature of interest of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#based_near" title="https://w3id.org/def/foo#based_near">near</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -633,6 +658,7 @@ This section provides details for each class and property defined by Forest Obse
          <dd>
             <a href="#isFeatureOfInterestOf" title="https://w3id.org/def/foo#isFeatureOfInterestOf">is feature of interest of</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#madeObservation" title="https://w3id.org/def/foo#madeObservation">made observation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#based_near" title="https://w3id.org/def/foo#based_near">near</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
@@ -652,7 +678,21 @@ This section provides details for each class and property defined by Forest Obse
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/foo#OilPalmPlantation</p>
-      <dl class="description"/>
+      <div class="comment">
+         <span class="markdown">Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FeatureOfInterest" title="https://w3id.org/def/foo#FeatureOfInterest">Feature Of Interest</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#plantation" title="https://w3id.org/def/foo#plantation">plantation</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="Primates">
       <h3>Primates<sup class="type-c" title="class">c</sup>
@@ -725,6 +765,29 @@ This section provides details for each class and property defined by Forest Obse
          <dd>
             <a href="#Nasalis" title="https://w3id.org/def/foo#Nasalis">Nasalis</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Project">
+      <h3>Project<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Project</p>
+      <div class="comment">
+         <span class="markdown">Represents a reforestation project.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPlantedIn" title="https://w3id.org/def/foo#isPlantedIn">is planted in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#GrowBorneo" title="https://w3id.org/def/foo#GrowBorneo">Grow Borneo</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -966,9 +1029,34 @@ This section provides details for each class and property defined by Forest Obse
             <a href="#FeatureOfInterest" title="https://w3id.org/def/foo#FeatureOfInterest">Feature Of Interest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isPlantedIn" title="https://w3id.org/def/foo#isPlantedIn">is planted in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#lianas" title="https://w3id.org/def/foo#lianas">Lianas</a>
+            <a href="#Bayur" title="https://w3id.org/def/foo#Bayur">Bayur</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Belian" title="https://w3id.org/def/foo#Belian">Belian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Binuang" title="https://w3id.org/def/foo#Binuang">Binuang</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Bongkol" title="https://w3id.org/def/foo#Bongkol">Bongkol</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Durian" title="https://w3id.org/def/foo#Durian">Durian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#KayuMalam" title="https://w3id.org/def/foo#KayuMalam">Kayu Malam</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Kelumpang" title="https://w3id.org/def/foo#Kelumpang">Kelumpang</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Keranji" title="https://w3id.org/def/foo#Keranji">Keranji</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Kerodong" title="https://w3id.org/def/foo#Kerodong">Kerodong</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#KeruingPaya" title="https://w3id.org/def/foo#KeruingPaya">Keruing Paya</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#lianas" title="https://w3id.org/def/foo#lianas">Lianas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Mangkapon" title="https://w3id.org/def/foo#Mangkapon">Mangkapon</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Nyatoh" title="https://w3id.org/def/foo#Nyatoh">Nyatoh</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PayungPayung" title="https://w3id.org/def/foo#PayungPayung">Payung Payung</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pulai" title="https://w3id.org/def/foo#Pulai">Pulai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Rambutan" title="https://w3id.org/def/foo#Rambutan">Rambutan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Selongapid" title="https://w3id.org/def/foo#Selongapid">Selongapid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sepat" title="https://w3id.org/def/foo#Sepat">Sepat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tangkol" title="https://w3id.org/def/foo#Tangkol">Tangkol</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tarap" title="https://w3id.org/def/foo#Tarap">Tarap</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Terosob" title="https://w3id.org/def/foo#Terosob">Terosob</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is also defined as</dt>
@@ -990,10 +1078,16 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#isObservedBy" title="https://w3id.org/def/foo#isObservedBy">is observed by</a>
       </li>
       <li>
+         <a href="#isPlantedIn" title="https://w3id.org/def/foo#isPlantedIn">is planted in</a>
+      </li>
+      <li>
          <a href="#madeBySensor" title="https://w3id.org/def/foo#madeBySensor">made by sensor</a>
       </li>
       <li>
          <a href="#madeObservation" title="https://w3id.org/def/foo#madeObservation">made observation</a>
+      </li>
+      <li>
+         <a href="#based_near" title="https://w3id.org/def/foo#based_near">near</a>
       </li>
       <li>
          <a href="#observedProperty" title="https://w3id.org/def/foo#observedProperty">observed property</a>
@@ -1094,6 +1188,31 @@ This section provides details for each class and property defined by Forest Obse
          </dl>
       </div>
    </div>
+   <div class="entity" id="isPlantedIn">
+      <h3>is planted in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#isPlantedIn</p>
+      <div class="comment">
+         <span class="markdown">Links a tree species to the reforestation project where it is planted.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Project" title="https://w3id.org/def/foo#Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="madeBySensor">
       <h3>made by sensor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1152,6 +1271,28 @@ This section provides details for each class and property defined by Forest Obse
                <sup class="type-op" title="object property">op</sup>, <a href="http://www.w3.org/ns/sosa/madeBySensor"
                   target="_blank"
                   title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="based_near">
+      <h3>near<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#based_near</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FeatureOfInterest" title="https://w3id.org/def/foo#FeatureOfInterest">Feature Of Interest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Observation" title="https://w3id.org/def/foo#Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2414,6 +2555,12 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#aqeelaGPS" title="https://w3id.org/def/foo#aqeelaGPS">Aqeela GPS</a>
       </li>
       <li>
+         <a href="#Bayur" title="https://w3id.org/def/foo#Bayur">Bayur</a>
+      </li>
+      <li>
+         <a href="#Belian" title="https://w3id.org/def/foo#Belian">Belian</a>
+      </li>
+      <li>
          <a href="#bikang1" title="https://w3id.org/def/foo#bikang1">Bikang 1</a>
       </li>
       <li>
@@ -2429,6 +2576,12 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#binbinganGPS" title="https://w3id.org/def/foo#binbinganGPS">Binbingan GPS</a>
       </li>
       <li>
+         <a href="#Binuang" title="https://w3id.org/def/foo#Binuang">Binuang</a>
+      </li>
+      <li>
+         <a href="#Bongkol" title="https://w3id.org/def/foo#Bongkol">Bongkol</a>
+      </li>
+      <li>
          <a href="#cameraTrap" title="https://w3id.org/def/foo#cameraTrap">Camera Trap</a>
       </li>
       <li>
@@ -2438,9 +2591,15 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#daraGPS" title="https://w3id.org/def/foo#daraGPS">Dara GPS</a>
       </li>
       <li>
+         <a href="#Durian" title="https://w3id.org/def/foo#Durian">Durian</a>
+      </li>
+      <li>
          <a href="#gPSObservation" title="https://w3id.org/def/foo#gPSObservation">
             <span>GPS Observation</span>
          </a>
+      </li>
+      <li>
+         <a href="#GrowBorneo" title="https://w3id.org/def/foo#GrowBorneo">Grow Borneo</a>
       </li>
       <li>
          <a href="#guli" title="https://w3id.org/def/foo#guli">Guli</a>
@@ -2483,6 +2642,21 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#kasihGPS" title="https://w3id.org/def/foo#kasihGPS">Kasih GPS</a>
       </li>
       <li>
+         <a href="#KayuMalam" title="https://w3id.org/def/foo#KayuMalam">Kayu Malam</a>
+      </li>
+      <li>
+         <a href="#Kelumpang" title="https://w3id.org/def/foo#Kelumpang">Kelumpang</a>
+      </li>
+      <li>
+         <a href="#Keranji" title="https://w3id.org/def/foo#Keranji">Keranji</a>
+      </li>
+      <li>
+         <a href="#Kerodong" title="https://w3id.org/def/foo#Kerodong">Kerodong</a>
+      </li>
+      <li>
+         <a href="#KeruingPaya" title="https://w3id.org/def/foo#KeruingPaya">Keruing Paya</a>
+      </li>
+      <li>
          <a href="#kuma" title="https://w3id.org/def/foo#kuma">Kuma</a>
       </li>
       <li>
@@ -2507,6 +2681,9 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#maliauGPS" title="https://w3id.org/def/foo#maliauGPS">Maliau GPS</a>
       </li>
       <li>
+         <a href="#Mangkapon" title="https://w3id.org/def/foo#Mangkapon">Mangkapon</a>
+      </li>
+      <li>
          <a href="#merotai" title="https://w3id.org/def/foo#merotai">Merotai</a>
       </li>
       <li>
@@ -2516,6 +2693,20 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#https://github.com/Naeima" title="https://github.com/Naeima">
             <span>naeima</span>
          </a>
+      </li>
+      <li>
+         <a href="#Nyatoh" title="https://w3id.org/def/foo#Nyatoh">Nyatoh</a>
+      </li>
+      <li>
+         <a href="#PayungPayung" title="https://w3id.org/def/foo#PayungPayung">Payung Payung</a>
+      </li>
+      <li>
+         <a href="#plantation" title="https://w3id.org/def/foo#plantation">
+            <span>plantation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Pulai" title="https://w3id.org/def/foo#Pulai">Pulai</a>
       </li>
       <li>
          <a href="#puteri" title="https://w3id.org/def/foo#puteri">Puteri</a>
@@ -2530,10 +2721,19 @@ This section provides details for each class and property defined by Forest Obse
          <a href="#pututGPS" title="https://w3id.org/def/foo#pututGPS">Putut GPS</a>
       </li>
       <li>
+         <a href="#Rambutan" title="https://w3id.org/def/foo#Rambutan">Rambutan</a>
+      </li>
+      <li>
          <a href="#sejati" title="https://w3id.org/def/foo#sejati">Sejati</a>
       </li>
       <li>
          <a href="#sejatiGPS" title="https://w3id.org/def/foo#sejatiGPS">Sejati GPS</a>
+      </li>
+      <li>
+         <a href="#Selongapid" title="https://w3id.org/def/foo#Selongapid">Selongapid</a>
+      </li>
+      <li>
+         <a href="#Sepat" title="https://w3id.org/def/foo#Sepat">Sepat</a>
       </li>
       <li>
          <a href="#seri" title="https://w3id.org/def/foo#seri">Seri</a>
@@ -2554,6 +2754,15 @@ This section provides details for each class and property defined by Forest Obse
             title="https://saref.etsi.org/saref4agri/SoilTensiometer">
             <span>soil tensiometer</span>
          </a>
+      </li>
+      <li>
+         <a href="#Tangkol" title="https://w3id.org/def/foo#Tangkol">Tangkol</a>
+      </li>
+      <li>
+         <a href="#Tarap" title="https://w3id.org/def/foo#Tarap">Tarap</a>
+      </li>
+      <li>
+         <a href="#Terosob" title="https://w3id.org/def/foo#Terosob">Terosob</a>
       </li>
       <li>
          <a href="#treeObservation" title="https://w3id.org/def/foo#treeObservation">
@@ -2703,6 +2912,42 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Bayur">
+      <h3>Bayur<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Bayur</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Bayur in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Belian">
+      <h3>Belian<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Belian</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Belian in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="bikang1">
       <h3>Bikang 1<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2832,6 +3077,42 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Binuang">
+      <h3>Binuang<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Binuang</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Binuang in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Bongkol">
+      <h3>Bongkol<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Bongkol</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Bongkol in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="cameraTrap">
       <h3>Camera Trap<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2914,6 +3195,24 @@ This section provides details for each class and property defined by Forest Obse
             <a href="#observes" title="https://w3id.org/def/foo#observes">observes</a>
             <sup class="type-op" title="object property">op</sup> 
             <a href="#gPSObservation" title="https://w3id.org/def/foo#gPSObservation">GPS Observation</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Durian">
+      <h3>Durian<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Durian</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Durian in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -3164,6 +3463,24 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
          <dt>is also defined as</dt>
          <dd>class</dd>
+      </dl>
+   </div>
+   <div class="entity" id="GrowBorneo">
+      <h3>Grow Borneo<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#GrowBorneo</p>
+      <div class="comment">
+         <span class="markdown">A reforestation project in Borneo that plants various tree species.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Project" title="https://w3id.org/def/foo#Project">Project</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="guli">
@@ -3479,6 +3796,96 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
       </dl>
    </div>
+   <div class="entity" id="KayuMalam">
+      <h3>Kayu Malam<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#KayuMalam</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Kayu Malam in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Kelumpang">
+      <h3>Kelumpang<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Kelumpang</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Kelumpang in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Keranji">
+      <h3>Keranji<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Keranji</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Keranji in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Kerodong">
+      <h3>Kerodong<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Kerodong</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Kerodong in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="KeruingPaya">
+      <h3>Keruing Paya<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#KeruingPaya</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Keruing Paya in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="kuma">
       <h3>Kuma<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3670,6 +4077,24 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Mangkapon">
+      <h3>Mangkapon<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Mangkapon</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Mangkapon in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="merotai">
       <h3>Merotai<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3738,6 +4163,75 @@ This section provides details for each class and property defined by Forest Obse
             <a href="http://xmlns.com/foaf/0.1/Person"
                target="_blank"
                title="http://xmlns.com/foaf/0.1/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Nyatoh">
+      <h3>Nyatoh<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Nyatoh</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Nyatoh in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PayungPayung">
+      <h3>Payung Payung<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#PayungPayung</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Payung Payung in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="plantation">
+      <h3>plantation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#plantation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OilPalmPlantation" title="https://w3id.org/def/foo#OilPalmPlantation">Oil Palm Plantation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Pulai">
+      <h3>Pulai<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Pulai</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Pulai in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3840,6 +4334,24 @@ This section provides details for each class and property defined by Forest Obse
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Rambutan">
+      <h3>Rambutan<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Rambutan</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Rambutan in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="sejati">
       <h3>Sejati<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3886,6 +4398,42 @@ This section provides details for each class and property defined by Forest Obse
             <a href="#observes" title="https://w3id.org/def/foo#observes">observes</a>
             <sup class="type-op" title="object property">op</sup> 
             <a href="#gPSObservation" title="https://w3id.org/def/foo#gPSObservation">GPS Observation</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Selongapid">
+      <h3>Selongapid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Selongapid</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Selongapid in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Sepat">
+      <h3>Sepat<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Sepat</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Sepat in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -4090,6 +4638,60 @@ This section provides details for each class and property defined by Forest Obse
          <dt>is same as</dt>
          <dd>
             <a href="#soilSensor" title="https://w3id.org/def/foo#soilSensor">Soil Sensor</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tangkol">
+      <h3>Tangkol<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Tangkol</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Tangkol in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tarap">
+      <h3>Tarap<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Tarap</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Tarap in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Terosob">
+      <h3>Terosob<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/foo#Terosob</p>
+      <div class="comment">
+         <span class="markdown">A tree species named Terosob in Malay.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
