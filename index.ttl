@@ -880,92 +880,116 @@ foo:isPlantedIn a owl:ObjectProperty ;
     rdfs:range foo:Project ;
     rdfs:comment "Links a tree species to the reforestation project where it is planted." .
 
-### Individuals (Tree Species)
-foo:Bongkol a owl:NamedIndividual, foo:Tree ;
+### Individual (Grow Borneo Project)
+foo:growBorneo a owl:NamedIndividual, foo:Project ;
+    rdfs:label "Grow Borneo" ;
+    rdfs:comment "A reforestation project in Borneo planting various tree species." .
+
+### Link Tree Species to Grow Borneo
+foo:bongkol a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Bongkol" ;
-    rdfs:comment "A tree species named Bongkol in Malay." .
+    rdfs:comment "A tree species named Bongkol in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Selongapid a  owl:NamedIndividual, foo:Tree ;
+foo:selongapid a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Selongapid" ;
-    rdfs:comment "A tree species named Selongapid in Malay." .
+    rdfs:comment "A tree species named Selongapid in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Binuang a  owl:NamedIndividual, foo:Tree ;
+foo:binuang a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Binuang" ;
-    rdfs:comment "A tree species named Binuang in Malay." .
+    rdfs:comment "A tree species named Binuang in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Terosob a  owl:NamedIndividual,  foo:Tree ;
+foo:terosob a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Terosob" ;
-    rdfs:comment "A tree species named Terosob in Malay." .
+    rdfs:comment "A tree species named Terosob in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Kelumpang a  owl:NamedIndividual, foo:Tree ;
+foo:kelumpang a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Kelumpang" ;
-    rdfs:comment "A tree species named Kelumpang in Malay." .
+    rdfs:comment "A tree species named Kelumpang in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Mangkapon a  owl:NamedIndividual, foo:Tree ;
+foo:mangkapon a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Mangkapon" ;
-    rdfs:comment "A tree species named Mangkapon in Malay." .
+    rdfs:comment "A tree species named Mangkapon in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Nyatoh a    owl:NamedIndividual, foo:Tree ;
+foo:nyatoh a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Nyatoh" ;
-    rdfs:comment "A tree species named Nyatoh in Malay." .
+    rdfs:comment "A tree species named Nyatoh in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Durian a  owl:NamedIndividual,  foo:Tree ;
+foo:durian a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Durian" ;
-    rdfs:comment "A tree species named Durian in Malay." .
+    rdfs:comment "A tree species named Durian in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Tarap a   owl:NamedIndividual, foo:Tree ;
+foo:tarap a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Tarap" ;
-    rdfs:comment "A tree species named Tarap in Malay." .
+    rdfs:comment "A tree species named Tarap in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Rambutan a   owl:NamedIndividual, foo:Tree ;
+foo:rambutan a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Rambutan" ;
-    rdfs:comment "A tree species named Rambutan in Malay." .
+    rdfs:comment "A tree species named Rambutan in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Pulai a   owl:NamedIndividual, foo:Tree ;
+foo:pulai a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Pulai" ;
-    rdfs:comment "A tree species named Pulai in Malay." .
+    rdfs:comment "A tree species named Pulai in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:PayungPayung a     owl:NamedIndividual, foo:Tree ;
+foo:payungPayung a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Payung Payung" ;
-    rdfs:comment "A tree species named Payung Payung in Malay." .
+    rdfs:comment "A tree species named Payung Payung in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:KayuMalam a    owl:NamedIndividual, foo:Tree ;
+foo:kayuMalam a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Kayu Malam" ;
-    rdfs:comment "A tree species named Kayu Malam in Malay." .
+    rdfs:comment "A tree species named Kayu Malam in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Kerodong a    owl:NamedIndividual, foo:Tree ;
+foo:kerodong a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Kerodong" ;
-    rdfs:comment "A tree species named Kerodong in Malay." .
+    rdfs:comment "A tree species named Kerodong in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:KeruingPaya a   owl:NamedIndividual,  foo:Tree ;
+foo:keruingPaya a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Keruing Paya" ;
-    rdfs:comment "A tree species named Keruing Paya in Malay." .
+    rdfs:comment "A tree species named Keruing Paya in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Bayur a   owl:NamedIndividual,  foo:Tree ;
+foo:bayur a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Bayur" ;
-    rdfs:comment "A tree species named Bayur in Malay." .
+    rdfs:comment "A tree species named Bayur in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Tangkol a    owl:NamedIndividual,  foo:Tree ;
+foo:tangkol a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Tangkol" ;
-    rdfs:comment "A tree species named Tangkol in Malay." .
+    rdfs:comment "A tree species named Tangkol in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Sepat a owl:NamedIndividual,  foo:Tree ;
+foo:sepat a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Sepat" ;
-    rdfs:comment "A tree species named Sepat in Malay." .
+    rdfs:comment "A tree species named Sepat in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Belian a   owl:NamedIndividual,  foo:Tree ;
+foo:belian a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Belian" ;
-    rdfs:comment "A tree species named Belian in Malay." .
+    rdfs:comment "A tree species named Belian in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
-foo:Keranji a  owl:NamedIndividual,  foo:Tree ;
+foo:keranji a owl:NamedIndividual, foo:Tree ;
     rdfs:label "Keranji" ;
-    rdfs:comment "A tree species named Keranji in Malay." .
+    rdfs:comment "A tree species named Keranji in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
 
 ### Individual (Grow Borneo Project)
-foo:GrowBorneo a  owl:NamedIndividual,  foo:Project ;
+foo:growBorneo a  owl:NamedIndividual,  foo:Project ;
     rdfs:label "Grow Borneo" ;
     rdfs:comment "A reforestation project in Borneo that plants various tree species." .
-
 
 ##### Camera Trap Images Modeling #### 
 #### Image as a Feature of Interest ####
