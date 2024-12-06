@@ -700,6 +700,7 @@ foo:abawGPS a   owl:NamedIndividual, foo:Sensor ;
 
 foo:aqeela a owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Aqeela"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:guli a   owl:NamedIndividual, foo:ElephasMaximus;
@@ -728,6 +729,7 @@ foo:ita a   owl:NamedIndividual, foo:ElephasMaximus ;
 
 foo:jasmin a  owl:NamedIndividual,  foo:ElephasMaximus ;
     rdfs:label "Jasmin"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:jasper a  owl:NamedIndividual,  foo:ElephasMaximus ;
@@ -736,6 +738,7 @@ foo:jasper a  owl:NamedIndividual,  foo:ElephasMaximus ;
 
 foo:kasih a owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Kasih"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:kuma a  owl:NamedIndividual,  foo:ElephasMaximus ;
@@ -744,6 +747,7 @@ foo:kuma a  owl:NamedIndividual,  foo:ElephasMaximus ;
 
 foo:liun a  owl:NamedIndividual,  foo:ElephasMaximus ;
     rdfs:label "Liun"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:maliau a  owl:NamedIndividual, foo:ElephasMaximus ;
@@ -756,14 +760,17 @@ foo:merotai a   owl:NamedIndividual, foo:ElephasMaximus ;
 
 foo:puteri a  owl:NamedIndividual, foo:ElephasMaximus;
     rdfs:label "Puteri"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:putut a  owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Putut"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:sejati a   owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Sejati"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Male Asian Elephant."@en .
 
 foo:seri a   owl:NamedIndividual, foo:ElephasMaximus ;
