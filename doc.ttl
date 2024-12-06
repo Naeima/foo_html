@@ -82,7 +82,6 @@ foo: a owl:Ontology ;
     foaf:homepage <https://rdcu.be/dKNG2> ;
     foaf:name "Springer, Cham"@en .
 
-
 ### FOO Classes (Reused from BBC Wildlife Ontology (wo)) ###
 #### BBC Wildlife Ontology Taxonomic Classes ####
 wo:Kingdom a owl:Class .
@@ -137,7 +136,6 @@ foo:Squamata a owl:Class ;
     rdfs:subClassOf foo:Reptilia ;
     owl:equivalentClass wo:Squamata .
 
-
 #### Family ####
 foo:Elephantidae a owl:Class ;
     rdfs:label "Elephantidae"@en-gb ;
@@ -185,7 +183,6 @@ foo:FeatureOfInterest a owl:Class ;
   skos:example "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."@en ;
   owl:equivalentClass  sosa:FeatureOfInterest ;
   rdfs:isDefinedBy sosa: .
-
 
 ### FOO Object Properties (Reused from SOSA) ###
 
@@ -243,6 +240,12 @@ foo:observes a owl:ObjectProperty ;
     rdfs:range foo:ObservableProperty ;
     owl:inverseOf foo:isObservedBy ;
     owl:equivalentProperty  sosa:observes  .  
+
+foo:based_near  a owl:ObjectProperty ;
+    rdfs:label "near"@en ;
+    rdfs:domain foo:FeatureOfInterest ; 
+    rdfs:range foo:Observation ;
+    owl:equivalentProperty    foaf:based_near .
 
 #########################################################################################################
 
@@ -305,11 +308,6 @@ foo:ManisJavanica a owl:Class ;
     rdfs:comment "Manis Javanica is a species critically threatened by poaching and habitat loss. It is one of eight pangolin species, all of which are considered Vulnerable, Endangered, or Critically Endangered according to the IUCN Red List and listed in CITES Appendix I. The Sunda pangolin, critically endangered and the only species found in Malaysia, inhabits Peninsular Malaysia and Malaysian Borneo, including Sabah and Sarawak. Despite its high protection status in Sabah, where it is (totally protected) under the Wildlife Conservation Enactment 1997, the species faces severe threats from illegal wildlife trade and habitat degradation. In 2019, authorities in Sabah seized over 30 tonnes of pangolin products, highlighting the extensive illicit trade network. The Sunda pangolin occupies various habitats, from primary and secondary forests to wetlands, mangroves, and grasslands."@en ;
     rdfs:definedBy <https://doi.org/10.1016/j.gecco.2024.e02962> ;
     skos:definition "Sunda pangolin aka Manis Javanica is a mammal distinguished by its protective armor of keratin scales, which cover its body except for its belly and face. Native to Southeast Asia, including Malaysia, Thailand, Indonesia, and Vietnam, this species is adapted to various habitats, ranging from primary and secondary forests to wetlands, mangroves, and grasslands. Characterized by its elongated body, small head, and long, prehensile tail, the Sunda pangolin is primarily nocturnal and has a diet mainly consisting of ants and termites, which it extracts using its long, sticky tongue. It plays a vital role in its ecosystem by controlling insect populations."@en .
-
-foo:OilPalmPlantation a  owl:Class ;
-    rdfs:label   "Oil Palm Plantation" ;
-    owl:equivalentClass      <http://purl.obolibrary.org/obo/ENVO_00000120> . 
-
 
 ### FOO Data Properties ###
 ### GPS Observation Data Properties ###
@@ -806,8 +804,7 @@ foo:soilSensor a  owl:NamedIndividual, foo:Sensor ;
 
 #### Soil Observation ####
 foo:soilObservation a  owl:NamedIndividual,  foo:Observation ;
-    rdfs:label "Soil Observation"@en ;
-    
+    rdfs:label "Soil Observation"@en ;    
 # Soil properties observed
     foo:observedProperty foo:cNRatio ,
     foo:clay,
@@ -830,18 +827,17 @@ foo:soilObservation a  owl:NamedIndividual,  foo:Observation ;
     foo:madeBySensor foo:soilSensor .
 
 #### Tree Modeling ####
+foo:Tree a owl:Class ;
+    rdfs:subClassOf   foo:FeatureOfInterest ;
+    owl:equivalentClass  <http://purl.dataone.org/odo/ECSO_00000501> ;
+    rdfs:label "Tree"@en .
 
+#### Tree Observation ####
 foo:treeSensor a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Tree Sensor"@en ;
     foo:observes foo:treeProperties ;
     foo:hasFeatureOfInterest foo:Tree .
 
-#### Tree modeling ####
-foo:Tree a owl:Class ;
-    rdfs:subClassOf   foo:FeatureOfInterest ;
-    rdfs:label "Tree"@en .
-
-#### Tree Observation ####
 foo:treeObservation a  owl:NamedIndividual, foo:Observation ;
     rdfs:label "Tree Observation"@en ;
     
@@ -872,6 +868,129 @@ foo:lianaSensor a  owl:NamedIndividual, foo:Sensor ;
     rdfs:label "Liana Sensor"@en ;
     foo:observes foo:lianaProperties .
 
+#### Grow Borneo Project ####
+foo:Project a owl:Class ;
+    rdfs:label "Project" ;
+    rdfs:comment "Represents a reforestation project." .
+
+### Object Properties
+foo:isPlantedIn a owl:ObjectProperty ;
+    rdfs:label "is planted in" ;
+    rdfs:domain foo:Tree ;
+    rdfs:range foo:Project ;
+    rdfs:comment "Links a tree species to the reforestation project where it is planted." .
+
+### Individual (Grow Borneo Project)
+foo:growBorneo a owl:NamedIndividual, foo:Project ;
+    rdfs:label "Grow Borneo" ;
+    rdfs:comment "A reforestation project in Borneo planting various tree species." .
+
+### Link Tree Species to Grow Borneo
+foo:bongkol a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Bongkol" ;
+    rdfs:comment "A tree species named Bongkol in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:selongapid a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Selongapid" ;
+    rdfs:comment "A tree species named Selongapid in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:binuang a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Binuang" ;
+    rdfs:comment "A tree species named Binuang in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:terosob a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Terosob" ;
+    rdfs:comment "A tree species named Terosob in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:kelumpang a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Kelumpang" ;
+    rdfs:comment "A tree species named Kelumpang in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:mangkapon a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Mangkapon" ;
+    rdfs:comment "A tree species named Mangkapon in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:nyatoh a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Nyatoh" ;
+    rdfs:comment "A tree species named Nyatoh in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:durian a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Durian" ;
+    rdfs:comment "A tree species named Durian in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:tarap a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Tarap" ;
+    rdfs:comment "A tree species named Tarap in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:rambutan a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Rambutan" ;
+    rdfs:comment "A tree species named Rambutan in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:pulai a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Pulai" ;
+    rdfs:comment "A tree species named Pulai in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:payungPayung a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Payung Payung" ;
+    rdfs:comment "A tree species named Payung Payung in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:kayuMalam a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Kayu Malam" ;
+    rdfs:comment "A tree species named Kayu Malam in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:kerodong a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Kerodong" ;
+    rdfs:comment "A tree species named Kerodong in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:keruingPaya a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Keruing Paya" ;
+    rdfs:comment "A tree species named Keruing Paya in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:bayur a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Bayur" ;
+    rdfs:comment "A tree species named Bayur in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:tangkol a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Tangkol" ;
+    rdfs:comment "A tree species named Tangkol in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:sepat a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Sepat" ;
+    rdfs:comment "A tree species named Sepat in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:belian a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Belian" ;
+    rdfs:comment "A tree species named Belian in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+foo:keranji a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Keranji" ;
+    rdfs:comment "A tree species named Keranji in Malay." ;
+    foo:isPlantedIn foo:growBorneo .
+
+### Individual (Grow Borneo Project)
+foo:growBorneo a  owl:NamedIndividual,  foo:Project ;
+    rdfs:label "Grow Borneo" ;
+    rdfs:comment "A reforestation project in Borneo that plants various tree species." .
+
 ##### Camera Trap Images Modeling #### 
 #### Image as a Feature of Interest ####
 foo:Image a owl:Class ;
@@ -899,10 +1018,21 @@ foo:imageObservation a owl:NamedIndividual,  foo:Observation ;
     foo:cameraLocation ,
     foo:animalDetected .
 
+##### Oil Palm Plantation ######
+foo:OilPalmPlantation a  owl:Class ;
+    rdfs:label   "Oil Palm Plantation" ;
+    rdfs:subClassOf  foo:FeatureOfInterest ;
+    rdfs:comment  "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans.";
+    owl:equivalentClass      <http://purl.obolibrary.org/obo/ENVO_00000120> . 
+
+foo:plantation a owl:NamedIndividual, foo:OilPalmPlantation;
+    pos:latitude "5.36"^^xsd:float;
+    pos:longitude "118.66 "^^xsd:float.
+
 ##### How to reuse FOO #######
 
 # To enable effective reuse of this ontology, please follow these guidelines:
 # 1. Create your own custom ontology using identical class and property names as in this model.
 # 2. Import the `FOO` ontology (https://w3id.org/def/foo#) directly into your new ontology.
-# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using owl:equivalentClass and owl:equivalentProperty.
+# 3. For each class and property, link your custom definitions to those in the `FOO` ontology using owl:equivalentClass, owl:equivalentProperty, and owl:sameAs.
 # This approach will maintain semantic consistency and allow for smooth interoperability across ontologies that reference shared terms and structures.
