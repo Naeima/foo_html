@@ -94,6 +94,14 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.cardiff.ac.uk/people/
 <http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
 
@@ -178,6 +186,13 @@ xsd:time rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/sosa/observes> owl:equivalentProperty :observes .
 
 
+###  https://w3id.org/def/foo#based_near
+:based_near rdf:type owl:ObjectProperty ;
+            rdfs:domain :FeatureOfInterest ;
+            rdfs:range :Observation ;
+            rdfs:label "near"@en .
+
+
 ###  https://w3id.org/def/foo#hasFeatureOfInterest
 :hasFeatureOfInterest rdf:type owl:ObjectProperty ;
                       owl:inverseOf <http://www.w3.org/ns/sosa/isFeatureOfInterestOf> ;
@@ -198,11 +213,18 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#isObservedBy
 :isObservedBy rdf:type owl:ObjectProperty ;
-              owl:inverseOf :observes ;
               rdfs:domain :ObservableProperty ;
               rdfs:range :Sensor ;
               rdfs:comment "Relation between an ObservableProperty and the Sensor able to observe it."@en ;
               rdfs:label "is observed by"@en .
+
+
+###  https://w3id.org/def/foo#isPlantedIn
+:isPlantedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Tree ;
+             rdfs:range :Project ;
+             rdfs:comment "Links a tree species to the reforestation project where it is planted." ;
+             rdfs:label "is planted in" .
 
 
 ###  https://w3id.org/def/foo#madeBySensor
@@ -233,6 +255,7 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#observes
 :observes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isObservedBy ;
           rdfs:domain :Sensor ;
           rdfs:range :ObservableProperty ;
           rdfs:comment "Relation between a Sensor and an ObservableProperty that it is capable of sensing."@en ;
@@ -480,6 +503,11 @@ xsd:time rdf:type rdfs:Datatype .
                                                       owl:equivalentClass :ManisJavanica .
 
 
+###  http://purl.dataone.org/odo/ECSO_00000501
+<http://purl.dataone.org/odo/ECSO_00000501> rdf:type owl:Class ;
+                                            owl:equivalentClass :Tree .
+
+
 ###  http://purl.obolibrary.org/obo/ENVO_00000120
 <http://purl.obolibrary.org/obo/ENVO_00000120> rdf:type owl:Class ;
                                                owl:equivalentClass :OilPalmPlantation .
@@ -675,6 +703,8 @@ xsd:time rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/foo#OilPalmPlantation
 :OilPalmPlantation rdf:type owl:Class ;
+                   rdfs:subClassOf :FeatureOfInterest ;
+                   rdfs:comment "Oil palm plantations near the Danau Girang Field Centre (DGFC) in Sabah, Malaysia, are situated within the fragmented landscape of the Lower Kinabatangan floodplain, approximately between 5.4°N to 5.6°N latitude and 117.9°E to 118.1°E longitude. This region includes a mix of protected forests, degraded habitats, and extensive plantations, often bordering riparian corridors along the Kinabatangan River. These plantations have significantly impacted biodiversity and habitat connectivity, posing challenges for wildlife such as Bornean elephants and orangutans." ;
                    rdfs:label "Oil Palm Plantation" .
 
 
@@ -691,6 +721,12 @@ xsd:time rdf:type rdfs:Datatype .
              rdfs:subClassOf :Mammalia ;
              rdfs:label "Proboscidea"@en-gb ;
              <http://www.w3.org/2004/02/skos/core#definition> "Any of an order (Proboscidea) of large mammals comprising the elephants and extinct related forms."@en .
+
+
+###  https://w3id.org/def/foo#Project
+:Project rdf:type owl:Class ;
+         rdfs:comment "Represents a reforestation project." ;
+         rdfs:label "Project" .
 
 
 ###  https://w3id.org/def/foo#Pythonidae
@@ -1082,6 +1118,22 @@ xsd:time rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Aqeela."@en .
 
 
+###  https://w3id.org/def/foo#bayur
+:bayur rdf:type owl:NamedIndividual ,
+                :Tree ;
+       :isPlantedIn :growBorneo ;
+       rdfs:comment "A tree species named Bayur in Malay." ;
+       rdfs:label "Bayur" .
+
+
+###  https://w3id.org/def/foo#belian
+:belian rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        :isPlantedIn :growBorneo ;
+        rdfs:comment "A tree species named Belian in Malay." ;
+        rdfs:label "Belian" .
+
+
 ###  https://w3id.org/def/foo#bikang1
 :bikang1 rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
@@ -1121,6 +1173,22 @@ xsd:time rdf:type rdfs:Datatype .
               :observes :gPSObservation ;
               rdfs:label "Binbingan GPS"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Binbingan."@en .
+
+
+###  https://w3id.org/def/foo#binuang
+:binuang rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         :isPlantedIn :growBorneo ;
+         rdfs:comment "A tree species named Binuang in Malay." ;
+         rdfs:label "Binuang" .
+
+
+###  https://w3id.org/def/foo#bongkol
+:bongkol rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         :isPlantedIn :growBorneo ;
+         rdfs:comment "A tree species named Bongkol in Malay." ;
+         rdfs:label "Bongkol" .
 
 
 ###  https://w3id.org/def/foo#cNRatio
@@ -1181,6 +1249,14 @@ xsd:time rdf:type rdfs:Datatype .
 :distance rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#durian
+:durian rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        :isPlantedIn :growBorneo ;
+        rdfs:comment "A tree species named Durian in Malay." ;
+        rdfs:label "Durian" .
+
+
 ###  https://w3id.org/def/foo#gMTDate
 :gMTDate rdf:type owl:NamedIndividual .
 
@@ -1229,6 +1305,14 @@ xsd:time rdf:type rdfs:Datatype .
                                   :longitude ,
                                   :speed ,
                                   :temperature .
+
+
+###  https://w3id.org/def/foo#growBorneo
+:growBorneo rdf:type owl:NamedIndividual ,
+                     :Project ;
+            rdfs:comment "A reforestation project in Borneo planting various tree species." ,
+                         "A reforestation project in Borneo that plants various tree species." ;
+            rdfs:label "Grow Borneo" .
 
 
 ###  https://w3id.org/def/foo#guli
@@ -1349,6 +1433,46 @@ xsd:time rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Kasih."@en .
 
 
+###  https://w3id.org/def/foo#kayuMalam
+:kayuMalam rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           :isPlantedIn :growBorneo ;
+           rdfs:comment "A tree species named Kayu Malam in Malay." ;
+           rdfs:label "Kayu Malam" .
+
+
+###  https://w3id.org/def/foo#kelumpang
+:kelumpang rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           :isPlantedIn :growBorneo ;
+           rdfs:comment "A tree species named Kelumpang in Malay." ;
+           rdfs:label "Kelumpang" .
+
+
+###  https://w3id.org/def/foo#keranji
+:keranji rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         :isPlantedIn :growBorneo ;
+         rdfs:comment "A tree species named Keranji in Malay." ;
+         rdfs:label "Keranji" .
+
+
+###  https://w3id.org/def/foo#kerodong
+:kerodong rdf:type owl:NamedIndividual ,
+                   :Tree ;
+          :isPlantedIn :growBorneo ;
+          rdfs:comment "A tree species named Kerodong in Malay." ;
+          rdfs:label "Kerodong" .
+
+
+###  https://w3id.org/def/foo#keruingPaya
+:keruingPaya rdf:type owl:NamedIndividual ,
+                      :Tree ;
+             :isPlantedIn :growBorneo ;
+             rdfs:comment "A tree species named Keruing Paya in Malay." ;
+             rdfs:label "Keruing Paya" .
+
+
 ###  https://w3id.org/def/foo#kuma
 :kuma rdf:type owl:NamedIndividual ,
                :ElephasMaximus ;
@@ -1443,6 +1567,14 @@ xsd:time rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Maliau."@en .
 
 
+###  https://w3id.org/def/foo#mangkapon
+:mangkapon rdf:type owl:NamedIndividual ,
+                    :Tree ;
+           :isPlantedIn :growBorneo ;
+           rdfs:comment "A tree species named Mangkapon in Malay." ;
+           rdfs:label "Mangkapon" .
+
+
 ###  https://w3id.org/def/foo#merotai
 :merotai rdf:type owl:NamedIndividual ,
                   :ElephasMaximus ;
@@ -1463,8 +1595,39 @@ xsd:time rdf:type rdfs:Datatype .
 :model rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#nyatoh
+:nyatoh rdf:type owl:NamedIndividual ,
+                 :Tree ;
+        :isPlantedIn :growBorneo ;
+        rdfs:comment "A tree species named Nyatoh in Malay." ;
+        rdfs:label "Nyatoh" .
+
+
+###  https://w3id.org/def/foo#payungPayung
+:payungPayung rdf:type owl:NamedIndividual ,
+                       :Tree ;
+              :isPlantedIn :growBorneo ;
+              rdfs:comment "A tree species named Payung Payung in Malay." ;
+              rdfs:label "Payung Payung" .
+
+
+###  https://w3id.org/def/foo#plantation
+:plantation rdf:type owl:NamedIndividual ,
+                     :OilPalmPlantation ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#latitude> "5.36"^^xsd:float ;
+            <http://www.w3.org/2003/01/geo/wgs84_pos#longitude> "118.66"^^xsd:float .
+
+
 ###  https://w3id.org/def/foo#plotName
 :plotName rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#pulai
+:pulai rdf:type owl:NamedIndividual ,
+                :Tree ;
+       :isPlantedIn :growBorneo ;
+       rdfs:comment "A tree species named Pulai in Malay." ;
+       rdfs:label "Pulai" .
 
 
 ###  https://w3id.org/def/foo#puteri
@@ -1499,6 +1662,14 @@ xsd:time rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Putut."@en .
 
 
+###  https://w3id.org/def/foo#rambutan
+:rambutan rdf:type owl:NamedIndividual ,
+                   :Tree ;
+          :isPlantedIn :growBorneo ;
+          rdfs:comment "A tree species named Rambutan in Malay." ;
+          rdfs:label "Rambutan" .
+
+
 ###  https://w3id.org/def/foo#sand
 :sand rdf:type owl:NamedIndividual .
 
@@ -1517,6 +1688,22 @@ xsd:time rdf:type rdfs:Datatype .
            :observes :gPSObservation ;
            rdfs:label "Sejati GPS"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "A GPS collar sensor fitted around the neck of an Asian elephant named Sejati."@en .
+
+
+###  https://w3id.org/def/foo#selongapid
+:selongapid rdf:type owl:NamedIndividual ,
+                     :Tree ;
+            :isPlantedIn :growBorneo ;
+            rdfs:comment "A tree species named Selongapid in Malay." ;
+            rdfs:label "Selongapid" .
+
+
+###  https://w3id.org/def/foo#sepat
+:sepat rdf:type owl:NamedIndividual ,
+                :Tree ;
+       :isPlantedIn :growBorneo ;
+       rdfs:comment "A tree species named Sepat in Malay." ;
+       rdfs:label "Sepat" .
 
 
 ###  https://w3id.org/def/foo#seri
@@ -1588,8 +1775,32 @@ xsd:time rdf:type rdfs:Datatype .
 :subplotRadius_m rdf:type owl:NamedIndividual .
 
 
+###  https://w3id.org/def/foo#tangkol
+:tangkol rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         :isPlantedIn :growBorneo ;
+         rdfs:comment "A tree species named Tangkol in Malay." ;
+         rdfs:label "Tangkol" .
+
+
+###  https://w3id.org/def/foo#tarap
+:tarap rdf:type owl:NamedIndividual ,
+                :Tree ;
+       :isPlantedIn :growBorneo ;
+       rdfs:comment "A tree species named Tarap in Malay." ;
+       rdfs:label "Tarap" .
+
+
 ###  https://w3id.org/def/foo#temperature
 :temperature rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/foo#terosob
+:terosob rdf:type owl:NamedIndividual ,
+                  :Tree ;
+         :isPlantedIn :growBorneo ;
+         rdfs:comment "A tree species named Terosob in Malay." ;
+         rdfs:label "Terosob" .
 
 
 ###  https://w3id.org/def/foo#totalC
