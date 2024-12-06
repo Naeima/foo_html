@@ -700,6 +700,7 @@ foo:abawGPS a   owl:NamedIndividual, foo:Sensor ;
 
 foo:aqeela a owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Aqeela"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:guli a   owl:NamedIndividual, foo:ElephasMaximus;
@@ -728,6 +729,7 @@ foo:ita a   owl:NamedIndividual, foo:ElephasMaximus ;
 
 foo:jasmin a  owl:NamedIndividual,  foo:ElephasMaximus ;
     rdfs:label "Jasmin"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:jasper a  owl:NamedIndividual,  foo:ElephasMaximus ;
@@ -736,6 +738,7 @@ foo:jasper a  owl:NamedIndividual,  foo:ElephasMaximus ;
 
 foo:kasih a owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Kasih"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:kuma a  owl:NamedIndividual,  foo:ElephasMaximus ;
@@ -744,6 +747,7 @@ foo:kuma a  owl:NamedIndividual,  foo:ElephasMaximus ;
 
 foo:liun a  owl:NamedIndividual,  foo:ElephasMaximus ;
     rdfs:label "Liun"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:maliau a  owl:NamedIndividual, foo:ElephasMaximus ;
@@ -756,14 +760,17 @@ foo:merotai a   owl:NamedIndividual, foo:ElephasMaximus ;
 
 foo:puteri a  owl:NamedIndividual, foo:ElephasMaximus;
     rdfs:label "Puteri"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:putut a  owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Putut"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Female Asian Elephant."@en .
 
 foo:sejati a   owl:NamedIndividual, foo:ElephasMaximus ;
     rdfs:label "Sejati"@en ;
+    foo:location  "Lower Kinabatangan Area" ;
     skos:definition "Male Asian Elephant."@en .
 
 foo:seri a   owl:NamedIndividual, foo:ElephasMaximus ;
@@ -1029,8 +1036,71 @@ foo:plantation a owl:NamedIndividual, foo:OilPalmPlantation;
     pos:latitude "5.36"^^xsd:float;
     pos:longitude "118.66 "^^xsd:float.
 
-##### How to reuse FOO #######
+#### University and Danau Girang Field Centre ####
 
+# Define University as a subclass of foaf:Organization
+foo:University rdf:type owl:Class ;
+    rdfs:label "University"@en ;
+    rdfs:comment "A subclass of FOAF's Organization representing academic institutions involved in research and higher education."@en ;
+    rdfs:subClassOf foaf:Organization ;
+    dcterms:description "Universities grant academic degrees and conduct research, often partnering with other organizations for projects like wildlife conservation."@en .
+
+foo:WildlifeDepartment rdf:type owl:Class ;
+    rdfs:label "Wildlife Department"@en ;
+    rdfs:comment "A government or non-government organization responsible for managing and conserving wildlife and their habitats."@en ;
+    dcterms:description "Wildlife Departments oversee policies, conservation programs, and research to protect wildlife and their ecosystems."@en .
+
+foo:FieldCentre rdf:type owl:Class ;
+    rdfs:label "Field Centre"@en ;
+    rdfs:comment "A facility dedicated to supporting research, conservation, and education in specific ecological or wildlife domains."@en ;
+    dcterms:description "Field Centres provide infrastructure and expertise for field research and conservation activities, often in partnership with other organizations."@en .
+
+# Properties of a Field Centre and other buildings
+foo:location rdf:type owl:ObjectProperty ;
+    rdfs:domain foo:FieldCentre ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "Specifies the geographical location of an entity."@en .
+
+foo:supportedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain foo:FieldCentre ;
+    rdfs:range foo:University ;
+    rdfs:label "Supported By"@en ;
+    rdfs:comment "Organizations or entities providing financial, technical, or logistical support for the Field Centre."@en .
+
+foo:focusArea rdf:type owl:DatatypeProperty ;
+    rdfs:domain foo:FieldCentre ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Focus Area"@en ;
+    rdfs:comment "The main area of research or conservation focus for the Field Centre."@en .
+
+foo:mission rdf:type owl:DatatypeProperty ;
+    rdfs:domain foo:FieldCentre ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "Mission Statement"@en ;
+    rdfs:comment "The overarching goal or purpose of the Field Centre."@en .
+
+# Supporting Institutions
+foo:cardiffUniversity rdf:type foo:University ;
+    rdfs:label "Cardiff University"@en ;
+    foo:location "Wales, UK" .
+
+foo:sabahWildlifeDepartment rdf:type foo:WildlifeDepartment ;
+    rdfs:label "Sabah Wildlife Department"@en ;
+    foo:location "Borneo, Malaysia" .
+
+# DGFC 
+foo:danauGirangFieldCentre rdf:type foo:FieldCentre ;
+    rdfs:label "Danau Girang Field Centre"@en ;
+    dcterms:description "A field centre focused on wildlife research and conservation in the Lower Kinabatangan Wildlife Sanctuary,
+    supported by Cardiff University and the Sabah Wildlife Department."@en ;
+    foo:location "Lower Kinabatangan Wildlife Sanctuary, Sabah, Malaysia" ;
+    foo:supportedBy foo:cardiffUniversity, foo:sabahWildlifeDepartment ;
+    foo:focusArea "Conservation Research, Wildlife Studies, Fragmented Landscapes"@en ;
+    foo:mission "Support Sabah's conservation priorities and enhance understanding of 
+    wildlife issues in fragmented landscapes through research."@en .
+
+##### How to reuse FOO #######
 # To enable effective reuse of this ontology, please follow these guidelines:
 # 1. Create your own custom ontology using identical class and property names as in this model.
 # 2. Import the `FOO` ontology (https://w3id.org/def/foo#) directly into your new ontology.
