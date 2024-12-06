@@ -1038,20 +1038,23 @@ foo:plantation a owl:NamedIndividual, foo:OilPalmPlantation;
 
 #### University and Danau Girang Field Centre ####
 
-# Define University as a subclass of foaf:Organization
+# Define University as a subclass of foo:FeatureOfInterest
 foo:University rdf:type owl:Class ;
     rdfs:label "University"@en ;
     rdfs:comment "A subclass of FOAF's Organization representing academic institutions involved in research and higher education."@en ;
-    rdfs:subClassOf foaf:Organization ;
+    rdfs:subClassOf foo:FeatureOfInterest ;
+    rdfs:equivalentClass foaf:Organization ;
     dcterms:description "Universities grant academic degrees and conduct research, often partnering with other organizations for projects like wildlife conservation."@en .
 
 foo:WildlifeDepartment rdf:type owl:Class ;
     rdfs:label "Wildlife Department"@en ;
+    rdfs:subClassOf foo:FeatureOfInterest ;
     rdfs:comment "A government or non-government organization responsible for managing and conserving wildlife and their habitats."@en ;
     dcterms:description "Wildlife Departments oversee policies, conservation programs, and research to protect wildlife and their ecosystems."@en .
 
 foo:FieldCentre rdf:type owl:Class ;
     rdfs:label "Field Centre"@en ;
+    rdfs:subClassOf foo:FeatureOfInterest ;
     rdfs:comment "A facility dedicated to supporting research, conservation, and education in specific ecological or wildlife domains."@en ;
     dcterms:description "Field Centres provide infrastructure and expertise for field research and conservation activities, often in partnership with other organizations."@en .
 
