@@ -1033,8 +1033,8 @@ foo:OilPalmPlantation a  owl:Class ;
     owl:equivalentClass      <http://purl.obolibrary.org/obo/ENVO_00000120> . 
 
 foo:plantation a owl:NamedIndividual, foo:OilPalmPlantation;
-    pos:latitude "5.36"^^xsd:float;
-    pos:longitude "118.66 "^^xsd:float.
+    pos:latitude "5.O"^^xsd:float;
+    pos:longitude "118.7 "^^xsd:float.
 
 #### University and Danau Girang Field Centre ####
 
