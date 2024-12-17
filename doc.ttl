@@ -894,57 +894,57 @@ foo:growBorneo a owl:NamedIndividual, foo:Project ;
 
 ### Link Tree Species to Grow Borneo
 foo:bongkol a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Bongkol" ;
+    rdfs:label "Bongkol"@en, "Nauclea sp."@la;
     rdfs:comment "A tree species named Bongkol in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
-foo:selongapid a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Selongapid" ;
+foo:salongapid a owl:NamedIndividual, foo:Tree ;
+    rdfs:label "Selongapid"@en, "Mallotus muticus"@la   ;
     rdfs:comment "A tree species named Selongapid in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:binuang a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Binuang" ;
+    rdfs:label "Binuang"@en, "Octomeles sumatrana"@la  ;
     rdfs:comment "A tree species named Binuang in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:terosob a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Terosob" ;
+    rdfs:label "Terosob"@en, "Dracontomelon sp."@la   ;
     rdfs:comment "A tree species named Terosob in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:kelumpang a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Kelumpang" ;
+    rdfs:label "Kelumpang"@en, "Sterculia sp."@la  ;
     rdfs:comment "A tree species named Kelumpang in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:mangkapon a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Mangkapon" ;
+    rdfs:label "Mangkapon"@en, "Colona serratifolia"@la  ;
     rdfs:comment "A tree species named Mangkapon in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:nyatoh a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Nyatoh" ;
+    rdfs:label "Nyatoh"@en ;
     rdfs:comment "A tree species named Nyatoh in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:durian a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Durian" ;
+    rdfs:label "Durian"@en, "Durio sp."@la ;
     rdfs:comment "A tree species named Durian in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:tarap a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Tarap" ;
+    rdfs:label "Tarap"@en,"Artocarpus odoratissimu"@en ;
     rdfs:comment "A tree species named Tarap in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:rambutan a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Rambutan" ;
+    rdfs:label "Rambutan"@en ;
     rdfs:comment "A tree species named Rambutan in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:pulai a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Pulai" ;
+    rdfs:label "Pulai"@en, "Alstonia sp"@la ;
     rdfs:comment "A tree species named Pulai in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
@@ -954,42 +954,42 @@ foo:payungPayung a owl:NamedIndividual, foo:Tree ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:kayuMalam a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Kayu Malam" ;
+    rdfs:label "Kayu Malam"@en, "Diospyros sp."@la  ;
     rdfs:comment "A tree species named Kayu Malam in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:kerodong a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Kerodong" ;
+    rdfs:label "Kerodong"@en, "Microcos crassifolia"@la ;
     rdfs:comment "A tree species named Kerodong in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:keruingPaya a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Keruing Paya" ;
+    rdfs:label "Keruing Paya"@en, "Dipterocarpus sp."@la ;
     rdfs:comment "A tree species named Keruing Paya in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:bayur a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Bayur" ;
+    rdfs:label "Bayur"@en, "Pterospermum sp."@la  ;
     rdfs:comment "A tree species named Bayur in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:tangkol a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Tangkol" ;
+    rdfs:label "Tangkol"@en ;
     rdfs:comment "A tree species named Tangkol in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:sepat a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Sepat" ;
+    rdfs:label "Sepat"@en, "Mytrogyna spesiosa"@la ;
     rdfs:comment "A tree species named Sepat in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:belian a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Belian" ;
+    rdfs:label "Belian"@en, "Eusideroxylon zwageri"@la ;
     rdfs:comment "A tree species named Belian in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
 foo:keranji a owl:NamedIndividual, foo:Tree ;
-    rdfs:label "Keranji" ;
+    rdfs:label "Keranji"@en, "Dialium sp"@la ;
     rdfs:comment "A tree species named Keranji in Malay." ;
     foo:isPlantedIn foo:growBorneo .
 
@@ -1033,8 +1033,8 @@ foo:OilPalmPlantation a  owl:Class ;
     owl:equivalentClass      <http://purl.obolibrary.org/obo/ENVO_00000120> . 
 
 foo:plantation a owl:NamedIndividual, foo:OilPalmPlantation;
-    pos:latitude "5.36"^^xsd:float;
-    pos:longitude "118.66 "^^xsd:float.
+    pos:latitude "5.0"^^xsd:float;
+    pos:longitude "118.7 "^^xsd:float.
 
 #### University and Danau Girang Field Centre ####
 
